@@ -11,6 +11,7 @@
 // 子职业数据 通过以上网址和脚本获得
 const subProfession =  require('./subProfession.json')
 
+// https://prts.wiki/w/%E5%B1%9E%E6%80%A7:%E7%94%BB%E5%B8%88
 // 画师数据 通过属性：画师和脚本获得（需要去掉皮肤，if (name.indexOf("skin") != -1) continue;
 const painter =  require('./painter.json')
 

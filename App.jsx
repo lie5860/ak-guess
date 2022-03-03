@@ -8,7 +8,6 @@ import {chartsData, TYPES, VAL_DICT} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 
-
 const renderGuessTable = (data, answer) => {
     return <div className={'guesses'}>
         <div className="row">
@@ -23,6 +22,7 @@ const renderGuessTable = (data, answer) => {
                             <div className="tooltip">
                                 {name}
                                 <span className="tooltiptext">
+                                    <div><span className={'title'}>干员名称:</span>{name}</div>
                                     <div><span className={'title'}>稀有度:</span>{1 + rarity}</div>
                                     <div><span className={'title'}>阵营:</span>{team?.join(' ')}</div>
                                     <div><span className={'title'}>职业:</span>{className?.join('-')}</div>
@@ -90,7 +90,7 @@ export default function Home() {
         setMsg(msg)
         setTimeout(() => {
             setMsg('')
-        }, 1500)
+        },1500)
     }
     const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
     const isOver = data.length > 5 || isWin
@@ -137,24 +137,22 @@ export default function Home() {
                 res[key] = emoji
             })
             setData([...data, res])
+            inputRef.current.value = ''
         }
     }
     return (
         <div className={'container'}>
-            <div className={'main-container clean-float'}>
-                <div className={'ak-tab'}>
-                    <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`}
-                         onClick={() => setMode('random')}>随机模式
-                    </div>
-                    {remoteAnswerKey !== -1 && <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`}
-                                                    onClick={() => setMode('day')}>每日模式</div>}
-                </div>
-                <div>干员猜猜乐</div>
-                <div>明日方舟 wordle-like by 昨日沉船</div>
-                <div>你有6次机会猜测这只神秘干员，试试看！
-                    <div className="tooltip">
-                        分享 Emoji 映射表
-                        <span className="tooltiptext">
+        <div className={'main-container clean-float'}>
+            <div className={'ak-tab'}>
+                <div className={`ak-tab-item ${mode === 'random'?'active':''}`} onClick={() => setMode('random')}>随机模式</div>
+                {remoteAnswerKey !== -1 && <div className={`ak-tab-item ${mode === 'day'?'active':''}`} onClick={() => setMode('day')}>每日模式</div>}
+            </div>
+            <div>干员猜猜乐</div>
+            <div>明日方舟 wordle-like by 昨日沉船</div>
+            <div>你有6次机会猜测这只神秘干员，试试看！
+                <div className="tooltip">
+                    分享 Emoji 映射表
+                    <span className="tooltiptext">
                         🟩: 完全正确
                         <br/>
                         🟥: 不正确
@@ -165,37 +163,37 @@ export default function Home() {
                         <br/>
                         🔽: 猜测值过大
                     </span>
-                    </div>
                 </div>
-                {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
-                {!!data?.length && renderGuessTable(data, answer)}
-                <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
-                      style={{display: isOver ? 'none' : ''}}>
-                    <div className="autocomplete">
-                        <input ref={inputRef} id="guess"/>
-                    </div>
-                    <input className="guess_input" type="submit" value="提交"/>
-                </form>
-                {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer.name}。`}</div>}
-
-                {!!data?.length && <div className={'share-body'}>
-                    <a className={'togglec'} onClick={() => {
-                        copyCurrentDay(markText(data, false), showModal)
-                    }}>📄 分享</a>
-
-                    <a className={'togglec'} onClick={() => {
-                        copyCurrentDay(markText(data, true), showModal)
-                    }} style={{marginLeft: 20}}>👀 分享(带名称)
-                    </a>
+            </div>
+            {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
+            {!!data?.length && renderGuessTable(data, answer)}
+            <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
+                  style={{display: isOver ? 'none' : ''}}>
+                <div className="autocomplete">
+                    <input ref={inputRef} id="guess"/>
                 </div>
-                }
+                <input className="guess_input" type="submit" value="提交"/>
+            </form>
+            {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer.name}。`}</div>}
 
-                {mode !== 'day' && <a className={'▶️ togglec'} variant="danger" onClick={() => {
-                    setData([])
-                    setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-                }}>▶️ 新的游戏</a>
-                }
-                {msg && <span className={`global-tooltiptext`}>{msg}</span>}
+            {!!data?.length && <div className={'share-body'}>
+                <a className={'togglec'} onClick={() => {
+                    copyCurrentDay(markText(data, false), showModal)
+                }}>📄 分享</a>
+
+                <a className={'togglec'} onClick={() => {
+                    copyCurrentDay(markText(data, true), showModal)
+                }} style={{marginLeft: 20}}>👀 分享(带名称)
+                </a>
+            </div>
+            }
+
+                {mode !== 'day' && <a className={'togglec'} variant="danger" onClick={() => {
+                setData([])
+                setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
+            }}>▶️ 新的游戏</a>
+            }
+            {msg && <span className={`global-tooltiptext`}>{msg}</span>}
             </div>
         </div>
     )
