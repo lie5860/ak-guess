@@ -62,13 +62,19 @@
     ]
   },
   {
-    "regexp": "ff0",
+    "regexp": "小僧",
     "values": [
-      "华法林"
+      "嵯峨"
     ]
   },
   {
-    "regexp": "rua牛",
+    "regexp": "FF0",
+    "values": [
+      "华法琳"
+    ]
+  },
+  {
+    "regexp": ".*RUA.*",
     "values": [
       "白雪"
     ]
@@ -80,7 +86,7 @@
     ]
   },
   {
-    "regexp": "zc",
+    "regexp": "ZC",
     "values": [
       "乌有"
     ]
