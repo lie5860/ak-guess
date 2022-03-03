@@ -5,7 +5,7 @@
 
 该站点当前所有部分使用React开发，使用magic转Web Component使用。
 
-线上访问地址：[ak.saki.cc](http://akg.saki.cc)
+线上访问地址：[akg.saki.cc](http://akg.saki.cc)
 
 概览图
 
