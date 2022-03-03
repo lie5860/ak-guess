@@ -18,7 +18,7 @@ const renderGuessTable = (data, answer) => {
             return <div className="row" key={index}>
                 {TYPES.map(({key, type}) => {
                     if (key === 'guess') {
-                        const {name, rarity, team, className, race} = v.guess
+                        const {name, rarity, team, className, race, painter} = v.guess
                         return <div className='column' key={key}>
                             <div className="tooltip">
                                 {name}
@@ -27,6 +27,7 @@ const renderGuessTable = (data, answer) => {
                                     <div><span className={'title'}>阵营:</span>{team?.join(' ')}</div>
                                     <div><span className={'title'}>职业:</span>{className?.join('-')}</div>
                                     <div><span className={'title'}>种族:</span>{race}</div>
+                                    <div><span className={'title'}>画师:</span>{painter}</div>
                                 </span>
                             </div>
                         </div>

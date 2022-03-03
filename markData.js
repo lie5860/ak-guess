@@ -1,13 +1,14 @@
 const fs = require('fs')
 const path = require('path')
-const {prtsData, subProfession} = require('./data/index.js')
+const {prtsData, subProfession,painter} = require('./data/index.js')
 const chartsData = prtsData.map(v => {
     return {
         className: [v.class, subProfession[v.cn]],
         name: v.cn,
         team: [...new Set([v.camp, v.nation].join('-').split('-'))],
         race: v.race.join('/'),
-        rarity: Number(v.rarity)
+        rarity: Number(v.rarity),
+        painter: painter[v.cn]
     }
 })
 let file = path.resolve(__dirname, './data/dealData.json')
