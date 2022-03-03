@@ -61,6 +61,7 @@ body{
 /*}*/
 a {
     color: palevioletred;
+    cursor: pointer;
 }
 
 .togglec {
@@ -194,6 +195,7 @@ img {
     color: palevioletred;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .tooltip .tooltiptext, .global-tooltiptext {
