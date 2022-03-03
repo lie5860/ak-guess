@@ -9,7 +9,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Namie"
     },
     {
         "className": [
@@ -21,7 +22,8 @@
             "罗德岛"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "YUJI"
     },
     {
         "className": [
@@ -34,7 +36,8 @@
             "岁"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -48,7 +51,8 @@
             "龙门"
         ],
         "race": "龙",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "KuroBlood"
     },
     {
         "className": [
@@ -60,7 +64,8 @@
             "雷姆必拓"
         ],
         "race": "萨弗拉",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "温泉瓜"
     },
     {
         "className": [
@@ -72,7 +77,8 @@
             "罗德岛"
         ],
         "race": "卡特斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -84,7 +90,8 @@
             "炎"
         ],
         "race": "埃拉菲亚",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "IRIS_呓"
     },
     {
         "className": [
@@ -96,7 +103,8 @@
             "维多利亚"
         ],
         "race": "斐迪亚",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Cenm0"
     },
     {
         "className": [
@@ -109,7 +117,8 @@
             "谢拉格"
         ],
         "race": "黎博利",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -122,7 +131,8 @@
             "谢拉格"
         ],
         "race": "乌萨斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "LAL!ROLE"
     },
     {
         "className": [
@@ -135,7 +145,8 @@
             "谢拉格"
         ],
         "race": "未公开",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -147,7 +158,8 @@
             "卡西米尔"
         ],
         "race": "库兰塔",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -160,7 +172,8 @@
             "卡西米尔"
         ],
         "race": "札拉克",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -172,7 +185,8 @@
             "哥伦比亚"
         ],
         "race": "斐迪亚",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Jacknife"
     },
     {
         "className": [
@@ -185,7 +199,8 @@
             "卡西米尔"
         ],
         "race": "库兰塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -197,7 +212,8 @@
             "雷姆必拓"
         ],
         "race": "札拉克",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Liyu黎"
     },
     {
         "className": [
@@ -209,7 +225,8 @@
             "哥伦比亚"
         ],
         "race": "阿戈尔",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "折射镜"
     },
     {
         "className": [
@@ -222,7 +239,8 @@
             "卡西米尔"
         ],
         "race": "",
-        "rarity": 0
+        "rarity": 0,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -235,7 +253,8 @@
             "卡西米尔"
         ],
         "race": "黎博利",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -248,7 +267,8 @@
             "卡西米尔"
         ],
         "race": "札拉克",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -260,7 +280,8 @@
             "维多利亚"
         ],
         "race": "瓦伊凡",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -272,7 +293,8 @@
             "炎"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Jacknife"
     },
     {
         "className": [
@@ -284,7 +306,8 @@
             "哥伦比亚"
         ],
         "race": "阿纳缇",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "IRIS_呓"
     },
     {
         "className": [
@@ -296,7 +319,8 @@
             "罗德岛"
         ],
         "race": "龙",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -308,7 +332,8 @@
             "东"
         ],
         "race": "阿戈尔",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Namie"
     },
     {
         "className": [
@@ -320,7 +345,8 @@
             "玻利瓦尔"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "LAL!ROLE"
     },
     {
         "className": [
@@ -332,7 +358,8 @@
             "玻利瓦尔"
         ],
         "race": "佩洛",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "一千"
     },
     {
         "className": [
@@ -344,7 +371,8 @@
             "米诺斯"
         ],
         "race": "丰蹄",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -356,7 +384,8 @@
             "莱塔尼亚"
         ],
         "race": "卡普里尼",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "カワグチ"
     },
     {
         "className": [
@@ -368,7 +397,8 @@
             "东"
         ],
         "race": "阿戈尔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "我妻洛酱"
     },
     {
         "className": [
@@ -380,7 +410,8 @@
             "维多利亚"
         ],
         "race": "卡普里尼",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -392,7 +423,8 @@
             "伊比利亚"
         ],
         "race": "斐迪亚",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "织布机loom"
     },
     {
         "className": [
@@ -404,7 +436,8 @@
             "阿戈尔"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "alchemaniac"
     },
     {
         "className": [
@@ -416,7 +449,8 @@
             "罗德岛"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -429,7 +463,8 @@
             "阿戈尔"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Chuzenji"
     },
     {
         "className": [
@@ -441,7 +476,8 @@
             "东"
         ],
         "race": "阿戈尔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "熊太"
     },
     {
         "className": [
@@ -453,7 +489,8 @@
             "萨尔贡"
         ],
         "race": "黎博利",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -465,7 +502,8 @@
             "维多利亚"
         ],
         "race": "瓦伊凡",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "山×2"
     },
     {
         "className": [
@@ -477,7 +515,8 @@
             "罗德岛"
         ],
         "race": "库兰塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -490,7 +529,8 @@
             ""
         ],
         "race": "未知",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Ubisoft"
     },
     {
         "className": [
@@ -503,7 +543,8 @@
             ""
         ],
         "race": "未知",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Ubisoft"
     },
     {
         "className": [
@@ -516,7 +557,8 @@
             ""
         ],
         "race": "未知",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Ubisoft"
     },
     {
         "className": [
@@ -529,7 +571,8 @@
             ""
         ],
         "race": "未知",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Ubisoft"
     },
     {
         "className": [
@@ -542,7 +585,8 @@
             "岁"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -554,7 +598,8 @@
             "东"
         ],
         "race": "佩洛",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "多元菌"
     },
     {
         "className": [
@@ -566,7 +611,8 @@
             "炎"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -578,7 +624,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -590,7 +637,8 @@
             "萨尔贡"
         ],
         "race": "丰蹄",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -602,7 +650,8 @@
             "拉特兰"
         ],
         "race": "黎博利",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "alchemaniac"
     },
     {
         "className": [
@@ -614,7 +663,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -626,7 +676,8 @@
             "哥伦比亚"
         ],
         "race": "瑞柏巴",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "一千"
     },
     {
         "className": [
@@ -638,7 +689,8 @@
             "哥伦比亚"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "WincalBlanke"
     },
     {
         "className": [
@@ -650,7 +702,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -662,7 +715,8 @@
             "哥伦比亚"
         ],
         "race": "阿纳缇",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -674,7 +728,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "TrNyteal"
     },
     {
         "className": [
@@ -686,7 +741,8 @@
             "罗德岛"
         ],
         "race": "卡特斯/奇美拉",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -699,7 +755,8 @@
             "精英干员"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -711,7 +768,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -723,7 +781,8 @@
             "伊比利亚"
         ],
         "race": "阿戈尔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Chuzenji"
     },
     {
         "className": [
@@ -735,7 +794,8 @@
             "哥伦比亚"
         ],
         "race": "佩洛",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Nagu"
     },
     {
         "className": [
@@ -747,7 +807,8 @@
             "卡西米尔"
         ],
         "race": "库兰塔",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -760,7 +821,8 @@
             "叙拉古"
         ],
         "race": "鲁珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -772,7 +834,8 @@
             "卡西米尔"
         ],
         "race": "库兰塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -784,7 +847,8 @@
             "萨尔贡"
         ],
         "race": "塞拉托",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Cenm0"
     },
     {
         "className": [
@@ -796,7 +860,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Ask"
     },
     {
         "className": [
@@ -808,7 +873,8 @@
             "雷姆必拓"
         ],
         "race": "卡特斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "れおえん"
     },
     {
         "className": [
@@ -820,7 +886,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "ヌードル"
     },
     {
         "className": [
@@ -832,7 +899,8 @@
             "拉特兰"
         ],
         "race": "萨科塔",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "umo_yszx"
     },
     {
         "className": [
@@ -844,7 +912,8 @@
             "萨尔贡"
         ],
         "race": "斐迪亚",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Liduke"
     },
     {
         "className": [
@@ -856,7 +925,8 @@
             "萨尔贡"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -868,7 +938,8 @@
             "萨尔贡"
         ],
         "race": "阿达克利斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Chuzenji"
     },
     {
         "className": [
@@ -880,7 +951,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Lanzi"
     },
     {
         "className": [
@@ -892,7 +964,8 @@
             "伊比利亚"
         ],
         "race": "阿戈尔",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -905,7 +978,8 @@
             "阿戈尔"
         ],
         "race": "阿戈尔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "LLC"
     },
     {
         "className": [
@@ -918,7 +992,8 @@
             "龙门"
         ],
         "race": "乌萨斯",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "阿鬼"
     },
     {
         "className": [
@@ -931,7 +1006,8 @@
             "叙拉古"
         ],
         "race": "沃尔珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -943,7 +1019,8 @@
             "萨尔贡"
         ],
         "race": "卡普里尼",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "カワグチ"
     },
     {
         "className": [
@@ -955,7 +1032,8 @@
             "萨尔贡"
         ],
         "race": "皮洛萨",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "アシマ"
     },
     {
         "className": [
@@ -967,7 +1045,8 @@
             "叙拉古"
         ],
         "race": "沃尔珀",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "将"
     },
     {
         "className": [
@@ -979,7 +1058,8 @@
             "雷姆必拓"
         ],
         "race": "卡特斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -991,7 +1071,8 @@
             "罗德岛"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -1003,7 +1084,8 @@
             "罗德岛"
         ],
         "race": "札拉克",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "れおえん"
     },
     {
         "className": [
@@ -1016,7 +1098,8 @@
             "乌萨斯"
         ],
         "race": "乌萨斯",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1028,7 +1111,8 @@
             "雷姆必拓"
         ],
         "race": "卡特斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "野崎つばた"
     },
     {
         "className": [
@@ -1040,7 +1124,8 @@
             "乌萨斯"
         ],
         "race": "乌萨斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -1052,7 +1137,8 @@
             "罗德岛"
         ],
         "race": "佩洛",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "アシマ"
     },
     {
         "className": [
@@ -1064,7 +1150,8 @@
             "东"
         ],
         "race": "埃拉菲亚",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "上埜"
     },
     {
         "className": [
@@ -1076,7 +1163,8 @@
             "雷姆必拓"
         ],
         "race": "萨弗拉",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "TEAM EXPNDR"
     },
     {
         "className": [
@@ -1089,7 +1177,8 @@
             ""
         ],
         "race": "萨卡兹",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Liduke"
     },
     {
         "className": [
@@ -1101,7 +1190,8 @@
             "罗德岛"
         ],
         "race": "阿戈尔",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1113,7 +1203,8 @@
             "罗德岛"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1125,7 +1216,8 @@
             "罗德岛"
         ],
         "race": "",
-        "rarity": 0
+        "rarity": 0,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -1137,7 +1229,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1149,7 +1242,8 @@
             "叙拉古"
         ],
         "race": "沃尔珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1161,7 +1255,8 @@
             "米诺斯"
         ],
         "race": "丰蹄",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "将"
     },
     {
         "className": [
@@ -1173,7 +1268,8 @@
             "哥伦比亚"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1185,7 +1281,8 @@
             "米诺斯"
         ],
         "race": "未知（疑似黎博利）",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "TOMATO"
     },
     {
         "className": [
@@ -1197,7 +1294,8 @@
             "维多利亚"
         ],
         "race": "瓦伊凡",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "u介"
     },
     {
         "className": [
@@ -1209,7 +1307,8 @@
             "萨尔贡"
         ],
         "race": "瓦伊凡",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1221,7 +1320,8 @@
             "萨米"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "RAYVON"
     },
     {
         "className": [
@@ -1233,7 +1333,8 @@
             "东"
         ],
         "race": "不明",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "釜飯轟々丸"
     },
     {
         "className": [
@@ -1245,7 +1346,8 @@
             "炎"
         ],
         "race": "阿戈尔",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -1257,7 +1359,8 @@
             "罗德岛"
         ],
         "race": "佩洛",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "LM7"
     },
     {
         "className": [
@@ -1269,7 +1372,8 @@
             "炎"
         ],
         "race": "麒麟",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1282,7 +1386,8 @@
             "岁"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -1296,7 +1401,8 @@
             "龙门"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "KuroBlood"
     },
     {
         "className": [
@@ -1310,7 +1416,8 @@
             "龙门"
         ],
         "race": "佩洛",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "KuroBlood"
     },
     {
         "className": [
@@ -1323,7 +1430,8 @@
             "龙门"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -1336,7 +1444,8 @@
             "精英干员"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -1348,7 +1457,8 @@
             "罗德岛"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -1360,7 +1470,8 @@
             "拉特兰"
         ],
         "race": "萨科塔",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -1373,7 +1484,8 @@
             "叙拉古"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -1385,7 +1497,8 @@
             "维多利亚"
         ],
         "race": "德拉克",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "STAR影法师"
     },
     {
         "className": [
@@ -1397,7 +1510,8 @@
             "拉特兰"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -1411,7 +1525,8 @@
             "龙门"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "KuroBlood"
     },
     {
         "className": [
@@ -1424,7 +1539,8 @@
             "龙门"
         ],
         "race": "丰蹄",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1436,7 +1552,8 @@
             "维多利亚"
         ],
         "race": "黎博利",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1448,7 +1565,8 @@
             "维多利亚"
         ],
         "race": "沃尔珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "藻"
     },
     {
         "className": [
@@ -1460,7 +1578,8 @@
             "罗德岛"
         ],
         "race": "萨弗拉",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "阿鬼"
     },
     {
         "className": [
@@ -1473,7 +1592,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -1485,7 +1605,8 @@
             "拉特兰"
         ],
         "race": "萨科塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1497,7 +1618,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "虎三"
     },
     {
         "className": [
@@ -1509,7 +1631,8 @@
             "叙拉古"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "KENTllaall"
     },
     {
         "className": [
@@ -1521,7 +1644,8 @@
             "罗德岛"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1533,7 +1657,8 @@
             "乌萨斯"
         ],
         "race": "黎博利",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Liduke"
     },
     {
         "className": [
@@ -1545,7 +1670,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "YUJI"
     },
     {
         "className": [
@@ -1557,7 +1683,8 @@
             "罗德岛"
         ],
         "race": "杜林",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "咩煲"
     },
     {
         "className": [
@@ -1570,7 +1697,8 @@
             "哥伦比亚"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Liduke"
     },
     {
         "className": [
@@ -1582,7 +1710,8 @@
             "伊比利亚"
         ],
         "race": "未公开",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1595,7 +1724,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1607,7 +1737,8 @@
             "罗德岛"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "将"
     },
     {
         "className": [
@@ -1621,7 +1752,8 @@
             "龙门"
         ],
         "race": "龙",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -1635,7 +1767,8 @@
             "龙门"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1647,7 +1780,8 @@
             "玻利瓦尔"
         ],
         "race": "佩洛",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "我妻洛酱"
     },
     {
         "className": [
@@ -1660,7 +1794,8 @@
             "罗德岛"
         ],
         "race": "瑞柏巴",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "阿鬼"
     },
     {
         "className": [
@@ -1673,7 +1808,8 @@
             "罗德岛"
         ],
         "race": "卡特斯",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1686,7 +1822,8 @@
             "阿戈尔"
         ],
         "race": "未公开",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "alchemaniac"
     },
     {
         "className": [
@@ -1698,7 +1835,8 @@
             "维多利亚"
         ],
         "race": "库兰塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "alchemaniac"
     },
     {
         "className": [
@@ -1710,7 +1848,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Lpip"
     },
     {
         "className": [
@@ -1722,7 +1861,8 @@
             "乌萨斯"
         ],
         "race": "乌萨斯",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "toast"
     },
     {
         "className": [
@@ -1735,7 +1875,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1748,7 +1889,8 @@
             "罗德岛"
         ],
         "race": "库兰塔",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -1760,7 +1902,8 @@
             "雷姆必拓"
         ],
         "race": "卡特斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -1773,7 +1916,8 @@
             "谢拉格"
         ],
         "race": "菲林",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1786,7 +1930,8 @@
             "哥伦比亚"
         ],
         "race": "瓦伊凡",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -1800,7 +1945,8 @@
             "龙门"
         ],
         "race": "鬼",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -1813,7 +1959,8 @@
             ""
         ],
         "race": "萨卡兹",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1826,7 +1973,8 @@
             ""
         ],
         "race": "萨卡兹",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1838,7 +1986,8 @@
             "叙拉古"
         ],
         "race": "沃尔珀",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "LM7"
     },
     {
         "className": [
@@ -1850,7 +1999,8 @@
             "莱塔尼亚"
         ],
         "race": "卡普里尼",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Anmi"
     },
     {
         "className": [
@@ -1863,7 +2013,8 @@
             "哥伦比亚"
         ],
         "race": "萨卡兹",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -1876,7 +2027,8 @@
             "维多利亚"
         ],
         "race": "阿斯兰",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -1890,7 +2042,8 @@
             "龙门"
         ],
         "race": "萨科塔",
-        "rarity": 5
+        "rarity": 5,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -1903,7 +2056,8 @@
             "龙门"
         ],
         "race": "乌萨斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "RAN"
     },
     {
         "className": [
@@ -1915,7 +2069,8 @@
             "萨尔贡"
         ],
         "race": "曼提柯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1929,7 +2084,8 @@
             "龙门"
         ],
         "race": "因经纪公司要求不公开",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -1942,7 +2098,8 @@
             "乌萨斯"
         ],
         "race": "乌萨斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -1955,7 +2112,8 @@
             "谢拉格"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1968,7 +2126,8 @@
             "谢拉格"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -1980,7 +2139,8 @@
             "罗德岛"
         ],
         "race": "埃拉菲亚",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "aZLing4"
     },
     {
         "className": [
@@ -1992,7 +2152,8 @@
             "叙拉古"
         ],
         "race": "鲁珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "渣念"
     },
     {
         "className": [
@@ -2004,7 +2165,8 @@
             "米诺斯"
         ],
         "race": "丰蹄",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "neco"
     },
     {
         "className": [
@@ -2018,7 +2180,8 @@
             "龙门"
         ],
         "race": "丰蹄",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -2031,7 +2194,8 @@
             "哥伦比亚"
         ],
         "race": "瓦伊凡",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -2044,7 +2208,8 @@
             "罗德岛"
         ],
         "race": "鲁珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -2057,7 +2222,8 @@
             ""
         ],
         "race": "库兰塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2069,7 +2235,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "时辰"
     },
     {
         "className": [
@@ -2082,7 +2249,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "NoriZC"
     },
     {
         "className": [
@@ -2095,7 +2263,8 @@
             "哥伦比亚"
         ],
         "race": "阿纳缇",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -2107,7 +2276,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -2119,7 +2289,8 @@
             "罗德岛"
         ],
         "race": "卡特斯/奇美拉",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "唯@W"
     },
     {
         "className": [
@@ -2131,7 +2302,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -2143,7 +2315,8 @@
             "卡西米尔"
         ],
         "race": "库兰塔",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2155,7 +2328,8 @@
             "伊比利亚"
         ],
         "race": "安努拉",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "LLC"
     },
     {
         "className": [
@@ -2168,7 +2342,8 @@
             "阿戈尔"
         ],
         "race": "未公开",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2180,7 +2355,8 @@
             "叙拉古"
         ],
         "race": "鲁珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -2193,7 +2369,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Infukun"
     },
     {
         "className": [
@@ -2206,7 +2383,8 @@
             "哥伦比亚"
         ],
         "race": "沃尔珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -2220,7 +2398,8 @@
             "龙门"
         ],
         "race": "鲁珀",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "幻象黑兔"
     },
     {
         "className": [
@@ -2233,7 +2412,8 @@
             "乌萨斯"
         ],
         "race": "乌萨斯",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2246,7 +2426,8 @@
             "哥伦比亚"
         ],
         "race": "黎博利",
-        "rarity": 4
+        "rarity": 4,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2259,7 +2440,8 @@
             "龙门"
         ],
         "race": "札拉克",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "阿鬼"
     },
     {
         "className": [
@@ -2271,7 +2453,8 @@
             "莱塔尼亚"
         ],
         "race": "卡普里尼",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "HUG"
     },
     {
         "className": [
@@ -2283,7 +2466,8 @@
             "阿戈尔"
         ],
         "race": "未公开",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "REALMBW"
     },
     {
         "className": [
@@ -2296,7 +2480,8 @@
             "乌萨斯"
         ],
         "race": "乌萨斯",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2308,7 +2493,8 @@
             "哥伦比亚"
         ],
         "race": "匹特拉姆",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2321,7 +2507,8 @@
             "谢拉格"
         ],
         "race": "丰蹄",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2333,7 +2520,8 @@
             "罗德岛"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Lanzi"
     },
     {
         "className": [
@@ -2345,7 +2533,8 @@
             "罗德岛"
         ],
         "race": "阿达克利斯",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "LLC"
     },
     {
         "className": [
@@ -2357,7 +2546,8 @@
             "罗德岛"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2370,7 +2560,8 @@
             "龙门"
         ],
         "race": "卡特斯",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -2382,7 +2573,8 @@
             "卡西米尔"
         ],
         "race": "札拉克",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2394,7 +2586,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Iritoa"
     },
     {
         "className": [
@@ -2406,7 +2599,8 @@
             "萨尔贡"
         ],
         "race": "阿达克利斯",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "鸭"
     },
     {
         "className": [
@@ -2418,7 +2612,8 @@
             "罗德岛"
         ],
         "race": "沃尔珀",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2430,7 +2625,8 @@
             "东"
         ],
         "race": "鬼",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2442,7 +2638,8 @@
             "罗德岛"
         ],
         "race": "佩洛",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "LLC"
     },
     {
         "className": [
@@ -2454,7 +2651,8 @@
             "哥伦比亚"
         ],
         "race": "萨卡兹",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2467,7 +2665,8 @@
             "罗德岛"
         ],
         "race": "札拉克",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "戏言咸咸"
     },
     {
         "className": [
@@ -2480,7 +2679,8 @@
             "谢拉格"
         ],
         "race": "依特拉",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2492,7 +2692,8 @@
             "东"
         ],
         "race": "阿纳缇",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "阿鬼"
     },
     {
         "className": [
@@ -2504,7 +2705,8 @@
             "卡西米尔"
         ],
         "race": "库兰塔",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "HUG"
     },
     {
         "className": [
@@ -2517,7 +2719,8 @@
             "哥伦比亚"
         ],
         "race": "菲林",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -2529,7 +2732,8 @@
             "萨米"
         ],
         "race": "埃拉菲亚",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "谜肘"
     },
     {
         "className": [
@@ -2541,7 +2745,8 @@
             "维多利亚"
         ],
         "race": "菲林",
-        "rarity": 3
+        "rarity": 3,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2554,7 +2759,8 @@
             "罗德岛"
         ],
         "race": "黎博利",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2567,7 +2773,8 @@
             "罗德岛"
         ],
         "race": "沃尔珀",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "一立里子"
     },
     {
         "className": [
@@ -2580,7 +2787,8 @@
             "罗德岛"
         ],
         "race": "卡特斯",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "一立里子"
     },
     {
         "className": [
@@ -2593,7 +2801,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2606,7 +2815,8 @@
             "罗德岛"
         ],
         "race": "萨卡兹",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2619,7 +2829,8 @@
             "罗德岛"
         ],
         "race": "萨科塔",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "一立里子"
     },
     {
         "className": [
@@ -2632,7 +2843,8 @@
             "罗德岛"
         ],
         "race": "卡特斯",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2645,7 +2857,8 @@
             "罗德岛"
         ],
         "race": "佩洛",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2658,7 +2871,8 @@
             "罗德岛"
         ],
         "race": "佩洛",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "一立里子"
     },
     {
         "className": [
@@ -2671,7 +2885,8 @@
             "罗德岛"
         ],
         "race": "菲林",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "一立里子"
     },
     {
         "className": [
@@ -2683,7 +2898,8 @@
             "拉特兰"
         ],
         "race": "黎博利",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "deel"
     },
     {
         "className": [
@@ -2696,7 +2912,8 @@
             "哥伦比亚"
         ],
         "race": "瓦伊凡",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "m9nokuro"
     },
     {
         "className": [
@@ -2709,7 +2926,8 @@
             "罗德岛"
         ],
         "race": "库兰塔",
-        "rarity": 2
+        "rarity": 2,
+        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2721,7 +2939,8 @@
             "罗德岛"
         ],
         "race": "萨弗拉",
-        "rarity": 1
+        "rarity": 1,
+        "painter": "海猫络合物"
     },
     {
         "className": [
@@ -2734,7 +2953,8 @@
             "罗德岛"
         ],
         "race": "杜林",
-        "rarity": 1
+        "rarity": 1,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2747,7 +2967,8 @@
             "罗德岛"
         ],
         "race": "萨弗拉",
-        "rarity": 1
+        "rarity": 1,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2760,7 +2981,8 @@
             "罗德岛"
         ],
         "race": "鬼",
-        "rarity": 1
+        "rarity": 1,
+        "painter": "竜崎いち"
     },
     {
         "className": [
@@ -2773,7 +2995,8 @@
             "罗德岛"
         ],
         "race": "鬼",
-        "rarity": 1
+        "rarity": 1,
+        "painter": "Skade"
     },
     {
         "className": [
@@ -2785,7 +3008,8 @@
             "罗德岛"
         ],
         "race": "",
-        "rarity": 0
+        "rarity": 0,
+        "painter": "TOKI"
     },
     {
         "className": [
@@ -2797,6 +3021,7 @@
             "罗德岛"
         ],
         "race": "",
-        "rarity": 0
+        "rarity": 0,
+        "painter": "TOKI"
     }
 ]
