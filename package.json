@@ -1,0 +1,14 @@
+{
+  "name": "react-hello",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node markData && father-build"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.34"
+  },
+  "devDependencies": {
+    "father-build": "^1.21.1",
+    "@babel/core": "^7.12.3"
+  }
+}
