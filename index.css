@@ -67,8 +67,8 @@ a {
     font-size: 19px;
     border-style: solid;
     border-width: 0px;
-    color: #383838;
-    background-color: rgb(155, 211, 212);
+    color: #fff;
+    background-color: #333333;
     padding: 8px;
     margin: 10px;
     font-weight: normal;
@@ -77,7 +77,9 @@ a {
     border-color: #383838;
     border-radius: 10px;
 }
-
+.togglec:hover{
+    color: #22bbff;
+}
 .guesses {
     width: 600px;
     margin: 20px auto;
@@ -96,9 +98,8 @@ a {
 .emoji {
     font-size: 50px;
     width:90%;
-    height:65px;
+    height:70px;
     max-width: 65px;
-    max-height: 65px;
     margin: 0 auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -273,4 +274,25 @@ img {
     /*    --sl-color-primary-900: 124 23 23;*/
     /*    --sl-color-primary-950: 78 15 15;*/
 
+}
+.share-icon{
+    width: 20px;
+    height: 20px;
+    stroke: #b4b9c2;
+    display: inline-block;
+    margin: 3px;
+}
+.share-icon{
+    vertical-align: top;
+    line-height: 26px;
+}
+.share-icon svg line {
+    fill: #b4b9c2;
+    stroke: #b4b9c2;
+    transition: stroke 0.3s;
+}
+.share-icon svg circle {
+    stroke: #b4b9c2;
+    fill: #b4b9c2;
+    transition: fill 0.3s;
 }
