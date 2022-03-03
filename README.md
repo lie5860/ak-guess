@@ -9,7 +9,11 @@
 
 概览图
 
-![概览图]()
+![概览图](https://github.com/lie5860/ak-guess/blob/main/image/overview.png?raw=true)
+
+支持emoji分享到im
+
+![分享消息图](https://github.com/lie5860/ak-guess/blob/main/image/message.png?raw=true)
 
 本地调试方式 npm i => npm run build => 打开test目录下的index.html访问
 
