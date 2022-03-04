@@ -38,7 +38,7 @@ body{
     height: 100vh;
     transition: transform 0.6s;
     background-color: rgba(0, 0, 0, 0.88);
-    background-image: url("./images/bg.jpg");
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     background-position: center bottom;
     overflow: auto;
@@ -243,24 +243,24 @@ img {
 }
 
 .correct {
-    background-image: url("./images/correct.png");
+    background-image: url("../images/correct.png");
 }
 
 
 .down {
-    background-image: url("./images/down.png");
+    background-image: url("../images/down.png");
 }
 
 .up {
-    background-image: url("./images/up.png");
+    background-image: url("../images/up.png");
 }
 
 .wrong {
-    background-image: url("./images/wrong.png");
+    background-image: url("../images/wrong.png");
 }
 
 .wrongpos {
-    background-image: url("./images/wrongpos.png");
+    background-image: url("../images/wrongpos.png");
 }
 
 :root {

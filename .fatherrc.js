@@ -1,5 +1,6 @@
 export default {
-    entry: './index.js',
+    entry: './src/index.js',
     // esm: 'webpack',
     umd: true,
+    file: '../public/index'
 }

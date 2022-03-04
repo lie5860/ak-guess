@@ -1,12 +1,12 @@
 import './index.css'
-import autocomplete from './utils/autocomplete'
+import autocomplete from '../utils/autocomplete'
 // 可注释
 // import React from "react";
 // import axios from 'axios';
 // 可注释 end
 import {chartsData, TYPES, VAL_DICT} from "./const";
 import moment from 'moment-timezone'
-import copyCurrentDay from "./utils/copyCurrentDay";
+import copyCurrentDay from "../utils/copyCurrentDay";
 
 const renderGuessTable = (data, answer) => {
     return <div className={'guesses'}>
