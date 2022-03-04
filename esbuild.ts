@@ -1,5 +1,6 @@
 const esbuild = require('esbuild');
 const stylePlugin = require('esbuild-style-plugin');
+const time1 = +new Date();
 esbuild
   .build({
     entryPoints: ['src/index.ts'],
@@ -18,4 +19,4 @@ esbuild
 
   })
   .catch(() => process.exit(1));
-console.log('编译完成')
+console.log(`编译完成 耗时 ${new Date().valueOf() - time1}ms`)
