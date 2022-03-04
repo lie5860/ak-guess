@@ -3,6 +3,27 @@ const exec = require('child_process').exec;
 const http = require("http");
 const path = require("path");
 
+const mimeLists = {
+    css: 'text/css',
+    html: 'text/html',
+    js: 'text/javascript',
+    xml: 'text/xml',
+    gif: 'image/gif',
+    jpg: 'image/jpeg',
+    jpeg: 'image/jpeg',
+    png: 'image/jpeg',
+    json: 'application/json'
+};
+
+function mimeType(filepath) {
+    let ext = filepath
+        .split('.')   // jquery.min.js
+        .pop()        //取最后的那个为扩展名
+        .toLocaleLowerCase(); //转成小写
+    return mimeLists[ext] || 'text/plain';
+
+}
+
 //创建server 返回文件系统 类似fc
 function handleHtml(html) {
     let index = html.indexOf("</body>");
@@ -21,8 +42,8 @@ function handleHtml(html) {
 
 const server = http.createServer((req, res) => {
     try {
-        res.writeHead(200, {"Content-Type": "text/html"});
-        let html = fs.readFileSync(path.join(`./public${req.url}`), "utf-8");
+        res.writeHead(200, {"Content-Type": mimeType(req.url)});
+        let html = fs.readFileSync(path.join(`./public${req.url}`));
         if (req.url === '/index.html') {
             html = handleHtml(html);
         }

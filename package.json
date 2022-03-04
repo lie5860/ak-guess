@@ -2,7 +2,8 @@
   "name": "react-hello",
   "version": "0.0.1",
   "scripts": {
-    "build": "node markData && father-build"
+    "build": "node markData && father-build",
+    "dev": "node hmr"
   },
   "dependencies": {
     "moment-timezone": "^0.5.34",
