@@ -1,11 +1,9 @@
 import autocomplete from './utils/autocomplete'
-// 可注释
 import {React} from './global'
-// 可注释 end
 import {chartsData, TYPES, VAL_DICT} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
-import './index.css'
+import './index.less'
 
 const renderGuessTable = (data, answer) => {
   return <div className={'guesses'}>
@@ -204,7 +202,7 @@ export default function Home() {
         </div>
         }
 
-        {mode !== 'day' && <a className={'togglec'} variant="danger" onClick={() => {
+        {mode !== 'day' && <a className={'togglec'} onClick={() => {
           setData([])
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 新的游戏</a>

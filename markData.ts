@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const {prtsData, subProfession, painter} = require('./src/data/index.ts')
-const chartsData = prtsData.map(v => {
+const chartsData = prtsData.map((v: any) => {
   return {
     className: [v.class, subProfession[v.cn]],
     name: v.cn,
