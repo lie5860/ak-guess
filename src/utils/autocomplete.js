@@ -1,4 +1,4 @@
-import alias from '../src/data/alias.json'
+import alias from '../data/alias.json'
 
 export default function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,

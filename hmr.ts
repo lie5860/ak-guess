@@ -2,7 +2,7 @@ const fs = require('fs')
 const exec = require('child_process').exec;
 const http = require("http");
 const path = require("path");
-
+const port = 30233;
 const mimeLists = {
     css: 'text/css',
     html: 'text/html',
@@ -53,7 +53,7 @@ const server = http.createServer((req, res) => {
         res.end('');
     }
 });
-const port = 30233;
+
 //启动服务
 server.listen(port, "127.0.0.1", () => {
     console.log(`服务器运行在 http://127.0.0.1:${port}/index.html`);
@@ -93,7 +93,7 @@ const debounce = (fn, wait) => {
 const build = debounce(() => {
     console.log('散装编译器正在编译中');
     exec('npm run build')
-}, 200)
+}, 100)
 fs.watch('./src', (event, filename) => {
     if (filename) {
         build()
@@ -101,13 +101,15 @@ fs.watch('./src', (event, filename) => {
 })
 // 开启ws服务
 const io = require("socket.io")(server);
-
+const refresh = debounce(() => {
+    console.log('静态文件发生变更，发起ws消息刷新页面。')
+    io.sockets.emit("filechange");
+}, 100)
 // 监听静态数据变更
 fs.watch('./public', (event, filename) => {
 //监听到文件改动时，就更新defaultFile，方便服务器返回最新的文件内容
     if (filename) {
-        console.log('静态文件发生变更，发起ws消息刷新页面。')
-        io.sockets.emit("filechange");
+        refresh()
     }
 })
 

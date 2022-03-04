@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dict",
+    "target": "es6",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "example/index.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
