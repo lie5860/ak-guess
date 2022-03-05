@@ -112,9 +112,35 @@ export default function Home() {
     }, 1500)
   }
   const Help = () => {
-    let content = "<p><span className='title'>小刻也能学会的游戏规则！</span></p>"
-    content+="<p>最多可以尝试"+defaultTimes+"次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！</p>"
-    changeModalInfo({"message": content, "width": '80%'});
+    const content = <><p><span className='title'>小刻也能学会的游戏规则！</span></p>
+    <hr/>
+    <p>最多可以尝试{defaultTimes}次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！
+    <ul className="tipList">
+    <li><div className="emoji correct"/>猜测的干员该属性和神秘干员完全一样！太棒了！</li>
+    <li><div className="emoji wrong"/>猜测的干员该属性和神秘干员完全不一样！难搞哦！</li>
+    <li><div className="emoji down"/>猜测的干员稀有度比神秘干员高！试着往低星猜吧！</li>
+    <li><div className="emoji up"/>猜测的干员稀有度比神秘干员低！试着往高星猜吧！</li>
+    <li><div className="emoji wrongpos"/>猜测的干员该属性和神秘干员部分一样！再加把劲！</li>
+    </ul>
+    <span>干员所属的势力将拆为多级维度！<br/>职业也将按照主职业和分支职业进行比对！</span>
+    <hr/>
+    游戏数据来自PRTS！<br/>最近更新时间是2022-03-05！<br/>目前有{chartsData.length}名干员！
+    </p></>
+    changeModalInfo({"message": content, "width": '80%'})
+  }
+  const Record = () => {
+    const content = <><p><span className='title'>　玩个过瘾！</span></p>
+    <p>游戏次数：0<br/>
+    胜利次数：0<br/>
+    胜率：0.00%<br/>
+    平均猜测次数：0（胜利时）
+    </p><hr/><p><span className='title'>　每日挑战！</span></p>
+    <p>游戏次数：0<br/>
+    胜利次数：0<br/>
+    胜率：0.00%<br/>
+    平均猜测次数：0（胜利时）
+    </p></>
+    changeModalInfo({"message": content, "width": '80%'})
   }
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
   const isOver = data.length > 5 || isWin
@@ -172,12 +198,11 @@ export default function Home() {
           <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>玩个过瘾！
           </div>
           {remoteAnswerKey !== -1 &&
-          <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日模式</div>}
-          <div className={`ak-tab-item`} onClick={() => Help()}>
-            小刻也懂！
-          </div>
+          <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
+          <div className={`ak-tab-item`} onClick={() => Help()}>小刻学堂！</div>
+          <div className={`ak-tab-item`} onClick={() => Record()}>光辉之路！</div>
         </div>
-        <div><span className={`title`}>干员 猜猜乐</span></div>
+        <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
         <div>你有{times}/6次机会猜测这只神秘干员，试试看！
           <div className="tooltip">
@@ -233,7 +258,7 @@ export default function Home() {
         }
         {msg && <span className={`global-tooltiptext`}>{msg}</span>}
         {modal && <span className={`global-tooltiptext`} style={{width: modal?.width}}>
-            <div className={`clean-float`} style={{paddingBottom:20}}>
+            <div className={`clean-float`}>
                 <div style={{height: 20, width: 20, float: "right"}} onClick={() => changeModalInfo(null)}>
                 <svg viewBox="0 0 100 100" version="1.1"
                      xmlns="http://www.w3.org/2000/svg"><polygon
@@ -245,8 +270,7 @@ export default function Home() {
                 </svg>
             </div>
           </div>
-          <div>{modal?.message}</div>
-
+          <div style={{marginTop:-20}}>{modal?.message}</div>
         </span>}
       </div>
     </div>
