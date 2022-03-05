@@ -17,6 +17,11 @@ esbuild
       stylePlugin()
     ]
 
-  })
-  .catch(() => process.exit(1));
-console.log(`编译完成 耗时 ${new Date().valueOf() - time1}ms`)
+  }).then(() => {
+
+  console.log(`编译完成 耗时 ${new Date().valueOf() - time1}ms`)
+})
+  .catch(() => {
+    console.log(`error`)
+    process.exit(1)
+  });
