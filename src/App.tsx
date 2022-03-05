@@ -39,7 +39,7 @@ const renderGuessTable = (data, answer) => {
   </div>
 }
 const markText = (data, times, showName) => {
-  let text = `干员猜猜乐 ` + times + `/` + defaultTimes;
+  let text = `干员猜猜乐 ` + (defaultTimes-times) + `/` + defaultTimes;
   data.forEach(v => {
     text += '\n'
     TYPES.map(({key, type}) => {
