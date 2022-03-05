@@ -88,15 +88,21 @@ export default function Home() {
     if (dayData) {
       setDayData(JSON.parse(dayData))
     }
+    const timesData = localStorage.getItem('tryTimes');
+    if (timesData) {
+      setTimes(timesData)
+    }
   }, [])
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
-  const setData = mode === 'random' ? (v) => {
+  const setData = mode === 'random' ? (v,t) => {
     localStorage.setItem('randomData', JSON.stringify(v))
     localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
+    localStorage.setItem('tryTimes', t);
     setRandomData(v)
-  } : (v) => {
+  } : (v,t) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
+    localStorage.setItem('tryTimes', t);
     setDayData(v)
   }
   const showModal = (msg) => {
@@ -104,6 +110,11 @@ export default function Home() {
     setTimeout(() => {
       setMsg('')
     }, 1500)
+  }
+  const Help = () => {
+    let content = "<p><span className='title'>小刻也能学会的游戏规则！</span></p>"
+    content+="<p>最多可以尝试"+defaultTimes+"次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！</p>"
+    changeModalInfo({"message": content, "width": '80%'});
   }
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
   const isOver = data.length > 5 || isWin
@@ -150,7 +161,7 @@ export default function Home() {
         }
         res[key] = emoji
       })
-      setData([...data, res])
+      setData([...data, res], times-1)
       inputRef.current.value = ''
     }
   }
@@ -162,11 +173,11 @@ export default function Home() {
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日模式</div>}
-          <div className={`ak-tab-item`} onClick={() => changeModalInfo({message: "小刻也能学会的游戏规则！", width: '80%'})}>
+          <div className={`ak-tab-item`} onClick={() => Help()}>
             小刻也懂！
           </div>
         </div>
-        <div><span className={`title`}>干员猜猜乐</span></div>
+        <div><span className={`title`}>干员 猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
         <div>你有{times}/6次机会猜测这只神秘干员，试试看！
           <div className="tooltip">
@@ -215,8 +226,8 @@ export default function Home() {
         }
 
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
-          setData([])
-          setTimes(defaultTimes);
+          setData([], defaultTimes)
+          setTimes(defaultTimes)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 新的游戏</a>
         }
