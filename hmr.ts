@@ -2,7 +2,7 @@ const fs = require('fs')
 const exec = require('child_process').exec;
 const http = require("http");
 const path = require("path");
-const port = 30233;
+const port = 30000;
 const mimeLists = {
     css: 'text/css',
     html: 'text/html',

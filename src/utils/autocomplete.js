@@ -25,7 +25,7 @@ export default function autocomplete(inp, arr) {
         alias.forEach(v => {
             new RegExp(v.regexp).exec(inputVal) && (dealModal.push(...v.values))
         })
-        console.log(dealModal, 'dealModal')
+        console.log(inputVal, 'inputVal')
         const nameMatchItems = [];
         const aliasMatchItems = [];
         for (i = 0; i < arr.length; i++) {
@@ -45,9 +45,9 @@ export default function autocomplete(inp, arr) {
                 (or any other open lists of autocompleted values:*/
                 closeAllLists();
             });
-            if (arr[i].indexOf(inputVal) !== -1) {
+            if (arr[i].toUpperCase().indexOf(inputVal) !== -1) {
                 nameMatchItems.push(b)
-            } else if (dealModal.some(v => arr[i].toUpperCase().indexOf(v) !== -1)) {
+            } else if (dealModal.some(v => arr[i].toUpperCase().indexOf(v.toUpperCase()) !== -1)) {
                 aliasMatchItems.push(b)
             }
         }

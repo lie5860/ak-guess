@@ -186,7 +186,11 @@ export default function Home() {
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">
-            <input ref={inputRef} id="guess"/>
+            <input ref={inputRef} id="guess" placeholder={"请输入干员名称"} onKeyDown={(e) => {
+              if (e.keyCode == 13) {
+                onSubmit(e)
+              }
+            }}/>
           </div>
           <input className="guess_input" type="submit" value="提交"/>
         </form>
