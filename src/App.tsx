@@ -200,7 +200,7 @@ export default function Home() {
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
           <div className={`ak-tab-item`} onClick={() => Help()}>小刻学堂！</div>
-          <div className={`ak-tab-item`} onClick={() => Record()}>光辉之路！</div>
+          {false&&<div className={`ak-tab-item`} onClick={() => Record()}>光辉之路！</div>}
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
