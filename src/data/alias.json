@@ -62,7 +62,67 @@
     ]
   },
   {
-    "regexp": "小僧",
+    "regexp": "富婆",
+    "values": [
+      "杰西卡","诗怀雅","鞭刃","调香师","玫兰莎"
+    ]
+  },
+  {
+    "regexp": "鸡翅",
+    "values": [
+      "棘刺"
+    ]
+  },
+  {
+    "regexp": ".*鸡.*",
+    "values": [
+      "雪雉"
+    ]
+  },
+  {
+    "regexp": "鸡精",
+    "values": [
+      "极境"
+    ]
+  },
+  {
+    "regexp": ".*龟.*",
+    "values": [
+      "蛇屠箱"
+    ]
+  },
+  {
+    "regexp": "ASH",
+    "values": [
+      "灰烬"
+    ]
+  },
+  {
+    "regexp": ".*瓜.*",
+    "values": [
+      "安比尔"
+    ]
+  },
+  {
+    "regexp": "神",
+    "values": [
+      "异客"
+    ]
+  },
+  {
+    "regexp": "(MON.*)|(M3)",
+    "values": [
+      "凯尔希"
+    ]
+  },
+  {
+    "regexp": ".*车.*",
+    "values": [
+      "Lancet-2","Castle-3","THRM-EX","正义骑士号"
+    ]
+  },
+  {
+    "regexp": ".*僧.*",
     "values": [
       "嵯峨"
     ]

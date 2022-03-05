@@ -5,10 +5,11 @@ import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
 
+const defaultTimes = 6;
 const renderGuessTable = (data, answer) => {
   return <div className={'guesses'}>
     <div className="row">
-      {TYPES.map(({label}) => <div className='column' key={label}>{label}</div>)}
+      {TYPES.map(({label}) => <div className='column' key={label}><span  className={'title'}>{label}</span></div>)}
     </div>
     {data.map((v, index) => {
       return <div className="row" key={index}>
@@ -37,8 +38,8 @@ const renderGuessTable = (data, answer) => {
     })}
   </div>
 }
-const markText = (data, showName) => {
-  let text = `干员猜猜乐 http://akg.saki.cc`
+const markText = (data, times, showName) => {
+  let text = `干员猜猜乐 ` + times + `/` + defaultTimes;
   data.forEach(v => {
     text += '\n'
     TYPES.map(({key, type}) => {
@@ -49,6 +50,7 @@ const markText = (data, showName) => {
       }
     })
   })
+  text += '\nhttp://akg.saki.cc';
   return text
 }
 const ShareIcon = () => {
@@ -64,6 +66,7 @@ const ShareIcon = () => {
   </div>
 }
 export default function Home() {
+  const [times, setTimes] = React.useState(defaultTimes);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
@@ -116,6 +119,7 @@ export default function Home() {
     } else if (data.map(v => v.guess.name).indexOf(inputName) !== -1) {
       showModal('已经输入过啦 换一个吧！');
     } else {
+      setTimes(times-1);
       const inputItem = chartsData.filter(v => v.name === inputName)[0];
       const res = {}
       TYPES.forEach(({key, type}) => {
@@ -153,14 +157,15 @@ export default function Home() {
     <div className={'container'}>
       <div className={'main-container clean-float'}>
         <div className={'ak-tab'}>
-          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>随机模式
+          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>玩个过瘾！
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日模式</div>}
+          <div className={`ak-tab-item`} onClick={() => showModal("小刻也能学会的游戏规则！")}>小刻也懂！</div>
         </div>
-        <div>干员猜猜乐</div>
+        <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div>你有6次机会猜测这只神秘干员，试试看！
+        <div>你有{times}/6次机会猜测这只神秘干员，试试看！
           <div className="tooltip">
             分享 Emoji 映射表
             <span className="tooltiptext">
@@ -189,13 +194,13 @@ export default function Home() {
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(markText(data, false), showModal)
+              copyCurrentDay(markText(data, times, false), showModal)
             }}>
                 <ShareIcon/>分享
             </a>
 
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(markText(data, true), showModal)
+              copyCurrentDay(markText(data, times, true), showModal)
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>分享(带名称)
             </a>
@@ -204,6 +209,7 @@ export default function Home() {
 
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
           setData([])
+          setTimes(defaultTimes);
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 新的游戏</a>
         }
