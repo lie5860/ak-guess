@@ -1,0 +1,16 @@
+{
+  "name": "干员猜猜乐",
+  "short_name": "ak-guess",
+  "theme_color": "#04080b",
+  "background_color": "#060a0e",
+  "display": "browser",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "/index.html",
+  "orientation": "landscape"
+}
