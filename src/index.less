@@ -209,6 +209,13 @@ img {
     font-weight: bold;
 }
 
+.clean-float:after { /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 .answer, .input-form, .share-body {
     margin: 20px;
 }

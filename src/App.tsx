@@ -9,7 +9,7 @@ const defaultTimes = 6;
 const renderGuessTable = (data, answer) => {
   return <div className={'guesses'}>
     <div className="row">
-      {TYPES.map(({label}) => <div className='column' key={label}><span  className={'title'}>{label}</span></div>)}
+      {TYPES.map(({label}) => <div className='column' key={label}><span className={'title'}>{label}</span></div>)}
     </div>
     {data.map((v, index) => {
       return <div className="row" key={index}>
@@ -39,7 +39,7 @@ const renderGuessTable = (data, answer) => {
   </div>
 }
 const markText = (data, times, showName) => {
-  let text = `干员猜猜乐 ` + (defaultTimes-times) + `/` + defaultTimes;
+  let text = `干员猜猜乐 ` + (defaultTimes - times) + `/` + defaultTimes;
   data.forEach(v => {
     text += '\n'
     TYPES.map(({key, type}) => {
@@ -70,6 +70,7 @@ export default function Home() {
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
+  const [modal, changeModalInfo] = React.useState()
   const [randomAnswerKey, setRandomAnswerKey] = React.useState(Math.floor(Math.random() * chartsData.length))
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
   const [randomData, setRandomData] = React.useState([])
@@ -119,7 +120,7 @@ export default function Home() {
     } else if (data.map(v => v.guess.name).indexOf(inputName) !== -1) {
       showModal('已经输入过啦 换一个吧！');
     } else {
-      setTimes(times-1);
+      setTimes(times - 1);
       const inputItem = chartsData.filter(v => v.name === inputName)[0];
       const res = {}
       TYPES.forEach(({key, type}) => {
@@ -161,7 +162,9 @@ export default function Home() {
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日模式</div>}
-          <div className={`ak-tab-item`} onClick={() => showModal("小刻也能学会的游戏规则！")}>小刻也懂！</div>
+          <div className={`ak-tab-item`} onClick={() => changeModalInfo({message: "小刻也能学会的游戏规则！", width: '80%'})}>
+            小刻也懂！
+          </div>
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
@@ -218,6 +221,22 @@ export default function Home() {
         }}>▶️ 新的游戏</a>
         }
         {msg && <span className={`global-tooltiptext`}>{msg}</span>}
+        {modal && <span className={`global-tooltiptext`} style={{width: modal?.width}}>
+            <div className={`clean-float`} style={{paddingBottom:20}}>
+                <div style={{height: 20, width: 20, float: "right"}} onClick={() => changeModalInfo(null)}>
+                <svg viewBox="0 0 100 100" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg"><polygon
+                    points="15,10 50,46 85,10 90,15 50,54 10,15" fill="rgba(255,255,255,1)"></polygon>
+                    <polygon
+                        points="50,46 50,46 50,46 50,54 50,54 50,54" fill="rgba(255,255,255,1)"></polygon>
+                    <polygon
+                        points="10,85 50,46 90,85 85,90 50,54 15,90" fill="rgba(255,255,255,1)"></polygon>
+                </svg>
+            </div>
+          </div>
+          <div>{modal?.message}</div>
+
+        </span>}
       </div>
     </div>
   )
