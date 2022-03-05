@@ -4,6 +4,8 @@ import {chartsData, TYPES, VAL_DICT} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
+import ShareIcon from './component/ShareIcon'
+import CloseIcon from "./component/CloseIcon";
 
 const defaultTimes = 6;
 const renderGuessTable = (data, answer) => {
@@ -52,18 +54,6 @@ const markText = (data, times, showName) => {
   })
   text += '\nhttp://akg.saki.cc';
   return text
-}
-const ShareIcon = () => {
-  return <div className={'share-icon'}>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-         viewBox="0 0 300 300">
-      <circle cx="242" cy="49" r="35"></circle>
-      <circle cx="242" cy="251" r="35"></circle>
-      <circle cx="58" cy="150" r="35"></circle>
-      <line x1="242" y1="49" x2="59" y2="150" stroke-width="20"></line>
-      <line x1="242" y1="251" x2="59" y2="150" stroke-width="20"></line>
-    </svg>
-  </div>
 }
 export default function Home() {
   const [times, setTimes] = React.useState(defaultTimes);
@@ -258,7 +248,7 @@ export default function Home() {
         }
         {msg && <span className={`global-tooltiptext`}>{msg}</span>}
         {modal && <span className={`global-tooltiptext`} style={{width: modal?.width}}>
-            <div className={`clean-float`}>
+
                 <div style={{height: 20, width: 20, float: "right"}} onClick={() => changeModalInfo(null)}>
                 <svg viewBox="0 0 100 100" version="1.1"
                      xmlns="http://www.w3.org/2000/svg"><polygon
@@ -268,7 +258,6 @@ export default function Home() {
                     <polygon
                         points="10,85 50,46 90,85 85,90 50,54 15,90" fill="rgba(255,255,255,1)"></polygon>
                 </svg>
-            </div>
           </div>
           <div style={{marginTop:-20}}>{modal?.message}</div>
         </span>}
