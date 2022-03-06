@@ -16,3 +16,5 @@ export const VAL_DICT = {
   'down': '🔽',
 }
 export const chartsData = dealData;
+export const defaultTryTimes = 8;
+export const updateData = '2022-3-5';

@@ -1,13 +1,12 @@
 import autocomplete from './utils/autocomplete'
 import {React} from './global'
-import {chartsData, TYPES, VAL_DICT} from "./const";
+import {chartsData, TYPES, VAL_DICT, defaultTryTimes, updateData} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
 import ShareIcon from './component/ShareIcon'
 import CloseIcon from "./component/CloseIcon";
 
-const defaultTimes = 6;
 const renderGuessTable = (data, answer) => {
   return <div className={'guesses'}>
     <div className="row">
@@ -41,7 +40,7 @@ const renderGuessTable = (data, answer) => {
   </div>
 }
 const markText = (data, times, showName) => {
-  let text = `干员猜猜乐 ` + (defaultTimes - times) + `/` + defaultTimes;
+  let text = `干员猜猜乐 ` + (defaultTryTimes - times) + `/` + defaultTryTimes;
   data.forEach(v => {
     text += '\n'
     TYPES.map(({key, type}) => {
@@ -56,7 +55,7 @@ const markText = (data, times, showName) => {
   return text
 }
 export default function Home() {
-  const [times, setTimes] = React.useState(defaultTimes);
+  const [times, setTimes] = React.useState(defaultTryTimes);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
@@ -104,7 +103,7 @@ export default function Home() {
   const Help = () => {
     const content = <><p><span className='title'>小刻也能学会的游戏规则！</span></p>
     <hr/>
-    <p>最多可以尝试{defaultTimes}次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！
+    <p>最多可以尝试{defaultTryTimes}次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！
     <ul className="tipList">
     <li><div className="emoji correct"/>猜测的干员该属性和神秘干员完全一样！太棒了！</li>
     <li><div className="emoji wrong"/>猜测的干员该属性和神秘干员完全不一样！难搞哦！</li>
@@ -112,9 +111,9 @@ export default function Home() {
     <li><div className="emoji up"/>猜测的干员稀有度比神秘干员低！试着往高星猜吧！</li>
     <li><div className="emoji wrongpos"/>猜测的干员该属性和神秘干员部分一样！再加把劲！</li>
     </ul>
-    <span>干员所属的势力将拆为多级维度！<br/>职业也将按照主职业和分支职业进行比对！</span>
+    <span>干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！</span>
     <hr/>
-    游戏数据来自PRTS！<br/>最近更新时间是2022-03-05！<br/>目前有{chartsData.length}名干员！
+    游戏数据来自PRTS！<br/>最近更新时间是{updateData}！<br/>目前有{chartsData.length}名干员！
     </p></>
     changeModalInfo({"message": content, "width": '80%'})
   }
@@ -133,7 +132,7 @@ export default function Home() {
     changeModalInfo({"message": content, "width": '80%'})
   }
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
-  const isOver = data.length > 5 || isWin
+  const isOver = data.length >= defaultTryTimes || isWin
   const onSubmit = (e) => {
     e.stopPropagation();
     if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
@@ -194,7 +193,7 @@ export default function Home() {
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div>你有{times}/6次机会猜测这只神秘干员，试试看！
+        <div>你有{times}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
           <div className="tooltip">
             分享 Emoji 映射表
             <span className="tooltiptext">
@@ -241,8 +240,8 @@ export default function Home() {
         }
 
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
-          setData([], defaultTimes)
-          setTimes(defaultTimes)
+          setData([], defaultTryTimes)
+          setTimes(defaultTryTimes)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 新的游戏</a>
         }
