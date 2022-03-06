@@ -113,12 +113,12 @@ export default function Home() {
     </ul>
     <span>干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！</span>
     <hr/>
-    游戏数据来自PRTS！<br/>最近更新时间是{updateData}！<br/>目前有{chartsData.length}名干员！
+    游戏数据来自PRTS！<br/>最近更新时间是{updateData}！<br/>目前有{chartsData.length}名干员（包含异格和升变）！
     </p></>
     changeModalInfo({"message": content, "width": '80%'})
   }
   const Record = () => {
-    const content = <><p><span className='title'>　玩个过瘾！</span></p>
+    const content = <><p><span className='title'>　随心所欲！</span></p>
     <p>游戏次数：0<br/>
     胜利次数：0<br/>
     胜率：0.00%<br/>
@@ -184,7 +184,7 @@ export default function Home() {
     <div className={'container'}>
       <div className={'main-container clean-float'}>
         <div className={'ak-tab'}>
-          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>玩个过瘾！
+          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>随心所欲！
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
           <input className="guess_input" type="submit" value="提交"/>
         </form>
-        {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer.name}。`}</div>}
+        {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer.name}！`}</div>}
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
@@ -243,7 +243,7 @@ export default function Home() {
           setData([], defaultTryTimes)
           setTimes(defaultTryTimes)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ 新的游戏</a>
+        }}>▶️ 玩个过瘾！</a>
         }
         {msg && <span className={`global-tooltiptext`}>{msg}</span>}
         {modal && <span className={`global-tooltiptext`} style={{width: modal?.width}}>
