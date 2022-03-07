@@ -14,6 +14,7 @@ import {getDailyData, saveNum} from "./server";
 
 export default function Home() {
   const [times, setTimes] = React.useState(defaultTryTimes);
+  const [dayTimes, setDayTimes] = React.useState(defaultTryTimes);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
@@ -26,14 +27,15 @@ export default function Home() {
   const chartNames = React.useMemo(() => chartsData.map(v => v.name), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   React.useEffect(() => {
-    getDailyData().then(({$last_date, daily,num}) => {
-      setUpdateDate($last_date)
+    getDailyData().then(({last_date, daily,num}) => {
+      setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
       if(num !==chartsData.length){
         saveNum(chartsData.length).then(() => {
           // location.reload()
         })
       }
+
     })
 
     autocomplete(inputRef.current, chartNames);
@@ -50,6 +52,10 @@ export default function Home() {
     if (timesData) {
       setTimes(timesData)
     }
+    const dayTimesData = localStorage.getItem('tryDayTimes');
+    if (dayTimesData) {
+      setDayTimes(dayTimesData)
+    }
   }, [])
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
@@ -60,7 +66,7 @@ export default function Home() {
     setRandomData(v)
   } : (v, t) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
-    localStorage.setItem('tryTimes', t);
+    localStorage.setItem('tryDayTimes', t);
     setDayData(v)
   }
   const showModal = (msg) => {
@@ -75,6 +81,7 @@ export default function Home() {
     e.stopPropagation();
     if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
       alert('数据已更新，即将刷新页面')
+      setDayTimes(defaultTryTimes)
       window.location.reload()
       return;
     }
@@ -84,7 +91,6 @@ export default function Home() {
     } else if (data.map(v => v.guess.name).indexOf(inputName) !== -1) {
       showModal('已经输入过啦 换一个吧！');
     } else {
-      setTimes(times - 1);
       const inputItem = chartsData.filter(v => v.name === inputName)[0];
       const res = {}
       TYPES.forEach(({key, type}) => {
@@ -114,7 +120,13 @@ export default function Home() {
         }
         res[key] = emoji
       })
-      setData([...data, res], times - 1)
+      if (mode ==='day') {
+        setDayTimes(dayTimes -1);
+        setData([...data, res], dayTimes - 1)
+      } else {
+        setTimes(times - 1);
+        setData([...data, res], times - 1)
+      }
       inputRef.current.value = ''
     }
   }
@@ -139,7 +151,7 @@ export default function Home() {
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div>你有{times}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
+        <div>你有{mode === 'day' ? dayTimes : times}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
           <div className="tooltip" onClick={() => {
             setMsg(<>
               🟩: 完全正确
