@@ -6,5 +6,5 @@ import React from 'https://cdn.jsdelivr.net/npm/@esm-bundle/react@17.0.2/esm/rea
 // import ReactDom from 'https://unpkg.com/@esm-bundle/react-dom/esm/react-dom.development.js';
 export {
   ReactDom,
-  React
+  React,
 }

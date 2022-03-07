@@ -10,6 +10,7 @@ import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import History from "./component/History";
 import GuessItem from "./component/GuessItem";
+import {getDailyData, saveNum} from "./server";
 
 export default function Home() {
   const [times, setTimes] = React.useState(defaultTryTimes);
@@ -21,9 +22,20 @@ export default function Home() {
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
   const [randomData, setRandomData] = React.useState([])
   const [dayData, setDayData] = React.useState([])
+  const [updateDate, setUpdateDate] = React.useState('')
   const chartNames = React.useMemo(() => chartsData.map(v => v.name), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   React.useEffect(() => {
+    getDailyData().then(({$last_date, daily,num}) => {
+      setUpdateDate($last_date)
+      setRemoteAnswerKey(daily)
+      if(num !==chartsData.length){
+        saveNum(chartsData.length).then(() => {
+          // location.reload()
+        })
+      }
+    })
+
     autocomplete(inputRef.current, chartNames);
     const randomData = localStorage.getItem('randomData')
     if (randomData) {
@@ -115,7 +127,9 @@ export default function Home() {
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
           <div className={`ak-tab-item`} onClick={() => {
-            changeModalInfo({"message": <Help/>, "width": '80%'})
+            changeModalInfo({
+              "message": <Help updateDate={updateDate}/>, "width": '80%'
+            })
           }}>小刻学堂！
           </div>
           {/*{false && <div className={`ak-tab-item`} onClick={() => {*/}
