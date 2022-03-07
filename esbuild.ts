@@ -10,7 +10,11 @@ esbuild
     minify: true,
     splitting: true,
     format: 'esm',
-    target: ['esnext'],
+
+    target: [
+      'esnext',
+      'safari11',
+    ],
     // external: ['react-dom', 'react'],
     loader: {'.jpg': 'binary', '.png': 'binary', '.js': 'jsx'},
     plugins: [
