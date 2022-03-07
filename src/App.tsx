@@ -13,8 +13,6 @@ import GuessItem from "./component/GuessItem";
 import {getDailyData, saveNum} from "./server";
 
 export default function Home() {
-  const [times, setTimes] = React.useState(defaultTryTimes);
-  const [dayTimes, setDayTimes] = React.useState(defaultTryTimes);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
@@ -48,25 +46,15 @@ export default function Home() {
     if (dayData) {
       setDayData(JSON.parse(dayData))
     }
-    const timesData = localStorage.getItem('tryTimes');
-    if (timesData) {
-      setTimes(timesData)
-    }
-    const dayTimesData = localStorage.getItem('tryDayTimes');
-    if (dayTimesData) {
-      setDayTimes(dayTimesData)
-    }
   }, [])
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
   const setData = mode === 'random' ? (v, t) => {
     localStorage.setItem('randomData', JSON.stringify(v))
     localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
-    localStorage.setItem('tryTimes', t);
     setRandomData(v)
   } : (v, t) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
-    localStorage.setItem('tryDayTimes', t);
     setDayData(v)
   }
   const showModal = (msg) => {
@@ -81,7 +69,6 @@ export default function Home() {
     e.stopPropagation();
     if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
       alert('数据已更新，即将刷新页面')
-      setDayTimes(defaultTryTimes)
       window.location.reload()
       return;
     }
@@ -120,13 +107,7 @@ export default function Home() {
         }
         res[key] = emoji
       })
-      if (mode ==='day') {
-        setDayTimes(dayTimes -1);
-        setData([...data, res], dayTimes - 1)
-      } else {
-        setTimes(times - 1);
-        setData([...data, res], times - 1)
-      }
+      setData([...data, res])
       inputRef.current.value = ''
     }
   }
@@ -151,7 +132,7 @@ export default function Home() {
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div>你有{mode === 'day' ? dayTimes : times}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
+        <div>你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
           <div className="tooltip" onClick={() => {
             setMsg(<>
               🟩: 完全正确
@@ -185,21 +166,20 @@ export default function Home() {
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, (mode === 'day' ? dayTimes : times), today, false), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, today, false), showModal)
             }}>
                 <ShareIcon/>分享
             </a>
 
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, (mode === 'day' ? dayTimes : times), today, true), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, today, true), showModal)
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>分享(带名称)
             </a>
         </div>
         }
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
-          setData([], defaultTryTimes)
-          setTimes(defaultTryTimes)
+          setData([])
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 玩个过瘾！</a>
         }
