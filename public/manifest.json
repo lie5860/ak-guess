@@ -3,12 +3,32 @@
   "short_name": "ak-guess",
   "theme_color": "#04080b",
   "background_color": "#060a0e",
-  "display": "browser",
+  "display": "standalone",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icon/192.png",
       "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon/128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "icon/144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icon/256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/index.html",

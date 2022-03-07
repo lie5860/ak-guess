@@ -12,7 +12,7 @@ esbuild
     format: 'esm',
     target: ['esnext'],
     // external: ['react-dom', 'react'],
-    loader: {'.jpg': 'file', '.png': 'file', '.js': 'jsx'},
+    loader: {'.jpg': 'binary', '.png': 'binary', '.js': 'jsx'},
     plugins: [
       stylePlugin()
     ]
