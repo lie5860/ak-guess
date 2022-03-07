@@ -8,8 +8,8 @@ import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
 import shareTextCreator from "./utils/share";
 import Help from './component/Help';
-import History from "./component/History";
 import GuessItem from "./component/GuessItem";
+import {loadRecordData,saveRecordData,History} from "./component/History";
 import {getDailyData, saveNum} from "./server";
 
 export default function Home() {
@@ -65,6 +65,27 @@ export default function Home() {
   }
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
   const isOver = data.length >= defaultTryTimes || isWin
+
+  if (isOver) {
+    let record = loadRecordData();
+    if (mode === 'day') {
+      if (isWin) {
+        record.dailyWinTimes += 1;
+        record.dailyWinTryTimes += data.length;
+      }
+      record.dailyPlayTimes += 1;
+      record.dailyTotalTryTimes += data.length;
+    } else {
+      if (isWin) {
+        record.winTryTimes += data.length;
+        record.winTimes += 1;
+      }
+      record.playTimes += 1;
+      record.totalTryTimes += data.length;
+    }
+    saveRecordData(record);
+  }
+
   const onSubmit = (e) => {
     e.stopPropagation();
     if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
@@ -125,10 +146,7 @@ export default function Home() {
             })
           }}>小刻学堂！
           </div>
-          {/*{false && <div className={`ak-tab-item`} onClick={() => {*/}
-          {/*  changeModalInfo({"message": <History/>, "width": '80%'})*/}
-          {/*}>光辉之路！</div>*/}
-          {/*}*/}
+          <div className={`ak-tab-item`} onClick={() => { changeModalInfo({"message": <History/>, "width": '80%'}) } }>光辉之路！</div>
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>

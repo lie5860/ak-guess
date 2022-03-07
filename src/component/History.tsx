@@ -1,19 +1,45 @@
 import {React} from "../global";
 
+const loadRecordData = () => {
+  let record = localStorage.getItem("record");
+  if (record) {
+    record = JSON.parse(record);
+  } else {
+    record = {
+      playTimes: 0,
+      winTimes: 0,
+      totalTryTimes: 0,
+      winTryTimes: 0,
+      dailyPlayTimes: 0,
+      dailyWinTimes: 0,
+      dailyWinTryTimes: 0,
+      dailyTotalTryTimes: 0
+    }
+  }
+  return record;
+}
+
+const saveRecordData = (record) => {
+  localStorage.setItem("record", JSON.stringify(record));
+}
+
 const History = () => {
+  const record = loadRecordData();
   return <><p><span className='title'>　随心所欲！</span></p>
-    <p>游戏次数：0<br/>
-      胜利次数：0<br/>
-      胜率：0.00%<br/>
-      平均猜测次数：0（胜利时）
+    <p>游戏次数：{record.playTimes}<br/>
+      胜利次数：{record.winTimes}<br/>
+      胜率：{record.winTimes/record.playTimes}%<br/>
+      平均猜测次数：{record.winTryTimes/record.winTimes}（胜利时）
     </p>
     <hr/>
     <p><span className='title'>　每日挑战！</span></p>
-    <p>游戏次数：0<br/>
-      胜利次数：0<br/>
-      胜率：0.00%<br/>
-      平均猜测次数：0（胜利时）
+    <p>游戏次数：{record.dailyPlayTimes}<br/>
+      胜利次数：{record.dailyWinTimes}<br/>
+      胜率：{record.dailyWinTimes/record.dailyPlayTimes}%<br/>
+      平均猜测次数：{record.dailyWinTryTimes/record.dailyWinTimes}（胜利时）
     </p>
   </>;
 }
-export default History
+export {
+  loadRecordData,saveRecordData,History
+}
