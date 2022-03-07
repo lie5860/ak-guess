@@ -185,13 +185,13 @@ export default function Home() {
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, times, false), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, (mode === 'day' ? dayTimes : times), today, false), showModal)
             }}>
                 <ShareIcon/>分享
             </a>
 
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, times, true), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, (mode === 'day' ? dayTimes : times), today, true), showModal)
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>分享(带名称)
             </a>
