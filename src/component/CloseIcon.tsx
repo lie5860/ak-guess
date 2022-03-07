@@ -1,7 +1,7 @@
 import {React} from "../global";
 
 const CloseIcon = ({onClick}) => {
-  return <div style={{height: 20, width: 20, float: "right"}} onClick={onClick}>
+  return <div style={{right: 10, top: 10, width: 20, height: 20, position: "absolute"}} onClick={onClick}>
     <svg viewBox="0 0 100 100" version="1.1"
          xmlns="http://www.w3.org/2000/svg">
       <polygon

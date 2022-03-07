@@ -1,59 +1,16 @@
 import autocomplete from './utils/autocomplete'
 import {React} from './global'
-import {chartsData, TYPES, VAL_DICT, defaultTryTimes, updateData} from "./const";
+import {chartsData, TYPES, defaultTryTimes} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
 import ShareIcon from './component/ShareIcon'
-import CloseIcon from "./component/CloseIcon";
+import Modal from "./component/Modal";
+import shareTextCreator from "./utils/share";
+import Help from './component/Help';
+import History from "./component/History";
+import GuessItem from "./component/GuessItem";
 
-const renderGuessTable = (data, answer) => {
-  return <div className={'guesses'}>
-    <div className="row">
-      {TYPES.map(({label}) => <div className='column' key={label}><span className={'title'}>{label}</span></div>)}
-    </div>
-    {data.map((v, index) => {
-      return <div className="row" key={index}>
-        {TYPES.map(({key, type}) => {
-          if (key === 'guess') {
-            const {name, rarity, team, className, race, painter} = v.guess
-            return <div className='column' key={key}>
-              <div className="tooltip">
-                {name}
-                <span className="tooltiptext">
-                                    <div><span className={'title'}>干员名称:</span>{name}</div>
-                                    <div><span className={'title'}>稀有度:</span>{1 + rarity}</div>
-                                    <div><span className={'title'}>阵营:</span>{team?.join(' ')}</div>
-                                    <div><span className={'title'}>职业:</span>{className?.join('-')}</div>
-                                    <div><span className={'title'}>种族:</span>{race}</div>
-                                    <div><span className={'title'}>画师:</span>{painter}</div>
-                                </span>
-              </div>
-            </div>
-          }
-          return <div className='column' key={key}>
-            <div className={`emoji ${v[key]}`}/>
-          </div>
-        })}
-      </div>
-    })}
-  </div>
-}
-const markText = (data, times, showName) => {
-  let text = `干员猜猜乐 ` + (defaultTryTimes - times) + `/` + defaultTryTimes;
-  data.forEach(v => {
-    text += '\n'
-    TYPES.map(({key, type}) => {
-      if (key === 'guess') {
-        showName && (text += v.guess.name)
-      } else {
-        text += VAL_DICT[v[key]]
-      }
-    })
-  })
-  text += '\nhttp://akg.saki.cc';
-  return text
-}
 export default function Home() {
   const [times, setTimes] = React.useState(defaultTryTimes);
   const inputRef = React.useRef();
@@ -84,12 +41,12 @@ export default function Home() {
   }, [])
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
-  const setData = mode === 'random' ? (v,t) => {
+  const setData = mode === 'random' ? (v, t) => {
     localStorage.setItem('randomData', JSON.stringify(v))
     localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
     localStorage.setItem('tryTimes', t);
     setRandomData(v)
-  } : (v,t) => {
+  } : (v, t) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
     localStorage.setItem('tryTimes', t);
     setDayData(v)
@@ -99,37 +56,6 @@ export default function Home() {
     setTimeout(() => {
       setMsg('')
     }, 1500)
-  }
-  const Help = () => {
-    const content = <><p><span className='title'>小刻也能学会的游戏规则！</span></p>
-    <hr/>
-    <p>最多可以尝试{defaultTryTimes}次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！
-    <ul className="tipList">
-    <li><div className="emoji correct"/>猜测的干员该属性和神秘干员完全一样！太棒了！</li>
-    <li><div className="emoji wrong"/>猜测的干员该属性和神秘干员完全不一样！难搞哦！</li>
-    <li><div className="emoji down"/>猜测的干员稀有度比神秘干员高！试着往低星猜吧！</li>
-    <li><div className="emoji up"/>猜测的干员稀有度比神秘干员低！试着往高星猜吧！</li>
-    <li><div className="emoji wrongpos"/>猜测的干员该属性和神秘干员部分一样！再加把劲！</li>
-    </ul>
-    <span>干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！</span>
-    <hr/>
-    游戏数据来自PRTS！<br/>最近更新时间是{updateData}！<br/>目前有{chartsData.length}名干员（包含异格和升变）！
-    </p></>
-    changeModalInfo({"message": content, "width": '80%'})
-  }
-  const Record = () => {
-    const content = <><p><span className='title'>　随心所欲！</span></p>
-    <p>游戏次数：0<br/>
-    胜利次数：0<br/>
-    胜率：0.00%<br/>
-    平均猜测次数：0（胜利时）
-    </p><hr/><p><span className='title'>　每日挑战！</span></p>
-    <p>游戏次数：0<br/>
-    胜利次数：0<br/>
-    胜率：0.00%<br/>
-    平均猜测次数：0（胜利时）
-    </p></>
-    changeModalInfo({"message": content, "width": '80%'})
   }
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
   const isOver = data.length >= defaultTryTimes || isWin
@@ -176,7 +102,7 @@ export default function Home() {
         }
         res[key] = emoji
       })
-      setData([...data, res], times-1)
+      setData([...data, res], times - 1)
       inputRef.current.value = ''
     }
   }
@@ -188,29 +114,36 @@ export default function Home() {
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
-          <div className={`ak-tab-item`} onClick={() => Help()}>小刻学堂！</div>
-          {false&&<div className={`ak-tab-item`} onClick={() => Record()}>光辉之路！</div>}
+          <div className={`ak-tab-item`} onClick={() => {
+            changeModalInfo({"message": <Help/>, "width": '80%'})
+          }}>小刻学堂！
+          </div>
+          {/*{false && <div className={`ak-tab-item`} onClick={() => {*/}
+          {/*  changeModalInfo({"message": <History/>, "width": '80%'})*/}
+          {/*}>光辉之路！</div>*/}
+          {/*}*/}
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
         <div>你有{times}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
-          <div className="tooltip">
+          <div className="tooltip" onClick={() => {
+            setMsg(<>
+              🟩: 完全正确
+              <br/>
+              🟥: 不正确
+              <br/>
+              🟨: 部分正确
+              <br/>
+              🔼: 猜测值过小
+              <br/>
+              🔽: 猜测值过大
+            </>)
+          }}>
             分享 Emoji 映射表
-            <span className="tooltiptext">
-                        🟩: 完全正确
-                        <br/>
-                        🟥: 不正确
-                        <br/>
-                        🟨: 部分正确
-                        <br/>
-                        🔼: 猜测值过小
-                        <br/>
-                        🔽: 猜测值过大
-                    </span>
           </div>
         </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
-        {!!data?.length && renderGuessTable(data, answer)}
+        {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">
@@ -226,40 +159,28 @@ export default function Home() {
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(markText(data, times, false), showModal)
+              copyCurrentDay(shareTextCreator(data, times, false), showModal)
             }}>
                 <ShareIcon/>分享
             </a>
 
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(markText(data, times, true), showModal)
+              copyCurrentDay(shareTextCreator(data, times, true), showModal)
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>分享(带名称)
             </a>
         </div>
         }
-
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
           setData([], defaultTryTimes)
           setTimes(defaultTryTimes)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 玩个过瘾！</a>
         }
-        {msg && <span className={`global-tooltiptext`}>{msg}</span>}
-        {modal && <span className={`global-tooltiptext`} style={{width: modal?.width}}>
-
-                <div style={{height: 20, width: 20, float: "right"}} onClick={() => changeModalInfo(null)}>
-                <svg viewBox="0 0 100 100" version="1.1"
-                     xmlns="http://www.w3.org/2000/svg"><polygon
-                    points="15,10 50,46 85,10 90,15 50,54 10,15" fill="rgba(255,255,255,1)"></polygon>
-                    <polygon
-                        points="50,46 50,46 50,46 50,54 50,54 50,54" fill="rgba(255,255,255,1)"></polygon>
-                    <polygon
-                        points="10,85 50,46 90,85 85,90 50,54 15,90" fill="rgba(255,255,255,1)"></polygon>
-                </svg>
-          </div>
-          <div style={{marginTop:-20}}>{modal?.message}</div>
-        </span>}
+        {msg && <Modal onClose={() => {
+          setMsg('')
+        }} msg={msg}/>}
+        {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
       </div>
     </div>
   )

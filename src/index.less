@@ -1,310 +1,344 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
-    font-family: "SansRegular";
-    font-size: 1rem;
-    text-align: center;
-    color:white;
-    margin: 0;
+
+p {
+  margin: 0;
 }
-.ak-tab{
-    height: 50px;
-    display: flex;
-    padding: 10px;
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 16px;
+  }
+
+  .guesses {
+    width: 100% !important;
+  }
+
+  .autocomplete {
+    width: 200px !important;
+  }
 }
-.ak-tab-item{
-    line-height: 2;
-    padding-right:10px;
-    cursor: pointer;
+body {
+  font-family: "SansRegular";
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  margin: 0;
 }
-.ak-tab-item::after{
-    content:'';
-    display: block;
-    width: 100%;
-    height: 0;
-    border-bottom: 2px solid #ffffff;
+
+.ak-tab {
+  height: 50px;
+  display: flex;
+  padding: 10px;
 }
-.ak-tab-item.active::after{
-    border-bottom-color: #22bbff;
+
+.ak-tab-item {
+  line-height: 2;
+  padding-right: 10px;
+  cursor: pointer;
 }
+
+.ak-tab-item::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.ak-tab-item.active::after {
+  border-bottom-color: #22bbff;
+}
+
 .main-container {
-    position: static;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    transition: transform 0.6s;
-    background-color: rgba(0, 0, 0, 0.88);
-    background-size: cover;
-    background-position: center bottom;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  position: static;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: transform 0.6s;
+  background-color: rgba(0, 0, 0, 0.88);
+  background-size: cover;
+  background-position: center bottom;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
+
 a {
-    color: palevioletred;
-    cursor: pointer;
+  color: palevioletred;
+  cursor: pointer;
 }
+
 .togglec {
-    font-size: 19px;
-    border-style: solid;
-    border-width: 0px;
-    color: #fff;
-    background-color: #333333;
-    padding: 8px;
-    margin: 10px;
-    font-weight: normal;
-    display: inline-block;
-    text-decoration: none;
-    border-color: #383838;
-    border-radius: 10px;
-}
-.togglec:hover{
+  font-size: 19px;
+  border-style: solid;
+  border-width: 0px;
+  color: #fff;
+  background-color: #333333;
+  padding: 8px;
+  margin: 10px;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: none;
+  border-color: #383838;
+  border-radius: 10px;
+
+  &:hover {
     color: #22bbff;
+  }
 }
+
 .guesses {
-    width: 600px;
-    margin: 20px auto;
+  width: 600px;
+  margin: 20px auto;
 }
 
 .hint {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .guess {
-    color: palevioletred;
-    font-size: 15px;
-    text-decoration-line: underline;
+  color: palevioletred;
+  font-size: 15px;
+  text-decoration-line: underline;
 }
 
 .emoji {
-    font-size: 50px;
-    width:90%;
-    height:70px;
-    max-width: 65px;
-    margin: 0 auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  font-size: 50px;
+  width: 90%;
+  height: 70px;
+  max-width: 65px;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .row {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    margin-top: auto;
-    margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /*the container must be positioned relative:*/
 .autocomplete {
-    position: relative;
-    display: inline-block;
-    width: 300px;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 100%;
 }
 
 img {
-    object-fit: scale-down;
-    height: auto;
+  object-fit: scale-down;
+  height: auto;
 }
-.input-form{
-    height: 46px;
-    vertical-align: middle;
+
+.input-form {
+  height: 46px;
+  vertical-align: middle;
 }
+
 .input-form input {
-    vertical-align: middle;
-    border: none;
-    border-right: 1px solid #000;
-    background-color: #f1f1f1;
-    padding: 10px;
-    font-size: 22px;
-    line-height: 1;
+  vertical-align: middle;
+  border: none;
+  border-right: 1px solid #000;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 22px;
+  line-height: 1;
 }
+
 .guess_input {
-    height: 100%;
-    color: #000 !important;
-    background-color: rgba(255, 255, 255, 1) !important;
+  height: 100%;
+  color: #000 !important;
+  background-color: rgba(255, 255, 255, 1) !important;
 }
 
 .input-form input[type=text] {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .autocomplete-items {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    color: rgb(54, 0, 0);
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
-    left: 0;
-    right: 0;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  color: rgb(54, 0, 0);
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
 }
 
 .autocomplete-items div {
-    padding: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 /*when hovering an item:*/
 .autocomplete-items div:hover {
-    background-color: #e9e9e9;
+  background-color: #e9e9e9;
 }
 
 /*when navigating through the items using the arrow keys:*/
 .autocomplete-active {
-    background-color: DodgerBlue !important;
-    color: #ffffff;
-}
-#guess{
-    width: 100%;
-}
-.tooltip {
-    color: palevioletred;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  background-color: DodgerBlue !important;
+  color: #ffffff;
 }
 
-.tooltip .tooltiptext, .global-tooltiptext {
-    visibility: hidden;
-    width: 200px;
+#guess {
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip {
+  color: palevioletred;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.global-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.3);
+
+  .global-tooltiptext {
+    max-height: 80%;
+    overflow: auto;
+    opacity: 1;
     background-color: black;
     border: 3px solid #fff;
     color: #e2e2e2;
     text-align: center;
     border-radius: 6px;
-    padding: 15px;
+    padding: 10px;
     position: fixed;
     z-index: 1;
     top: 50%;
     left: 50%;
-    margin-left: -10px;
-    opacity: 0;
     transition: opacity 0.5s;
     transform: translateX(-50%) translateY(-50%);
+  }
 }
 
-.tooltip:hover .tooltiptext, .global-tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-.global-tooltiptext{
-    max-height: 80%;
-    overflow: auto;
-}
+
 .title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .clean-float:after { /*伪元素是行内元素 正常浏览器清除浮动方法*/
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-.answer, .input-form, .share-body {
-    margin: 20px;
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
-@media screen and (max-width: 450px) {
-    body {
-        font-size: 16px;
-    }
-    .guesses{
-        width: 100%;
-    }
-    .autocomplete {
-        width: 200px;
-    }
+.answer, .input-form, .share-body {
+  margin: 20px;
 }
+
 
 .correct {
-    background-image: url("./images/correct.png");
+  background-image: url("./images/correct.png");
 }
 
 
 .down {
-    background-image: url("./images/down.png");
+  background-image: url("./images/down.png");
 }
 
 .up {
-    background-image: url("./images/up.png");
+  background-image: url("./images/up.png");
 }
 
 .wrong {
-    background-image: url("./images/wrong.png");
+  background-image: url("./images/wrong.png");
 }
 
 .wrongpos {
-    background-image: url("./images/wrongpos.png");
+  background-image: url("./images/wrongpos.png");
 }
-.share-icon{
-    width: 20px;
-    height: 20px;
-    stroke: #b4b9c2;
-    display: inline-block;
-    margin: 3px;
-}
-.share-icon{
-    vertical-align: top;
-    line-height: 26px;
-    svg{
-        line{
 
-            fill: #b4b9c2;
-            stroke: #b4b9c2;
-            transition: stroke 0.3s;
-        }
-        circle{
+.share-icon {
+  width: 20px;
+  height: 20px;
+  stroke: #b4b9c2;
+  display: inline-block;
+  margin: 3px;
+}
 
-            stroke: #b4b9c2;
-            fill: #b4b9c2;
-            transition: fill 0.3s;
-        }
+.share-icon {
+  vertical-align: top;
+  line-height: 26px;
+
+  svg {
+    line {
+
+      fill: #b4b9c2;
+      stroke: #b4b9c2;
+      transition: stroke 0.3s;
     }
+
+    circle {
+
+      stroke: #b4b9c2;
+      fill: #b4b9c2;
+      transition: fill 0.3s;
+    }
+  }
 }
-.pwa-tips{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #000;
-    padding: 20px;
-    .close{
-        border: 1px solid #fff;
-        padding: 0 4px;
-        cursor: pointer;
-    }
+
+.pwa-tips {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  padding: 20px;
+
+  .close {
+    border: 1px solid #fff;
+    padding: 0 4px;
+    cursor: pointer;
+  }
 }
-.tipList{
-    margin: 0 auto;
-    padding: 0;
-    max-width: 500px;
-    li{
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        list-style: none;
-        text-align: left;
-        .emoji{
-            float: left;
-            width: 35px;
-            height: 35px;
-            margin: 0 10px;
-        }
+
+.tipList {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 500px;
+
+  li {
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: left;
+
+    .emoji {
+      float: left;
+      width: 35px;
+      height: 35px;
+      margin: 0 10px;
     }
+  }
 }
