@@ -30,7 +30,7 @@ const Help = ({updateDate = 'emmm'}) => {
           猜测的干员该属性和神秘干员部分一样！再加把劲！
         </li>
       </ul>
-      <span>干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！</span>
+      <span>干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！</span>
       <hr/>
       游戏数据来自PRTS！<br/>最近更新时间是{updateDate}！<br/>目前有{chartsData.length}名干员（包含异格和升变）
     </p>

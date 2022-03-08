@@ -122,22 +122,20 @@ export default function Home() {
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
-          <div className={`ak-tab-item`} onClick={() => {
-            changeModalInfo({"message": <History/>, "width": '80%'})
-          }}>光辉之路！
-          </div>
+          
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div>你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
+        <div>你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
           <div className="tooltip" onClick={() => {
             changeModalInfo({
               "message": <Help updateDate={updateDate}/>, "width": '80%'
             })
-          }}>
-            【小刻学堂】
+          }}>❓小刻学堂</div>
+          <div className="tooltip" onClick={() => {
+            changeModalInfo({"message": <History/>, "width": '80%'})
+          }}>🔎测试报告</div>
           </div>
-        </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
         {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
@@ -178,7 +176,7 @@ export default function Home() {
               🔽: 猜测值过大
             </>)
           }}>
-            【Emoji说明】
+            Emoji说明
           </div>
         </div>
         }

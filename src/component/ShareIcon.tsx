@@ -1,7 +1,7 @@
 import {React} from "../global";
 
-const ShareIcon = () => {
-  return <div className={'share-icon'}>
+const ShareIcon = ({onClick}) => {
+  return <div className={'share-icon'} onClick={onClick}>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 300 300">
       <circle cx="242" cy="49" r="35"></circle>
