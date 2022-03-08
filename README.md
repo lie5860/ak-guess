@@ -15,13 +15,19 @@
 
 ![分享消息图](https://github.com/lie5860/ak-guess/blob/main/image/message.png?raw=true)
 
-本地调试方式 npm i => npm run build => 打开test目录下的index.html访问
+本地调试方式 npm i => vite dev => 打开localhost:3000访问
 
 欢迎小伙伴提Issue给这个小工具提一些建议和想法。
 
 ## 版本履历
 
-#### v0.1
-支持移动端 支持别名搜索
+### v0.1
+- 支持移动端 
+- 支持别名搜索
+- 增加了画师维度（for铃兰&安洁莉娜）
+- 支持每日挑战
+- 支持战绩
 
-增加了画师维度（for铃兰&安洁莉娜）
+## 内容来源及鸣谢
+- [PRTS Wiki](http://prts.wiki/)（游戏数据）
+- [Fireblend/squirdle](https://github.com/Fireblend/squirdle)（来源）
