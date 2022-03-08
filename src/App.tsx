@@ -78,7 +78,6 @@ export default function Home() {
       const newData = [...data, res]
       setData(newData)
       inputRef.current.value = '';
-
       const isWin = newData?.[newData?.length - 1]?.guess?.name === answer.name
       const isOver = newData.length >= defaultTryTimes || isWin
       if (isOver) {
