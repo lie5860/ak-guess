@@ -87,17 +87,17 @@ export default function Home() {
         if (mode === 'day') {
           if (isWin) {
             record.dailyWinTimes += 1;
-            record.dailyWinTryTimes += data.length;
+            record.dailyWinTryTimes += newData.length;
           }
           record.dailyPlayTimes += 1;
-          record.dailyTotalTryTimes += data.length;
+          record.dailyTotalTryTimes += newData.length;
         } else {
           if (isWin) {
-            record.winTryTimes += data.length;
+            record.winTryTimes += newData.length;
             record.winTimes += 1;
           }
           record.playTimes += 1;
-          record.totalTryTimes += data.length;
+          record.totalTryTimes += newData.length;
         }
         saveRecordData(record);
       }
