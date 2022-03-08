@@ -1,4 +1,5 @@
 import {TYPES} from "./const";
+import moment from "moment-timezone";
 
 const axios = window.axios;
 const guess = (inputItem, answer) => {
@@ -34,26 +35,33 @@ const guess = (inputItem, answer) => {
 }
 const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
 // const host = 'http://akapi.saki.cc/'
-const getDailyData = () => axios
-  .get(`${host}`, {responseType: "json"})
-  .then(function (response) {
-    console.log(response.data, 'response')
-    return response.data;
-  })
-  .catch(function (error) {
-    alert('服务已崩溃 请联系管理员')
-  });
-const saveNum = (num) => axios
-  .get(`${host}save.php?num=${num}`, {responseType: "json"})
-  .then(function (response) {
-    console.log(response.data, 'response')
-    return response.data;
-  })
-  .catch(function (error) {
-    alert('服务已崩溃 请联系管理员')
-  });
+const getDailyData = () => {
+  const oldData = localStorage.getItem('dailyData');
+  if (oldData) {
+    try {
+      const data = JSON.parse(oldData);
+      if (data.date === moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
+        return Promise.resolve(data.res)
+      }
+    } catch (e) {
+
+    }
+  }
+  return axios
+    .get(`${host}`, {responseType: "json"})
+    .then(function (response) {
+      const res = response.data;
+      localStorage.setItem('dailyData', JSON.stringify({
+        res,
+        date: moment().tz("Asia/Shanghai").format('YYYY-MM-DD')
+      }));
+      return response.data;
+    })
+    .catch(function (error) {
+      alert('服务已崩溃 请联系管理员')
+    })
+};
 export {
   getDailyData,
-  saveNum,
   guess
 }
