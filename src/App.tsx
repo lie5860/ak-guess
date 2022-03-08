@@ -60,7 +60,6 @@ export default function Home() {
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
   const isOver = data.length >= defaultTryTimes || isWin
 
-
   const onSubmit = (e) => {
     e.stopPropagation();
     if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
@@ -88,6 +87,12 @@ export default function Home() {
           if (isWin) {
             record.dailyWinTimes += 1;
             record.dailyWinTryTimes += newData.length;
+            record.dailyStraightWins += 1;
+            if (record.dailyStraightWins > record.dailyMaxStraightWins) {
+              record.dailyMaxStraightWins = record.dailyStraightWins;
+            }
+          } else {
+            record.dailyStraightWins = 0;
           }
           record.dailyPlayTimes += 1;
           record.dailyTotalTryTimes += newData.length;
@@ -95,6 +100,12 @@ export default function Home() {
           if (isWin) {
             record.winTryTimes += newData.length;
             record.winTimes += 1;
+            record.straightWins += 1;
+            if (record.straightWins > record.maxStraightWins) {
+              record.maxStraightWins = record.straightWins;
+            }
+          } else {
+            record.straightWins = 0;
           }
           record.playTimes += 1;
           record.totalTryTimes += newData.length;
@@ -112,12 +123,6 @@ export default function Home() {
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
           <div className={`ak-tab-item`} onClick={() => {
-            changeModalInfo({
-              "message": <Help updateDate={updateDate}/>, "width": '80%'
-            })
-          }}>小刻学堂！
-          </div>
-          <div className={`ak-tab-item`} onClick={() => {
             changeModalInfo({"message": <History/>, "width": '80%'})
           }}>光辉之路！
           </div>
@@ -126,19 +131,11 @@ export default function Home() {
         <div>明日方舟 wordle-like by 昨日沉船</div>
         <div>你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！
           <div className="tooltip" onClick={() => {
-            setMsg(<>
-              🟩: 完全正确
-              <br/>
-              🟥: 不正确
-              <br/>
-              🟨: 部分正确
-              <br/>
-              🔼: 猜测值过小
-              <br/>
-              🔽: 猜测值过大
-            </>)
+            changeModalInfo({
+              "message": <Help updateDate={updateDate}/>, "width": '80%'
+            })
           }}>
-            分享 Emoji 映射表
+            【小刻学堂】
           </div>
         </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
@@ -168,6 +165,21 @@ export default function Home() {
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>分享(带名称)
             </a>
+          <div className="tooltip" onClick={() => {
+            setMsg(<>
+              🟩: 完全正确
+              <br/>
+              🟥: 不正确
+              <br/>
+              🟨: 部分正确
+              <br/>
+              🔼: 猜测值过小
+              <br/>
+              🔽: 猜测值过大
+            </>)
+          }}>
+            【Emoji说明】
+          </div>
         </div>
         }
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
