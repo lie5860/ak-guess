@@ -121,7 +121,7 @@ export default function Home() {
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
-          
+
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
@@ -132,7 +132,7 @@ export default function Home() {
             })
           }}>❓小刻学堂</div>
           <div className="tooltip" onClick={() => {
-            changeModalInfo({"message": <History/>, "width": '80%'})
+            changeModalInfo({"message": <History setMsg={setMsg}/>, "width": '80%'})
           }}>🔎测试报告</div>
           </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
@@ -184,10 +184,10 @@ export default function Home() {
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 玩个过瘾！</a>
         }
+        {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
         {msg && <Modal onClose={() => {
           setMsg('')
         }} msg={msg}/>}
-        {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
       </div>
     </div>
   )
