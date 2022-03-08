@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {React} from './global'
-import {chartsData, TYPES, defaultTryTimes} from "./const";
+import {chartsData, defaultTryTimes} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
@@ -9,8 +9,8 @@ import Modal from "./component/Modal";
 import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
-import {loadRecordData,saveRecordData,History} from "./component/History";
-import {getDailyData, saveNum} from "./server";
+import {loadRecordData, saveRecordData, History} from "./component/History";
+import {getDailyData, guess, saveNum} from "./server";
 
 export default function Home() {
   const inputRef = React.useRef();
@@ -25,15 +25,9 @@ export default function Home() {
   const chartNames = React.useMemo(() => chartsData.map(v => v.name), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   React.useEffect(() => {
-    getDailyData().then(({last_date, daily,num}) => {
+    getDailyData().then(({last_date, daily}) => {
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
-      if(num !==chartsData.length){
-        saveNum(chartsData.length).then(() => {
-          // location.reload()
-        })
-      }
-
     })
 
     autocomplete(inputRef.current, chartNames);
@@ -49,11 +43,11 @@ export default function Home() {
   }, [])
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
-  const setData = mode === 'random' ? (v, t) => {
+  const setData = mode === 'random' ? (v) => {
     localStorage.setItem('randomData', JSON.stringify(v))
     localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
     setRandomData(v)
-  } : (v, t) => {
+  } : (v) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
     setDayData(v)
   }
@@ -66,25 +60,6 @@ export default function Home() {
   const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
   const isOver = data.length >= defaultTryTimes || isWin
 
-  if (isOver) {
-    let record = loadRecordData();
-    if (mode === 'day') {
-      if (isWin) {
-        record.dailyWinTimes += 1;
-        record.dailyWinTryTimes += data.length;
-      }
-      record.dailyPlayTimes += 1;
-      record.dailyTotalTryTimes += data.length;
-    } else {
-      if (isWin) {
-        record.winTryTimes += data.length;
-        record.winTimes += 1;
-      }
-      record.playTimes += 1;
-      record.totalTryTimes += data.length;
-    }
-    saveRecordData(record);
-  }
 
   const onSubmit = (e) => {
     e.stopPropagation();
@@ -100,36 +75,32 @@ export default function Home() {
       showModal('已经输入过啦 换一个吧！');
     } else {
       const inputItem = chartsData.filter(v => v.name === inputName)[0];
-      const res = {}
-      TYPES.forEach(({key, type}) => {
-        if (key === 'guess') {
-          return res[key] = inputItem
+      const res = guess(inputItem, answer)
+      const newData = [...data, res]
+      setData(newData)
+      inputRef.current.value = '';
+
+      const isWin = newData?.[newData?.length - 1]?.guess?.name === answer.name
+      const isOver = newData.length >= defaultTryTimes || isWin
+      if (isOver) {
+        let record = loadRecordData();
+        if (mode === 'day') {
+          if (isWin) {
+            record.dailyWinTimes += 1;
+            record.dailyWinTryTimes += data.length;
+          }
+          record.dailyPlayTimes += 1;
+          record.dailyTotalTryTimes += data.length;
+        } else {
+          if (isWin) {
+            record.winTryTimes += data.length;
+            record.winTimes += 1;
+          }
+          record.playTimes += 1;
+          record.totalTryTimes += data.length;
         }
-        let emoji;
-        switch (type) {
-          case 'string':
-            emoji = inputItem?.[key] === answer?.[key] ? 'correct' : 'wrong';
-            break;
-          case 'number':
-            const diff = Number(inputItem?.[key]) - Number(answer?.[key]);
-            emoji = diff === 0 ? 'correct' : (diff > 0 ? 'down' : 'up')
-            break;
-          case 'array':
-            const x = inputItem?.[key] || [];
-            const y = answer?.[key] || [];
-            const eqState = (x, y) => {
-              const l = new Set([...x, ...y]).size;
-              if (x.length === y.length && x.length === l) return 'correct';
-              if (x.length + y.length === l) return 'wrong';
-              return 'wrongpos';
-            };
-            emoji = eqState(x, y)
-            break;
-        }
-        res[key] = emoji
-      })
-      setData([...data, res])
-      inputRef.current.value = ''
+        saveRecordData(record);
+      }
     }
   }
   return (
@@ -146,7 +117,10 @@ export default function Home() {
             })
           }}>小刻学堂！
           </div>
-          <div className={`ak-tab-item`} onClick={() => { changeModalInfo({"message": <History/>, "width": '80%'}) } }>光辉之路！</div>
+          <div className={`ak-tab-item`} onClick={() => {
+            changeModalInfo({"message": <History/>, "width": '80%'})
+          }}>光辉之路！
+          </div>
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>

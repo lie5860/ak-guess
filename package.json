@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "node markData.ts && node esbuild.ts",
+    "generateSW": "workbox generateSW workbox-config.js",
     "dev": "node hmr.ts"
   },
   "dependencies": {

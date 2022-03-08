@@ -29,15 +29,18 @@ body {
 }
 
 .ak-tab {
-  height: 50px;
   display: flex;
   padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .ak-tab-item {
   line-height: 2;
   padding-right: 10px;
   cursor: pointer;
+  display: inline-block;
+  flex: 0 0 100px;
 }
 
 .ak-tab-item::after {

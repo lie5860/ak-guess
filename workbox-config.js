@@ -27,7 +27,7 @@ module.exports = {
             }
         },
         {
-            urlPattern: /.*/,
+            urlPattern: /.*(?:png|jpg|jpeg|svg|css|js|html)$/,
             handler: 'StaleWhileRevalidate',
             options: {
                 cacheName: 'StaleWhileRevalidate'

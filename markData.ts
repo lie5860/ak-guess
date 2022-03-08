@@ -1,3 +1,5 @@
+import {afterDealData} from "./config";
+
 const fs = require('fs')
 const path = require('path')
 const {prtsData, subProfession, painter} = require('./src/data/index.ts')
@@ -15,4 +17,6 @@ const chartsData = prtsData.map((v) => {
 let file = path.resolve(__dirname, './src/data/dealData.json')
 // 异步写入数据到文件
 fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
+
+afterDealData()
 console.log(`生成数据完成 耗时 ${new Date().valueOf() - time1}ms`)
