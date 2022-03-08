@@ -29,14 +29,14 @@ const History = () => {
     <p>游戏次数：{record?.playTimes}<br/>
       胜利次数：{record?.winTimes}<br/>
       胜率：{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
-      平均猜测次数：{Math.ceil(record?.winTryTimes / record?.winTimes)}（胜利时）
+      平均猜测次数：{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}（胜利时）
     </p>
     <hr/>
     <p><span className='title'>　每日挑战！</span></p>
     <p>游戏次数：{record?.dailyPlayTimes}<br/>
       胜利次数：{record?.dailyWinTimes}<br/>
       胜率：{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
-      平均猜测次数：{Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}（胜利时）
+      平均猜测次数：{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}（胜利时）
     </p>
   </>;
 }
