@@ -1,11 +1,11 @@
 {
-  "name": "react-hello",
-  "version": "0.0.1",
+  "name": "ak-guess",
+  "version": "0.2.1",
   "scripts": {
     "build": "node markData.ts && node esbuild.ts",
     "generateSW": "workbox generateSW workbox-config.js",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "node hmr.ts"
   },
   "dependencies": {
     "react": "^17.0.2",

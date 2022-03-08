@@ -29,7 +29,7 @@ const saveRecordData = (record) => {
   localStorage.setItem("record", JSON.stringify(record));
 }
 
-const History = ({showModal}) => {
+const History = ({setMsg}) => {
   const record = loadRecordData();
   const getShareHistoryText = (mode) => {
     const title = mode === 'day' ? '每日挑战！':'随心所欲！';
@@ -48,7 +48,7 @@ const History = ({showModal}) => {
     text += `平均猜测次数：`+avgTryTimes+`（胜利时）\n`
     return text;
   }
-  return <><p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('random'),showModal) }}/><span className='title'>随心所欲！</span></p>
+  return <><p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('random'),setMsg) }}/><span className='title'>随心所欲！</span></p>
 <p>游戏次数：{record?.playTimes}<br/>
       胜利次数：{record?.winTimes}<br/>
       胜率：{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
@@ -57,7 +57,7 @@ const History = ({showModal}) => {
       平均猜测次数：{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}（胜利时）
     </p>
     <hr/>
-    <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('day'),showModal) }}/><span className='title'>每日挑战！</span></p>
+    <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('day'),setMsg) }}/><span className='title'>每日挑战！</span></p>
 <p>游戏次数：{record?.dailyPlayTimes}<br/>
       胜利次数：{record?.dailyWinTimes}<br/>
       胜率：{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
