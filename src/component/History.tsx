@@ -60,7 +60,7 @@ const History = ({showModal}) => {
     <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('day'),showModal) }}/><span className='title'>每日挑战！</span></p>
 <p>游戏次数：{record?.dailyPlayTimes}<br/>
       胜利次数：{record?.dailyWinTimes}<br/>
-      胜率：{}%<br/>
+      胜率：{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
       当前连胜次数：{record?.dailyStraightWins}<br/>
       最大连胜次数：{record?.dailyMaxStraightWins}<br/>
       平均猜测次数：{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}（胜利时）

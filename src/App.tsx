@@ -130,10 +130,23 @@ export default function Home() {
             changeModalInfo({
               "message": <Help updateDate={updateDate}/>, "width": '80%'
             })
-          }}>❓小刻学堂</div>
+          }}>🍪小刻学堂</div>
           <div className="tooltip" onClick={() => {
             changeModalInfo({"message": <History/>, "width": '80%'})
           }}>🔎测试报告</div>
+          <div className="tooltip" onClick={() => {
+            setMsg(<>
+              🟩: 完全正确
+              <br/>
+              🟥: 不正确
+              <br/>
+              🟨: 部分正确
+              <br/>
+              🔼: 猜测值过小
+              <br/>
+              🔽: 猜测值过大
+            </>)
+          }}>❓️Emoji</div>
           </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
         {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
@@ -162,21 +175,6 @@ export default function Home() {
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>分享(带名称)
             </a>
-          <div className="tooltip" onClick={() => {
-            setMsg(<>
-              🟩: 完全正确
-              <br/>
-              🟥: 不正确
-              <br/>
-              🟨: 部分正确
-              <br/>
-              🔼: 猜测值过小
-              <br/>
-              🔽: 猜测值过大
-            </>)
-          }}>
-            Emoji说明
-          </div>
         </div>
         }
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
