@@ -3,7 +3,7 @@ const stylePlugin = require('esbuild-style-plugin');
 const time1 = +new Date();
 esbuild
   .build({
-    entryPoints: ['src/index.ts'],
+    entryPoints: ['src/index.tsx'],
     outdir: 'public',
     bundle: true,
     sourcemap: false,

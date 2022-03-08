@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1"/>
+    <meta name="description" content="干员猜猜乐，猜谜小游戏">
+    <title>ak-guess</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<ak-guess/>
+<script crossorigin="anonymous" src="https://unpkg.com/@magic-microservices/magic@1.1.3/dist/index.umd.js"></script>
+<script crossorigin="anonymous" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
+<script>
+    import('./src/index.tsx')
+        .then((module) => {
+            magic('ak-guess', module);
+        });
+</script>
+</body>
+</html>
