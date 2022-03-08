@@ -7,6 +7,7 @@
     "dev": "node hmr.ts"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "moment-timezone": "^0.5.34",
     "socket.io": "^4.4.1"
   },

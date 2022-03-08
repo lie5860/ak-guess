@@ -32,8 +32,8 @@ const guess = (inputItem, answer) => {
   })
   return res
 }
-// const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
-const host = 'http://akapi.saki.cc/'
+const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
+// const host = 'http://akapi.saki.cc/'
 const getDailyData = () => axios
   .get(`${host}`, {responseType: "json"})
   .then(function (response) {
