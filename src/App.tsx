@@ -125,7 +125,7 @@ export default function Home() {
         </div>
         <div><span className={`title`}>干员猜猜乐</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div>你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
+        <div class="titlePanel">你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
           <div className="tooltip" onClick={() => {
             changeModalInfo({
               "message": <Help updateDate={updateDate}/>, "width": '80%'
