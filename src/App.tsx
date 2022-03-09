@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {React} from './global'
-import {chartsData, defaultTryTimes} from "./const";
+import {chartsData, defaultTryTimes, questionnaireUrl} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
@@ -151,6 +151,10 @@ export default function Home() {
             </>)
           }}>❓️Emoji
           </div>
+          <div className="tooltip" onClick={() => {
+            window.open(questionnaireUrl)
+          }}>💬反馈
+          </div>
         </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
         {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
@@ -191,7 +195,6 @@ export default function Home() {
           setMsg('')
         }} msg={msg}/>}
       </div>
-      <FeedBack/>
     </div>
   )
 }

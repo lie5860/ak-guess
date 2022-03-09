@@ -4,7 +4,7 @@ import {React} from "../global";
 const Help = ({updateDate = 'emmm'}) => {
   return <>
     <p>
-      <span className='title'>小刻也能学会的游戏规则！</span>
+      <span className='title' style={{lineHeight: '20px'}}>小刻也能学会的游戏规则！</span>
     </p>
     <hr/>
     <p>最多可以尝试{defaultTryTimes}次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！
