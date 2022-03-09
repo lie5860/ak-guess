@@ -21,14 +21,14 @@ module.exports = {
         },
         {
             urlPattern: /\.*index.(css|js|html)$/,
-            handler: 'NetworkFirst',
+            handler: 'CacheFirst',
             options: {
                 cacheName: 'networkFirst'
             }
         },
         {
             urlPattern: /.*(?:png|jpg|jpeg|svg|css|js|html)$/,
-            handler: 'StaleWhileRevalidate',
+            handler: 'CacheFirst',
             options: {
                 cacheName: 'StaleWhileRevalidate'
             }
