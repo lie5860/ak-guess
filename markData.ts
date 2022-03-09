@@ -10,7 +10,7 @@ const chartsData = prtsData.map((v) => {
     name: v.cn,
     en: v.en,
     team: [...new Set([v.camp, v.nation].join('-').split('-').filter(v=>v))],
-    race: v.race.join('/'),
+    race: v.race,
     rarity: Number(v.rarity),
     painter: painter[v.cn]
   }

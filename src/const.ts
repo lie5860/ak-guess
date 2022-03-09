@@ -4,7 +4,7 @@ export const TYPES = [
   {label: '稀有度', key: 'rarity', type: 'number'},
   {label: '阵营', key: 'team', type: 'array'},
   {label: '职业', key: 'className', type: 'array'},
-  {label: '种族', key: 'race', type: 'string'},
+  {label: '种族', key: 'race', type: 'array'},
   {label: '画师', key: 'painter', type: 'string'},
   {label: '干员', key: 'guess'},
 ]
