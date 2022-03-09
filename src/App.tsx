@@ -11,6 +11,7 @@ import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
 import {getDailyData, guess, saveNum} from "./server";
+import FeedBack from './component/FeedBack';
 
 export default function Home() {
   const inputRef = React.useRef();
@@ -130,10 +131,12 @@ export default function Home() {
             changeModalInfo({
               "message": <Help updateDate={updateDate}/>, "width": '80%'
             })
-          }}>🍪小刻学堂</div>
+          }}>🍪小刻学堂
+          </div>
           <div className="tooltip" onClick={() => {
             changeModalInfo({"message": <History setMsg={setMsg}/>, "width": '80%'})
-          }}>🔎测试报告</div>
+          }}>🔎测试报告
+          </div>
           <div className="tooltip" onClick={() => {
             setMsg(<>
               🟩: 完全正确
@@ -146,8 +149,9 @@ export default function Home() {
               <br/>
               🔽: 猜测值过大
             </>)
-          }}>❓️Emoji</div>
+          }}>❓️Emoji
           </div>
+        </div>
         {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
         {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
@@ -187,6 +191,7 @@ export default function Home() {
           setMsg('')
         }} msg={msg}/>}
       </div>
+      <FeedBack/>
     </div>
   )
 }

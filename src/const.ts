@@ -18,3 +18,6 @@ export const VAL_DICT = {
 export const chartsData = dealData;
 export const defaultTryTimes = 8;
 export const updateData = '2022-3-5';
+
+export const githubUrl = 'https://github.com/lie5860/ak-guess/issues'
+export const questionnaireUrl = 'https://www.wjx.top/vj/QgfS7Yd.aspx'
