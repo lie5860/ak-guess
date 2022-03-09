@@ -9,7 +9,7 @@ module.exports = {
     ],
     runtimeCaching: [
         {
-            urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+            urlPattern: /\.(?:png|jpg|jpeg|svg|ico|json)$/,
             handler: 'CacheFirst',
             options: {
                 cacheName: 'CacheFirst',
