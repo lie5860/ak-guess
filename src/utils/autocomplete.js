@@ -1,6 +1,6 @@
 import alias from '../data/alias.json'
 
-export default function autocomplete(inp, arr) {
+export default function autocomplete(inp, arr, chartsData) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
@@ -25,7 +25,6 @@ export default function autocomplete(inp, arr) {
         alias.forEach(v => {
             new RegExp(v.regexp).exec(inputVal) && (dealModal.push(...v.values))
         })
-        console.log(inputVal, 'inputVal')
         const nameMatchItems = [];
         const aliasMatchItems = [];
         for (i = 0; i < arr.length; i++) {
@@ -46,6 +45,8 @@ export default function autocomplete(inp, arr) {
                 closeAllLists();
             });
             if (arr[i].toUpperCase().indexOf(inputVal) !== -1) {
+                nameMatchItems.push(b)
+            } else if (chartsData[i].en.toUpperCase().startsWith(inputVal)) {
                 nameMatchItems.push(b)
             } else if (dealModal.some(v => arr[i].toUpperCase().indexOf(v.toUpperCase()) !== -1)) {
                 aliasMatchItems.push(b)

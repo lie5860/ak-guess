@@ -31,7 +31,7 @@ export default function Home() {
       setRemoteAnswerKey(daily)
     })
 
-    autocomplete(inputRef.current, chartNames);
+    autocomplete(inputRef.current, chartNames, chartsData);
     const randomData = localStorage.getItem('randomData')
     if (randomData) {
       setRandomData(JSON.parse(randomData))
