@@ -1,10 +1,13 @@
 import {TYPES} from "../const";
 import {React} from "../global";
+import {AppCtx} from "../locales/AppCtx";
 
 const GuessItem = ({data, setMsg}) => {
+  const {i18n} = React.useContext(AppCtx)
   return <div className={'guesses'}>
     <div className="row">
-      {TYPES.map(({label}) => <div className='column' key={label}><span className={'title'}>{label}</span></div>)}
+      {TYPES.map(({label, i18nKey}) => <div className='column' key={label}>
+        <span className={'title'}>{i18n.get(i18nKey)}</span></div>)}
     </div>
     {data.map((v, index) => {
       return <div className="row" key={index}>
@@ -14,12 +17,12 @@ const GuessItem = ({data, setMsg}) => {
             return <div className='column' key={key}>
               <div className="tooltip" onClick={() => {
                 setMsg(<>
-                  <div><span className={'title'}>干员名称:</span>{name}</div>
-                  <div><span className={'title'}>稀有度:</span>{1 + rarity}</div>
-                  <div><span className={'title'}>阵营:</span>{team?.join(' ')}</div>
-                  <div><span className={'title'}>职业:</span>{className?.join('-')}</div>
-                  <div><span className={'title'}>种族:</span>{race}</div>
-                  <div><span className={'title'}>画师:</span>{painter}</div>
+                  <div><span className={'title'}>{i18n.get('chartsName')}:</span>{name}</div>
+                  <div><span className={'title'}>{i18n.get('rarity')}:</span>{1 + rarity}</div>
+                  <div><span className={'title'}>{i18n.get('camp')}:</span>{team?.join(' ')}</div>
+                  <div><span className={'title'}>{i18n.get('className')}:</span>{className?.join('-')}</div>
+                  <div><span className={'title'}>{i18n.get('race')}:</span>{race}</div>
+                  <div><span className={'title'}>{i18n.get('painter')}:</span>{painter}</div>
                 </>)
               }}>
                 {name}

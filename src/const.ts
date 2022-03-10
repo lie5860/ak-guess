@@ -1,12 +1,12 @@
 import dealData from './data/dealData.json'
 
 export const TYPES = [
-  {label: '稀有度', key: 'rarity', type: 'number'},
-  {label: '阵营', key: 'team', type: 'array'},
-  {label: '职业', key: 'className', type: 'array'},
-  {label: '种族', key: 'race', type: 'array'},
-  {label: '画师', key: 'painter', type: 'string'},
-  {label: '干员', key: 'guess'},
+  {label: '稀有度', i18nKey: 'rarity', key: 'rarity', type: 'number'},
+  {label: '阵营', i18nKey: 'camp', key: 'team', type: 'array'},
+  {label: '职业', i18nKey: 'className', key: 'className', type: 'array'},
+  {label: '种族', i18nKey: 'race', key: 'race', type: 'array'},
+  {label: '画师', i18nKey: 'painter', key: 'painter', type: 'string'},
+  {label: '干员', i18nKey: 'chartsName', key: 'guess'},
 ]
 export const VAL_DICT = {
   'correct': '🟩',

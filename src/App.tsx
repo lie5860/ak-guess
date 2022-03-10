@@ -14,7 +14,7 @@ import {getDailyData, guess} from "./server";
 import {AppCtx} from './locales/AppCtx';
 
 export default function Home() {
-  const {i18n} = React.useContext(AppCtx)
+  const {i18n} = React.useContext(AppCtx);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
@@ -65,15 +65,15 @@ export default function Home() {
   const onSubmit = (e) => {
     e.stopPropagation();
     if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
-      alert('数据已更新，即将刷新页面')
+      alert(i18n.get('reloadTip'))
       window.location.reload()
       return;
     }
     const inputName = inputRef.current.value;
     if (chartNames.indexOf(inputName) === -1) {
-      showModal('输入错误，请输入正确的干员名称。')
+      showModal(i18n.get('errNameTip'))
     } else if (data.map(v => v.guess.name).indexOf(inputName) !== -1) {
-      showModal('已经输入过啦 换一个吧！');
+      showModal(i18n.get('duplicationTip'));
     } else {
       const inputItem = chartsData.filter(v => v.name === inputName)[0];
       const res = guess(inputItem, answer)
@@ -119,78 +119,83 @@ export default function Home() {
     <div className={'container'}>
       <div className={'main-container clean-float'}>
         <div className={'ak-tab'}>
-          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>随心所欲！
+          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>
+            {i18n.get('randomMode')}
           </div>
           {remoteAnswerKey !== -1 &&
-          <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
-
+          <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>
+            {i18n.get('dailyMode')}
+          </div>}
         </div>
         <div><span className={`title`}>{i18n.get('title')}</span></div>
-        <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div class="titlePanel">你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
+        <div>{i18n.get('titleDesc')}</div>
+        <div className="titlePanel">
+          {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
+          <br/>
           <div className="tooltip" onClick={() => {
             changeModalInfo({
               "message": <Help updateDate={updateDate}/>, "width": '80%'
             })
-          }}>🍪小刻学堂
+          }}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
             changeModalInfo({"message": <History setMsg={setMsg}/>, "width": '80%'})
-          }}>🔎测试报告
+          }}>🔎{i18n.get('report')}
           </div>
           <div className="tooltip" onClick={() => {
             setMsg(<>
-              🟩: 完全正确
+              🟩: {i18n.get('exactly')}
               <br/>
-              🟥: 不正确
+              🟥: {i18n.get('incorrectness')}
               <br/>
-              🟨: 部分正确
+              🟨: {i18n.get('partiallyCorrect')}
               <br/>
-              🔼: 猜测值过小
+              🔼: {i18n.get('tooSmallTip')}
               <br/>
-              🔽: 猜测值过大
+              🔽: {i18n.get('tooBigTip')}
             </>)
           }}>❓️Emoji
           </div>
           <div className="tooltip" onClick={() => {
             window.open(questionnaireUrl)
-          }}>💬反馈
+          }}>💬{i18n.get('feedback')}
           </div>
         </div>
-        {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
-        {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
+        {mode === 'day' && <div>{i18n.get('dailyTimeTip')}</div>}
+        {!!data?.length && <GuessItem data={data} setMsg={setMsg} />}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">
-            <input ref={inputRef} id="guess" placeholder={"请输入干员名称"} onKeyDown={(e) => {
+            <input ref={inputRef} id="guess" placeholder={i18n.get('inputTip')} onKeyDown={(e) => {
               if (e.keyCode == 13) {
                 onSubmit(e)
               }
             }}/>
           </div>
-          <input className="guess_input" type="submit" value="提交"/>
+          <input className="guess_input" type="submit" value={i18n.get('submit')}/>
         </form>
         {!!isOver &&
-        <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！${i18n.get('answerTip', {answer: answer.name})}`}</div>}
-
+        <div
+            className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
+        </div>}
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, false), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title')), showModal, i18n.get('copySuccess'))
             }}>
-                <ShareIcon/>分享
+                <ShareIcon/>{i18n.get('shareTip1')}
             </a>
 
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, true), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title')), showModal, i18n.get('copySuccess'))
             }} style={{marginLeft: 20}}>
-                <ShareIcon/>分享(带名称)
+                <ShareIcon/>{i18n.get('shareTip2')}
             </a>
         </div>
         }
         {mode !== 'day' && <a className={'togglec'} onClick={() => {
           setData([])
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ 玩个过瘾！</a>
+        }}>▶️ {i18n.get('newGameTip')}</a>
         }
         {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
         {msg && <Modal onClose={() => {

@@ -1,7 +1,7 @@
 import {defaultTryTimes, TYPES, VAL_DICT} from "../const";
 
-const shareTextCreator = (data, mode, today, showName) => {
-  let text = `干员猜猜乐 `;
+const shareTextCreator = (data, mode, today, showName, title) => {
+  let text = `${title} `;
   if (mode === 'day') {
     text += today + ' ';
   }
