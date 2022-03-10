@@ -1,7 +1,7 @@
 # ak-guess
 一个明日方舟的猜谜小游戏
 
-数据使用阿里云FC node写入，暂无接口支持每日模式。
+数据使用阿里云FC node写入。
 
 该站点当前所有部分使用React开发，使用magic转Web Component使用。
 
