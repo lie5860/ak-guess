@@ -20,8 +20,9 @@ module.exports = {
             },
         },
         {
-            urlPattern: /\.*index.(css|js|html)$/,
-            handler: 'CacheFirst',
+            urlPattern: /\.*index.(html)$/,
+            // urlPattern: /\.*index.(css|js|html)$/,
+            handler: 'NetworkFirst',
             options: {
                 cacheName: 'networkFirst'
             }
