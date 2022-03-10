@@ -10,13 +10,11 @@ import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
-import {getDailyData, guess, saveNum} from "./server";
-window.getAnswerIndex = (name) => {
-  console.log(chartsData.filter((n,index) => {
-    (n.name === name) && console.log(index)
-  })[0])
-}
+import {getDailyData, guess} from "./server";
+import {AppCtx} from './locales/AppCtx';
+
 export default function Home() {
+  const {i18n} = React.useContext(AppCtx)
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
   const [msg, setMsg] = React.useState("")
@@ -127,7 +125,7 @@ export default function Home() {
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
 
         </div>
-        <div><span className={`title`}>干员猜猜乐</span></div>
+        <div><span className={`title`}>{i18n.get('title')}</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
         <div class="titlePanel">你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
           <div className="tooltip" onClick={() => {
@@ -172,7 +170,8 @@ export default function Home() {
           </div>
           <input className="guess_input" type="submit" value="提交"/>
         </form>
-        {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer.name}！`}</div>}
+        {!!isOver &&
+        <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！${i18n.get('answerTip', {answer: answer.name})}`}</div>}
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
