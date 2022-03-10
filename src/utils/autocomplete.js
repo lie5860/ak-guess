@@ -23,7 +23,7 @@ export default function autocomplete(inp, arr, chartsData) {
         const inputVal = val.toUpperCase()
         let dealModal = []
         alias.forEach(v => {
-            new RegExp(`^${v.regexp}$`).exec(inputVal) && (dealModal.push(...v.values))
+            new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
         })
         console.log(inputVal, 'inputVal', arr.length)
         const nameMatchItems = [];
