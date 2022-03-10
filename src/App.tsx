@@ -11,8 +11,11 @@ import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
 import {getDailyData, guess, saveNum} from "./server";
-import FeedBack from './component/FeedBack';
-
+window.getAnswerIndex = (name) => {
+  console.log(chartsData.filter((n,index) => {
+    (n.name === name) && console.log(index)
+  })[0])
+}
 export default function Home() {
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")

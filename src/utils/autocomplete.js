@@ -25,6 +25,7 @@ export default function autocomplete(inp, arr, chartsData) {
         alias.forEach(v => {
             new RegExp(`^${v.regexp}$`).exec(inputVal) && (dealModal.push(...v.values))
         })
+        console.log(inputVal, 'inputVal', arr.length)
         const nameMatchItems = [];
         const aliasMatchItems = [];
         for (i = 0; i < arr.length; i++) {
@@ -48,11 +49,11 @@ export default function autocomplete(inp, arr, chartsData) {
                 nameMatchItems.push(b)
             } else if (chartsData[i].en.toUpperCase().startsWith(inputVal)) {
                 nameMatchItems.push(b)
-            } else if (dealModal.some(v => arr[i].toUpperCase().indexOf(v.toUpperCase()) !== -1)) {
+            } else if (dealModal.some(v => arr[i].toUpperCase() === v.toUpperCase())) {
                 aliasMatchItems.push(b)
             }
         }
-        a.append(...nameMatchItems,...aliasMatchItems);
+        a.append(...nameMatchItems, ...aliasMatchItems);
         // [...nameMatchItems,...aliasMatchItems].forEach(v=>a.appendChild(v));
     });
     /*execute a function presses a key on the keyboard:*/

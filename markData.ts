@@ -7,8 +7,8 @@ const time1 = +new Date();
 const chartsData = prtsData.map((v) => {
   return {
     className: [v.class, subProfession[v.cn]],
-    name: v.cn,
-    en: v.en,
+    name: v.cn.trim(),
+    en: v.en.trim(),
     team: [...new Set([v.camp, v.nation].join('-').split('-').filter(v=>v))],
     race: v.race,
     rarity: Number(v.rarity),
