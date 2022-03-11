@@ -34,38 +34,38 @@ const History = ({setMsg}) => {
   const {i18n} = React.useContext(AppCtx);
   const record = loadRecordData();
   const getShareHistoryText = (mode) => {
-    const title = mode === 'day' ? '每日挑战！':'随心所欲！';
+    const title = mode === 'day' ? i18n.get('dailyMode'):i18n.get('randomMode');
     const playTimes = (mode === 'day' ? record?.dailyPlayTimes : record?.playTimes);
     const winTimes = (mode === 'day' ? record?.dailyWinTimes : record?.winTimes);
     const winPercent = (mode === 'day' ? record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100) : record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100));
     const straightWins = (mode === 'day' ? record?.dailyStraightWins : record?.straightWins);
     const maxStraightWins = (mode === 'day' ? record?.dailyMaxStraightWins : record?.maxStraightWins);
     const avgTryTimes = (mode === 'day' ? record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes) : record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes));
-    let text = `干员猜猜乐 ` + title + `\n`;
-    text += `游戏次数：`+ playTimes +`\n`
-    text += `胜利次数：`+ winTimes +`\n`
-    text += `胜率：`+ winPercent +`%\n`
-    text += `当前连胜次数：`+straightWins+`\n`
-    text += `最大连胜次数：`+maxStraightWins+`\n`
-    text += `平均猜测次数：`+avgTryTimes+`（胜利时）\n`
+    let text = i18n.get('title')+` ` + title + `\n`;
+    text += i18n.get('playTimes')+ playTimes +`\n`
+    text += i18n.get('winTimes')+ winTimes +`\n`
+    text += i18n.get('winRate')+ winPercent +`%\n`
+    text += i18n.get('straightWins')+straightWins+`\n`
+    text += i18n.get('maxStraightWins')+maxStraightWins+`\n`
+    text += i18n.get('avgWinTimes')+avgTryTimes+i18n.get('avgWinTimesDesc')+`\n`
     return text;
   }
-  return <><p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('random'),setMsg, i18n.get('copySuccess')) }}/><span className='title'>随心所欲！</span></p>
-<p>游戏次数：{record?.playTimes}<br/>
-      胜利次数：{record?.winTimes}<br/>
-      胜率：{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
-      当前连胜次数：{record?.straightWins}<br/>
-      最大连胜次数：{record?.maxStraightWins}<br/>
-      平均猜测次数：{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}（胜利时）
+  return <><p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('random'),setMsg, i18n.get('copySuccess')) }}/><span className='title'>{i18n.get('randomMode')}</span></p>
+<p>{i18n.get('playTimes')}{record?.playTimes}<br/>
+      {i18n.get('winTimes')}{record?.winTimes}<br/>
+      {i18n.get('winRate')}{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
+      {i18n.get('straightWins')}{record?.straightWins}<br/>
+      {i18n.get('maxStraightWins')}{record?.maxStraightWins}<br/>
+      {i18n.get('avgWinTimes')}{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}{i18n.get('avgWinTimesDesc')}
     </p>
     <hr/>
-    <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('day'),setMsg, i18n.get('copySuccess')) }}/><span className='title'>每日挑战！</span></p>
-<p>游戏次数：{record?.dailyPlayTimes}<br/>
-      胜利次数：{record?.dailyWinTimes}<br/>
-      胜率：{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
-      当前连胜次数：{record?.dailyStraightWins}<br/>
-      最大连胜次数：{record?.dailyMaxStraightWins}<br/>
-      平均猜测次数：{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}（胜利时）
+    <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('day'),setMsg, i18n.get('copySuccess')) }}/><span className='title'>{i18n.get('dailyMode')}</span></p>
+<p>{i18n.get('playTimes')}{record?.dailyPlayTimes}<br/>
+      {i18n.get('winTimes')}{record?.dailyWinTimes}<br/>
+      {i18n.get('winRate')}{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
+      {i18n.get('straightWins')}{record?.dailyStraightWins}<br/>
+      {i18n.get('maxStraightWins')}{record?.dailyMaxStraightWins}<br/>
+      {i18n.get('avgWinTimes')}{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}{i18n.get('avgWinTimesDesc')}
     </p>
   </>;
 }

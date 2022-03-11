@@ -31,6 +31,24 @@ const dict: { [key: string]: string } = {
   randomMode: '随心所欲！',
   timesTip: '你有{times}次机会猜测这只神秘干员，试试看！',
   titleDesc: '明日方舟 wordle-like by 昨日沉船',
-  newGameTip: '玩个过瘾！'
+  newGameTip: '玩个过瘾！',
+  playTimes:'游戏次数：',
+  winTimes:'胜利次数：',
+  winRate:'胜率：',
+  straightWins:'当前连胜次数：',
+  maxStraightWins: '最大连胜次数：',
+  avgWinTimes: '平均猜测次数：',
+  avgWinTimesDesc: '（胜利时）',
+  helpTitle: '小刻也能学会的游戏规则！',
+  helpDesc: '最多可以尝试{times}次，找出稀有度/阵营/职业/种族/画师都一模一样的干员！',
+  helpCorrect: '猜测的干员该属性和神秘干员完全一样！太棒了！',
+  helpWrong: '猜测的干员该属性和神秘干员完全不一样！难搞哦！',
+  helpDown: '猜测的干员稀有度比神秘干员高！试着往低星猜吧！',
+  helpUp: '猜测的干员稀有度比神秘干员低！试着往高星猜吧！',
+  helpWrongPos: '猜测的干员该属性和神秘干员部分一样！再加把劲！',
+  helpWrongDetail: '干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！',
+  helpDataSource: '游戏数据来自PRTS！',
+  helpUpdateTime: '最近更新时间是{updateDate}！',
+  helpNum: '目前有{num}名干员（包含异格和升变）'
 }
 export default dict

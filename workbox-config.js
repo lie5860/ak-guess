@@ -9,7 +9,8 @@ module.exports = {
     ],
     runtimeCaching: [
         {
-            urlPattern: /.*index.(?:html|css|js)$/,
+            urlPattern: /.*index.html$/,
+            // 可怜的工具人正在为流量费苦恼
             // urlPattern: /\.*index.(css|js|html)$/,
             handler: 'NetworkFirst',
             options: {
@@ -20,8 +21,7 @@ module.exports = {
             urlPattern: /.*(?:png|jpg|jpeg|svg|css|js|html|json|ico)$/,
             handler: 'CacheFirst',
             options: {
-                cacheName: 'CacheFirst',
-                maxEntries: 99
+                cacheName: 'CacheFirst'
             }
         }
     ],
