@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {React} from './global'
-import {chartsData, defaultTryTimes, questionnaireUrl} from "./const";
+import {chartsData, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl} from "./const";
 import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
@@ -10,12 +10,8 @@ import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
-import {getDailyData, guess, saveNum} from "./server";
-window.getAnswerIndex = (name) => {
-  console.log(chartsData.filter((n,index) => {
-    (n.name === name) && console.log(index)
-  })[0])
-}
+import {getDailyData, guess} from "./server";
+
 export default function Home() {
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState("random")
@@ -26,7 +22,7 @@ export default function Home() {
   const [randomData, setRandomData] = React.useState([])
   const [dayData, setDayData] = React.useState([])
   const [updateDate, setUpdateDate] = React.useState('')
-  const chartNames = React.useMemo(() => chartsData.map(v => v.name), [])
+  const chartNames = React.useMemo(() => chartsData.map(v => v?.[MAIN_KEY]), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   React.useEffect(() => {
     getDailyData().then(({last_date, daily}) => {
@@ -61,7 +57,7 @@ export default function Home() {
       setMsg('')
     }, 1500)
   }
-  const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
+  const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
   const isOver = data.length >= defaultTryTimes || isWin
 
   const onSubmit = (e) => {
@@ -74,15 +70,15 @@ export default function Home() {
     const inputName = inputRef.current.value;
     if (chartNames.indexOf(inputName) === -1) {
       showModal('输入错误，请输入正确的干员名称。')
-    } else if (data.map(v => v.guess.name).indexOf(inputName) !== -1) {
+    } else if (data.map(v => v.guess?.[MAIN_KEY]).indexOf(inputName) !== -1) {
       showModal('已经输入过啦 换一个吧！');
     } else {
-      const inputItem = chartsData.filter(v => v.name === inputName)[0];
+      const inputItem = chartsData.filter(v => v?.[MAIN_KEY] === inputName)[0];
       const res = guess(inputItem, answer)
       const newData = [...data, res]
       setData(newData)
       inputRef.current.value = '';
-      const isWin = newData?.[newData?.length - 1]?.guess?.name === answer.name
+      const isWin = newData?.[newData?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
       const isOver = newData.length >= defaultTryTimes || isWin
       if (isOver) {
         let record = loadRecordData();
@@ -127,7 +123,7 @@ export default function Home() {
           <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>每日挑战！</div>}
 
         </div>
-        <div><span className={`title`}>干员猜猜乐</span></div>
+        <div><span className={`title`}>{GAME_NAME}</span></div>
         <div>明日方舟 wordle-like by 昨日沉船</div>
         <div class="titlePanel">你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
           <div className="tooltip" onClick={() => {
@@ -172,7 +168,7 @@ export default function Home() {
           </div>
           <input className="guess_input" type="submit" value="提交"/>
         </form>
-        {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer.name}！`}</div>}
+        {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer?.[MAIN_KEY]}！`}</div>}
 
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {

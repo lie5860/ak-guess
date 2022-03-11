@@ -1,4 +1,4 @@
-import {TYPES} from "../const";
+import {MAIN_KEY, TYPES} from "../const";
 import {React} from "../global";
 
 const GuessItem = ({data, setMsg}) => {
@@ -14,7 +14,7 @@ const GuessItem = ({data, setMsg}) => {
             return <div className='column' key={key}>
               <div className="tooltip" onClick={() => {
                 setMsg(<>
-                  <div><span className={'title'}>干员名称:</span>{name}</div>
+                  <div><span className={'title'}>干员名称:</span>{v.guess?.[MAIN_KEY]}</div>
                   <div><span className={'title'}>稀有度:</span>{1 + rarity}</div>
                   <div><span className={'title'}>阵营:</span>{team?.join(' ')}</div>
                   <div><span className={'title'}>职业:</span>{className?.join('-')}</div>
@@ -22,7 +22,7 @@ const GuessItem = ({data, setMsg}) => {
                   <div><span className={'title'}>画师:</span>{painter}</div>
                 </>)
               }}>
-                {name}
+                {v.guess?.[MAIN_KEY]}
               </div>
             </div>
           }

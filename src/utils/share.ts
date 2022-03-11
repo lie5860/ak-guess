@@ -1,7 +1,7 @@
-import {defaultTryTimes, TYPES, VAL_DICT} from "../const";
+import {defaultTryTimes, GAME_NAME, MAIN_KEY, TYPES, VAL_DICT} from "../const";
 
 const shareTextCreator = (data, mode, today, showName) => {
-  let text = `干员猜猜乐 `;
+  let text = `${GAME_NAME} `;
   if (mode === 'day') {
     text += today + ' ';
   }
@@ -10,7 +10,7 @@ const shareTextCreator = (data, mode, today, showName) => {
     text += '\n'
     TYPES.map(({key, type}) => {
       if (key === 'guess') {
-        showName && (text += v.guess.name)
+        showName && (text += v.guess?.[MAIN_KEY])
       } else {
         text += VAL_DICT[v[key]]
       }
