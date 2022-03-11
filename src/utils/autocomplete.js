@@ -9,7 +9,8 @@ export default function autocomplete(inp, arr, chartsData) {
         var a, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
-        if (!val) {
+        const inputVal = val.toUpperCase().trim()
+        if (!inputVal) {
             return false;
         }
         currentFocus = -1;
@@ -20,12 +21,10 @@ export default function autocomplete(inp, arr, chartsData) {
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
-        const inputVal = val.toUpperCase()
         let dealModal = []
         alias.forEach(v => {
             new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
         })
-        console.log(inputVal, 'inputVal', arr.length)
         const nameMatchItems = [];
         const aliasMatchItems = [];
         for (i = 0; i < arr.length; i++) {

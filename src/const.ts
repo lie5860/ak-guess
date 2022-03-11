@@ -1,6 +1,6 @@
 import dealData from './data/dealData.json'
 
-export const MAIN_KEY = 'en'
+export const MAIN_KEY = 'name'
 export const GAME_NAME = '干员猜猜乐'
 export const TYPES = [
   {label: '稀有度', key: 'rarity', type: 'number'},
