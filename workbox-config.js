@@ -9,9 +9,8 @@ module.exports = {
     ],
     runtimeCaching: [
         {
-            urlPattern: /.*index.html$/,
-            // 可怜的工具人正在为流量费苦恼
-            // urlPattern: /\.*index.(css|js|html)$/,
+            // moment再见 咱流量费又好起来咯~
+            urlPattern: /\.*index.(css|js|html)$/,
             handler: 'NetworkFirst',
             options: {
                 cacheName: 'networkFirst'

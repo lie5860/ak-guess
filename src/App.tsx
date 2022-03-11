@@ -1,7 +1,6 @@
 import autocomplete from './utils/autocomplete'
-import {React} from './global'
+import {moment, React} from './global'
 import {chartsData, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl} from "./const";
-import moment from 'moment-timezone'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
 import ShareIcon from './component/ShareIcon'

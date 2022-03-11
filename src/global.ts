@@ -4,7 +4,9 @@ import ReactDom from 'https://unpkg.com/@esm-bundle/react-dom@17.0.2-fix.0/esm/r
 import React from 'https://cdn.jsdelivr.net/npm/@esm-bundle/react@17.0.2/esm/react.production.min.js';
 // import React from 'https://unpkg.com/@esm-bundle/react/esm/react.development.js';
 // import ReactDom from 'https://unpkg.com/@esm-bundle/react-dom/esm/react-dom.development.js';
+const moment = window.moment
 export {
   ReactDom,
   React,
+  moment
 }
