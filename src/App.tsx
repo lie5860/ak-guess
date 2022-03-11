@@ -40,12 +40,18 @@ export default function Home() {
     if (dayData) {
       setDayData(JSON.parse(dayData))
     }
+    const giveUp = localStorage.getItem("giveUp")
+    if (giveUp) {
+      setGiveUp(giveUp === 'true');
+    }
   }, [])
+  const [isGiveUp, setGiveUp] = React.useState(false);
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
-  const setData = mode === 'random' ? (v) => {
+  const setData = mode === 'random' ? (v, isGiveUp) => {
     localStorage.setItem('randomData', JSON.stringify(v))
     localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
+    localStorage.setItem('giveUp', isGiveUp)
     setRandomData(v)
   } : (v) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
@@ -58,7 +64,20 @@ export default function Home() {
     }, 1500)
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-  const isOver = data.length >= defaultTryTimes || isWin
+  const isOver = data.length >= defaultTryTimes || isWin || (mode ==='random' && isGiveUp)
+
+  const giveUp = () => {
+    let result = confirm("确定要放弃答题去吃蜜饼吗？");
+    if (result == true) {
+      let record = loadRecordData();
+      record.straightWins = 0;
+      record.playTimes += 1;
+      record.totalTryTimes += data.length;
+      saveRecordData(record);
+      setGiveUp(true);
+      localStorage.setItem('giveUp', true)
+    }
+  }
 
   const onSubmit = (e) => {
     e.stopPropagation();
@@ -137,20 +156,6 @@ export default function Home() {
           }}>🔎测试报告
           </div>
           <div className="tooltip" onClick={() => {
-            setMsg(<>
-              🟩: 完全正确
-              <br/>
-              🟥: 不正确
-              <br/>
-              🟨: 部分正确
-              <br/>
-              🔼: 猜测值过小
-              <br/>
-              🔽: 猜测值过大
-            </>)
-          }}>❓️Emoji
-          </div>
-          <div className="tooltip" onClick={() => {
             window.open(questionnaireUrl)
           }}>💬反馈
           </div>
@@ -166,10 +171,20 @@ export default function Home() {
               }
             }}/>
           </div>
-          <input className="guess_input" type="submit" value="提交"/>
+          <input className="guess_input" type="submit" value="提交" />
         </form>
         {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer?.[MAIN_KEY]}！`}</div>}
 
+        {mode !== 'day' && !!isOver && <a className={'togglec'} onClick={() => {
+          setGiveUp(false);
+          setData([], false)
+          setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
+        }}>▶️ 玩个过瘾！</a>
+        }
+        {mode !== 'day' && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
+          giveUp()
+        }}>🆘 小刻饿啦！</a>
+        }
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
               copyCurrentDay(shareTextCreator(data, mode, today, false), showModal)
@@ -183,11 +198,6 @@ export default function Home() {
                 <ShareIcon/>分享(带名称)
             </a>
         </div>
-        }
-        {mode !== 'day' && <a className={'togglec'} onClick={() => {
-          setData([])
-          setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ 玩个过瘾！</a>
         }
         {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
         {msg && <Modal onClose={() => {
