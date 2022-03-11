@@ -1,5 +1,5 @@
 import {TYPES} from "./const";
-import moment from "moment-timezone";
+import { moment } from "./global";
 
 const axios = window.axios;
 const guess = (inputItem, answer) => {

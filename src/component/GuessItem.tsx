@@ -1,4 +1,4 @@
-import {TYPES} from "../const";
+import {MAIN_KEY, TYPES} from "../const";
 import {React} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
@@ -25,7 +25,7 @@ const GuessItem = ({data, setMsg}) => {
                   <div><span className={'title'}>{i18n.get('painter')}:</span>{painter}</div>
                 </>)
               }}>
-                {name}
+                {v.guess?.[MAIN_KEY]}
               </div>
             </div>
           }

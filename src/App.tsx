@@ -1,7 +1,6 @@
 import autocomplete from './utils/autocomplete'
-import {React} from './global'
-import {chartsData, defaultTryTimes, questionnaireUrl} from "./const";
-import moment from 'moment-timezone'
+import {moment, React} from './global'
+import {chartsData, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
 import './index.less'
 import ShareIcon from './component/ShareIcon'
@@ -24,7 +23,7 @@ export default function Home() {
   const [randomData, setRandomData] = React.useState([])
   const [dayData, setDayData] = React.useState([])
   const [updateDate, setUpdateDate] = React.useState('')
-  const chartNames = React.useMemo(() => chartsData.map(v => v.name), [])
+  const chartNames = React.useMemo(() => chartsData.map(v => v?.[MAIN_KEY]), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   React.useEffect(() => {
     getDailyData().then(({last_date, daily}) => {
@@ -42,12 +41,18 @@ export default function Home() {
     if (dayData) {
       setDayData(JSON.parse(dayData))
     }
+    const giveUp = localStorage.getItem("giveUp")
+    if (giveUp) {
+      setGiveUp(giveUp === 'true');
+    }
   }, [])
+  const [isGiveUp, setGiveUp] = React.useState(false);
   const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
   const data = mode === 'random' ? randomData : dayData
-  const setData = mode === 'random' ? (v) => {
+  const setData = mode === 'random' ? (v, isGiveUp) => {
     localStorage.setItem('randomData', JSON.stringify(v))
     localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
+    localStorage.setItem('giveUp', isGiveUp)
     setRandomData(v)
   } : (v) => {
     localStorage.setItem(today + 'dayData', JSON.stringify(v))
@@ -59,8 +64,21 @@ export default function Home() {
       setMsg('')
     }, 1500)
   }
-  const isWin = data?.[data?.length - 1]?.guess?.name === answer.name
-  const isOver = data.length >= defaultTryTimes || isWin
+  const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
+  const isOver = data.length >= defaultTryTimes || isWin || (mode ==='random' && isGiveUp)
+
+  const giveUp = () => {
+    let result = confirm(i18n.get("giveUpConfirm"));
+    if (result == true) {
+      let record = loadRecordData();
+      record.straightWins = 0;
+      record.playTimes += 1;
+      record.totalTryTimes += data.length;
+      saveRecordData(record);
+      setGiveUp(true);
+      localStorage.setItem('giveUp', true)
+    }
+  }
 
   const onSubmit = (e) => {
     e.stopPropagation();
@@ -72,15 +90,15 @@ export default function Home() {
     const inputName = inputRef.current.value;
     if (chartNames.indexOf(inputName) === -1) {
       showModal(i18n.get('errNameTip'))
-    } else if (data.map(v => v.guess.name).indexOf(inputName) !== -1) {
+    } else if (data.map(v => v.guess?.[MAIN_KEY]).indexOf(inputName) !== -1) {
       showModal(i18n.get('duplicationTip'));
     } else {
-      const inputItem = chartsData.filter(v => v.name === inputName)[0];
+      const inputItem = chartsData.filter(v => v?.[MAIN_KEY] === inputName)[0];
       const res = guess(inputItem, answer)
       const newData = [...data, res]
       setData(newData)
       inputRef.current.value = '';
-      const isWin = newData?.[newData?.length - 1]?.guess?.name === answer.name
+      const isWin = newData?.[newData?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
       const isOver = newData.length >= defaultTryTimes || isWin
       if (isOver) {
         let record = loadRecordData();
@@ -143,20 +161,6 @@ export default function Home() {
           }}>🔎{i18n.get('report')}
           </div>
           <div className="tooltip" onClick={() => {
-            setMsg(<>
-              🟩: {i18n.get('exactly')}
-              <br/>
-              🟥: {i18n.get('incorrectness')}
-              <br/>
-              🟨: {i18n.get('partiallyCorrect')}
-              <br/>
-              🔼: {i18n.get('tooSmallTip')}
-              <br/>
-              🔽: {i18n.get('tooBigTip')}
-            </>)
-          }}>❓️Emoji
-          </div>
-          <div className="tooltip" onClick={() => {
             window.open(questionnaireUrl)
           }}>💬{i18n.get('feedback')}
           </div>
@@ -178,6 +182,16 @@ export default function Home() {
         <div
             className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
         </div>}
+        {mode !== 'day' && !!isOver && <a className={'togglec'} onClick={() => {
+          setGiveUp(false);
+          setData([], false)
+          setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
+        }}>▶️ {i18n.get('newGameTip')}</a>
+        }
+        {mode !== 'day' && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
+          giveUp()
+        }}>🆘 {i18n.get('giveUpTip')}</a>
+        }
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
               copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title')), showModal, i18n.get('copySuccess'))
@@ -191,11 +205,6 @@ export default function Home() {
                 <ShareIcon/>{i18n.get('shareTip2')}
             </a>
         </div>
-        }
-        {mode !== 'day' && <a className={'togglec'} onClick={() => {
-          setData([])
-          setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ {i18n.get('newGameTip')}</a>
         }
         {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
         {msg && <Modal onClose={() => {

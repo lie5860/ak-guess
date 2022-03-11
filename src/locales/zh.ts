@@ -32,6 +32,8 @@ const dict: { [key: string]: string } = {
   timesTip: '你有{times}次机会猜测这只神秘干员，试试看！',
   titleDesc: '明日方舟 wordle-like by 昨日沉船',
   newGameTip: '玩个过瘾！',
+  giveUpTip: '小刻饿了！',
+  giveUpConfirm: '确定要放弃答题去吃蜜饼吗？',
   playTimes:'游戏次数：',
   winTimes:'胜利次数：',
   winRate:'胜率：',
@@ -46,7 +48,7 @@ const dict: { [key: string]: string } = {
   helpDown: '猜测的干员稀有度比神秘干员高！试着往低星猜吧！',
   helpUp: '猜测的干员稀有度比神秘干员低！试着往高星猜吧！',
   helpWrongPos: '猜测的干员该属性和神秘干员部分一样！再加把劲！',
-  helpWrongDetail: '干员所属的阵营拆成了多级维度！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！',
+  helpWrongDetail: '干员所属的阵营拆成了多级维度，<br/>和出身地无关，请查阅关系网！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！',
   helpDataSource: '游戏数据来自PRTS！',
   helpUpdateTime: '最近更新时间是{updateDate}！',
   helpNum: '目前有{num}名干员（包含异格和升变）'
