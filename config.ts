@@ -1,8 +1,8 @@
 // const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
 const axios = require('axios');
 const host = 'http://akapi.saki.cc/'
-const getDailyData = () => axios
-  .get(`${host}`, {responseType: "json"})
+const getDailyData = (server) => axios
+  .get(`${host}?server=${server}`, {responseType: "json"})
   .then(function (response) {
     console.log(response.data, 'response')
     return response.data;
@@ -10,8 +10,8 @@ const getDailyData = () => axios
   .catch(function (error) {
     alert('服务已崩溃 请联系管理员')
   });
-const saveNum = (num) => axios
-  .get(`${host}save.php?num=${num}`, {responseType: "json"})
+const saveNum = (num,server) => axios
+  .get(`${host}save.php?num=${num}&server=${server}`, {responseType: "json"})
   .then(function (response) {
     console.log(response.data, 'response')
     return response.data;
@@ -19,10 +19,10 @@ const saveNum = (num) => axios
   .catch(function (error) {
     alert('服务已崩溃 请联系管理员')
   });
-const afterDealData = ({chartsData}) => {
-  getDailyData().then(({num}) => {
+const afterDealData = ({chartsData, server}) => {
+  getDailyData(server).then(({num}) => {
     if (num !== chartsData.length) {
-      saveNum(chartsData.length).then(() => {
+      saveNum(chartsData.length, server).then(() => {
       })
     }
   })

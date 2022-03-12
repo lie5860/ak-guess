@@ -1,0 +1,3663 @@
+[
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "Lancet-2",
+        "en": "Lancet-2",
+        "race": "",
+        "rarity": 0,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "Castle-3",
+        "en": "Castle-3",
+        "race": "",
+        "rarity": 0,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "THRM-EX",
+        "en": "Thermal-EX",
+        "race": "",
+        "rarity": 0,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "正义骑士号",
+        "en": "\"Justice Knight\"",
+        "race": "",
+        "rarity": 0,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "夜刀",
+        "en": "Yato",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 1,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "黑角",
+        "en": "Noir Corne",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 1,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "巡林者",
+        "en": "Rangers",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 1,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "杜林",
+        "en": "Durin",
+        "race": [
+            "杜林"
+        ],
+        "rarity": 1,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "12F",
+        "en": "12F",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 1,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "海猫络合物"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "芬",
+        "en": "Fang",
+        "race": [
+            "库兰塔 "
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "香草",
+        "en": "Vanilla",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 2,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "翎羽",
+        "en": "Plume",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 2,
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "deel"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "玫兰莎",
+        "en": "Melantha",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "泡普卡",
+        "en": "Popukar",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "卡缇",
+        "en": "Cardigan",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "米格鲁",
+        "en": "Beagle",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "斑点",
+        "en": "Spot",
+        "race": [
+            "瑞柏巴"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "克洛丝",
+        "en": "Kroos",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "安德切尔",
+        "en": "Adnachiel",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "炎熔",
+        "en": "Lava",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "芙蓉",
+        "en": "Hibiscus",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "安赛尔",
+        "en": "Ansel",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "史都华德",
+        "en": "Steward",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "梓兰",
+        "en": "Orchid",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "夜烟",
+        "en": "Haze",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 3,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "远山",
+        "en": "Gitano",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 3,
+        "team": [
+            "萨米"
+        ],
+        "painter": "谜肘"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "格雷伊",
+        "en": "Greyy",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 3,
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "卡达",
+        "en": "Click",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "术师",
+            "秘术师"
+        ],
+        "name": "深靛",
+        "en": "Indigo",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 3,
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "织布机loom"
+    },
+    {
+        "className": [
+            "术师",
+            "链术师"
+        ],
+        "name": "布丁",
+        "en": "Pudding",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "杰西卡",
+        "en": "Jessica",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 3,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "流星",
+        "en": "Meteor",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 3,
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "红云",
+        "en": "Vermeil",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "KENTllaall"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "梅",
+        "en": "May",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 3,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "白雪",
+        "en": "ShiraYuki",
+        "race": [
+            "阿纳缇"
+        ],
+        "rarity": 3,
+        "team": [
+            "东"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "狙击",
+            "散射手"
+        ],
+        "name": "松果",
+        "en": "Pinecone",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "TrNyteal"
+    },
+    {
+        "className": [
+            "狙击",
+            "神射手"
+        ],
+        "name": "安比尔",
+        "en": "Ambriel",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 3,
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "狙击",
+            "重射手"
+        ],
+        "name": "酸糖",
+        "en": "Aciddrop",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "讯使",
+        "en": "Courier",
+        "race": [
+            "依特拉"
+        ],
+        "rarity": 3,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "清道夫",
+        "en": "Scavenger",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 3,
+        "team": [
+            "S.W.E.E.P",
+            "罗德岛"
+        ],
+        "painter": "戏言咸咸"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "红豆",
+        "en": "Vigna",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "先锋",
+            "执旗手"
+        ],
+        "name": "桃金娘",
+        "en": "Myrtle",
+        "race": [
+            "杜林"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "咩煲"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "豆苗",
+        "en": "Beanstalk",
+        "race": [
+            "瑞柏巴"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "杜宾",
+        "en": "Dobermann",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "缠丸",
+        "en": "Matoimaru",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 3,
+        "team": [
+            "东"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "断罪者",
+        "en": "Conviction",
+        "race": [
+            "未知（疑似黎博利）"
+        ],
+        "rarity": 3,
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "TOMATO"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "霜叶",
+        "en": "Frostleaf",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "艾丝黛尔",
+        "en": "Estelle",
+        "race": [
+            "阿达克利斯"
+        ],
+        "rarity": 3,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "鸭"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "慕斯",
+        "en": "Mousse",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 3,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Iritoa"
+    },
+    {
+        "className": [
+            "近卫",
+            "剑豪"
+        ],
+        "name": "刻刀",
+        "en": "Cutter",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "近卫",
+            "武者"
+        ],
+        "name": "宴",
+        "en": "Utage",
+        "race": [
+            "不明"
+        ],
+        "rarity": 3,
+        "team": [
+            "东"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "芳汀",
+        "en": "Arene",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 3,
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "砾",
+        "en": "Gravel",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 3,
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "特种",
+            "行商"
+        ],
+        "name": "孑",
+        "en": "Jaye",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 3,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "特种",
+            "钩索师"
+        ],
+        "name": "暗索",
+        "en": "Rope",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 3,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "末药",
+        "en": "Myrrh",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "嘉维尔",
+        "en": "Gavial",
+        "race": [
+            "阿达克利斯"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "苏苏洛",
+        "en": "Sussurro",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "医疗",
+            "群愈师"
+        ],
+        "name": "调香师",
+        "en": "Perfumer",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "医疗",
+            "疗养师"
+        ],
+        "name": "清流",
+        "en": "Purestream",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 3,
+        "team": [
+            "炎"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "角峰",
+        "en": "Matterhorn",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 3,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "蛇屠箱",
+        "en": "Cuora",
+        "race": [
+            "匹特拉姆"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "泡泡",
+        "en": "Bubble",
+        "race": [
+            "塞拉托"
+        ],
+        "rarity": 3,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "古米",
+        "en": "Гум",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 3,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "重装",
+            "驭法铁卫"
+        ],
+        "name": "坚雷",
+        "en": "Dur-nar",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "深海色",
+        "en": "Deepcolor",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 3,
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "REALMBW"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "地灵",
+        "en": "Earthspirit",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 3,
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "波登可",
+        "en": "Podenco",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "罗比菈塔",
+        "en": "Roberta",
+        "race": [
+            "阿纳缇"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "伊桑",
+        "en": "Ethan",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "特种",
+            "推击手"
+        ],
+        "name": "阿消",
+        "en": "Shaw",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 3,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "医疗",
+            "群愈师"
+        ],
+        "name": "白面鸮",
+        "en": "Ptilopsis",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "医疗",
+            "群愈师"
+        ],
+        "name": "微风",
+        "en": "Breeze",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "藻"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "凛冬",
+        "en": "Зима",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "德克萨斯",
+        "en": "Texas",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "企鹅物流",
+            "炎",
+            "龙门"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "贾维",
+        "en": "Chiave",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "苇草",
+        "en": "Reed",
+        "race": [
+            "德拉克"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "野鬃",
+        "en": "Wild Mane",
+        "race": [
+            "库兰塔 "
+        ],
+        "rarity": 4,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "先锋",
+            "执旗手"
+        ],
+        "name": "极境",
+        "en": "Elysium",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "夜半",
+        "en": "Blacknight",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "诗怀雅",
+        "en": "Swire",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "龙门近卫局",
+            "炎",
+            "龙门"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "鞭刃",
+        "en": "Whislash",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "芙兰卡",
+        "en": "Franka",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "炎客",
+        "en": "Flamebringer",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "虎三"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "因陀罗",
+        "en": "Indra",
+        "race": [
+            "菲林 "
+        ],
+        "rarity": 4,
+        "team": [
+            "格拉斯哥帮",
+            "维多利亚"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "燧石",
+        "en": "Flint",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "拉普兰德",
+        "en": "Lappland",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "断崖",
+        "en": "Ayerscarpe",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "近卫",
+            "剑豪"
+        ],
+        "name": "柏喙",
+        "en": "Bibeak",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨米"
+        ],
+        "painter": "RAYVON"
+    },
+    {
+        "className": [
+            "近卫",
+            "剑豪"
+        ],
+        "name": "战车",
+        "en": "Tachanka",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "幽灵鲨",
+        "en": "Specter",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "布洛卡",
+        "en": "Broca",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "星极",
+        "en": "Astesia",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "铸铁",
+        "en": "Sideroca",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "近卫",
+            "武者"
+        ],
+        "name": "赤冬",
+        "en": "Akafuyu",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "team": [
+            "东"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "近卫",
+            "收割者"
+        ],
+        "name": "羽毛笔",
+        "en": "La Pluma",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "近卫",
+            "解放者"
+        ],
+        "name": "龙舌兰",
+        "en": "Tequila",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "蓝毒",
+        "en": "Blue Poison",
+        "race": [
+            "安努拉"
+        ],
+        "rarity": 4,
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "白金",
+        "en": "Platinum",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "灰喉",
+        "en": "GreyThroat",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "四月",
+        "en": "April",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "寒芒克洛丝",
+        "en": "Kroos the Keen Glint",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "陨星",
+        "en": "Meteorite",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "慑砂",
+        "en": "Sesa",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "狙击",
+            "散射手"
+        ],
+        "name": "送葬人",
+        "en": "Executor",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 4,
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "狙击",
+            "散射手"
+        ],
+        "name": "奥斯塔",
+        "en": "Aosta",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "阿米娅",
+        "en": "Amiya",
+        "race": [
+            "卡特斯",
+            "奇美拉"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "苦艾",
+        "en": "Absinthe",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "特米米",
+        "en": "Tomimi",
+        "race": [
+            "阿达克利斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "天火",
+        "en": "Skyfire",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "术师",
+            "链术师"
+        ],
+        "name": "惊蛰",
+        "en": "Leizi",
+        "race": [
+            "麒麟"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "术师",
+            "阵法术师"
+        ],
+        "name": "蜜蜡",
+        "en": "Beeswax",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "莱恩哈特",
+        "en": "Leonhardt",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "野崎つばた"
+    },
+    {
+        "className": [
+            "术师",
+            "阵法术师"
+        ],
+        "name": "薄绿",
+        "en": "Mint",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "术师",
+            "秘术师"
+        ],
+        "name": "爱丽丝",
+        "en": "Iris",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "炎狱炎熔",
+        "en": "Lava the Purgatory",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "术师",
+            "轰击术师"
+        ],
+        "name": "蚀清",
+        "en": "Corroserum",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "耶拉",
+        "en": "Kjera",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "梅尔",
+        "en": "Mayer",
+        "race": [
+            "阿纳缇"
+        ],
+        "rarity": 4,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "稀音",
+        "en": "Scene",
+        "race": [
+            "皮洛萨"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "赫默",
+        "en": "Silence",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "华法琳",
+        "en": "Warfarin",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "时辰"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "亚叶",
+        "en": "Folinic",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "医疗",
+            "疗养师"
+        ],
+        "name": "锡兰",
+        "en": "Ceylon",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "汐斯塔",
+            "哥伦比亚"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "医疗",
+            "疗养师"
+        ],
+        "name": "絮雨",
+        "en": "Whisperain",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "图耶",
+        "en": "Tuye",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "医疗",
+            "行医"
+        ],
+        "name": "桑葚",
+        "en": "Mulberry",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "医疗",
+            "行医"
+        ],
+        "name": "蜜莓",
+        "en": "Honeyberry",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "Liyu黎"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "临光",
+        "en": "Nearl",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "team": [
+            "使徒"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "吽",
+        "en": "Hung",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "红",
+        "en": "Projekt Red",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "S.W.E.E.P",
+            "罗德岛"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "槐琥",
+        "en": "Waai Fu",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "卡夫卡",
+        "en": "Kafka",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "特种",
+            "行商"
+        ],
+        "name": "乌有",
+        "en": "Mr.Nothing",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "雷蛇",
+        "en": "Liskarm",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 4,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "可颂",
+        "en": "Croissant",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "team": [
+            "企鹅物流",
+            "炎",
+            "龙门"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "拜松",
+        "en": "Bison",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "重装",
+            "不屈者"
+        ],
+        "name": "火神",
+        "en": "Vulcan",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "neco"
+    },
+    {
+        "className": [
+            "重装",
+            "驭法铁卫"
+        ],
+        "name": "石棉",
+        "en": "Asbestos",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "TEAM EXPNDR"
+    },
+    {
+        "className": [
+            "重装",
+            "驭法铁卫"
+        ],
+        "name": "暮落",
+        "en": "Shalem",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "闪击",
+        "en": "Blitz",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "暴雨",
+        "en": "Heavyrain",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "重装",
+            "要塞"
+        ],
+        "name": "灰毫",
+        "en": "Ashlock",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 4,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "重装",
+            "决战者"
+        ],
+        "name": "极光",
+        "en": "Aurora",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "狙击",
+            "重射手"
+        ],
+        "name": "普罗旺斯",
+        "en": "Provence",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "渣念"
+    },
+    {
+        "className": [
+            "狙击",
+            "神射手"
+        ],
+        "name": "守林人",
+        "en": "Firewatch",
+        "race": [
+            "埃拉菲亚 "
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "狙击",
+            "神射手"
+        ],
+        "name": "安哲拉",
+        "en": "Andreana",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "狙击",
+            "攻城手"
+        ],
+        "name": "熔泉",
+        "en": "Toddifons",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "山×2"
+    },
+    {
+        "className": [
+            "特种",
+            "钩索师"
+        ],
+        "name": "崖心",
+        "en": "Cliffheart",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "特种",
+            "钩索师"
+        ],
+        "name": "雪雉",
+        "en": "Snowsant",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "辅助",
+            "削弱者"
+        ],
+        "name": "初雪",
+        "en": "Pramanix",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "辅助",
+            "削弱者"
+        ],
+        "name": "巫恋",
+        "en": "Shamare",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "真理",
+        "en": "Истина",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "格劳克斯",
+        "en": "Glaucus",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "辅助",
+            "吟游者"
+        ],
+        "name": "空",
+        "en": "Sora",
+        "race": [
+            "因经纪公司要求不公开"
+        ],
+        "rarity": 4,
+        "team": [
+            "企鹅物流",
+            "炎",
+            "龙门"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "月禾",
+        "en": "Tsukinogi",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 4,
+        "team": [
+            "东"
+        ],
+        "painter": "上埜"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "九色鹿",
+        "en": "Nine-Colored Deer",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "夏栎",
+        "en": "Quercus",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "狮蝎",
+        "en": "Manticore",
+        "race": [
+            "曼提柯"
+        ],
+        "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "绮良",
+        "en": "Kirara",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "team": [
+            "东"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "特种",
+            "推击手"
+        ],
+        "name": "食铁兽",
+        "en": "FEater",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "RAN"
+    },
+    {
+        "className": [
+            "特种",
+            "陷阱师"
+        ],
+        "name": "罗宾",
+        "en": "Robin",
+        "race": [
+            "阿纳缇"
+        ],
+        "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "特种",
+            "陷阱师"
+        ],
+        "name": "霜华",
+        "en": "Frost",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "贝娜",
+        "en": "Bena",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "能天使",
+        "en": "Exusiai",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 5,
+        "team": [
+            "企鹅物流",
+            "炎",
+            "龙门"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "空弦",
+        "en": "Archetto",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "狙击",
+            "速射手"
+        ],
+        "name": "灰烬",
+        "en": "Ash",
+        "race": [
+            "未知"
+        ],
+        "rarity": 5,
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "狙击",
+            "重射手"
+        ],
+        "name": "黑",
+        "en": "Schwarz",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "汐斯塔",
+            "哥伦比亚"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "狙击",
+            "神射手"
+        ],
+        "name": "远牙",
+        "en": "Fartooth",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "W",
+        "en": "W",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "team": [
+            "巴别塔"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "狙击",
+            "攻城手"
+        ],
+        "name": "早露",
+        "en": "Роса",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 5,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "狙击",
+            "投掷手"
+        ],
+        "name": "迷迭香",
+        "en": "Rosmontis",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛",
+            "精英干员",
+            "罗德岛"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "狙击",
+            "散射手"
+        ],
+        "name": "假日威龙陈",
+        "en": "Ch'en the Holungday",
+        "race": [
+            "龙"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "推进之王",
+        "en": "Siege",
+        "race": [
+            "阿斯兰"
+        ],
+        "rarity": 5,
+        "team": [
+            "格拉斯哥帮",
+            "维多利亚"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "风笛",
+        "en": "Bagpipe",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "u介"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "嵯峨",
+        "en": "Saga",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 5,
+        "team": [
+            "东"
+        ],
+        "painter": "多元菌"
+    },
+    {
+        "className": [
+            "先锋",
+            "执旗手"
+        ],
+        "name": "琴柳",
+        "en": "Saileach",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "焰尾",
+        "en": "Flametail",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 5,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "术师",
+            "轰击术师"
+        ],
+        "name": "伊芙利特",
+        "en": "Ifrit",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "莫斯提马",
+        "en": "Mostima",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "艾雅法拉",
+        "en": "Eyjafjalla",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 5,
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "Anmi"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "刻俄柏",
+        "en": "Ceobe",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "夕",
+        "en": "Dusk",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "炎",
+            "岁",
+            "炎"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "术师",
+            "链术师"
+        ],
+        "name": "异客",
+        "en": "Passenger",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "术师",
+            "阵法术师"
+        ],
+        "name": "卡涅利安",
+        "en": "Carnelian",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 5,
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "澄闪",
+        "en": "Goldenglow",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Namie"
+    },
+    {
+        "className": [
+            "辅助",
+            "削弱者"
+        ],
+        "name": "灵知",
+        "en": "Gnosis",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "安洁莉娜",
+        "en": "Angelina",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 5,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "铃兰",
+        "en": "Suzuran",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 5,
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "麦哲伦",
+        "en": "Magallan",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "辅助",
+            "吟游者"
+        ],
+        "name": "浊心斯卡蒂",
+        "en": "Skadi the Corrupting Heart",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "令",
+        "en": "Ling",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "炎",
+            "岁",
+            "炎"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "傀影",
+        "en": "Phantom",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "特种",
+            "行商"
+        ],
+        "name": "老鲤",
+        "en": "Lee",
+        "race": [
+            "龙"
+        ],
+        "rarity": 5,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "特种",
+            "推击手"
+        ],
+        "name": "温蒂",
+        "en": "Weedy",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特种",
+            "怪杰"
+        ],
+        "name": "阿",
+        "en": "Aak",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "特种",
+            "钩索师"
+        ],
+        "name": "歌蕾蒂娅",
+        "en": "Gladiia",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "水月",
+        "en": "Mizuki",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "team": [
+            "东"
+        ],
+        "painter": "Namie"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "闪灵",
+        "en": "Shining",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "team": [
+            "使徒"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "医疗",
+            "群愈师"
+        ],
+        "name": "夜莺",
+        "en": "Nightingale",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "team": [
+            "使徒"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "凯尔希",
+        "en": "Kal'tsit",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "星熊",
+        "en": "Hoshiguma",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 5,
+        "team": [
+            "龙门近卫局",
+            "炎",
+            "龙门"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "塞雷娅",
+        "en": "Saria",
+        "race": [
+            "瓦伊凡 "
+        ],
+        "rarity": 5,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "瑕光",
+        "en": "Blemishine",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 5,
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "年",
+        "en": "Nian",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "炎",
+            "岁",
+            "炎"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "重装",
+            "不屈者"
+        ],
+        "name": "泥岩",
+        "en": "Mudrock",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "重装",
+            "决战者"
+        ],
+        "name": "森蚺",
+        "en": "Eunectes",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 5,
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "山",
+        "en": "Mountain",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "WincalBlanke"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "银灰",
+        "en": "SilverAsh",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "棘刺",
+        "en": "Thorns",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "近卫",
+            "剑豪"
+        ],
+        "name": "陈",
+        "en": "Ch'en",
+        "race": [
+            "龙"
+        ],
+        "rarity": 5,
+        "team": [
+            "龙门近卫局",
+            "炎",
+            "龙门"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "煌",
+        "en": "Blaze",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛",
+            "精英干员",
+            "罗德岛"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "史尔特尔",
+        "en": "Surtr",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Ask"
+    },
+    {
+        "className": [
+            "近卫",
+            "武者"
+        ],
+        "name": "赫拉格",
+        "en": "Hellagur",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "帕拉斯",
+        "en": "Pallas",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 5,
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "耀骑士临光",
+        "en": "Nearl the Radiant Knight",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 5,
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "暴行",
+        "en": "Savage",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "空爆",
+        "en": "Catapult",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "月见夜",
+        "en": "Midnight",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 2,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "猎蜂",
+        "en": "Beehunter",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 3,
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "toast"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "杰克",
+        "en": "Jackie",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "Nagu"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "夜魔",
+        "en": "Nightmare",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Lpip"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "格拉尼",
+        "en": "Grani",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "斯卡蒂",
+        "en": "Skadi",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "阿米娅(近卫)",
+        "en": "Amiya",
+        "race": [
+            "卡特斯",
+            "奇美拉"
+        ],
+        "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "唯@W"
+    }
+]

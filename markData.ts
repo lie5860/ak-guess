@@ -9,9 +9,9 @@ const chartsData = prtsData.map((v) => {
     className: [v.class, subProfession[v.cn]],
     name: v.cn.trim(),
     en: v.en.trim(),
-    team: [...new Set([v.camp, v.nation].join('-').split('-').filter(v=>v))],
     race: v.race,
     rarity: Number(v.rarity),
+    team: [...new Set([v.camp, v.nation].join('-').split('-').filter(v=>v))],
     painter: painter[v.cn]
   }
 })
@@ -19,5 +19,5 @@ let file = path.resolve(__dirname, './src/data/dealData.json')
 // 异步写入数据到文件
 fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-afterDealData({chartsData})
+//afterDealData({chartsData})
 console.log(`生成数据完成 耗时 ${new Date().valueOf() - time1}ms`)

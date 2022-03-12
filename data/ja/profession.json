@@ -1,0 +1,10 @@
+{
+	"PIONEER":"先鋒",
+	"WARRIOR":"前衛",
+	"TANK":"重装",
+	"SUPPORT":"補助",
+	"SNIPER":"狙撃",
+	"CASTER":"術師",
+	"SPECIAL":"特殊",
+	"MEDIC":"医療"
+}
