@@ -35,4 +35,4 @@
 - [Fireblend/squirdle](https://github.com/Fireblend/squirdle)（来源）
 
 ## If It Helps
-![赞赏码](https://github.com/lie5860/ak-guess/blob/main/image/pay.jpg?raw=true)
+<img src="https://github.com/lie5860/ak-guess/blob/main/image/pay.jpg?raw=true" width="300px" />
