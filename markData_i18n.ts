@@ -53,16 +53,16 @@ const loadChapterData = (k,v,server,isPatch) => {
     rarity: Number(v.rarity)
   };
   let tempTeam = [];
+  if (v.teamId !== null) {
+    tempTeam.push(team[v.teamId].powerName);
+  }
   if (v.groupId !== null) {
     tempTeam.push(team[v.groupId].powerName);
   }
   if (v.nationId !== null) {
     tempTeam.push(team[v.nationId].powerName);
   }
-  if (tempTeam.length ==0) {
-    tempTeam.push(team[v.teamId].powerName);
-  }
-  chapter.team = tempTeam.join('-').split('-').filter(v=>v);
+  chapter.team = [...new Set(tempTeam.join('-').split('-').filter(v=>v))];
   if (isPatch) {
     chapter.name += "(" + profession[v.profession] +")";
     k = patchDefault[k]; 
@@ -76,7 +76,7 @@ const loadChapterData = (k,v,server,isPatch) => {
   let raceIdx = storyText.indexOf(raceStr);
   if (raceIdx>=0) {
     let race = storyText.substring(raceIdx+raceStr.length).trim();
-    race = race.substring(0, race.indexOf("\n"));
+    race = race.substring(0, race.indexOf("\n")).trim();
     chapter.race = race.split("/");
   } 
   return chapter;

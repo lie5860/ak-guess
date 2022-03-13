@@ -53,6 +53,7 @@
         ],
         "rarity": 1,
         "team": [
+            "Op Team A4",
             "Rhodes Island"
         ],
         "painter": "Skade"
@@ -69,6 +70,7 @@
         ],
         "rarity": 1,
         "team": [
+            "Op Team A4",
             "Rhodes Island"
         ],
         "painter": "竜崎いち"
@@ -85,6 +87,7 @@
         ],
         "rarity": 1,
         "team": [
+            "Op Team A4",
             "Rhodes Island"
         ],
         "painter": "竜崎いち"
@@ -101,6 +104,7 @@
         ],
         "rarity": 1,
         "team": [
+            "Op Team A4",
             "Rhodes Island"
         ],
         "painter": "Skade"
@@ -113,7 +117,7 @@
         "name": "12F",
         "en": "",
         "race": [
-            "Savra "
+            "Savra"
         ],
         "rarity": 1,
         "team": [
@@ -129,10 +133,11 @@
         "name": "Fang",
         "en": "",
         "race": [
-            "Kuranta "
+            "Kuranta"
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A1",
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
@@ -145,7 +150,7 @@
         "name": "Vanilla",
         "en": "",
         "race": [
-            "Vouivre "
+            "Vouivre"
         ],
         "rarity": 2,
         "team": [
@@ -162,7 +167,7 @@
         "name": "Plume",
         "en": "",
         "race": [
-            "Liberi "
+            "Liberi"
         ],
         "rarity": 2,
         "team": [
@@ -182,6 +187,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A4",
             "Rhodes Island"
         ],
         "painter": "一立里子"
@@ -194,10 +200,11 @@
         "name": "Popukar",
         "en": "",
         "race": [
-            "Cautus "
+            "Cautus"
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A6",
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
@@ -214,6 +221,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A4",
             "Rhodes Island"
         ],
         "painter": "一立里子"
@@ -230,6 +238,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A1",
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
@@ -242,10 +251,11 @@
         "name": "Spot",
         "en": "",
         "race": [
-            "Rebbah "
+            "Rebbah"
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A6",
             "Rhodes Island"
         ],
         "painter": "阿鬼"
@@ -262,6 +272,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A1",
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
@@ -278,6 +289,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A4",
             "Rhodes Island"
         ],
         "painter": "一立里子"
@@ -294,6 +306,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A1",
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
@@ -310,6 +323,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A1",
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
@@ -326,6 +340,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A4",
             "Rhodes Island"
         ],
         "painter": "一立里子"
@@ -342,6 +357,7 @@
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A4",
             "Rhodes Island"
         ],
         "painter": "一立里子"
@@ -354,10 +370,11 @@
         "name": "Orchid",
         "en": "",
         "race": [
-            "Liberi "
+            "Liberi"
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A6",
             "Rhodes Island"
         ],
         "painter": "Skade"
@@ -370,7 +387,7 @@
         "name": "Haze",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 3,
         "team": [
@@ -386,7 +403,7 @@
         "name": "Gitano",
         "en": "",
         "race": [
-            "Elafia "
+            "Elafia"
         ],
         "rarity": 3,
         "team": [
@@ -402,7 +419,7 @@
         "name": "Greyy",
         "en": "",
         "race": [
-            "Perro "
+            "Perro"
         ],
         "rarity": 3,
         "team": [
@@ -450,7 +467,7 @@
         "name": "Jessica",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 3,
         "team": [
@@ -467,7 +484,7 @@
         "name": "Meteor",
         "en": "",
         "race": [
-            "Kuranta "
+            "Kuranta"
         ],
         "rarity": 3,
         "team": [
@@ -515,7 +532,7 @@
         "name": "Shirayuki",
         "en": "",
         "race": [
-            "Anaty "
+            "Anaty"
         ],
         "rarity": 3,
         "team": [
@@ -613,7 +630,7 @@
         "name": "Vigna",
         "en": "",
         "race": [
-            "Sarkaz "
+            "Sarkaz"
         ],
         "rarity": 3,
         "team": [
@@ -661,7 +678,7 @@
         "name": "Dobermann",
         "en": "",
         "race": [
-            "Perro "
+            "Perro"
         ],
         "rarity": 3,
         "team": [
@@ -709,7 +726,7 @@
         "name": "Frostleaf",
         "en": "",
         "race": [
-            "Vulpo "
+            "Vulpo"
         ],
         "rarity": 3,
         "team": [
@@ -725,7 +742,7 @@
         "name": "Estelle",
         "en": "",
         "race": [
-            "Archosauria "
+            "Archosauria"
         ],
         "rarity": 3,
         "team": [
@@ -741,7 +758,7 @@
         "name": "Mousse",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 3,
         "team": [
@@ -838,7 +855,7 @@
         "name": "Rope",
         "en": "",
         "race": [
-            "Cautus "
+            "Cautus"
         ],
         "rarity": 3,
         "team": [
@@ -855,7 +872,7 @@
         "name": "Myrrh",
         "en": "",
         "race": [
-            "Vulpo "
+            "Vulpo"
         ],
         "rarity": 3,
         "team": [
@@ -903,7 +920,7 @@
         "name": "Perfumer",
         "en": "",
         "race": [
-            "Vulpo "
+            "Vulpo"
         ],
         "rarity": 3,
         "team": [
@@ -952,7 +969,7 @@
         "name": "Cuora",
         "en": "",
         "race": [
-            "Petram "
+            "Petram"
         ],
         "rarity": 3,
         "team": [
@@ -988,6 +1005,8 @@
         ],
         "rarity": 3,
         "team": [
+            "Ursus Student Self",
+            "Governing Group",
             "Ursus"
         ],
         "painter": "Skade"
@@ -1016,7 +1035,7 @@
         "name": "Deepcolor",
         "en": "",
         "race": [
-            "Undisclosed "
+            "Undisclosed"
         ],
         "rarity": 3,
         "team": [
@@ -1032,7 +1051,7 @@
         "name": "Earthspirit",
         "en": "",
         "race": [
-            "Caprinae "
+            "Caprinae"
         ],
         "rarity": 3,
         "team": [
@@ -1080,7 +1099,7 @@
         "name": "Shaw",
         "en": "",
         "race": [
-            "Zalak "
+            "Zalak"
         ],
         "rarity": 3,
         "team": [
@@ -1134,6 +1153,8 @@
         ],
         "rarity": 4,
         "team": [
+            "Ursus Student Self",
+            "Governing Group",
             "Ursus"
         ],
         "painter": "Skade"
@@ -1146,7 +1167,7 @@
         "name": "Texas",
         "en": "",
         "race": [
-            "Lupo "
+            "Lupo"
         ],
         "rarity": 4,
         "team": [
@@ -1168,6 +1189,7 @@
         ],
         "rarity": 4,
         "team": [
+            "Chiave Gang",
             "Siracusa"
         ],
         "painter": "Infukun"
@@ -1212,7 +1234,7 @@
         "name": "Swire",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 4,
         "team": [
@@ -1246,7 +1268,7 @@
         "name": "Franka",
         "en": "",
         "race": [
-            "Vulpo "
+            "Vulpo"
         ],
         "rarity": 4,
         "team": [
@@ -1279,7 +1301,7 @@
         "name": "Indra",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 4,
         "team": [
@@ -1312,7 +1334,7 @@
         "name": "Lappland",
         "en": "",
         "race": [
-            "Lupo "
+            "Lupo"
         ],
         "rarity": 4,
         "team": [
@@ -1376,7 +1398,7 @@
         "name": "Specter",
         "en": "",
         "race": [
-            "Undisclosed "
+            "Undisclosed"
         ],
         "rarity": 4,
         "team": [
@@ -1397,6 +1419,7 @@
         ],
         "rarity": 4,
         "team": [
+            "Chiave Gang",
             "Siracusa"
         ],
         "painter": "Infukun"
@@ -1489,7 +1512,7 @@
         "name": "Blue Poison",
         "en": "",
         "race": [
-            "Anura "
+            "Anura"
         ],
         "rarity": 4,
         "team": [
@@ -1605,6 +1628,7 @@
         ],
         "rarity": 4,
         "team": [
+            "Chiave Gang",
             "Siracusa"
         ],
         "painter": "Infukun"
@@ -1618,7 +1642,7 @@
         "en": "",
         "race": [
             "Cautus",
-            "Chimera "
+            "Chimera"
         ],
         "rarity": 4,
         "team": [
@@ -1666,7 +1690,7 @@
         "name": "Skyfire",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 4,
         "team": [
@@ -1828,7 +1852,7 @@
         "name": "Warfarin",
         "en": "",
         "race": [
-            "Sarkaz "
+            "Sarkaz"
         ],
         "rarity": 4,
         "team": [
@@ -1909,7 +1933,7 @@
         "name": "Nearl",
         "en": "",
         "race": [
-            "Kuranta "
+            "Kuranta"
         ],
         "rarity": 4,
         "team": [
@@ -1929,6 +1953,7 @@
         ],
         "rarity": 4,
         "team": [
+            "Lee's Detective Agency",
             "Yan",
             "Lungmen"
         ],
@@ -1942,7 +1967,7 @@
         "name": "Projekt Red",
         "en": "",
         "race": [
-            "Lupo "
+            "Lupo"
         ],
         "rarity": 4,
         "team": [
@@ -1959,10 +1984,11 @@
         "name": "Waai Fu",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 4,
         "team": [
+            "Lee's Detective Agency",
             "Yan",
             "Lungmen"
         ],
@@ -2008,7 +2034,7 @@
         "name": "Liskarm",
         "en": "",
         "race": [
-            "Vouivre "
+            "Vouivre"
         ],
         "rarity": 4,
         "team": [
@@ -2025,7 +2051,7 @@
         "name": "Croissant",
         "en": "",
         "race": [
-            "Forte "
+            "Forte"
         ],
         "rarity": 4,
         "team": [
@@ -2060,7 +2086,7 @@
         "name": "Vulcan",
         "en": "",
         "race": [
-            "Forte "
+            "Forte"
         ],
         "rarity": 4,
         "team": [
@@ -2124,7 +2150,7 @@
         "name": "Provence",
         "en": "",
         "race": [
-            "Lupo "
+            "Lupo"
         ],
         "rarity": 4,
         "team": [
@@ -2140,7 +2166,7 @@
         "name": "Firewatch",
         "en": "",
         "race": [
-            "Elafia "
+            "Elafia"
         ],
         "rarity": 4,
         "team": [
@@ -2260,6 +2286,8 @@
         ],
         "rarity": 4,
         "team": [
+            "Ursus Student Self",
+            "Governing Group",
             "Ursus"
         ],
         "painter": "Skade"
@@ -2288,7 +2316,7 @@
         "name": "Sora",
         "en": "",
         "race": [
-            "Unknown as requested by management agency "
+            "Unknown as requested by management agency"
         ],
         "rarity": 4,
         "team": [
@@ -2354,7 +2382,7 @@
         "name": "FEater",
         "en": "",
         "race": [
-            "Ursus "
+            "Ursus"
         ],
         "rarity": 4,
         "team": [
@@ -2419,7 +2447,7 @@
         "name": "Exusiai",
         "en": "",
         "race": [
-            "Sankta "
+            "Sankta"
         ],
         "rarity": 5,
         "team": [
@@ -2506,6 +2534,8 @@
         ],
         "rarity": 5,
         "team": [
+            "Ursus Student Self",
+            "Governing Group",
             "Ursus"
         ],
         "painter": "Skade"
@@ -2523,8 +2553,7 @@
         "rarity": 5,
         "team": [
             "Rhodes Island",
-            "Elite Operator",
-            "Rhodes Island"
+            "Elite Operator"
         ],
         "painter": "唯@W"
     },
@@ -2552,7 +2581,7 @@
         "name": "Siege",
         "en": "",
         "race": [
-            "Aslan "
+            "Aslan"
         ],
         "rarity": 5,
         "team": [
@@ -2634,7 +2663,7 @@
         "name": "Eyjafjalla",
         "en": "",
         "race": [
-            "Caprinae "
+            "Caprinae"
         ],
         "rarity": 5,
         "team": [
@@ -2666,13 +2695,12 @@
         "name": "Dusk",
         "en": "",
         "race": [
-            "Undisclosed "
+            "Undisclosed"
         ],
         "rarity": 5,
         "team": [
             "Yan",
-            "Years",
-            "Yan"
+            "Years"
         ],
         "painter": "幻象黑兔"
     },
@@ -2716,7 +2744,7 @@
         "name": "Angelina",
         "en": "",
         "race": [
-            "Vulpo "
+            "Vulpo"
         ],
         "rarity": 5,
         "team": [
@@ -2817,6 +2845,7 @@
         ],
         "rarity": 5,
         "team": [
+            "Lee's Detective Agency",
             "Yan",
             "Lungmen"
         ],
@@ -2879,7 +2908,7 @@
         "name": "Nightingale",
         "en": "",
         "race": [
-            "Sarkaz "
+            "Sarkaz"
         ],
         "rarity": 5,
         "team": [
@@ -2911,7 +2940,7 @@
         "name": "Hoshiguma",
         "en": "",
         "race": [
-            "Oni "
+            "Oni"
         ],
         "rarity": 5,
         "team": [
@@ -2929,7 +2958,7 @@
         "name": "Saria",
         "en": "",
         "race": [
-            "Vouivre "
+            "Vouivre"
         ],
         "rarity": 5,
         "team": [
@@ -2967,8 +2996,7 @@
         "rarity": 5,
         "team": [
             "Yan",
-            "Years",
-            "Yan"
+            "Years"
         ],
         "painter": "幻象黑兔"
     },
@@ -3061,7 +3089,7 @@
         "name": "Ch'en",
         "en": "",
         "race": [
-            "Lung "
+            "Lung"
         ],
         "rarity": 5,
         "team": [
@@ -3084,8 +3112,7 @@
         "rarity": 5,
         "team": [
             "Rhodes Island",
-            "Elite Operator",
-            "Rhodes Island"
+            "Elite Operator"
         ],
         "painter": "唯@W"
     },
@@ -3145,7 +3172,7 @@
         "name": "Savage",
         "en": "",
         "race": [
-            "Cautus "
+            "Cautus"
         ],
         "rarity": 4,
         "team": [
@@ -3161,10 +3188,11 @@
         "name": "Catapult",
         "en": "",
         "race": [
-            "Kuranta "
+            "Kuranta"
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A6",
             "Rhodes Island"
         ],
         "painter": "m9nokuro"
@@ -3177,10 +3205,11 @@
         "name": "Midnight",
         "en": "",
         "race": [
-            "Sarkaz "
+            "Sarkaz"
         ],
         "rarity": 2,
         "team": [
+            "Reserve Op Team A6",
             "Rhodes Island"
         ],
         "painter": "竜崎いち"
@@ -3193,7 +3222,7 @@
         "name": "Beehunter",
         "en": "",
         "race": [
-            "Ursus "
+            "Ursus"
         ],
         "rarity": 3,
         "team": [
@@ -3225,7 +3254,7 @@
         "name": "Nightmare",
         "en": "",
         "race": [
-            "Feline "
+            "Feline"
         ],
         "rarity": 4,
         "team": [
@@ -3241,7 +3270,7 @@
         "name": "Grani",
         "en": "",
         "race": [
-            "Kuranta "
+            "Kuranta"
         ],
         "rarity": 4,
         "team": [
@@ -3257,7 +3286,7 @@
         "name": "Skadi",
         "en": "",
         "race": [
-            "Unknown "
+            "Unknown"
         ],
         "rarity": 5,
         "team": [
@@ -3275,7 +3304,7 @@
         "en": "",
         "race": [
             "Cautus",
-            "Chimera "
+            "Chimera"
         ],
         "rarity": 4,
         "team": [
