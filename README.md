@@ -35,8 +35,8 @@
 - [Fireblend/squirdle](https://github.com/Fireblend/squirdle)（来源）
 
 ## B站充电计划
-- [传送门](https://space.bilibili.com/14650774/)
-- 
+[传送门](https://space.bilibili.com/14650774/)
+
 您可以点击上方B站传送门，点击右上侧充电按钮为网站账号进行充电，充电所得将全额用于akg网站的开销。
 
 ※自2019年9月10日起，B站年度大会员专享每月5B币券变更为手动领取，每月1日起可领，领取后当月有效。（部分赠送时长不可领）领取位置：我的大会员-卡券包
