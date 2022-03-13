@@ -10,17 +10,17 @@ module.exports = {
     runtimeCaching: [
         {
             // moment再见 咱流量费又好起来咯~
-            urlPattern: /\.*index.(css|js|html)$/,
+            urlPattern: /.*index.(css|js|html)$/,
             handler: 'NetworkFirst',
             options: {
-                cacheName: 'networkFirst'
+                cacheName: 'networkFirst-1.2'
             }
         },
         {
-            urlPattern: /.*(?:png|jpg|jpeg|svg|css|js|html|json|ico)$/,
+            urlPattern: /.*(?:(css|js|png|jpg|jpeg|svg|json|ico))$/,
             handler: 'CacheFirst',
             options: {
-                cacheName: 'CacheFirst'
+                cacheName: 'CacheFirst-1.2'
             }
         }
     ],
