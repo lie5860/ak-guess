@@ -51,8 +51,10 @@
 B站年费大会员每月10号可获得5B币券，1B币券=10电池，单次充电最低为20电池。
 
 ## 直接的经济资助
-您可以通过微信或支付宝扫码打赏的形式对akg进行实质的经济资助。
+您可以通过打赏的形式对akg进行实质的经济资助。
+
 微信扫描：
+
 <img src="https://github.com/lie5860/ak-guess/blob/main/image/pay.jpg?raw=true" width="300px" />
 
 ### 注明
