@@ -66,7 +66,7 @@ export default function Home() {
   const isOver = data.length >= defaultTryTimes || isWin || (mode ==='random' && isGiveUp)
 
   const giveUp = () => {
-    let result = confirm("确定要放弃答题去吃蜜饼吗？");
+    let result = confirm("确定要放弃答题去吃蜜饼吗？\n当前的连胜纪录会被重置哦！");
     if (result == true) {
       let record = loadRecordData();
       record.straightWins = 0;
@@ -178,7 +178,7 @@ export default function Home() {
           setGiveUp(false);
           setData([], false)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ 玩个过瘾！</a>
+        }}>▶️ 再来一局！</a>
         }
         {mode !== 'day' && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
           giveUp()
