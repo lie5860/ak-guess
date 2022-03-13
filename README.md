@@ -7,6 +7,8 @@
 
 线上访问地址：[akg.saki.cc](http://akg.saki.cc)
 
+二开攻略：[文章链接](https://www.bilibili.com/read/cv15611509)
+
 概览图
 
 ![概览图](https://github.com/lie5860/ak-guess/blob/main/image/overview.png?raw=true)
@@ -31,3 +33,6 @@
 ## 内容来源及鸣谢
 - [PRTS Wiki](http://prts.wiki/)（游戏数据）
 - [Fireblend/squirdle](https://github.com/Fireblend/squirdle)（来源）
+
+## If It Helps
+![赞赏码](https://github.com/lie5860/ak-guess/blob/main/image/pay.jpg?raw=true)
