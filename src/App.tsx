@@ -30,7 +30,12 @@ export default function Home() {
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
-
+    if (!localStorage.getItem('firstOpen')) {
+      localStorage.setItem('firstOpen', 'yes');
+      changeModalInfo({
+        "message": <Help updateDate={updateDate} firstOpen/>, "width": '80%'
+      })
+    }
     autocomplete(inputRef.current, chartNames, chartsData);
     const randomData = localStorage.getItem('randomData')
     if (randomData) {
@@ -65,7 +70,7 @@ export default function Home() {
     }, 1500)
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-  const isOver = data.length >= defaultTryTimes || isWin || (mode ==='random' && isGiveUp)
+  const isOver = data.length >= defaultTryTimes || isWin || (mode === 'random' && isGiveUp)
 
   const giveUp = () => {
     let result = confirm(i18n.get("giveUpConfirm"));
