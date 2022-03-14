@@ -1,4 +1,3 @@
-// const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
 const axios = require('axios');
 const host = 'http://akapi.saki.cc/'
 const getDailyData = (server) => axios
@@ -10,7 +9,7 @@ const getDailyData = (server) => axios
   .catch(function (error) {
     alert('服务已崩溃 请联系管理员')
   });
-const saveNum = (num,server) => axios
+const saveNum = (num, server) => axios
   .get(`${host}save.php?num=${num}&server=${server}`, {responseType: "json"})
   .then(function (response) {
     console.log(response.data, 'response')
@@ -19,6 +18,12 @@ const saveNum = (num,server) => axios
   .catch(function (error) {
     alert('服务已崩溃 请联系管理员')
   });
+const getGameDataByLangAndName = (language, jsonName) => {
+  return axios.get(`https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/${language}/gamedata/excel/${jsonName}.json`).catch(() => {
+    console.log(`${language}语言没有${jsonName}文件`)
+    return Promise.resolve({data: {}})
+  })
+}
 const afterDealData = ({chartsData, server}) => {
   getDailyData(server).then(({num}) => {
     if (num !== chartsData.length) {
@@ -27,4 +32,4 @@ const afterDealData = ({chartsData, server}) => {
     }
   })
 }
-module.exports = {afterDealData}
+module.exports = {afterDealData, getGameDataByLangAndName}

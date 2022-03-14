@@ -6,13 +6,13 @@
         ],
         "name": "澄闪",
         "en": "Goldenglow",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "Namie"
     },
     {
@@ -22,13 +22,13 @@
         ],
         "name": "夏栎",
         "en": "Quercus",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "YUJI"
     },
     {
@@ -38,14 +38,14 @@
         ],
         "name": "令",
         "en": "Ling",
-        "team": [
-            "炎",
-            "岁"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "炎",
+            "岁"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -55,15 +55,15 @@
         ],
         "name": "老鲤",
         "en": "Lee",
+        "race": [
+            "龙"
+        ],
+        "rarity": 5,
         "team": [
             "鲤氏侦探事务所",
             "炎",
             "龙门"
         ],
-        "race": [
-            "龙"
-        ],
-        "rarity": 5,
         "painter": "KuroBlood"
     },
     {
@@ -73,13 +73,13 @@
         ],
         "name": "夜半",
         "en": "Blacknight",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "萨弗拉"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "温泉瓜"
     },
     {
@@ -89,13 +89,13 @@
         ],
         "name": "寒芒克洛丝",
         "en": "Kroos the Keen Glint",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -105,13 +105,13 @@
         ],
         "name": "九色鹿",
         "en": "Nine-Colored Deer",
-        "team": [
-            "炎"
-        ],
         "race": [
             "埃拉菲亚"
         ],
         "rarity": 4,
+        "team": [
+            "炎"
+        ],
         "painter": "IRIS_呓"
     },
     {
@@ -121,13 +121,13 @@
         ],
         "name": "暮落",
         "en": "Shalem",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "斐迪亚"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "Cenm0"
     },
     {
@@ -137,14 +137,14 @@
         ],
         "name": "灵知",
         "en": "Gnosis",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 5,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -154,14 +154,14 @@
         ],
         "name": "极光",
         "en": "Aurora",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "LAL!ROLE"
     },
     {
@@ -171,14 +171,14 @@
         ],
         "name": "耶拉",
         "en": "Kjera",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -188,13 +188,13 @@
         ],
         "name": "耀骑士临光",
         "en": "Nearl the Radiant Knight",
-        "team": [
-            "卡西米尔"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 5,
+        "team": [
+            "卡西米尔"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -204,14 +204,14 @@
         ],
         "name": "焰尾",
         "en": "Flametail",
-        "team": [
-            "红松骑士团",
-            "卡西米尔"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 5,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -221,13 +221,13 @@
         ],
         "name": "蚀清",
         "en": "Corroserum",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "斐迪亚"
         ],
         "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "Jacknife"
     },
     {
@@ -237,14 +237,14 @@
         ],
         "name": "野鬃",
         "en": "Wild Mane",
-        "team": [
-            "红松骑士团",
-            "卡西米尔"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 4,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -254,13 +254,13 @@
         ],
         "name": "蜜莓",
         "en": "Honeyberry",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "Liyu黎"
     },
     {
@@ -270,13 +270,13 @@
         ],
         "name": "布丁",
         "en": "Pudding",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "折射镜"
     },
     {
@@ -286,14 +286,14 @@
         ],
         "name": "正义骑士号",
         "en": "",
-        "team": [
-            "红松骑士团",
-            "卡西米尔"
-        ],
         "race": [
             ""
         ],
         "rarity": 0,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -303,14 +303,14 @@
         ],
         "name": "远牙",
         "en": "Fartooth",
-        "team": [
-            "红松骑士团",
-            "卡西米尔"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 5,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -320,14 +320,14 @@
         ],
         "name": "灰毫",
         "en": "Ashlock",
-        "team": [
-            "红松骑士团",
-            "卡西米尔"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 4,
+        "team": [
+            "红松骑士团",
+            "卡西米尔"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -337,13 +337,13 @@
         ],
         "name": "琴柳",
         "en": "Saileach",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -353,13 +353,13 @@
         ],
         "name": "桑葚",
         "en": "Mulberry",
-        "team": [
-            "炎"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "炎"
+        ],
         "painter": "Jacknife"
     },
     {
@@ -369,13 +369,13 @@
         ],
         "name": "罗比菈塔",
         "en": "Roberta",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "阿纳缇"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "IRIS_呓"
     },
     {
@@ -385,13 +385,13 @@
         ],
         "name": "假日威龙陈",
         "en": "Ch'en the Holungday",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "龙"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "唯@W"
     },
     {
@@ -401,13 +401,13 @@
         ],
         "name": "水月",
         "en": "Mizuki",
-        "team": [
-            "东"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 5,
+        "team": [
+            "东"
+        ],
         "painter": "Namie"
     },
     {
@@ -417,13 +417,13 @@
         ],
         "name": "羽毛笔",
         "en": "La Pluma",
-        "team": [
-            "玻利瓦尔"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "玻利瓦尔"
+        ],
         "painter": "LAL!ROLE"
     },
     {
@@ -433,13 +433,13 @@
         ],
         "name": "龙舌兰",
         "en": "Tequila",
-        "team": [
-            "玻利瓦尔"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 4,
+        "team": [
+            "玻利瓦尔"
+        ],
         "painter": "一千"
     },
     {
@@ -449,13 +449,13 @@
         ],
         "name": "帕拉斯",
         "en": "Pallas",
-        "team": [
-            "米诺斯"
-        ],
         "race": [
             "丰蹄"
         ],
         "rarity": 5,
+        "team": [
+            "米诺斯"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -465,13 +465,13 @@
         ],
         "name": "卡涅利安",
         "en": "Carnelian",
-        "team": [
-            "莱塔尼亚"
-        ],
         "race": [
             "卡普里尼"
         ],
         "rarity": 5,
+        "team": [
+            "莱塔尼亚"
+        ],
         "painter": "カワグチ"
     },
     {
@@ -481,13 +481,13 @@
         ],
         "name": "绮良",
         "en": "Kirara",
-        "team": [
-            "东"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 4,
+        "team": [
+            "东"
+        ],
         "painter": "我妻洛酱"
     },
     {
@@ -497,13 +497,13 @@
         ],
         "name": "贝娜",
         "en": "Bena",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "卡普里尼"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -513,13 +513,13 @@
         ],
         "name": "深靛",
         "en": "Indigo",
-        "team": [
-            "伊比利亚"
-        ],
         "race": [
             "斐迪亚"
         ],
         "rarity": 3,
+        "team": [
+            "伊比利亚"
+        ],
         "painter": "织布机loom"
     },
     {
@@ -529,13 +529,13 @@
         ],
         "name": "浊心斯卡蒂",
         "en": "Skadi the Corrupting Heart",
-        "team": [
-            "阿戈尔"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "阿戈尔"
+        ],
         "painter": "alchemaniac"
     },
     {
@@ -545,13 +545,13 @@
         ],
         "name": "凯尔希",
         "en": "Kal'tsit",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "唯@W"
     },
     {
@@ -561,14 +561,14 @@
         ],
         "name": "歌蕾蒂娅",
         "en": "Gladiia",
-        "team": [
-            "深海猎人",
-            "阿戈尔"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
         "painter": "Chuzenji"
     },
     {
@@ -578,13 +578,13 @@
         ],
         "name": "赤冬",
         "en": "Akafuyu",
-        "team": [
-            "东"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 4,
+        "team": [
+            "东"
+        ],
         "painter": "熊太"
     },
     {
@@ -594,13 +594,13 @@
         ],
         "name": "异客",
         "en": "Passenger",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 5,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "Skade"
     },
     {
@@ -610,13 +610,13 @@
         ],
         "name": "熔泉",
         "en": "Toddifons",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "山×2"
     },
     {
@@ -626,13 +626,13 @@
         ],
         "name": "暴雨",
         "en": "Heavyrain",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -642,13 +642,13 @@
         ],
         "name": "灰烬",
         "en": "Ash",
-        "team": [
-            "彩虹小队"
-        ],
         "race": [
             "未知"
         ],
         "rarity": 5,
+        "team": [
+            "彩虹小队"
+        ],
         "painter": "Ubisoft"
     },
     {
@@ -658,13 +658,13 @@
         ],
         "name": "霜华",
         "en": "Frost",
-        "team": [
-            "彩虹小队"
-        ],
         "race": [
             "未知"
         ],
         "rarity": 4,
+        "team": [
+            "彩虹小队"
+        ],
         "painter": "Ubisoft"
     },
     {
@@ -674,13 +674,13 @@
         ],
         "name": "闪击",
         "en": "Blitz",
-        "team": [
-            "彩虹小队"
-        ],
         "race": [
             "未知"
         ],
         "rarity": 4,
+        "team": [
+            "彩虹小队"
+        ],
         "painter": "Ubisoft"
     },
     {
@@ -690,13 +690,13 @@
         ],
         "name": "战车",
         "en": "Tachanka",
-        "team": [
-            "彩虹小队"
-        ],
         "race": [
             "未知"
         ],
         "rarity": 4,
+        "team": [
+            "彩虹小队"
+        ],
         "painter": "Ubisoft"
     },
     {
@@ -706,14 +706,14 @@
         ],
         "name": "夕",
         "en": "Dusk",
-        "team": [
-            "炎",
-            "岁"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "炎",
+            "岁"
+        ],
         "painter": "幻象黑兔"
     },
     {
@@ -723,13 +723,13 @@
         ],
         "name": "嵯峨",
         "en": "Saga",
-        "team": [
-            "东"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 5,
+        "team": [
+            "东"
+        ],
         "painter": "多元菌"
     },
     {
@@ -739,13 +739,13 @@
         ],
         "name": "乌有",
         "en": "Mr.Nothing",
-        "team": [
-            "炎"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "炎"
+        ],
         "painter": "Skade"
     },
     {
@@ -755,13 +755,13 @@
         ],
         "name": "炎狱炎熔",
         "en": "Lava the Purgatory",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -771,13 +771,13 @@
         ],
         "name": "图耶",
         "en": "Tuye",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "丰蹄"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -787,13 +787,13 @@
         ],
         "name": "空弦",
         "en": "Archetto",
-        "team": [
-            "拉特兰"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 5,
+        "team": [
+            "拉特兰"
+        ],
         "painter": "alchemaniac"
     },
     {
@@ -803,13 +803,13 @@
         ],
         "name": "爱丽丝",
         "en": "Iris",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -819,13 +819,13 @@
         ],
         "name": "豆苗",
         "en": "Beanstalk",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "瑞柏巴"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "一千"
     },
     {
@@ -835,13 +835,13 @@
         ],
         "name": "山",
         "en": "Mountain",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "WincalBlanke"
     },
     {
@@ -851,13 +851,13 @@
         ],
         "name": "卡夫卡",
         "en": "Kafka",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -867,13 +867,13 @@
         ],
         "name": "罗宾",
         "en": "Robin",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "阿纳缇"
         ],
         "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -883,13 +883,13 @@
         ],
         "name": "松果",
         "en": "Pinecone",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "TrNyteal"
     },
     {
@@ -899,14 +899,14 @@
         ],
         "name": "阿米娅(近卫)",
         "en": "Amiya",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "卡特斯",
             "奇美拉"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "唯@W"
     },
     {
@@ -916,14 +916,14 @@
         ],
         "name": "迷迭香",
         "en": "Rosmontis",
-        "team": [
-            "罗德岛",
-            "精英干员"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
         "painter": "唯@W"
     },
     {
@@ -933,13 +933,13 @@
         ],
         "name": "泥岩",
         "en": "Mudrock",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -949,13 +949,13 @@
         ],
         "name": "絮雨",
         "en": "Whisperain",
-        "team": [
-            "伊比利亚"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 4,
+        "team": [
+            "伊比利亚"
+        ],
         "painter": "Chuzenji"
     },
     {
@@ -965,13 +965,13 @@
         ],
         "name": "杰克",
         "en": "Jackie",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "Nagu"
     },
     {
@@ -981,13 +981,13 @@
         ],
         "name": "瑕光",
         "en": "Blemishine",
-        "team": [
-            "卡西米尔"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 5,
+        "team": [
+            "卡西米尔"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -997,14 +997,14 @@
         ],
         "name": "奥斯塔",
         "en": "Aosta",
-        "team": [
-            "贾维团伙",
-            "叙拉古"
-        ],
         "race": [
             "鲁珀"
         ],
         "rarity": 4,
+        "team": [
+            "贾维团伙",
+            "叙拉古"
+        ],
         "painter": "Infukun"
     },
     {
@@ -1014,13 +1014,13 @@
         ],
         "name": "鞭刃",
         "en": "Whislash",
-        "team": [
-            "卡西米尔"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 4,
+        "team": [
+            "卡西米尔"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -1030,13 +1030,13 @@
         ],
         "name": "泡泡",
         "en": "Bubble",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "塞拉托"
         ],
         "rarity": 3,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "Cenm0"
     },
     {
@@ -1046,13 +1046,13 @@
         ],
         "name": "史尔特尔",
         "en": "Surtr",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "Ask"
     },
     {
@@ -1062,13 +1062,13 @@
         ],
         "name": "四月",
         "en": "April",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "れおえん"
     },
     {
@@ -1078,13 +1078,13 @@
         ],
         "name": "薄绿",
         "en": "Mint",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "ヌードル"
     },
     {
@@ -1094,13 +1094,13 @@
         ],
         "name": "芳汀",
         "en": "Arene",
-        "team": [
-            "拉特兰"
-        ],
         "race": [
             "萨科塔"
         ],
         "rarity": 3,
+        "team": [
+            "拉特兰"
+        ],
         "painter": "umo_yszx"
     },
     {
@@ -1110,13 +1110,13 @@
         ],
         "name": "森蚺",
         "en": "Eunectes",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "斐迪亚"
         ],
         "rarity": 5,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "Liduke"
     },
     {
@@ -1126,13 +1126,13 @@
         ],
         "name": "燧石",
         "en": "Flint",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -1142,13 +1142,13 @@
         ],
         "name": "特米米",
         "en": "Tomimi",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "阿达克利斯"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "Chuzenji"
     },
     {
@@ -1158,13 +1158,13 @@
         ],
         "name": "酸糖",
         "en": "Aciddrop",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "Lanzi"
     },
     {
@@ -1174,13 +1174,13 @@
         ],
         "name": "棘刺",
         "en": "Thorns",
-        "team": [
-            "伊比利亚"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 5,
+        "team": [
+            "伊比利亚"
+        ],
         "painter": "幻象黑兔"
     },
     {
@@ -1190,14 +1190,14 @@
         ],
         "name": "安哲拉",
         "en": "Andreana",
-        "team": [
-            "深海猎人",
-            "阿戈尔"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 4,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
         "painter": "LLC"
     },
     {
@@ -1207,14 +1207,14 @@
         ],
         "name": "孑",
         "en": "Jaye",
-        "team": [
-            "炎",
-            "龙门"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 3,
+        "team": [
+            "炎",
+            "龙门"
+        ],
         "painter": "阿鬼"
     },
     {
@@ -1224,14 +1224,14 @@
         ],
         "name": "贾维",
         "en": "Chiave",
-        "team": [
-            "贾维团伙",
-            "叙拉古"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 4,
+        "team": [
+            "贾维团伙",
+            "叙拉古"
+        ],
         "painter": "Infukun"
     },
     {
@@ -1241,13 +1241,13 @@
         ],
         "name": "蜜蜡",
         "en": "Beeswax",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "卡普里尼"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "カワグチ"
     },
     {
@@ -1257,13 +1257,13 @@
         ],
         "name": "稀音",
         "en": "Scene",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "皮洛萨"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "アシマ"
     },
     {
@@ -1273,13 +1273,13 @@
         ],
         "name": "铃兰",
         "en": "Suzuran",
-        "team": [
-            "叙拉古"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 5,
+        "team": [
+            "叙拉古"
+        ],
         "painter": "将"
     },
     {
@@ -1289,13 +1289,13 @@
         ],
         "name": "断崖",
         "en": "Ayerscarpe",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -1305,13 +1305,13 @@
         ],
         "name": "亚叶",
         "en": "Folinic",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -1321,13 +1321,13 @@
         ],
         "name": "卡达",
         "en": "Click",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "れおえん"
     },
     {
@@ -1337,14 +1337,14 @@
         ],
         "name": "早露",
         "en": "Роса",
-        "team": [
-            "乌萨斯学生自治团",
-            "乌萨斯"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 5,
+        "team": [
+            "乌萨斯学生自治团",
+            "乌萨斯"
+        ],
         "painter": "Skade"
     },
     {
@@ -1354,13 +1354,13 @@
         ],
         "name": "莱恩哈特",
         "en": "Leonhardt",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "野崎つばた"
     },
     {
@@ -1370,13 +1370,13 @@
         ],
         "name": "苦艾",
         "en": "Absinthe",
-        "team": [
-            "乌萨斯"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 4,
+        "team": [
+            "乌萨斯"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -1386,13 +1386,13 @@
         ],
         "name": "波登可",
         "en": "Podenco",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "アシマ"
     },
     {
@@ -1402,13 +1402,13 @@
         ],
         "name": "月禾",
         "en": "Tsukinogi",
-        "team": [
-            "东"
-        ],
         "race": [
             "埃拉菲亚"
         ],
         "rarity": 4,
+        "team": [
+            "东"
+        ],
         "painter": "上埜"
     },
     {
@@ -1418,13 +1418,13 @@
         ],
         "name": "石棉",
         "en": "Asbestos",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "萨弗拉"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "TEAM EXPNDR"
     },
     {
@@ -1434,13 +1434,13 @@
         ],
         "name": "W",
         "en": "W",
-        "team": [
-            "巴别塔"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 5,
+        "team": [
+            "巴别塔"
+        ],
         "painter": "Liduke"
     },
     {
@@ -1450,13 +1450,13 @@
         ],
         "name": "温蒂",
         "en": "Weedy",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -1466,13 +1466,13 @@
         ],
         "name": "极境",
         "en": "Elysium",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "Skade"
     },
     {
@@ -1482,13 +1482,13 @@
         ],
         "name": "THRM-EX",
         "en": "Thermal-EX",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             ""
         ],
         "rarity": 0,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "TOKI"
     },
     {
@@ -1498,13 +1498,13 @@
         ],
         "name": "傀影",
         "en": "Phantom",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "Skade"
     },
     {
@@ -1514,13 +1514,13 @@
         ],
         "name": "巫恋",
         "en": "Shamare",
-        "team": [
-            "叙拉古"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -1530,13 +1530,13 @@
         ],
         "name": "铸铁",
         "en": "Sideroca",
-        "team": [
-            "米诺斯"
-        ],
         "race": [
             "丰蹄"
         ],
         "rarity": 4,
+        "team": [
+            "米诺斯"
+        ],
         "painter": "将"
     },
     {
@@ -1546,13 +1546,13 @@
         ],
         "name": "刻刀",
         "en": "Cutter",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -1562,13 +1562,13 @@
         ],
         "name": "断罪者",
         "en": "Conviction",
-        "team": [
-            "米诺斯"
-        ],
         "race": [
             "未知（疑似黎博利）"
         ],
         "rarity": 3,
+        "team": [
+            "米诺斯"
+        ],
         "painter": "TOMATO"
     },
     {
@@ -1578,13 +1578,13 @@
         ],
         "name": "风笛",
         "en": "Bagpipe",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 5,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "u介"
     },
     {
@@ -1594,13 +1594,13 @@
         ],
         "name": "慑砂",
         "en": "Sesa",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -1610,13 +1610,13 @@
         ],
         "name": "柏喙",
         "en": "Bibeak",
-        "team": [
-            "萨米"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "萨米"
+        ],
         "painter": "RAYVON"
     },
     {
@@ -1626,13 +1626,13 @@
         ],
         "name": "宴",
         "en": "Utage",
-        "team": [
-            "东"
-        ],
         "race": [
             "不明"
         ],
         "rarity": 3,
+        "team": [
+            "东"
+        ],
         "painter": "釜飯轟々丸"
     },
     {
@@ -1642,13 +1642,13 @@
         ],
         "name": "清流",
         "en": "Purestream",
-        "team": [
-            "炎"
-        ],
         "race": [
             "阿戈尔"
         ],
         "rarity": 3,
+        "team": [
+            "炎"
+        ],
         "painter": "唯@W"
     },
     {
@@ -1658,13 +1658,13 @@
         ],
         "name": "刻俄柏",
         "en": "Ceobe",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "LM7"
     },
     {
@@ -1674,13 +1674,13 @@
         ],
         "name": "惊蛰",
         "en": "Leizi",
-        "team": [
-            "炎"
-        ],
         "race": [
             "麒麟"
         ],
         "rarity": 4,
+        "team": [
+            "炎"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -1690,14 +1690,14 @@
         ],
         "name": "年",
         "en": "Nian",
-        "team": [
-            "炎",
-            "岁"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "炎",
+            "岁"
+        ],
         "painter": "幻象黑兔"
     },
     {
@@ -1707,15 +1707,15 @@
         ],
         "name": "阿",
         "en": "Aak",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
         "team": [
             "鲤氏侦探事务所",
             "炎",
             "龙门"
         ],
-        "race": [
-            "菲林"
-        ],
-        "rarity": 5,
         "painter": "KuroBlood"
     },
     {
@@ -1725,15 +1725,15 @@
         ],
         "name": "吽",
         "en": "Hung",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
         "team": [
             "鲤氏侦探事务所",
             "炎",
             "龙门"
         ],
-        "race": [
-            "佩洛"
-        ],
-        "rarity": 4,
         "painter": "KuroBlood"
     },
     {
@@ -1743,14 +1743,14 @@
         ],
         "name": "雪雉",
         "en": "Snowsant",
-        "team": [
-            "炎",
-            "龙门"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -1760,14 +1760,14 @@
         ],
         "name": "煌",
         "en": "Blaze",
-        "team": [
-            "罗德岛",
-            "精英干员"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
         "painter": "唯@W"
     },
     {
@@ -1777,13 +1777,13 @@
         ],
         "name": "灰喉",
         "en": "GreyThroat",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -1793,13 +1793,13 @@
         ],
         "name": "安比尔",
         "en": "Ambriel",
-        "team": [
-            "拉特兰"
-        ],
         "race": [
             "萨科塔"
         ],
         "rarity": 3,
+        "team": [
+            "拉特兰"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -1809,14 +1809,14 @@
         ],
         "name": "布洛卡",
         "en": "Broca",
-        "team": [
-            "贾维团伙",
-            "叙拉古"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "贾维团伙",
+            "叙拉古"
+        ],
         "painter": "Infukun"
     },
     {
@@ -1826,13 +1826,13 @@
         ],
         "name": "苇草",
         "en": "Reed",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "德拉克"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "STAR影法师"
     },
     {
@@ -1842,13 +1842,13 @@
         ],
         "name": "莫斯提马",
         "en": "Mostima",
-        "team": [
-            "拉特兰"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "拉特兰"
+        ],
         "painter": "幻象黑兔"
     },
     {
@@ -1858,15 +1858,15 @@
         ],
         "name": "槐琥",
         "en": "Waai Fu",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
         "team": [
             "鲤氏侦探事务所",
             "炎",
             "龙门"
         ],
-        "race": [
-            "菲林"
-        ],
-        "rarity": 4,
         "painter": "KuroBlood"
     },
     {
@@ -1876,14 +1876,14 @@
         ],
         "name": "拜松",
         "en": "Bison",
-        "team": [
-            "炎",
-            "龙门"
-        ],
         "race": [
             "丰蹄"
         ],
         "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -1893,13 +1893,13 @@
         ],
         "name": "梅",
         "en": "May",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 3,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -1909,13 +1909,13 @@
         ],
         "name": "微风",
         "en": "Breeze",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "藻"
     },
     {
@@ -1925,13 +1925,13 @@
         ],
         "name": "伊桑",
         "en": "Ethan",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨弗拉"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "阿鬼"
     },
     {
@@ -1941,14 +1941,14 @@
         ],
         "name": "麦哲伦",
         "en": "Magallan",
-        "team": [
-            "莱茵生命",
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 5,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -1958,13 +1958,13 @@
         ],
         "name": "送葬人",
         "en": "Executor",
-        "team": [
-            "拉特兰"
-        ],
         "race": [
             "萨科塔"
         ],
         "rarity": 4,
+        "team": [
+            "拉特兰"
+        ],
         "painter": "Skade"
     },
     {
@@ -1974,13 +1974,13 @@
         ],
         "name": "炎客",
         "en": "Flamebringer",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "虎三"
     },
     {
@@ -1990,13 +1990,13 @@
         ],
         "name": "红云",
         "en": "Vermeil",
-        "team": [
-            "叙拉古"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "叙拉古"
+        ],
         "painter": "KENTllaall"
     },
     {
@@ -2006,13 +2006,13 @@
         ],
         "name": "坚雷",
         "en": "Dur-nar",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -2022,13 +2022,13 @@
         ],
         "name": "赫拉格",
         "en": "Hellagur",
-        "team": [
-            "乌萨斯"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 5,
+        "team": [
+            "乌萨斯"
+        ],
         "painter": "Liduke"
     },
     {
@@ -2038,13 +2038,13 @@
         ],
         "name": "星极",
         "en": "Astesia",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "YUJI"
     },
     {
@@ -2054,13 +2054,13 @@
         ],
         "name": "桃金娘",
         "en": "Myrtle",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "杜林"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "咩煲"
     },
     {
@@ -2070,14 +2070,14 @@
         ],
         "name": "黑",
         "en": "Schwarz",
-        "team": [
-            "汐斯塔",
-            "哥伦比亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "汐斯塔",
+            "哥伦比亚"
+        ],
         "painter": "Liduke"
     },
     {
@@ -2087,13 +2087,13 @@
         ],
         "name": "格劳克斯",
         "en": "Glaucus",
-        "team": [
-            "伊比利亚"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 4,
+        "team": [
+            "伊比利亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -2103,14 +2103,14 @@
         ],
         "name": "锡兰",
         "en": "Ceylon",
-        "team": [
-            "汐斯塔",
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "汐斯塔",
+            "哥伦比亚"
+        ],
         "painter": "Skade"
     },
     {
@@ -2120,13 +2120,13 @@
         ],
         "name": "苏苏洛",
         "en": "Sussurro",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "将"
     },
     {
@@ -2136,15 +2136,15 @@
         ],
         "name": "陈",
         "en": "Ch'en",
+        "race": [
+            "龙"
+        ],
+        "rarity": 5,
         "team": [
             "龙门近卫局",
             "炎",
             "龙门"
         ],
-        "race": [
-            "龙"
-        ],
-        "rarity": 5,
         "painter": "唯@W"
     },
     {
@@ -2154,15 +2154,15 @@
         ],
         "name": "诗怀雅",
         "en": "Swire",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
         "team": [
             "龙门近卫局",
             "炎",
             "龙门"
         ],
-        "race": [
-            "菲林"
-        ],
-        "rarity": 4,
         "painter": "下野宏铭"
     },
     {
@@ -2172,13 +2172,13 @@
         ],
         "name": "格雷伊",
         "en": "Greyy",
-        "team": [
-            "玻利瓦尔"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 3,
+        "team": [
+            "玻利瓦尔"
+        ],
         "painter": "我妻洛酱"
     },
     {
@@ -2188,14 +2188,14 @@
         ],
         "name": "斑点",
         "en": "Spot",
-        "team": [
-            "行动预备组A6",
-            "罗德岛"
-        ],
         "race": [
             "瑞柏巴"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
         "painter": "阿鬼"
     },
     {
@@ -2205,14 +2205,14 @@
         ],
         "name": "泡普卡",
         "en": "Popukar",
-        "team": [
-            "行动预备组A6",
-            "罗德岛"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -2222,14 +2222,14 @@
         ],
         "name": "斯卡蒂",
         "en": "Skadi",
-        "team": [
-            "深海猎人",
-            "阿戈尔"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 5,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
         "painter": "alchemaniac"
     },
     {
@@ -2239,13 +2239,13 @@
         ],
         "name": "格拉尼",
         "en": "Grani",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "alchemaniac"
     },
     {
@@ -2255,13 +2255,13 @@
         ],
         "name": "夜魔",
         "en": "Nightmare",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "Lpip"
     },
     {
@@ -2271,13 +2271,13 @@
         ],
         "name": "猎蜂",
         "en": "Beehunter",
-        "team": [
-            "乌萨斯"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 3,
+        "team": [
+            "乌萨斯"
+        ],
         "painter": "toast"
     },
     {
@@ -2287,14 +2287,14 @@
         ],
         "name": "月见夜",
         "en": "Midnight",
-        "team": [
-            "行动预备组A6",
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2304,14 +2304,14 @@
         ],
         "name": "空爆",
         "en": "Catapult",
-        "team": [
-            "行动预备组A6",
-            "罗德岛"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -2321,13 +2321,13 @@
         ],
         "name": "暴行",
         "en": "Savage",
-        "team": [
-            "雷姆必拓"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 4,
+        "team": [
+            "雷姆必拓"
+        ],
         "painter": "TOKI"
     },
     {
@@ -2337,14 +2337,14 @@
         ],
         "name": "银灰",
         "en": "SilverAsh",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 5,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2354,14 +2354,14 @@
         ],
         "name": "塞雷娅",
         "en": "Saria",
-        "team": [
-            "莱茵生命",
-            "哥伦比亚"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 5,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -2371,15 +2371,15 @@
         ],
         "name": "星熊",
         "en": "Hoshiguma",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 5,
         "team": [
             "龙门近卫局",
             "炎",
             "龙门"
         ],
-        "race": [
-            "鬼"
-        ],
-        "rarity": 5,
         "painter": "Infukun"
     },
     {
@@ -2389,13 +2389,13 @@
         ],
         "name": "夜莺",
         "en": "Nightingale",
-        "team": [
-            "使徒"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 5,
+        "team": [
+            "使徒"
+        ],
         "painter": "Skade"
     },
     {
@@ -2405,13 +2405,13 @@
         ],
         "name": "闪灵",
         "en": "Shining",
-        "team": [
-            "使徒"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 5,
+        "team": [
+            "使徒"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2421,13 +2421,13 @@
         ],
         "name": "安洁莉娜",
         "en": "Angelina",
-        "team": [
-            "叙拉古"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 5,
+        "team": [
+            "叙拉古"
+        ],
         "painter": "LM7"
     },
     {
@@ -2437,13 +2437,13 @@
         ],
         "name": "艾雅法拉",
         "en": "Eyjafjalla",
-        "team": [
-            "莱塔尼亚"
-        ],
         "race": [
             "卡普里尼"
         ],
         "rarity": 5,
+        "team": [
+            "莱塔尼亚"
+        ],
         "painter": "Anmi"
     },
     {
@@ -2453,14 +2453,14 @@
         ],
         "name": "伊芙利特",
         "en": "Ifrit",
-        "team": [
-            "莱茵生命",
-            "哥伦比亚"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 5,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -2470,14 +2470,14 @@
         ],
         "name": "推进之王",
         "en": "Siege",
-        "team": [
-            "格拉斯哥帮",
-            "维多利亚"
-        ],
         "race": [
             "阿斯兰"
         ],
         "rarity": 5,
+        "team": [
+            "格拉斯哥帮",
+            "维多利亚"
+        ],
         "painter": "Infukun"
     },
     {
@@ -2487,15 +2487,15 @@
         ],
         "name": "能天使",
         "en": "Exusiai",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 5,
         "team": [
             "企鹅物流",
             "炎",
             "龙门"
         ],
-        "race": [
-            "萨科塔"
-        ],
-        "rarity": 5,
         "painter": "幻象黑兔"
     },
     {
@@ -2505,14 +2505,14 @@
         ],
         "name": "食铁兽",
         "en": "FEater",
-        "team": [
-            "炎",
-            "龙门"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 4,
+        "team": [
+            "炎",
+            "龙门"
+        ],
         "painter": "RAN"
     },
     {
@@ -2522,13 +2522,13 @@
         ],
         "name": "狮蝎",
         "en": "Manticore",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "曼提柯"
         ],
         "rarity": 4,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2538,15 +2538,15 @@
         ],
         "name": "空",
         "en": "Sora",
+        "race": [
+            "因经纪公司要求不公开"
+        ],
+        "rarity": 4,
         "team": [
             "企鹅物流",
             "炎",
             "龙门"
         ],
-        "race": [
-            "因经纪公司要求不公开"
-        ],
-        "rarity": 4,
         "painter": "幻象黑兔"
     },
     {
@@ -2556,14 +2556,14 @@
         ],
         "name": "真理",
         "en": "Истина",
-        "team": [
-            "乌萨斯学生自治团",
-            "乌萨斯"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 4,
+        "team": [
+            "乌萨斯学生自治团",
+            "乌萨斯"
+        ],
         "painter": "Skade"
     },
     {
@@ -2573,14 +2573,14 @@
         ],
         "name": "初雪",
         "en": "Pramanix",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2590,14 +2590,14 @@
         ],
         "name": "崖心",
         "en": "Cliffheart",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2607,13 +2607,13 @@
         ],
         "name": "守林人",
         "en": "Firewatch",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "埃拉菲亚"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "aZLing4"
     },
     {
@@ -2623,13 +2623,13 @@
         ],
         "name": "普罗旺斯",
         "en": "Provence",
-        "team": [
-            "叙拉古"
-        ],
         "race": [
             "鲁珀"
         ],
         "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
         "painter": "渣念"
     },
     {
@@ -2639,13 +2639,13 @@
         ],
         "name": "火神",
         "en": "Vulcan",
-        "team": [
-            "米诺斯"
-        ],
         "race": [
             "丰蹄"
         ],
         "rarity": 4,
+        "team": [
+            "米诺斯"
+        ],
         "painter": "neco"
     },
     {
@@ -2655,15 +2655,15 @@
         ],
         "name": "可颂",
         "en": "Croissant",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
         "team": [
             "企鹅物流",
             "炎",
             "龙门"
         ],
-        "race": [
-            "丰蹄"
-        ],
-        "rarity": 4,
         "painter": "幻象黑兔"
     },
     {
@@ -2673,14 +2673,14 @@
         ],
         "name": "雷蛇",
         "en": "Liskarm",
-        "team": [
-            "黑钢国际",
-            "哥伦比亚"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 4,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
         "painter": "TOKI"
     },
     {
@@ -2690,14 +2690,14 @@
         ],
         "name": "红",
         "en": "Projekt Red",
-        "team": [
-            "S.W.E.E.P",
-            "罗德岛"
-        ],
         "race": [
             "鲁珀"
         ],
         "rarity": 4,
+        "team": [
+            "S.W.E.E.P",
+            "罗德岛"
+        ],
         "painter": "Infukun"
     },
     {
@@ -2707,13 +2707,13 @@
         ],
         "name": "临光",
         "en": "Nearl",
-        "team": [
-            "使徒"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 4,
+        "team": [
+            "使徒"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2723,13 +2723,13 @@
         ],
         "name": "华法琳",
         "en": "Warfarin",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "时辰"
     },
     {
@@ -2739,14 +2739,14 @@
         ],
         "name": "赫默",
         "en": "Silence",
-        "team": [
-            "莱茵生命",
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
         "painter": "NoriZC"
     },
     {
@@ -2756,14 +2756,14 @@
         ],
         "name": "梅尔",
         "en": "Mayer",
-        "team": [
-            "莱茵生命",
-            "哥伦比亚"
-        ],
         "race": [
             "阿纳缇"
         ],
         "rarity": 4,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
         "painter": "幻象黑兔"
     },
     {
@@ -2773,13 +2773,13 @@
         ],
         "name": "天火",
         "en": "Skyfire",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "TOKI"
     },
     {
@@ -2789,14 +2789,14 @@
         ],
         "name": "阿米娅",
         "en": "Amiya",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "卡特斯",
             "奇美拉"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "唯@W"
     },
     {
@@ -2806,13 +2806,13 @@
         ],
         "name": "陨星",
         "en": "Meteorite",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 4,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "TOKI"
     },
     {
@@ -2822,13 +2822,13 @@
         ],
         "name": "白金",
         "en": "Platinum",
-        "team": [
-            "卡西米尔"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 4,
+        "team": [
+            "卡西米尔"
+        ],
         "painter": "Skade"
     },
     {
@@ -2838,13 +2838,13 @@
         ],
         "name": "蓝毒",
         "en": "Blue Poison",
-        "team": [
-            "伊比利亚"
-        ],
         "race": [
             "安努拉"
         ],
         "rarity": 4,
+        "team": [
+            "伊比利亚"
+        ],
         "painter": "LLC"
     },
     {
@@ -2854,14 +2854,14 @@
         ],
         "name": "幽灵鲨",
         "en": "Specter",
-        "team": [
-            "深海猎人",
-            "阿戈尔"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 4,
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
         "painter": "Skade"
     },
     {
@@ -2871,13 +2871,13 @@
         ],
         "name": "拉普兰德",
         "en": "Lappland",
-        "team": [
-            "叙拉古"
-        ],
         "race": [
             "鲁珀"
         ],
         "rarity": 4,
+        "team": [
+            "叙拉古"
+        ],
         "painter": "幻象黑兔"
     },
     {
@@ -2887,14 +2887,14 @@
         ],
         "name": "因陀罗",
         "en": "Indra",
-        "team": [
-            "格拉斯哥帮",
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 4,
+        "team": [
+            "格拉斯哥帮",
+            "维多利亚"
+        ],
         "painter": "Infukun"
     },
     {
@@ -2904,14 +2904,14 @@
         ],
         "name": "芙兰卡",
         "en": "Franka",
-        "team": [
-            "黑钢国际",
-            "哥伦比亚"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 4,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
         "painter": "TOKI"
     },
     {
@@ -2921,15 +2921,15 @@
         ],
         "name": "德克萨斯",
         "en": "Texas",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
         "team": [
             "企鹅物流",
             "炎",
             "龙门"
         ],
-        "race": [
-            "鲁珀"
-        ],
-        "rarity": 4,
         "painter": "幻象黑兔"
     },
     {
@@ -2939,14 +2939,14 @@
         ],
         "name": "凛冬",
         "en": "Зима",
-        "team": [
-            "乌萨斯学生自治团",
-            "乌萨斯"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 4,
+        "team": [
+            "乌萨斯学生自治团",
+            "乌萨斯"
+        ],
         "painter": "Skade"
     },
     {
@@ -2956,14 +2956,14 @@
         ],
         "name": "白面鸮",
         "en": "Ptilopsis",
-        "team": [
-            "莱茵生命",
-            "哥伦比亚"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 4,
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -2973,14 +2973,14 @@
         ],
         "name": "阿消",
         "en": "Shaw",
-        "team": [
-            "炎",
-            "龙门"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 3,
+        "team": [
+            "炎",
+            "龙门"
+        ],
         "painter": "阿鬼"
     },
     {
@@ -2990,13 +2990,13 @@
         ],
         "name": "地灵",
         "en": "Earthspirit",
-        "team": [
-            "莱塔尼亚"
-        ],
         "race": [
             "卡普里尼"
         ],
         "rarity": 3,
+        "team": [
+            "莱塔尼亚"
+        ],
         "painter": "HUG"
     },
     {
@@ -3006,13 +3006,13 @@
         ],
         "name": "深海色",
         "en": "Deepcolor",
-        "team": [
-            "阿戈尔"
-        ],
         "race": [
             "未公开"
         ],
         "rarity": 3,
+        "team": [
+            "阿戈尔"
+        ],
         "painter": "REALMBW"
     },
     {
@@ -3022,14 +3022,14 @@
         ],
         "name": "古米",
         "en": "Гум",
-        "team": [
-            "乌萨斯学生自治团",
-            "乌萨斯"
-        ],
         "race": [
             "乌萨斯"
         ],
         "rarity": 3,
+        "team": [
+            "乌萨斯学生自治团",
+            "乌萨斯"
+        ],
         "painter": "Skade"
     },
     {
@@ -3039,13 +3039,13 @@
         ],
         "name": "蛇屠箱",
         "en": "Cuora",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "匹特拉姆"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "Skade"
     },
     {
@@ -3055,14 +3055,14 @@
         ],
         "name": "角峰",
         "en": "Matterhorn",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "丰蹄"
         ],
         "rarity": 3,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -3072,13 +3072,13 @@
         ],
         "name": "调香师",
         "en": "Perfumer",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "Lanzi"
     },
     {
@@ -3088,13 +3088,13 @@
         ],
         "name": "嘉维尔",
         "en": "Gavial",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "阿达克利斯"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "LLC"
     },
     {
@@ -3104,13 +3104,13 @@
         ],
         "name": "末药",
         "en": "Myrrh",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3120,14 +3120,14 @@
         ],
         "name": "暗索",
         "en": "Rope",
-        "team": [
-            "炎",
-            "龙门"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 3,
+        "team": [
+            "炎",
+            "龙门"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -3137,13 +3137,13 @@
         ],
         "name": "砾",
         "en": "Gravel",
-        "team": [
-            "卡西米尔"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 3,
+        "team": [
+            "卡西米尔"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -3153,13 +3153,13 @@
         ],
         "name": "慕斯",
         "en": "Mousse",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 3,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "Iritoa"
     },
     {
@@ -3169,13 +3169,13 @@
         ],
         "name": "艾丝黛尔",
         "en": "Estelle",
-        "team": [
-            "萨尔贡"
-        ],
         "race": [
             "阿达克利斯"
         ],
         "rarity": 3,
+        "team": [
+            "萨尔贡"
+        ],
         "painter": "鸭"
     },
     {
@@ -3185,13 +3185,13 @@
         ],
         "name": "霜叶",
         "en": "Frostleaf",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3201,13 +3201,13 @@
         ],
         "name": "缠丸",
         "en": "Matoimaru",
-        "team": [
-            "东"
-        ],
         "race": [
             "鬼"
         ],
         "rarity": 3,
+        "team": [
+            "东"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -3217,13 +3217,13 @@
         ],
         "name": "杜宾",
         "en": "Dobermann",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 3,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "LLC"
     },
     {
@@ -3233,13 +3233,13 @@
         ],
         "name": "红豆",
         "en": "Vigna",
-        "team": [
-            "哥伦比亚"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 3,
+        "team": [
+            "哥伦比亚"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3249,14 +3249,14 @@
         ],
         "name": "清道夫",
         "en": "Scavenger",
-        "team": [
-            "S.W.E.E.P",
-            "罗德岛"
-        ],
         "race": [
             "札拉克"
         ],
         "rarity": 3,
+        "team": [
+            "S.W.E.E.P",
+            "罗德岛"
+        ],
         "painter": "戏言咸咸"
     },
     {
@@ -3266,14 +3266,14 @@
         ],
         "name": "讯使",
         "en": "Courier",
-        "team": [
-            "喀兰贸易",
-            "谢拉格"
-        ],
         "race": [
             "依特拉"
         ],
         "rarity": 3,
+        "team": [
+            "喀兰贸易",
+            "谢拉格"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -3283,13 +3283,13 @@
         ],
         "name": "白雪",
         "en": "ShiraYuki",
-        "team": [
-            "东"
-        ],
         "race": [
             "阿纳缇"
         ],
         "rarity": 3,
+        "team": [
+            "东"
+        ],
         "painter": "阿鬼"
     },
     {
@@ -3299,13 +3299,13 @@
         ],
         "name": "流星",
         "en": "Meteor",
-        "team": [
-            "卡西米尔"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 3,
+        "team": [
+            "卡西米尔"
+        ],
         "painter": "HUG"
     },
     {
@@ -3315,14 +3315,14 @@
         ],
         "name": "杰西卡",
         "en": "Jessica",
-        "team": [
-            "黑钢国际",
-            "哥伦比亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 3,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -3332,13 +3332,13 @@
         ],
         "name": "远山",
         "en": "Gitano",
-        "team": [
-            "萨米"
-        ],
         "race": [
             "埃拉菲亚"
         ],
         "rarity": 3,
+        "team": [
+            "萨米"
+        ],
         "painter": "谜肘"
     },
     {
@@ -3348,13 +3348,13 @@
         ],
         "name": "夜烟",
         "en": "Haze",
-        "team": [
-            "维多利亚"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 3,
+        "team": [
+            "维多利亚"
+        ],
         "painter": "Skade"
     },
     {
@@ -3364,14 +3364,14 @@
         ],
         "name": "梓兰",
         "en": "Orchid",
-        "team": [
-            "行动预备组A6",
-            "罗德岛"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
         "painter": "Skade"
     },
     {
@@ -3381,14 +3381,14 @@
         ],
         "name": "史都华德",
         "en": "Steward",
-        "team": [
-            "行动预备组A4",
-            "罗德岛"
-        ],
         "race": [
             "沃尔珀"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A4",
+            "罗德岛"
+        ],
         "painter": "一立里子"
     },
     {
@@ -3398,14 +3398,14 @@
         ],
         "name": "安赛尔",
         "en": "Ansel",
-        "team": [
-            "行动预备组A4",
-            "罗德岛"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A4",
+            "罗德岛"
+        ],
         "painter": "一立里子"
     },
     {
@@ -3415,14 +3415,14 @@
         ],
         "name": "芙蓉",
         "en": "Hibiscus",
-        "team": [
-            "行动预备组A1",
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A1",
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3432,14 +3432,14 @@
         ],
         "name": "炎熔",
         "en": "Lava",
-        "team": [
-            "行动预备组A1",
-            "罗德岛"
-        ],
         "race": [
             "萨卡兹"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A1",
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3449,14 +3449,14 @@
         ],
         "name": "安德切尔",
         "en": "Adnachiel",
-        "team": [
-            "行动预备组A4",
-            "罗德岛"
-        ],
         "race": [
             "萨科塔"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A4",
+            "罗德岛"
+        ],
         "painter": "一立里子"
     },
     {
@@ -3466,14 +3466,14 @@
         ],
         "name": "克洛丝",
         "en": "Kroos",
-        "team": [
-            "行动预备组A1",
-            "罗德岛"
-        ],
         "race": [
             "卡特斯"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A1",
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3483,14 +3483,14 @@
         ],
         "name": "米格鲁",
         "en": "Beagle",
-        "team": [
-            "行动预备组A1",
-            "罗德岛"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A1",
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3500,14 +3500,14 @@
         ],
         "name": "卡缇",
         "en": "Cardigan",
-        "team": [
-            "行动预备组A4",
-            "罗德岛"
-        ],
         "race": [
             "佩洛"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A4",
+            "罗德岛"
+        ],
         "painter": "一立里子"
     },
     {
@@ -3517,14 +3517,14 @@
         ],
         "name": "玫兰莎",
         "en": "Melantha",
-        "team": [
-            "行动预备组A4",
-            "罗德岛"
-        ],
         "race": [
             "菲林"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A4",
+            "罗德岛"
+        ],
         "painter": "一立里子"
     },
     {
@@ -3534,13 +3534,13 @@
         ],
         "name": "翎羽",
         "en": "Plume",
-        "team": [
-            "拉特兰"
-        ],
         "race": [
             "黎博利"
         ],
         "rarity": 2,
+        "team": [
+            "拉特兰"
+        ],
         "painter": "deel"
     },
     {
@@ -3550,14 +3550,14 @@
         ],
         "name": "香草",
         "en": "Vanilla",
-        "team": [
-            "黑钢国际",
-            "哥伦比亚"
-        ],
         "race": [
             "瓦伊凡"
         ],
         "rarity": 2,
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
         "painter": "m9nokuro"
     },
     {
@@ -3567,14 +3567,14 @@
         ],
         "name": "芬",
         "en": "Fang",
-        "team": [
-            "行动预备组A1",
-            "罗德岛"
-        ],
         "race": [
             "库兰塔"
         ],
         "rarity": 2,
+        "team": [
+            "行动预备组A1",
+            "罗德岛"
+        ],
         "painter": "下野宏铭"
     },
     {
@@ -3584,13 +3584,13 @@
         ],
         "name": "12F",
         "en": "12F",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             "萨弗拉"
         ],
         "rarity": 1,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "海猫络合物"
     },
     {
@@ -3600,14 +3600,14 @@
         ],
         "name": "杜林",
         "en": "Durin",
-        "team": [
-            "行动组A4",
-            "罗德岛"
-        ],
         "race": [
             "杜林"
         ],
         "rarity": 1,
+        "team": [
+            "行动组A4",
+            "罗德岛"
+        ],
         "painter": "Skade"
     },
     {
@@ -3617,14 +3617,14 @@
         ],
         "name": "巡林者",
         "en": "Rangers",
-        "team": [
-            "行动组A4",
-            "罗德岛"
-        ],
         "race": [
             "萨弗拉"
         ],
         "rarity": 1,
+        "team": [
+            "行动组A4",
+            "罗德岛"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -3634,14 +3634,14 @@
         ],
         "name": "黑角",
         "en": "Noir Corne",
-        "team": [
-            "行动组A4",
-            "罗德岛"
-        ],
         "race": [
             "鬼"
         ],
         "rarity": 1,
+        "team": [
+            "行动组A4",
+            "罗德岛"
+        ],
         "painter": "竜崎いち"
     },
     {
@@ -3651,14 +3651,14 @@
         ],
         "name": "夜刀",
         "en": "Yato",
-        "team": [
-            "行动组A4",
-            "罗德岛"
-        ],
         "race": [
             "鬼"
         ],
         "rarity": 1,
+        "team": [
+            "行动组A4",
+            "罗德岛"
+        ],
         "painter": "Skade"
     },
     {
@@ -3668,13 +3668,13 @@
         ],
         "name": "Castle-3",
         "en": "Castle-3",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             ""
         ],
         "rarity": 0,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "TOKI"
     },
     {
@@ -3684,13 +3684,13 @@
         ],
         "name": "Lancet-2",
         "en": "Lancet-2",
-        "team": [
-            "罗德岛"
-        ],
         "race": [
             ""
         ],
         "rarity": 0,
+        "team": [
+            "罗德岛"
+        ],
         "painter": "TOKI"
     }
 ]

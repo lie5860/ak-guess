@@ -1,7 +1,7 @@
 [
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Lancet-2",
@@ -15,7 +15,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Castle-3",
@@ -29,7 +29,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Executor"
         ],
         "name": "THRM-EX",
@@ -43,7 +43,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Yato",
@@ -73,7 +73,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Rangers",
@@ -88,7 +88,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Durin",
@@ -103,7 +103,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "12F",
@@ -117,7 +117,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Fang",
@@ -132,7 +132,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Vanilla",
@@ -147,7 +147,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Charger"
         ],
         "name": "Plume",
@@ -161,7 +161,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Melantha",
@@ -176,7 +176,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Centurion"
         ],
         "name": "Popukar",
@@ -236,7 +236,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Kroos",
@@ -251,7 +251,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Adnachiel",
@@ -266,7 +266,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Lava",
@@ -281,7 +281,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Hibiscus",
@@ -296,7 +296,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Ansel",
@@ -311,7 +311,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Steward",
@@ -326,7 +326,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Orchid",
@@ -341,7 +341,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Haze",
@@ -355,7 +355,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Gitano",
@@ -369,7 +369,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Greyy",
@@ -383,7 +383,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Mech-accord Caster"
         ],
         "name": "Click",
@@ -397,7 +397,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Mystic Caster"
         ],
         "name": "Indigo",
@@ -411,7 +411,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Jessica",
@@ -426,7 +426,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Meteor",
@@ -440,7 +440,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Vermeil",
@@ -454,7 +454,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "May",
@@ -468,7 +468,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Artilleryman"
         ],
         "name": "Shirayuki",
@@ -482,7 +482,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Spreadshooter"
         ],
         "name": "Pinecone",
@@ -496,7 +496,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Deadeye"
         ],
         "name": "Ambriel",
@@ -510,7 +510,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Heavyshooter"
         ],
         "name": "Aciddrop",
@@ -524,7 +524,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Courier",
@@ -539,7 +539,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Scavenger",
@@ -554,7 +554,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Charger"
         ],
         "name": "Vigna",
@@ -568,7 +568,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Standard Bearer"
         ],
         "name": "Myrtle",
@@ -582,7 +582,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Tactician"
         ],
         "name": "Beanstalk",
@@ -596,7 +596,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Instructor"
         ],
         "name": "Dobermann",
@@ -610,7 +610,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Matoimaru",
@@ -624,7 +624,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Conviction",
@@ -638,7 +638,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "Frostleaf",
@@ -652,7 +652,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Centurion"
         ],
         "name": "Estelle",
@@ -666,7 +666,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Arts Fighter"
         ],
         "name": "Mousse",
@@ -680,7 +680,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Swordmaster"
         ],
         "name": "Cutter",
@@ -694,7 +694,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Musha"
         ],
         "name": "Utage",
@@ -708,7 +708,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "Arene",
@@ -722,7 +722,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Executor"
         ],
         "name": "Gravel",
@@ -736,7 +736,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Merchant"
         ],
         "name": "Jaye",
@@ -751,7 +751,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Hookmaster"
         ],
         "name": "Rope",
@@ -766,7 +766,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Myrrh",
@@ -780,7 +780,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Gavial",
@@ -794,7 +794,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Sussurro",
@@ -808,7 +808,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Multi-target Medic"
         ],
         "name": "Perfumer",
@@ -822,7 +822,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Therapist"
         ],
         "name": "Purestream",
@@ -909,7 +909,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Summoner"
         ],
         "name": "Deepcolor",
@@ -923,7 +923,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Earthspirit",
@@ -937,7 +937,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Podenco",
@@ -951,7 +951,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Ambusher"
         ],
         "name": "Ethan",
@@ -965,7 +965,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Push Stroker"
         ],
         "name": "Shaw",
@@ -980,7 +980,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Multi-target Medic"
         ],
         "name": "Ptilopsis",
@@ -995,7 +995,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Multi-target Medic"
         ],
         "name": "Breeze",
@@ -1009,7 +1009,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Zima",
@@ -1025,7 +1025,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Texas",
@@ -1041,7 +1041,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Chiave",
@@ -1056,7 +1056,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Charger"
         ],
         "name": "Reed",
@@ -1070,7 +1070,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Standard Bearer"
         ],
         "name": "Elysium",
@@ -1084,7 +1084,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Instructor"
         ],
         "name": "Swire",
@@ -1100,7 +1100,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Instructor"
         ],
         "name": "Whislash",
@@ -1114,7 +1114,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Franka",
@@ -1129,7 +1129,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Flamebringer",
@@ -1143,7 +1143,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Fighter"
         ],
         "name": "Indra",
@@ -1158,7 +1158,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Fighter"
         ],
         "name": "Flint",
@@ -1172,7 +1172,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "Lappland",
@@ -1186,7 +1186,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "Ayerscarpe",
@@ -1200,7 +1200,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Swordmaster"
         ],
         "name": "Bibeak",
@@ -1214,7 +1214,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Swordmaster"
         ],
         "name": "Tachanka",
@@ -1228,7 +1228,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Centurion"
         ],
         "name": "Specter",
@@ -1243,7 +1243,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Centurion"
         ],
         "name": "Broca",
@@ -1258,7 +1258,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Arts Fighter"
         ],
         "name": "Astesia",
@@ -1272,7 +1272,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Arts Fighter"
         ],
         "name": "Sideroca",
@@ -1286,7 +1286,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Musha"
         ],
         "name": "Akafuyu",
@@ -1300,7 +1300,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Reaper"
         ],
         "name": "La Pluma",
@@ -1314,7 +1314,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Liberator"
         ],
         "name": "Tequila",
@@ -1328,7 +1328,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Blue Poison",
@@ -1342,7 +1342,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Platinum",
@@ -1356,7 +1356,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "GreyThroat",
@@ -1370,7 +1370,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "April",
@@ -1384,7 +1384,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Artilleryman"
         ],
         "name": "Meteorite",
@@ -1398,7 +1398,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Artilleryman"
         ],
         "name": "Sesa",
@@ -1412,7 +1412,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Spreadshooter"
         ],
         "name": "Executor",
@@ -1426,7 +1426,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Spreadshooter"
         ],
         "name": "Aosta",
@@ -1441,7 +1441,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Amiya",
@@ -1455,7 +1455,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Absinthe",
@@ -1469,7 +1469,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Tomimi",
@@ -1483,7 +1483,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Skyfire",
@@ -1497,7 +1497,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Chain Caster"
         ],
         "name": "Leizi",
@@ -1511,7 +1511,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Phalanx Caster"
         ],
         "name": "Beeswax",
@@ -1525,7 +1525,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Leonhardt",
@@ -1539,7 +1539,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Phalanx Caster"
         ],
         "name": "Mint",
@@ -1553,7 +1553,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Mystic Caster"
         ],
         "name": "Iris",
@@ -1567,7 +1567,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Lava the Purgatory",
@@ -1581,7 +1581,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Summoner"
         ],
         "name": "Mayer",
@@ -1596,7 +1596,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Summoner"
         ],
         "name": "Scene",
@@ -1610,7 +1610,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Silence",
@@ -1625,7 +1625,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Warfarin",
@@ -1639,7 +1639,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Folinic",
@@ -1653,7 +1653,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Therapist"
         ],
         "name": "Ceylon",
@@ -1668,7 +1668,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Therapist"
         ],
         "name": "Whisperain",
@@ -1682,7 +1682,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Tuye",
@@ -1726,7 +1726,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Executor"
         ],
         "name": "Projekt Red",
@@ -1741,7 +1741,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Executor"
         ],
         "name": "Waai Fu",
@@ -1757,7 +1757,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Executor"
         ],
         "name": "Kafka",
@@ -1771,7 +1771,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Merchant"
         ],
         "name": "Mr. Nothing",
@@ -1887,7 +1887,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Heavyshooter"
         ],
         "name": "Provence",
@@ -1901,7 +1901,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Deadeye"
         ],
         "name": "Firewatch",
@@ -1915,7 +1915,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Deadeye"
         ],
         "name": "Andreana",
@@ -1930,7 +1930,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Besieger"
         ],
         "name": "Toddifons",
@@ -1944,7 +1944,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Hookmaster"
         ],
         "name": "Cliffheart",
@@ -1959,7 +1959,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Hookmaster"
         ],
         "name": "Snowsant",
@@ -1974,7 +1974,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Hexer"
         ],
         "name": "Pramanix",
@@ -1989,7 +1989,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Hexer"
         ],
         "name": "Shamare",
@@ -2003,7 +2003,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Istina",
@@ -2019,7 +2019,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Glaucus",
@@ -2033,7 +2033,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Bard"
         ],
         "name": "Sora",
@@ -2049,7 +2049,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Abjurer"
         ],
         "name": "Tsukinogi",
@@ -2063,7 +2063,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Ambusher"
         ],
         "name": "Manticore",
@@ -2077,7 +2077,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Ambusher"
         ],
         "name": "Kirara",
@@ -2091,7 +2091,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Push Stroker"
         ],
         "name": "FEater",
@@ -2106,7 +2106,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Trapmaster"
         ],
         "name": "Robin",
@@ -2120,7 +2120,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Trapmaster"
         ],
         "name": "Frost",
@@ -2134,7 +2134,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Dollkeeper"
         ],
         "name": "Bena",
@@ -2148,7 +2148,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Exusiai",
@@ -2164,7 +2164,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Archetto",
@@ -2178,7 +2178,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Marksman"
         ],
         "name": "Ash",
@@ -2192,7 +2192,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Heavyshooter"
         ],
         "name": "Schwarz",
@@ -2207,7 +2207,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Artilleryman"
         ],
         "name": "W",
@@ -2221,7 +2221,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Besieger"
         ],
         "name": "Rosa",
@@ -2237,7 +2237,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Flinger"
         ],
         "name": "Rosmontis",
@@ -2252,7 +2252,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Spreadshooter"
         ],
         "name": "Ch'en the Holungday",
@@ -2266,7 +2266,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Siege",
@@ -2281,7 +2281,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Charger"
         ],
         "name": "Bagpipe",
@@ -2295,7 +2295,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Pioneer"
         ],
         "name": "Saga",
@@ -2309,7 +2309,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Blast Caster"
         ],
         "name": "Ifrit",
@@ -2324,7 +2324,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Mostima",
@@ -2338,7 +2338,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Eyjafjalla",
@@ -2352,7 +2352,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Ceobe",
@@ -2366,7 +2366,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Splash Caster"
         ],
         "name": "Dusk",
@@ -2381,7 +2381,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Chain Caster"
         ],
         "name": "Passenger",
@@ -2395,7 +2395,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Phalanx Caster"
         ],
         "name": "Carnelian",
@@ -2409,7 +2409,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Angelina",
@@ -2423,7 +2423,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Decel Binder"
         ],
         "name": "Suzuran",
@@ -2437,7 +2437,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Summoner"
         ],
         "name": "Magallan",
@@ -2452,7 +2452,7 @@
     },
     {
         "className": [
-            "辅助",
+            "補助",
             "Bard"
         ],
         "name": "Skadi the Corrupting Heart",
@@ -2466,7 +2466,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Executor"
         ],
         "name": "Phantom",
@@ -2480,7 +2480,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Push Stroker"
         ],
         "name": "Weedy",
@@ -2494,7 +2494,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Geek"
         ],
         "name": "Aak",
@@ -2510,7 +2510,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Hookmaster"
         ],
         "name": "Gladiia",
@@ -2525,7 +2525,7 @@
     },
     {
         "className": [
-            "特种",
+            "特殊",
             "Ambusher"
         ],
         "name": "Mizuki",
@@ -2539,7 +2539,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Shining",
@@ -2553,7 +2553,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Multi-target Medic"
         ],
         "name": "Nightingale",
@@ -2567,7 +2567,7 @@
     },
     {
         "className": [
-            "医疗",
+            "医療",
             "Medic"
         ],
         "name": "Kal'tsit",
@@ -2669,7 +2669,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Fighter"
         ],
         "name": "Mountain",
@@ -2683,7 +2683,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "SilverAsh",
@@ -2698,7 +2698,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "Thorns",
@@ -2712,7 +2712,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Swordmaster"
         ],
         "name": "Ch'en",
@@ -2728,7 +2728,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Centurion"
         ],
         "name": "Blaze",
@@ -2743,7 +2743,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Arts Fighter"
         ],
         "name": "Surtr",
@@ -2757,7 +2757,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Musha"
         ],
         "name": "Hellagur",
@@ -2771,7 +2771,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Instructor"
         ],
         "name": "Pallas",
@@ -2785,7 +2785,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Centurion"
         ],
         "name": "Savage",
@@ -2799,7 +2799,7 @@
     },
     {
         "className": [
-            "狙击",
+            "狙撃",
             "Artilleryman"
         ],
         "name": "Catapult",
@@ -2814,7 +2814,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Lord"
         ],
         "name": "Midnight",
@@ -2829,7 +2829,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Fighter"
         ],
         "name": "Beehunter",
@@ -2843,7 +2843,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Fighter"
         ],
         "name": "Jackie",
@@ -2857,7 +2857,7 @@
     },
     {
         "className": [
-            "术师",
+            "術師",
             "Core Caster"
         ],
         "name": "Nightmare",
@@ -2871,7 +2871,7 @@
     },
     {
         "className": [
-            "先锋",
+            "先鋒",
             "Charger"
         ],
         "name": "Grani",
@@ -2885,7 +2885,7 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Dreadnought"
         ],
         "name": "Skadi",
@@ -2900,10 +2900,10 @@
     },
     {
         "className": [
-            "近卫",
+            "前衛",
             "Arts Fighter"
         ],
-        "name": "Amiya(近卫)",
+        "name": "Amiya(前衛)",
         "en": "",
         "race": "",
         "rarity": 4,
