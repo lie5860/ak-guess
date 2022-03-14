@@ -2,7 +2,8 @@
   "name": "ak-guess",
   "version": "0.2.1",
   "scripts": {
-    "build": "node markData.ts && node esbuild.ts",
+    "initData": "node markData_i18n",
+    "build": "node esbuild.ts",
     "generateSW": "workbox generateSW workbox-config.js",
     "dev": "vite",
     "preview": "node hmr.ts"

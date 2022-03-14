@@ -5,9 +5,9 @@ const jsonList = ['character_table', 'char_patch_table', 'uniequip_table', 'hand
     'handbook_info_table']
 
 const serversDict = {
-    'zh-CN': {raceName: '【种族】'},
-    'en_US': {raceName: '[Race]'},
-    'ja_JP': {raceName: '【種族】'},
+    // 'zh_CN': {raceName: '【种族】'},
+    // 'en_US': {raceName: '[Race]'},
+    // 'ja_JP': {raceName: '【種族】'},
     'ko_KR': {raceName: '[종족]'}
 };
 
@@ -35,22 +35,22 @@ function mkdir(filePath) {
 }
 
 const writeJsonByLangAndName = async (language, jsonName) => {
-    const res = await getGameDataByLangAndName('en_US', jsonName);
+    const res = await getGameDataByLangAndName(language, jsonName);
     const file = path.resolve(__dirname, `./data/${language}/${jsonName}.json`)
     // 异步写入数据到文件
     writeFileByUser(file, JSON.stringify(res.data), {encoding: 'utf8'})
 }
 const main = async () => {
     // 这是一个开关 todo
-    // if (true) {
-    //     const queryList = []
-    //     Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
-    //     for (let i = 0; i < queryList.length; i++) {
-    //         const [lang, jsonName] = queryList[i];
-    //         console.log(`正在更新 语言${lang}的json${jsonName}`)
-    //         await writeJsonByLangAndName(lang, jsonName);
-    //     }
-    // }
+    if (true) {
+        const queryList = []
+        Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
+        for (let i = 0; i < queryList.length; i++) {
+            const [lang, jsonName] = queryList[i];
+            console.log(`正在更新 语言${lang}的json${jsonName}`)
+            await writeJsonByLangAndName(lang, jsonName);
+        }
+    }
     // 台服没找到文件，模组还没实装？
     var chapterData;
     var chapterExtend;
@@ -120,7 +120,7 @@ const main = async () => {
         }
         // 种族信息从档案中解析对应文本
         let storyText = handbook.handbookDict[k].storyTextAudio[0].stories[0].storyText;
-        const raceStr = serversDict[server]?.[raceName];
+        const raceStr = serversDict[server]?.raceName;
         let raceIdx = storyText.indexOf(raceStr);
         if (raceIdx >= 0) {
             let race = storyText.substring(raceIdx + raceStr.length).trim();

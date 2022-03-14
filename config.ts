@@ -19,8 +19,9 @@ const saveNum = (num, server) => axios
     alert('服务已崩溃 请联系管理员')
   });
 const getGameDataByLangAndName = (language, jsonName) => {
-  return axios.get(`https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/${language}/gamedata/excel/${jsonName}.json`).catch(() => {
+  return axios.get(`https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/${language}/gamedata/excel/${jsonName}.json`).catch((err) => {
     console.log(`${language}语言没有${jsonName}文件`)
+    console.log(JSON.stringify(err))
     return Promise.resolve({data: {}})
   })
 }
