@@ -5,9 +5,9 @@ const jsonList = ['character_table', 'char_patch_table', 'uniequip_table', 'hand
     'handbook_info_table']
 
 const serversDict = {
-    // 'zh_CN': {raceName: '【种族】'},
-    // 'en_US': {raceName: '[Race]'},
-    // 'ja_JP': {raceName: '【種族】'},
+    'zh_CN': {raceName: '【种族】'},
+    'en_US': {raceName: '[Race]'},
+    'ja_JP': {raceName: '【種族】'},
     'ko_KR': {raceName: '[종족]'}
 };
 
@@ -20,7 +20,6 @@ function writeFileByUser(filePath, ...rest) {
 }
 
 function mkdir(filePath) {
-    console.log(filePath, 'filePath')
     const dirCache = {};
     const arr = filePath.split('\\');
     let dir = arr[0];
