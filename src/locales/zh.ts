@@ -51,6 +51,7 @@ const dict: { [key: string]: string } = {
   helpWrongDetail: '干员所属的阵营拆成了多级维度，<br/>和出身地无关，请查阅关系网！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！',
   helpDataSource: '游戏数据来自PRTS！',
   helpUpdateTime: '最近更新时间是{updateDate}！',
-  helpNum: '目前有{num}名干员（包含异格和升变）'
+  helpNum: '目前有{num}名干员（包含异格和升变）',
+  helpFirstOpen: '这么多记不住怎么办？<br/><strong style={{color:\'rgb(255, 204, 76)\'}}>小刻学堂</strong>随时开启！'
 }
 export default dict
