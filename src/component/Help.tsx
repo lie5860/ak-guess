@@ -32,7 +32,7 @@ const Help = ({updateDate = 'emmm'}) => {
           {i18n.get('helpWrongPos')}
         </li>
       </ul>
-      <span>{i18n.get('helpWrongDetail')}</span>
+      <span>{i18n.get('helpWrongDetail', null, true)}</span>
       <hr/>
       {i18n.get('helpDataSource')}<br/>{i18n.get('helpUpdateTime', {updateDate: updateDate})}<br/>{i18n.get('helpNum', {num: chartsData.length})}
     </p>

@@ -15,14 +15,14 @@ export const I18nWrap = (props: any) => {
   if (!inited) return null
   return <AppCtx.Provider value={{
     i18n: {
-      get: (key: string, props: { [key: string]: string }) => {
+      get: (key: string, props: { [key: string]: string }, hasLegacyDom = false) => {
         let res = languages?.[language]?.[key] || key
         if (props) {
           Object.keys(props).forEach(key => {
             res = res.replaceAll(`{${key}}`, props[key])
           })
         }
-        return res
+        return hasLegacyDom ? <span dangerouslySetInnerHTML={{__html: res}}/> : res
       },
       setLanguage
     }
