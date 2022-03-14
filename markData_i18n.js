@@ -42,15 +42,15 @@ const writeJsonByLangAndName = async (language, jsonName) => {
 }
 const main = async () => {
     // 这是一个开关 todo
-    if (true) {
-        const queryList = []
-        Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
-        for (let i = 0; i < queryList.length; i++) {
-            const [lang, jsonName] = queryList[i];
-            console.log(`正在更新 语言${lang}的json${jsonName}`)
-            await writeJsonByLangAndName(lang, jsonName);
-        }
-    }
+    // if (true) {
+    //     const queryList = []
+    //     Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
+    //     for (let i = 0; i < queryList.length; i++) {
+    //         const [lang, jsonName] = queryList[i];
+    //         console.log(`正在更新 语言${lang}的json${jsonName}`)
+    //         await writeJsonByLangAndName(lang, jsonName);
+    //     }
+    // }
     // 台服没找到文件，模组还没实装？
     var chapterData;
     var chapterExtend;
@@ -120,7 +120,7 @@ const main = async () => {
         }
         // 种族信息从档案中解析对应文本
         let storyText = handbook.handbookDict[k].storyTextAudio[0].stories[0].storyText;
-        const raceStr = serversDict[server]?.raceName;
+        const raceStr = serversDict[server]?.[raceName];
         let raceIdx = storyText.indexOf(raceStr);
         if (raceIdx >= 0) {
             let race = storyText.substring(raceIdx + raceStr.length).trim();
@@ -140,7 +140,6 @@ const main = async () => {
                 chartsData.push(chapter);
             }
         }
-        ;
         // 升变
         for (const k of Object.keys(chapterExtend.patchChars)) {
             let v = chapterExtend.patchChars[k];
