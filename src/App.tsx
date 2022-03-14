@@ -28,7 +28,12 @@ export default function Home() {
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
-
+    if (!localStorage.getItem('firstOpen')) {
+      localStorage.setItem('firstOpen', 'yes');
+      changeModalInfo({
+        "message": <Help updateDate={updateDate} firstOpen/>, "width": '80%'
+      })
+    }
     autocomplete(inputRef.current, chartNames, chartsData);
     const randomData = localStorage.getItem('randomData')
     if (randomData) {
@@ -63,7 +68,7 @@ export default function Home() {
     }, 1500)
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-  const isOver = data.length >= defaultTryTimes || isWin || (mode ==='random' && isGiveUp)
+  const isOver = data.length >= defaultTryTimes || isWin || (mode === 'random' && isGiveUp)
 
   const giveUp = () => {
     let result = confirm("确定要放弃答题去吃蜜饼吗？\n当前的连胜纪录会被重置哦！");
@@ -170,7 +175,7 @@ export default function Home() {
               }
             }}/>
           </div>
-          <input className="guess_input" type="submit" value="提交" />
+          <input className="guess_input" type="submit" value="提交"/>
         </form>
         {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer?.[MAIN_KEY]}！`}</div>}
 
