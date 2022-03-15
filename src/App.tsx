@@ -1,8 +1,7 @@
 import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
-import {chartsData, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl} from "./const";
+import {chartsData, DAILY_MODE, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
-import './index.less'
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
 import shareTextCreator from "./utils/share";
@@ -11,11 +10,14 @@ import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
 import {getDailyData, guess} from "./server";
 import {AppCtx} from './locales/AppCtx';
+import {getGame} from "./store";
+import './index.less'
+import './normalize.css'
 
 export default function Home() {
   const {i18n} = React.useContext(AppCtx);
   const inputRef = React.useRef();
-  const [mode, setMode] = React.useState("random")
+  const [mode, setMode] = React.useState(RANDOM_MODE)
   const [msg, setMsg] = React.useState("")
   const [modal, changeModalInfo] = React.useState()
   const [randomAnswerKey, setRandomAnswerKey] = React.useState(Math.floor(Math.random() * chartsData.length))
@@ -25,6 +27,13 @@ export default function Home() {
   const [updateDate, setUpdateDate] = React.useState('')
   const chartNames = React.useMemo(() => chartsData.map(v => v?.[MAIN_KEY]), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
+  const [isGiveUp, setGiveUp] = React.useState(false);
+  const store = {
+    mode,
+    setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp,
+    setDayData, remoteAnswerKey, dayData, today
+  }
+  const game = getGame(store)
   React.useEffect(() => {
     getDailyData().then(({last_date, daily}) => {
       setUpdateDate(last_date)
@@ -37,32 +46,19 @@ export default function Home() {
       })
     }
     autocomplete(inputRef.current, chartNames, chartsData);
-    const randomData = localStorage.getItem('randomData')
-    if (randomData) {
-      setRandomData(JSON.parse(randomData))
-      setRandomAnswerKey(Number(localStorage.getItem('randomAnswerKey')))
-    }
-    const dayData = localStorage.getItem(today + 'dayData')
-    if (dayData) {
-      setDayData(JSON.parse(dayData))
-    }
+
     const giveUp = localStorage.getItem("giveUp")
     if (giveUp) {
       setGiveUp(giveUp === 'true');
     }
   }, [])
-  const [isGiveUp, setGiveUp] = React.useState(false);
-  const answer = mode === 'random' ? chartsData[randomAnswerKey] : chartsData[remoteAnswerKey]
-  const data = mode === 'random' ? randomData : dayData
-  const setData = mode === 'random' ? (v, isGiveUp) => {
-    localStorage.setItem('randomData', JSON.stringify(v))
-    localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
-    localStorage.setItem('giveUp', isGiveUp)
-    setRandomData(v)
-  } : (v) => {
-    localStorage.setItem(today + 'dayData', JSON.stringify(v))
-    setDayData(v)
-  }
+  React.useEffect(() => {
+    game.init()
+  }, [mode])
+  // 根据模式获取答案、 历史提交记录、提交记录
+  const answer = game.answer;
+  const data = game.data;
+  const setData = game.setData;
   const showModal = (msg) => {
     setMsg(msg)
     setTimeout(() => {
@@ -70,7 +66,7 @@ export default function Home() {
     }, 1500)
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-  const isOver = data.length >= defaultTryTimes || isWin || (mode === 'random' && isGiveUp)
+  const isOver = data.length >= defaultTryTimes || isWin || (mode === RANDOM_MODE && isGiveUp)
 
   const giveUp = () => {
     let result = confirm(i18n.get("giveUpConfirm"));
@@ -87,9 +83,8 @@ export default function Home() {
 
   const onSubmit = (e) => {
     e.stopPropagation();
-    if (mode === 'day' && today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
-      alert(i18n.get('reloadTip'))
-      window.location.reload()
+    const error = game?.preSubmitCheck?.()
+    if (error) {
       return;
     }
     const inputName = inputRef.current.value;
@@ -106,35 +101,7 @@ export default function Home() {
       const isWin = newData?.[newData?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
       const isOver = newData.length >= defaultTryTimes || isWin
       if (isOver) {
-        let record = loadRecordData();
-        if (mode === 'day') {
-          if (isWin) {
-            record.dailyWinTimes += 1;
-            record.dailyWinTryTimes += newData.length;
-            record.dailyStraightWins += 1;
-            if (record.dailyStraightWins > record.dailyMaxStraightWins) {
-              record.dailyMaxStraightWins = record.dailyStraightWins;
-            }
-          } else {
-            record.dailyStraightWins = 0;
-          }
-          record.dailyPlayTimes += 1;
-          record.dailyTotalTryTimes += newData.length;
-        } else {
-          if (isWin) {
-            record.winTryTimes += newData.length;
-            record.winTimes += 1;
-            record.straightWins += 1;
-            if (record.straightWins > record.maxStraightWins) {
-              record.maxStraightWins = record.straightWins;
-            }
-          } else {
-            record.straightWins = 0;
-          }
-          record.playTimes += 1;
-          record.totalTryTimes += newData.length;
-        }
-        saveRecordData(record);
+        game.gameOver(newData, isWin)
       }
     }
   }
@@ -142,13 +109,16 @@ export default function Home() {
     <div className={'container'}>
       <div className={'main-container clean-float'}>
         <div className={'ak-tab'}>
-          <div className={`ak-tab-item ${mode === 'random' ? 'active' : ''}`} onClick={() => setMode('random')}>
+          <div className={`ak-tab-item ${mode === RANDOM_MODE ? 'active' : ''}`}
+               onClick={() => setMode(RANDOM_MODE)}>
             {i18n.get('randomMode')}
           </div>
           {remoteAnswerKey !== -1 &&
-          <div className={`ak-tab-item ${mode === 'day' ? 'active' : ''}`} onClick={() => setMode('day')}>
+          <div className={`ak-tab-item ${mode === DAILY_MODE ? 'active' : ''}`}
+               onClick={() => setMode(DAILY_MODE)}>
             {i18n.get('dailyMode')}
           </div>}
+
         </div>
         <div><span className={`title`}>{i18n.get('title')}</span></div>
         <div>{i18n.get('titleDesc')}</div>
@@ -203,7 +173,6 @@ export default function Home() {
             }}>
                 <ShareIcon/>{i18n.get('shareTip1')}
             </a>
-
             <a className={'togglec'} onClick={() => {
               copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title')), showModal, i18n.get('copySuccess'))
             }} style={{marginLeft: 20}}>

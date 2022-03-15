@@ -1,5 +1,8 @@
 import dealData from './data/dealData.json'
+import aliasDataJson from './data/alias.json'
 
+export const DAILY_MODE = 'DAILY_MODE'
+export const RANDOM_MODE = 'RANDOM_MODE'
 export const MAIN_KEY = 'name'
 export const GAME_NAME = '干员猜猜乐'
 export const TYPES = [
@@ -18,6 +21,7 @@ export const VAL_DICT = {
   'down': '🔽',
 }
 export const chartsData = dealData;
+export const aliasData = aliasDataJson;
 export const defaultTryTimes = 8;
 export const updateData = '2022-3-5';
 
