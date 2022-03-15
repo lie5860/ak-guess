@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
   try {
     res.writeHead(200, {"Content-Type": mimeType(req.url)});
     let html = fs.readFileSync(path.join(`./public${req.url}`));
-    if (req.url === '/index.html') {
+    if (req.url === '/index-loc.html') {
       html = handleHtml(html);
     }
     res.end(html);
@@ -52,7 +52,7 @@ const server = http.createServer((req, res) => {
 
 //启动服务
 server.listen(port, "127.0.0.1", () => {
-  console.log(`服务器运行在 http://127.0.0.1:${port}/index.html`);
+  console.log(`服务器运行在 http://127.0.0.1:${port}/index-loc.html`);
 });
 // 监听代码部分变更
 fs.watch('./src', (event, filename) => {

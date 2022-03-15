@@ -3,14 +3,13 @@ const stylePlugin = require('esbuild-style-plugin');
 const time1 = +new Date();
 esbuild
   .build({
-    entryPoints: ['src/index.tsx'],
+    entryPoints: ['src/index.tsx', 'src/data/dealData.json', 'src/data/alias.json'],
     outdir: 'public',
     bundle: true,
     sourcemap: false,
     minify: true,
     splitting: true,
     format: 'esm',
-
     target: [
       'esnext',
       'safari11',

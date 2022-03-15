@@ -1,4 +1,4 @@
-import {moment, React} from "./global";
+import {moment} from "./global";
 
 import {chartsData, DAILY_MODE, RANDOM_MODE} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";

@@ -1,11 +1,11 @@
-import alias from '../data/alias.json'
+import {aliasData} from "../const";
 
 export default function autocomplete(inp, arr, chartsData) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
     /*execute a function when someone writes in the text field:*/
-    inp.addEventListener("input", function (e) {
+    inp.addEventListener("input",async function (e) {
         var a, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
@@ -22,7 +22,7 @@ export default function autocomplete(inp, arr, chartsData) {
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
         let dealModal = []
-        alias.forEach(v => {
+        (await aliasData()).forEach(v => {
             new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
         })
         const nameMatchItems = [];
