@@ -6,9 +6,9 @@ const jsonList = ['character_table', 'char_patch_table', 'uniequip_table', 'hand
 
 const serversDict = {
     'zh_CN': {raceName: '【种族】'},
-    'en_US': {raceName: '[Race]'},
-    'ja_JP': {raceName: '【種族】'},
-    'ko_KR': {raceName: '[종족]'}
+    // 'en_US': {raceName: '[Race]'},
+    // 'ja_JP': {raceName: '【種族】'},
+    // 'ko_KR': {raceName: '[종족]'}
 };
 
 function writeFileByUser(filePath, ...rest) {
@@ -41,15 +41,15 @@ const writeJsonByLangAndName = async (language, jsonName) => {
 }
 const main = async () => {
     // 这是一个开关 todo
-    if (true) {
-        const queryList = []
-        Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
-        for (let i = 0; i < queryList.length; i++) {
-            const [lang, jsonName] = queryList[i];
-            console.log(`正在更新 语言${lang}的json${jsonName}`)
-            await writeJsonByLangAndName(lang, jsonName);
-        }
-    }
+    // if (true) {
+    //     const queryList = []
+    //     Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
+    //     for (let i = 0; i < queryList.length; i++) {
+    //         const [lang, jsonName] = queryList[i];
+    //         console.log(`正在更新 语言${lang}的json${jsonName}`)
+    //         await writeJsonByLangAndName(lang, jsonName);
+    //     }
+    // }
     // 台服没找到文件，模组还没实装？
     var chapterData;
     var chapterExtend;
@@ -97,7 +97,8 @@ const main = async () => {
             name: v.name.trim(),
             en: v.appellation.trim(),
             race: "",
-            rarity: Number(v.rarity)
+            rarity: Number(v.rarity),
+            key: k
         };
         let tempTeam = [];
         if (v.teamId !== null) {
@@ -147,7 +148,13 @@ const main = async () => {
                 chartsData.push(chapter);
             }
         }
-        ;
+        const chapterList = require(`./data/character_list.json`)
+        const allCharacterkeys = chartsData.map(({key}) => key);
+        if (allCharacterkeys.length > chapterList.list.length) {
+            const newChapterList = allCharacterkeys.filter(v => chapterList.list.indexOf(v) === -1);
+            const file = path.resolve(__dirname, `./data/character_list.json`)
+            writeFileByUser(file, JSON.stringify({list: [...chapterList.list, ...newChapterList]}), {encoding: 'utf8'})
+        }
         let file = path.resolve(__dirname, `./src/data/dealData_${server}.json`)
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
