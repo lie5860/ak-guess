@@ -1,6 +1,6 @@
 import {moment} from "./global";
 
-import {chartsData, DAILY_MODE, RANDOM_MODE} from "./const";
+import {DAILY_MODE, RANDOM_MODE} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 
 export const getGame = (store: any) => {
@@ -12,7 +12,7 @@ export const getGame = (store: any) => {
   return gameDict[mode](store)
 }
 const randomGame = (store: any) => {
-  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp} = store
+  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, chartsData} = store
   return {
     init: () => {
       const randomData = localStorage.getItem('randomData')
@@ -23,7 +23,7 @@ const randomGame = (store: any) => {
     },
     answer: chartsData[randomAnswerKey],
     data: randomData,
-    setData: (v: any[]) => {
+    setData: (v: any[], isGiveUp: boolean) => {
       localStorage.setItem('randomData', JSON.stringify(v))
       localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
       localStorage.setItem('giveUp', isGiveUp)
@@ -48,7 +48,7 @@ const randomGame = (store: any) => {
   }
 }
 const dailyGame = (store: any) => {
-  const {setDayData, remoteAnswerKey, dayData, today} = store
+  const {setDayData, remoteAnswerKey, dayData, today, chartsData} = store
   return {
     init: () => {
       const dayData = localStorage.getItem(today + 'dayData')

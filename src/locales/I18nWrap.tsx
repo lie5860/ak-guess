@@ -3,15 +3,23 @@ import {AppCtx} from "./AppCtx";
 import languages from './index';
 
 export const I18nWrap = (props: any) => {
-  const [language, setLanguage] = React.useState('zh')
+  const [language, setLanguage] = React.useState('zh_CN')
   const [inited, setInited] = React.useState(false)
-  React.useEffect(() => {
+  const [chartsData, setDealData] = React.useState({})
+  const init = async () => {
     const lang = localStorage.getItem('__lang')
     if (lang && languages?.[lang]) {
       setLanguage(lang)
+      const dd = (await import(`../data/dealData_${lang}.json`)).default
+      setDealData(dd)
+      setInited(true)
+    } else {
+      const dd = (await import(`../data/dealData_${language}.json`)).default
+      setDealData(dd)
     }
     setInited(true)
-  }, [])
+  }
+  React.useEffect(init, [])
   if (!inited) return null
   return <AppCtx.Provider value={{
     i18n: {
@@ -25,7 +33,8 @@ export const I18nWrap = (props: any) => {
         return hasLegacyDom ? <span dangerouslySetInnerHTML={{__html: res}}/> : res
       },
       setLanguage
-    }
+    },
+    chartsData
   }}>
     {props.children}
   </AppCtx.Provider>

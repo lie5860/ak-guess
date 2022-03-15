@@ -23,7 +23,7 @@ export function updated(attrName, value, container, props) {
   ReactDom.render(React.createElement(Main, props, null), container);
 }
 
-const Main = {
+const AkGuess = {
   bootstrap, mount, updated
 }
-window.magic('ak-guess', Main);
+window.magic('ak-guess', AkGuess);

@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
-import {chartsData, DAILY_MODE, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl, RANDOM_MODE} from "./const";
+import {DAILY_MODE, defaultTryTimes, MAIN_KEY, questionnaireUrl, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
@@ -15,7 +15,7 @@ import './index.less'
 import './normalize.css'
 
 export default function Home() {
-  const {i18n} = React.useContext(AppCtx);
+  const {i18n, chartsData} = React.useContext(AppCtx);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState(RANDOM_MODE)
   const [msg, setMsg] = React.useState("")
@@ -29,7 +29,7 @@ export default function Home() {
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const [isGiveUp, setGiveUp] = React.useState(false);
   const store = {
-    mode,
+    mode, chartsData,
     setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp,
     setDayData, remoteAnswerKey, dayData, today
   }
@@ -140,8 +140,8 @@ export default function Home() {
           }}>💬{i18n.get('feedback')}
           </div>
         </div>
-        {mode === 'day' && <div>{i18n.get('dailyTimeTip')}</div>}
-        {!!data?.length && <GuessItem data={data} setMsg={setMsg} />}
+        {mode === DAILY_MODE && <div>{i18n.get('dailyTimeTip')}</div>}
+        {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">
@@ -157,13 +157,13 @@ export default function Home() {
         <div
             className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
         </div>}
-        {mode !== 'day' && !!isOver && <a className={'togglec'} onClick={() => {
+        {mode !== DAILY_MODE && !!isOver && <a className={'togglec'} onClick={() => {
           setGiveUp(false);
           setData([], false)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ {i18n.get('newGameTip')}</a>
         }
-        {mode !== 'day' && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
+        {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
           giveUp()
         }}>🆘 {i18n.get('giveUpTip')}</a>
         }
