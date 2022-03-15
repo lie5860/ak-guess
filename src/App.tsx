@@ -2,7 +2,6 @@ import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
 import {chartsData, DAILY_MODE, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
-import './index.less'
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
 import shareTextCreator from "./utils/share";
@@ -11,6 +10,8 @@ import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
 import {getDailyData, guess} from "./server";
 import {getGame} from "./store";
+import './index.less'
+import './normalize.css'
 
 export default function Home() {
   const inputRef = React.useRef();

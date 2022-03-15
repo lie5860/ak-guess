@@ -5,7 +5,8 @@
     "build": "node markData.ts && node esbuild.ts",
     "generateSW": "workbox generateSW workbox-config.js",
     "dev": "vite",
-    "preview": "node hmr.ts"
+    "vitebuild": "vite build",
+    "vitepreview": "vite build && vite preview"
   },
   "dependencies": {
     "react": "^17.0.2",

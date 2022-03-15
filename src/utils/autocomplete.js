@@ -22,7 +22,7 @@ export default function autocomplete(inp, arr, chartsData) {
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
         let dealModal = []
-        (await aliasData()).forEach(v => {
+        aliasData.forEach(v => {
             new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
         })
         const nameMatchItems = [];
