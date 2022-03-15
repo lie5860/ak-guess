@@ -1,5 +1,7 @@
 import dealData from './data/dealData.json'
 
+export const DAILY_MODE = 'DAILY_MODE'
+export const RANDOM_MODE = 'RANDOM_MODE'
 export const MAIN_KEY = 'name'
 export const GAME_NAME = '干员猜猜乐'
 export const TYPES = [
