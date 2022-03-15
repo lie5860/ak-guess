@@ -2795,6 +2795,23 @@
     {
         "className": [
             "特种",
+            "推击手"
+        ],
+        "name": "见行者",
+        "en": "Enforcer",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 4,
+        "key": "char_4036_forcer",
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "特种",
             "陷阱师"
         ],
         "name": "罗宾",
@@ -2842,6 +2859,23 @@
             "维多利亚"
         ],
         "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "风丸",
+        "en": "Kazemaru",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4016_kazema",
+        "team": [
+            "东"
+        ],
+        "painter": "温泉瓜"
     },
     {
         "className": [
@@ -2948,6 +2982,23 @@
             "巴别塔"
         ],
         "painter": "Liduke"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "菲亚梅塔",
+        "en": "Fiammetta",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "key": "char_300_phenxi",
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "幻象黑兔"
     },
     {
         "className": [
