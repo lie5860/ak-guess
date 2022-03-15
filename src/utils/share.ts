@@ -1,8 +1,8 @@
-import {defaultTryTimes, GAME_NAME, MAIN_KEY, TYPES, VAL_DICT} from "../const";
+import {DAILY_MODE, defaultTryTimes, GAME_NAME, MAIN_KEY, TYPES, VAL_DICT} from "../const";
 
 const shareTextCreator = (data, mode, today, showName) => {
   let text = `${GAME_NAME} `;
-  if (mode === 'day') {
+  if (mode === DAILY_MODE) {
     text += today + ' ';
   }
   text += data.length + `/` + defaultTryTimes;

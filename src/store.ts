@@ -12,7 +12,7 @@ export const getGame = (store: any) => {
   return gameDict[mode](store)
 }
 const randomGame = (store: any) => {
-  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp} = store
+  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData} = store
   return {
     init: () => {
       const randomData = localStorage.getItem('randomData')
@@ -23,7 +23,7 @@ const randomGame = (store: any) => {
     },
     answer: chartsData[randomAnswerKey],
     data: randomData,
-    setData: (v: any[]) => {
+    setData: (v: any[], isGiveUp: boolean) => {
       localStorage.setItem('randomData', JSON.stringify(v))
       localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
       localStorage.setItem('giveUp', isGiveUp)

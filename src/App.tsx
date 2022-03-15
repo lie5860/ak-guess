@@ -136,7 +136,7 @@ export default function Home() {
           }}>💬反馈
           </div>
         </div>
-        {mode === 'day' && <div>更新时间为 北京时间0点 GMT+8</div>}
+        {mode === DAILY_MODE && <div>更新时间为 北京时间0点 GMT+8</div>}
         {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
@@ -151,13 +151,13 @@ export default function Home() {
         </form>
         {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer?.[MAIN_KEY]}！`}</div>}
 
-        {mode !== 'day' && !!isOver && <a className={'togglec'} onClick={() => {
+        {mode !== DAILY_MODE && !!isOver && <a className={'togglec'} onClick={() => {
           setGiveUp(false);
           setData([], false)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ 再来一局！</a>
         }
-        {mode !== 'day' && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
+        {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
           giveUp()
         }}>🆘 小刻饿啦！</a>
         }
