@@ -3692,5 +3692,53 @@
         ],
         "rarity": 0,
         "painter": "TOKI"
+    },
+    {
+        "className": [
+            "狙击",
+            "炮手"
+        ],
+        "name": "菲亚梅塔",
+        "en": "Fiammetta",
+        "team": [
+            "拉特兰"
+        ],
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "风丸",
+        "en": "Kazemaru",
+        "team": [
+            "东"
+        ],
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "特种",
+            "推击手"
+        ],
+        "name": "见行者",
+        "en": "Enforcer",
+        "team": [
+            "拉特兰"
+        ],
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 4,
+        "painter": "Chuzenji"
     }
 ]
