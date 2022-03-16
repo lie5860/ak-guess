@@ -1,6 +1,4 @@
-import {aliasData} from "../const";
-
-export default function autocomplete(inp, arr, chartsData) {
+export default function autocomplete(inp, arr, chartsData, aliasData) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;

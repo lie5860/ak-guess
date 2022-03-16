@@ -12,6 +12,7 @@ export const I18nWrap = (props: any) => {
   const [language, setLanguage] = React.useState('zh_CN')
   const [inited, setInited] = React.useState(false)
   const [chartsData, setDealData] = React.useState({})
+  const [aliasData, setAliasData] = React.useState({})
   const [languageDict, initI18nDict] = React.useState({});
   const init = async () => {
     const lang = localStorage.getItem('__lang')
@@ -27,9 +28,13 @@ export const I18nWrap = (props: any) => {
       initI18nDict(sl)
       const dd = (await import(`../data/dealData_${lang}.json`)).default
       setDealData(dd)
+      const alias = (await import(`../data/alias_${lang}.json`)).default
+      setAliasData(alias)
     } else {
       const dd = (await import(`../data/dealData_${language}.json`)).default
       setDealData(dd)
+      const alias = (await import(`../data/alias_${language}.json`)).default
+      setAliasData(alias)
     }
     setInited(true)
   }
@@ -50,6 +55,7 @@ export const I18nWrap = (props: any) => {
       language
     },
     chartsData,
+    aliasData
   }}>
     {props.children}
   </AppCtx.Provider>

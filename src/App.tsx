@@ -16,7 +16,7 @@ import './normalize.css'
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 export default function Home() {
-  const {i18n, chartsData} = React.useContext(AppCtx);
+  const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState(RANDOM_MODE)
   const [msg, setMsg] = React.useState("")
@@ -46,7 +46,7 @@ export default function Home() {
         "message": <Help updateDate={updateDate} firstOpen/>, "width": '80%'
       })
     }
-    autocomplete(inputRef.current, chartNames, chartsData);
+    autocomplete(inputRef.current, chartNames, chartsData, aliasData);
 
     const giveUp = localStorageGet(i18n.language, "giveUp")
     if (giveUp) {
