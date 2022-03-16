@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
-import {DAILY_MODE, defaultTryTimes, MAIN_KEY, questionnaireUrl, RANDOM_MODE} from "./const";
+import {DAILY_MODE, defaultTryTimes, MAIN_KEY, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
@@ -140,7 +140,7 @@ export default function Home() {
           }}>🔎{i18n.get('report')}
           </div>
           <div className="tooltip" onClick={() => {
-            window.open(questionnaireUrl)
+            window.open(i18n.get('questionnaireUrl'))
           }}>💬{i18n.get('feedback')}
           </div>
         </div>

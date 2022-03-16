@@ -47,6 +47,7 @@ const dict: { [key: string]: string } = {
   helpDataSource: 'ゲームデータはPRTSより！',
   helpUpdateTime: '次のデイリー更新時間は{updateDate}！',
   helpNum: '現在オペ計{num}名（異格・昇変含む）',
-  helpFirstOpen: 'なかなか覚えない時は？<br/><strong style="color:rgb(255, 204, 76)">けーちゃん教室</strong>いつでも入れますよ！'
+  helpFirstOpen: 'なかなか覚えない時は？<br/><strong style="color:rgb(255, 204, 76)">けーちゃん教室</strong>いつでも入れますよ！',
+  questionnaireUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScPuKxQ1yBUwZzBSDoip0946dPUxdQjXLTdO1oTw77Yf7Kxbg/viewform'
 }
 export default dict;

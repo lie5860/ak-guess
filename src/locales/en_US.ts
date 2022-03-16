@@ -47,6 +47,7 @@ const dict: { [key: string]: string } = {
   helpDataSource: 'Our data come from the CN Arknights wiki: prts.wiki',
   helpUpdateTime: 'Last updated in {updateDate}',
   helpNum: 'There are {num} operators (including Alternative)',
-  helpFirstOpen: ''
+  helpFirstOpen: '',
+  questionnaireUrl: 'https://forms.gle/5KvTEfTEzUxWmnUf8'
 }
 export default dict
