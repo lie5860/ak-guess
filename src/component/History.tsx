@@ -34,7 +34,7 @@ const saveRecordData = (lang: string, record) => {
 
 const History = ({setMsg}) => {
   const {i18n} = React.useContext(AppCtx);
-  const record = loadRecordData();
+  const record = loadRecordData(i18n.language);
   const getShareHistoryText = (mode) => {
     const title = mode === DAILY_MODE ? i18n.get('dailyMode') : i18n.get('randomMode');
     const playTimes = (mode === DAILY_MODE ? record?.dailyPlayTimes : record?.playTimes);
