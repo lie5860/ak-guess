@@ -2,6 +2,12 @@ import {React} from "../global";
 import {AppCtx} from "./AppCtx";
 import languages from './index';
 
+export const localStorageSet = (lang: string, key: string, value: string) => {
+  return localStorage.setItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`), value)
+}
+export const localStorageGet = (lang: string, key: string) => {
+  return localStorage.getItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`))
+}
 export const I18nWrap = (props: any) => {
   const [language, setLanguage] = React.useState('zh_CN')
   const [inited, setInited] = React.useState(false)
@@ -32,9 +38,10 @@ export const I18nWrap = (props: any) => {
         }
         return hasLegacyDom ? <span dangerouslySetInnerHTML={{__html: res}}/> : res
       },
-      setLanguage
+      setLanguage,
+      language
     },
-    chartsData
+    chartsData,
   }}>
     {props.children}
   </AppCtx.Provider>

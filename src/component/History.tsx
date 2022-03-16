@@ -3,9 +3,10 @@ import ShareIcon from './ShareIcon'
 import copyCurrentDay from "../utils/copyCurrentDay";
 import {DAILY_MODE} from "../const";
 import {AppCtx} from '../locales/AppCtx';
+import {localStorageGet, localStorageSet} from "../locales/I18nWrap";
 
-const loadRecordData = () => {
-  let record = localStorage.getItem("record");
+const loadRecordData = (lang: string) => {
+  let record = localStorageGet(lang, "record");
   if (record) {
     record = JSON.parse(record);
   } else {
@@ -27,8 +28,8 @@ const loadRecordData = () => {
   return record;
 }
 
-const saveRecordData = (record) => {
-  localStorage.setItem("record", JSON.stringify(record));
+const saveRecordData = (lang: string, record) => {
+  localStorageSet(lang, "record", JSON.stringify(record));
 }
 
 const History = ({setMsg}) => {

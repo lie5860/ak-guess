@@ -13,6 +13,7 @@ import {AppCtx} from './locales/AppCtx';
 import {getGame} from "./store";
 import './index.less'
 import './normalize.css'
+import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 export default function Home() {
   const {i18n, chartsData} = React.useContext(AppCtx);
@@ -29,7 +30,7 @@ export default function Home() {
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const [isGiveUp, setGiveUp] = React.useState(false);
   const store = {
-    mode, chartsData,
+    mode, chartsData, lang: i18n.language,
     setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp,
     setDayData, remoteAnswerKey, dayData, today
   }
@@ -39,15 +40,15 @@ export default function Home() {
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
-    if (!localStorage.getItem('firstOpen')) {
-      localStorage.setItem('firstOpen', 'yes');
+    if (!localStorageGet(i18n.language, 'firstOpen')) {
+      localStorageSet(i18n.language, 'firstOpen', 'yes');
       changeModalInfo({
         "message": <Help updateDate={updateDate} firstOpen/>, "width": '80%'
       })
     }
     autocomplete(inputRef.current, chartNames, chartsData);
 
-    const giveUp = localStorage.getItem("giveUp")
+    const giveUp = localStorageGet(i18n.language, "giveUp")
     if (giveUp) {
       setGiveUp(giveUp === 'true');
     }
@@ -77,7 +78,7 @@ export default function Home() {
       record.totalTryTimes += data.length;
       saveRecordData(record);
       setGiveUp(true);
-      localStorage.setItem('giveUp', true)
+      localStorageSet(i18n.language, 'giveUp', 'true')
     }
   }
 
@@ -108,6 +109,10 @@ export default function Home() {
   return (
     <div className={'container'}>
       <div className={'main-container clean-float'}>
+        <div className={'dns-icon'} onClick={() => {
+          localStorage.setItem('__lang', 'zh_CN')
+          location.reload();
+        }}>{i18n.language}</div>
         <div className={'ak-tab'}>
           <div className={`ak-tab-item ${mode === RANDOM_MODE ? 'active' : ''}`}
                onClick={() => setMode(RANDOM_MODE)}>
@@ -118,7 +123,6 @@ export default function Home() {
                onClick={() => setMode(DAILY_MODE)}>
             {i18n.get('dailyMode')}
           </div>}
-
         </div>
         <div><span className={`title`}>{i18n.get('title')}</span></div>
         <div>{i18n.get('titleDesc')}</div>
