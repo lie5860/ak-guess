@@ -34,7 +34,7 @@ const Help = ({updateDate = 'emmm', firstOpen = false}) => {
       </ul>
       <span>{i18n.get('helpWrongDetail', null, true)}</span>
       <hr/>
-      {firstOpen && <>{i18n.get('helpFirstOpen', null, true)}
+      {firstOpen && i18n.get('helpFirstOpen') !== 'helpFirstOpen' && <>{i18n.get('helpFirstOpen', null, true)}
           <hr/>
       </>}
       {i18n.get('helpDataSource')}<br/>{i18n.get('helpUpdateTime', {updateDate: updateDate})}<br/>{i18n.get('helpNum', {num: chartsData.length})}
