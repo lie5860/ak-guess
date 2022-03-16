@@ -1,7 +1,7 @@
 import {React} from "../global";
 import ShareIcon from './ShareIcon'
 import copyCurrentDay from "../utils/copyCurrentDay";
-import {AppCtx} from "../locales/AppCtx";
+import {AppCtx, DAILY_MODE, GAME_NAME} from "../const";
 
 const loadRecordData = () => {
   let record = localStorage.getItem("record");
@@ -34,13 +34,13 @@ const History = ({setMsg}) => {
   const {i18n} = React.useContext(AppCtx);
   const record = loadRecordData();
   const getShareHistoryText = (mode) => {
-    const title = mode === 'day' ? i18n.get('dailyMode'):i18n.get('randomMode');
-    const playTimes = (mode === 'day' ? record?.dailyPlayTimes : record?.playTimes);
-    const winTimes = (mode === 'day' ? record?.dailyWinTimes : record?.winTimes);
-    const winPercent = (mode === 'day' ? record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100) : record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100));
-    const straightWins = (mode === 'day' ? record?.dailyStraightWins : record?.straightWins);
-    const maxStraightWins = (mode === 'day' ? record?.dailyMaxStraightWins : record?.maxStraightWins);
-    const avgTryTimes = (mode === 'day' ? record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes) : record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes));
+    const title = mode === DAILY_MODE ? i18n.get('dailyMode'):i18n.get('randomMode');
+    const playTimes = (mode === DAILY_MODE ? record?.dailyPlayTimes : record?.playTimes);
+    const winTimes = (mode === DAILY_MODE ? record?.dailyWinTimes : record?.winTimes);
+    const winPercent = (mode === DAILY_MODE ? record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100) : record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100));
+    const straightWins = (mode === DAILY_MODE ? record?.dailyStraightWins : record?.straightWins);
+    const maxStraightWins = (mode === DAILY_MODE ? record?.dailyMaxStraightWins : record?.maxStraightWins);
+    const avgTryTimes = (mode === DAILY_MODE ? record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes) : record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes));
     let text = i18n.get('title')+` ` + title + `\n`;
     text += i18n.get('playTimes')+ playTimes +`\n`
     text += i18n.get('winTimes')+ winTimes +`\n`
@@ -59,8 +59,8 @@ const History = ({setMsg}) => {
       {i18n.get('avgWinTimes')}{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}{i18n.get('avgWinTimesDesc')}
     </p>
     <hr/>
-    <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText('day'),setMsg, i18n.get('copySuccess')) }}/><span className='title'>{i18n.get('dailyMode')}</span></p>
-<p>{i18n.get('playTimes')}{record?.dailyPlayTimes}<br/>
+    <p><ShareIcon onClick={() => { copyCurrentDay(getShareHistoryText(DAILY_MODE),setMsg, i18n.get('copySuccess')) }}/><span className='title'>{i18n.get('dailyMode')}</span></p>
+    <p>{i18n.get('playTimes')}{record?.dailyPlayTimes}<br/>
       {i18n.get('winTimes')}{record?.dailyWinTimes}<br/>
       {i18n.get('winRate')}{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
       {i18n.get('straightWins')}{record?.dailyStraightWins}<br/>

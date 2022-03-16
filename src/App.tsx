@@ -163,7 +163,7 @@ export default function Home() {
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
         }}>▶️ {i18n.get('newGameTip')}</a>
         }
-        {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
+        {mode !== 'day' && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
           giveUp()
         }}>🆘 {i18n.get('giveUpTip')}</a>
         }
