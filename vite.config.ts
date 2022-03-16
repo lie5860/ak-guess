@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({command, mode}) => {
   return {
     plugins: [react()],
-    base: '//ak-guess.oss-cn-hangzhou.aliyuncs.com/vite',
+    base: command === 'serve' ? '/' : '//ak-guess.oss-cn-hangzhou.aliyuncs.com/vite',
     build: {
       assetsInlineLimit: 0,
     }
