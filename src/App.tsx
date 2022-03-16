@@ -36,7 +36,7 @@ export default function Home() {
   }
   const game = getGame(store)
   React.useEffect(() => {
-    getDailyData().then(({last_date, daily}) => {
+    getDailyData(i18n.language).then(({last_date, daily}) => {
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
@@ -110,8 +110,8 @@ export default function Home() {
     <div className={'container'}>
       <div className={'main-container clean-float'}>
         <div className={'dns-icon'} onClick={() => {
-          localStorage.setItem('__lang', 'zh_CN')
-          location.reload();
+          // localStorage.setItem('__lang', 'zh_CN')
+          // location.reload();
         }}>{i18n.language}</div>
         <div className={'ak-tab'}>
           <div className={`ak-tab-item ${mode === RANDOM_MODE ? 'active' : ''}`}

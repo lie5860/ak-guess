@@ -14,11 +14,16 @@ export const I18nWrap = (props: any) => {
   const [chartsData, setDealData] = React.useState({})
   const init = async () => {
     const lang = localStorage.getItem('__lang')
+    const urlLang = location?.search?.slice?.(1)?.split("&")?.map(s => s?.split("="))?.filter(v => v?.[0] === 'lang')?.[0]?.[1];
+    if (urlLang !== lang && languages?.[urlLang]) {
+      localStorage.setItem('__lang', urlLang)
+      location.reload()
+      return;
+    }
     if (lang && languages?.[lang]) {
       setLanguage(lang)
       const dd = (await import(`../data/dealData_${lang}.json`)).default
       setDealData(dd)
-      setInited(true)
     } else {
       const dd = (await import(`../data/dealData_${language}.json`)).default
       setDealData(dd)
