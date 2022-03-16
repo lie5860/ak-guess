@@ -12,6 +12,7 @@ export const I18nWrap = (props: any) => {
   const [language, setLanguage] = React.useState('zh_CN')
   const [inited, setInited] = React.useState(false)
   const [chartsData, setDealData] = React.useState({})
+  const [languageDict, initI18nDict] = React.useState({});
   const init = async () => {
     const lang = localStorage.getItem('__lang')
     const urlLang = location?.search?.slice?.(1)?.split("&")?.map(s => s?.split("="))?.filter(v => v?.[0] === 'lang')?.[0]?.[1];
@@ -21,7 +22,9 @@ export const I18nWrap = (props: any) => {
       return;
     }
     if (lang && languages?.[lang]) {
+      const sl = (await languages?.[lang]()).default
       setLanguage(lang)
+      initI18nDict(sl)
       const dd = (await import(`../data/dealData_${lang}.json`)).default
       setDealData(dd)
     } else {
@@ -35,7 +38,7 @@ export const I18nWrap = (props: any) => {
   return <AppCtx.Provider value={{
     i18n: {
       get: (key: string, props: { [key: string]: string }, hasLegacyDom = false) => {
-        let res = languages?.[language]?.[key] || key
+        let res = languageDict?.[key] || key
         if (props) {
           Object.keys(props).forEach(key => {
             res = res.replaceAll(`{${key}}`, props[key])
