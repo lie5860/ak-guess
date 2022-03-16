@@ -21,7 +21,9 @@ const guess = (inputItem, answer) => {
       case 'array':
         const x = inputItem?.[key] || [];
         const y = answer?.[key] || [];
-        const eqState = (x, y) => {
+        const eqState = (xx, yy) => {
+          const x = [...new Set(xx)];
+          const y = [...new Set(yy)];
           const l = new Set([...x, ...y]).size;
           if (x.length === y.length && x.length === l) return 'correct';
           if (x.length + y.length === l) return 'wrong';
