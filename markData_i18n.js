@@ -41,15 +41,15 @@ const writeJsonByLangAndName = async (language, jsonName) => {
 }
 const main = async () => {
     // 这是一个开关 todo
-    if (true) {
-        const queryList = []
-        Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
-        for (let i = 0; i < queryList.length; i++) {
-            const [lang, jsonName] = queryList[i];
-            console.log(`正在更新 语言${lang}的json${jsonName}`)
-            await writeJsonByLangAndName(lang, jsonName);
-        }
-    }
+    // if (true) {
+    //     const queryList = []
+    //     Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
+    //     for (let i = 0; i < queryList.length; i++) {
+    //         const [lang, jsonName] = queryList[i];
+    //         console.log(`正在更新 语言${lang}的json${jsonName}`)
+    //         await writeJsonByLangAndName(lang, jsonName);
+    //     }
+    // }
     // 台服没找到文件，模组还没实装？
     var chapterData;
     var chapterExtend;
@@ -148,13 +148,23 @@ const main = async () => {
                 chartsData.push(chapter);
             }
         }
+        // 写入id-index列表
         const chapterList = require(`./data/${server}/character_list.json`)
         const allCharacterkeys = chartsData.map(({key}) => key);
+        let idIndexList = chapterList.list;
         if (allCharacterkeys.length > chapterList.list.length) {
             const newChapterList = allCharacterkeys.filter(v => chapterList.list.indexOf(v) === -1);
             const file = path.resolve(__dirname, `./data/${server}/character_list.json`)
-            writeFileByUser(file, JSON.stringify({list: [...chapterList.list, ...newChapterList]}), {encoding: 'utf8'})
+            idIndexList = [...chapterList.list, ...newChapterList]
+            writeFileByUser(file, JSON.stringify({list: idIndexList}), {encoding: 'utf8'})
         }
+        chartsData.sort((v1, v2) => {
+            const key1 = v1.key;
+            const key2 = v2.key;
+            const index1 = idIndexList.indexOf(key1);
+            const index2 = idIndexList.indexOf(key2);
+            return index1 - index2;
+        })
         let file = path.resolve(__dirname, `./src/data/dealData_${server}.json`)
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})

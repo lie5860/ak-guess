@@ -31,21 +31,6 @@
     },
     {
         "className": [
-            "特殊",
-            "執行者"
-        ],
-        "name": "THRM-EX",
-        "en": "Thermal-EX",
-        "race": "",
-        "rarity": 0,
-        "key": "char_376_therex",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "TOKI"
-    },
-    {
-        "className": [
             "先鋒",
             "先駆兵"
         ],
@@ -206,24 +191,6 @@
     },
     {
         "className": [
-            "前衛",
-            "強襲者"
-        ],
-        "name": "ポプカル",
-        "en": "Popukar",
-        "race": [
-            "コータス"
-        ],
-        "rarity": 2,
-        "key": "char_281_popka",
-        "team": [
-            "行動予備隊A6",
-            "ロドス・アイランド"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
             "重装",
             "重盾衛士"
         ],
@@ -257,24 +224,6 @@
             "ロドス・アイランド"
         ],
         "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "重装",
-            "庇護衛士"
-        ],
-        "name": "スポット",
-        "en": "Spot",
-        "race": [
-            "レプロバ"
-        ],
-        "rarity": 2,
-        "key": "char_284_spot",
-        "team": [
-            "行動予備隊A6",
-            "ロドス・アイランド"
-        ],
-        "painter": "阿鬼"
     },
     {
         "className": [
@@ -438,57 +387,6 @@
     },
     {
         "className": [
-            "術師",
-            "拡散術師"
-        ],
-        "name": "グレイ",
-        "en": "Greyy",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 3,
-        "key": "char_253_greyy",
-        "team": [
-            "ボリバル"
-        ],
-        "painter": "我妻洛酱"
-    },
-    {
-        "className": [
-            "術師",
-            "操機術師"
-        ],
-        "name": "カシャ",
-        "en": "Click",
-        "race": [
-            "ザラック"
-        ],
-        "rarity": 3,
-        "key": "char_328_cammou",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "れおえん"
-    },
-    {
-        "className": [
-            "術師",
-            "秘術師"
-        ],
-        "name": "インディゴ",
-        "en": "Indigo",
-        "race": [
-            "フィディア"
-        ],
-        "rarity": 3,
-        "key": "char_469_indigo",
-        "team": [
-            "イベリア"
-        ],
-        "painter": "织布机loom"
-    },
-    {
-        "className": [
             "狙撃",
             "速射手"
         ],
@@ -525,40 +423,6 @@
     {
         "className": [
             "狙撃",
-            "速射手"
-        ],
-        "name": "ヴァーミル",
-        "en": "Vermeil",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 3,
-        "key": "char_190_clour",
-        "team": [
-            "シラクーザ"
-        ],
-        "painter": "KENTllaall"
-    },
-    {
-        "className": [
-            "狙撃",
-            "速射手"
-        ],
-        "name": "メイ",
-        "en": "May",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 3,
-        "key": "char_133_mm",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "狙撃",
             "榴弾射手"
         ],
         "name": "シラユキ",
@@ -572,57 +436,6 @@
             "極東"
         ],
         "painter": "阿鬼"
-    },
-    {
-        "className": [
-            "狙撃",
-            "散弾射手"
-        ],
-        "name": "パインコーン",
-        "en": "Pinecone",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 3,
-        "key": "char_440_pinecn",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "TrNyteal"
-    },
-    {
-        "className": [
-            "狙撃",
-            "戦術射手"
-        ],
-        "name": "アンブリエル",
-        "en": "Ambriel",
-        "race": [
-            "サンクタ"
-        ],
-        "rarity": 3,
-        "key": "char_302_glaze",
-        "team": [
-            "ラテラーノ"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "狙撃",
-            "精密射手"
-        ],
-        "name": "アシッドドロップ",
-        "en": "Aciddrop",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 3,
-        "key": "char_366_acdrop",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "Lanzi"
     },
     {
         "className": [
@@ -679,40 +492,6 @@
     },
     {
         "className": [
-            "先鋒",
-            "旗手"
-        ],
-        "name": "テンニンカ",
-        "en": "Myrtle",
-        "race": [
-            "ドゥリン"
-        ],
-        "rarity": 3,
-        "key": "char_151_myrtle",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "咩煲"
-    },
-    {
-        "className": [
-            "先鋒",
-            "戦術家"
-        ],
-        "name": "ビーンストーク",
-        "en": "Beanstalk",
-        "race": [
-            "レプロバ"
-        ],
-        "rarity": 3,
-        "key": "char_452_bstalk",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "一千"
-    },
-    {
-        "className": [
             "前衛",
             "教官"
         ],
@@ -744,23 +523,6 @@
             "極東"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "前衛",
-            "勇士"
-        ],
-        "name": "コンビクション",
-        "en": "Conviction",
-        "race": [
-            "不明（疑似リーベリ）"
-        ],
-        "rarity": 3,
-        "key": "char_159_peacok",
-        "team": [
-            "ミノス"
-        ],
-        "painter": "TOMATO"
     },
     {
         "className": [
@@ -815,57 +577,6 @@
     },
     {
         "className": [
-            "前衛",
-            "剣豪"
-        ],
-        "name": "カッター",
-        "en": "Cutter",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 3,
-        "key": "char_301_cutter",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "前衛",
-            "武者"
-        ],
-        "name": "ウタゲ",
-        "en": "Utage",
-        "race": [
-            "不明"
-        ],
-        "rarity": 3,
-        "key": "char_337_utage",
-        "team": [
-            "極東"
-        ],
-        "painter": "釜飯轟々丸"
-    },
-    {
-        "className": [
-            "前衛",
-            "領主"
-        ],
-        "name": "アレーン",
-        "en": "Arene",
-        "race": [
-            "サンクタ"
-        ],
-        "rarity": 3,
-        "key": "char_271_spikes",
-        "team": [
-            "ラテラーノ"
-        ],
-        "painter": "umo_yszx"
-    },
-    {
-        "className": [
             "特殊",
             "執行者"
         ],
@@ -880,23 +591,6 @@
             "カジミエーシュ"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "特殊",
-            "行商人"
-        ],
-        "name": "ジェイ",
-        "en": "Jaye",
-        "race": [
-            "ウルサス"
-        ],
-        "rarity": 3,
-        "key": "char_272_strong",
-        "team": [
-            "炎−龍門"
-        ],
-        "painter": "阿鬼"
     },
     {
         "className": [
@@ -952,23 +646,6 @@
     {
         "className": [
             "医療",
-            "医師"
-        ],
-        "name": "ススーロ",
-        "en": "Sussurro",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 3,
-        "key": "char_298_susuro",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "将"
-    },
-    {
-        "className": [
-            "医療",
             "群癒師"
         ],
         "name": "パフューマー",
@@ -982,23 +659,6 @@
             "ロドス・アイランド"
         ],
         "painter": "Lanzi"
-    },
-    {
-        "className": [
-            "医療",
-            "療養師"
-        ],
-        "name": "セイリュウ",
-        "en": "Purestream",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 3,
-        "key": "char_385_finlpp",
-        "team": [
-            "炎"
-        ],
-        "painter": "唯@W"
     },
     {
         "className": [
@@ -1038,23 +698,6 @@
     {
         "className": [
             "重装",
-            "重盾衛士"
-        ],
-        "name": "バブル",
-        "en": "Bubble",
-        "race": [
-            "セラト"
-        ],
-        "rarity": 3,
-        "key": "char_381_bubble",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "Cenm0"
-    },
-    {
-        "className": [
-            "重装",
             "庇護衛士"
         ],
         "name": "グム",
@@ -1069,23 +712,6 @@
             "ウルサス"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "重装",
-            "術技衛士"
-        ],
-        "name": "ジュナー",
-        "en": "Dur-nar",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 3,
-        "key": "char_260_durnar",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1123,40 +749,6 @@
     },
     {
         "className": [
-            "補助",
-            "緩速師"
-        ],
-        "name": "ポデンコ",
-        "en": "Podenco",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 3,
-        "key": "char_258_podego",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "アシマ"
-    },
-    {
-        "className": [
-            "特殊",
-            "潜伏者"
-        ],
-        "name": "イーサン",
-        "en": "Ethan",
-        "race": [
-            "サヴラ"
-        ],
-        "rarity": 3,
-        "key": "char_355_ethan",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "阿鬼"
-    },
-    {
-        "className": [
             "特殊",
             "推撃手"
         ],
@@ -1189,23 +781,6 @@
             "クルビア"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "医療",
-            "群癒師"
-        ],
-        "name": "ブリーズ",
-        "en": "Breeze",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 4,
-        "key": "char_275_breeze",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "藻"
     },
     {
         "className": [
@@ -1245,93 +820,6 @@
     },
     {
         "className": [
-            "先鋒",
-            "先駆兵"
-        ],
-        "name": "キアーベ",
-        "en": "Chiave",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 4,
-        "key": "char_349_chiave",
-        "team": [
-            "キアーベ一味",
-            "シラクーザ"
-        ],
-        "painter": "Infukun"
-    },
-    {
-        "className": [
-            "先鋒",
-            "突撃兵"
-        ],
-        "name": "リード",
-        "en": "Reed",
-        "race": [
-            "ドラコ"
-        ],
-        "rarity": 4,
-        "key": "char_261_sddrag",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "STAR影法师"
-    },
-    {
-        "className": [
-            "先鋒",
-            "旗手"
-        ],
-        "name": "エリジウム",
-        "en": "Elysium",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_401_elysm",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "前衛",
-            "教官"
-        ],
-        "name": "スワイヤー",
-        "en": "Swire",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 4,
-        "key": "char_308_swire",
-        "team": [
-            "龍門近衛局",
-            "炎−龍門"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "前衛",
-            "教官"
-        ],
-        "name": "ウィスラッシュ",
-        "en": "Whislash",
-        "race": [
-            "クランタ"
-        ],
-        "rarity": 4,
-        "key": "char_265_sophia",
-        "team": [
-            "カジミエーシュ"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
             "前衛",
             "勇士"
         ],
@@ -1347,23 +835,6 @@
             "クルビア"
         ],
         "painter": "TOKI"
-    },
-    {
-        "className": [
-            "前衛",
-            "勇士"
-        ],
-        "name": "エンカク",
-        "en": "Flamebringer",
-        "race": [
-            "サルカズ"
-        ],
-        "rarity": 4,
-        "key": "char_131_flameb",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "虎三"
     },
     {
         "className": [
@@ -1386,23 +857,6 @@
     {
         "className": [
             "前衛",
-            "闘士"
-        ],
-        "name": "フリント",
-        "en": "Flint",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_415_flint",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
-            "前衛",
             "領主"
         ],
         "name": "ラップランド",
@@ -1416,57 +870,6 @@
             "シラクーザ"
         ],
         "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "前衛",
-            "領主"
-        ],
-        "name": "エアースカーペ",
-        "en": "Ayerscarpe",
-        "race": [
-            "コータス"
-        ],
-        "rarity": 4,
-        "key": "char_294_ayer",
-        "team": [
-            "レム・ビリトン"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
-            "前衛",
-            "剣豪"
-        ],
-        "name": "バイビーク",
-        "en": "Bibeak",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_252_bibeak",
-        "team": [
-            "サーミ"
-        ],
-        "painter": "RAYVON"
-    },
-    {
-        "className": [
-            "前衛",
-            "剣豪"
-        ],
-        "name": "Tachanka",
-        "en": "Tachanka",
-        "race": [
-            "不明"
-        ],
-        "rarity": 4,
-        "key": "char_459_tachak",
-        "team": [
-            "レインボー小隊"
-        ],
-        "painter": "Ubisoft"
     },
     {
         "className": [
@@ -1485,109 +888,6 @@
             "エーギル"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "前衛",
-            "強襲者"
-        ],
-        "name": "ブローカ",
-        "en": "Broca",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 4,
-        "key": "char_356_broca",
-        "team": [
-            "キアーベ一味",
-            "シラクーザ"
-        ],
-        "painter": "Infukun"
-    },
-    {
-        "className": [
-            "前衛",
-            "術戦士"
-        ],
-        "name": "アステシア",
-        "en": "Astesia",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_274_astesi",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "YUJI"
-    },
-    {
-        "className": [
-            "前衛",
-            "術戦士"
-        ],
-        "name": "シデロカ",
-        "en": "Sideroca",
-        "race": [
-            "フォルテ"
-        ],
-        "rarity": 4,
-        "key": "char_333_sidero",
-        "team": [
-            "ミノス"
-        ],
-        "painter": "将"
-    },
-    {
-        "className": [
-            "前衛",
-            "武者"
-        ],
-        "name": "アカフユ",
-        "en": "Akafuyu",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 4,
-        "key": "char_475_akafyu",
-        "team": [
-            "極東"
-        ],
-        "painter": "熊太"
-    },
-    {
-        "className": [
-            "前衛",
-            "鎌撃士"
-        ],
-        "name": "ラ・プルマ",
-        "en": "La Pluma",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_421_crow",
-        "team": [
-            "ボリバル"
-        ],
-        "painter": "LAL!ROLE"
-    },
-    {
-        "className": [
-            "前衛",
-            "解放者"
-        ],
-        "name": "テキーラ",
-        "en": "Tequila",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 4,
-        "key": "char_486_takila",
-        "team": [
-            "ボリバル"
-        ],
-        "painter": "一千"
     },
     {
         "className": [
@@ -1626,40 +926,6 @@
     {
         "className": [
             "狙撃",
-            "速射手"
-        ],
-        "name": "グレースロート",
-        "en": "GreyThroat",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_367_swllow",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "狙撃",
-            "速射手"
-        ],
-        "name": "エイプリル",
-        "en": "April",
-        "race": [
-            "コータス"
-        ],
-        "rarity": 4,
-        "key": "char_365_aprl",
-        "team": [
-            "レム・ビリトン"
-        ],
-        "painter": "れおえん"
-    },
-    {
-        "className": [
-            "狙撃",
             "榴弾射手"
         ],
         "name": "メテオリーテ",
@@ -1673,58 +939,6 @@
             "ロドス・アイランド"
         ],
         "painter": "TOKI"
-    },
-    {
-        "className": [
-            "狙撃",
-            "榴弾射手"
-        ],
-        "name": "シェーシャ",
-        "en": "Sesa",
-        "race": [
-            "ヴイーヴル"
-        ],
-        "rarity": 4,
-        "key": "char_379_sesa",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "狙撃",
-            "散弾射手"
-        ],
-        "name": "イグゼキュター",
-        "en": "Executor",
-        "race": [
-            "サンクタ"
-        ],
-        "rarity": 4,
-        "key": "char_279_excu",
-        "team": [
-            "ラテラーノ"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "狙撃",
-            "散弾射手"
-        ],
-        "name": "アオスタ",
-        "en": "Aosta",
-        "race": [
-            "ループス"
-        ],
-        "rarity": 4,
-        "key": "char_346_aosta",
-        "team": [
-            "キアーベ一味",
-            "シラクーザ"
-        ],
-        "painter": "Infukun"
     },
     {
         "className": [
@@ -1747,40 +961,6 @@
     {
         "className": [
             "術師",
-            "中堅術師"
-        ],
-        "name": "アブサント",
-        "en": "Absinthe",
-        "race": [
-            "ウルサス"
-        ],
-        "rarity": 4,
-        "key": "char_405_absin",
-        "team": [
-            "ウルサス"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
-            "術師",
-            "中堅術師"
-        ],
-        "name": "トミミ",
-        "en": "Tomimi",
-        "race": [
-            "アダクリス"
-        ],
-        "rarity": 4,
-        "key": "char_411_tomimi",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "Chuzenji"
-    },
-    {
-        "className": [
-            "術師",
             "拡散術師"
         ],
         "name": "スカイフレア",
@@ -1794,108 +974,6 @@
             "ヴィクトリア"
         ],
         "painter": "TOKI"
-    },
-    {
-        "className": [
-            "術師",
-            "連鎖術師"
-        ],
-        "name": "レイズ",
-        "en": "Leizi",
-        "race": [
-            "麒麟"
-        ],
-        "rarity": 4,
-        "key": "char_306_leizi",
-        "team": [
-            "炎"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "術師",
-            "法陣術師"
-        ],
-        "name": "ビーズワクス",
-        "en": "Beeswax",
-        "race": [
-            "キャプリニー"
-        ],
-        "rarity": 4,
-        "key": "char_344_beewax",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "カワグチ"
-    },
-    {
-        "className": [
-            "術師",
-            "拡散術師"
-        ],
-        "name": "レオンハルト",
-        "en": "Leonhardt",
-        "race": [
-            "コータス"
-        ],
-        "rarity": 4,
-        "key": "char_373_lionhd",
-        "team": [
-            "レム・ビリトン"
-        ],
-        "painter": "野崎つばた"
-    },
-    {
-        "className": [
-            "術師",
-            "法陣術師"
-        ],
-        "name": "ミント",
-        "en": "Mint",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 4,
-        "key": "char_388_mint",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "ヌードル"
-    },
-    {
-        "className": [
-            "術師",
-            "秘術師"
-        ],
-        "name": "アイリス",
-        "en": "Iris",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 4,
-        "key": "char_338_iris",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "術師",
-            "拡散術師"
-        ],
-        "name": "炎獄ラヴァ",
-        "en": "Lava the Purgatory",
-        "race": [
-            "サルカズ"
-        ],
-        "rarity": 4,
-        "key": "char_1011_lava2",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1914,23 +992,6 @@
             "クルビア"
         ],
         "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "補助",
-            "召喚師"
-        ],
-        "name": "シーン",
-        "en": "Scene",
-        "race": [
-            "ピロサ"
-        ],
-        "rarity": 4,
-        "key": "char_336_folivo",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "アシマ"
     },
     {
         "className": [
@@ -1969,75 +1030,6 @@
     },
     {
         "className": [
-            "医療",
-            "医師"
-        ],
-        "name": "フォリニック",
-        "en": "Folinic",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 4,
-        "key": "char_345_folnic",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "医療",
-            "療養師"
-        ],
-        "name": "セイロン",
-        "en": "Ceylon",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_348_ceylon",
-        "team": [
-            "シエスタ",
-            "クルビア"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "医療",
-            "療養師"
-        ],
-        "name": "ウィスパーレイン",
-        "en": "Whisperain",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 4,
-        "key": "char_436_whispr",
-        "team": [
-            "イベリア"
-        ],
-        "painter": "Chuzenji"
-    },
-    {
-        "className": [
-            "医療",
-            "医師"
-        ],
-        "name": "トゥイエ",
-        "en": "Tuye",
-        "race": [
-            "フォルテ"
-        ],
-        "rarity": 4,
-        "key": "char_402_tuye",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
             "重装",
             "庇護衛士"
         ],
@@ -2052,24 +1044,6 @@
             "使徒"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "重装",
-            "庇護衛士"
-        ],
-        "name": "ウン",
-        "en": "Hung",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 4,
-        "key": "char_226_hmau",
-        "team": [
-            "リー探偵事務所",
-            "炎−龍門"
-        ],
-        "painter": "KuroBlood"
     },
     {
         "className": [
@@ -2088,58 +1062,6 @@
             "ロドス・アイランド"
         ],
         "painter": "Infukun"
-    },
-    {
-        "className": [
-            "特殊",
-            "執行者"
-        ],
-        "name": "ワイフー",
-        "en": "Waai Fu",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 4,
-        "key": "char_243_waaifu",
-        "team": [
-            "リー探偵事務所",
-            "炎−龍門"
-        ],
-        "painter": "KuroBlood"
-    },
-    {
-        "className": [
-            "特殊",
-            "執行者"
-        ],
-        "name": "カフカ",
-        "en": "Kafka",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_214_kafka",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
-            "特殊",
-            "行商人"
-        ],
-        "name": "ウユウ",
-        "en": "Mr.Nothing",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 4,
-        "key": "char_455_nothin",
-        "team": [
-            "炎"
-        ],
-        "painter": "Skade"
     },
     {
         "className": [
@@ -2180,23 +1102,6 @@
     {
         "className": [
             "重装",
-            "重盾衛士"
-        ],
-        "name": "バイソン",
-        "en": "Bison",
-        "race": [
-            "フォルテ"
-        ],
-        "rarity": 4,
-        "key": "char_325_bison",
-        "team": [
-            "炎−龍門"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "重装",
             "破壊者"
         ],
         "name": "ヴァルカン",
@@ -2210,57 +1115,6 @@
             "ミノス"
         ],
         "painter": "neco"
-    },
-    {
-        "className": [
-            "重装",
-            "術技衛士"
-        ],
-        "name": "アスベストス",
-        "en": "Asbestos",
-        "race": [
-            "サヴラ"
-        ],
-        "rarity": 4,
-        "key": "char_378_asbest",
-        "team": [
-            "レム・ビリトン"
-        ],
-        "painter": "TEAM EXPNDR"
-    },
-    {
-        "className": [
-            "重装",
-            "重盾衛士"
-        ],
-        "name": "Blitz",
-        "en": "Blitz",
-        "race": [
-            "不明"
-        ],
-        "rarity": 4,
-        "key": "char_457_blitz",
-        "team": [
-            "レインボー小隊"
-        ],
-        "painter": "Ubisoft"
-    },
-    {
-        "className": [
-            "重装",
-            "重盾衛士"
-        ],
-        "name": "ヘビーレイン",
-        "en": "Heavyrain",
-        "race": [
-            "クランタ"
-        ],
-        "rarity": 4,
-        "key": "char_304_zebra",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "aZLing4"
     },
     {
         "className": [
@@ -2298,41 +1152,6 @@
     },
     {
         "className": [
-            "狙撃",
-            "戦術射手"
-        ],
-        "name": "アンドレアナ",
-        "en": "Andreana",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 4,
-        "key": "char_218_cuttle",
-        "team": [
-            "アビサル",
-            "エーギル"
-        ],
-        "painter": "LLC"
-    },
-    {
-        "className": [
-            "狙撃",
-            "破城射手"
-        ],
-        "name": "トギフォンス",
-        "en": "Toddifons",
-        "race": [
-            "ヴイーヴル"
-        ],
-        "rarity": 4,
-        "key": "char_363_toddi",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "山×2"
-    },
-    {
-        "className": [
             "特殊",
             "鉤縄師"
         ],
@@ -2348,23 +1167,6 @@
             "イェラグ"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "特殊",
-            "鉤縄師"
-        ],
-        "name": "スノーズント",
-        "en": "Snowsant",
-        "race": [
-            "リーべリ"
-        ],
-        "rarity": 4,
-        "key": "char_383_snsant",
-        "team": [
-            "炎−龍門"
-        ],
-        "painter": "NoriZC"
     },
     {
         "className": [
@@ -2387,23 +1189,6 @@
     {
         "className": [
             "補助",
-            "呪詛師"
-        ],
-        "name": "シャマレ",
-        "en": "Shamare",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 4,
-        "key": "char_254_vodfox",
-        "team": [
-            "シラクーザ"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "補助",
             "緩速師"
         ],
         "name": "イースチナ",
@@ -2418,23 +1203,6 @@
             "ウルサス"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "補助",
-            "緩速師"
-        ],
-        "name": "グラウコス",
-        "en": "Glaucus",
-        "race": [
-            "非公開"
-        ],
-        "rarity": 4,
-        "key": "char_326_glacus",
-        "team": [
-            "イベリア"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2456,23 +1224,6 @@
     },
     {
         "className": [
-            "補助",
-            "祈祷師"
-        ],
-        "name": "ツキノギ",
-        "en": "Tsukinogi",
-        "race": [
-            "エラフィア"
-        ],
-        "rarity": 4,
-        "key": "char_343_tknogi",
-        "team": [
-            "極東"
-        ],
-        "painter": "上埜"
-    },
-    {
-        "className": [
             "特殊",
             "潜伏者"
         ],
@@ -2491,23 +1242,6 @@
     {
         "className": [
             "特殊",
-            "潜伏者"
-        ],
-        "name": "キララ",
-        "en": "Kirara",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 4,
-        "key": "char_478_kirara",
-        "team": [
-            "極東"
-        ],
-        "painter": "我妻洛酱"
-    },
-    {
-        "className": [
-            "特殊",
             "推撃手"
         ],
         "name": "エフイーター",
@@ -2521,57 +1255,6 @@
             "炎−龍門"
         ],
         "painter": "RAN"
-    },
-    {
-        "className": [
-            "特殊",
-            "罠師"
-        ],
-        "name": "ロビン",
-        "en": "Robin",
-        "race": [
-            "アナティ"
-        ],
-        "rarity": 4,
-        "key": "char_451_robin",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
-            "特殊",
-            "罠師"
-        ],
-        "name": "Frost",
-        "en": "Frost",
-        "race": [
-            "不明"
-        ],
-        "rarity": 4,
-        "key": "char_458_rfrost",
-        "team": [
-            "レインボー小隊"
-        ],
-        "painter": "Ubisoft"
-    },
-    {
-        "className": [
-            "特殊",
-            "傀儡師"
-        ],
-        "name": "ベナ",
-        "en": "Bena",
-        "race": [
-            "キャプリニー"
-        ],
-        "rarity": 4,
-        "key": "char_369_bena",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2593,128 +1276,6 @@
     },
     {
         "className": [
-            "狙撃",
-            "速射手"
-        ],
-        "name": "アルケット",
-        "en": "Archetto",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 5,
-        "key": "char_332_archet",
-        "team": [
-            "ラテラーノ"
-        ],
-        "painter": "alchemaniac"
-    },
-    {
-        "className": [
-            "狙撃",
-            "速射手"
-        ],
-        "name": "Ash",
-        "en": "Ash",
-        "race": [
-            "不明"
-        ],
-        "rarity": 5,
-        "key": "char_456_ash",
-        "team": [
-            "レインボー小隊"
-        ],
-        "painter": "Ubisoft"
-    },
-    {
-        "className": [
-            "狙撃",
-            "精密射手"
-        ],
-        "name": "シュヴァルツ",
-        "en": "Schwarz",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_340_shwaz",
-        "team": [
-            "シエスタ",
-            "クルビア"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "狙撃",
-            "榴弾射手"
-        ],
-        "name": "W",
-        "en": "W",
-        "race": [
-            "サルカズ"
-        ],
-        "rarity": 5,
-        "key": "char_113_cqbw",
-        "team": [
-            "バベル"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "狙撃",
-            "破城射手"
-        ],
-        "name": "ロサ",
-        "en": "Роса",
-        "race": [
-            "ウルサス"
-        ],
-        "rarity": 5,
-        "key": "char_197_poca",
-        "team": [
-            "ウルサス学生自治団",
-            "ウルサス"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "狙撃",
-            "投擲手"
-        ],
-        "name": "ロスモンティス",
-        "en": "Rosmontis",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_391_rosmon",
-        "team": [
-            "エリートオペレーター",
-            "ロドス・アイランド"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
-            "狙撃",
-            "散弾射手"
-        ],
-        "name": "遊龍チェン",
-        "en": "Ch'en the Holungday",
-        "race": [
-            "龍"
-        ],
-        "rarity": 5,
-        "key": "char_1013_chen2",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
             "先鋒",
             "先駆兵"
         ],
@@ -2730,40 +1291,6 @@
             "ヴィクトリア"
         ],
         "painter": "Infukun"
-    },
-    {
-        "className": [
-            "先鋒",
-            "突撃兵"
-        ],
-        "name": "バグパイプ",
-        "en": "Bagpipe",
-        "race": [
-            "ヴイーヴル"
-        ],
-        "rarity": 5,
-        "key": "char_222_bpipe",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "u介"
-    },
-    {
-        "className": [
-            "先鋒",
-            "先駆兵"
-        ],
-        "name": "サガ",
-        "en": "Saga",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 5,
-        "key": "char_362_saga",
-        "team": [
-            "極東"
-        ],
-        "painter": "多元菌"
     },
     {
         "className": [
@@ -2786,23 +1313,6 @@
     {
         "className": [
             "術師",
-            "拡散術師"
-        ],
-        "name": "モスティマ",
-        "en": "Mostima",
-        "race": [
-            "非公開"
-        ],
-        "rarity": 5,
-        "key": "char_213_mostma",
-        "team": [
-            "ラテラーノ"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "術師",
             "中堅術師"
         ],
         "name": "エイヤフィヤトラ",
@@ -2816,75 +1326,6 @@
             "リターニア"
         ],
         "painter": "Anmi"
-    },
-    {
-        "className": [
-            "術師",
-            "中堅術師"
-        ],
-        "name": "ケオベ",
-        "en": "Ceobe",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 5,
-        "key": "char_2013_cerber",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "LM7"
-    },
-    {
-        "className": [
-            "術師",
-            "拡散術師"
-        ],
-        "name": "シー",
-        "en": "Dusk",
-        "race": [
-            "非公開"
-        ],
-        "rarity": 5,
-        "key": "char_2015_dusk",
-        "team": [
-            "炎",
-            "歳"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "術師",
-            "連鎖術師"
-        ],
-        "name": "パッセンジャー",
-        "en": "Passenger",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 5,
-        "key": "char_472_pasngr",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "術師",
-            "法陣術師"
-        ],
-        "name": "カーネリアン",
-        "en": "Carnelian",
-        "race": [
-            "キャプリニー"
-        ],
-        "rarity": 5,
-        "key": "char_426_billro",
-        "team": [
-            "リターニア"
-        ],
-        "painter": "カワグチ"
     },
     {
         "className": [
@@ -2902,145 +1343,6 @@
             "シラクーザ"
         ],
         "painter": "LM7"
-    },
-    {
-        "className": [
-            "補助",
-            "緩速師"
-        ],
-        "name": "スズラン",
-        "en": "Suzuran",
-        "race": [
-            "ヴァルポ"
-        ],
-        "rarity": 5,
-        "key": "char_358_lisa",
-        "team": [
-            "シラクーザ"
-        ],
-        "painter": "将"
-    },
-    {
-        "className": [
-            "補助",
-            "召喚師"
-        ],
-        "name": "マゼラン",
-        "en": "Magallan",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 5,
-        "key": "char_248_mgllan",
-        "team": [
-            "ライン生命",
-            "クルビア"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
-            "補助",
-            "吟遊者"
-        ],
-        "name": "濁心スカジ",
-        "en": "Skadi the Corrupting Heart",
-        "race": [
-            "未公開"
-        ],
-        "rarity": 5,
-        "key": "char_1012_skadi2",
-        "team": [
-            "エーギル"
-        ],
-        "painter": "alchemaniac"
-    },
-    {
-        "className": [
-            "特殊",
-            "執行者"
-        ],
-        "name": "ファントム",
-        "en": "Phantom",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_250_phatom",
-        "team": [
-            "ヴィクトリア"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "特殊",
-            "推撃手"
-        ],
-        "name": "ウィーディ",
-        "en": "Weedy",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 5,
-        "key": "char_400_weedy",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "特殊",
-            "鬼才"
-        ],
-        "name": "ア",
-        "en": "Aak",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_225_haak",
-        "team": [
-            "リー探偵事務所",
-            "炎−龍門"
-        ],
-        "painter": "KuroBlood"
-    },
-    {
-        "className": [
-            "特殊",
-            "鉤縄師"
-        ],
-        "name": "グレイディーア",
-        "en": "Gladiia",
-        "race": [
-            "未公開"
-        ],
-        "rarity": 5,
-        "key": "char_474_glady",
-        "team": [
-            "アビサル",
-            "エーギル"
-        ],
-        "painter": "Chuzenji"
-    },
-    {
-        "className": [
-            "特殊",
-            "潜伏者"
-        ],
-        "name": "ミヅキ",
-        "en": "Mizuki",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 5,
-        "key": "char_437_mizuki",
-        "team": [
-            "極東"
-        ],
-        "painter": "Namie"
     },
     {
         "className": [
@@ -3075,23 +1377,6 @@
             "使徒"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "医療",
-            "医師"
-        ],
-        "name": "ケルシー",
-        "en": "Kal'tsit",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_003_kalts",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "唯@W"
     },
     {
         "className": [
@@ -3131,92 +1416,6 @@
     },
     {
         "className": [
-            "重装",
-            "庇護衛士"
-        ],
-        "name": "ブレミシャイン",
-        "en": "Blemishine",
-        "race": [
-            "クランタ"
-        ],
-        "rarity": 5,
-        "key": "char_423_blemsh",
-        "team": [
-            "カジミエーシュ"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "重装",
-            "重盾衛士"
-        ],
-        "name": "ニェン",
-        "en": "Nian",
-        "race": [
-            "非公開"
-        ],
-        "rarity": 5,
-        "key": "char_2014_nian",
-        "team": [
-            "炎",
-            "歳"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "重装",
-            "破壊者"
-        ],
-        "name": "マドロック",
-        "en": "Mudrock",
-        "race": [
-            "サルカズ"
-        ],
-        "rarity": 5,
-        "key": "char_311_mudrok",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "重装",
-            "決闘者"
-        ],
-        "name": "ユーネクテス",
-        "en": "Eunectes",
-        "race": [
-            "フィディア"
-        ],
-        "rarity": 5,
-        "key": "char_416_zumama",
-        "team": [
-            "サルゴン"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "前衛",
-            "闘士"
-        ],
-        "name": "マウンテン",
-        "en": "Mountain",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_264_f12yin",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "WincalBlanke"
-    },
-    {
-        "className": [
             "前衛",
             "領主"
         ],
@@ -3232,110 +1431,6 @@
             "イェラグ"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "前衛",
-            "領主"
-        ],
-        "name": "ソーンズ",
-        "en": "Thorns",
-        "race": [
-            "エーギル"
-        ],
-        "rarity": 5,
-        "key": "char_293_thorns",
-        "team": [
-            "イベリア"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "前衛",
-            "剣豪"
-        ],
-        "name": "チェン",
-        "en": "Ch'en",
-        "race": [
-            "龍"
-        ],
-        "rarity": 5,
-        "key": "char_010_chen",
-        "team": [
-            "龍門近衛局",
-            "炎−龍門"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
-            "前衛",
-            "強襲者"
-        ],
-        "name": "ブレイズ",
-        "en": "Blaze",
-        "race": [
-            "フェリーン"
-        ],
-        "rarity": 5,
-        "key": "char_017_huang",
-        "team": [
-            "エリートオペレーター",
-            "ロドス・アイランド"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
-            "前衛",
-            "術戦士"
-        ],
-        "name": "スルト",
-        "en": "Surtr",
-        "race": [
-            "サルカズ"
-        ],
-        "rarity": 5,
-        "key": "char_350_surtr",
-        "team": [
-            "ロドス・アイランド"
-        ],
-        "painter": "Ask"
-    },
-    {
-        "className": [
-            "前衛",
-            "武者"
-        ],
-        "name": "ヘラグ",
-        "en": "Hellagur",
-        "race": [
-            "リーベリ"
-        ],
-        "rarity": 5,
-        "key": "char_188_helage",
-        "team": [
-            "ウルサス"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "前衛",
-            "教官"
-        ],
-        "name": "パラス",
-        "en": "Pallas",
-        "race": [
-            "フォルテ"
-        ],
-        "rarity": 5,
-        "key": "char_485_pallas",
-        "team": [
-            "ミノス"
-        ],
-        "painter": "aZLing4"
     },
     {
         "className": [
@@ -3409,23 +1504,6 @@
     },
     {
         "className": [
-            "前衛",
-            "闘士"
-        ],
-        "name": "ジャッキー",
-        "en": "Jackie",
-        "race": [
-            "ペッロー"
-        ],
-        "rarity": 3,
-        "key": "char_347_jaksel",
-        "team": [
-            "クルビア"
-        ],
-        "painter": "Nagu"
-    },
-    {
-        "className": [
             "術師",
             "中堅術師"
         ],
@@ -3479,6 +1557,1382 @@
     {
         "className": [
             "前衛",
+            "強襲者"
+        ],
+        "name": "ポプカル",
+        "en": "Popukar",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 2,
+        "key": "char_281_popka",
+        "team": [
+            "行動予備隊A6",
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "庇護衛士"
+        ],
+        "name": "スポット",
+        "en": "Spot",
+        "race": [
+            "レプロバ"
+        ],
+        "rarity": 2,
+        "key": "char_284_spot",
+        "team": [
+            "行動予備隊A6",
+            "ロドス・アイランド"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "グレイ",
+        "en": "Greyy",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 3,
+        "key": "char_253_greyy",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "前衛",
+            "教官"
+        ],
+        "name": "スワイヤー",
+        "en": "Swire",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_308_swire",
+        "team": [
+            "龍門近衛局",
+            "炎−龍門"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "前衛",
+            "剣豪"
+        ],
+        "name": "チェン",
+        "en": "Ch'en",
+        "race": [
+            "龍"
+        ],
+        "rarity": 5,
+        "key": "char_010_chen",
+        "team": [
+            "龍門近衛局",
+            "炎−龍門"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "医療",
+            "医師"
+        ],
+        "name": "ススーロ",
+        "en": "Sussurro",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 3,
+        "key": "char_298_susuro",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "医療",
+            "療養師"
+        ],
+        "name": "セイロン",
+        "en": "Ceylon",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_348_ceylon",
+        "team": [
+            "シエスタ",
+            "クルビア"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "補助",
+            "緩速師"
+        ],
+        "name": "グラウコス",
+        "en": "Glaucus",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 4,
+        "key": "char_326_glacus",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙撃",
+            "精密射手"
+        ],
+        "name": "シュヴァルツ",
+        "en": "Schwarz",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_340_shwaz",
+        "team": [
+            "シエスタ",
+            "クルビア"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "先鋒",
+            "旗手"
+        ],
+        "name": "テンニンカ",
+        "en": "Myrtle",
+        "race": [
+            "ドゥリン"
+        ],
+        "rarity": 3,
+        "key": "char_151_myrtle",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "咩煲"
+    },
+    {
+        "className": [
+            "前衛",
+            "術戦士"
+        ],
+        "name": "アステシア",
+        "en": "Astesia",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_274_astesi",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "前衛",
+            "武者"
+        ],
+        "name": "ヘラグ",
+        "en": "Hellagur",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_188_helage",
+        "team": [
+            "ウルサス"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "重装",
+            "術技衛士"
+        ],
+        "name": "ジュナー",
+        "en": "Dur-nar",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 3,
+        "key": "char_260_durnar",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "ヴァーミル",
+        "en": "Vermeil",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 3,
+        "key": "char_190_clour",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "KENTllaall"
+    },
+    {
+        "className": [
+            "前衛",
+            "勇士"
+        ],
+        "name": "エンカク",
+        "en": "Flamebringer",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_131_flameb",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "虎三"
+    },
+    {
+        "className": [
+            "狙撃",
+            "散弾射手"
+        ],
+        "name": "イグゼキュター",
+        "en": "Executor",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 4,
+        "key": "char_279_excu",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "補助",
+            "召喚師"
+        ],
+        "name": "マゼラン",
+        "en": "Magallan",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_248_mgllan",
+        "team": [
+            "ライン生命",
+            "クルビア"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "特殊",
+            "潜伏者"
+        ],
+        "name": "イーサン",
+        "en": "Ethan",
+        "race": [
+            "サヴラ"
+        ],
+        "rarity": 3,
+        "key": "char_355_ethan",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "医療",
+            "群癒師"
+        ],
+        "name": "ブリーズ",
+        "en": "Breeze",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 4,
+        "key": "char_275_breeze",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "藻"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "メイ",
+        "en": "May",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 3,
+        "key": "char_133_mm",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "重盾衛士"
+        ],
+        "name": "バイソン",
+        "en": "Bison",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 4,
+        "key": "char_325_bison",
+        "team": [
+            "炎−龍門"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "ワイフー",
+        "en": "Waai Fu",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_243_waaifu",
+        "team": [
+            "リー探偵事務所",
+            "炎−龍門"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "モスティマ",
+        "en": "Mostima",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_213_mostma",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "先鋒",
+            "突撃兵"
+        ],
+        "name": "リード",
+        "en": "Reed",
+        "race": [
+            "ドラコ"
+        ],
+        "rarity": 4,
+        "key": "char_261_sddrag",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "前衛",
+            "強襲者"
+        ],
+        "name": "ブローカ",
+        "en": "Broca",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_356_broca",
+        "team": [
+            "キアーベ一味",
+            "シラクーザ"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "狙撃",
+            "戦術射手"
+        ],
+        "name": "アンブリエル",
+        "en": "Ambriel",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 3,
+        "key": "char_302_glaze",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "グレースロート",
+        "en": "GreyThroat",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_367_swllow",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "前衛",
+            "強襲者"
+        ],
+        "name": "ブレイズ",
+        "en": "Blaze",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_017_huang",
+        "team": [
+            "エリートオペレーター",
+            "ロドス・アイランド"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "特殊",
+            "鉤縄師"
+        ],
+        "name": "スノーズント",
+        "en": "Snowsant",
+        "race": [
+            "リーべリ"
+        ],
+        "rarity": 4,
+        "key": "char_383_snsant",
+        "team": [
+            "炎−龍門"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "重装",
+            "庇護衛士"
+        ],
+        "name": "ウン",
+        "en": "Hung",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_226_hmau",
+        "team": [
+            "リー探偵事務所",
+            "炎−龍門"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "特殊",
+            "鬼才"
+        ],
+        "name": "ア",
+        "en": "Aak",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_225_haak",
+        "team": [
+            "リー探偵事務所",
+            "炎−龍門"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "重装",
+            "重盾衛士"
+        ],
+        "name": "ニェン",
+        "en": "Nian",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_2014_nian",
+        "team": [
+            "炎",
+            "歳"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "術師",
+            "連鎖術師"
+        ],
+        "name": "レイズ",
+        "en": "Leizi",
+        "race": [
+            "麒麟"
+        ],
+        "rarity": 4,
+        "key": "char_306_leizi",
+        "team": [
+            "炎"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "術師",
+            "中堅術師"
+        ],
+        "name": "ケオベ",
+        "en": "Ceobe",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 5,
+        "key": "char_2013_cerber",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "医療",
+            "療養師"
+        ],
+        "name": "セイリュウ",
+        "en": "Purestream",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 3,
+        "key": "char_385_finlpp",
+        "team": [
+            "炎"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "前衛",
+            "武者"
+        ],
+        "name": "ウタゲ",
+        "en": "Utage",
+        "race": [
+            "不明"
+        ],
+        "rarity": 3,
+        "key": "char_337_utage",
+        "team": [
+            "極東"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "前衛",
+            "剣豪"
+        ],
+        "name": "バイビーク",
+        "en": "Bibeak",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_252_bibeak",
+        "team": [
+            "サーミ"
+        ],
+        "painter": "RAYVON"
+    },
+    {
+        "className": [
+            "狙撃",
+            "榴弾射手"
+        ],
+        "name": "シェーシャ",
+        "en": "Sesa",
+        "race": [
+            "ヴイーヴル"
+        ],
+        "rarity": 4,
+        "key": "char_379_sesa",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "先鋒",
+            "突撃兵"
+        ],
+        "name": "バグパイプ",
+        "en": "Bagpipe",
+        "race": [
+            "ヴイーヴル"
+        ],
+        "rarity": 5,
+        "key": "char_222_bpipe",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "u介"
+    },
+    {
+        "className": [
+            "前衛",
+            "勇士"
+        ],
+        "name": "コンビクション",
+        "en": "Conviction",
+        "race": [
+            "不明（疑似リーベリ）"
+        ],
+        "rarity": 3,
+        "key": "char_159_peacok",
+        "team": [
+            "ミノス"
+        ],
+        "painter": "TOMATO"
+    },
+    {
+        "className": [
+            "前衛",
+            "剣豪"
+        ],
+        "name": "カッター",
+        "en": "Cutter",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 3,
+        "key": "char_301_cutter",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "前衛",
+            "術戦士"
+        ],
+        "name": "シデロカ",
+        "en": "Sideroca",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 4,
+        "key": "char_333_sidero",
+        "team": [
+            "ミノス"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "補助",
+            "呪詛師"
+        ],
+        "name": "シャマレ",
+        "en": "Shamare",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 4,
+        "key": "char_254_vodfox",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "ファントム",
+        "en": "Phantom",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_250_phatom",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "THRM-EX",
+        "en": "Thermal-EX",
+        "race": "",
+        "rarity": 0,
+        "key": "char_376_therex",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "先鋒",
+            "旗手"
+        ],
+        "name": "エリジウム",
+        "en": "Elysium",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_401_elysm",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "特殊",
+            "推撃手"
+        ],
+        "name": "ウィーディ",
+        "en": "Weedy",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_400_weedy",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙撃",
+            "榴弾射手"
+        ],
+        "name": "W",
+        "en": "W",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_113_cqbw",
+        "team": [
+            "バベル"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "重装",
+            "術技衛士"
+        ],
+        "name": "アスベストス",
+        "en": "Asbestos",
+        "race": [
+            "サヴラ"
+        ],
+        "rarity": 4,
+        "key": "char_378_asbest",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "TEAM EXPNDR"
+    },
+    {
+        "className": [
+            "補助",
+            "祈祷師"
+        ],
+        "name": "ツキノギ",
+        "en": "Tsukinogi",
+        "race": [
+            "エラフィア"
+        ],
+        "rarity": 4,
+        "key": "char_343_tknogi",
+        "team": [
+            "極東"
+        ],
+        "painter": "上埜"
+    },
+    {
+        "className": [
+            "補助",
+            "緩速師"
+        ],
+        "name": "ポデンコ",
+        "en": "Podenco",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 3,
+        "key": "char_258_podego",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "術師",
+            "中堅術師"
+        ],
+        "name": "アブサント",
+        "en": "Absinthe",
+        "race": [
+            "ウルサス"
+        ],
+        "rarity": 4,
+        "key": "char_405_absin",
+        "team": [
+            "ウルサス"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "レオンハルト",
+        "en": "Leonhardt",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 4,
+        "key": "char_373_lionhd",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "野崎つばた"
+    },
+    {
+        "className": [
+            "狙撃",
+            "破城射手"
+        ],
+        "name": "ロサ",
+        "en": "Роса",
+        "race": [
+            "ウルサス"
+        ],
+        "rarity": 5,
+        "key": "char_197_poca",
+        "team": [
+            "ウルサス学生自治団",
+            "ウルサス"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "術師",
+            "操機術師"
+        ],
+        "name": "カシャ",
+        "en": "Click",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 3,
+        "key": "char_328_cammou",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "医療",
+            "医師"
+        ],
+        "name": "フォリニック",
+        "en": "Folinic",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_345_folnic",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "前衛",
+            "領主"
+        ],
+        "name": "エアースカーペ",
+        "en": "Ayerscarpe",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 4,
+        "key": "char_294_ayer",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "補助",
+            "緩速師"
+        ],
+        "name": "スズラン",
+        "en": "Suzuran",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 5,
+        "key": "char_358_lisa",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "補助",
+            "召喚師"
+        ],
+        "name": "シーン",
+        "en": "Scene",
+        "race": [
+            "ピロサ"
+        ],
+        "rarity": 4,
+        "key": "char_336_folivo",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "術師",
+            "法陣術師"
+        ],
+        "name": "ビーズワクス",
+        "en": "Beeswax",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 4,
+        "key": "char_344_beewax",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "キアーベ",
+        "en": "Chiave",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 4,
+        "key": "char_349_chiave",
+        "team": [
+            "キアーベ一味",
+            "シラクーザ"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "特殊",
+            "行商人"
+        ],
+        "name": "ジェイ",
+        "en": "Jaye",
+        "race": [
+            "ウルサス"
+        ],
+        "rarity": 3,
+        "key": "char_272_strong",
+        "team": [
+            "炎−龍門"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "狙撃",
+            "戦術射手"
+        ],
+        "name": "アンドレアナ",
+        "en": "Andreana",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_218_cuttle",
+        "team": [
+            "アビサル",
+            "エーギル"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "前衛",
+            "領主"
+        ],
+        "name": "ソーンズ",
+        "en": "Thorns",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_293_thorns",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "狙撃",
+            "精密射手"
+        ],
+        "name": "アシッドドロップ",
+        "en": "Aciddrop",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 3,
+        "key": "char_366_acdrop",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "術師",
+            "中堅術師"
+        ],
+        "name": "トミミ",
+        "en": "Tomimi",
+        "race": [
+            "アダクリス"
+        ],
+        "rarity": 4,
+        "key": "char_411_tomimi",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "前衛",
+            "闘士"
+        ],
+        "name": "フリント",
+        "en": "Flint",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_415_flint",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "重装",
+            "決闘者"
+        ],
+        "name": "ユーネクテス",
+        "en": "Eunectes",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 5,
+        "key": "char_416_zumama",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "前衛",
+            "領主"
+        ],
+        "name": "アレーン",
+        "en": "Arene",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 3,
+        "key": "char_271_spikes",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "術師",
+            "法陣術師"
+        ],
+        "name": "ミント",
+        "en": "Mint",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_388_mint",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "エイプリル",
+        "en": "April",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 4,
+        "key": "char_365_aprl",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "前衛",
+            "術戦士"
+        ],
+        "name": "スルト",
+        "en": "Surtr",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_350_surtr",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "Ask"
+    },
+    {
+        "className": [
+            "重装",
+            "重盾衛士"
+        ],
+        "name": "バブル",
+        "en": "Bubble",
+        "race": [
+            "セラト"
+        ],
+        "rarity": 3,
+        "key": "char_381_bubble",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "前衛",
+            "教官"
+        ],
+        "name": "ウィスラッシュ",
+        "en": "Whislash",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 4,
+        "key": "char_265_sophia",
+        "team": [
+            "カジミエーシュ"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "狙撃",
+            "散弾射手"
+        ],
+        "name": "アオスタ",
+        "en": "Aosta",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 4,
+        "key": "char_346_aosta",
+        "team": [
+            "キアーベ一味",
+            "シラクーザ"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "重装",
+            "庇護衛士"
+        ],
+        "name": "ブレミシャイン",
+        "en": "Blemishine",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 5,
+        "key": "char_423_blemsh",
+        "team": [
+            "カジミエーシュ"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "前衛",
+            "闘士"
+        ],
+        "name": "ジャッキー",
+        "en": "Jackie",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 3,
+        "key": "char_347_jaksel",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "Nagu"
+    },
+    {
+        "className": [
+            "医療",
+            "療養師"
+        ],
+        "name": "ウィスパーレイン",
+        "en": "Whisperain",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_436_whispr",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "重装",
+            "破壊者"
+        ],
+        "name": "マドロック",
+        "en": "Mudrock",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_311_mudrok",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "狙撃",
+            "投擲手"
+        ],
+        "name": "ロスモンティス",
+        "en": "Rosmontis",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_391_rosmon",
+        "team": [
+            "エリートオペレーター",
+            "ロドス・アイランド"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "前衛",
             "術戦士"
         ],
         "name": "アーミヤ(前衛)",
@@ -3489,6 +2943,552 @@
         ],
         "rarity": 4,
         "key": "char_1001_amiya2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "狙撃",
+            "散弾射手"
+        ],
+        "name": "パインコーン",
+        "en": "Pinecone",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 3,
+        "key": "char_440_pinecn",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "TrNyteal"
+    },
+    {
+        "className": [
+            "特殊",
+            "罠師"
+        ],
+        "name": "ロビン",
+        "en": "Robin",
+        "race": [
+            "アナティ"
+        ],
+        "rarity": 4,
+        "key": "char_451_robin",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "カフカ",
+        "en": "Kafka",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_214_kafka",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "前衛",
+            "闘士"
+        ],
+        "name": "マウンテン",
+        "en": "Mountain",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_264_f12yin",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "WincalBlanke"
+    },
+    {
+        "className": [
+            "先鋒",
+            "戦術家"
+        ],
+        "name": "ビーンストーク",
+        "en": "Beanstalk",
+        "race": [
+            "レプロバ"
+        ],
+        "rarity": 3,
+        "key": "char_452_bstalk",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "術師",
+            "秘術師"
+        ],
+        "name": "アイリス",
+        "en": "Iris",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_338_iris",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "アルケット",
+        "en": "Archetto",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_332_archet",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "医療",
+            "医師"
+        ],
+        "name": "トゥイエ",
+        "en": "Tuye",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 4,
+        "key": "char_402_tuye",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "炎獄ラヴァ",
+        "en": "Lava the Purgatory",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_1011_lava2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特殊",
+            "行商人"
+        ],
+        "name": "ウユウ",
+        "en": "Mr.Nothing",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_455_nothin",
+        "team": [
+            "炎"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "サガ",
+        "en": "Saga",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 5,
+        "key": "char_362_saga",
+        "team": [
+            "極東"
+        ],
+        "painter": "多元菌"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "シー",
+        "en": "Dusk",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_2015_dusk",
+        "team": [
+            "炎",
+            "歳"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "前衛",
+            "剣豪"
+        ],
+        "name": "Tachanka",
+        "en": "Tachanka",
+        "race": [
+            "不明"
+        ],
+        "rarity": 4,
+        "key": "char_459_tachak",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "重装",
+            "重盾衛士"
+        ],
+        "name": "Blitz",
+        "en": "Blitz",
+        "race": [
+            "不明"
+        ],
+        "rarity": 4,
+        "key": "char_457_blitz",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "特殊",
+            "罠師"
+        ],
+        "name": "Frost",
+        "en": "Frost",
+        "race": [
+            "不明"
+        ],
+        "rarity": 4,
+        "key": "char_458_rfrost",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "Ash",
+        "en": "Ash",
+        "race": [
+            "不明"
+        ],
+        "rarity": 5,
+        "key": "char_456_ash",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "重装",
+            "重盾衛士"
+        ],
+        "name": "ヘビーレイン",
+        "en": "Heavyrain",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 4,
+        "key": "char_304_zebra",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "狙撃",
+            "破城射手"
+        ],
+        "name": "トギフォンス",
+        "en": "Toddifons",
+        "race": [
+            "ヴイーヴル"
+        ],
+        "rarity": 4,
+        "key": "char_363_toddi",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "山×2"
+    },
+    {
+        "className": [
+            "術師",
+            "連鎖術師"
+        ],
+        "name": "パッセンジャー",
+        "en": "Passenger",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_472_pasngr",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "前衛",
+            "武者"
+        ],
+        "name": "アカフユ",
+        "en": "Akafuyu",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_475_akafyu",
+        "team": [
+            "極東"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "特殊",
+            "鉤縄師"
+        ],
+        "name": "グレイディーア",
+        "en": "Gladiia",
+        "race": [
+            "未公開"
+        ],
+        "rarity": 5,
+        "key": "char_474_glady",
+        "team": [
+            "アビサル",
+            "エーギル"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "医療",
+            "医師"
+        ],
+        "name": "ケルシー",
+        "en": "Kal'tsit",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_003_kalts",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "補助",
+            "吟遊者"
+        ],
+        "name": "濁心スカジ",
+        "en": "Skadi the Corrupting Heart",
+        "race": [
+            "未公開"
+        ],
+        "rarity": 5,
+        "key": "char_1012_skadi2",
+        "team": [
+            "エーギル"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "術師",
+            "秘術師"
+        ],
+        "name": "インディゴ",
+        "en": "Indigo",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 3,
+        "key": "char_469_indigo",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "织布机loom"
+    },
+    {
+        "className": [
+            "特殊",
+            "傀儡師"
+        ],
+        "name": "ベナ",
+        "en": "Bena",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 4,
+        "key": "char_369_bena",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特殊",
+            "潜伏者"
+        ],
+        "name": "キララ",
+        "en": "Kirara",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_478_kirara",
+        "team": [
+            "極東"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "術師",
+            "法陣術師"
+        ],
+        "name": "カーネリアン",
+        "en": "Carnelian",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 5,
+        "key": "char_426_billro",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "前衛",
+            "教官"
+        ],
+        "name": "パラス",
+        "en": "Pallas",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 5,
+        "key": "char_485_pallas",
+        "team": [
+            "ミノス"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "前衛",
+            "解放者"
+        ],
+        "name": "テキーラ",
+        "en": "Tequila",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_486_takila",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "前衛",
+            "鎌撃士"
+        ],
+        "name": "ラ・プルマ",
+        "en": "La Pluma",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_421_crow",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "特殊",
+            "潜伏者"
+        ],
+        "name": "ミヅキ",
+        "en": "Mizuki",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_437_mizuki",
+        "team": [
+            "極東"
+        ],
+        "painter": "Namie"
+    },
+    {
+        "className": [
+            "狙撃",
+            "散弾射手"
+        ],
+        "name": "遊龍チェン",
+        "en": "Ch'en the Holungday",
+        "race": [
+            "龍"
+        ],
+        "rarity": 5,
+        "key": "char_1013_chen2",
         "team": [
             "ロドス・アイランド"
         ],

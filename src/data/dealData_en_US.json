@@ -31,21 +31,6 @@
     },
     {
         "className": [
-            "Specialist",
-            "Executor"
-        ],
-        "name": "THRM-EX",
-        "en": "",
-        "race": "",
-        "rarity": 0,
-        "key": "char_376_therex",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "TOKI"
-    },
-    {
-        "className": [
             "Vanguard",
             "Pioneer"
         ],
@@ -206,24 +191,6 @@
     },
     {
         "className": [
-            "Guard",
-            "Centurion"
-        ],
-        "name": "Popukar",
-        "en": "",
-        "race": [
-            "Cautus"
-        ],
-        "rarity": 2,
-        "key": "char_281_popka",
-        "team": [
-            "Reserve Op Team A6",
-            "Rhodes Island"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
             "Defender",
             "Protector"
         ],
@@ -257,24 +224,6 @@
             "Rhodes Island"
         ],
         "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Defender",
-            "Guardian"
-        ],
-        "name": "Spot",
-        "en": "",
-        "race": [
-            "Rebbah"
-        ],
-        "rarity": 2,
-        "key": "char_284_spot",
-        "team": [
-            "Reserve Op Team A6",
-            "Rhodes Island"
-        ],
-        "painter": "阿鬼"
     },
     {
         "className": [
@@ -438,57 +387,6 @@
     },
     {
         "className": [
-            "Caster",
-            "Splash Caster"
-        ],
-        "name": "Greyy",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 3,
-        "key": "char_253_greyy",
-        "team": [
-            "Bolívar"
-        ],
-        "painter": "我妻洛酱"
-    },
-    {
-        "className": [
-            "Caster",
-            "Mech-accord Caster"
-        ],
-        "name": "Click",
-        "en": "",
-        "race": [
-            "Zalak"
-        ],
-        "rarity": 3,
-        "key": "char_328_cammou",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "れおえん"
-    },
-    {
-        "className": [
-            "Caster",
-            "Mystic Caster"
-        ],
-        "name": "Indigo",
-        "en": "",
-        "race": [
-            "Phidia"
-        ],
-        "rarity": 3,
-        "key": "char_469_indigo",
-        "team": [
-            "Iberia"
-        ],
-        "painter": "织布机loom"
-    },
-    {
-        "className": [
             "Sniper",
             "Marksman"
         ],
@@ -525,40 +423,6 @@
     {
         "className": [
             "Sniper",
-            "Marksman"
-        ],
-        "name": "Vermeil",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 3,
-        "key": "char_190_clour",
-        "team": [
-            "Siracusa"
-        ],
-        "painter": "KENTllaall"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Marksman"
-        ],
-        "name": "May",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 3,
-        "key": "char_133_mm",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Sniper",
             "Artilleryman"
         ],
         "name": "Shirayuki",
@@ -572,57 +436,6 @@
             "Higashi"
         ],
         "painter": "阿鬼"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Spreadshooter"
-        ],
-        "name": "Pinecone",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 3,
-        "key": "char_440_pinecn",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "TrNyteal"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Deadeye"
-        ],
-        "name": "Ambriel",
-        "en": "",
-        "race": [
-            "Sankta"
-        ],
-        "rarity": 3,
-        "key": "char_302_glaze",
-        "team": [
-            "Laterano"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Heavyshooter"
-        ],
-        "name": "Aciddrop",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 3,
-        "key": "char_366_acdrop",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "Lanzi"
     },
     {
         "className": [
@@ -679,40 +492,6 @@
     },
     {
         "className": [
-            "Vanguard",
-            "Standard Bearer"
-        ],
-        "name": "Myrtle",
-        "en": "",
-        "race": [
-            "Durin"
-        ],
-        "rarity": 3,
-        "key": "char_151_myrtle",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "咩煲"
-    },
-    {
-        "className": [
-            "Vanguard",
-            "Tactician"
-        ],
-        "name": "Beanstalk",
-        "en": "",
-        "race": [
-            "Reproba"
-        ],
-        "rarity": 3,
-        "key": "char_452_bstalk",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "一千"
-    },
-    {
-        "className": [
             "Guard",
             "Instructor"
         ],
@@ -744,23 +523,6 @@
             "Higashi"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Guard",
-            "Dreadnought"
-        ],
-        "name": "Conviction",
-        "en": "",
-        "race": [
-            "Unknown (Suspected Liberi)"
-        ],
-        "rarity": 3,
-        "key": "char_159_peacok",
-        "team": [
-            "Minos"
-        ],
-        "painter": "TOMATO"
     },
     {
         "className": [
@@ -815,57 +577,6 @@
     },
     {
         "className": [
-            "Guard",
-            "Swordmaster"
-        ],
-        "name": "Cutter",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 3,
-        "key": "char_301_cutter",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Guard",
-            "Musha"
-        ],
-        "name": "Utage",
-        "en": "",
-        "race": [
-            "Unknown"
-        ],
-        "rarity": 3,
-        "key": "char_337_utage",
-        "team": [
-            "Higashi"
-        ],
-        "painter": "釜飯轟々丸"
-    },
-    {
-        "className": [
-            "Guard",
-            "Lord"
-        ],
-        "name": "Arene",
-        "en": "",
-        "race": [
-            "Sankta"
-        ],
-        "rarity": 3,
-        "key": "char_271_spikes",
-        "team": [
-            "Laterano"
-        ],
-        "painter": "umo_yszx"
-    },
-    {
-        "className": [
             "Specialist",
             "Executor"
         ],
@@ -880,24 +591,6 @@
             "Kazimierz"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Merchant"
-        ],
-        "name": "Jaye",
-        "en": "",
-        "race": [
-            "Ursus"
-        ],
-        "rarity": 3,
-        "key": "char_272_strong",
-        "team": [
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "阿鬼"
     },
     {
         "className": [
@@ -954,23 +647,6 @@
     {
         "className": [
             "Medic",
-            "Medic"
-        ],
-        "name": "Sussurro",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 3,
-        "key": "char_298_susuro",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "将"
-    },
-    {
-        "className": [
-            "Medic",
             "Multi-target Medic"
         ],
         "name": "Perfumer",
@@ -984,23 +660,6 @@
             "Rhodes Island"
         ],
         "painter": "Lanzi"
-    },
-    {
-        "className": [
-            "Medic",
-            "Therapist"
-        ],
-        "name": "Purestream",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 3,
-        "key": "char_385_finlpp",
-        "team": [
-            "Yan"
-        ],
-        "painter": "唯@W"
     },
     {
         "className": [
@@ -1040,23 +699,6 @@
     {
         "className": [
             "Defender",
-            "Protector"
-        ],
-        "name": "Bubble",
-        "en": "",
-        "race": [
-            "Cerato"
-        ],
-        "rarity": 3,
-        "key": "char_381_bubble",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "Cenm0"
-    },
-    {
-        "className": [
-            "Defender",
             "Guardian"
         ],
         "name": "Gummy",
@@ -1072,23 +714,6 @@
             "Ursus"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "Defender",
-            "Arts Protector"
-        ],
-        "name": "Dur-nar",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 3,
-        "key": "char_260_durnar",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1126,40 +751,6 @@
     },
     {
         "className": [
-            "Supporter",
-            "Decel Binder"
-        ],
-        "name": "Podenco",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 3,
-        "key": "char_258_podego",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "アシマ"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Ambusher"
-        ],
-        "name": "Ethan",
-        "en": "",
-        "race": [
-            "Savra"
-        ],
-        "rarity": 3,
-        "key": "char_355_ethan",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "阿鬼"
-    },
-    {
-        "className": [
             "Specialist",
             "Push Stroker"
         ],
@@ -1193,23 +784,6 @@
             "Columbia"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Medic",
-            "Multi-target Medic"
-        ],
-        "name": "Breeze",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 4,
-        "key": "char_275_breeze",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "藻"
     },
     {
         "className": [
@@ -1251,94 +825,6 @@
     },
     {
         "className": [
-            "Vanguard",
-            "Pioneer"
-        ],
-        "name": "Chiave",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 4,
-        "key": "char_349_chiave",
-        "team": [
-            "Chiave Gang",
-            "Siracusa"
-        ],
-        "painter": "Infukun"
-    },
-    {
-        "className": [
-            "Vanguard",
-            "Charger"
-        ],
-        "name": "Reed",
-        "en": "",
-        "race": [
-            "Draco"
-        ],
-        "rarity": 4,
-        "key": "char_261_sddrag",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "STAR影法师"
-    },
-    {
-        "className": [
-            "Vanguard",
-            "Standard Bearer"
-        ],
-        "name": "Elysium",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_401_elysm",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "Guard",
-            "Instructor"
-        ],
-        "name": "Swire",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 4,
-        "key": "char_308_swire",
-        "team": [
-            "Lungmen Guard Department",
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Guard",
-            "Instructor"
-        ],
-        "name": "Whislash",
-        "en": "",
-        "race": [
-            "Kuranta"
-        ],
-        "rarity": 4,
-        "key": "char_265_sophia",
-        "team": [
-            "Kazimierz"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
             "Guard",
             "Dreadnought"
         ],
@@ -1354,23 +840,6 @@
             "Columbia"
         ],
         "painter": "TOKI"
-    },
-    {
-        "className": [
-            "Guard",
-            "Dreadnought"
-        ],
-        "name": "Flamebringer",
-        "en": "",
-        "race": [
-            "Sarkaz"
-        ],
-        "rarity": 4,
-        "key": "char_131_flameb",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "虎三"
     },
     {
         "className": [
@@ -1393,23 +862,6 @@
     {
         "className": [
             "Guard",
-            "Fighter"
-        ],
-        "name": "Flint",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_415_flint",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
-            "Guard",
             "Lord"
         ],
         "name": "Lappland",
@@ -1423,57 +875,6 @@
             "Siracusa"
         ],
         "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Guard",
-            "Lord"
-        ],
-        "name": "Ayerscarpe",
-        "en": "",
-        "race": [
-            "Cautus"
-        ],
-        "rarity": 4,
-        "key": "char_294_ayer",
-        "team": [
-            "Rim Billiton"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
-            "Guard",
-            "Swordmaster"
-        ],
-        "name": "Bibeak",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_252_bibeak",
-        "team": [
-            "Sami"
-        ],
-        "painter": "RAYVON"
-    },
-    {
-        "className": [
-            "Guard",
-            "Swordmaster"
-        ],
-        "name": "Tachanka",
-        "en": "",
-        "race": [
-            "Unknown"
-        ],
-        "rarity": 4,
-        "key": "char_459_tachak",
-        "team": [
-            "Team Rainbow"
-        ],
-        "painter": "Ubisoft"
     },
     {
         "className": [
@@ -1492,109 +893,6 @@
             "Ægir"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "Guard",
-            "Centurion"
-        ],
-        "name": "Broca",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 4,
-        "key": "char_356_broca",
-        "team": [
-            "Chiave Gang",
-            "Siracusa"
-        ],
-        "painter": "Infukun"
-    },
-    {
-        "className": [
-            "Guard",
-            "Arts Fighter"
-        ],
-        "name": "Astesia",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_274_astesi",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "YUJI"
-    },
-    {
-        "className": [
-            "Guard",
-            "Arts Fighter"
-        ],
-        "name": "Sideroca",
-        "en": "",
-        "race": [
-            "Forte"
-        ],
-        "rarity": 4,
-        "key": "char_333_sidero",
-        "team": [
-            "Minos"
-        ],
-        "painter": "将"
-    },
-    {
-        "className": [
-            "Guard",
-            "Musha"
-        ],
-        "name": "Akafuyu",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 4,
-        "key": "char_475_akafyu",
-        "team": [
-            "Higashi"
-        ],
-        "painter": "熊太"
-    },
-    {
-        "className": [
-            "Guard",
-            "Reaper"
-        ],
-        "name": "La Pluma",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_421_crow",
-        "team": [
-            "Bolívar"
-        ],
-        "painter": "LAL!ROLE"
-    },
-    {
-        "className": [
-            "Guard",
-            "Liberator"
-        ],
-        "name": "Tequila",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 4,
-        "key": "char_486_takila",
-        "team": [
-            "Bolívar"
-        ],
-        "painter": "一千"
     },
     {
         "className": [
@@ -1633,40 +931,6 @@
     {
         "className": [
             "Sniper",
-            "Marksman"
-        ],
-        "name": "GreyThroat",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_367_swllow",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Marksman"
-        ],
-        "name": "April",
-        "en": "",
-        "race": [
-            "Cautus"
-        ],
-        "rarity": 4,
-        "key": "char_365_aprl",
-        "team": [
-            "Rim Billiton"
-        ],
-        "painter": "れおえん"
-    },
-    {
-        "className": [
-            "Sniper",
             "Artilleryman"
         ],
         "name": "Meteorite",
@@ -1680,58 +944,6 @@
             "Rhodes Island"
         ],
         "painter": "TOKI"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Artilleryman"
-        ],
-        "name": "Sesa",
-        "en": "",
-        "race": [
-            "Vouivre"
-        ],
-        "rarity": 4,
-        "key": "char_379_sesa",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Spreadshooter"
-        ],
-        "name": "Executor",
-        "en": "",
-        "race": [
-            "Sankta"
-        ],
-        "rarity": 4,
-        "key": "char_279_excu",
-        "team": [
-            "Laterano"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Spreadshooter"
-        ],
-        "name": "Aosta",
-        "en": "",
-        "race": [
-            "Lupo"
-        ],
-        "rarity": 4,
-        "key": "char_346_aosta",
-        "team": [
-            "Chiave Gang",
-            "Siracusa"
-        ],
-        "painter": "Infukun"
     },
     {
         "className": [
@@ -1754,40 +966,6 @@
     {
         "className": [
             "Caster",
-            "Core Caster"
-        ],
-        "name": "Absinthe",
-        "en": "",
-        "race": [
-            "Ursus"
-        ],
-        "rarity": 4,
-        "key": "char_405_absin",
-        "team": [
-            "Ursus"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
-            "Caster",
-            "Core Caster"
-        ],
-        "name": "Tomimi",
-        "en": "",
-        "race": [
-            "Archosauria"
-        ],
-        "rarity": 4,
-        "key": "char_411_tomimi",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "Chuzenji"
-    },
-    {
-        "className": [
-            "Caster",
             "Splash Caster"
         ],
         "name": "Skyfire",
@@ -1801,108 +979,6 @@
             "Victoria"
         ],
         "painter": "TOKI"
-    },
-    {
-        "className": [
-            "Caster",
-            "Chain Caster"
-        ],
-        "name": "Leizi",
-        "en": "",
-        "race": [
-            "Kylin"
-        ],
-        "rarity": 4,
-        "key": "char_306_leizi",
-        "team": [
-            "Yan"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Caster",
-            "Phalanx Caster"
-        ],
-        "name": "Beeswax",
-        "en": "",
-        "race": [
-            "Caprinae"
-        ],
-        "rarity": 4,
-        "key": "char_344_beewax",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "カワグチ"
-    },
-    {
-        "className": [
-            "Caster",
-            "Splash Caster"
-        ],
-        "name": "Leonhardt",
-        "en": "",
-        "race": [
-            "Cautus"
-        ],
-        "rarity": 4,
-        "key": "char_373_lionhd",
-        "team": [
-            "Rim Billiton"
-        ],
-        "painter": "野崎つばた"
-    },
-    {
-        "className": [
-            "Caster",
-            "Phalanx Caster"
-        ],
-        "name": "Mint",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 4,
-        "key": "char_388_mint",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "ヌードル"
-    },
-    {
-        "className": [
-            "Caster",
-            "Mystic Caster"
-        ],
-        "name": "Iris",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 4,
-        "key": "char_338_iris",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Caster",
-            "Splash Caster"
-        ],
-        "name": "Lava the Purgatory",
-        "en": "",
-        "race": [
-            "Sarkaz"
-        ],
-        "rarity": 4,
-        "key": "char_1011_lava2",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -1921,23 +997,6 @@
             "Columbia"
         ],
         "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Supporter",
-            "Summoner"
-        ],
-        "name": "Scene",
-        "en": "",
-        "race": [
-            "Pilosa"
-        ],
-        "rarity": 4,
-        "key": "char_336_folivo",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "アシマ"
     },
     {
         "className": [
@@ -1976,75 +1035,6 @@
     },
     {
         "className": [
-            "Medic",
-            "Medic"
-        ],
-        "name": "Folinic",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 4,
-        "key": "char_345_folnic",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "Medic",
-            "Therapist"
-        ],
-        "name": "Ceylon",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_348_ceylon",
-        "team": [
-            "Siesta",
-            "Columbia"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "Medic",
-            "Therapist"
-        ],
-        "name": "Whisperain",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 4,
-        "key": "char_436_whispr",
-        "team": [
-            "Iberia"
-        ],
-        "painter": "Chuzenji"
-    },
-    {
-        "className": [
-            "Medic",
-            "Medic"
-        ],
-        "name": "Tuye",
-        "en": "",
-        "race": [
-            "Forte"
-        ],
-        "rarity": 4,
-        "key": "char_402_tuye",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
             "Defender",
             "Guardian"
         ],
@@ -2059,25 +1049,6 @@
             "Followers"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Defender",
-            "Guardian"
-        ],
-        "name": "Hung",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 4,
-        "key": "char_226_hmau",
-        "team": [
-            "Lee's Detective Agency",
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "KuroBlood"
     },
     {
         "className": [
@@ -2096,59 +1067,6 @@
             "Rhodes Island"
         ],
         "painter": "Infukun"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Executor"
-        ],
-        "name": "Waai Fu",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 4,
-        "key": "char_243_waaifu",
-        "team": [
-            "Lee's Detective Agency",
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "KuroBlood"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Executor"
-        ],
-        "name": "Kafka",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_214_kafka",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Merchant"
-        ],
-        "name": "Mr. Nothing",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_455_nothin",
-        "team": [
-            "Yan"
-        ],
-        "painter": "Skade"
     },
     {
         "className": [
@@ -2190,24 +1108,6 @@
     {
         "className": [
             "Defender",
-            "Protector"
-        ],
-        "name": "Bison",
-        "en": "",
-        "race": [
-            "Forte"
-        ],
-        "rarity": 4,
-        "key": "char_325_bison",
-        "team": [
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Defender",
             "Juggernaut"
         ],
         "name": "Vulcan",
@@ -2221,57 +1121,6 @@
             "Minos"
         ],
         "painter": "neco"
-    },
-    {
-        "className": [
-            "Defender",
-            "Arts Protector"
-        ],
-        "name": "Asbestos",
-        "en": "",
-        "race": [
-            "Savra"
-        ],
-        "rarity": 4,
-        "key": "char_378_asbest",
-        "team": [
-            "Rim Billiton"
-        ],
-        "painter": "TEAM EXPNDR"
-    },
-    {
-        "className": [
-            "Defender",
-            "Protector"
-        ],
-        "name": "Blitz",
-        "en": "",
-        "race": [
-            "Unknown"
-        ],
-        "rarity": 4,
-        "key": "char_457_blitz",
-        "team": [
-            "Team Rainbow"
-        ],
-        "painter": "Ubisoft"
-    },
-    {
-        "className": [
-            "Defender",
-            "Protector"
-        ],
-        "name": "Heavyrain",
-        "en": "",
-        "race": [
-            "Kuranta"
-        ],
-        "rarity": 4,
-        "key": "char_304_zebra",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "aZLing4"
     },
     {
         "className": [
@@ -2309,41 +1158,6 @@
     },
     {
         "className": [
-            "Sniper",
-            "Deadeye"
-        ],
-        "name": "Andreana",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 4,
-        "key": "char_218_cuttle",
-        "team": [
-            "Abyssal Hunters",
-            "Ægir"
-        ],
-        "painter": "LLC"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Besieger"
-        ],
-        "name": "Toddifons",
-        "en": "",
-        "race": [
-            "Vouivre"
-        ],
-        "rarity": 4,
-        "key": "char_363_toddi",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "山×2"
-    },
-    {
-        "className": [
             "Specialist",
             "Hookmaster"
         ],
@@ -2362,24 +1176,6 @@
     },
     {
         "className": [
-            "Specialist",
-            "Hookmaster"
-        ],
-        "name": "Snowsant",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 4,
-        "key": "char_383_snsant",
-        "team": [
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
             "Supporter",
             "Hexer"
         ],
@@ -2395,23 +1191,6 @@
             "Kjerag"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Supporter",
-            "Hexer"
-        ],
-        "name": "Shamare",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 4,
-        "key": "char_254_vodfox",
-        "team": [
-            "Siracusa"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2435,23 +1214,6 @@
     {
         "className": [
             "Supporter",
-            "Decel Binder"
-        ],
-        "name": "Glaucus",
-        "en": "",
-        "race": [
-            "Unknown"
-        ],
-        "rarity": 4,
-        "key": "char_326_glacus",
-        "team": [
-            "Iberia"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Supporter",
             "Bard"
         ],
         "name": "Sora",
@@ -2467,23 +1229,6 @@
             "Lungmen"
         ],
         "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Supporter",
-            "Abjurer"
-        ],
-        "name": "Tsukinogi",
-        "en": "",
-        "race": [
-            "Elafia"
-        ],
-        "rarity": 4,
-        "key": "char_343_tknogi",
-        "team": [
-            "Higashi"
-        ],
-        "painter": "上埜"
     },
     {
         "className": [
@@ -2505,23 +1250,6 @@
     {
         "className": [
             "Specialist",
-            "Ambusher"
-        ],
-        "name": "Kirara",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 4,
-        "key": "char_478_kirara",
-        "team": [
-            "Higashi"
-        ],
-        "painter": "我妻洛酱"
-    },
-    {
-        "className": [
-            "Specialist",
             "Push Stroker"
         ],
         "name": "FEater",
@@ -2536,57 +1264,6 @@
             "Lungmen"
         ],
         "painter": "RAN"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Trapmaster"
-        ],
-        "name": "Robin",
-        "en": "",
-        "race": [
-            "Anaty"
-        ],
-        "rarity": 4,
-        "key": "char_451_robin",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "aZLing4"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Trapmaster"
-        ],
-        "name": "Frost",
-        "en": "",
-        "race": [
-            "Unknown"
-        ],
-        "rarity": 4,
-        "key": "char_458_rfrost",
-        "team": [
-            "Team Rainbow"
-        ],
-        "painter": "Ubisoft"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Dollkeeper"
-        ],
-        "name": "Bena",
-        "en": "",
-        "race": [
-            "Caprinae"
-        ],
-        "rarity": 4,
-        "key": "char_369_bena",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "下野宏铭"
     },
     {
         "className": [
@@ -2609,129 +1286,6 @@
     },
     {
         "className": [
-            "Sniper",
-            "Marksman"
-        ],
-        "name": "Archetto",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 5,
-        "key": "char_332_archet",
-        "team": [
-            "Laterano"
-        ],
-        "painter": "alchemaniac"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Marksman"
-        ],
-        "name": "Ash",
-        "en": "",
-        "race": [
-            "Unknown"
-        ],
-        "rarity": 5,
-        "key": "char_456_ash",
-        "team": [
-            "Team Rainbow"
-        ],
-        "painter": "Ubisoft"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Heavyshooter"
-        ],
-        "name": "Schwarz",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_340_shwaz",
-        "team": [
-            "Siesta",
-            "Columbia"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Artilleryman"
-        ],
-        "name": "W",
-        "en": "",
-        "race": [
-            "Sarkaz"
-        ],
-        "rarity": 5,
-        "key": "char_113_cqbw",
-        "team": [
-            "Babel"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Besieger"
-        ],
-        "name": "Rosa",
-        "en": "Роса",
-        "race": [
-            "Ursus"
-        ],
-        "rarity": 5,
-        "key": "char_197_poca",
-        "team": [
-            "Ursus Student Self",
-            "Governing Group",
-            "Ursus"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Flinger"
-        ],
-        "name": "Rosmontis",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_391_rosmon",
-        "team": [
-            "Rhodes Island",
-            "Elite Operator"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
-            "Sniper",
-            "Spreadshooter"
-        ],
-        "name": "Ch'en the Holungday",
-        "en": "",
-        "race": [
-            "Lung"
-        ],
-        "rarity": 5,
-        "key": "char_1013_chen2",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
             "Vanguard",
             "Pioneer"
         ],
@@ -2747,40 +1301,6 @@
             "Victoria"
         ],
         "painter": "Infukun"
-    },
-    {
-        "className": [
-            "Vanguard",
-            "Charger"
-        ],
-        "name": "Bagpipe",
-        "en": "",
-        "race": [
-            "Vouivre"
-        ],
-        "rarity": 5,
-        "key": "char_222_bpipe",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "u介"
-    },
-    {
-        "className": [
-            "Vanguard",
-            "Pioneer"
-        ],
-        "name": "Saga",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 5,
-        "key": "char_362_saga",
-        "team": [
-            "Higashi"
-        ],
-        "painter": "多元菌"
     },
     {
         "className": [
@@ -2803,23 +1323,6 @@
     {
         "className": [
             "Caster",
-            "Splash Caster"
-        ],
-        "name": "Mostima",
-        "en": "",
-        "race": [
-            "Undisclosed"
-        ],
-        "rarity": 5,
-        "key": "char_213_mostma",
-        "team": [
-            "Laterano"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Caster",
             "Core Caster"
         ],
         "name": "Eyjafjalla",
@@ -2833,75 +1336,6 @@
             "Leithania"
         ],
         "painter": "Anmi"
-    },
-    {
-        "className": [
-            "Caster",
-            "Core Caster"
-        ],
-        "name": "Ceobe",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 5,
-        "key": "char_2013_cerber",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "LM7"
-    },
-    {
-        "className": [
-            "Caster",
-            "Splash Caster"
-        ],
-        "name": "Dusk",
-        "en": "",
-        "race": [
-            "Undisclosed"
-        ],
-        "rarity": 5,
-        "key": "char_2015_dusk",
-        "team": [
-            "Yan",
-            "Years"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Caster",
-            "Chain Caster"
-        ],
-        "name": "Passenger",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 5,
-        "key": "char_472_pasngr",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "Caster",
-            "Phalanx Caster"
-        ],
-        "name": "Carnelian",
-        "en": "",
-        "race": [
-            "Caprinae"
-        ],
-        "rarity": 5,
-        "key": "char_426_billro",
-        "team": [
-            "Leithania"
-        ],
-        "painter": "カワグチ"
     },
     {
         "className": [
@@ -2919,146 +1353,6 @@
             "Siracusa"
         ],
         "painter": "LM7"
-    },
-    {
-        "className": [
-            "Supporter",
-            "Decel Binder"
-        ],
-        "name": "Suzuran",
-        "en": "",
-        "race": [
-            "Vulpo"
-        ],
-        "rarity": 5,
-        "key": "char_358_lisa",
-        "team": [
-            "Siracusa"
-        ],
-        "painter": "将"
-    },
-    {
-        "className": [
-            "Supporter",
-            "Summoner"
-        ],
-        "name": "Magallan",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 5,
-        "key": "char_248_mgllan",
-        "team": [
-            "Rhine Lab",
-            "Columbia"
-        ],
-        "painter": "NoriZC"
-    },
-    {
-        "className": [
-            "Supporter",
-            "Bard"
-        ],
-        "name": "Skadi the Corrupting Heart",
-        "en": "",
-        "race": [
-            "Undisclosed"
-        ],
-        "rarity": 5,
-        "key": "char_1012_skadi2",
-        "team": [
-            "Ægir"
-        ],
-        "painter": "alchemaniac"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Executor"
-        ],
-        "name": "Phantom",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_250_phatom",
-        "team": [
-            "Victoria"
-        ],
-        "painter": "Skade"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Push Stroker"
-        ],
-        "name": "Weedy",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 5,
-        "key": "char_400_weedy",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "下野宏铭"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Geek"
-        ],
-        "name": "Aak",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_225_haak",
-        "team": [
-            "Lee's Detective Agency",
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "KuroBlood"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Hookmaster"
-        ],
-        "name": "Gladiia",
-        "en": "",
-        "race": [
-            "Undisclosed"
-        ],
-        "rarity": 5,
-        "key": "char_474_glady",
-        "team": [
-            "Abyssal Hunters",
-            "Ægir"
-        ],
-        "painter": "Chuzenji"
-    },
-    {
-        "className": [
-            "Specialist",
-            "Ambusher"
-        ],
-        "name": "Mizuki",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 5,
-        "key": "char_437_mizuki",
-        "team": [
-            "Higashi"
-        ],
-        "painter": "Namie"
     },
     {
         "className": [
@@ -3093,23 +1387,6 @@
             "Followers"
         ],
         "painter": "Skade"
-    },
-    {
-        "className": [
-            "Medic",
-            "Medic"
-        ],
-        "name": "Kal'tsit",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_003_kalts",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "唯@W"
     },
     {
         "className": [
@@ -3150,92 +1427,6 @@
     },
     {
         "className": [
-            "Defender",
-            "Guardian"
-        ],
-        "name": "Blemishine",
-        "en": "",
-        "race": [
-            "Kuranta"
-        ],
-        "rarity": 5,
-        "key": "char_423_blemsh",
-        "team": [
-            "Kazimierz"
-        ],
-        "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Defender",
-            "Protector"
-        ],
-        "name": "Nian",
-        "en": "",
-        "race": [
-            "Undisclosed"
-        ],
-        "rarity": 5,
-        "key": "char_2014_nian",
-        "team": [
-            "Yan",
-            "Years"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Defender",
-            "Juggernaut"
-        ],
-        "name": "Mudrock",
-        "en": "",
-        "race": [
-            "Sarkaz"
-        ],
-        "rarity": 5,
-        "key": "char_311_mudrok",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "m9nokuro"
-    },
-    {
-        "className": [
-            "Defender",
-            "Duelist"
-        ],
-        "name": "Eunectes",
-        "en": "",
-        "race": [
-            "Pythia"
-        ],
-        "rarity": 5,
-        "key": "char_416_zumama",
-        "team": [
-            "Sargon"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "Guard",
-            "Fighter"
-        ],
-        "name": "Mountain",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_264_f12yin",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "WincalBlanke"
-    },
-    {
-        "className": [
             "Guard",
             "Lord"
         ],
@@ -3251,111 +1442,6 @@
             "Kjerag"
         ],
         "painter": "竜崎いち"
-    },
-    {
-        "className": [
-            "Guard",
-            "Lord"
-        ],
-        "name": "Thorns",
-        "en": "",
-        "race": [
-            "Ægir"
-        ],
-        "rarity": 5,
-        "key": "char_293_thorns",
-        "team": [
-            "Iberia"
-        ],
-        "painter": "幻象黑兔"
-    },
-    {
-        "className": [
-            "Guard",
-            "Swordmaster"
-        ],
-        "name": "Ch'en",
-        "en": "",
-        "race": [
-            "Lung"
-        ],
-        "rarity": 5,
-        "key": "char_010_chen",
-        "team": [
-            "Lungmen Guard Department",
-            "Yan",
-            "Lungmen"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
-            "Guard",
-            "Centurion"
-        ],
-        "name": "Blaze",
-        "en": "",
-        "race": [
-            "Feline"
-        ],
-        "rarity": 5,
-        "key": "char_017_huang",
-        "team": [
-            "Rhodes Island",
-            "Elite Operator"
-        ],
-        "painter": "唯@W"
-    },
-    {
-        "className": [
-            "Guard",
-            "Arts Fighter"
-        ],
-        "name": "Surtr",
-        "en": "",
-        "race": [
-            "Sarkaz"
-        ],
-        "rarity": 5,
-        "key": "char_350_surtr",
-        "team": [
-            "Rhodes Island"
-        ],
-        "painter": "Ask"
-    },
-    {
-        "className": [
-            "Guard",
-            "Musha"
-        ],
-        "name": "Hellagur",
-        "en": "",
-        "race": [
-            "Liberi"
-        ],
-        "rarity": 5,
-        "key": "char_188_helage",
-        "team": [
-            "Ursus"
-        ],
-        "painter": "Liduke"
-    },
-    {
-        "className": [
-            "Guard",
-            "Instructor"
-        ],
-        "name": "Pallas",
-        "en": "",
-        "race": [
-            "Forte"
-        ],
-        "rarity": 5,
-        "key": "char_485_pallas",
-        "team": [
-            "Minos"
-        ],
-        "painter": "aZLing4"
     },
     {
         "className": [
@@ -3429,23 +1515,6 @@
     },
     {
         "className": [
-            "Guard",
-            "Fighter"
-        ],
-        "name": "Jackie",
-        "en": "",
-        "race": [
-            "Perro"
-        ],
-        "rarity": 3,
-        "key": "char_347_jaksel",
-        "team": [
-            "Columbia"
-        ],
-        "painter": "Nagu"
-    },
-    {
-        "className": [
             "Caster",
             "Core Caster"
         ],
@@ -3499,6 +1568,1391 @@
     {
         "className": [
             "Guard",
+            "Centurion"
+        ],
+        "name": "Popukar",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 2,
+        "key": "char_281_popka",
+        "team": [
+            "Reserve Op Team A6",
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Defender",
+            "Guardian"
+        ],
+        "name": "Spot",
+        "en": "",
+        "race": [
+            "Rebbah"
+        ],
+        "rarity": 2,
+        "key": "char_284_spot",
+        "team": [
+            "Reserve Op Team A6",
+            "Rhodes Island"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Greyy",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 3,
+        "key": "char_253_greyy",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "Guard",
+            "Instructor"
+        ],
+        "name": "Swire",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_308_swire",
+        "team": [
+            "Lungmen Guard Department",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Guard",
+            "Swordmaster"
+        ],
+        "name": "Ch'en",
+        "en": "",
+        "race": [
+            "Lung"
+        ],
+        "rarity": 5,
+        "key": "char_010_chen",
+        "team": [
+            "Lungmen Guard Department",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Medic",
+            "Medic"
+        ],
+        "name": "Sussurro",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 3,
+        "key": "char_298_susuro",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "Medic",
+            "Therapist"
+        ],
+        "name": "Ceylon",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_348_ceylon",
+        "team": [
+            "Siesta",
+            "Columbia"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Decel Binder"
+        ],
+        "name": "Glaucus",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 4,
+        "key": "char_326_glacus",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Heavyshooter"
+        ],
+        "name": "Schwarz",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_340_shwaz",
+        "team": [
+            "Siesta",
+            "Columbia"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Standard Bearer"
+        ],
+        "name": "Myrtle",
+        "en": "",
+        "race": [
+            "Durin"
+        ],
+        "rarity": 3,
+        "key": "char_151_myrtle",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "咩煲"
+    },
+    {
+        "className": [
+            "Guard",
+            "Arts Fighter"
+        ],
+        "name": "Astesia",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_274_astesi",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "Guard",
+            "Musha"
+        ],
+        "name": "Hellagur",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_188_helage",
+        "team": [
+            "Ursus"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "Defender",
+            "Arts Protector"
+        ],
+        "name": "Dur-nar",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 3,
+        "key": "char_260_durnar",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "Vermeil",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 3,
+        "key": "char_190_clour",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "KENTllaall"
+    },
+    {
+        "className": [
+            "Guard",
+            "Dreadnought"
+        ],
+        "name": "Flamebringer",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_131_flameb",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "虎三"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Spreadshooter"
+        ],
+        "name": "Executor",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 4,
+        "key": "char_279_excu",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Summoner"
+        ],
+        "name": "Magallan",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_248_mgllan",
+        "team": [
+            "Rhine Lab",
+            "Columbia"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Ambusher"
+        ],
+        "name": "Ethan",
+        "en": "",
+        "race": [
+            "Savra"
+        ],
+        "rarity": 3,
+        "key": "char_355_ethan",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "Medic",
+            "Multi-target Medic"
+        ],
+        "name": "Breeze",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 4,
+        "key": "char_275_breeze",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "藻"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "May",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 3,
+        "key": "char_133_mm",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Defender",
+            "Protector"
+        ],
+        "name": "Bison",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 4,
+        "key": "char_325_bison",
+        "team": [
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "Waai Fu",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_243_waaifu",
+        "team": [
+            "Lee's Detective Agency",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Mostima",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_213_mostma",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Charger"
+        ],
+        "name": "Reed",
+        "en": "",
+        "race": [
+            "Draco"
+        ],
+        "rarity": 4,
+        "key": "char_261_sddrag",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "Guard",
+            "Centurion"
+        ],
+        "name": "Broca",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_356_broca",
+        "team": [
+            "Chiave Gang",
+            "Siracusa"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Deadeye"
+        ],
+        "name": "Ambriel",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 3,
+        "key": "char_302_glaze",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "GreyThroat",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_367_swllow",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "Guard",
+            "Centurion"
+        ],
+        "name": "Blaze",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_017_huang",
+        "team": [
+            "Rhodes Island",
+            "Elite Operator"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Hookmaster"
+        ],
+        "name": "Snowsant",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_383_snsant",
+        "team": [
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Defender",
+            "Guardian"
+        ],
+        "name": "Hung",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_226_hmau",
+        "team": [
+            "Lee's Detective Agency",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Geek"
+        ],
+        "name": "Aak",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_225_haak",
+        "team": [
+            "Lee's Detective Agency",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "Defender",
+            "Protector"
+        ],
+        "name": "Nian",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_2014_nian",
+        "team": [
+            "Yan",
+            "Years"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Caster",
+            "Chain Caster"
+        ],
+        "name": "Leizi",
+        "en": "",
+        "race": [
+            "Kylin"
+        ],
+        "rarity": 4,
+        "key": "char_306_leizi",
+        "team": [
+            "Yan"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Caster",
+            "Core Caster"
+        ],
+        "name": "Ceobe",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 5,
+        "key": "char_2013_cerber",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "Medic",
+            "Therapist"
+        ],
+        "name": "Purestream",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 3,
+        "key": "char_385_finlpp",
+        "team": [
+            "Yan"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Guard",
+            "Musha"
+        ],
+        "name": "Utage",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 3,
+        "key": "char_337_utage",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "Guard",
+            "Swordmaster"
+        ],
+        "name": "Bibeak",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_252_bibeak",
+        "team": [
+            "Sami"
+        ],
+        "painter": "RAYVON"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Artilleryman"
+        ],
+        "name": "Sesa",
+        "en": "",
+        "race": [
+            "Vouivre"
+        ],
+        "rarity": 4,
+        "key": "char_379_sesa",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Charger"
+        ],
+        "name": "Bagpipe",
+        "en": "",
+        "race": [
+            "Vouivre"
+        ],
+        "rarity": 5,
+        "key": "char_222_bpipe",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "u介"
+    },
+    {
+        "className": [
+            "Guard",
+            "Dreadnought"
+        ],
+        "name": "Conviction",
+        "en": "",
+        "race": [
+            "Unknown (Suspected Liberi)"
+        ],
+        "rarity": 3,
+        "key": "char_159_peacok",
+        "team": [
+            "Minos"
+        ],
+        "painter": "TOMATO"
+    },
+    {
+        "className": [
+            "Guard",
+            "Swordmaster"
+        ],
+        "name": "Cutter",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 3,
+        "key": "char_301_cutter",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Guard",
+            "Arts Fighter"
+        ],
+        "name": "Sideroca",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 4,
+        "key": "char_333_sidero",
+        "team": [
+            "Minos"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Hexer"
+        ],
+        "name": "Shamare",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 4,
+        "key": "char_254_vodfox",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "Phantom",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_250_phatom",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "THRM-EX",
+        "en": "",
+        "race": "",
+        "rarity": 0,
+        "key": "char_376_therex",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Standard Bearer"
+        ],
+        "name": "Elysium",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_401_elysm",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Push Stroker"
+        ],
+        "name": "Weedy",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_400_weedy",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Artilleryman"
+        ],
+        "name": "W",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_113_cqbw",
+        "team": [
+            "Babel"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "Defender",
+            "Arts Protector"
+        ],
+        "name": "Asbestos",
+        "en": "",
+        "race": [
+            "Savra"
+        ],
+        "rarity": 4,
+        "key": "char_378_asbest",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "TEAM EXPNDR"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Abjurer"
+        ],
+        "name": "Tsukinogi",
+        "en": "",
+        "race": [
+            "Elafia"
+        ],
+        "rarity": 4,
+        "key": "char_343_tknogi",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "上埜"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Decel Binder"
+        ],
+        "name": "Podenco",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 3,
+        "key": "char_258_podego",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "Caster",
+            "Core Caster"
+        ],
+        "name": "Absinthe",
+        "en": "",
+        "race": [
+            "Ursus"
+        ],
+        "rarity": 4,
+        "key": "char_405_absin",
+        "team": [
+            "Ursus"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Leonhardt",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 4,
+        "key": "char_373_lionhd",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "野崎つばた"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Besieger"
+        ],
+        "name": "Rosa",
+        "en": "Роса",
+        "race": [
+            "Ursus"
+        ],
+        "rarity": 5,
+        "key": "char_197_poca",
+        "team": [
+            "Ursus Student Self",
+            "Governing Group",
+            "Ursus"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mech-accord Caster"
+        ],
+        "name": "Click",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 3,
+        "key": "char_328_cammou",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "Medic",
+            "Medic"
+        ],
+        "name": "Folinic",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_345_folnic",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "Guard",
+            "Lord"
+        ],
+        "name": "Ayerscarpe",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 4,
+        "key": "char_294_ayer",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Decel Binder"
+        ],
+        "name": "Suzuran",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 5,
+        "key": "char_358_lisa",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Summoner"
+        ],
+        "name": "Scene",
+        "en": "",
+        "race": [
+            "Pilosa"
+        ],
+        "rarity": 4,
+        "key": "char_336_folivo",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "Caster",
+            "Phalanx Caster"
+        ],
+        "name": "Beeswax",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 4,
+        "key": "char_344_beewax",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "Chiave",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 4,
+        "key": "char_349_chiave",
+        "team": [
+            "Chiave Gang",
+            "Siracusa"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Merchant"
+        ],
+        "name": "Jaye",
+        "en": "",
+        "race": [
+            "Ursus"
+        ],
+        "rarity": 3,
+        "key": "char_272_strong",
+        "team": [
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Deadeye"
+        ],
+        "name": "Andreana",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_218_cuttle",
+        "team": [
+            "Abyssal Hunters",
+            "Ægir"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "Guard",
+            "Lord"
+        ],
+        "name": "Thorns",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_293_thorns",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Heavyshooter"
+        ],
+        "name": "Aciddrop",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 3,
+        "key": "char_366_acdrop",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "Caster",
+            "Core Caster"
+        ],
+        "name": "Tomimi",
+        "en": "",
+        "race": [
+            "Archosauria"
+        ],
+        "rarity": 4,
+        "key": "char_411_tomimi",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Guard",
+            "Fighter"
+        ],
+        "name": "Flint",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_415_flint",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Defender",
+            "Duelist"
+        ],
+        "name": "Eunectes",
+        "en": "",
+        "race": [
+            "Pythia"
+        ],
+        "rarity": 5,
+        "key": "char_416_zumama",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "Guard",
+            "Lord"
+        ],
+        "name": "Arene",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 3,
+        "key": "char_271_spikes",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "Caster",
+            "Phalanx Caster"
+        ],
+        "name": "Mint",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_388_mint",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "April",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 4,
+        "key": "char_365_aprl",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "Guard",
+            "Arts Fighter"
+        ],
+        "name": "Surtr",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_350_surtr",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Ask"
+    },
+    {
+        "className": [
+            "Defender",
+            "Protector"
+        ],
+        "name": "Bubble",
+        "en": "",
+        "race": [
+            "Cerato"
+        ],
+        "rarity": 3,
+        "key": "char_381_bubble",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Guard",
+            "Instructor"
+        ],
+        "name": "Whislash",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 4,
+        "key": "char_265_sophia",
+        "team": [
+            "Kazimierz"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Spreadshooter"
+        ],
+        "name": "Aosta",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 4,
+        "key": "char_346_aosta",
+        "team": [
+            "Chiave Gang",
+            "Siracusa"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "Defender",
+            "Guardian"
+        ],
+        "name": "Blemishine",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 5,
+        "key": "char_423_blemsh",
+        "team": [
+            "Kazimierz"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Guard",
+            "Fighter"
+        ],
+        "name": "Jackie",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 3,
+        "key": "char_347_jaksel",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "Nagu"
+    },
+    {
+        "className": [
+            "Medic",
+            "Therapist"
+        ],
+        "name": "Whisperain",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_436_whispr",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Defender",
+            "Juggernaut"
+        ],
+        "name": "Mudrock",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_311_mudrok",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Flinger"
+        ],
+        "name": "Rosmontis",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_391_rosmon",
+        "team": [
+            "Rhodes Island",
+            "Elite Operator"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Guard",
             "Arts Fighter"
         ],
         "name": "Amiya(Guard)",
@@ -3509,6 +2963,552 @@
         ],
         "rarity": 4,
         "key": "char_1001_amiya2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Spreadshooter"
+        ],
+        "name": "Pinecone",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 3,
+        "key": "char_440_pinecn",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "TrNyteal"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Trapmaster"
+        ],
+        "name": "Robin",
+        "en": "",
+        "race": [
+            "Anaty"
+        ],
+        "rarity": 4,
+        "key": "char_451_robin",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "Kafka",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_214_kafka",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Guard",
+            "Fighter"
+        ],
+        "name": "Mountain",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_264_f12yin",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "WincalBlanke"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Tactician"
+        ],
+        "name": "Beanstalk",
+        "en": "",
+        "race": [
+            "Reproba"
+        ],
+        "rarity": 3,
+        "key": "char_452_bstalk",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mystic Caster"
+        ],
+        "name": "Iris",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_338_iris",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "Archetto",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_332_archet",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "Medic",
+            "Medic"
+        ],
+        "name": "Tuye",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 4,
+        "key": "char_402_tuye",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Lava the Purgatory",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_1011_lava2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Merchant"
+        ],
+        "name": "Mr. Nothing",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_455_nothin",
+        "team": [
+            "Yan"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "Saga",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 5,
+        "key": "char_362_saga",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "多元菌"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Dusk",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_2015_dusk",
+        "team": [
+            "Yan",
+            "Years"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Guard",
+            "Swordmaster"
+        ],
+        "name": "Tachanka",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 4,
+        "key": "char_459_tachak",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Defender",
+            "Protector"
+        ],
+        "name": "Blitz",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 4,
+        "key": "char_457_blitz",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Trapmaster"
+        ],
+        "name": "Frost",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 4,
+        "key": "char_458_rfrost",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "Ash",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 5,
+        "key": "char_456_ash",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Defender",
+            "Protector"
+        ],
+        "name": "Heavyrain",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 4,
+        "key": "char_304_zebra",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Besieger"
+        ],
+        "name": "Toddifons",
+        "en": "",
+        "race": [
+            "Vouivre"
+        ],
+        "rarity": 4,
+        "key": "char_363_toddi",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "山×2"
+    },
+    {
+        "className": [
+            "Caster",
+            "Chain Caster"
+        ],
+        "name": "Passenger",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_472_pasngr",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Guard",
+            "Musha"
+        ],
+        "name": "Akafuyu",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_475_akafyu",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Hookmaster"
+        ],
+        "name": "Gladiia",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_474_glady",
+        "team": [
+            "Abyssal Hunters",
+            "Ægir"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Medic",
+            "Medic"
+        ],
+        "name": "Kal'tsit",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_003_kalts",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Bard"
+        ],
+        "name": "Skadi the Corrupting Heart",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_1012_skadi2",
+        "team": [
+            "Ægir"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mystic Caster"
+        ],
+        "name": "Indigo",
+        "en": "",
+        "race": [
+            "Phidia"
+        ],
+        "rarity": 3,
+        "key": "char_469_indigo",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "织布机loom"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Dollkeeper"
+        ],
+        "name": "Bena",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 4,
+        "key": "char_369_bena",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Ambusher"
+        ],
+        "name": "Kirara",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_478_kirara",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "Caster",
+            "Phalanx Caster"
+        ],
+        "name": "Carnelian",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 5,
+        "key": "char_426_billro",
+        "team": [
+            "Leithania"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "Guard",
+            "Instructor"
+        ],
+        "name": "Pallas",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 5,
+        "key": "char_485_pallas",
+        "team": [
+            "Minos"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Guard",
+            "Liberator"
+        ],
+        "name": "Tequila",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_486_takila",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "Guard",
+            "Reaper"
+        ],
+        "name": "La Pluma",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_421_crow",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Ambusher"
+        ],
+        "name": "Mizuki",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_437_mizuki",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "Namie"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Spreadshooter"
+        ],
+        "name": "Ch'en the Holungday",
+        "en": "",
+        "race": [
+            "Lung"
+        ],
+        "rarity": 5,
+        "key": "char_1013_chen2",
         "team": [
             "Rhodes Island"
         ],
