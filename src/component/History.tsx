@@ -50,6 +50,7 @@ const History = ({setMsg}) => {
     text += i18n.get('straightWins') + straightWins + `\n`
     text += i18n.get('maxStraightWins') + maxStraightWins + `\n`
     text += i18n.get('avgWinTimes') + avgTryTimes + i18n.get('avgWinTimesDesc') + `\n`
+    text += i18n.get('host')
     return text;
   }
   return <><p><ShareIcon onClick={() => {

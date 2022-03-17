@@ -173,12 +173,12 @@ export default function Home() {
         }
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title')), showModal, i18n.get('copySuccess'))
+              copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title'), i18n.get('host')), showModal, i18n.get('copySuccess'))
             }}>
                 <ShareIcon/>{i18n.get('shareTip1')}
             </a>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title')), showModal, i18n.get('copySuccess'))
+              copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title'), i18n.get('host')), showModal, i18n.get('copySuccess'))
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>{i18n.get('shareTip2')}
             </a>

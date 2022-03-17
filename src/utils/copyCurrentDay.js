@@ -1,4 +1,4 @@
-export default function copyCurrentDay(text, alert, copySuccessTip = '复制成功!') {
+export default function copyCurrentDay(text, alert, copySuccessTip) {
     var success = copySuccessTip;
 
     if (window.clipboardData && window.clipboardData.setData) {

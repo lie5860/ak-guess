@@ -53,6 +53,7 @@ const dict: { [key: string]: string } = {
   helpUpdateTime: '最近更新时间是{updateDate}！',
   helpNum: '目前有{num}名干员（包含异格和升变）',
   helpFirstOpen: '这么多记不住怎么办？<br/><strong style="color:rgb(255, 204, 76)">小刻学堂</strong>随时开启！',
-  questionnaireUrl: 'https://www.wjx.top/vj/QgfS7Yd.aspx'
+  questionnaireUrl: 'https://www.wjx.top/vj/QgfS7Yd.aspx',
+  host: 'http://akg.saki.cc'
 }
 export default dict
