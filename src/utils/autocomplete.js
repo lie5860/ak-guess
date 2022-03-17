@@ -7,10 +7,15 @@ export default function autocomplete(inp, arr, chartsData, aliasData) {
         var a, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
-        const inputVal = val.toUpperCase().trim()
+        var inputVal = val.toUpperCase().trim()
         if (!inputVal) {
             return false;
         }
+        // 平假名转换成片假名去匹配结果
+        inputVal = inputVal.replace(/[u3041-\u3096]/g, function(match) {
+            var chr = match.charCodeAt(0) + 0x60;
+            return String.fromCharCode(chr);
+        });
         currentFocus = -1;
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
