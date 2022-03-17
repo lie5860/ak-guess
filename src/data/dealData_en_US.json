@@ -745,7 +745,7 @@
         "rarity": 3,
         "key": "char_183_skgoat",
         "team": [
-            "Leithania"
+            "Leithanien"
         ],
         "painter": "HUG"
     },
@@ -1333,7 +1333,7 @@
         "rarity": 5,
         "key": "char_180_amgoat",
         "team": [
-            "Leithania"
+            "Leithanien"
         ],
         "painter": "Anmi"
     },
@@ -2125,7 +2125,7 @@
         "key": "char_2014_nian",
         "team": [
             "Yan",
-            "Years"
+            "Sui"
         ],
         "painter": "幻象黑兔"
     },
@@ -3169,7 +3169,7 @@
         "key": "char_2015_dusk",
         "team": [
             "Yan",
-            "Years"
+            "Sui"
         ],
         "painter": "幻象黑兔"
     },
@@ -3425,7 +3425,7 @@
         "rarity": 5,
         "key": "char_426_billro",
         "team": [
-            "Leithania"
+            "Leithanien"
         ],
         "painter": "カワグチ"
     },
@@ -3513,5 +3513,56 @@
             "Rhodes Island"
         ],
         "painter": "唯@W"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Artificer"
+        ],
+        "name": "Roberta",
+        "en": "",
+        "race": [
+            "Anaty"
+        ],
+        "rarity": 3,
+        "key": "char_484_robrta",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Medic",
+            "Wandering Medic"
+        ],
+        "name": "Mulberry",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_473_mberry",
+        "team": [
+            "Yan"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Standard Bearer"
+        ],
+        "name": "Saileach",
+        "en": "",
+        "race": [
+            "Vouivre"
+        ],
+        "rarity": 5,
+        "key": "char_479_sleach",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "下野宏铭"
     }
 ]
