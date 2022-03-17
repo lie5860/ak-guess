@@ -45,7 +45,7 @@ const dict: { [key: string]: string } = {
   helpWrongPos: '入力したオペのこの属性は正解と部分一致！もうちょっと頑張って！',
   helpWrongDetail: 'オペの所属陣営は細かく分類され、<br/>出身地とは違います，<strong style="color:rgb(255, 204, 76)">人物ファイル</strong>に参考すればいいかも！<br/>職種も細かい職分まで（速射手など）！<br/>オペの名前をクリックすると詳細見れますよ！',
   helpDataSource: 'ゲームデータはPRTSより！',
-  helpUpdateTime: '次のデイリー更新時間は{updateDate}！',
+  helpUpdateTime: '最終更新日は{updateDate}！',
   helpNum: '現在オペ計{num}名（異格・昇変含む）',
   helpFirstOpen: 'なかなか覚えない時は？<br/><strong style="color:rgb(255, 204, 76)">けーちゃん教室</strong>いつでも入れますよ！',
   questionnaireUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScPuKxQ1yBUwZzBSDoip0946dPUxdQjXLTdO1oTw77Yf7Kxbg/viewform',
