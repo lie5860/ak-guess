@@ -3493,5 +3493,56 @@
             "ロドス・アイランド"
         ],
         "painter": "唯@W"
+    },
+    {
+        "className": [
+            "補助",
+            "工匠"
+        ],
+        "name": "ロベルタ",
+        "en": "Roberta",
+        "race": [
+            "アナティ"
+        ],
+        "rarity": 3,
+        "key": "char_484_robrta",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "医療",
+            "放浪医"
+        ],
+        "name": "マルベリー",
+        "en": "Mulberry",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_473_mberry",
+        "team": [
+            "炎"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "先鋒",
+            "旗手"
+        ],
+        "name": "サイラッハ",
+        "en": "Saileach",
+        "race": [
+            "ヴイーヴル"
+        ],
+        "rarity": 5,
+        "key": "char_479_sleach",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "下野宏铭"
     }
 ]
