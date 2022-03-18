@@ -1,5 +1,3 @@
-import aliasDataJson from './data/alias.json'
-
 export const DAILY_MODE = 'DAILY_MODE'
 export const RANDOM_MODE = 'RANDOM_MODE'
 export const MAIN_KEY = 'name'
@@ -12,14 +10,13 @@ export const TYPES = [
   {label: '画师', i18nKey: 'painter', key: 'painter', type: 'string'},
   {label: '干员', i18nKey: 'chartsName', key: 'guess'},
 ]
-export const VAL_DICT = {
+export const VAL_DICT: { [key: string]: string } = {
   'correct': '🟩',
   'wrong': '🟥',
   'wrongpos': '🟨',
   'up': '🔼',
   'down': '🔽',
 }
-export const aliasData = aliasDataJson;
 export const defaultTryTimes = 8;
 export const updateData = '2022-3-5';
 

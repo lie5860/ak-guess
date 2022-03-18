@@ -6,7 +6,7 @@ import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 export const getGame = (store: any) => {
   const {mode} = store
-  const gameDict = {
+  const gameDict: { [key: string]: (store: any) => any } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame
   }
