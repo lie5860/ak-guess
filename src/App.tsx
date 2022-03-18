@@ -171,7 +171,7 @@ export default function Home() {
           </div>
         </div>
         {mode === DAILY_MODE && <div>{i18n.get('dailyTimeTip')}</div>}
-        {!!data?.length && <GuessItem data={data}/>}
+        {!!data?.length && <GuessItem data={data} changeModalInfo={changeModalInfo}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">

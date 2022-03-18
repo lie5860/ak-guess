@@ -2,8 +2,7 @@ import {MAIN_KEY, TYPES} from "../const";
 import {React} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
-const GuessItem = ({data}: { data: any[] }) => {
-  const setMsg = window.mdui.alert;
+const GuessItem = ({data, changeModalInfo}: { data: any[] }) => {
   const {i18n} = React.useContext(AppCtx)
   return <div className={'guesses'}>
     <div className="row">
@@ -17,14 +16,16 @@ const GuessItem = ({data}: { data: any[] }) => {
             const {name, rarity, team, className, race, painter} = v.guess
             return <div className='column' key={key}>
               <div className="tooltip" onClick={() => {
-                setMsg(<>
-                  <div><span className={'title'}>{i18n.get('chartsName')}:</span>{name}</div>
-                  <div><span className={'title'}>{i18n.get('rarity')}:</span>{1 + rarity}</div>
-                  <div><span className={'title'}>{i18n.get('camp')}:</span>{team?.join(' ')}</div>
-                  <div><span className={'title'}>{i18n.get('className')}:</span>{className?.join('-')}</div>
-                  <div><span className={'title'}>{i18n.get('race')}:</span>{race}</div>
-                  <div><span className={'title'}>{i18n.get('painter')}:</span>{painter}</div>
-                </>)
+                changeModalInfo({
+                  "message": <>
+                    <div><span className={'title'}>{i18n.get('chartsName')}:</span>{name}</div>
+                    <div><span className={'title'}>{i18n.get('rarity')}:</span>{1 + rarity}</div>
+                    <div><span className={'title'}>{i18n.get('camp')}:</span>{team?.join(' ')}</div>
+                    <div><span className={'title'}>{i18n.get('className')}:</span>{className?.join('-')}</div>
+                    <div><span className={'title'}>{i18n.get('race')}:</span>{race}</div>
+                    <div><span className={'title'}>{i18n.get('painter')}:</span>{painter}</div>
+                  </>
+                })
               }}>
                 {v.guess?.[MAIN_KEY]}
               </div>
