@@ -14,6 +14,7 @@ import {getGame} from "./store";
 import './index.less'
 import './normalize.css'
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
+import {hostDict, labelDict} from "./locales";
 
 export default function Home() {
   const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
@@ -88,13 +89,14 @@ export default function Home() {
     if (error) {
       return;
     }
-    const inputName = inputRef.current.value;
-    if (chartNames.indexOf(inputName) === -1) {
+    const inputName = inputRef.current.value?.toUpperCase();
+    // 转大写感觉会存在一定的风险。 例如 Ceoceo和CeoCeo会认为是一个干员，但按照标准两个大写的词不会连着用才对
+    if (chartNames.map(v => v?.toUpperCase()).indexOf(inputName) === -1) {
       showModal(i18n.get('errNameTip'))
-    } else if (data.map(v => v.guess?.[MAIN_KEY]).indexOf(inputName) !== -1) {
+    } else if (data.map(v => v.guess?.[MAIN_KEY]?.toUpperCase()).indexOf(inputName) !== -1) {
       showModal(i18n.get('duplicationTip'));
     } else {
-      const inputItem = chartsData.filter(v => v?.[MAIN_KEY] === inputName)[0];
+      const inputItem = chartsData.filter(v => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
       const res = guess(inputItem, answer)
       const newData = [...data, res]
       setData(newData)
@@ -109,10 +111,28 @@ export default function Home() {
   return (
     <div className={'container'}>
       <div className={'main-container clean-float'}>
-        <div className={'dns-icon'} onClick={() => {
-          // localStorage.setItem('__lang', 'zh_CN')
-          // location.reload();
-        }}>{i18n.language}</div>
+        <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
+                className="appbar-btn mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+          <i className="mdui-icon material-icons">dns</i>
+          <span className="mini-chip mdui-color-blue-a400 mdui-text-uppercase pointer font-mono"
+                id="server-chip">
+            <span className="mini-chip-content">{labelDict[i18n.language]}</span>
+          </span>
+        </button>
+
+        <ul id="server-menu" className="mdui-menu">
+          <li className="mdui-menu-item mdui-ripple">
+            {Object.keys(labelDict).map((key) => {
+              return <a className="mdui-ripple pointer" onClick={() => {
+                location.href = hostDict[key]
+              }}>
+                <i style={{visibility: key === i18n.language ? '' : 'hidden'}}
+                   className="mdui-menu-item-icon mdui-icon material-icons">done</i>
+                {labelDict[key]}
+              </a>
+            })}
+          </li>
+        </ul>
         <div className={'ak-tab'}>
           <div className={`ak-tab-item ${mode === RANDOM_MODE ? 'active' : ''}`}
                onClick={() => setMode(RANDOM_MODE)}>

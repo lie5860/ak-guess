@@ -1,4 +1,5 @@
 const dict: { [key: string]: string } = {
+  lang_code: 'US',
   chartsNameKey: 'en',
   title: "Arknights Wordle",
   copySuccess: 'Copy success!',

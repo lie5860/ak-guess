@@ -22,21 +22,16 @@ export const I18nWrap = (props: any) => {
       location.reload()
       return;
     }
-    if (lang && languages?.[lang]) {
-      const sl = (await languages?.[lang]()).default
-      setLanguage(lang)
-      initI18nDict(sl)
-      const dd = (await import(`../data/dealData_${lang}.json`)).default
-      setDealData(dd)
-      const alias = (await import(`../data/alias_${lang}.json`)).default
-      setAliasData(alias)
-    } else {
-      const dd = (await import(`../data/dealData_${language}.json`)).default
-      setDealData(dd)
-      const alias = (await import(`../data/alias_${language}.json`)).default
-      setAliasData(alias)
-    }
+    const lastLang = (lang && languages?.[lang]) ? lang : language
+    const sl = (await languages?.[lastLang]()).default
+    setLanguage(lastLang)
+    initI18nDict(sl)
+    const dd = (await import(`../data/dealData_${lastLang}.json`)).default
+    setDealData(dd)
+    const alias = (await import(`../data/alias_${lastLang}.json`)).default
+    setAliasData(alias)
     setInited(true)
+
   }
   React.useEffect(init, [])
   if (!inited) return null

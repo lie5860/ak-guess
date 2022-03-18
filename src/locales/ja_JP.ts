@@ -1,4 +1,5 @@
 const dict: { [key: string]: string } = {
+  lang_code: 'JP',
   chartsNameKey: 'name',
   title: "アクナイキャラ当て",
   copySuccess: 'コピー完了しました！',
