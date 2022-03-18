@@ -117,7 +117,7 @@ export default function Home() {
         <ul id="server-menu" className="mdui-menu">
           <li className="mdui-menu-item mdui-ripple">
             {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
-              return <a className="mdui-ripple pointer" onClick={() => {
+              return <a key={key} className="mdui-ripple pointer" onClick={() => {
                 location.href = hostDict[key]
               }}>
                 <i style={{visibility: key === i18n.language ? '' : 'hidden'}}
@@ -145,7 +145,7 @@ export default function Home() {
           <div className="mdui-dialog" id="exampleNoTitle">
             <div className="mdui-dialog-title">贡献者</div>
             <div className="mdui-dialog-content">
-              {CONTRIBUTORS.map((data) => <ContributorList {...data}/>)}
+              {CONTRIBUTORS.map((data, index) => <ContributorList key={index} {...data}/>)}
             </div>
             <div className="mdui-dialog-actions">
               <button className="mdui-btn mdui-ripple" mdui-dialog-close={''}>cancel</button>

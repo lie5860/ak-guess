@@ -26,7 +26,6 @@ export const githubUrl = 'https://github.com/lie5860/ak-guess/issues'
 
 export const CONTRIBUTORS = [
   {
-    key: 'developers',
     icon: 'code',
     title: 'Developers',
     userList: [
@@ -59,7 +58,6 @@ export const CONTRIBUTORS = [
     ]
   },
   {
-    key: 'translators',
     icon: 'g_translate',
     title: 'Translators',
     userList: [
