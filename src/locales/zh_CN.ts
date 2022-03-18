@@ -31,7 +31,7 @@ const dict: { [key: string]: string } = {
   dailyMode: '每日挑战！',
   randomMode: '随心所欲！',
   timesTip: '你有{times}次机会猜测这只神秘干员，试试看！',
-  titleDesc: '明日方舟 wordle-like by 昨日沉船',
+  titleDesc: '明日方舟 wordle-like by ',
   newGameTip: '玩个过瘾！',
   giveUpTip: '小刻饿了！',
   giveUpConfirm: '确定要放弃答题去吃蜜饼吗？',

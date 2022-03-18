@@ -294,29 +294,9 @@ img {
 }
 
 .share-icon {
-  vertical-align: top;
-  height: 20px;
-  stroke: #b4b9c2;
+  color: #b4b9c2;
   display: inline-block;
-  margin: 0;
   margin-right: 6px;
-  width: 20px;
-
-  svg {
-    line {
-
-      fill: #b4b9c2;
-      stroke: #b4b9c2;
-      transition: stroke 0.3s;
-    }
-
-    circle {
-
-      stroke: #b4b9c2;
-      fill: #b4b9c2;
-      transition: fill 0.3s;
-    }
-  }
 }
 
 .pwa-tips {
@@ -423,4 +403,43 @@ img {
 
 #server-menu {
   width: 100px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-list {
+
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+
+  .title-item {
+    flex-basis: 100%;
+    padding-left: 56px;
+    .title-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+  }
+
+  .user-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 8px;
+  }
+  .user-tip{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: scale(.9);
+    opacity: .5;
+  }
 }

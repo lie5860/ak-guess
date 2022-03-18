@@ -26,7 +26,7 @@ const dict: { [key: string]: string } = {
   dailyMode: 'デイリー挑戦',
   randomMode: '気ままに',
   timesTip: '謎のオペを当てるチャンスは残り{times}回です！当ててみよう！',
-  titleDesc: 'アークナイツ wordle-like by 小刻猜猜团',
+  titleDesc: 'アークナイツ wordle-like by ',
   newGameTip: '飽きるまで遊ぼう！',
   giveUpTip: 'けーちゃん腹ペコ！',
   giveUpConfirm: 'ゲームをやめてはちみつクッキーを食べますか？',

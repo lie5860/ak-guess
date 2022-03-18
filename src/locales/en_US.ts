@@ -26,7 +26,7 @@ const dict: { [key: string]: string } = {
   dailyMode: 'Daily challenge!',
   randomMode: 'Random mode',
   timesTip: 'You have {times} guesses to find the operator, just try it!',
-  titleDesc: 'Arknights wordle-like by 小刻猜猜团',
+  titleDesc: 'Arknights wordle-like by ',
   newGameTip: 'New Game!',
   giveUpTip: 'Give Up!',
   giveUpConfirm: 'Are you sure to give up?',

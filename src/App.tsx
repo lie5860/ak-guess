@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
-import {DAILY_MODE, defaultTryTimes, MAIN_KEY, RANDOM_MODE} from "./const";
+import {CONTRIBUTORS, DAILY_MODE, defaultTryTimes, MAIN_KEY, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
@@ -15,6 +15,7 @@ import './index.less'
 import './normalize.css'
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 import {hostDict, labelDict} from "./locales";
+import ContributorList from "./component/ContributorList";
 
 export default function Home() {
   const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
@@ -48,7 +49,6 @@ export default function Home() {
       })
     }
     autocomplete(inputRef.current, chartNames, chartsData, aliasData);
-
     const giveUp = localStorageGet(i18n.language, "giveUp")
     if (giveUp) {
       setGiveUp(giveUp === 'true');
@@ -57,22 +57,16 @@ export default function Home() {
   React.useEffect(() => {
     game.init()
   }, [mode])
-  // 根据模式获取答案、 历史提交记录、提交记录
-  const answer = game.answer;
-  const data = game.data;
-  const setData = game.setData;
-  const showModal = (msg) => {
-    setMsg(msg)
-    setTimeout(() => {
-      setMsg('')
-    }, 1500)
+  const {answer, data, setData} = game;
+  const showModal = (msg: string) => {
+    window.mdui.alert(msg)
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
   const isOver = data.length >= defaultTryTimes || isWin || (mode === RANDOM_MODE && isGiveUp)
 
   const giveUp = () => {
     let result = confirm(i18n.get("giveUpConfirm"));
-    if (result == true) {
+    if (result) {
       let record = loadRecordData();
       record.straightWins = 0;
       record.playTimes += 1;
@@ -145,7 +139,19 @@ export default function Home() {
           </div>}
         </div>
         <div><span className={`title`}>{i18n.get('title')}</span></div>
-        <div>{i18n.get('titleDesc')}</div>
+        <div>{i18n.get('titleDesc')}
+          <div className="tooltip" mdui-dialog="{target: '#exampleNoTitle'}">小刻猜猜团
+          </div>
+          <div className="mdui-dialog" id="exampleNoTitle">
+            <div className="mdui-dialog-title">贡献者</div>
+            <div className="mdui-dialog-content">
+              {CONTRIBUTORS.map((data) => <ContributorList {...data}/>)}
+            </div>
+            <div className="mdui-dialog-actions">
+              <button className="mdui-btn mdui-ripple" mdui-dialog-close={''}>cancel</button>
+            </div>
+          </div>
+        </div>
         <div className="titlePanel">
           {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
           <br/>
@@ -156,7 +162,7 @@ export default function Home() {
           }}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
-            changeModalInfo({"message": <History setMsg={setMsg}/>, "width": '80%'})
+            changeModalInfo({"message": <History/>, "width": '80%'})
           }}>🔎{i18n.get('report')}
           </div>
           <div className="tooltip" onClick={() => {
@@ -165,7 +171,7 @@ export default function Home() {
           </div>
         </div>
         {mode === DAILY_MODE && <div>{i18n.get('dailyTimeTip')}</div>}
-        {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
+        {!!data?.length && <GuessItem data={data}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">

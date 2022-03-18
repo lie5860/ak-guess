@@ -8,4 +8,5 @@ interface Window {
   moment: any,
   React: any,
   ReactDOM: any,
+  mdui: any,
 }

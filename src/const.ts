@@ -1,3 +1,5 @@
+import ContributorList from "./component/ContributorList";
+
 export const DAILY_MODE = 'DAILY_MODE'
 export const RANDOM_MODE = 'RANDOM_MODE'
 export const MAIN_KEY = 'name'
@@ -21,3 +23,62 @@ export const defaultTryTimes = 8;
 export const updateData = '2022-3-5';
 
 export const githubUrl = 'https://github.com/lie5860/ak-guess/issues'
+
+export const CONTRIBUTORS = [
+  {
+    key: 'developers',
+    icon: 'code',
+    title: 'Developers',
+    userList: [
+      {
+        name: 'lie',
+        homeUrl: 'https://github.com/lie5860',
+        avatar: 'https://avatars.githubusercontent.com/u/30894657'
+      },
+      {
+        name: 'YOYO',
+        homeUrl: 'emmmm',
+        avatar: 'emmmm',
+        tip: 'Whislash\'s pet'
+      },
+      {
+        name: 'test',
+        homeUrl: 'test',
+        avatar: 'test'
+      },
+      {
+        name: 'test',
+        homeUrl: 'test',
+        avatar: 'test'
+      },
+      {
+        name: 'test',
+        homeUrl: 'test',
+        avatar: 'test'
+      },
+    ]
+  },
+  {
+    key: 'translators',
+    icon: 'g_translate',
+    title: 'Translators',
+    userList: [
+      {
+        name: 'test',
+        homeUrl: 'test',
+        avatar: 'test',
+        tip: 'ENG JPN'
+      },
+      {
+        name: 'test',
+        homeUrl: 'test',
+        avatar: 'test'
+      },
+      {
+        name: 'test',
+        homeUrl: 'test',
+        avatar: 'test'
+      },
+    ]
+  }
+]

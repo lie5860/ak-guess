@@ -2,14 +2,15 @@ import {MAIN_KEY, TYPES} from "../const";
 import {React} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
-const GuessItem = ({data, setMsg}) => {
+const GuessItem = ({data}: { data: any[] }) => {
+  const setMsg = window.mdui.alert;
   const {i18n} = React.useContext(AppCtx)
   return <div className={'guesses'}>
     <div className="row">
       {TYPES.map(({label, i18nKey}) => <div className='column' key={label}>
         <span className={'title'}>{i18n.get(i18nKey)}</span></div>)}
     </div>
-    {data.map((v, index) => {
+    {data.map((v: any, index: number) => {
       return <div className="row" key={index}>
         {TYPES.map(({key, type}) => {
           if (key === 'guess') {

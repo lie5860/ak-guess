@@ -32,7 +32,8 @@ const saveRecordData = (lang: string, record) => {
   localStorageSet(lang, "record", JSON.stringify(record));
 }
 
-const History = ({setMsg}) => {
+const History = () => {
+  const setMsg = window.mdui.alert;
   const {i18n} = React.useContext(AppCtx);
   const record = loadRecordData(i18n.language);
   const getShareHistoryText = (mode) => {
@@ -53,10 +54,17 @@ const History = ({setMsg}) => {
     text += i18n.get('host')
     return text;
   }
-  return <><p><ShareIcon onClick={() => {
-    copyCurrentDay(getShareHistoryText('random'), setMsg, i18n.get('copySuccess'))
-  }}/><span className='title'>{i18n.get('randomMode')}</span></p>
-    <p>{i18n.get('playTimes')}{record?.playTimes}<br/>
+  return <>
+    <p className={'flex-center'}>
+      <ShareIcon onClick={() => {
+        copyCurrentDay(getShareHistoryText('random'), setMsg, i18n.get('copySuccess'))
+      }}/>
+      <span className='title'>
+        {i18n.get('randomMode')}
+      </span>
+    </p>
+    <p>
+      {i18n.get('playTimes')}{record?.playTimes}<br/>
       {i18n.get('winTimes')}{record?.winTimes}<br/>
       {i18n.get('winRate')}{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
       {i18n.get('straightWins')}{record?.straightWins}<br/>
@@ -64,10 +72,16 @@ const History = ({setMsg}) => {
       {i18n.get('avgWinTimes')}{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}{i18n.get('avgWinTimesDesc')}
     </p>
     <hr/>
-    <p><ShareIcon onClick={() => {
-      copyCurrentDay(getShareHistoryText(DAILY_MODE), setMsg, i18n.get('copySuccess'))
-    }}/><span className='title'>{i18n.get('dailyMode')}</span></p>
-    <p>{i18n.get('playTimes')}{record?.dailyPlayTimes}<br/>
+    <p className={'flex-center'}>
+      <ShareIcon onClick={() => {
+        copyCurrentDay(getShareHistoryText(DAILY_MODE), setMsg, i18n.get('copySuccess'))
+      }}/>
+      <span className='title'>
+        {i18n.get('dailyMode')}
+      </span>
+    </p>
+    <p>
+      {i18n.get('playTimes')}{record?.dailyPlayTimes}<br/>
       {i18n.get('winTimes')}{record?.dailyWinTimes}<br/>
       {i18n.get('winRate')}{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
       {i18n.get('straightWins')}{record?.dailyStraightWins}<br/>
