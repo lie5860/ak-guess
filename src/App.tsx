@@ -122,7 +122,7 @@ export default function Home() {
 
         <ul id="server-menu" className="mdui-menu">
           <li className="mdui-menu-item mdui-ripple">
-            {Object.keys(labelDict).map((key) => {
+            {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
               return <a className="mdui-ripple pointer" onClick={() => {
                 location.href = hostDict[key]
               }}>
