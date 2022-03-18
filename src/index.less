@@ -40,7 +40,7 @@ body {
   padding-right: 10px;
   cursor: pointer;
   display: inline-block;
-  flex: 0 0 100px;
+  flex: 0 1 auto;
 }
 
 .ak-tab-item::after {
@@ -218,6 +218,7 @@ img {
 }
 
 .tooltip {
+  word-break: break-all;
   color: palevioletred;
   position: relative;
   display: inline-block;
@@ -255,6 +256,7 @@ img {
 
 .title {
   font-weight: bold;
+  word-break: break-all;
 }
 
 .clean-float:after { /*伪元素是行内元素 正常浏览器清除浮动方法*/
@@ -292,29 +294,9 @@ img {
 }
 
 .share-icon {
-  vertical-align: top;
-  height: 20px;
-  stroke: #b4b9c2;
+  color: #b4b9c2;
   display: inline-block;
-  margin: 0;
   margin-right: 6px;
-  width: 20px;
-
-  svg {
-    line {
-
-      fill: #b4b9c2;
-      stroke: #b4b9c2;
-      transition: stroke 0.3s;
-    }
-
-    circle {
-
-      stroke: #b4b9c2;
-      fill: #b4b9c2;
-      transition: fill 0.3s;
-    }
-  }
 }
 
 .pwa-tips {
@@ -348,6 +330,7 @@ img {
       width: 35px;
       height: 35px;
       margin: 0 10px;
+      flex: 0 0 35px;
     }
   }
 }
@@ -366,15 +349,97 @@ img {
   border-bottom: 0px;
   z-index: 1000;
   height: 22px;
-  .trigger-label{
+
+  .trigger-label {
     font-size: 14px;
     padding: 0px 10px;
   }
-  .close-btn{
+
+  .close-btn {
     position: static !important;
     //top: 0 !important;
     padding-right: 10px;
     //right: 0 !important;
     //width: 10px !important;
+  }
+}
+
+.dns-icon {
+  float: right;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+#server-menu-btn {
+  float: right;
+  padding: 0;
+  width: 48px;
+  height: 54px;
+  min-width: unset;
+}
+
+#server-chip {
+  position: absolute;
+  padding: 0 5px 0.5px 5px;
+  right: 2px;
+  transform: scale(.8);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-width: 100%;
+  outline: none;
+  overflow: hidden;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 8px;
+  font-size: 12px;
+  height: 16px;
+}
+
+#server-menu {
+  width: 100px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-list {
+
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+
+  .title-item {
+    flex-basis: 100%;
+    padding-left: 56px;
+    .title-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+  }
+
+  .user-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 8px;
+  }
+  .user-tip{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: scale(.9);
+    opacity: .5;
   }
 }

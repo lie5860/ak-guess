@@ -1,5 +1,5 @@
-export default function copyCurrentDay(text, alert) {
-    var success = "复制成功!";
+export default function copyCurrentDay(text, alert, copySuccessTip) {
+    var success = copySuccessTip;
 
     if (window.clipboardData && window.clipboardData.setData) {
         // IE specific code path to prevent textarea being shown while dialog is visible.

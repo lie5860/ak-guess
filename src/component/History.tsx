@@ -1,10 +1,12 @@
 import {React} from "../global";
 import ShareIcon from './ShareIcon'
 import copyCurrentDay from "../utils/copyCurrentDay";
-import {DAILY_MODE, GAME_NAME} from "../const";
+import {DAILY_MODE} from "../const";
+import {AppCtx} from '../locales/AppCtx';
+import {localStorageGet, localStorageSet} from "../locales/I18nWrap";
 
-const loadRecordData = () => {
-  let record = localStorage.getItem("record");
+const loadRecordData = (lang: string) => {
+  let record = localStorageGet(lang, "record");
   if (record) {
     record = JSON.parse(record);
   } else {
@@ -26,49 +28,65 @@ const loadRecordData = () => {
   return record;
 }
 
-const saveRecordData = (record) => {
-  localStorage.setItem("record", JSON.stringify(record));
+const saveRecordData = (lang: string, record) => {
+  localStorageSet(lang, "record", JSON.stringify(record));
 }
 
-const History = ({setMsg}) => {
-  const record = loadRecordData();
+const History = () => {
+  const setMsg = window.mdui.alert;
+  const {i18n} = React.useContext(AppCtx);
+  const record = loadRecordData(i18n.language);
   const getShareHistoryText = (mode) => {
-    const title = mode === DAILY_MODE ? '每日挑战！' : '随心所欲！';
+    const title = mode === DAILY_MODE ? i18n.get('dailyMode') : i18n.get('randomMode');
     const playTimes = (mode === DAILY_MODE ? record?.dailyPlayTimes : record?.playTimes);
     const winTimes = (mode === DAILY_MODE ? record?.dailyWinTimes : record?.winTimes);
     const winPercent = (mode === DAILY_MODE ? record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100) : record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100));
     const straightWins = (mode === DAILY_MODE ? record?.dailyStraightWins : record?.straightWins);
     const maxStraightWins = (mode === DAILY_MODE ? record?.dailyMaxStraightWins : record?.maxStraightWins);
     const avgTryTimes = (mode === DAILY_MODE ? record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes) : record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes));
-    let text = `${GAME_NAME} ` + title + `\n`;
-    text += `游戏次数：` + playTimes + `\n`
-    text += `胜利次数：` + winTimes + `\n`
-    text += `胜率：` + winPercent + `%\n`
-    text += `当前连胜次数：` + straightWins + `\n`
-    text += `最大连胜次数：` + maxStraightWins + `\n`
-    text += `平均猜测次数：` + avgTryTimes + `（胜利时）\n`
+    let text = i18n.get('title') + ` ` + title + `\n`;
+    text += i18n.get('playTimes') + playTimes + `\n`
+    text += i18n.get('winTimes') + winTimes + `\n`
+    text += i18n.get('winRate') + winPercent + `%\n`
+    text += i18n.get('straightWins') + straightWins + `\n`
+    text += i18n.get('maxStraightWins') + maxStraightWins + `\n`
+    text += i18n.get('avgWinTimes') + avgTryTimes + i18n.get('avgWinTimesDesc') + `\n`
+    text += i18n.get('host')
     return text;
   }
-  return <><p><ShareIcon onClick={() => {
-    copyCurrentDay(getShareHistoryText('random'), setMsg)
-  }}/><span className='title'>随心所欲！</span></p>
-    <p>游戏次数：{record?.playTimes}<br/>
-      胜利次数：{record?.winTimes}<br/>
-      胜率：{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
-      当前连胜次数：{record?.straightWins}<br/>
-      最大连胜次数：{record?.maxStraightWins}<br/>
-      平均猜测次数：{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}（胜利时）
+  return <>
+    <p className={'flex-center'}>
+      <ShareIcon onClick={() => {
+        copyCurrentDay(getShareHistoryText('random'), setMsg, i18n.get('copySuccess'))
+      }}/>
+      <span className='title'>
+        {i18n.get('randomMode')}
+      </span>
+    </p>
+    <p>
+      {i18n.get('playTimes')}{record?.playTimes}<br/>
+      {i18n.get('winTimes')}{record?.winTimes}<br/>
+      {i18n.get('winRate')}{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
+      {i18n.get('straightWins')}{record?.straightWins}<br/>
+      {i18n.get('maxStraightWins')}{record?.maxStraightWins}<br/>
+      {i18n.get('avgWinTimes')}{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}{i18n.get('avgWinTimesDesc')}
     </p>
     <hr/>
-    <p><ShareIcon onClick={() => {
-      copyCurrentDay(getShareHistoryText(DAILY_MODE), setMsg)
-    }}/><span className='title'>每日挑战！</span></p>
-    <p>游戏次数：{record?.dailyPlayTimes}<br/>
-      胜利次数：{record?.dailyWinTimes}<br/>
-      胜率：{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
-      当前连胜次数：{record?.dailyStraightWins}<br/>
-      最大连胜次数：{record?.dailyMaxStraightWins}<br/>
-      平均猜测次数：{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}（胜利时）
+    <p className={'flex-center'}>
+      <ShareIcon onClick={() => {
+        copyCurrentDay(getShareHistoryText(DAILY_MODE), setMsg, i18n.get('copySuccess'))
+      }}/>
+      <span className='title'>
+        {i18n.get('dailyMode')}
+      </span>
+    </p>
+    <p>
+      {i18n.get('playTimes')}{record?.dailyPlayTimes}<br/>
+      {i18n.get('winTimes')}{record?.dailyWinTimes}<br/>
+      {i18n.get('winRate')}{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
+      {i18n.get('straightWins')}{record?.dailyStraightWins}<br/>
+      {i18n.get('maxStraightWins')}{record?.dailyMaxStraightWins}<br/>
+      {i18n.get('avgWinTimes')}{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}{i18n.get('avgWinTimesDesc')}
     </p>
   </>;
 }

@@ -1,36 +1,37 @@
 import {moment} from "./global";
 
-import {chartsData, DAILY_MODE, RANDOM_MODE} from "./const";
+import {DAILY_MODE, RANDOM_MODE} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
+import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 export const getGame = (store: any) => {
   const {mode} = store
-  const gameDict = {
+  const gameDict: { [key: string]: (store: any) => any } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame
   }
   return gameDict[mode](store)
 }
 const randomGame = (store: any) => {
-  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData} = store
+  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, chartsData, lang} = store
   return {
     init: () => {
-      const randomData = localStorage.getItem('randomData')
+      const randomData = localStorageGet(lang, 'randomData')
       if (randomData) {
         setRandomData(JSON.parse(randomData))
-        setRandomAnswerKey(Number(localStorage.getItem('randomAnswerKey')))
+        setRandomAnswerKey(Number(localStorageGet(lang, 'randomAnswerKey')))
       }
     },
     answer: chartsData[randomAnswerKey],
     data: randomData,
     setData: (v: any[], isGiveUp: boolean) => {
-      localStorage.setItem('randomData', JSON.stringify(v))
-      localStorage.setItem('randomAnswerKey', `${randomAnswerKey}`)
-      localStorage.setItem('giveUp', isGiveUp)
+      localStorageSet(lang, 'randomData', JSON.stringify(v))
+      localStorageSet(lang, 'randomAnswerKey', `${randomAnswerKey}`)
+      localStorageSet(lang, 'giveUp', `${isGiveUp}`)
       setRandomData(v)
     },
     gameOver: (newData: any[], isWin: boolean) => {
-      let record: any = loadRecordData();
+      let record: any = loadRecordData(lang);
       if (isWin) {
         record.winTryTimes += newData.length;
         record.winTimes += 1;
@@ -43,15 +44,15 @@ const randomGame = (store: any) => {
       }
       record.playTimes += 1;
       record.totalTryTimes += newData.length;
-      saveRecordData(record);
+      saveRecordData(lang, record);
     }
   }
 }
 const dailyGame = (store: any) => {
-  const {setDayData, remoteAnswerKey, dayData, today} = store
+  const {setDayData, remoteAnswerKey, dayData, today, chartsData, lang} = store
   return {
     init: () => {
-      const dayData = localStorage.getItem(today + 'dayData')
+      const dayData = localStorageGet(lang, today + 'dayData')
       if (dayData) {
         setDayData(JSON.parse(dayData))
       }
@@ -59,7 +60,7 @@ const dailyGame = (store: any) => {
     answer: chartsData[remoteAnswerKey],
     data: dayData,
     setData: (v: any[]) => {
-      localStorage.setItem(today + 'dayData', JSON.stringify(v))
+      localStorageSet(lang, today + 'dayData', JSON.stringify(v))
       setDayData(v)
     },
     preSubmitCheck: () => {
@@ -70,7 +71,7 @@ const dailyGame = (store: any) => {
       }
     },
     gameOver: (newData: any[], isWin: boolean) => {
-      let record: any = loadRecordData();
+      let record: any = loadRecordData(lang);
       if (isWin) {
         record.dailyWinTimes += 1;
         record.dailyWinTryTimes += newData.length;
@@ -83,7 +84,7 @@ const dailyGame = (store: any) => {
       }
       record.dailyPlayTimes += 1;
       record.dailyTotalTryTimes += newData.length;
-      saveRecordData(record);
+      saveRecordData(lang, record);
     }
   }
 }

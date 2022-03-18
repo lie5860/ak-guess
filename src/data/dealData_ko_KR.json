@@ -1,0 +1,3513 @@
+[
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "Lancet-2",
+        "en": "Lancet-2",
+        "race": "",
+        "rarity": 0,
+        "key": "char_285_medic2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "Castle-3",
+        "en": "Castle-3",
+        "race": "",
+        "rarity": 0,
+        "key": "char_286_cast3",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "야토",
+        "en": "Yato",
+        "race": [
+            "오니"
+        ],
+        "rarity": 1,
+        "key": "char_502_nblade",
+        "team": [
+            "작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "느와르 코르네",
+        "en": "Noir Corne",
+        "race": [
+            "오니"
+        ],
+        "rarity": 1,
+        "key": "char_500_noirc",
+        "team": [
+            "작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "레인저",
+        "en": "Rangers",
+        "race": [
+            "사브라"
+        ],
+        "rarity": 1,
+        "key": "char_503_rang",
+        "team": [
+            "작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "두린",
+        "en": "Durin",
+        "race": [
+            "두린"
+        ],
+        "rarity": 1,
+        "key": "char_501_durin",
+        "team": [
+            "작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "12F",
+        "en": "12F",
+        "race": [
+            "사브라"
+        ],
+        "rarity": 1,
+        "key": "char_009_12fce",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "海猫络合物"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "팽",
+        "en": "Fang",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 2,
+        "key": "char_123_fang",
+        "team": [
+            "예비작전팀 A1",
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "바닐라",
+        "en": "Vanilla",
+        "race": [
+            "뷔브르"
+        ],
+        "rarity": 2,
+        "key": "char_240_wyvern",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "플룸",
+        "en": "Plume",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 2,
+        "key": "char_192_falco",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "deel"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "멜란사",
+        "en": "Melantha",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 2,
+        "key": "char_208_melan",
+        "team": [
+            "예비작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "카디건",
+        "en": "Cardigan",
+        "race": [
+            "페로"
+        ],
+        "rarity": 2,
+        "key": "char_209_ardign",
+        "team": [
+            "예비작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "비글",
+        "en": "Beagle",
+        "race": [
+            "페로"
+        ],
+        "rarity": 2,
+        "key": "char_122_beagle",
+        "team": [
+            "예비작전팀 A1",
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "크루스",
+        "en": "Kroos",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 2,
+        "key": "char_124_kroos",
+        "team": [
+            "예비작전팀 A1",
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "아드나키엘",
+        "en": "Adnachiel",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 2,
+        "key": "char_211_adnach",
+        "team": [
+            "예비작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "라바",
+        "en": "Lava",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 2,
+        "key": "char_121_lava",
+        "team": [
+            "예비작전팀 A1",
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "히비스커스",
+        "en": "Hibiscus",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 2,
+        "key": "char_120_hibisc",
+        "team": [
+            "예비작전팀 A1",
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "안셀",
+        "en": "Ansel",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 2,
+        "key": "char_212_ansel",
+        "team": [
+            "예비작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "스튜어드",
+        "en": "Steward",
+        "race": [
+            "불포"
+        ],
+        "rarity": 2,
+        "key": "char_210_stward",
+        "team": [
+            "예비작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "一立里子"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "오키드",
+        "en": "Orchid",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 2,
+        "key": "char_278_orchid",
+        "team": [
+            "예비작전팀 A6",
+            "로도스 아일랜드"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "헤이즈",
+        "en": "Haze",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 3,
+        "key": "char_141_nights",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "기타노",
+        "en": "Gitano",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 3,
+        "key": "char_109_fmout",
+        "team": [
+            "사미"
+        ],
+        "painter": "谜肘"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "제시카",
+        "en": "Jessica",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 3,
+        "key": "char_235_jesica",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "메테오",
+        "en": "Meteor",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 3,
+        "key": "char_126_shotst",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "시라유키",
+        "en": "ShiraYuki",
+        "race": [
+            "아나티"
+        ],
+        "rarity": 3,
+        "key": "char_118_yuki",
+        "team": [
+            "극동"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "쿠리어",
+        "en": "Courier",
+        "race": [
+            "이트라"
+        ],
+        "rarity": 3,
+        "key": "char_198_blackd",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "스캐빈저",
+        "en": "Scavenger",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 3,
+        "key": "char_149_scave",
+        "team": [
+            "S.W.E.E.P",
+            "로도스 아일랜드"
+        ],
+        "painter": "戏言咸咸"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "비그나",
+        "en": "Vigna",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 3,
+        "key": "char_290_vigna",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "가드",
+            "교관"
+        ],
+        "name": "도베르만",
+        "en": "Dobermann",
+        "race": [
+            "페로"
+        ],
+        "rarity": 3,
+        "key": "char_130_doberm",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "마토이마루",
+        "en": "Matoimaru",
+        "race": [
+            "오니"
+        ],
+        "rarity": 3,
+        "key": "char_289_gyuki",
+        "team": [
+            "극동"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "프로스트리프",
+        "en": "Frostleaf",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_193_frostl",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "에스텔",
+        "en": "Estelle",
+        "race": [
+            "아다크리스"
+        ],
+        "rarity": 3,
+        "key": "char_127_estell",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "鸭"
+    },
+    {
+        "className": [
+            "가드",
+            "아츠 파이터"
+        ],
+        "name": "무스",
+        "en": "Mousse",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 3,
+        "key": "char_185_frncat",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Iritoa"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "그라벨",
+        "en": "Gravel",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 3,
+        "key": "char_237_gravel",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "후크마스터"
+        ],
+        "name": "로프",
+        "en": "Rope",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 3,
+        "key": "char_236_rope",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "미르",
+        "en": "Myrrh",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_117_myrrh",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "가비알",
+        "en": "Gavial",
+        "race": [
+            "아다크리스"
+        ],
+        "rarity": 3,
+        "key": "char_187_ccheal",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "메딕",
+            "멀티 타겟 메딕"
+        ],
+        "name": "퍼퓨머",
+        "en": "Perfumer",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_181_flower",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "마터호른",
+        "en": "Matterhorn",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 3,
+        "key": "char_199_yak",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "쿠오라",
+        "en": "Cuora",
+        "race": [
+            "페트람"
+        ],
+        "rarity": 3,
+        "key": "char_150_snakek",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "굼",
+        "en": "Гум",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 3,
+        "key": "char_196_sunbr",
+        "team": [
+            "우르수스 학생자치단",
+            "우르수스"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "서포터",
+            "소환사"
+        ],
+        "name": "딥컬러",
+        "en": "Deepcolor",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 3,
+        "key": "char_110_deepcl",
+        "team": [
+            "에기르"
+        ],
+        "painter": "REALMBW"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "어스스피릿",
+        "en": "Earthspirit",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 3,
+        "key": "char_183_skgoat",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "추격자"
+        ],
+        "name": "쇼",
+        "en": "Shaw",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 3,
+        "key": "char_277_sqrrel",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "메딕",
+            "멀티 타겟 메딕"
+        ],
+        "name": "프틸롭시스",
+        "en": "Ptilopsis",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_128_plosis",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "지마",
+        "en": "Зима",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 4,
+        "key": "char_115_headbr",
+        "team": [
+            "우르수스 학생자치단",
+            "우르수스"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "텍사스",
+        "en": "Texas",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_102_texas",
+        "team": [
+            "펭귄 로지스틱스",
+            "염",
+            "용문"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "프란카",
+        "en": "Franka",
+        "race": [
+            "불포"
+        ],
+        "rarity": 4,
+        "key": "char_106_franka",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "인드라",
+        "en": "Indra",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_155_tiger",
+        "team": [
+            "글래스고",
+            "빅토리아"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "라플란드",
+        "en": "Lappland",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_140_whitew",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "스펙터",
+        "en": "Specter",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 4,
+        "key": "char_143_ghost",
+        "team": [
+            "어비설 헌터스",
+            "에기르"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "블루포이즌",
+        "en": "Blue Poison",
+        "race": [
+            "아누라"
+        ],
+        "rarity": 4,
+        "key": "char_129_bluep",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "플래티넘",
+        "en": "Platinum",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_204_platnm",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "메테오라이트",
+        "en": "Meteorite",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_219_meteo",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "아미야",
+        "en": "Amiya",
+        "race": [
+            "카우투스",
+            "키메라"
+        ],
+        "rarity": 4,
+        "key": "char_002_amiya",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "스카이파이어",
+        "en": "Skyfire",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_166_skfire",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "서포터",
+            "소환사"
+        ],
+        "name": "메이어",
+        "en": "Mayer",
+        "race": [
+            "아나티"
+        ],
+        "rarity": 4,
+        "key": "char_242_otter",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "사일런스",
+        "en": "Silence",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_108_silent",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "와파린",
+        "en": "Warfarin",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_171_bldsk",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "时辰"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "니어",
+        "en": "Nearl",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_148_nearl",
+        "team": [
+            "사도"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "레드",
+        "en": "Projekt Red",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_144_red",
+        "team": [
+            "S.W.E.E.P",
+            "로도스 아일랜드"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "리스캄",
+        "en": "Liskarm",
+        "race": [
+            "뷔브르"
+        ],
+        "rarity": 4,
+        "key": "char_107_liskam",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "크루아상",
+        "en": "Croissant",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_201_moeshd",
+        "team": [
+            "펭귄 로지스틱스",
+            "염",
+            "용문"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "디펜더",
+            "저거너트"
+        ],
+        "name": "벌컨",
+        "en": "Vulcan",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_163_hpsts",
+        "team": [
+            "미노스"
+        ],
+        "painter": "neco"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "헤비슈터"
+        ],
+        "name": "프로방스",
+        "en": "Provence",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_145_prove",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "渣念"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "저격수"
+        ],
+        "name": "파이어워치",
+        "en": "Firewatch",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 4,
+        "key": "char_158_milu",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "후크마스터"
+        ],
+        "name": "클리프하트",
+        "en": "Cliffheart",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_173_slchan",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "서포터",
+            "약화자"
+        ],
+        "name": "프라마닉스",
+        "en": "Pramanix",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_174_slbell",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "이스티나",
+        "en": "Истина",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 4,
+        "key": "char_195_glassb",
+        "team": [
+            "우르수스 학생자치단",
+            "우르수스"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "서포터",
+            "음유시인"
+        ],
+        "name": "소라",
+        "en": "Sora",
+        "race": [
+            "소속사의 요청으로 비공개"
+        ],
+        "rarity": 4,
+        "key": "char_101_sora",
+        "team": [
+            "펭귄 로지스틱스",
+            "염",
+            "용문"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "매복자"
+        ],
+        "name": "맨티코어",
+        "en": "Manticore",
+        "race": [
+            "맨티코어"
+        ],
+        "rarity": 4,
+        "key": "char_215_mantic",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "추격자"
+        ],
+        "name": "에프이터",
+        "en": "FEater",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 4,
+        "key": "char_241_panda",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "RAN"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "엑시아",
+        "en": "Exusiai",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 5,
+        "key": "char_103_angel",
+        "team": [
+            "펭귄 로지스틱스",
+            "염",
+            "용문"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "시즈",
+        "en": "Siege",
+        "race": [
+            "아슬란"
+        ],
+        "rarity": 5,
+        "key": "char_112_siege",
+        "team": [
+            "글래스고",
+            "빅토리아"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "캐스터",
+            "블래스트 캐스터"
+        ],
+        "name": "이프리트",
+        "en": "Ifrit",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_134_ifrit",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "에이야퍄들라",
+        "en": "Eyjafjalla",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 5,
+        "key": "char_180_amgoat",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "Anmi"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "안젤리나",
+        "en": "Angelina",
+        "race": [
+            "불포"
+        ],
+        "rarity": 5,
+        "key": "char_291_aglina",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "샤이닝",
+        "en": "Shining",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_147_shining",
+        "team": [
+            "사도"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "메딕",
+            "멀티 타겟 메딕"
+        ],
+        "name": "나이팅게일",
+        "en": "Nightingale",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_179_cgbird",
+        "team": [
+            "사도"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "호시구마",
+        "en": "Hoshiguma",
+        "race": [
+            "오니"
+        ],
+        "rarity": 5,
+        "key": "char_136_hsguma",
+        "team": [
+            "용문근위국",
+            "염",
+            "용문"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "사리아",
+        "en": "Saria",
+        "race": [
+            "뷔브르"
+        ],
+        "rarity": 5,
+        "key": "char_202_demkni",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "실버애쉬",
+        "en": "SilverAsh",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_172_svrash",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "새비지",
+        "en": "Savage",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 4,
+        "key": "char_230_savage",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "캐터펄트",
+        "en": "Catapult",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 2,
+        "key": "char_282_catap",
+        "team": [
+            "예비작전팀 A6",
+            "로도스 아일랜드"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "미드나이트",
+        "en": "Midnight",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 2,
+        "key": "char_283_midn",
+        "team": [
+            "예비작전팀 A6",
+            "로도스 아일랜드"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "비헌터",
+        "en": "Beehunter",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 3,
+        "key": "char_137_brownb",
+        "team": [
+            "우르수스"
+        ],
+        "painter": "toast"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "나이트메어",
+        "en": "Nightmare",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_164_nightm",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Lpip"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "그라니",
+        "en": "Grani",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_220_grani",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "스카디",
+        "en": "Skadi",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_263_skadi",
+        "team": [
+            "어비설 헌터스",
+            "에기르"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "포푸카",
+        "en": "Popukar",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 2,
+        "key": "char_281_popka",
+        "team": [
+            "예비작전팀 A6",
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "스팟",
+        "en": "Spot",
+        "race": [
+            "리프로바"
+        ],
+        "rarity": 2,
+        "key": "char_284_spot",
+        "team": [
+            "예비작전팀 A6",
+            "로도스 아일랜드"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "그레이",
+        "en": "Greyy",
+        "race": [
+            "페로"
+        ],
+        "rarity": 3,
+        "key": "char_253_greyy",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "가드",
+            "교관"
+        ],
+        "name": "스와이어",
+        "en": "Swire",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_308_swire",
+        "team": [
+            "용문근위국",
+            "염",
+            "용문"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "가드",
+            "소드마스터"
+        ],
+        "name": "첸",
+        "en": "Ch'en",
+        "race": [
+            "용"
+        ],
+        "rarity": 5,
+        "key": "char_010_chen",
+        "team": [
+            "용문근위국",
+            "염",
+            "용문"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "수수로",
+        "en": "Sussurro",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_298_susuro",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "메딕",
+            "테라피스트"
+        ],
+        "name": "실론",
+        "en": "Ceylon",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_348_ceylon",
+        "team": [
+            "시에스타",
+            "컬럼비아"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "글라우쿠스",
+        "en": "Glaucus",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 4,
+        "key": "char_326_glacus",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "헤비슈터"
+        ],
+        "name": "슈바르츠",
+        "en": "Schwarz",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_340_shwaz",
+        "team": [
+            "시에스타",
+            "컬럼비아"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "기수"
+        ],
+        "name": "머틀",
+        "en": "Myrtle",
+        "race": [
+            "두린"
+        ],
+        "rarity": 3,
+        "key": "char_151_myrtle",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "咩煲"
+    },
+    {
+        "className": [
+            "가드",
+            "아츠 파이터"
+        ],
+        "name": "아스테시아",
+        "en": "Astesia",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_274_astesi",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "가드",
+            "무사"
+        ],
+        "name": "헬라그",
+        "en": "Hellagur",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_188_helage",
+        "team": [
+            "우르수스"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "디펜더",
+            "아츠 프로텍터"
+        ],
+        "name": "듀나",
+        "en": "Dur-nar",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_260_durnar",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "버메일",
+        "en": "Vermeil",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_190_clour",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "KENTllaall"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "플레임브링어",
+        "en": "Flamebringer",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_131_flameb",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "虎三"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "산탄사수"
+        ],
+        "name": "이그제큐터",
+        "en": "Executor",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 4,
+        "key": "char_279_excu",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "서포터",
+            "소환사"
+        ],
+        "name": "마젤란",
+        "en": "Magallan",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_248_mgllan",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "매복자"
+        ],
+        "name": "에단",
+        "en": "Ethan",
+        "race": [
+            "사브라"
+        ],
+        "rarity": 3,
+        "key": "char_355_ethan",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "메딕",
+            "멀티 타겟 메딕"
+        ],
+        "name": "브리즈",
+        "en": "Breeze",
+        "race": [
+            "불포"
+        ],
+        "rarity": 4,
+        "key": "char_275_breeze",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "藻"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "메이",
+        "en": "May",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 3,
+        "key": "char_133_mm",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "바이슨",
+        "en": "Bison",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_325_bison",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "와이후",
+        "en": "Waai Fu",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_243_waaifu",
+        "team": [
+            "리 탐정사무소",
+            "염",
+            "용문"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "모스티마",
+        "en": "Mostima",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_213_mostma",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "리드",
+        "en": "Reed",
+        "race": [
+            "드라코"
+        ],
+        "rarity": 4,
+        "key": "char_261_sddrag",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "브로카",
+        "en": "Broca",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_356_broca",
+        "team": [
+            "키아베 패거리",
+            "시라쿠사"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "저격수"
+        ],
+        "name": "엠브리엘",
+        "en": "Ambriel",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 3,
+        "key": "char_302_glaze",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "그레이스롯",
+        "en": "GreyThroat",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_367_swllow",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "블레이즈",
+        "en": "Blaze",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_017_huang",
+        "team": [
+            "로도스 아일랜드",
+            "정예 오퍼레이터"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "후크마스터"
+        ],
+        "name": "스노우상트",
+        "en": "Snowsant",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_383_snsant",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "훔",
+        "en": "Hung",
+        "race": [
+            "페로"
+        ],
+        "rarity": 4,
+        "key": "char_226_hmau",
+        "team": [
+            "리 탐정사무소",
+            "염",
+            "용문"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "기인"
+        ],
+        "name": "아",
+        "en": "Aak",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_225_haak",
+        "team": [
+            "리 탐정사무소",
+            "염",
+            "용문"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "니엔",
+        "en": "Nian",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_2014_nian",
+        "team": [
+            "염",
+            "쉐이"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "캐스터",
+            "체인 캐스터"
+        ],
+        "name": "레이즈",
+        "en": "Leizi",
+        "race": [
+            "기린"
+        ],
+        "rarity": 4,
+        "key": "char_306_leizi",
+        "team": [
+            "염"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "케오베",
+        "en": "Ceobe",
+        "race": [
+            "페로"
+        ],
+        "rarity": 5,
+        "key": "char_2013_cerber",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "메딕",
+            "테라피스트"
+        ],
+        "name": "퓨어스트림",
+        "en": "Purestream",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 3,
+        "key": "char_385_finlpp",
+        "team": [
+            "염"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "가드",
+            "무사"
+        ],
+        "name": "우타게",
+        "en": "Utage",
+        "race": [
+            "불명"
+        ],
+        "rarity": 3,
+        "key": "char_337_utage",
+        "team": [
+            "극동"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "가드",
+            "소드마스터"
+        ],
+        "name": "바이비크",
+        "en": "Bibeak",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_252_bibeak",
+        "team": [
+            "사미"
+        ],
+        "painter": "RAYVON"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "세사",
+        "en": "Sesa",
+        "race": [
+            "뷔브르"
+        ],
+        "rarity": 4,
+        "key": "char_379_sesa",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "백파이프",
+        "en": "Bagpipe",
+        "race": [
+            "뷔브르"
+        ],
+        "rarity": 5,
+        "key": "char_222_bpipe",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "u介"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "컨빅션",
+        "en": "Conviction",
+        "race": [
+            "미확인 (리베리로 추정)"
+        ],
+        "rarity": 3,
+        "key": "char_159_peacok",
+        "team": [
+            "미노스"
+        ],
+        "painter": "TOMATO"
+    },
+    {
+        "className": [
+            "가드",
+            "소드마스터"
+        ],
+        "name": "커터",
+        "en": "Cutter",
+        "race": [
+            "불포"
+        ],
+        "rarity": 3,
+        "key": "char_301_cutter",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "가드",
+            "아츠 파이터"
+        ],
+        "name": "시데로카",
+        "en": "Sideroca",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_333_sidero",
+        "team": [
+            "미노스"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "서포터",
+            "약화자"
+        ],
+        "name": "샤마르",
+        "en": "Shamare",
+        "race": [
+            "불포"
+        ],
+        "rarity": 4,
+        "key": "char_254_vodfox",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "팬텀",
+        "en": "Phantom",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_250_phatom",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "THRM-EX",
+        "en": "Thermal-EX",
+        "race": "",
+        "rarity": 0,
+        "key": "char_376_therex",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "TOKI"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "기수"
+        ],
+        "name": "엘리시움",
+        "en": "Elysium",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_401_elysm",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "추격자"
+        ],
+        "name": "위디",
+        "en": "Weedy",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_400_weedy",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "W",
+        "en": "W",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_113_cqbw",
+        "team": [
+            "바벨"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "디펜더",
+            "아츠 프로텍터"
+        ],
+        "name": "아스베스토스",
+        "en": "Asbestos",
+        "race": [
+            "사브라"
+        ],
+        "rarity": 4,
+        "key": "char_378_asbest",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "TEAM EXPNDR"
+    },
+    {
+        "className": [
+            "서포터",
+            "비호자"
+        ],
+        "name": "츠키노기",
+        "en": "Tsukinogi",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 4,
+        "key": "char_343_tknogi",
+        "team": [
+            "극동"
+        ],
+        "painter": "上埜"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "포덴코",
+        "en": "Podenco",
+        "race": [
+            "페로"
+        ],
+        "rarity": 3,
+        "key": "char_258_podego",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "압생트",
+        "en": "Absinthe",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 4,
+        "key": "char_405_absin",
+        "team": [
+            "우르수스"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "레온하르트",
+        "en": "Leonhardt",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 4,
+        "key": "char_373_lionhd",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "野崎つばた"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "공성사수"
+        ],
+        "name": "로사",
+        "en": "Роса",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 5,
+        "key": "char_197_poca",
+        "team": [
+            "우르수스 학생자치단",
+            "우르수스"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "캐스터",
+            "메카 캐스터"
+        ],
+        "name": "클릭",
+        "en": "Click",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 3,
+        "key": "char_328_cammou",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "폴리닉",
+        "en": "Folinic",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_345_folnic",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "에이어스카르페",
+        "en": "Ayerscarpe",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 4,
+        "key": "char_294_ayer",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "스즈란",
+        "en": "Suzuran",
+        "race": [
+            "불포"
+        ],
+        "rarity": 5,
+        "key": "char_358_lisa",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "将"
+    },
+    {
+        "className": [
+            "서포터",
+            "소환사"
+        ],
+        "name": "씬",
+        "en": "Scene",
+        "race": [
+            "필로사"
+        ],
+        "rarity": 4,
+        "key": "char_336_folivo",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "アシマ"
+    },
+    {
+        "className": [
+            "캐스터",
+            "진법 캐스터"
+        ],
+        "name": "비즈왁스",
+        "en": "Beeswax",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 4,
+        "key": "char_344_beewax",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "키아베",
+        "en": "Chiave",
+        "race": [
+            "불포"
+        ],
+        "rarity": 4,
+        "key": "char_349_chiave",
+        "team": [
+            "키아베 패거리",
+            "시라쿠사"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "상인"
+        ],
+        "name": "제이",
+        "en": "Jaye",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 3,
+        "key": "char_272_strong",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "阿鬼"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "저격수"
+        ],
+        "name": "안드레아나",
+        "en": "Andreana",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_218_cuttle",
+        "team": [
+            "어비설 헌터스",
+            "에기르"
+        ],
+        "painter": "LLC"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "쏜즈",
+        "en": "Thorns",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_293_thorns",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "헤비슈터"
+        ],
+        "name": "애시드드롭",
+        "en": "Aciddrop",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 3,
+        "key": "char_366_acdrop",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "토미미",
+        "en": "Tomimi",
+        "race": [
+            "아다크리스"
+        ],
+        "rarity": 4,
+        "key": "char_411_tomimi",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "플린트",
+        "en": "Flint",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_415_flint",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "디펜더",
+            "결전자"
+        ],
+        "name": "유넥티스",
+        "en": "Eunectes",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 5,
+        "key": "char_416_zumama",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "아렌",
+        "en": "Arene",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 3,
+        "key": "char_271_spikes",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "캐스터",
+            "진법 캐스터"
+        ],
+        "name": "민트",
+        "en": "Mint",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_388_mint",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "에이프릴",
+        "en": "April",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 4,
+        "key": "char_365_aprl",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "가드",
+            "아츠 파이터"
+        ],
+        "name": "수르트",
+        "en": "Surtr",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_350_surtr",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "Ask"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "버블",
+        "en": "Bubble",
+        "race": [
+            "세라토"
+        ],
+        "rarity": 3,
+        "key": "char_381_bubble",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "가드",
+            "교관"
+        ],
+        "name": "위슬래시",
+        "en": "Whislash",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_265_sophia",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "산탄사수"
+        ],
+        "name": "아오스타",
+        "en": "Aosta",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_346_aosta",
+        "team": [
+            "키아베 패거리",
+            "시라쿠사"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "블레미샤인",
+        "en": "Blemishine",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 5,
+        "key": "char_423_blemsh",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "재키",
+        "en": "Jackie",
+        "race": [
+            "페로"
+        ],
+        "rarity": 3,
+        "key": "char_347_jaksel",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "Nagu"
+    },
+    {
+        "className": [
+            "메딕",
+            "테라피스트"
+        ],
+        "name": "위스퍼레인",
+        "en": "Whisperain",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_436_whispr",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "디펜더",
+            "저거너트"
+        ],
+        "name": "머드락",
+        "en": "Mudrock",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_311_mudrok",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "투척수"
+        ],
+        "name": "로즈몬티스",
+        "en": "Rosmontis",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_391_rosmon",
+        "team": [
+            "로도스 아일랜드",
+            "정예 오퍼레이터"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "가드",
+            "아츠 파이터"
+        ],
+        "name": "아미야(가드)",
+        "en": "Amiya",
+        "race": [
+            "카우투스",
+            "키메라"
+        ],
+        "rarity": 4,
+        "key": "char_1001_amiya2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "산탄사수"
+        ],
+        "name": "파인콘",
+        "en": "Pinecone",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 3,
+        "key": "char_440_pinecn",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "TrNyteal"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "함정술사"
+        ],
+        "name": "로빈",
+        "en": "Robin",
+        "race": [
+            "아나티"
+        ],
+        "rarity": 4,
+        "key": "char_451_robin",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "카프카",
+        "en": "Kafka",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_214_kafka",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "마운틴",
+        "en": "Mountain",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_264_f12yin",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "WincalBlanke"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "전술가"
+        ],
+        "name": "빈스토크",
+        "en": "Beanstalk",
+        "race": [
+            "리프로바"
+        ],
+        "rarity": 3,
+        "key": "char_452_bstalk",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "캐스터",
+            "미스틱 캐스터"
+        ],
+        "name": "아이리스",
+        "en": "Iris",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_338_iris",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "아르케토",
+        "en": "Archetto",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_332_archet",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "투예",
+        "en": "Tuye",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_402_tuye",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "라바 더 퍼거토리",
+        "en": "Lava the Purgatory",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_1011_lava2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "상인"
+        ],
+        "name": "우요우",
+        "en": "Mr.Nothing",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_455_nothin",
+        "team": [
+            "염"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "사가",
+        "en": "Saga",
+        "race": [
+            "페로"
+        ],
+        "rarity": 5,
+        "key": "char_362_saga",
+        "team": [
+            "극동"
+        ],
+        "painter": "多元菌"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "시",
+        "en": "Dusk",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_2015_dusk",
+        "team": [
+            "염",
+            "쉐이"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "가드",
+            "소드마스터"
+        ],
+        "name": "Tachanka",
+        "en": "Tachanka",
+        "race": [
+            "알 수 없음"
+        ],
+        "rarity": 4,
+        "key": "char_459_tachak",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "Blitz",
+        "en": "Blitz",
+        "race": [
+            "알 수 없음"
+        ],
+        "rarity": 4,
+        "key": "char_457_blitz",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "함정술사"
+        ],
+        "name": "Frost",
+        "en": "Frost",
+        "race": [
+            "알 수 없음"
+        ],
+        "rarity": 4,
+        "key": "char_458_rfrost",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "Ash",
+        "en": "Ash",
+        "race": [
+            "알 수 없음"
+        ],
+        "rarity": 5,
+        "key": "char_456_ash",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "헤비레인",
+        "en": "Heavyrain",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_304_zebra",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "공성사수"
+        ],
+        "name": "토디폰스",
+        "en": "Toddifons",
+        "race": [
+            "뷔브르"
+        ],
+        "rarity": 4,
+        "key": "char_363_toddi",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "山×2"
+    },
+    {
+        "className": [
+            "캐스터",
+            "체인 캐스터"
+        ],
+        "name": "패신저",
+        "en": "Passenger",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_472_pasngr",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "가드",
+            "무사"
+        ],
+        "name": "아카후유",
+        "en": "Akafuyu",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_475_akafyu",
+        "team": [
+            "극동"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "후크마스터"
+        ],
+        "name": "글래디아",
+        "en": "Gladiia",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_474_glady",
+        "team": [
+            "어비설 헌터스",
+            "에기르"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "메딕",
+            "메딕"
+        ],
+        "name": "켈시",
+        "en": "Kal'tsit",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_003_kalts",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "唯@W"
+    },
+    {
+        "className": [
+            "서포터",
+            "음유시인"
+        ],
+        "name": "스카디 더 커럽팅 하트",
+        "en": "Skadi the Corrupting Heart",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_1012_skadi2",
+        "team": [
+            "에기르"
+        ],
+        "painter": "alchemaniac"
+    },
+    {
+        "className": [
+            "캐스터",
+            "미스틱 캐스터"
+        ],
+        "name": "인디고",
+        "en": "Indigo",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 3,
+        "key": "char_469_indigo",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "织布机loom"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "인형사"
+        ],
+        "name": "베나",
+        "en": "Bena",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 4,
+        "key": "char_369_bena",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "매복자"
+        ],
+        "name": "키라라",
+        "en": "Kirara",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_478_kirara",
+        "team": [
+            "극동"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "캐스터",
+            "진법 캐스터"
+        ],
+        "name": "카넬리안",
+        "en": "Carnelian",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 5,
+        "key": "char_426_billro",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "カワグチ"
+    },
+    {
+        "className": [
+            "가드",
+            "교관"
+        ],
+        "name": "팔라스",
+        "en": "Pallas",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 5,
+        "key": "char_485_pallas",
+        "team": [
+            "미노스"
+        ],
+        "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "가드",
+            "해방자"
+        ],
+        "name": "테킬라",
+        "en": "Tequila",
+        "race": [
+            "페로"
+        ],
+        "rarity": 4,
+        "key": "char_486_takila",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "가드",
+            "리퍼"
+        ],
+        "name": "라 플루마",
+        "en": "La Pluma",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_421_crow",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "매복자"
+        ],
+        "name": "미즈키",
+        "en": "Mizuki",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_437_mizuki",
+        "team": [
+            "극동"
+        ],
+        "painter": "Namie"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "산탄사수"
+        ],
+        "name": "첸 더 홀룽데이",
+        "en": "Ch'en the Holungday",
+        "race": [
+            "용"
+        ],
+        "rarity": 5,
+        "key": "char_1013_chen2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "唯@W"
+    }
+]

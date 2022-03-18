@@ -1,18 +1,21 @@
-import {aliasData} from "../const";
-
-export default function autocomplete(inp, arr, chartsData) {
+export default function autocomplete(inp, arr, chartsData, aliasData) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
     /*execute a function when someone writes in the text field:*/
-    inp.addEventListener("input",async function (e) {
+    inp.addEventListener("input", async function (e) {
         var a, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
-        const inputVal = val.toUpperCase().trim()
+        var inputVal = val.toUpperCase().trim()
         if (!inputVal) {
             return false;
         }
+        // 平假名转换成片假名去匹配结果
+        inputVal = inputVal.replace(/[\u3041-\u3096]/g, function (match) {
+            var chr = match.charCodeAt(0) + 0x60;
+            return String.fromCharCode(chr);
+        });
         currentFocus = -1;
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
@@ -44,7 +47,10 @@ export default function autocomplete(inp, arr, chartsData) {
                 (or any other open lists of autocompleted values:*/
                 closeAllLists();
             });
-            if (arr[i].toUpperCase().indexOf(inputVal) !== -1) {
+            // 英文首字母的判断 todo 是否必要？
+            if (arr[i].split(' ').map(v => !!v ? v[0] : '').join('').toUpperCase().startsWith(inputVal)) {
+                nameMatchItems.push(b)
+            } else if (arr[i].toUpperCase().indexOf(inputVal) !== -1) {
                 nameMatchItems.push(b)
             } else if (chartsData[i].en.toUpperCase().startsWith(inputVal)) {
                 nameMatchItems.push(b)

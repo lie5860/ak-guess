@@ -1,5 +1,6 @@
 import {TYPES} from "./const";
-import { moment } from "./global";
+import {moment} from "./global";
+import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 const axios = window.axios;
 const guess = (inputItem, answer) => {
@@ -20,7 +21,9 @@ const guess = (inputItem, answer) => {
       case 'array':
         const x = inputItem?.[key] || [];
         const y = answer?.[key] || [];
-        const eqState = (x, y) => {
+        const eqState = (xx, yy) => {
+          const x = [...new Set(xx)];
+          const y = [...new Set(yy)];
           const l = new Set([...x, ...y]).size;
           if (x.length === y.length && x.length === l) return 'correct';
           if (x.length + y.length === l) return 'wrong';
@@ -35,8 +38,8 @@ const guess = (inputItem, answer) => {
 }
 const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
 // const host = 'http://akapi.saki.cc/'
-const getDailyData = () => {
-  const oldData = localStorage.getItem('dailyData');
+const getDailyData = (lang: string) => {
+  const oldData = localStorageGet(lang, 'dailyData');
   if (oldData) {
     try {
       const data = JSON.parse(oldData);
@@ -48,10 +51,10 @@ const getDailyData = () => {
     }
   }
   return axios
-    .get(`${host}`, {responseType: "json"})
+    .get(`${host}?server=${lang}`, {responseType: "json"})
     .then(function (response) {
       const res = response.data;
-      localStorage.setItem('dailyData', JSON.stringify({
+      localStorageSet(lang, 'dailyData', JSON.stringify({
         res,
         date: moment().tz("Asia/Shanghai").format('YYYY-MM-DD')
       }));

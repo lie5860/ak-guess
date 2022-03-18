@@ -1,7 +1,7 @@
-import {DAILY_MODE, defaultTryTimes, GAME_NAME, MAIN_KEY, TYPES, VAL_DICT} from "../const";
+import {DAILY_MODE, defaultTryTimes, MAIN_KEY, TYPES, VAL_DICT} from "../const";
 
-const shareTextCreator = (data, mode, today, showName) => {
-  let text = `${GAME_NAME} `;
+const shareTextCreator = (data: any[], mode: string, today: string, showName: string, title: string, host: string) => {
+  let text = `${title} `;
   if (mode === DAILY_MODE) {
     text += today + ' ';
   }
@@ -16,7 +16,7 @@ const shareTextCreator = (data, mode, today, showName) => {
       }
     })
   })
-  text += '\nhttp://akg.saki.cc';
+  text += '\n' + host;
   return text
 }
 export default shareTextCreator

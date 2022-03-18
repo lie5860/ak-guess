@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
-import {chartsData, DAILY_MODE, defaultTryTimes, GAME_NAME, MAIN_KEY, questionnaireUrl, RANDOM_MODE} from "./const";
+import {CONTRIBUTORS, DAILY_MODE, defaultTryTimes, MAIN_KEY, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
@@ -9,11 +9,16 @@ import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
 import {getDailyData, guess} from "./server";
+import {AppCtx} from './locales/AppCtx';
 import {getGame} from "./store";
 import './index.less'
 import './normalize.css'
+import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
+import {hostDict, labelDict} from "./locales";
+import ContributorList from "./component/ContributorList";
 
 export default function Home() {
+  const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState(RANDOM_MODE)
   const [msg, setMsg] = React.useState("")
@@ -27,25 +32,24 @@ export default function Home() {
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const [isGiveUp, setGiveUp] = React.useState(false);
   const store = {
-    mode,
+    mode, chartsData, lang: i18n.language,
     setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp,
     setDayData, remoteAnswerKey, dayData, today
   }
   const game = getGame(store)
   React.useEffect(() => {
-    getDailyData().then(({last_date, daily}) => {
+    getDailyData(i18n.language).then(({last_date, daily}) => {
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
-    if (!localStorage.getItem('firstOpen')) {
-      localStorage.setItem('firstOpen', 'yes');
+    if (!localStorageGet(i18n.language, 'firstOpen')) {
+      localStorageSet(i18n.language, 'firstOpen', 'yes');
       changeModalInfo({
         "message": <Help updateDate={updateDate} firstOpen/>, "width": '80%'
       })
     }
-    autocomplete(inputRef.current, chartNames, chartsData);
-
-    const giveUp = localStorage.getItem("giveUp")
+    autocomplete(inputRef.current, chartNames, chartsData, aliasData);
+    const giveUp = localStorageGet(i18n.language, "giveUp")
     if (giveUp) {
       setGiveUp(giveUp === 'true');
     }
@@ -53,29 +57,23 @@ export default function Home() {
   React.useEffect(() => {
     game.init()
   }, [mode])
-  // 根据模式获取答案、 历史提交记录、提交记录
-  const answer = game.answer;
-  const data = game.data;
-  const setData = game.setData;
-  const showModal = (msg) => {
-    setMsg(msg)
-    setTimeout(() => {
-      setMsg('')
-    }, 1500)
+  const {answer, data, setData} = game;
+  const showModal = (msg: string) => {
+    window.mdui.alert(msg)
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
   const isOver = data.length >= defaultTryTimes || isWin || (mode === RANDOM_MODE && isGiveUp)
 
   const giveUp = () => {
-    let result = confirm("确定要放弃答题去吃蜜饼吗？\n当前的连胜纪录会被重置哦！");
-    if (result == true) {
+    let result = confirm(i18n.get("giveUpConfirm"));
+    if (result) {
       let record = loadRecordData();
       record.straightWins = 0;
       record.playTimes += 1;
       record.totalTryTimes += data.length;
       saveRecordData(record);
       setGiveUp(true);
-      localStorage.setItem('giveUp', true)
+      localStorageSet(i18n.language, 'giveUp', 'true')
     }
   }
 
@@ -85,13 +83,14 @@ export default function Home() {
     if (error) {
       return;
     }
-    const inputName = inputRef.current.value;
-    if (chartNames.indexOf(inputName) === -1) {
-      showModal('输入错误，请输入正确的干员名称。')
-    } else if (data.map(v => v.guess?.[MAIN_KEY]).indexOf(inputName) !== -1) {
-      showModal('已经输入过啦 换一个吧！');
+    const inputName = inputRef.current.value?.toUpperCase();
+    // 转大写感觉会存在一定的风险。 例如 Ceoceo和CeoCeo会认为是一个干员，但按照标准两个大写的词不会连着用才对
+    if (chartNames.map(v => v?.toUpperCase()).indexOf(inputName) === -1) {
+      showModal(i18n.get('errNameTip'))
+    } else if (data.map(v => v.guess?.[MAIN_KEY]?.toUpperCase()).indexOf(inputName) !== -1) {
+      showModal(i18n.get('duplicationTip'));
     } else {
-      const inputItem = chartsData.filter(v => v?.[MAIN_KEY] === inputName)[0];
+      const inputItem = chartsData.filter(v => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
       const res = guess(inputItem, answer)
       const newData = [...data, res]
       setData(newData)
@@ -106,71 +105,108 @@ export default function Home() {
   return (
     <div className={'container'}>
       <div className={'main-container clean-float'}>
+        <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
+                className="appbar-btn mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+          <i className="mdui-icon material-icons">dns</i>
+          <span className="mini-chip mdui-color-blue-a400 mdui-text-uppercase pointer font-mono"
+                id="server-chip">
+            <span className="mini-chip-content">{labelDict[i18n.language]}</span>
+          </span>
+        </button>
+
+        <ul id="server-menu" className="mdui-menu">
+          <li className="mdui-menu-item mdui-ripple">
+            {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
+              return <a key={key} className="mdui-ripple pointer" onClick={() => {
+                location.href = hostDict[key]
+              }}>
+                <i style={{visibility: key === i18n.language ? '' : 'hidden'}}
+                   className="mdui-menu-item-icon mdui-icon material-icons">done</i>
+                {labelDict[key]}
+              </a>
+            })}
+          </li>
+        </ul>
         <div className={'ak-tab'}>
           <div className={`ak-tab-item ${mode === RANDOM_MODE ? 'active' : ''}`}
                onClick={() => setMode(RANDOM_MODE)}>
-            随心所欲！
+            {i18n.get('randomMode')}
           </div>
           {remoteAnswerKey !== -1 &&
           <div className={`ak-tab-item ${mode === DAILY_MODE ? 'active' : ''}`}
                onClick={() => setMode(DAILY_MODE)}>
-              每日挑战！
+            {i18n.get('dailyMode')}
           </div>}
-
         </div>
-        <div><span className={`title`}>{GAME_NAME}</span></div>
-        <div>明日方舟 wordle-like by 昨日沉船</div>
-        <div class="titlePanel">你有{defaultTryTimes - data.length}/{defaultTryTimes}次机会猜测这只神秘干员，试试看！<br/>
+        <div><span className={`title`}>{i18n.get('title')}</span></div>
+        <div>{i18n.get('titleDesc')}
+          <div className="tooltip" mdui-dialog="{target: '#exampleNoTitle'}">小刻猜猜团
+          </div>
+          <div className="mdui-dialog" id="exampleNoTitle">
+            <div className="mdui-dialog-title">贡献者</div>
+            <div className="mdui-dialog-content">
+              {CONTRIBUTORS.map((data, index) => <ContributorList key={index} {...data}/>)}
+            </div>
+            <div className="mdui-dialog-actions">
+              <button className="mdui-btn mdui-ripple" mdui-dialog-close={''}>cancel</button>
+            </div>
+          </div>
+        </div>
+        <div className="titlePanel">
+          {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
+          <br/>
           <div className="tooltip" onClick={() => {
             changeModalInfo({
               "message": <Help updateDate={updateDate}/>, "width": '80%'
             })
-          }}>🍪小刻学堂
+          }}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
-            changeModalInfo({"message": <History setMsg={setMsg}/>, "width": '80%'})
-          }}>🔎测试报告
+            changeModalInfo({"message": <History/>, "width": '80%'})
+          }}>🔎{i18n.get('report')}
           </div>
           <div className="tooltip" onClick={() => {
-            window.open(questionnaireUrl)
-          }}>💬反馈
+            window.open(i18n.get('questionnaireUrl'))
+          }}>💬{i18n.get('feedback')}
           </div>
         </div>
-        {mode === DAILY_MODE && <div>更新时间为 北京时间0点 GMT+8</div>}
-        {!!data?.length && <GuessItem data={data} setMsg={setMsg}/>}
+        {mode === DAILY_MODE && <div>{i18n.get('dailyTimeTip')}</div>}
+        {!!data?.length && <GuessItem data={data}/>}
         <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
               style={{display: isOver ? 'none' : ''}}>
           <div className="autocomplete">
-            <input ref={inputRef} id="guess" placeholder={"请输入干员名称"} onKeyDown={(e) => {
+            <input ref={inputRef} id="guess" placeholder={i18n.get('inputTip')} onKeyDown={(e) => {
               if (e.keyCode == 13) {
                 onSubmit(e)
               }
             }}/>
           </div>
-          <input className="guess_input" type="submit" value="提交"/>
+          <input className="guess_input" type="submit" value={i18n.get('submit')}/>
         </form>
-        {!!isOver && <div className={'answer'}>{`${isWin ? '成功' : '失败'}了！这只神秘的干员是${answer?.[MAIN_KEY]}！`}</div>}
-
+        {!!isOver &&
+        <div
+            className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
+        </div>}
         {mode !== DAILY_MODE && !!isOver && <a className={'togglec'} onClick={() => {
           setGiveUp(false);
           setData([], false)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ 再来一局！</a>
+        }}>▶️ {i18n.get('newGameTip')}</a>
         }
         {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
           giveUp()
-        }}>🆘 小刻饿啦！</a>
+        }}>🆘 {i18n.get('giveUpTip')}</a>
         }
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, false), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title'), i18n.get('host')), showModal, i18n.get('copySuccess'))
             }}>
-                <ShareIcon/>分享
+                <ShareIcon/>{i18n.get('shareTip1')}
             </a>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, true), showModal)
+              copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title'), i18n.get('host')), showModal, i18n.get('copySuccess'))
             }} style={{marginLeft: 20}}>
-                <ShareIcon/>分享(带名称)
+                <ShareIcon/>{i18n.get('shareTip2')}
             </a>
         </div>
         }

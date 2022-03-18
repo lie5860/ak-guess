@@ -32,6 +32,7 @@
 
 ## 内容来源及鸣谢
 - [PRTS Wiki](http://prts.wiki/)（游戏数据）
+- [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData)（游戏数据）
 - [Fireblend/squirdle](https://github.com/Fireblend/squirdle)（来源）
 
 ## B站充电计划

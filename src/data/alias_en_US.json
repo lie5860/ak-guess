@@ -1,0 +1,18 @@
+[
+  {
+    "regexp": "CEO",
+    "values": ["Amiya","Amiya(Guard)"]
+  },
+  {
+    "regexp": "DUCK",
+    "values": ["May"]
+  },
+  {
+    "regexp": "CHEN",
+    "values": ["CH'EN","Ch'en the Holungday"]
+  },
+  {
+    "regexp": "KALTSIT",
+    "values": ["Kal'tsit"]
+  }
+]
