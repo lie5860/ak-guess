@@ -29,10 +29,10 @@ body {
 }
 
 .ak-tab {
-  display: flex;
-  padding: 10px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding-left: 10px;
+  //height: 32px;
+  //min-height: 32px;
+  align-items: center;
 }
 
 .ak-tab-item {
@@ -95,10 +95,6 @@ a {
   text-decoration: none;
   border-color: #383838;
   border-radius: 10px;
-
-  //&:hover {
-  //  color: #22bbff;
-  //}
 }
 
 .guesses {
@@ -335,46 +331,11 @@ img {
   }
 }
 
-.trigger-tab {
-  position: fixed;
-  bottom: 0;
-  left: 20px;
-  background: rgba(0, 0, 0, 0.88);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px 6px 0 0;
-  border: 1px solid #ddd;
-  border-bottom: 0px;
-  z-index: 1000;
-  height: 22px;
-
-  .trigger-label {
-    font-size: 14px;
-    padding: 0px 10px;
-  }
-
-  .close-btn {
-    position: static !important;
-    //top: 0 !important;
-    padding-right: 10px;
-    //right: 0 !important;
-    //width: 10px !important;
-  }
-}
-
-.dns-icon {
-  float: right;
-  padding: 15px 10px;
-  cursor: pointer;
-}
-
 #server-menu-btn {
   float: right;
   padding: 0;
   width: 48px;
-  height: 54px;
+  height: 48px;
   min-width: unset;
 }
 
@@ -420,6 +381,7 @@ img {
   .title-item {
     flex-basis: 100%;
     padding-left: 56px;
+
     .title-icon {
       position: absolute;
       left: 12px;
@@ -433,7 +395,8 @@ img {
     min-width: 200px;
     padding: 0 8px;
   }
-  .user-tip{
+
+  .user-tip {
     position: absolute;
     top: 2px;
     right: 2px;
@@ -442,4 +405,17 @@ img {
     transform: scale(.9);
     opacity: .5;
   }
+}
+
+.close-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .mdui-icon {
+    padding: 24px 24px 20px 24px;
+  }
+}
+.mdui-dialog-title + .mdui-dialog-content{
+  padding-top: 0;
 }

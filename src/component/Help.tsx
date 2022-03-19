@@ -5,10 +5,6 @@ import {React} from "../global";
 const Help = ({updateDate = 'emmm', firstOpen = false}) => {
   const {i18n, chartsData} = React.useContext(AppCtx);
   return <>
-    <p>
-      <span className='title' style={{lineHeight: '20px'}}>{i18n.get('helpTitle')}</span>
-    </p>
-    <hr/>
     <p>{i18n.get('helpDesc', {times: defaultTryTimes})}
       <ul className="tipList">
         <li>

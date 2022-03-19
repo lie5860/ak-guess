@@ -36,6 +36,13 @@ export default function Home() {
     setDayData, remoteAnswerKey, dayData, today
   }
   const game = getGame(store)
+  const openHelp = () => {
+    changeModalInfo({
+      "message": <Help updateDate={updateDate} firstOpen/>,
+      "title": i18n.get('helpTitle'),
+      useCloseIcon:true
+    })
+  }
   React.useEffect(() => {
     getDailyData(i18n.language).then(({last_date, daily}) => {
       setUpdateDate(last_date)
@@ -43,9 +50,7 @@ export default function Home() {
     })
     if (!localStorageGet(i18n.language, 'firstOpen')) {
       localStorageSet(i18n.language, 'firstOpen', 'yes');
-      changeModalInfo({
-        "message": <Help updateDate={updateDate} firstOpen/>, "width": '80%'
-      })
+      openHelp()
     }
     autocomplete(inputRef.current, chartNames, chartsData, aliasData);
     const giveUp = localStorageGet(i18n.language, "giveUp")
@@ -136,7 +141,7 @@ export default function Home() {
             })}
           </li>
         </ul>
-        <div className={'ak-tab'}>
+        <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
           <div className={`ak-tab-item ${mode === RANDOM_MODE ? 'active' : ''}`}
                onClick={() => setMode(RANDOM_MODE)}>
             {i18n.get('randomMode')}
@@ -147,7 +152,7 @@ export default function Home() {
             {i18n.get('dailyMode')}
           </div>}
         </div>
-        <div><span className={`title`}>{i18n.get('title')}</span></div>
+        <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
         <div>{i18n.get('titleDesc')}
           <div className="tooltip" mdui-dialog="{target: '#exampleNoTitle'}">小刻猜猜团
           </div>
@@ -164,11 +169,7 @@ export default function Home() {
         <div className="titlePanel">
           {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
           <br/>
-          <div className="tooltip" onClick={() => {
-            changeModalInfo({
-              "message": <Help updateDate={updateDate}/>, "width": '80%'
-            })
-          }}>🍪{i18n.get('help')}
+          <div className="tooltip" onClick={openHelp}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
             changeModalInfo({"message": <History/>, "width": '80%'})
@@ -219,7 +220,7 @@ export default function Home() {
             </a>
         </div>
         }
-        {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
+        {modal && <Modal modal={modal} visible onClose={() => {changeModalInfo(null)}}/>}
       </div>
     </div>
   )
