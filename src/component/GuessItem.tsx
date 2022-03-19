@@ -17,7 +17,7 @@ const GuessItem = ({data, changeModalInfo}: { data: any[], changeModalInfo: (mod
             return <div className='column' key={key}>
               <div className="tooltip" onClick={() => {
                 changeModalInfo({
-                  title: '干员信息',
+                  title: i18n.get('info'),
                   message: <div>
                     <div><strong>{i18n.get('chartsName')}:</strong>{name}</div>
                     <div><strong>{i18n.get('rarity')}:</strong>{1 + rarity}</div>

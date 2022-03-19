@@ -2,6 +2,7 @@ const dict: { [key: string]: string } = {
   lang_code: 'JP',
   cancel:'CANCLE',
   contributors:'Contributors',
+  info:' ',
   yes:'yes',
   no:'no',
   title: "アクナイキャラ当て",

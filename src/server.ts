@@ -36,8 +36,8 @@ const guess = (inputItem, answer) => {
   })
   return res
 }
-const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
-// const host = 'http://akapi.saki.cc/'
+// const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
+const host = '//akapi.saki.cc/'
 const getDailyData = (lang: string) => {
   const oldData = localStorageGet(lang, 'dailyData');
   if (oldData) {

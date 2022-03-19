@@ -2,6 +2,7 @@ const dict: { [key: string]: string } = {
   lang_code: 'US',
   cancel:'CANCLE',
   contributors:'Contributors',
+  info:' ',
   yes:'yes',
   no:'no',
   title: "Arknights Wordle",

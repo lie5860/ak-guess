@@ -6,7 +6,7 @@ const Dicts: { [key: string]: () => Promise<any> } = {
 }
 const labelDict = {
   zh_CN: 'CN',
-  en_US: 'US',
+  en_US: 'EN',
   ja_JP: 'JP',
   ko_KR: 'KR',
 }

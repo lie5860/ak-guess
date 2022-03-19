@@ -2,6 +2,7 @@ const dict: { [key: string]: string } = {
   lang_code: 'CN',
   cancel:'关闭',
   contributors:'贡献者',
+  info:'干员信息',
   yes:'是',
   no:'否',
   title: "干员猜猜乐",
