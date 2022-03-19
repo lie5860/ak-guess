@@ -22,7 +22,7 @@ const ContributorItem = (props: { user: User }) => {
     srcList: [avatar],
   })
   return <span className="mdui-list-item mdui-ripple user-item" onClick={() => {
-    homeUrl && window.open(homeUrl)
+    homeUrl &&(location.href = homeUrl)
   }}>
     <div className="mdui-list-item-avatar"><img src={src}/></div>
       <div className="mdui-list-item-content">

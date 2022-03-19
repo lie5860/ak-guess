@@ -1,6 +1,6 @@
 import {DAILY_MODE, defaultTryTimes, MAIN_KEY, TYPES, VAL_DICT} from "../const";
 
-const shareTextCreator = (data: any[], mode: string, today: string, showName: string, title: string, host: string) => {
+const shareTextCreator = (data: any[], mode: string, today: string, showName: boolean, title: string, host: string) => {
   let text = `${title} `;
   if (mode === DAILY_MODE) {
     text += today + ' ';

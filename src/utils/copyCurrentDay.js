@@ -1,4 +1,7 @@
-export default function copyCurrentDay(text, alert, copySuccessTip) {
+export default function copyCurrentDay(text, copySuccessTip) {
+    const alert = message => window.mdui.snackbar({
+        message
+    });
     var success = copySuccessTip;
 
     if (window.clipboardData && window.clipboardData.setData) {

@@ -6,7 +6,7 @@ import {AppCtx} from '../locales/AppCtx';
 import {localStorageGet, localStorageSet} from "../locales/I18nWrap";
 
 const loadRecordData = (lang: string) => {
-  let record = localStorageGet(lang, "record");
+  let record: any = localStorageGet(lang, "record");
   if (record) {
     record = JSON.parse(record);
   } else {
@@ -28,15 +28,14 @@ const loadRecordData = (lang: string) => {
   return record;
 }
 
-const saveRecordData = (lang: string, record) => {
+const saveRecordData = (lang: string, record: any) => {
   localStorageSet(lang, "record", JSON.stringify(record));
 }
 
 const History = () => {
-  const setMsg = window.mdui.alert;
   const {i18n} = React.useContext(AppCtx);
   const record = loadRecordData(i18n.language);
-  const getShareHistoryText = (mode) => {
+  const getShareHistoryText = (mode: string) => {
     const title = mode === DAILY_MODE ? i18n.get('dailyMode') : i18n.get('randomMode');
     const playTimes = (mode === DAILY_MODE ? record?.dailyPlayTimes : record?.playTimes);
     const winTimes = (mode === DAILY_MODE ? record?.dailyWinTimes : record?.winTimes);
@@ -57,7 +56,7 @@ const History = () => {
   return <>
     <p className={'flex-center'}>
       <ShareIcon onClick={() => {
-        copyCurrentDay(getShareHistoryText('random'), setMsg, i18n.get('copySuccess'))
+        copyCurrentDay(getShareHistoryText('random'), i18n.get('copySuccess'))
       }}/>
       <span className='title'>
         {i18n.get('randomMode')}
@@ -74,7 +73,7 @@ const History = () => {
     <hr/>
     <p className={'flex-center'}>
       <ShareIcon onClick={() => {
-        copyCurrentDay(getShareHistoryText(DAILY_MODE), setMsg, i18n.get('copySuccess'))
+        copyCurrentDay(getShareHistoryText(DAILY_MODE), i18n.get('copySuccess'))
       }}/>
       <span className='title'>
         {i18n.get('dailyMode')}

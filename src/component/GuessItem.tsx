@@ -2,7 +2,7 @@ import {MAIN_KEY, TYPES} from "../const";
 import {React} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
-const GuessItem = ({data}: { data: any[] }) => {
+const GuessItem = ({data, changeModalInfo}: { data: any[], changeModalInfo: (modal: any) => void }) => {
   const {i18n} = React.useContext(AppCtx)
   return <div className={'guesses'}>
     <div className="row">
@@ -16,17 +16,18 @@ const GuessItem = ({data}: { data: any[] }) => {
             const {name, rarity, team, className, race, painter} = v.guess
             return <div className='column' key={key}>
               <div className="tooltip" onClick={() => {
-                const content = `
-                    <div>
-                    <div><strong>${i18n.get('chartsName')}:</strong>${name}</div>
-                    <div><strong>${i18n.get('rarity')}:</strong>${1 + rarity}</div>
-                    <div><strong>${i18n.get('camp')}:</strong>${team?.join(' ')}</div>
-                    <div><strong>${i18n.get('className')}:</strong>${className?.join('-')}</div>
-                    <div><strong>${i18n.get('race')}:</strong>${race}</div>
-                    <div><strong>${i18n.get('painter')}:</strong>${painter}</div>
-                  </div>
-                `
-                window.mdui.alert(content)
+                changeModalInfo({
+                  title: '干员信息',
+                  message: <div>
+                    <div><strong>{i18n.get('chartsName')}:</strong>{name}</div>
+                    <div><strong>{i18n.get('rarity')}:</strong>{1 + rarity}</div>
+                    <div><strong>{i18n.get('camp')}:</strong>{team?.join(' ')}</div>
+                    <div><strong>{i18n.get('className')}:</strong>{className?.join('-')}</div>
+                    <div><strong>{i18n.get('race')}:</strong>{race}</div>
+                    <div><strong>{i18n.get('painter')}:</strong>{painter}</div>
+                  </div>,
+                  useCloseIcon: true
+                })
               }}>
                 {v.guess?.[MAIN_KEY]}
               </div>

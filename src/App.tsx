@@ -40,7 +40,7 @@ export default function Home() {
     changeModalInfo({
       "message": <Help updateDate={updateDate} firstOpen/>,
       "title": i18n.get('helpTitle'),
-      useCloseIcon:true
+      useCloseIcon: true
     })
   }
   React.useEffect(() => {
@@ -62,8 +62,10 @@ export default function Home() {
     game.init()
   }, [mode])
   const {answer, data, setData} = game;
-  const showModal = (msg: string) => {
-    window.mdui.alert(msg)
+  const showModal = (message: string) => {
+    window.mdui.snackbar({
+      message
+    });
   }
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
   const isOver = data.length >= defaultTryTimes || isWin || (mode === RANDOM_MODE && isGiveUp)
@@ -73,10 +75,10 @@ export default function Home() {
       content: i18n.get("giveUpConfirm"),
       buttons: [
         {
-          text: 'no'
+          text: i18n.get('no')
         },
         {
-          text: 'yes',
+          text: i18n.get('yes'),
           onClick: function () {
             let record = loadRecordData();
             record.straightWins = 0;
@@ -154,16 +156,13 @@ export default function Home() {
         </div>
         <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
         <div>{i18n.get('titleDesc')}
-          <div className="tooltip" mdui-dialog="{target: '#exampleNoTitle'}">小刻猜猜团
-          </div>
-          <div className="mdui-dialog" id="exampleNoTitle">
-            <div className="mdui-dialog-title">贡献者</div>
-            <div className="mdui-dialog-content">
-              {CONTRIBUTORS.map((data, index) => <ContributorList key={index} {...data}/>)}
-            </div>
-            <div className="mdui-dialog-actions">
-              <button className="mdui-btn mdui-ripple" mdui-dialog-close={''}>cancel</button>
-            </div>
+          <div className="tooltip" onClick={() => {
+            changeModalInfo({
+              title: '贡献者',
+              message: CONTRIBUTORS.map((data, index) => <ContributorList key={index} {...data}/>),
+              useCloseIcon: true
+            })
+          }}>小刻猜猜团
           </div>
         </div>
         <div className="titlePanel">
@@ -172,7 +171,7 @@ export default function Home() {
           <div className="tooltip" onClick={openHelp}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
-            changeModalInfo({"message": <History/>, "width": '80%'})
+            changeModalInfo({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})
           }}>🔎{i18n.get('report')}
           </div>
           <div className="tooltip" onClick={() => {
@@ -191,7 +190,7 @@ export default function Home() {
               }
             }}/>
           </div>
-          <input className="guess_input" type="submit" value={i18n.get('submit')}/>
+          <button className="mdui-btn mdui-btn-raised mdui-ripple guess_input">{i18n.get('submit')}</button>
         </form>
         {!!isOver &&
         <div
@@ -209,18 +208,20 @@ export default function Home() {
         }
         {!!data?.length && <div className={'share-body'}>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title'), i18n.get('host')), showModal, i18n.get('copySuccess'))
+              copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title'), i18n.get('host')), i18n.get('copySuccess'))
             }}>
                 <ShareIcon/>{i18n.get('shareTip1')}
             </a>
             <a className={'togglec'} onClick={() => {
-              copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title'), i18n.get('host')), showModal, i18n.get('copySuccess'))
+              copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title'), i18n.get('host')), i18n.get('copySuccess'))
             }} style={{marginLeft: 20}}>
                 <ShareIcon/>{i18n.get('shareTip2')}
             </a>
         </div>
         }
-        {modal && <Modal modal={modal} visible onClose={() => {changeModalInfo(null)}}/>}
+        {modal && <Modal modal={modal} onClose={() => {
+          changeModalInfo(null)
+        }}/>}
       </div>
     </div>
   )
