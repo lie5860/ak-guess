@@ -19,7 +19,7 @@ export default defineConfig(({command, mode}) => {
   return {
     plugins: [react(),
       ...plugins],
-    base: command === 'serve' ? '/' : '//ak-guess.oss-cn-hangzhou.aliyuncs.com/ak2',
+    base: command === 'serve' ? '/' : '//ak-guess.oss-cn-hangzhou.aliyuncs.com/i18n',
     build: {
       assetsInlineLimit: 0,
     }

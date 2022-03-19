@@ -1,6 +1,7 @@
 const dict: { [key: string]: string } = {
   lang_code: 'US',
   cancel:'CANCLE',
+  contributors:'Contributors',
   yes:'yes',
   no:'no',
   title: "Arknights Wordle",
@@ -52,6 +53,5 @@ const dict: { [key: string]: string } = {
   helpNum: 'There are {num} operators (including Alternative)',
   helpFirstOpen: '',
   questionnaireUrl: 'https://forms.gle/5KvTEfTEzUxWmnUf8',
-  host: 'http://akg_en.saki.cc'
 }
 export default dict

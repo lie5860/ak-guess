@@ -4,6 +4,7 @@ import copyCurrentDay from "../utils/copyCurrentDay";
 import {DAILY_MODE} from "../const";
 import {AppCtx} from '../locales/AppCtx';
 import {localStorageGet, localStorageSet} from "../locales/I18nWrap";
+import {hostDict} from "../locales";
 
 const loadRecordData = (lang: string) => {
   let record: any = localStorageGet(lang, "record");
@@ -50,7 +51,7 @@ const History = () => {
     text += i18n.get('straightWins') + straightWins + `\n`
     text += i18n.get('maxStraightWins') + maxStraightWins + `\n`
     text += i18n.get('avgWinTimes') + avgTryTimes + i18n.get('avgWinTimesDesc') + `\n`
-    text += i18n.get('host')
+    text += hostDict[i18n.language]
     return text;
   }
   return <>

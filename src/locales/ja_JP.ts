@@ -1,6 +1,7 @@
 const dict: { [key: string]: string } = {
   lang_code: 'JP',
   cancel:'CANCLE',
+  contributors:'Contributors',
   yes:'yes',
   no:'no',
   title: "アクナイキャラ当て",
@@ -52,6 +53,5 @@ const dict: { [key: string]: string } = {
   helpNum: '現在オペ計{num}名（異格・昇変含む）',
   helpFirstOpen: 'なかなか覚えない時は？<br/><strong style="color:rgb(255, 204, 76)">けーちゃん教室</strong>いつでも入れますよ！',
   questionnaireUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScPuKxQ1yBUwZzBSDoip0946dPUxdQjXLTdO1oTw77Yf7Kxbg/viewform',
-  host: 'http://akg_ja.saki.cc'
 }
 export default dict;

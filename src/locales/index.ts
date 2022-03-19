@@ -10,10 +10,10 @@ const labelDict = {
   ja_JP: 'JP',
   ko_KR: 'KR',
 }
-const hostDict = {
-  zh_CN: 'http://akg_zh.saki.cc/',
-  en_US: 'http://akg_en.saki.cc',
-  ja_JP: 'http://akg_ja.saki.cc',
+const hostDict: { [key: string]: string } = {
+  zh_CN: 'http://zh.akg.saki.cc',
+  en_US: 'http://en.akg.saki.cc',
+  ja_JP: 'http://ja.akg.saki.cc',
   // kr 还没有
   ko_KR: '',
 }
