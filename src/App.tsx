@@ -21,7 +21,6 @@ export default function Home() {
   const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState(RANDOM_MODE)
-  const [msg, setMsg] = React.useState("")
   const [modal, changeModalInfo] = React.useState()
   const [randomAnswerKey, setRandomAnswerKey] = React.useState(Math.floor(Math.random() * chartsData.length))
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
@@ -65,16 +64,26 @@ export default function Home() {
   const isOver = data.length >= defaultTryTimes || isWin || (mode === RANDOM_MODE && isGiveUp)
 
   const giveUp = () => {
-    let result = confirm(i18n.get("giveUpConfirm"));
-    if (result) {
-      let record = loadRecordData();
-      record.straightWins = 0;
-      record.playTimes += 1;
-      record.totalTryTimes += data.length;
-      saveRecordData(record);
-      setGiveUp(true);
-      localStorageSet(i18n.language, 'giveUp', 'true')
-    }
+    window.mdui.dialog({
+      content: i18n.get("giveUpConfirm"),
+      buttons: [
+        {
+          text: 'no'
+        },
+        {
+          text: 'yes',
+          onClick: function () {
+            let record = loadRecordData();
+            record.straightWins = 0;
+            record.playTimes += 1;
+            record.totalTryTimes += data.length;
+            saveRecordData(record);
+            setGiveUp(true);
+            localStorageSet(i18n.language, 'giveUp', 'true')
+          }
+        }
+      ]
+    });
   }
 
   const onSubmit = (e) => {
@@ -211,9 +220,6 @@ export default function Home() {
         </div>
         }
         {modal && <Modal modal={modal} showCloseIcon onClose={() => changeModalInfo(null)}/>}
-        {msg && <Modal onClose={() => {
-          setMsg('')
-        }} msg={msg}/>}
       </div>
     </div>
   )

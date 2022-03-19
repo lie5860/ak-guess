@@ -36,24 +36,9 @@ export const CONTRIBUTORS = [
       },
       {
         name: 'YOYO',
-        homeUrl: 'emmmm',
-        avatar: 'emmmm',
-        tip: 'Whislash\'s pet'
-      },
-      {
-        name: 'test',
-        homeUrl: 'test',
-        avatar: 'test'
-      },
-      {
-        name: 'test',
-        homeUrl: 'test',
-        avatar: 'test'
-      },
-      {
-        name: 'test',
-        homeUrl: 'test',
-        avatar: 'test'
+        homeUrl: 'https://github.com/lindsayee',
+        avatar: 'https://avatars.githubusercontent.com/u/4250090',
+        tip: 'LOVE WHISLASH'
       },
     ]
   },
@@ -62,20 +47,28 @@ export const CONTRIBUTORS = [
     title: 'Translators',
     userList: [
       {
-        name: 'test',
-        homeUrl: 'test',
-        avatar: 'test',
-        tip: 'ENG JPN'
+        name: '圈',
+        homeUrl: 'https://twitter.com/mirukudonatu',
+        avatar: 'http://akguess.saki.cc/images/translator_mirukudonatu.jpg',
+        tip: 'JPN'
       },
       {
-        name: 'test',
-        homeUrl: 'test',
-        avatar: 'test'
+        name: 'Petris',
+        homeUrl: 'https://twitter.com/PetrisWhite',
+        avatar: 'http://akguess.saki.cc/images/translator_petris.jpg',
+        tip: 'ENG'
       },
       {
-        name: 'test',
-        homeUrl: 'test',
-        avatar: 'test'
+        name: 'shana1224',
+        homeUrl: 'https://twitter.com/hasaki1224',
+        avatar: 'http://akguess.saki.cc/images/translator_shana1224.jpg',
+        tip: 'JPN'
+      },
+      {
+        name: 'Tamamo Tomato',
+        homeUrl: 'https://twitter.com/Tamamo35638628',
+        avatar: 'http://akguess.saki.cc/images/translator_tamato.jpg',
+        tip: 'ENG'
       },
     ]
   }
