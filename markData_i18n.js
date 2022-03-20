@@ -33,6 +33,11 @@ function mkdir(filePath) {
     fs.writeFileSync(filePath, '')
 }
 
+function convertText(str) {
+    // 统一把平假名转换成片假名
+    return str.replace(/べ/g,'ベ');
+}
+
 const writeJsonByLangAndName = async (language, jsonName) => {
     const res = await getGameDataByLangAndName(language, jsonName);
     const file = path.resolve(__dirname, `./data/${language}/${jsonName}.json`)
@@ -125,6 +130,7 @@ const main = async () => {
         if (raceIdx >= 0) {
             let race = storyText.substring(raceIdx + raceStr.length).trim();
             race = race.substring(0, race.indexOf("\n")).trim();
+            race = convertText(race);
             chapter.race = race.split("/");
         }
         return chapter;
