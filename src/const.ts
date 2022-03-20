@@ -35,6 +35,12 @@ export const CONTRIBUTORS = [
         avatar: '//avatars.githubusercontent.com/u/4250090',
         tip: 'LOVE WHISLASH'
       },
+      {
+        name: 'Rain',
+        homeUrl: 'https://github.com/yukanana',
+        avatar: '//avatars.githubusercontent.com/u/10300433',
+        tip: 'QA'
+      },
     ]
   },
   {
@@ -63,6 +69,11 @@ export const CONTRIBUTORS = [
         name: 'Tamamo Tomato',
         homeUrl: 'https://twitter.com/Tamamo35638628',
         avatar: '//akguess.saki.cc/images/translator_tamato.jpg',
+        tip: 'ENG'
+      },
+      {
+        name: 'lucaslucaslucaslu',
+        avatar: '//akguess.saki.cc/images/translator_lucaslucaslucaslu.jpg',
         tip: 'ENG'
       },
     ]
