@@ -36,9 +36,9 @@ export default function Home() {
     setDayData, remoteAnswerKey, dayData, today
   }
   const game = getGame(store)
-  const openHelp = () => {
+  const openHelp = (firstOpen = false) => {
     changeModalInfo({
-      "message": <Help updateDate={updateDate} firstOpen/>,
+      "message": <Help updateDate={updateDate} firstOpen={firstOpen}/>,
       "title": i18n.get('helpTitle'),
       useCloseIcon: true
     })
@@ -50,7 +50,7 @@ export default function Home() {
     })
     if (!localStorageGet(i18n.language, 'firstOpen')) {
       localStorageSet(i18n.language, 'firstOpen', 'yes');
-      openHelp()
+      openHelp(true)
     }
     autocomplete(inputRef.current, chartNames, chartsData, aliasData);
     const giveUp = localStorageGet(i18n.language, "giveUp")
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="titlePanel">
           {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
           <br/>
-          <div className="tooltip" onClick={openHelp}>🍪{i18n.get('help')}
+          <div className="tooltip" onClick={()=>openHelp()}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
             changeModalInfo({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})

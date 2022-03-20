@@ -5,7 +5,7 @@ const Modal = ({modal, onClose}: { modal: any, onClose: () => any }) => {
   const {i18n} = React.useContext(AppCtx)
   const [inst, setInst] = React.useState(null);
   React.useEffect(() => {
-    const inst = new window.mdui.Dialog('#modal233')
+    const inst = new window.mdui.Dialog('#modal233', {overlay: false})
     setInst(inst)
     inst.open()
     document.querySelector('#modal233')?.addEventListener('closed.mdui.dialog', onClose)
