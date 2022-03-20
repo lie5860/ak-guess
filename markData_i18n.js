@@ -35,7 +35,7 @@ function mkdir(filePath) {
 
 function convertText(str) {
     // 统一把平假名转换成片假名
-    return str.replace(/べ/g,'ベ');
+    return str.replace(/べ/g,'ベ').replace(/へ/g,'ヘ').replace(/ぺ/g,'ペ');
 }
 
 const writeJsonByLangAndName = async (language, jsonName) => {
