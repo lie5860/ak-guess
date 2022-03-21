@@ -2,7 +2,7 @@ import {defaultTryTimes, updateData} from "../const";
 import {AppCtx} from '../locales/AppCtx';
 import {React} from "../global";
 
-const Help = ({updateDate = 'emmm', firstOpen = false}) => {
+const Help = ({updateDate = '', firstOpen = false}) => {
   const {i18n, chartsData} = React.useContext(AppCtx);
   return <>
     <p>{i18n.get('helpDesc', {times: defaultTryTimes})}
@@ -33,7 +33,9 @@ const Help = ({updateDate = 'emmm', firstOpen = false}) => {
       {firstOpen && i18n.get('helpFirstOpen') !== 'helpFirstOpen' && <>{i18n.get('helpFirstOpen', null, true)}
           <hr/>
       </>}
-      {i18n.get('helpDataSource')}<br/>{i18n.get('helpUpdateTime', {updateDate: updateDate})}<br/>{i18n.get('helpNum', {num: chartsData.length})}
+      {i18n.get('helpDataSource')}
+      {updateDate && <><br/>{i18n.get('helpUpdateTime', {updateDate: updateDate})}</>}
+      <br/>{i18n.get('helpNum', {num: chartsData.length})}
     </p>
   </>
 }

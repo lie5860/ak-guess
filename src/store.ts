@@ -12,21 +12,22 @@ export const getGame = (store: any) => {
   }
   return gameDict[mode](store)
 }
+// game 需要暴露存储数据的key
 const randomGame = (store: any) => {
   const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, chartsData, lang} = store
   return {
     init: () => {
-      const randomData = localStorageGet(lang, 'randomData')
+      const randomData = localStorageGet(lang, 'r-randomData')
       if (randomData) {
         setRandomData(JSON.parse(randomData))
-        setRandomAnswerKey(Number(localStorageGet(lang, 'randomAnswerKey')))
+        setRandomAnswerKey(Number(localStorageGet(lang, 'r-randomAnswerKey')))
       }
     },
     answer: chartsData[randomAnswerKey],
     data: randomData,
     setData: (v: any[], isGiveUp: boolean) => {
-      localStorageSet(lang, 'randomData', JSON.stringify(v))
-      localStorageSet(lang, 'randomAnswerKey', `${randomAnswerKey}`)
+      localStorageSet(lang, 'r-randomData', JSON.stringify(v))
+      localStorageSet(lang, 'r-randomAnswerKey', `${randomAnswerKey}`)
       localStorageSet(lang, 'giveUp', `${isGiveUp}`)
       setRandomData(v)
     },
