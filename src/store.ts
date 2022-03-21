@@ -3,6 +3,7 @@ import {moment} from "./global";
 import {DAILY_MODE, RANDOM_MODE} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
+import {guess} from "./server";
 
 export const getGame = (store: any) => {
   const {mode} = store
@@ -19,8 +20,17 @@ const randomGame = (store: any) => {
     init: () => {
       const randomData = localStorageGet(lang, 'r-randomData')
       if (randomData) {
-        setRandomData(JSON.parse(randomData))
-        setRandomAnswerKey(Number(localStorageGet(lang, 'r-randomAnswerKey')))
+        let oldData = JSON.parse(randomData)
+        const answerKey = Number(localStorageGet(lang, 'r-randomAnswerKey'))
+        const answer = chartsData[answerKey]
+        try {
+          oldData = oldData.map((inputItem: any) => {
+            return guess(inputItem.guess, answer)
+          })
+        } catch (e) {
+        }
+        setRandomData(oldData)
+        setRandomAnswerKey(answerKey)
       }
     },
     answer: chartsData[randomAnswerKey],

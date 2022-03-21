@@ -8,7 +8,7 @@
     <title>ak-guess</title>
     <script>
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
+            window.addEventListener('load', function () {
                 navigator.serviceWorker.register('./sw.js')
                 let appPromptEvent = null;
                 const installBtn = document.getElementById('pwaTips');
@@ -17,7 +17,7 @@
                     installBtn.hidden = true;
                 });
                 const closepwaTips = document.getElementById('closepwaTips');
-                closepwaTips.addEventListener('click', (event) => {
+                closepwaTips.addEventListener('click', function (event) {
                     event.preventDefault();
                     event.stopPropagation()
                     localStorage.setItem('close-pwa', '1')
@@ -49,8 +49,8 @@
 
         }
     </script>
-    <link rel="stylesheet" href="//cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" />
+    <link rel="stylesheet" href="//cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
     <script src="//cdn.bootcdn.net/ajax/libs/mdui/1.0.2/js/mdui.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 </head>
