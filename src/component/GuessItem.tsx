@@ -21,7 +21,7 @@ const GuessItem = ({data, changeModalInfo}: { data: any[], changeModalInfo: (mod
                   message: <div>
                     <div><strong>{i18n.get('chartsName')}:</strong>{name}</div>
                     <div><strong>{i18n.get('rarity')}:</strong>{1 + rarity}</div>
-                    <div><strong>{i18n.get('camp')}:</strong>{team?.join(' ')}</div>
+                    <div><strong>{i18n.get('camp')}:</strong>{team?.join(',')}</div>
                     <div><strong>{i18n.get('className')}:</strong>{className?.join('-')}</div>
                     <div><strong>{i18n.get('race')}:</strong>{race}</div>
                     <div><strong>{i18n.get('painter')}:</strong>{painter}</div>

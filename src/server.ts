@@ -77,26 +77,26 @@ interface OptLabel {
 }
 
 const dailyGameInit = (server: string, optLabel: OptLabel) => {
-  reportData(`daily_game|${server}`, 'init', JSON.stringify(optLabel))
+  reportData(`daily|${server}`, 'init', JSON.stringify(optLabel))
 }
 const dailyGameWin = (server: string, optLabel: OptLabel, times: number) => {
-  reportData(`daily_game|${server}`, 'win', JSON.stringify(optLabel), times)
+  reportData(`daily|${server}`, 'win', JSON.stringify(optLabel), times)
 }
 const dailyGameLose = (server: string, optLabel: OptLabel) => {
-  reportData(`daily_game|${server}`, 'lose', JSON.stringify(optLabel))
+  reportData(`daily|${server}`, 'lose', JSON.stringify(optLabel))
 }
 
 const randomGameInit = (server: string, optLabel: OptLabel) => {
-  reportData(`random_game|${server}`, 'init', JSON.stringify(optLabel))
+  reportData(`random|${server}`, 'init', JSON.stringify(optLabel))
 }
 const randomGameWin = (server: string, optLabel: OptLabel, times: number) => {
-  reportData(`random_game|${server}`, 'win', JSON.stringify(optLabel), times)
+  reportData(`random|${server}`, 'win', JSON.stringify(optLabel), times)
 }
 const randomGameLose = (server: string, optLabel: OptLabel) => {
-  reportData(`random_game|${server}`, 'lose', JSON.stringify(optLabel))
+  reportData(`random|${server}`, 'lose', JSON.stringify(optLabel))
 }
 const randomGameGiveUp = (server: string, optLabel: OptLabel) => {
-  reportData(`random_game|${server}`, 'giveUp', JSON.stringify(optLabel))
+  reportData(`random|${server}`, 'giveUp', JSON.stringify(optLabel))
 }
 export {
   getDailyData,

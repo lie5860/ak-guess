@@ -115,7 +115,7 @@ const main = async () => {
         if (v.nationId !== null) {
             tempTeam.push(team[v.nationId].powerName);
         }
-        chapter.team = [...new Set(tempTeam.join('-').split('-').filter(v => v))];
+        chapter.team = [...new Set(tempTeam.join('-').replace('−','-').split('-').filter(v => v))];
         if (isPatch) {
             chapter.name += "(" + profession[v.profession] + ")";
             k = patchDefault[k];

@@ -81,7 +81,7 @@ export default function Home() {
         {
           text: i18n.get('yes'),
           onClick: function () {
-            randomGameGiveUp(i18n.language, {answer})
+            randomGameGiveUp(i18n.language, {answer: randomAnswerKey})
             let record = loadRecordData(i18n.language);
             record.straightWins = 0;
             record.playTimes += 1;
