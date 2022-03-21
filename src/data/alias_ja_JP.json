@@ -66,5 +66,13 @@
   {
     "regexp": "盟友",
     "values": ["シルバーアッシュ"]
+  },
+  {
+    "regexp": "CHEN",
+    "values": ["チェン","遊龍チェン"]
+  },
+  {
+    "regexp": "KALTSIT|MON(.*)|M3",
+    "values": ["ケルシー"]
   }
 ]
