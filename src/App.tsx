@@ -80,11 +80,11 @@ export default function Home() {
         {
           text: i18n.get('yes'),
           onClick: function () {
-            let record = loadRecordData();
+            let record = loadRecordData(i18n.language);
             record.straightWins = 0;
             record.playTimes += 1;
             record.totalTryTimes += data.length;
-            saveRecordData(record);
+            saveRecordData(i18n.language, record);
             setGiveUp(true);
             localStorageSet(i18n.language, 'giveUp', 'true')
           }
