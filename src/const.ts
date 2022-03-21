@@ -9,6 +9,15 @@ export const TYPES = [
   {label: '画师', i18nKey: 'painter', key: 'painter', type: 'string'},
   {label: '干员', i18nKey: 'chartsName', key: 'guess'},
 ]
+const DARK_THEME = 'dark'
+const LIGHT_THEME = 'light'
+const AUTO_THEME = 'auto'
+export const DEFAULT_THEME = DARK_THEME;
+export const THEME_DICT: { [key: string]: string } = {
+  [LIGHT_THEME]: '浅色',
+  [DARK_THEME]: '深色',
+  [AUTO_THEME]: '跟随系统',
+}
 export const VAL_DICT: { [key: string]: string } = {
   'correct': '🟩',
   'wrong': '🟥',

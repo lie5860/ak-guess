@@ -1,6 +1,6 @@
 import autocomplete from './utils/autocomplete'
 import {moment, React} from './global'
-import {CONTRIBUTORS, DAILY_MODE, defaultTryTimes, MAIN_KEY, RANDOM_MODE} from "./const";
+import {CONTRIBUTORS, DAILY_MODE, DEFAULT_THEME, defaultTryTimes, MAIN_KEY, RANDOM_MODE, THEME_DICT} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
@@ -21,6 +21,7 @@ export default function Home() {
   const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
   const inputRef = React.useRef();
   const [mode, setMode] = React.useState(RANDOM_MODE)
+  const [displayMode, setDisplayMode] = React.useState(DEFAULT_THEME)
   const [modal, changeModalInfo] = React.useState()
   const [randomAnswerKey, setRandomAnswerKey] = React.useState(Math.floor(Math.random() * chartsData.length))
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
@@ -52,12 +53,19 @@ export default function Home() {
       localStorageSet(i18n.language, 'firstOpen', 'yes');
       openHelp(true)
     }
+    // 恢复用户设置的主题
+    if (localStorage.getItem('ak-theme')) {
+      setDisplayMode(localStorage.getItem('ak-theme'))
+    }
     autocomplete(inputRef.current, chartNames, chartsData, aliasData);
     const giveUp = localStorageGet(i18n.language, "giveUp")
     if (giveUp) {
       setGiveUp(giveUp === 'true');
     }
   }, [])
+  React.useEffect(() => {
+    document.body.className = `mdui-theme-layout-${displayMode} mdui-theme-accent-pink`
+  }, [displayMode])
   React.useEffect(() => {
     game.init()
   }, [mode])
@@ -129,16 +137,34 @@ export default function Home() {
             <span className="mini-chip-content">{labelDict[i18n.language]}</span>
           </span>
         </button>
-
         <ul id="server-menu" className="mdui-menu">
           <li className="mdui-menu-item mdui-ripple">
             {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
               return <a key={key} className="mdui-ripple pointer" onClick={() => {
                 location.href = hostDict[key]
               }}>
-                <i style={{visibility: key === i18n.language ? '' : 'hidden'}}
+                <i style={{visibility: key === i18n.language ? undefined : 'hidden'}}
                    className="mdui-menu-item-icon mdui-icon material-icons">done</i>
                 {labelDict[key]}
+              </a>
+            })}
+          </li>
+        </ul>
+        <button id="theme-menu-btn" mdui-menu="{ target: '#theme-menu', covered: false }"
+                className="appbar-btn mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+          <i className="mdui-icon material-icons">color_lens</i>
+        </button>
+
+        <ul id="theme-menu" className="mdui-menu">
+          <li className="mdui-menu-item mdui-ripple">
+            {Object.keys(THEME_DICT).map((key) => {
+              return <a key={key} className="mdui-ripple pointer" onClick={() => {
+                setDisplayMode(key)
+                localStorage.setItem('ak-theme', key)
+              }}>
+                <i style={{visibility: key === displayMode ? undefined : 'hidden'}}
+                   className="mdui-menu-item-icon mdui-icon material-icons">done</i>
+                {THEME_DICT[key]}
               </a>
             })}
           </li>
@@ -156,7 +182,7 @@ export default function Home() {
         </div>
         <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
         <div>{i18n.get('titleDesc')}
-          <div className="tooltip" onClick={() => {
+          <div className="tooltip mdui-text-color-theme-accent" onClick={() => {
             changeModalInfo({
               title: i18n.get('contributors'),
               message: CONTRIBUTORS.map((data, index) => <ContributorList key={index} {...data}/>),
@@ -168,13 +194,13 @@ export default function Home() {
         <div className="titlePanel">
           {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
           <br/>
-          <div className="tooltip" onClick={()=>openHelp()}>🍪{i18n.get('help')}
+          <div className="tooltip mdui-text-color-theme-accent" onClick={() => openHelp()}>🍪{i18n.get('help')}
           </div>
-          <div className="tooltip" onClick={() => {
+          <div className="tooltip mdui-text-color-theme-accent" onClick={() => {
             changeModalInfo({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})
           }}>🔎{i18n.get('report')}
           </div>
-          <div className="tooltip" onClick={() => {
+          <div className="tooltip mdui-text-color-theme-accent" onClick={() => {
             window.open(i18n.get('questionnaireUrl'))
           }}>💬{i18n.get('feedback')}
           </div>
@@ -196,27 +222,25 @@ export default function Home() {
         <div
             className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
         </div>}
-        {mode !== DAILY_MODE && !!isOver && <a className={'togglec'} onClick={() => {
+        {mode !== DAILY_MODE && !!isOver &&
+        <button className="mdui-btn mdui-btn-raised  mdui-color-theme-accent" onClick={() => {
           setGiveUp(false);
           setData([], false)
           setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
-        }}>▶️ {i18n.get('newGameTip')}</a>
+        }}>▶️ {i18n.get('newGameTip')}</button>
         }
-        {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
+        {mode !== DAILY_MODE && !isOver && data?.length > 0 &&
+        <button className="mdui-btn mdui-btn-raised  mdui-color-theme-accent" onClick={() => {
           giveUp()
-        }}>🆘 {i18n.get('giveUpTip')}</a>
+        }}><ShareIcon/>{i18n.get('giveUpTip')}</button>
         }
         {!!data?.length && <div className={'share-body'}>
-            <a className={'togglec'} onClick={() => {
+            <button className="mdui-btn mdui-btn-raised  mdui-color-theme-accent" onClick={() => {
               copyCurrentDay(shareTextCreator(data, mode, today, false, i18n.get('title'), hostDict[i18n.language]), i18n.get('copySuccess'))
-            }}>
-                <ShareIcon/>{i18n.get('shareTip1')}
-            </a>
-            <a className={'togglec'} onClick={() => {
+            }}><ShareIcon/>{i18n.get('shareTip1')}</button>
+            <button className="mdui-btn mdui-btn-raised  mdui-color-theme-accent" onClick={() => {
               copyCurrentDay(shareTextCreator(data, mode, today, true, i18n.get('title'), hostDict[i18n.language]), i18n.get('copySuccess'))
-            }} style={{marginLeft: 20}}>
-                <ShareIcon/>{i18n.get('shareTip2')}
-            </a>
+            }} style={{marginLeft: 20}}><ShareIcon/>{i18n.get('shareTip2')}</button>
         </div>
         }
         {modal && <Modal modal={modal} onClose={() => {

@@ -15,7 +15,7 @@ const GuessItem = ({data, changeModalInfo}: { data: any[], changeModalInfo: (mod
           if (key === 'guess') {
             const {name, rarity, team, className, race, painter} = v.guess
             return <div className='column' key={key}>
-              <div className="tooltip" onClick={() => {
+              <div className="tooltip mdui-text-color-theme-accent" onClick={() => {
                 changeModalInfo({
                   title: i18n.get('info'),
                   message: <div>
