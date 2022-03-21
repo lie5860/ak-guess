@@ -1,16 +1,16 @@
-import {React} from "../global";
+import {React, ReactDom} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
 const Modal = ({modal, onClose}: { modal: any, onClose: () => any }) => {
   const {i18n} = React.useContext(AppCtx)
   const [inst, setInst] = React.useState(null);
   React.useEffect(() => {
-    const inst = new window.mdui.Dialog('#modal233', {overlay: false})
+    const inst = new window.mdui.Dialog('#modal233')
     setInst(inst)
     inst.open()
     document.querySelector('#modal233')?.addEventListener('closed.mdui.dialog', onClose)
   }, [])
-  return <div className="mdui-dialog" id="modal233">
+  return ReactDom.createPortal(<div className="mdui-dialog" id="modal233">
     {modal.useCloseIcon &&
     <div className={'close-icon'} onClick={() => inst?.close()}><i className="mdui-icon material-icons">&#xe5cd;</i>
     </div>}
@@ -19,6 +19,6 @@ const Modal = ({modal, onClose}: { modal: any, onClose: () => any }) => {
     {!modal.useCloseIcon && <div className="mdui-dialog-actions">
         <button className="mdui-btn mdui-ripple" onClick={() => inst?.close()}>{i18n.get('cancel')}</button>
     </div>}
-  </div>;
+  </div>, document.body);
 }
 export default Modal;

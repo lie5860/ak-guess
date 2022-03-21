@@ -41,7 +41,7 @@ export const I18nWrap = (props: any) => {
         let res = languageDict?.[key] || key
         if (props) {
           Object.keys(props).forEach(key => {
-            res = res.replaceAll(`{${key}}`, props[key])
+            res = res.replace(new RegExp(`{${key}}`,'g'), props[key])
           })
         }
         return hasLegacyDom ? <span dangerouslySetInnerHTML={{__html: res}}/> : res

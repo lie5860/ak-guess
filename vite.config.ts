@@ -6,13 +6,13 @@ const plugins = [];
 // 打包生产环境才引入的插件
 if (process.env.NODE_ENV === "production") {
   // 打包依赖展示
-  plugins.push(
-    visualizer({
-      open: true,
-      gzipSize: true,
-      brotliSize: true,
-    })
-  );
+  // plugins.push(
+  //   visualizer({
+  //     open: true,
+  //     gzipSize: true,
+  //     brotliSize: true,
+  //   })
+  // );
 }
 // https://vitejs.dev/config/
 export default defineConfig(({command, mode}) => {
