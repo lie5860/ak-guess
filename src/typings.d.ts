@@ -9,4 +9,5 @@ interface Window {
   React: any,
   ReactDOM: any,
   mdui: any,
+  _hmt: any,
 }

@@ -8,7 +8,7 @@ import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {loadRecordData, saveRecordData, History} from "./component/History";
-import {getDailyData, guess} from "./server";
+import {dailyGameInit, getDailyData, guess, randomGameGiveUp, randomGameInit} from "./server";
 import {AppCtx} from './locales/AppCtx';
 import {getGame} from "./store";
 import './index.less'
@@ -45,6 +45,7 @@ export default function Home() {
   }
   React.useEffect(() => {
     getDailyData(i18n.language).then(({last_date, daily}) => {
+      dailyGameInit(i18n.language, daily)
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
@@ -80,6 +81,7 @@ export default function Home() {
         {
           text: i18n.get('yes'),
           onClick: function () {
+            randomGameGiveUp(i18n.language, {answer})
             let record = loadRecordData(i18n.language);
             record.straightWins = 0;
             record.playTimes += 1;
@@ -168,7 +170,7 @@ export default function Home() {
         <div className="titlePanel">
           {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
           <br/>
-          <div className="tooltip" onClick={()=>openHelp()}>🍪{i18n.get('help')}
+          <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}
           </div>
           <div className="tooltip" onClick={() => {
             changeModalInfo({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})
@@ -196,10 +198,12 @@ export default function Home() {
         <div
             className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
         </div>}
-        {mode !== DAILY_MODE && !!isOver && <a className={'togglec'} onClick={() => {
+        {mode === RANDOM_MODE && !!isOver && <a className={'togglec'} onClick={() => {
           setGiveUp(false);
           setData([], false)
-          setRandomAnswerKey(Math.floor(Math.random() * chartsData.length))
+          const answer = Math.floor(Math.random() * chartsData.length);
+          setRandomAnswerKey(answer)
+          randomGameInit(i18n.language, {answer})
         }}>▶️ {i18n.get('newGameTip')}</a>
         }
         {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {

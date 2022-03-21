@@ -1,9 +1,9 @@
 import {moment} from "./global";
 
-import {DAILY_MODE, RANDOM_MODE} from "./const";
+import {DAILY_MODE, MAIN_KEY, RANDOM_MODE} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
-import {guess} from "./server";
+import {dailyGameLose, dailyGameWin, guess, randomGameLose, randomGameWin} from "./server";
 
 export const getGame = (store: any) => {
   const {mode} = store
@@ -44,6 +44,11 @@ const randomGame = (store: any) => {
     gameOver: (newData: any[], isWin: boolean) => {
       let record: any = loadRecordData(lang);
       if (isWin) {
+        randomGameWin(lang, {
+          answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
+            return guess?.[MAIN_KEY]
+          })
+        }, newData.length)
         record.winTryTimes += newData.length;
         record.winTimes += 1;
         record.straightWins += 1;
@@ -51,6 +56,11 @@ const randomGame = (store: any) => {
           record.maxStraightWins = record.straightWins;
         }
       } else {
+        randomGameLose(lang, {
+          answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
+            return guess?.[MAIN_KEY]
+          })
+        })
         record.straightWins = 0;
       }
       record.playTimes += 1;
@@ -84,6 +94,11 @@ const dailyGame = (store: any) => {
     gameOver: (newData: any[], isWin: boolean) => {
       let record: any = loadRecordData(lang);
       if (isWin) {
+        dailyGameWin(lang, {
+          answer: remoteAnswerKey, inputArray: newData.map(({guess}) => {
+            return guess?.[MAIN_KEY]
+          })
+        }, newData.length)
         record.dailyWinTimes += 1;
         record.dailyWinTryTimes += newData.length;
         record.dailyStraightWins += 1;
@@ -91,6 +106,11 @@ const dailyGame = (store: any) => {
           record.dailyMaxStraightWins = record.dailyStraightWins;
         }
       } else {
+        dailyGameLose(lang, {
+          answer: remoteAnswerKey, inputArray: newData.map(({guess}) => {
+            return guess?.[MAIN_KEY]
+          })
+        })
         record.dailyStraightWins = 0;
       }
       record.dailyPlayTimes += 1;

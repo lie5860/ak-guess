@@ -64,7 +64,48 @@ const getDailyData = (lang: string) => {
       alert('服务已崩溃 请联系管理员')
     })
 };
+const reportData = (category: string, action: string, opt_label?: string, opt_value?: number) => {
+  try {
+    window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
+  } catch (e) {
+  }
+}
+
+interface OptLabel {
+  answer: number;
+  inputArray?: string[];
+}
+
+const dailyGameInit = (server: string, optLabel: OptLabel) => {
+  reportData(`daily_game|${server}`, 'init', JSON.stringify(optLabel))
+}
+const dailyGameWin = (server: string, optLabel: OptLabel, times: number) => {
+  reportData(`daily_game|${server}`, 'win', JSON.stringify(optLabel), times)
+}
+const dailyGameLose = (server: string, optLabel: OptLabel) => {
+  reportData(`daily_game|${server}`, 'lose', JSON.stringify(optLabel))
+}
+
+const randomGameInit = (server: string, optLabel: OptLabel) => {
+  reportData(`random_game|${server}`, 'init', JSON.stringify(optLabel))
+}
+const randomGameWin = (server: string, optLabel: OptLabel, times: number) => {
+  reportData(`random_game|${server}`, 'win', JSON.stringify(optLabel), times)
+}
+const randomGameLose = (server: string, optLabel: OptLabel) => {
+  reportData(`random_game|${server}`, 'lose', JSON.stringify(optLabel))
+}
+const randomGameGiveUp = (server: string, optLabel: OptLabel) => {
+  reportData(`random_game|${server}`, 'giveUp', JSON.stringify(optLabel))
+}
 export {
   getDailyData,
-  guess
+  guess,
+  dailyGameInit,
+  randomGameInit,
+  randomGameWin,
+  randomGameGiveUp,
+  randomGameLose,
+  dailyGameWin,
+  dailyGameLose
 }
