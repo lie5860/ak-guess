@@ -23,12 +23,20 @@
 
 ## 版本履历
 
+### v0.2
+引入mdui作为ui库
+实现多语言
+多服务器数据脚本自动同步
+
 ### v0.1
 - 支持移动端 
 - 支持别名搜索
 - 增加了画师维度（for铃兰&安洁莉娜）
 - 支持每日挑战
 - 支持战绩
+## 贡献者
+
+![贡献者](https://github.com/lie5860/ak-guess/blob/main/image/contributors.png?raw=true)
 
 ## 内容来源及鸣谢
 - [PRTS Wiki](http://prts.wiki/)（游戏数据）
