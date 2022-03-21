@@ -7,6 +7,16 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     <title>ak-guess</title>
     <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?22b404b3f2e90c075c155f75ff26fb32";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('./sw.js')
