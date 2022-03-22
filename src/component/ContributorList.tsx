@@ -3,7 +3,7 @@ import useImage from "./react-image/useImage";
 
 interface User {
   name: string;
-  homeUrl: string;
+  homeUrl?: string;
   avatar: string;
   tip?: string;
 }

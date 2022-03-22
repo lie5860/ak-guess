@@ -3,8 +3,8 @@ import {moment} from "./global";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 const axios = window.axios;
-const guess = (inputItem, answer) => {
-  const res = {}
+const guess = (inputItem: Character, answer: Character) => {
+  const res: { guess?: Character, [key: string]: any } = {}
   TYPES.forEach(({key, type}) => {
     if (key === 'guess') {
       return res[key] = inputItem
@@ -21,7 +21,7 @@ const guess = (inputItem, answer) => {
       case 'array':
         const x = inputItem?.[key] || [];
         const y = answer?.[key] || [];
-        const eqState = (xx, yy) => {
+        const eqState = (xx: string[], yy: string[]) => {
           const x = [...new Set(xx)];
           const y = [...new Set(yy)];
           const l = new Set([...x, ...y]).size;
@@ -52,7 +52,7 @@ const getDailyData = (lang: string) => {
   }
   return axios
     .get(`${host}?server=${lang}`, {responseType: "json"})
-    .then(function (response) {
+    .then(function (response: any) {
       const res = response.data;
       localStorageSet(lang, 'dailyData', JSON.stringify({
         res,
@@ -60,7 +60,7 @@ const getDailyData = (lang: string) => {
       }));
       return response.data;
     })
-    .catch(function (error) {
+    .catch(function () {
       alert('服务已崩溃 请联系管理员')
     })
 };

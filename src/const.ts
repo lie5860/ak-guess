@@ -16,8 +16,7 @@ export const VAL_DICT: { [key: string]: string } = {
   'up': '🔼',
   'down': '🔽',
 }
-export const defaultTryTimes = 8;
-export const updateData = '2022-3-5';
+export const DEFAULT_TRY_TIMES = 8;
 
 export const CONTRIBUTORS = [
   {

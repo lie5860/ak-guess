@@ -1,11 +1,11 @@
-import {defaultTryTimes, updateData} from "../const";
+import {DEFAULT_TRY_TIMES} from "../const";
 import {AppCtx} from '../locales/AppCtx';
 import {React} from "../global";
 
 const Help = ({updateDate = '', firstOpen = false}) => {
   const {i18n, chartsData} = React.useContext(AppCtx);
   return <>
-    <p>{i18n.get('helpDesc', {times: defaultTryTimes})}
+    <p>{i18n.get('helpDesc', {times: DEFAULT_TRY_TIMES})}
       <ul className="tipList">
         <li>
           <div className="emoji correct"/>

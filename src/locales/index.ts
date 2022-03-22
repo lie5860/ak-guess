@@ -4,7 +4,7 @@ const Dicts: { [key: string]: () => Promise<any> } = {
   ja_JP: () => import(`./resource/ja_JP`),
   ko_KR: () => import(`./resource/ko_KR`),
 }
-const labelDict = {
+const labelDict: { [key: string]: string } = {
   zh_CN: 'CN',
   en_US: 'EN',
   ja_JP: 'JP',

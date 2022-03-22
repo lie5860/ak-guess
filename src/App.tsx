@@ -1,14 +1,14 @@
 import autocomplete from './utils/autocomplete'
-import {moment, React} from './global'
-import {CONTRIBUTORS, DAILY_MODE, defaultTryTimes, MAIN_KEY, RANDOM_MODE} from "./const";
 import copyCurrentDay from "./utils/copyCurrentDay";
+import {moment, React} from './global'
+import {CONTRIBUTORS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, RANDOM_MODE} from "./const";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
 import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
-import {loadRecordData, saveRecordData, History} from "./component/History";
-import {dailyGameInit, getDailyData, guess, randomGameGiveUp, randomGameInit} from "./server";
+import {History} from "./component/History";
+import {dailyGameInit, getDailyData, guess} from "./server";
 import {AppCtx} from './locales/AppCtx';
 import {getGame} from "./store";
 import './index.less'
@@ -17,6 +17,11 @@ import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 import {hostDict, labelDict} from "./locales";
 import ContributorList from "./component/ContributorList";
 
+const showModal = (message: string) => {
+  window.mdui.snackbar({
+    message
+  });
+}
 export default function Home() {
   const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
   const inputRef = React.useRef();
@@ -27,12 +32,12 @@ export default function Home() {
   const [randomData, setRandomData] = React.useState([])
   const [dayData, setDayData] = React.useState([])
   const [updateDate, setUpdateDate] = React.useState('')
-  const chartNames = React.useMemo(() => chartsData.map(v => v?.[MAIN_KEY]), [])
+  const chartNames = React.useMemo(() => chartsData.map((v: Character) => v?.[MAIN_KEY]), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const [isGiveUp, setGiveUp] = React.useState(false);
   const store = {
     mode, chartsData, lang: i18n.language,
-    setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp,
+    setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, isGiveUp, setGiveUp,
     setDayData, remoteAnswerKey, dayData, today
   }
   const game = getGame(store)
@@ -44,8 +49,8 @@ export default function Home() {
     })
   }
   React.useEffect(() => {
-    getDailyData(i18n.language).then(({last_date, daily}) => {
-      dailyGameInit(i18n.language, daily)
+    getDailyData(i18n.language).then(({last_date, daily}: { last_date: string, daily: number }) => {
+      dailyGameInit(i18n.language, {answer: daily})
       setUpdateDate(last_date)
       setRemoteAnswerKey(daily)
     })
@@ -62,16 +67,9 @@ export default function Home() {
   React.useEffect(() => {
     game.init()
   }, [mode])
-  const {answer, data, setData} = game;
-  const showModal = (message: string) => {
-    window.mdui.snackbar({
-      message
-    });
-  }
-  const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-  const isOver = data.length >= defaultTryTimes || isWin || (mode === RANDOM_MODE && isGiveUp)
+  const {answer, data, setData, preSubmitCheck, giveUp, isWin, isOver, newGame, canNewGame, canGiveUp} = game;
 
-  const giveUp = () => {
+  const confirmGiveUp = () => {
     window.mdui.dialog({
       content: i18n.get("giveUpConfirm"),
       buttons: [
@@ -81,40 +79,32 @@ export default function Home() {
         {
           text: i18n.get('yes'),
           onClick: function () {
-            randomGameGiveUp(i18n.language, {answer: randomAnswerKey})
-            let record = loadRecordData(i18n.language);
-            record.straightWins = 0;
-            record.playTimes += 1;
-            record.totalTryTimes += data.length;
-            saveRecordData(i18n.language, record);
-            setGiveUp(true);
-            localStorageSet(i18n.language, 'giveUp', 'true')
+            giveUp?.()
           }
         }
       ]
     });
   }
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.stopPropagation();
-    const error = game?.preSubmitCheck?.()
-    if (error) {
+    if (preSubmitCheck?.()) {
       return;
     }
     const inputName = inputRef.current.value?.toUpperCase();
     // 转大写感觉会存在一定的风险。 例如 Ceoceo和CeoCeo会认为是一个干员，但按照标准两个大写的词不会连着用才对
-    if (chartNames.map(v => v?.toUpperCase()).indexOf(inputName) === -1) {
+    if (chartNames.map((v: string) => v?.toUpperCase()).indexOf(inputName) === -1) {
       showModal(i18n.get('errNameTip'))
-    } else if (data.map(v => v.guess?.[MAIN_KEY]?.toUpperCase()).indexOf(inputName) !== -1) {
+    } else if (data.map((v: GuessItem) => v.guess?.[MAIN_KEY]?.toUpperCase()).indexOf(inputName) !== -1) {
       showModal(i18n.get('duplicationTip'));
     } else {
-      const inputItem = chartsData.filter(v => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
+      const inputItem = chartsData.filter((v: Character) => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
       const res = guess(inputItem, answer)
       const newData = [...data, res]
       setData(newData)
       inputRef.current.value = '';
       const isWin = newData?.[newData?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-      const isOver = newData.length >= defaultTryTimes || isWin
+      const isOver = newData.length >= DEFAULT_TRY_TIMES || isWin
       if (isOver) {
         game.gameOver(newData, isWin)
       }
@@ -138,7 +128,7 @@ export default function Home() {
               return <a key={key} className="mdui-ripple pointer" onClick={() => {
                 location.href = hostDict[key]
               }}>
-                <i style={{visibility: key === i18n.language ? '' : 'hidden'}}
+                <i style={{visibility: key === i18n.language ? undefined : 'hidden'}}
                    className="mdui-menu-item-icon mdui-icon material-icons">done</i>
                 {labelDict[key]}
               </a>
@@ -161,14 +151,14 @@ export default function Home() {
           <div className="tooltip" onClick={() => {
             changeModalInfo({
               title: i18n.get('contributors'),
-              message: CONTRIBUTORS.map((data, index) => <ContributorList key={index} {...data}/>),
+              message: CONTRIBUTORS.map((data, index) => <ContributorList key={`${index}`} {...data}/>),
               useCloseIcon: true
             })
           }}>小刻猜猜团
           </div>
         </div>
         <div className="titlePanel">
-          {i18n.get('timesTip', {times: `${defaultTryTimes - data.length}/${defaultTryTimes}`})}
+          {i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}
           <br/>
           <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}
           </div>
@@ -198,16 +188,12 @@ export default function Home() {
         <div
             className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
         </div>}
-        {mode === RANDOM_MODE && !!isOver && <a className={'togglec'} onClick={() => {
-          setGiveUp(false);
-          setData([], false)
-          const answer = Math.floor(Math.random() * chartsData.length);
-          setRandomAnswerKey(answer)
-          randomGameInit(i18n.language, {answer})
+        {canNewGame && <a className={'togglec'} onClick={() => {
+          newGame()
         }}>▶️ {i18n.get('newGameTip')}</a>
         }
-        {mode !== DAILY_MODE && !isOver && data?.length > 0 && <a className={'togglec'} onClick={() => {
-          giveUp()
+        {canGiveUp && <a className={'togglec'} onClick={() => {
+          confirmGiveUp()
         }}>🆘 {i18n.get('giveUpTip')}</a>
         }
         {!!data?.length && <div className={'share-body'}>
