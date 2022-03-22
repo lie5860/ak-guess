@@ -26,9 +26,9 @@ export const I18nWrap = (props: any) => {
     const sl = (await languages?.[lastLang]()).default
     setLanguage(lastLang)
     initI18nDict(sl)
-    const dd = (await import(`../data/dealData_${lastLang}.json`)).default
+    const dd = (await import(`../data/dealData/dealData_${lastLang}.json`)).default
     setDealData(dd)
-    const alias = (await import(`../data/alias_${lastLang}.json`)).default
+    const alias = (await import(`../data/alias/alias_${lastLang}.json`)).default
     setAliasData(alias)
     setInited(true)
 
