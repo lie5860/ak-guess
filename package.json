@@ -3,7 +3,6 @@
   "version": "0.2.1",
   "scripts": {
     "buildData": "node markData_i18n",
-    "generateSW": "workbox generateSW workbox-config.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite build && vite preview"
