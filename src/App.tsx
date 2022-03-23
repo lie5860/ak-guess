@@ -33,10 +33,9 @@ export default function Home() {
   const [updateDate, setUpdateDate] = React.useState('')
   const chartNames = React.useMemo(() => chartsData.map((v: Character) => v?.[MAIN_KEY]), [])
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
-  const store = {
-    mode, chartsData, lang: i18n.language, today
-  }
+  const store = {mode, chartsData, lang: i18n.language, today}
   const game = useGame(store)
+  const {answer, data, setData, preSubmitCheck, giveUp, isWin, isOver, newGame, canNewGame, canGiveUp, gameOver} = game;
   const openHelp = (firstOpen = false) => {
     changeModalInfo({
       "message": <Help updateDate={updateDate} firstOpen={firstOpen}/>,
@@ -59,6 +58,7 @@ export default function Home() {
     setInit(true)
   }
   React.useEffect(gameInit, [mode])
+  // 绑定联想输入
   React.useEffect(() => {
     if (initialized) {
       unbindRef.current = autocomplete(inputRef.current, chartNames, chartsData, aliasData);
@@ -66,7 +66,6 @@ export default function Home() {
       unbindRef.current?.();
     }
   }, [initialized])
-  const {answer, data, setData, preSubmitCheck, giveUp, isWin, isOver, newGame, canNewGame, canGiveUp, gameOver} = game;
   const confirmGiveUp = () => {
     window.mdui.dialog({
       content: i18n.get("giveUpConfirm"),
@@ -198,7 +197,7 @@ export default function Home() {
               className={'answer'}>{`${i18n.get(isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: answer.name})}`}
           </div>}
           {canNewGame && <a className={'togglec'} onClick={() => {
-            newGame()
+            newGame?.()
           }}>▶️ {i18n.get('newGameTip')}</a>
           }
           {canGiveUp && <a className={'togglec'} onClick={() => {

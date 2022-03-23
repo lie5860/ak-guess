@@ -13,6 +13,28 @@ import {
   randomGameWin
 } from "./server";
 
+interface HomeStore {
+  mode: string;
+  chartsData: GuessItem[];
+  lang: string;
+  today: string;
+}
+
+interface Game {
+  answer: Character;
+  data: GuessItem[];
+  preSubmitCheck?: () => boolean | undefined;
+  setData: (newData: GuessItem[]) => void;
+  init: () => void;
+  isWin: boolean;
+  isOver: boolean;
+  canNewGame?: boolean;
+  newGame?: () => void;
+  canGiveUp?: boolean;
+  giveUp?: () => void;
+  gameOver: (newData: GuessItem[], isWin: boolean) => void;
+}
+
 const useRandomStore = () => {
   const [randomAnswerKey, setRandomAnswerKey] = React.useState()
   const [isGiveUp, setGiveUp] = React.useState(false);
@@ -31,11 +53,11 @@ const useDailyStore = () => {
     dayData, setDayData
   }
 }
-export const useGame = (store: any) => {
+export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
   const randomStore = useRandomStore()
   const dailyStore = useDailyStore()
   const {mode} = store
-  const gameDict: { [key: string]: (store: any) => any } = {
+  const gameDict: { [key: string]: (store: any) => Game } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame
   }
@@ -165,6 +187,7 @@ const dailyGame = ({store, dailyStore}: any) => {
         window.location.reload()
         return true;
       }
+
     },
     gameOver: (newData: any[], isWin: boolean) => {
       let record: any = loadRecordData(lang);

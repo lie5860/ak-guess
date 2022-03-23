@@ -4,7 +4,7 @@ import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 const axios = window.axios;
 const guess = (inputItem: Character, answer: Character) => {
-  const res: { guess?: Character, [key: string]: any } = {}
+  const res: GuessItem = {} as GuessItem
   TYPES.forEach(({key, type}) => {
     if (key === 'guess') {
       return res[key] = inputItem
