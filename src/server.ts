@@ -36,7 +36,6 @@ const guess = (inputItem: Character, answer: Character) => {
   })
   return res
 }
-// const host = 'https://74082082-1683720436570405.test.functioncompute.com/akapi/'
 const host = '//akapi.saki.cc/'
 const getDailyData = (lang: string) => {
   const oldData = localStorageGet(lang, 'dailyData');
@@ -54,6 +53,7 @@ const getDailyData = (lang: string) => {
     .get(`${host}?server=${lang}`, {responseType: "json"})
     .then(function (response: any) {
       const res = response.data;
+      dailyGameInit(lang, {answer: response.data.daily})
       localStorageSet(lang, 'dailyData', JSON.stringify({
         res,
         date: moment().tz("Asia/Shanghai").format('YYYY-MM-DD')

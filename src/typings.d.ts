@@ -31,3 +31,8 @@ interface GuessItem {
 
   [key: string]: any
 }
+
+interface Alias {
+  regexp: string;
+  values: string[];
+}
