@@ -37,32 +37,53 @@ const guess = (inputItem: Character, answer: Character) => {
   return res
 }
 const host = '//akapi.saki.cc/'
+const cacheDict: any = {}
+// 队列改造 防止并发时多次触发
+const cacheLoad = async (cacheKey: string, getDataFn: () => any) => {
+  let data: any[] | Promise<any[]>;
+  const cache = cacheDict[cacheKey]
+  if (cache) {
+    const temp = cacheDict[cacheKey];
+    if (temp instanceof Promise) {
+      data = await temp;
+    } else {
+      data = temp;
+    }
+  } else {
+    const temp = getDataFn();
+    cacheDict[cacheKey] = temp;
+    data = await temp;
+    cacheDict[cacheKey] = data;
+  }
+  return data;
+}
 const getDailyData = (lang: string) => {
   const oldData = localStorageGet(lang, 'dailyData');
+  const today = moment().tz("Asia/Shanghai").format('YYYY-MM-DD');
   if (oldData) {
     try {
       const data = JSON.parse(oldData);
-      if (data.date === moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
+      if (data.date === today) {
         return Promise.resolve(data.res)
       }
     } catch (e) {
-
     }
   }
-  return axios
+  const getDataFn = () => axios
     .get(`${host}?server=${lang}`, {responseType: "json"})
     .then(function (response: any) {
       const res = response.data;
       dailyGameInit(lang, {answer: response.data.daily})
       localStorageSet(lang, 'dailyData', JSON.stringify({
         res,
-        date: moment().tz("Asia/Shanghai").format('YYYY-MM-DD')
+        date: today
       }));
       return response.data;
     })
     .catch(function () {
       alert('服务已崩溃 请联系管理员')
     })
+  return cacheLoad(`${today}|dailyData`, getDataFn)
 };
 const reportData = (category: string, action: string, opt_label?: string, opt_value?: number) => {
   try {

@@ -53,10 +53,9 @@ const randomGame = ({store, randomStore}: any) => {
   const data = randomData;
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
   const isOver = data.length >= DEFAULT_TRY_TIMES || isWin || isGiveUp;
-  const setData = (newData: any[], isGiveUp: boolean) => {
+  const setData = (newData: any[]) => {
     localStorageSet(lang, 'r-randomData', JSON.stringify(newData))
     localStorageSet(lang, 'r-randomAnswerKey', `${randomAnswerKey}`)
-    localStorageSet(lang, 'giveUp', `${isGiveUp}`)
     setRandomData(newData)
   }
   return {
@@ -84,12 +83,7 @@ const randomGame = ({store, randomStore}: any) => {
     data: randomData,
     isWin,
     isOver,
-    setData: (newData: any[], isGiveUp: boolean) => {
-      localStorageSet(lang, 'r-randomData', JSON.stringify(newData))
-      localStorageSet(lang, 'r-randomAnswerKey', `${randomAnswerKey}`)
-      localStorageSet(lang, 'giveUp', `${isGiveUp}`)
-      setRandomData(newData)
-    },
+    setData,
     gameOver: (newData: any[], isWin: boolean) => {
       let record: any = loadRecordData(lang);
       if (isWin) {
@@ -129,7 +123,8 @@ const randomGame = ({store, randomStore}: any) => {
     },
     newGame: () => {
       setGiveUp(false);
-      setData([], false)
+      localStorageSet(lang, 'giveUp', `false`)
+      setData([])
       const answer = Math.floor(Math.random() * chartsData.length);
       setRandomAnswerKey(answer)
       randomGameInit(lang, {answer})
