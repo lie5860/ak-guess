@@ -13,7 +13,7 @@
 
 ![概览图](https://github.com/lie5860/ak-guess/blob/main/image/overview.png?raw=true)
 
-支持emoji分享到im
+支持emoji分享到社群
 
 ![分享消息图](https://github.com/lie5860/ak-guess/blob/main/image/message.png?raw=true)
 
