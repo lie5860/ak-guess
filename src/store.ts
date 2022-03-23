@@ -1,11 +1,11 @@
-import {moment} from "./global";
+import {moment, React} from "./global";
 
 import {DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, RANDOM_MODE} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 import {
   dailyGameLose,
-  dailyGameWin,
+  dailyGameWin, getDailyData,
   guess,
   randomGameGiveUp,
   randomGameInit,
@@ -13,18 +13,43 @@ import {
   randomGameWin
 } from "./server";
 
-export const getGame = (store: any) => {
+const useRandomStore = () => {
+  const [randomAnswerKey, setRandomAnswerKey] = React.useState()
+  const [isGiveUp, setGiveUp] = React.useState(false);
+  const [randomData, setRandomData] = React.useState([])
+  return {
+    randomAnswerKey, setRandomAnswerKey,
+    isGiveUp, setGiveUp,
+    randomData, setRandomData
+  }
+}
+const useDailyStore = () => {
+  const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
+  const [dayData, setDayData] = React.useState([])
+  return {
+    remoteAnswerKey, setRemoteAnswerKey,
+    dayData, setDayData
+  }
+}
+export const useGame = (store: any) => {
+  const randomStore = useRandomStore()
+  const dailyStore = useDailyStore()
   const {mode} = store
   const gameDict: { [key: string]: (store: any) => any } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame
   }
-  return gameDict[mode](store)
+  return gameDict[mode]({store, randomStore, dailyStore})
 }
 // game 需要暴露存储数据的key
-const randomGame = (store: any) => {
-  const {setRandomData, setRandomAnswerKey, randomAnswerKey, randomData, chartsData, lang, setGiveUp, isGiveUp} = store;
-  const answer = chartsData[randomAnswerKey];
+const randomGame = ({store, randomStore}: any) => {
+  const {
+    randomAnswerKey, setRandomAnswerKey,
+    isGiveUp, setGiveUp,
+    randomData, setRandomData
+  } = randomStore
+  const {chartsData, lang} = store;
+  const answer = chartsData[randomAnswerKey ?? Math.floor(Math.random() * chartsData.length)];
   const data = randomData;
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
   const isOver = data.length >= DEFAULT_TRY_TIMES || isWin || isGiveUp;
@@ -36,6 +61,10 @@ const randomGame = (store: any) => {
   }
   return {
     init: () => {
+      const giveUp = localStorageGet(lang, "giveUp")
+      if (giveUp) {
+        setGiveUp(giveUp === 'true');
+      }
       const randomData = localStorageGet(lang, 'r-randomData')
       if (randomData) {
         let oldData = JSON.parse(randomData)
@@ -108,14 +137,20 @@ const randomGame = (store: any) => {
     canNewGame: !!isOver
   }
 }
-const dailyGame = (store: any) => {
-  const {setDayData, remoteAnswerKey, dayData, today, chartsData, lang} = store
+const dailyGame = ({store, dailyStore}: any) => {
+  const {
+    remoteAnswerKey, setRemoteAnswerKey,
+    dayData, setDayData
+  } = dailyStore
+  const {today, chartsData, lang} = store
   const answer = chartsData[remoteAnswerKey];
   const data = dayData;
   const isWin = data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
   const isOver = data.length >= DEFAULT_TRY_TIMES || isWin;
   return {
-    init: () => {
+    init: async () => {
+      const {daily}: { daily: number } = await getDailyData(lang);
+      setRemoteAnswerKey(daily)
       const dayData = localStorageGet(lang, today + 'dayData')
       if (dayData) {
         setDayData(JSON.parse(dayData))
