@@ -1,4 +1,5 @@
 export const DAILY_MODE = 'DAILY_MODE'
+export const PARADOX_MODE = 'PARADOX_MODE'
 export const RANDOM_MODE = 'RANDOM_MODE'
 export const MAIN_KEY = 'name'
 export const TYPES = [

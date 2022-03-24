@@ -1,14 +1,14 @@
 import autocomplete from './utils/autocomplete'
 import copyCurrentDay from "./utils/copyCurrentDay";
 import {moment, React} from './global'
-import {CONTRIBUTORS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, RANDOM_MODE} from "./const";
+import {CONTRIBUTORS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE} from "./const";
 import ShareIcon from './component/ShareIcon'
 import Modal from "./component/Modal";
 import shareTextCreator from "./utils/share";
 import Help from './component/Help';
 import GuessItem from "./component/GuessItem";
 import {History} from "./component/History";
-import {getDailyData, guess} from "./server";
+import {getDailyData} from "./server";
 import {AppCtx} from './locales/AppCtx';
 import {useGame} from "./store";
 import './index.less'
@@ -35,7 +35,20 @@ export default function Home() {
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const store = {mode, chartsData, lang: i18n.language, today}
   const game = useGame(store)
-  const {answer, data, setData, preSubmitCheck, giveUp, isWin, isOver, newGame, canNewGame, canGiveUp, gameOver} = game;
+  const {
+    answer,
+    data,
+    insertItem,
+    preSubmitCheck,
+    giveUp,
+    isWin,
+    isOver,
+    newGame,
+    canNewGame,
+    canGiveUp,
+    gameOver,
+    judgeOver
+  } = game;
   const openHelp = (firstOpen = false) => {
     changeModalInfo({
       "message": <Help updateDate={updateDate} firstOpen={firstOpen}/>,
@@ -96,14 +109,10 @@ export default function Home() {
       showModal(i18n.get('duplicationTip'));
     } else {
       const inputItem = chartsData.filter((v: Character) => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
-      const res = guess(inputItem, answer)
-      const newData = [...data, res]
-      setData(newData)
+      const newData = insertItem(inputItem);
       inputRef.current.value = '';
-      const isWin = newData?.[newData?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY]
-      const isOver = newData.length >= DEFAULT_TRY_TIMES || isWin
-      if (isOver) {
-        gameOver(newData, isWin)
+      if (judgeOver(newData)) {
+        gameOver(newData)
       }
     }
   }
@@ -141,6 +150,15 @@ export default function Home() {
                  }
                }}>
             {i18n.get('randomMode')}
+          </div>
+          <div className={`ak-tab-item ${mode === PARADOX_MODE ? 'active' : ''}`}
+               onClick={() => {
+                 if (mode !== PARADOX_MODE) {
+                   setInit(false)
+                   setMode(PARADOX_MODE)
+                 }
+               }}>
+            {i18n.get('PARADOX_MODE')}
           </div>
           {showDailyMode &&
           <div className={`ak-tab-item ${mode === DAILY_MODE ? 'active' : ''}`}
