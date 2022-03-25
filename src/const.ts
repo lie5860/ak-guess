@@ -1,6 +1,11 @@
 export const DAILY_MODE = 'DAILY_MODE'
 export const PARADOX_MODE = 'PARADOX_MODE'
 export const RANDOM_MODE = 'RANDOM_MODE'
+export const modeI18nKeyDict: { [key: string]: string } = {
+  [DAILY_MODE]: 'dailyMode',
+  [PARADOX_MODE]: 'paradoxMode',
+  [RANDOM_MODE]: 'randomMode',
+}
 export const MAIN_KEY = 'name'
 export const TYPES = [
   {label: '稀有度', i18nKey: 'rarity', key: 'rarity', type: 'number'},
