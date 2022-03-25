@@ -13,13 +13,12 @@ import Game from './component/Game';
 export default function Home() {
   const {i18n, chartsData} = React.useContext(AppCtx);
   const [mode, setMode] = React.useState(RANDOM_MODE)
-  const [modal, changeModalInfo] = React.useState()
   const [showDailyMode, setShowDailyMode] = React.useState(false)
   const [updateDate, setUpdateDate] = React.useState('')
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const store = {mode, chartsData, today, i18n}
   const openHelp = (firstOpen = false) => {
-    changeModalInfo({
+    window?.mduiModal?.open({
       "message": <Help updateDate={updateDate} firstOpen={firstOpen}/>,
       "title": i18n.get('helpTitle'),
       useCloseIcon: true
@@ -68,10 +67,8 @@ export default function Home() {
             </div>
           })}
         </div>
-        {<Game key={mode} store={store} changeModalInfo={changeModalInfo} openHelp={openHelp}/>}
-        {modal && <Modal modal={modal} onClose={() => {
-          changeModalInfo(null)
-        }}/>}
+        {<Game key={mode} store={store} openHelp={openHelp}/>}
+        <Modal/>
       </div>
     </div>
   )

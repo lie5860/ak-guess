@@ -2,7 +2,7 @@ import {React} from "../global";
 import {CONTRIBUTORS, MAIN_KEY} from "../const";
 import ContributorList from "./ContributorList";
 import {History} from "./History";
-import GuessItem from "./GuessItem";
+import GuessItem, {ChartInfoLink} from "./GuessItem";
 import copyCurrentDay from "../utils/copyCurrentDay";
 import shareTextCreator from "../utils/share";
 import {hostDict} from "../locales";
@@ -20,13 +20,12 @@ const showModal = (message: string) => {
 interface IProps {
   openHelp: () => void;
   store: HomeStore;
-  changeModalInfo: (modal: any) => void;
 }
 
 
 const Game = (props: IProps) => {
   const {i18n, aliasData} = React.useContext(AppCtx);
-  const {changeModalInfo, openHelp, store} = props
+  const {openHelp, store} = props
   const {today, mode, chartsData} = store
   const game = useGame(store);
   const inputRef = React.useRef();
@@ -89,7 +88,7 @@ const Game = (props: IProps) => {
     <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
     <div>{i18n.get('titleDesc')}
       <div className="tooltip" onClick={() => {
-        changeModalInfo({
+        window?.mduiModal?.open({
           title: i18n.get('contributors'),
           message: CONTRIBUTORS.map((data, index) => <ContributorList key={`${index}`} {...data}/>),
           useCloseIcon: true
@@ -102,7 +101,7 @@ const Game = (props: IProps) => {
       <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}
       </div>
       <div className="tooltip" onClick={() => {
-        changeModalInfo({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})
+        window?.mduiModal?.open({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})
       }}>🔎{i18n.get('report')}
       </div>
       <div className="tooltip" onClick={() => {
@@ -110,7 +109,7 @@ const Game = (props: IProps) => {
       }}>💬{i18n.get('feedback')}
       </div>
     </div>
-    {!!game.data?.length && <GuessItem data={game.data} changeModalInfo={changeModalInfo}/>}
+    {!!game.data?.length && <GuessItem data={game.data}/>}
     <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
           style={{display: game.isOver ? 'none' : ''}}>
       <div className="autocomplete">
@@ -123,8 +122,8 @@ const Game = (props: IProps) => {
       <button className="mdui-btn mdui-btn-raised mdui-ripple guess_input">{i18n.get('submit')}</button>
     </form>
     {game.isOver &&
-    <div
-        className={'answer'}>{`${i18n.get(game.isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip', {answer: game.answer.name})}`}
+    <div className={'answer'}>
+      {`${i18n.get(game.isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip1')}`}<ChartInfoLink chart={game.answer} />{i18n.get('answerTip2')}
     </div>}
     {game.canNewGame && <a className={'togglec'} onClick={() => {
       game.newGame?.()

@@ -245,7 +245,6 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     data, setData,
   } = paradoxStore
   const lang = i18n.language;
-  const judgeWin = (data: GuessItem[]) => data?.[data?.length - 1]?.guess?.restList?.length === 1;
   const saveData = (key: string, value: any) => {
     const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}')
     paradoxData[key] = value
@@ -262,6 +261,8 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     setRestList(initData);
     saveData('restList', initData);
   }
+  const judgeWin = (data: GuessItem[]) => (data?.[data?.length - 1]?.guess?.restList?.length === 1)
+    && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
   const isOver = judgeWin(data)
   const answer = chartsData[restList[0]];
   return {

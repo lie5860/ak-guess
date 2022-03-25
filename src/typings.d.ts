@@ -11,6 +11,7 @@ interface Window {
   mdui: any,
   _hmt: any,
   axios: any,
+  mduiModal: any,
 }
 
 interface Character {
@@ -36,6 +37,7 @@ interface Alias {
   regexp: string;
   values: string[];
 }
+
 interface Game {
   // 最终结果
   answer: Character;
