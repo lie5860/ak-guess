@@ -22,6 +22,13 @@ export const VAL_DICT: { [key: string]: string } = {
   'up': '🔼',
   'down': '🔽',
 }
+export const NOT_NAME_VAL_DICT: { [key: string]: string } = {
+  'correct': '🟩',
+  'wrong': '🟥',
+  'wrongpos': '🟨',
+  'up': '🟥',
+  'down': '🟥',
+}
 export const DEFAULT_TRY_TIMES = 8;
 
 export const CONTRIBUTORS = [

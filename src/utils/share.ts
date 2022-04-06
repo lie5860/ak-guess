@@ -1,4 +1,4 @@
-import {DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, TYPES, VAL_DICT} from "../const";
+import {DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, NOT_NAME_VAL_DICT, PARADOX_MODE, TYPES, VAL_DICT} from "../const";
 
 const shareTextCreator = (data: any[], mode: string, today: string, showName: boolean, title: string, host: string) => {
   let text = `${title} `;
@@ -14,7 +14,7 @@ const shareTextCreator = (data: any[], mode: string, today: string, showName: bo
       if (key === 'guess') {
         showName && (text += v.guess?.[MAIN_KEY])
       } else {
-        text += VAL_DICT[v[key]]
+        text += (showName ? VAL_DICT : NOT_NAME_VAL_DICT)[v[key]]
       }
     })
   })
