@@ -26,8 +26,8 @@ export const NOT_NAME_VAL_DICT: { [key: string]: string } = {
   'correct': '🟩',
   'wrong': '🟥',
   'wrongpos': '🟨',
-  'up': '🟥',
-  'down': '🟥',
+  'up': '🟦',
+  'down': '🟦',
 }
 export const DEFAULT_TRY_TIMES = 8;
 
