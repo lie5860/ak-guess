@@ -1,5 +1,5 @@
 const dict: { [key: string]: string } = {
-  paradoxMode: '悖论模式！',
+  paradoxMode: '悖论模拟！',
   paradoxModeShareText: '悖论模拟',
   paradoxModeTip: '你的猜测会影响这只神秘干员的真面目，试试看！',
   paradoxShareTimesTip: '经过{times}局终于解出了谜题！',
