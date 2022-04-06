@@ -241,7 +241,7 @@ const dailyGame = ({store, dailyStore}: any) => {
   }
 }
 const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
-  const {chartsData, i18n} = store;
+  const {chartsData, i18n} = store as HomeStore;
   const {
     restList, setRestList,
     isGiveUp, setGiveUp,
@@ -268,7 +268,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   }
   const judgeWin = (data: GuessItem[]) => (data?.[data?.length - 1]?.guess?.restList?.length === 1)
     && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
-  console.log(isGiveUp,'isGiveUp')
+  console.log(isGiveUp, 'isGiveUp')
   const judgeOver = (data: GuessItem[]) => judgeWin(data) || isGiveUp as boolean;
   const isOver = judgeOver(data)
   const answer = chartsData[restList[0]];
@@ -289,29 +289,38 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     },
     answer,
     data,
-    insertItem: (newItem) => {
+    insertItem: (newItem: Character) => {
       const length = restList.length;
       const oldRestList = restList;
       const timesDict = {} as any;
-      for (let i = 0; i < length; i++) {
-        const res = guessFn(newItem, chartsData[restList[i]])
-        const {guess, ...rest} = res;
-        // Object.values兼容性OK？
-        const key = Object.keys(rest).map(k => rest[k]).join('|')
-        if (timesDict[key]) {
-          const {time, restList} = timesDict[key];
-          timesDict[key] = {time: time + 1, res, restList: [...restList, oldRestList[i]]}
+      let maxData = {time: 0, res: {} as GuessItem, restList: [] as number[]}
+      if (restList.length === 2) {
+        // 剩余两个干员时 强制选择另一个
+        if (newItem.name === chartsData[restList[0]].name) {
+          maxData = {time: 1, res: guessFn(newItem, chartsData[restList[1]]), restList: [restList[1]]}
         } else {
-          timesDict[key] = {time: 1, res, restList: [oldRestList[i]]}
+          maxData = {time: 1, res: guessFn(newItem, chartsData[restList[0]]), restList: [restList[0]]}
         }
+      } else {
+        for (let i = 0; i < length; i++) {
+          const res = guessFn(newItem, chartsData[restList[i]])
+          const {guess, ...rest} = res;
+          // Object.values兼容性OK？
+          const key = Object.keys(rest).map(k => rest[k]).join('|')
+          if (timesDict[key]) {
+            const {time, restList} = timesDict[key];
+            timesDict[key] = {time: time + 1, res, restList: [...restList, oldRestList[i]]}
+          } else {
+            timesDict[key] = {time: 1, res, restList: [oldRestList[i]]}
+          }
+        }
+        Object.keys(timesDict).forEach(k => {
+          // 相同的情况如何处理 todo????
+          if (maxData.time < timesDict[k].time) {
+            maxData = timesDict[k]
+          }
+        })
       }
-      let maxData = {time: 0, res: {} as GuessItem, restList: []}
-      Object.keys(timesDict).forEach(k => {
-        // 相同的情况如何处理 todo????
-        if (maxData.time < timesDict[k].time) {
-          maxData = timesDict[k]
-        }
-      })
       maxData.res.guess.restList = maxData.restList
       const newData = [...data, maxData.res]
       setData(newData)
@@ -323,7 +332,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     judgeWin,
     isWin: judgeWin(data),
     canGiveUp: !isOver && data?.length > 0,
-    giveUp:() => {
+    giveUp: () => {
       setGiveUp(true);
       saveData('giveUp', 'true')
     },

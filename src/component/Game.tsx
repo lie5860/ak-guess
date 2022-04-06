@@ -123,7 +123,8 @@ const Game = (props: IProps) => {
     </form>
     {game.isOver &&
     <div className={'answer'}>
-      {`${i18n.get(game.isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip1')}`}<ChartInfoLink chart={game.answer} />{i18n.get('answerTip2')}
+      {`${i18n.get(game.isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip1')}`}<ChartInfoLink
+        chart={game.answer}/>{i18n.get('answerTip2')}
     </div>}
     {game.canNewGame && <a className={'togglec'} onClick={() => {
       game.newGame?.()
@@ -135,12 +136,24 @@ const Game = (props: IProps) => {
     }
     {!!game.data?.length && <div className={'share-body'}>
         <a className={'togglec'} onClick={() => {
-          copyCurrentDay(shareTextCreator(game.data, mode, today, false, i18n.get('title'), hostDict[i18n.language]), i18n.get('copySuccess'))
+          copyCurrentDay(shareTextCreator({
+            game,
+            mode,
+            today,
+            showName: false,
+            i18n
+          }), i18n.get('copySuccess'))
         }}>
             <ShareIcon/>{i18n.get('shareTip1')}
         </a>
         <a className={'togglec'} onClick={() => {
-          copyCurrentDay(shareTextCreator(game.data, mode, today, true, i18n.get('title'), hostDict[i18n.language]), i18n.get('copySuccess'))
+          copyCurrentDay(shareTextCreator({
+            mode,
+            today,
+            showName: true,
+            game,
+            i18n
+          }), i18n.get('copySuccess'))
         }} style={{marginLeft: 20}}>
             <ShareIcon/>{i18n.get('shareTip2')}
         </a>
