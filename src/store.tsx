@@ -40,9 +40,11 @@ const useDailyStore = () => {
 }
 const useParadoxStore = () => {
   const [restList, setRestList] = React.useState([])
+  const [isGiveUp, setGiveUp] = React.useState(false);
   const [data, setData] = React.useState([])
   return {
     restList, setRestList,
+    isGiveUp, setGiveUp,
     data, setData
   }
 }
@@ -242,6 +244,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   const {chartsData, i18n} = store;
   const {
     restList, setRestList,
+    isGiveUp, setGiveUp,
     data, setData,
   } = paradoxStore
   const lang = i18n.language;
@@ -255,6 +258,8 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     return paradoxData[key]
   }
   const newGame = () => {
+    setGiveUp(false);
+    saveData('giveUp', 'true')
     setData([]);
     saveData('data', []);
     const initData = chartsData.map((v: any, i: number) => i);
@@ -263,10 +268,16 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   }
   const judgeWin = (data: GuessItem[]) => (data?.[data?.length - 1]?.guess?.restList?.length === 1)
     && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
-  const isOver = judgeWin(data)
+  console.log(isGiveUp,'isGiveUp')
+  const judgeOver = (data: GuessItem[]) => judgeWin(data) || isGiveUp as boolean;
+  const isOver = judgeOver(data)
   const answer = chartsData[restList[0]];
   return {
     init: () => {
+      const giveUp = getDataByKey("giveUp")
+      if (giveUp) {
+        setGiveUp(giveUp === 'true');
+      }
       const paradoxData = getDataByKey('data')
       if (paradoxData) {
         setData(paradoxData)
@@ -311,6 +322,11 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     },
     judgeWin,
     isWin: judgeWin(data),
+    canGiveUp: !isOver && data?.length > 0,
+    giveUp:() => {
+      setGiveUp(true);
+      saveData('giveUp', 'true')
+    },
     judgeOver: data => judgeWin(data),
     isOver,
     gameOver: (newData) => {
@@ -328,7 +344,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       saveRecordData(lang, record);
     },
     newGame,
-    canNewGame: isOver || data?.length > 0,
+    canNewGame: isOver,
     gameTip: () => <>
       <div>{i18n.get('paradoxModeTip')}</div>
     </>
