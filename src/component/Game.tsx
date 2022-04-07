@@ -10,6 +10,7 @@ import ShareIcon from "./ShareIcon";
 import {HomeStore, useGame} from "../store";
 import {AppCtx} from "../locales/AppCtx";
 import autocomplete from "../utils/autocomplete";
+import Guide from "./Guide";
 
 const showModal = (message: string) => {
   window.mdui.snackbar({
@@ -107,6 +108,10 @@ const Game = (props: IProps) => {
       <div className="tooltip" onClick={() => {
         window.open(i18n.get('questionnaireUrl'))
       }}>💬{i18n.get('feedback')}
+      </div>
+      <div className="tooltip" onClick={() => {
+        window?.mduiModal?.open({"message": <Guide/>, useCloseIcon: true, title: i18n.get('Operators')});
+      }}>📔{i18n.get('operators')}
       </div>
     </div>
     {!!game.data?.length && <GuessItem data={game.data}/>}
