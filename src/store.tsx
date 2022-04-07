@@ -136,6 +136,21 @@ const randomGame = ({store, randomStore}: any) => {
         if (record.straightWins > record.maxStraightWins) {
           record.maxStraightWins = record.straightWins;
         }
+
+        if (!record.randomModeRecord) {
+          record.randomModeRecord = {}
+        }
+        // 保存进图鉴的数据
+        const name = answer.name
+        if (!record.randomModeRecord[name]) {
+          record.randomModeRecord[name] = {cost: randomData.length, winTime: 1}
+        } else {
+          const oldCost = record.randomModeRecord[name]?.cost || 0
+          record.randomModeRecord[name] = {
+            cost: oldCost > randomData.length ? randomData.length : oldCost,
+            winTime: (record.randomModeRecord[name]?.winTime || 0) + 1
+          }
+        }
       } else {
         randomGameLose(lang, {
           answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
