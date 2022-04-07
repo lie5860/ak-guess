@@ -143,11 +143,11 @@ const randomGame = ({store, randomStore}: any) => {
         // 保存进图鉴的数据
         const name = answer.name
         if (!record.randomModeRecord[name]) {
-          record.randomModeRecord[name] = {cost: randomData.length, winTime: 1}
+          record.randomModeRecord[name] = {cost: newData.length, winTime: 1}
         } else {
           const oldCost = record.randomModeRecord[name]?.cost || 0
           record.randomModeRecord[name] = {
-            cost: oldCost > randomData.length ? randomData.length : oldCost,
+            cost: oldCost > newData.length ? newData.length : oldCost,
             winTime: (record.randomModeRecord[name]?.winTime || 0) + 1
           }
         }
@@ -236,6 +236,17 @@ const dailyGame = ({store, dailyStore}: any) => {
         record.dailyStraightWins += 1;
         if (record.dailyStraightWins > record.dailyMaxStraightWins) {
           record.dailyMaxStraightWins = record.dailyStraightWins;
+        }
+        // 保存进图鉴的数据
+        const name = answer.name
+        if (!record.dailyModeRecord[name]) {
+          record.dailyModeRecord[name] = {cost: newData.length, winTime: 1}
+        } else {
+          const oldCost = record.dailyModeRecord[name]?.cost || 0
+          record.dailyModeRecord[name] = {
+            cost: oldCost > newData.length ? newData.length : oldCost,
+            winTime: (record.dailyModeRecord[name]?.winTime || 0) + 1
+          }
         }
       } else {
         dailyGameLose(lang, {
