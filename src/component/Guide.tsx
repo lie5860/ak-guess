@@ -18,7 +18,7 @@ const Guide = () => {
     </div>
     <div style={{height: 'calc(100% - 50px)', overflow: "auto"}}>
       <div className="mdui-panel" mdui-panel="{accordion: true}">
-        {chartsData.reverse().map((v: any, index: number) => {
+        {[...chartsData].reverse().map((v: any, index: number) => {
           const pModeWin = !!paradoxModeRecord[v.name]
           const rModeWin = !!randomModeRecord[v.name]
           return <div className="mdui-panel-item" key={index}>
