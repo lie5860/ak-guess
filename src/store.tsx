@@ -274,7 +274,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   }
   const newGame = () => {
     setGiveUp(false);
-    saveData('giveUp', 'true')
+    saveData('giveUp', 'false')
     setData([]);
     saveData('data', []);
     const initData = chartsData.map((v: any, i: number) => i);
