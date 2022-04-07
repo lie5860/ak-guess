@@ -36,12 +36,12 @@ const Guide = () => {
                 <li className="mdui-list-item mdui-ripple">{i18n.get('painter')}: {v.painter}</li>
                 {randomModeRecord[v.name] && <>
                     <li className="mdui-subheader">🥇{i18n.get('randomMode')}</li>
-                    <li className="mdui-list-item mdui-ripple">{i18n.get("roleWinTimes")}: {randomModeRecord[v.name].winTime}</li>
-                    <li className="mdui-list-item mdui-ripple">{i18n.get("roleMinTimes")}: {randomModeRecord[v.name].cost}</li>
+                    <li className="mdui-list-item mdui-ripple">{i18n.get("roleWinTimes")}{randomModeRecord[v.name].winTime}</li>
+                    <li className="mdui-list-item mdui-ripple">{i18n.get("minWinTimes")}{randomModeRecord[v.name].cost}</li>
                 </>}
                 {paradoxModeRecord[v.name] && <>
                     <li className="mdui-subheader">🥈{i18n.get('paradoxMode')}</li>
-                    <li className="mdui-list-item mdui-ripple">{i18n.get("roleMinTimes")}: {paradoxModeRecord[v.name]}</li>
+                    <li className="mdui-list-item mdui-ripple">{i18n.get("minWinTimes")}{paradoxModeRecord[v.name]}</li>
                 </>
                 }
               </ul>
