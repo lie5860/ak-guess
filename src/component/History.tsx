@@ -69,7 +69,9 @@ const History = () => {
       {i18n.get('winRate')}{record?.playTimes && Math.ceil(record?.winTimes / record?.playTimes * 100)}%<br/>
       {i18n.get('straightWins')}{record?.straightWins}<br/>
       {i18n.get('maxStraightWins')}{record?.maxStraightWins}<br/>
-      {i18n.get('avgWinTimes')}{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}{i18n.get('avgWinTimesDesc')}
+      {i18n.get('avgWinTimes')}{record?.winTimes && Math.ceil(record?.winTryTimes / record?.winTimes)}{i18n.get('avgWinTimesDesc')}<br/>
+      {i18n.get('minWinTimes')}{record?.minWinTimes}<br/>
+      {i18n.get('operatorWinCount')}{record?.opWinCount}
     </p>
     <hr/>
     <p className={'flex-center'}>
@@ -86,7 +88,28 @@ const History = () => {
       {i18n.get('winRate')}{record?.dailyPlayTimes && Math.ceil(record?.dailyWinTimes / record?.dailyPlayTimes * 100)}%<br/>
       {i18n.get('straightWins')}{record?.dailyStraightWins}<br/>
       {i18n.get('maxStraightWins')}{record?.dailyMaxStraightWins}<br/>
-      {i18n.get('avgWinTimes')}{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}{i18n.get('avgWinTimesDesc')}
+      {i18n.get('avgWinTimes')}{record?.dailyWinTimes && Math.ceil(record?.dailyWinTryTimes / record?.dailyWinTimes)}{i18n.get('avgWinTimesDesc')}<br/>
+      {i18n.get('minWinTimes')}{record?.dailyMinWinTimes}<br/>
+      {i18n.get('operatorWinCount')}{record?.dailyOpWinCount}
+    </p>
+    <hr/>
+    <p className={'flex-center'}>
+      <ShareIcon onClick={() => {
+        copyCurrentDay(getShareHistoryText(PARADOX_MODE), i18n.get('copySuccess'))
+      }}/>
+      <span className='title'>
+        {i18n.get('paradoxMode')}
+      </span>
+    </p>
+    <p>
+      {i18n.get('playTimes')}{record?.paradoxPlayTimes}<br/>
+      {i18n.get('winTimes')}{record?.paradoxWinTimes}<br/>
+      {i18n.get('winRate')}{record?.paradoxPlayTimes && Math.ceil(record?.paradoxWinTimes / record?.paradoxPlayTimes * 100)}%<br/>
+      {i18n.get('straightWins')}{record?.paradoxStraightWins}<br/>
+      {i18n.get('maxStraightWins')}{record?.paradoxMaxStraightWins}<br/>
+      {i18n.get('avgWinTimes')}{record?.paradoxWinTimes && Math.ceil(record?.paradoxWinTryTimes / record?.paradoxWinTimes)}{i18n.get('avgWinTimesDesc')}<br/>
+      {i18n.get('minWinTimes')}{record?.paradoxMinWinTimes}<br/>
+      {i18n.get('operatorWinCount')}{record?.paradoxOpWinCount}
     </p>
   </>;
 }

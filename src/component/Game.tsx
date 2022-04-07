@@ -110,7 +110,7 @@ const Game = (props: IProps) => {
       }}>💬{i18n.get('feedback')}
       </div>
       <div className="tooltip" onClick={() => {
-        window?.mduiModal?.open({"message": <Guide/>, useCloseIcon: true, title: i18n.get('Operators')});
+        window?.mduiModal?.open({"message": <Guide/>, useCloseIcon: true, title: i18n.get('operators')});
       }}>📔{i18n.get('operators')}
       </div>
     </div>
