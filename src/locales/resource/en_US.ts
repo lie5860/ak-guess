@@ -3,7 +3,7 @@ const dict: { [key: string]: string } = {
   paradoxModeShareText: 'Paradox Simulation',
   paradoxModeTip: 'Your guesses will influence who this operator really is, have a try!',
   paradoxShareTimesTip: 'Finally you have solved this puzzle after {times} times of guessing!',
-  paradoxGamingShareTip: '激战中！',
+  paradoxGamingShareTip: 'Game in progress!',
   roleWinTimes: 'Win Times: ',
   minWinTimes: 'Min number of guess: ',
   operatorWinCount: '解锁干员个数：',
