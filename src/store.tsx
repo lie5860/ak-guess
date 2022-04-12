@@ -33,8 +33,10 @@ const useRandomStore = () => {
 const useDailyStore = () => {
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
   const [dayData, setDayData] = React.useState([])
+  const [today, setToday] = React.useState('')
   return {
     remoteAnswerKey, setRemoteAnswerKey,
+    today, setToday,
     dayData, setDayData
   }
 }
@@ -182,9 +184,11 @@ const randomGame = ({store, randomStore}: any) => {
 const dailyGame = ({store, dailyStore}: any) => {
   const {
     remoteAnswerKey, setRemoteAnswerKey,
+    today, setToday,
     dayData, setDayData
   } = dailyStore
-  const {today, chartsData, i18n} = store;
+  const {chartsData, i18n} = store;
+
   const lang = i18n.language;
   const answer = chartsData[remoteAnswerKey];
   const data = dayData;
@@ -194,7 +198,8 @@ const dailyGame = ({store, dailyStore}: any) => {
   const isOver = judgeOver(data);
   return {
     init: async () => {
-      const {daily}: { daily: number } = await getDailyData(lang);
+      const {daily, today}: { daily: number, today: string } = await getDailyData(lang);
+      setToday(today)
       setRemoteAnswerKey(daily)
       const dayData = localStorageGet(lang, today + 'dayData')
       if (dayData) {
@@ -216,7 +221,7 @@ const dailyGame = ({store, dailyStore}: any) => {
     },
     preSubmitCheck: () => {
       if (today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
-        alert('数据已更新，即将刷新页面')
+        alert(i18n.get('reloadTip'))
         window.location.reload()
         return true;
       }

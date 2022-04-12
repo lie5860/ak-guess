@@ -1,12 +1,17 @@
 import {React} from "../global";
 import {AppCtx} from '../locales/AppCtx';
 import {localStorageGet} from "../locales/I18nWrap";
+import {filterDataByInputVal} from "../utils/autocomplete";
 
 const Guide = () => {
-  const {i18n, chartsData} = React.useContext(AppCtx);
+  const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
+  const baseData = [...chartsData].reverse().map((v, index) => {
+    return {...v, index: chartsData.length - index}
+  })
+  const [data, setData] = React.useState(baseData)
   const record = JSON.parse(localStorageGet(i18n.language, 'record') || '{}')
   const {paradoxModeRecord = {}, randomModeRecord = {}} = record
-  var randomRoleCount = Object.keys(randomModeRecord).length; 
+  var randomRoleCount = Object.keys(randomModeRecord).length;
   var paradoxRoleCount = Object.keys(paradoxModeRecord).length;
   React.useEffect(() => {
     window.mdui.mutation()
@@ -16,16 +21,25 @@ const Guide = () => {
     <div style={{padding: 10}}>
       🥇 {randomRoleCount}/{chartsData.length} 🥈 {paradoxRoleCount}/{chartsData.length}
     </div>
-    <div style={{height: 'calc(100% - 50px)', overflow: "auto"}}>
+    <div className="mdui-textfield" style={{textAlign: 'left', paddingTop: 0}}>
+      <i className="mdui-icon material-icons">search</i>
+      <input className="mdui-textfield-input" onChange={e => {
+        console.log(e.target.value)
+        setData(filterDataByInputVal(e.target.value, baseData, aliasData))
+      }} placeholder={i18n.get('inputTip')}/>
+    </div>
+    <div style={{height: 'calc(100% - 80px)', overflow: "auto"}}>
       <div className="mdui-panel" mdui-panel="{accordion: true}">
-        {[...chartsData].reverse().map((v: any, index: number) => {
+        {data.map((v: any) => {
+          const index = v?.index;
           const pModeWin = !!paradoxModeRecord[v.name]
           const rModeWin = !!randomModeRecord[v.name]
           return <div className="mdui-panel-item" key={index}>
             <div
               className="mdui-panel-item-header"
-            >#{chartsData.length - index} {v.name} {rModeWin && '🥇'}{pModeWin && '🥈'}
-              <span style={{marginLeft: 'auto'}}><i className="mdui-icon material-icons panel-dync-icon">arrow_drop_down</i></span>
+            >#{index} {v.name} {rModeWin && '🥇'}{pModeWin && '🥈'}
+              <span style={{marginLeft: 'auto'}}><i
+                className="mdui-icon material-icons panel-dync-icon">arrow_drop_down</i></span>
             </div>
             <div className="mdui-panel-item-body">
               <ul className="mdui-list mdui-list-dense">

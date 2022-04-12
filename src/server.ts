@@ -63,7 +63,7 @@ const getDailyData = (lang: string) => {
   if (oldData) {
     try {
       const data = JSON.parse(oldData);
-      if (data.date === today) {
+      if (data?.res?.server_date === today) {
         return Promise.resolve(data.res)
       }
     } catch (e) {
@@ -75,8 +75,7 @@ const getDailyData = (lang: string) => {
       const res = response.data;
       dailyGameInit(lang, {answer: response.data.daily})
       localStorageSet(lang, 'dailyData', JSON.stringify({
-        res,
-        date: today
+        res
       }));
       return response.data;
     })

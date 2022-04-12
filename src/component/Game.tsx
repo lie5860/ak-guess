@@ -5,7 +5,6 @@ import {History} from "./History";
 import GuessItem, {ChartInfoLink} from "./GuessItem";
 import copyCurrentDay from "../utils/copyCurrentDay";
 import shareTextCreator from "../utils/share";
-import {hostDict} from "../locales";
 import ShareIcon from "./ShareIcon";
 import {HomeStore, useGame} from "../store";
 import {AppCtx} from "../locales/AppCtx";
