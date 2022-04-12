@@ -24,6 +24,7 @@ export default function Home() {
       useCloseIcon: true
     })
   }
+  window.document.title = i18n.get('title');
   React.useEffect(() => {
     getDailyData(i18n.language).then(({last_date, daily}: { last_date: string, daily: number }) => {
       setUpdateDate(last_date)

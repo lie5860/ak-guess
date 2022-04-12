@@ -17,7 +17,7 @@ const dict: { [key: string]: string } = {
   info:'Operator Profile',
   yes:'Yes',
   no:'No',
-  title: "Arknights Wordle",
+  title: "Myrtle",
   copySuccess: 'Copy success!',
   chartsName: 'Name',
   rarity: 'Rarity',
