@@ -33,7 +33,7 @@ const useRandomStore = () => {
 const useDailyStore = () => {
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
   const [dayData, setDayData] = React.useState([])
-  const [today, setToday] = React.useState('')
+  const [today, setToday] = React.useState(moment().tz("Asia/Shanghai").format('YYYY-MM-DD'))
   return {
     remoteAnswerKey, setRemoteAnswerKey,
     today, setToday,
@@ -200,10 +200,10 @@ const dailyGame = ({store, dailyStore}: any) => {
   const isOver = judgeOver(data);
   return {
     init: async () => {
-      const {daily, today}: { daily: number, today: string } = await getDailyData(lang);
-      setToday(today)
+      const {daily, server_date}: { daily: number, server_date: string } = await getDailyData(lang);
+      setToday(server_date)
       setRemoteAnswerKey(daily)
-      const dayData = localStorageGet(lang, today + 'dayData')
+      const dayData = localStorageGet(lang, server_date + 'dayData')
       if (dayData) {
         setDayData(JSON.parse(dayData))
       }
@@ -227,7 +227,6 @@ const dailyGame = ({store, dailyStore}: any) => {
         window.location.reload()
         return true;
       }
-
     },
     gameOver: (newData: any[]) => {
       let record: any = loadRecordData(lang);

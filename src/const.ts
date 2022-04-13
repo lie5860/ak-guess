@@ -16,7 +16,7 @@ export const COLUMNS = [
 ]
 export const TYPES = [
   ...COLUMNS,
-  {label: '干员', i18nKey: 'chartsName', key: 'guess'}
+  {label: '干员', i18nKey: 'chartsName', key: 'guess', type: 'guess'}
 ]
 export const VAL_DICT: { [key: string]: string } = {
   'correct': '🟩',
