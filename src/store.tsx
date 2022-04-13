@@ -304,7 +304,6 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   }
   const judgeWin = (data: GuessItem[]) => (data?.[data?.length - 1]?.guess?.restList?.length === 1)
     && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
-  console.log(isGiveUp, 'isGiveUp')
   const judgeOver = (data: GuessItem[]) => judgeWin(data) || isGiveUp as boolean;
   const isOver = judgeOver(data)
   const answer = chartsData[restList[0]];

@@ -7,7 +7,7 @@ import {localStorageGet, localStorageSet} from "../locales/I18nWrap";
 import {hostDict} from "../locales";
 
 export const DEFAULT_RECODE = {
-  RANDOM_MODE: {
+  [RANDOM_MODE]: {
     playTimes: 0,
     winTimes: 0,
     totalTryTimes: 0,
@@ -17,7 +17,7 @@ export const DEFAULT_RECODE = {
     minWinTimes: 0,
     roles:{}
   },
-  DAILY_MODE: {
+  [DAILY_MODE]: {
     playTimes: 0,
     winTimes: 0,
     totalTryTimes: 0,
@@ -27,7 +27,7 @@ export const DEFAULT_RECODE = {
     minWinTimes: 0,
     roles:{}
   },
-  PARADOX_MODE: {
+  [PARADOX_MODE]: {
     playTimes: 0,
     winTimes: 0,
     totalTryTimes: 0,
@@ -58,31 +58,31 @@ const reinitRecord = (lang: string) => {
     // 迁移数据
     if (record) {
       const newRecord = {
-        RANDOM_MODE:{
-          playTimes: record.playTimes,
-          winTimes : record.winTimes,
-          totalTryTimes: record.totalTryTimes,
-          winTryTimes: record.winTryTimes,
-          straightWins: record.straightWins,
-          maxStraightWins: record.maxStraightWins,
+        [RANDOM_MODE]:{
+          playTimes: record.playTimes ?? 0,
+          winTimes : record.winTimes ?? 0,
+          totalTryTimes: record.totalTryTimes ?? 0,
+          winTryTimes: record.winTryTimes ?? 0,
+          straightWins: record.straightWins ?? 0,
+          maxStraightWins: record.maxStraightWins ?? 0,
           roles:{}
         },
-        DAILY_MODE: {
-          playTimes: record.dailyPlayTimes,
-          winTimes : record.dailyWinTimes,
-          totalTryTimes: record.dailyTotalTryTimes,
-          winTryTimes: record.dailyWinTryTimes,
-          straightWins: record.dailyStraightWins,
+        [DAILY_MODE]: {
+          playTimes: record.dailyPlayTimes ?? 0,
+          winTimes : record.dailyWinTimes ?? 0,
+          totalTryTimes: record.dailyTotalTryTimes ?? 0,
+          winTryTimes: record.dailyWinTryTimes ?? 0,
+          straightWins: record.dailyStraightWins ?? 0,
           maxStraightWins: record.dailyMaxStraightWins,
           roles:{}
         },
-        PARADOX_MODE: {
-          playTimes: record.paradoxPlayTimes,
-          winTimes : record.paradoxWinTimes,
-          totalTryTimes: record.paradoxTotalTryTimes,
-          winTryTimes: record.paradoxWinTryTimes,
-          straightWins: record.paradoxStraightWins,
-          maxStraightWins: record.paradoxMaxStraightWins,
+        [PARADOX_MODE]: {
+          playTimes: record.paradoxPlayTimes ?? 0,
+          winTimes : record.paradoxWinTimes ?? 0,
+          totalTryTimes: record.paradoxTotalTryTimes ?? 0,
+          winTryTimes: record.paradoxWinTryTimes ?? 0,
+          straightWins: record.paradoxStraightWins ?? 0,
+          maxStraightWins: record.paradoxMaxStraightWins ?? 0,
           roles:{}
         }
       };
@@ -105,7 +105,7 @@ const getDataFn = (record: any, mode: string) => {
       }
   return {}
 }
-const History = ({mode}) => {
+const History = ({mode}: {mode: string}) => {
   const {i18n} = React.useContext(AppCtx);
   const record = loadRecordData(i18n.language);
   const getShareHistoryText = (mode: string) => {
