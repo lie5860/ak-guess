@@ -1,7 +1,7 @@
 import {React} from "../global";
 import {CONTRIBUTORS, MAIN_KEY} from "../const";
 import ContributorList from "./ContributorList";
-import {History} from "./History";
+import {reinitRecord, History} from "./History";
 import GuessItem, {ChartInfoLink} from "./GuessItem";
 import copyCurrentDay from "../utils/copyCurrentDay";
 import shareTextCreator from "../utils/share";
@@ -32,6 +32,7 @@ const Game = (props: IProps) => {
   const unbindRef = React.useRef();
   const chartNames = React.useMemo(() => chartsData.map((v: Character) => v?.[MAIN_KEY]), [])
   const [initialized, setInit] = React.useState(false)
+  reinitRecord(i18n.language);
   const confirmGiveUp = () => {
     window.mdui.dialog({
       content: i18n.get("giveUpConfirm"),
@@ -101,7 +102,7 @@ const Game = (props: IProps) => {
       <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}
       </div>
       <div className="tooltip" onClick={() => {
-        window?.mduiModal?.open({"message": <History/>, useCloseIcon: true, title: i18n.get('report')})
+        window?.mduiModal?.open({"message": <History mode={mode}/>, useCloseIcon: true, title: i18n.get('report')})
       }}>🔎{i18n.get('report')}
       </div>
       <div className="tooltip" onClick={() => {

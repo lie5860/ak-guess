@@ -2,6 +2,7 @@ import {React} from "../global";
 import {AppCtx} from '../locales/AppCtx';
 import {localStorageGet} from "../locales/I18nWrap";
 import {filterDataByInputVal} from "../utils/autocomplete";
+import {modeI18nKeyDict, DAILY_MODE, PARADOX_MODE, RANDOM_MODE} from "../const";
 
 const Guide = () => {
   const {i18n, chartsData, aliasData} = React.useContext(AppCtx);
@@ -10,7 +11,8 @@ const Guide = () => {
   })
   const [data, setData] = React.useState(baseData)
   const record = JSON.parse(localStorageGet(i18n.language, 'record') || '{}')
-  const {paradoxModeRecord = {}, randomModeRecord = {}} = record
+  const paradoxModeRecord = record[PARADOX_MODE].roles;
+  const randomModeRecord = record[RANDOM_MODE].roles;
   var randomRoleCount = Object.keys(randomModeRecord).length;
   var paradoxRoleCount = Object.keys(paradoxModeRecord).length;
   React.useEffect(() => {

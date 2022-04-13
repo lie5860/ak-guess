@@ -64,6 +64,7 @@ export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
 }
 // game 需要暴露存储数据的key
 const randomGame = ({store, randomStore}: any) => {
+  const mode = RANDOM_MODE;
   const {
     randomAnswerKey, setRandomAnswerKey,
     isGiveUp, setGiveUp,
@@ -132,25 +133,25 @@ const randomGame = ({store, randomStore}: any) => {
             return guess?.[MAIN_KEY]
           })
         }, newData.length)
-        record.winTryTimes += newData.length;
-        record.winTimes += 1;
-        record.straightWins += 1;
-        if (record.straightWins > record.maxStraightWins) {
-          record.maxStraightWins = record.straightWins;
+        record[mode].winTryTimes += newData.length;
+        record[mode].winTimes += 1;
+        record[mode].straightWins += 1;
+        if (record[mode].straightWins > record[mode].maxStraightWins) {
+          record[mode].maxStraightWins = record[mode].straightWins;
+        }
+        if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
+          record[mode].minWinTimes = newData.length;
         }
 
-        if (!record.randomModeRecord) {
-          record.randomModeRecord = {}
-        }
         // 保存进图鉴的数据
         const name = answer.name
-        if (!record.randomModeRecord[name]) {
-          record.randomModeRecord[name] = {cost: newData.length, winTime: 1}
+        if (!record[mode].roles[name]) {
+          record[mode].roles[name] = {cost: newData.length, winTime: 1}
         } else {
-          const oldCost = record.randomModeRecord[name]?.cost || 0
-          record.randomModeRecord[name] = {
+          const oldCost = record[mode].roles[name]?.cost || 0
+          record[mode].roles[name] = {
             cost: oldCost > newData.length ? newData.length : oldCost,
-            winTime: (record.randomModeRecord[name]?.winTime || 0) + 1
+            winTime: (record[mode].roles[name]?.winTime || 0) + 1
           }
         }
       } else {
@@ -159,19 +160,19 @@ const randomGame = ({store, randomStore}: any) => {
             return guess?.[MAIN_KEY]
           })
         })
-        record.straightWins = 0;
+        record[mode].straightWins = 0;
       }
-      record.playTimes += 1;
-      record.totalTryTimes += newData.length;
+      record[mode].playTimes += 1;
+      record[mode].totalTryTimes += newData.length;
       saveRecordData(lang, record);
     },
     canGiveUp: !isOver && data?.length > 0,
     giveUp: () => {
       randomGameGiveUp(lang, {answer: randomAnswerKey})
       let record = loadRecordData(lang);
-      record.straightWins = 0;
-      record.playTimes += 1;
-      record.totalTryTimes += randomData.length;
+      record[mode].straightWins = 0;
+      record[mode].playTimes += 1;
+      record[mode].totalTryTimes += randomData.length;
       saveRecordData(lang, record);
       setGiveUp(true);
       localStorageSet(lang, 'giveUp', 'true')
@@ -182,6 +183,7 @@ const randomGame = ({store, randomStore}: any) => {
   }
 }
 const dailyGame = ({store, dailyStore}: any) => {
+  const mode = DAILY_MODE;
   const {
     remoteAnswerKey, setRemoteAnswerKey,
     today, setToday,
@@ -236,21 +238,24 @@ const dailyGame = ({store, dailyStore}: any) => {
             return guess?.[MAIN_KEY]
           })
         }, newData.length)
-        record.dailyWinTimes += 1;
-        record.dailyWinTryTimes += newData.length;
-        record.dailyStraightWins += 1;
-        if (record.dailyStraightWins > record.dailyMaxStraightWins) {
-          record.dailyMaxStraightWins = record.dailyStraightWins;
+        record[mode].winTimes += 1;
+        record[mode].winTryTimes += newData.length;
+        record[mode].straightWins += 1;
+        if (record[mode].straightWins > record[mode].maxStraightWins) {
+          record[mode].maxStraightWins = record[mode].straightWins;
+        }
+        if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
+          record[mode].minWinTimes = newData.length;
         }
         // 保存进图鉴的数据
         const name = answer.name
-        if (!record.dailyModeRecord[name]) {
-          record.dailyModeRecord[name] = {cost: newData.length, winTime: 1}
+        if (!record[mode].roles[name]) {
+          record[mode].roles[name] = {cost: newData.length, winTime: 1}
         } else {
-          const oldCost = record.dailyModeRecord[name]?.cost || 0
-          record.dailyModeRecord[name] = {
+          const oldCost = record[mode].roles[name]?.cost || 0
+          record[mode].roles[name] = {
             cost: oldCost > newData.length ? newData.length : oldCost,
-            winTime: (record.dailyModeRecord[name]?.winTime || 0) + 1
+            winTime: (record[mode].roles[name]?.winTime || 0) + 1
           }
         }
       } else {
@@ -259,10 +264,10 @@ const dailyGame = ({store, dailyStore}: any) => {
             return guess?.[MAIN_KEY]
           })
         })
-        record.dailyStraightWins = 0;
+        record[mode].straightWins = 0;
       }
-      record.dailyPlayTimes += 1;
-      record.dailyTotalTryTimes += newData.length;
+      record[mode].playTimes += 1;
+      record[mode].totalTryTimes += newData.length;
       saveRecordData(lang, record);
     },
     gameTip: () => <>
@@ -272,6 +277,7 @@ const dailyGame = ({store, dailyStore}: any) => {
   }
 }
 const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
+  const mode = PARADOX_MODE;
   const {chartsData, i18n} = store as HomeStore;
   const {
     restList, setRestList,
@@ -360,6 +366,10 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     giveUp: () => {
       setGiveUp(true);
       saveData('giveUp', 'true')
+      let record = loadRecordData(lang);
+      record[mode].playTimes += 1;
+      record[mode].straightWins = 0;
+      saveRecordData(lang, record);
     },
     judgeOver: data => judgeWin(data),
     isOver,
@@ -369,11 +379,18 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       // 埋点
       // randomGameWin()
       let record = loadRecordData(lang);
-      if (!record.paradoxModeRecord) {
-        record.paradoxModeRecord = {}
+      record[mode].playTimes += 1;
+      record[mode].winTimes += 1;
+      record[mode].winTryTimes += newData.length;
+      record[mode].straightWins += 1;
+      if (record[mode].straightWins > record[mode].maxStraightWins) {
+        record[mode].maxStraightWins = record[mode].straightWins;
       }
-      if (!record.paradoxModeRecord[name] || record.paradoxModeRecord[name] > times) {
-        record.paradoxModeRecord[name] = times
+      if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
+        record[mode].minWinTimes = newData.length;
+      }
+      if (!record[mode].roles[name] || record[mode].roles[name] > times) {
+        record[mode].roles[name] = times
       }
       saveRecordData(lang, record);
     },
