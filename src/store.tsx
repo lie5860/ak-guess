@@ -1,6 +1,6 @@
 import {moment, React} from "./global";
 
-import {DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE} from "./const";
+import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 import {
@@ -325,33 +325,27 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       const oldRestList = restList;
       const timesDict = {} as any;
       let maxData = {time: 0, res: {} as GuessItem, restList: [] as number[]}
-      if (restList.length === 2) {
-        // 剩余两个干员时 强制选择另一个
-        if (newItem.name === chartsData[restList[0]].name) {
-          maxData = {time: 1, res: guessFn(newItem, chartsData[restList[1]]), restList: [restList[1]]}
+      for (let i = 0; i < length; i++) {
+        const res = guessFn(newItem, chartsData[restList[i]])
+        // Object.values兼容性OK？
+        const key = COLUMNS.map(v => res[v?.key]).join('|')
+        if (timesDict[key]) {
+          const {time, restList} = timesDict[key];
+          timesDict[key] = {time: time + 1, res, restList: [...restList, oldRestList[i]]}
         } else {
-          maxData = {time: 1, res: guessFn(newItem, chartsData[restList[0]]), restList: [restList[0]]}
+          timesDict[key] = {time: 1, res, restList: [oldRestList[i]]}
         }
-      } else {
-        for (let i = 0; i < length; i++) {
-          const res = guessFn(newItem, chartsData[restList[i]])
-          const {guess, ...rest} = res;
-          // Object.values兼容性OK？
-          const key = Object.keys(rest).map(k => rest[k]).join('|')
-          if (timesDict[key]) {
-            const {time, restList} = timesDict[key];
-            timesDict[key] = {time: time + 1, res, restList: [...restList, oldRestList[i]]}
-          } else {
-            timesDict[key] = {time: 1, res, restList: [oldRestList[i]]}
-          }
-        }
-        Object.keys(timesDict).forEach(k => {
-          // 相同的情况如何处理 todo????
-          if (maxData.time < timesDict[k].time) {
-            maxData = timesDict[k]
-          }
-        })
       }
+      const timesArr = Object.keys(timesDict)
+      timesArr.forEach(k => {
+        const {time} = timesDict[k];
+        const allCorrectKey = COLUMNS.map(() => 'correct').join('|')
+        const needSkip = timesArr.length > 1 && time === 1 && k === allCorrectKey
+        // 相同的情况如何处理 todo????
+        if (maxData.time < time && !needSkip) {
+          maxData = timesDict[k]
+        }
+      })
       maxData.res.guess.restList = maxData.restList
       const newData = [...data, maxData.res]
       setData(newData)
