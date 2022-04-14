@@ -15,7 +15,7 @@ import {
 
 interface HomeStore {
   mode: string;
-  chartsData: GuessItem[];
+  chartsData: Character[];
   lang: string;
   today: string;
 }
@@ -35,8 +35,8 @@ interface Game {
   gameOver: (newData: GuessItem[], isWin: boolean) => void;
 }
 
-const useRandomStore = () => {
-  const [randomAnswerKey, setRandomAnswerKey] = React.useState()
+const useRandomStore = ({chartsData}: { chartsData: Character[] }) => {
+  const [randomAnswerKey, setRandomAnswerKey] = React.useState(Math.floor(Math.random() * chartsData.length))
   const [isGiveUp, setGiveUp] = React.useState(false);
   const [randomData, setRandomData] = React.useState([])
   return {
@@ -54,9 +54,9 @@ const useDailyStore = () => {
   }
 }
 export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
-  const randomStore = useRandomStore()
+  const {chartsData, mode} = store
+  const randomStore = useRandomStore({chartsData})
   const dailyStore = useDailyStore()
-  const {mode} = store
   const gameDict: { [key: string]: (store: any) => Game } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame
