@@ -2,6 +2,15 @@ import {DAILY_MODE, PARADOX_MODE, RANDOM_MODE, reportKeyDict, TYPES} from "./con
 import {moment} from "./global";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
+// 假的UUID
+function uuid() {
+  function S4() {
+    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+  }
+
+  return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+}
+
 const axios = window.axios;
 const guess = (inputItem: Character, answer: Character) => {
   const res: GuessItem = {} as GuessItem
@@ -133,7 +142,13 @@ const resultDict: { [key: string]: number } = {
 }
 const commonReport = (server: string, optLabel: OptLabel, mode: string, type: string) => {
   const {answer} = optLabel
-  const user = '233';
+  let user = '';
+  if (localStorage.getItem('UUID')) {
+    user = localStorage.getItem('UUID') || ''
+  } else {
+    user = uuid();
+    localStorage.setItem('UUID', user);
+  }
   reportData({
     server,
     mode: reportKeyDict[mode],
