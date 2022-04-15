@@ -6,7 +6,7 @@ import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 import {
   dailyGameLose,
   dailyGameWin, getDailyData,
-  guess as guessFn,
+  guess as guessFn, paradoxGameGiveUp, paradoxGameInit, paradoxGameWin,
   randomGameGiveUp,
   randomGameInit,
   randomGameLose,
@@ -16,6 +16,7 @@ import {
 export interface HomeStore {
   mode: string;
   chartsData: Character[];
+  chartNameToIndexDict: { [key: string]: number };
   i18n: any;
   today: string;
 }
@@ -70,10 +71,10 @@ const randomGame = ({store, randomStore}: any) => {
     isGiveUp, setGiveUp,
     randomData, setRandomData
   } = randomStore
-  const {chartsData, i18n} = store;
+  const {chartsData, i18n, chartNameToIndexDict} = store;
   const lang = i18n.language;
   const answer = chartsData[randomAnswerKey ?? Math.floor(Math.random() * chartsData.length)];
-  const data = randomData;
+  const data: GuessItem[] = randomData;
   const judgeWin = (data: GuessItem[]) => data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
   const judgeOver = (data: GuessItem[]) => data.length >= DEFAULT_TRY_TIMES || judgeWin(data) || isGiveUp as boolean;
   const isWin = judgeWin(data);
@@ -130,9 +131,12 @@ const randomGame = ({store, randomStore}: any) => {
       if (isWin) {
         randomGameWin(lang, {
           answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
-            return guess?.[MAIN_KEY]
+            return {
+              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+              name: guess?.[MAIN_KEY]
+            }
           })
-        }, newData.length)
+        })
         record[mode].winTryTimes += newData.length;
         record[mode].winTimes += 1;
         record[mode].straightWins += 1;
@@ -157,7 +161,10 @@ const randomGame = ({store, randomStore}: any) => {
       } else {
         randomGameLose(lang, {
           answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
-            return guess?.[MAIN_KEY]
+            return {
+              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+              name: guess?.[MAIN_KEY]
+            }
           })
         })
         record[mode].straightWins = 0;
@@ -168,7 +175,14 @@ const randomGame = ({store, randomStore}: any) => {
     },
     canGiveUp: !isOver && data?.length > 0,
     giveUp: () => {
-      randomGameGiveUp(lang, {answer: randomAnswerKey})
+      randomGameGiveUp(lang, {
+        answer: randomAnswerKey, inputArray: data.map(({guess}) => {
+          return {
+            index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+            name: guess?.[MAIN_KEY]
+          };
+        })
+      });
       let record = loadRecordData(lang);
       record[mode].straightWins = 0;
       record[mode].playTimes += 1;
@@ -189,7 +203,7 @@ const dailyGame = ({store, dailyStore}: any) => {
     today, setToday,
     dayData, setDayData
   } = dailyStore
-  const {chartsData, i18n} = store;
+  const {chartsData, i18n, chartNameToIndexDict} = store;
 
   const lang = i18n.language;
   const answer = chartsData[remoteAnswerKey];
@@ -234,9 +248,12 @@ const dailyGame = ({store, dailyStore}: any) => {
       if (isWin) {
         dailyGameWin(lang, {
           answer: remoteAnswerKey, inputArray: newData.map(({guess}) => {
-            return guess?.[MAIN_KEY]
+            return {
+              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+              name: guess?.[MAIN_KEY]
+            }
           })
-        }, newData.length)
+        })
         record[mode].winTimes += 1;
         record[mode].winTryTimes += newData.length;
         record[mode].straightWins += 1;
@@ -260,7 +277,10 @@ const dailyGame = ({store, dailyStore}: any) => {
       } else {
         dailyGameLose(lang, {
           answer: remoteAnswerKey, inputArray: newData.map(({guess}) => {
-            return guess?.[MAIN_KEY]
+            return {
+              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+              name: guess?.[MAIN_KEY]
+            }
           })
         })
         record[mode].straightWins = 0;
@@ -277,7 +297,7 @@ const dailyGame = ({store, dailyStore}: any) => {
 }
 const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   const mode = PARADOX_MODE;
-  const {chartsData, i18n} = store as HomeStore;
+  const {chartsData, i18n, chartNameToIndexDict} = store as HomeStore;
   const {
     restList, setRestList,
     isGiveUp, setGiveUp,
@@ -294,6 +314,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     return paradoxData[key]
   }
   const newGame = () => {
+    paradoxGameInit(lang, {answer: 0})
     setGiveUp(false);
     saveData('giveUp', 'false')
     setData([]);
@@ -362,6 +383,15 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     isWin: judgeWin(data),
     canGiveUp: !isOver && data?.length > 0,
     giveUp: () => {
+      const name = answer?.[MAIN_KEY];
+      paradoxGameGiveUp(lang, {
+        answer: chartNameToIndexDict[name], inputArray: data.map(({guess}: GuessItem) => {
+          return {
+            index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+            name: guess?.[MAIN_KEY]
+          };
+        })
+      });
       setGiveUp(true);
       saveData('giveUp', 'true')
       let record = loadRecordData(lang);
@@ -375,7 +405,14 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       const times = newData.length;
       const name = answer?.[MAIN_KEY];
       // 埋点
-      // randomGameWin()
+      paradoxGameWin(lang, {
+        answer: chartNameToIndexDict[name], inputArray: newData.map(({guess}) => {
+          return {
+            index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+            name: guess?.[MAIN_KEY]
+          }
+        })
+      })
       let record = loadRecordData(lang);
       record[mode].playTimes += 1;
       record[mode].winTimes += 1;

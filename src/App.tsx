@@ -11,12 +11,12 @@ import {hostDict, labelDict} from "./locales";
 import Game from './component/Game';
 
 export default function Home() {
-  const {i18n, chartsData} = React.useContext(AppCtx);
+  const {i18n, chartsData, chartNameToIndexDict} = React.useContext(AppCtx);
   const [mode, setMode] = React.useState(RANDOM_MODE)
   const [showDailyMode, setShowDailyMode] = React.useState(false)
   const [updateDate, setUpdateDate] = React.useState('')
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
-  const store = {mode, chartsData, today, i18n}
+  const store = {mode, chartsData, today, i18n, chartNameToIndexDict}
   const openHelp = (firstOpen = false) => {
     window?.mduiModal?.open({
       "message": <Help updateDate={updateDate} firstOpen={firstOpen}/>,

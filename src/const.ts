@@ -6,6 +6,11 @@ export const modeI18nKeyDict: { [key: string]: string } = {
   [PARADOX_MODE]: 'paradoxMode',
   [RANDOM_MODE]: 'randomMode',
 }
+export const reportKeyDict: { [key: string]: string } = {
+  [DAILY_MODE]: 'daily',
+  [PARADOX_MODE]: 'paradox',
+  [RANDOM_MODE]: 'random',
+}
 export const MAIN_KEY = 'name'
 export const COLUMNS = [
   {label: '稀有度', i18nKey: 'rarity', key: 'rarity', type: 'number'},
