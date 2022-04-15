@@ -32,7 +32,9 @@ export default function Home() {
     })
     if (!localStorageGet(i18n.language, 'firstOpen')) {
       localStorageSet(i18n.language, 'firstOpen', 'yes');
-      openHelp(true)
+      setTimeout(() => {
+        openHelp(true)
+      }, 500)
     }
   }, [])
   const menu = showDailyMode ? [RANDOM_MODE, DAILY_MODE, PARADOX_MODE] : [RANDOM_MODE, PARADOX_MODE];
