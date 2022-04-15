@@ -138,7 +138,7 @@ const commonReport = (server: string, optLabel: OptLabel, mode: string, type: st
     server,
     mode: reportKeyDict[mode],
     answer,
-    op_time: new Date().toString(),
+    op_time: moment().format('YYYY-MM-DD HH:mm:ss'),
     result: resultDict[type],
     try_times: optLabel?.inputArray?.length ?? 0,
     user,
