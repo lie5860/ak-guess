@@ -115,9 +115,7 @@ export interface ReportData {
 }
 
 const reportData = (data: ReportData) => {
-  axios.post('http://akapi.saki.cc/report.php', {
-    data
-  }).catch(() => {
+  axios.post('https://akapi.saki.cc/report.php',data).catch(() => {
   })
   // try {
   //   window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
