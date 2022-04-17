@@ -10,9 +10,12 @@ const Modal = () => {
     window.mduiModal = {
       open: (modal: any) => {
         setModal(modal)
+      },
+      close: () => {
+        inst?.close()
       }
     }
-  }, [])
+  }, [inst])
   React.useEffect(() => {
     if (modal) {
       const inst = new window.mdui.Dialog('#modal233')
