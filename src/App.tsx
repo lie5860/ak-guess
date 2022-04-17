@@ -60,7 +60,7 @@ export default function Home() {
           <li className="mdui-menu-item mdui-ripple">
             {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
               return <a key={key} className="mdui-ripple pointer" onClick={() => {
-                location.href = hostDict[key]
+                location.href = `${location.href}?lang=${key}`
               }}>
                 <i style={{visibility: key === i18n.language ? undefined : 'hidden'}}
                    className="mdui-menu-item-icon mdui-icon material-icons">done</i>
