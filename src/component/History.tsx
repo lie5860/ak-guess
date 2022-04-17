@@ -156,18 +156,10 @@ const History = ({mode}: {mode: string}) => {
         </a><a className={'togglec'} onClick={() => {
           window?.mduiModal?.close();
           setTimeout(()=>{
-            window?.mduiModal?.open({
-              content: i18n.get("resetConfirm"),
-              buttons: [
-                {
-                  text: i18n.get('no')
-                },
-                {
-                  text: i18n.get('yes'),
-                  onClick: function () {
-                  }
-                }
-              ]
+            window?.mdui.confirm( i18n.get("resetConfirm"),() => {
+              console.log(233)
+            },() => {
+              console.log(244)
             });
           }, 1000)
     }}><i class="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
