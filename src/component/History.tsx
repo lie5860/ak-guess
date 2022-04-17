@@ -157,11 +157,13 @@ const History = ({mode}: {mode: string}) => {
           window?.mduiModal?.close();
           setTimeout(()=>{
             window?.mdui.confirm( i18n.get("resetConfirm"),() => {
-              console.log(233)
+              resetRecordData(i18n.language, mode, i18n.get('resetSuccess'));
             },() => {
-              console.log(244)
+            }, {
+              'confirmText': i18n.get('yes'),
+              'cancelText': i18n.get('no')
             });
-          }, 1000)
+          }, 100)
     }}><i class="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
   </>;
 }
