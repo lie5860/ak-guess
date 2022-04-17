@@ -4,6 +4,7 @@ const dict: { [key: string]: string } = {
   paradoxModeTip: '你的猜测会影响这只神秘干员的真面目，试试看！',
   paradoxShareTimesTip: '经过{times}局终于解出了谜题！',
   paradoxGamingShareTip: '激战中！',
+  paradoxHelpDesc: '悖论模拟系统将自动选取与你猜的干员<strong style="color:rgb(255, 204, 76)">不同</strong>的结果，请尝试各种猜测策略直到它投降！',
   roleWinTimes: '累计胜利次数：',
   minWinTimes: '最少猜测次数：',
   operatorWinCount: '解锁干员个数：',

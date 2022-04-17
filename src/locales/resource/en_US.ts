@@ -4,6 +4,7 @@ const dict: { [key: string]: string } = {
   paradoxModeTip: 'Your guesses will influence who this operator really is, have a try!',
   paradoxShareTimesTip: 'Finally you have solved this puzzle after {times} times of guessing!',
   paradoxGamingShareTip: 'Game in progress!',
+  paradoxHelpDesc: '悖论模拟系统将自动选取与你猜的干员<strong style="color:rgb(255, 204, 76)">不同</strong>的结果，请尝试各种猜测策略直到它投降！',
   roleWinTimes: 'Win times in total: ',
   minWinTimes: 'Least guessing times: ',
   operatorWinCount: 'Number of unlocked operators: ',

@@ -19,7 +19,7 @@ export default function Home() {
   const store = {mode, chartsData, today, i18n, chartNameToIndexDict}
   const openHelp = (firstOpen = false) => {
     window?.mduiModal?.open({
-      "message": <Help updateDate={updateDate} firstOpen={firstOpen}/>,
+      "message": <Help updateDate={updateDate} firstOpen={firstOpen} mode={mode}/>,
       "title": i18n.get('helpTitle'),
       useCloseIcon: true
     })
@@ -38,6 +38,13 @@ export default function Home() {
     }
   }, [])
   const menu = showDailyMode ? [RANDOM_MODE, DAILY_MODE, PARADOX_MODE] : [RANDOM_MODE, PARADOX_MODE];
+  // 第一次进悖论模式，弹出帮助框
+  if (mode == PARADOX_MODE && !localStorageGet(i18n.language, 'firstOpenParadox')) {
+    localStorageSet(i18n.language, 'firstOpenParadox', 'yes');
+    setTimeout(() => {
+      openHelp(true)
+    }, 500)
+  }
   return (
     <div className={'container'}>
       <div className={'main-container clean-float'}>

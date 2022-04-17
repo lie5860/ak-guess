@@ -4,6 +4,7 @@ const dict: { [key: string]: string } = {
   paradoxModeTip: '入力した答えが謎オペレーターの正体にも影響するよ、試してみよう！',
   paradoxShareTimesTip: '{times}回かけて謎を解けた！',
   paradoxGamingShareTip: '激戦中！',
+  paradoxHelpDesc: '悖论模拟系统将自动选取与你猜的干员<strong style="color:rgb(255, 204, 76)">不同</strong>的结果，请尝试各种猜测策略直到它投降！',
   roleWinTimes: '累計成功回数：',
   minWinTimes: '最少推測回数：',
   operatorWinCount: '解禁済オペ数：',
