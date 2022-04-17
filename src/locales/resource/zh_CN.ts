@@ -1,4 +1,7 @@
 const dict: { [key: string]: string } = {
+  resetTip: '重置',
+  resetConfirm: '将完全重置当前模式包括已解锁干员内的所有测试报告！确定吗？',
+  resetSuccess: '重置成功！',
   paradoxMode: '悖论模拟！',
   paradoxModeShareText: '悖论模拟',
   paradoxModeTip: '你的猜测会影响这只神秘干员的真面目，试试看！',

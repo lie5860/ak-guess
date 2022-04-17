@@ -48,6 +48,15 @@ const loadRecordData = (lang: string) => {
   return record;
 }
 
+const resetRecordData = (lang: string, mode: string, successTip: string) => {
+  var record = loadRecordData(lang);
+  record[mode] = DEFAULT_RECODE[mode];
+  saveRecordData(lang, record);
+  if (successTip) {
+    window.mdui.snackbar(successTip);
+  }
+}
+
 const saveRecordData = (lang: string, record: any) => {
   localStorageSet(lang, "record", JSON.stringify({...DEFAULT_RECODE, ...record}));
 }
@@ -125,13 +134,11 @@ const History = ({mode}: {mode: string}) => {
   }
   return <>
     <p className={'flex-center'}>
-      <ShareIcon onClick={() => {
-        copyCurrentDay(getShareHistoryText(mode), i18n.get('copySuccess'))
-      }}/>
       <span className='title'>
         {i18n.get(modeI18nKeyDict[mode])}
       </span>
     </p>
+    <hr/>
     <p>
       {i18n.get('playTimes')}{record[mode]?.playTimes}<br/>
       {i18n.get('winTimes')}{record[mode]?.winTimes}<br/>
@@ -142,6 +149,28 @@ const History = ({mode}: {mode: string}) => {
       {i18n.get('minWinTimes')}{record[mode]?.minWinTimes?record[mode]?.minWinTimes:"N/A"}<br/>
       {i18n.get('operatorWinCount')}{Object.keys(record[mode]?.roles).length}
     </p>
+        <a className={'togglec'} onClick={() => {
+          copyCurrentDay(getShareHistoryText(mode), i18n.get('copySuccess'))
+        }}>
+            <ShareIcon/>{i18n.get('shareTip1')}
+        </a><a className={'togglec'} onClick={() => {
+          window?.mduiModal?.close();
+          setTimeout(()=>{
+            window?.mduiModal?.open({
+              content: i18n.get("resetConfirm"),
+              buttons: [
+                {
+                  text: i18n.get('no')
+                },
+                {
+                  text: i18n.get('yes'),
+                  onClick: function () {
+                  }
+                }
+              ]
+            });
+          }, 1000)
+    }}><i class="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
   </>;
 }
 export {
