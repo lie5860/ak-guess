@@ -1,3 +1,33 @@
+import {MAIN_KEY} from "../const";
+
+export const filterDataByInputVal = (val: string, chartList: Character[], aliasData: Alias[]) => {
+  let inputVal = val.toUpperCase().trim()
+  // 平假名转换成片假名去匹配结果
+  inputVal = inputVal.replace(/[\u3041-\u3096]/g, function (match) {
+    var chr = match.charCodeAt(0) + 0x60;
+    return String.fromCharCode(chr);
+  });
+  let dealModal = [] as string[]
+  aliasData.forEach(v => {
+    new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
+  })
+  const nameMatchItems = [];
+  const aliasMatchItems = [];
+  for (let i = 0; i < chartList.length; i++) {
+    // 英文首字母的判断 todo 是否必要？
+    const chartName = chartList[i]?.[MAIN_KEY];
+    if (chartName.split(' ').map(v => !!v ? v[0] : '').join('').toUpperCase().startsWith(inputVal)) {
+      nameMatchItems.push(chartList[i])
+    } else if (chartName.toUpperCase().indexOf(inputVal) !== -1) {
+      nameMatchItems.push(chartList[i])
+    } else if (chartList[i].en.toUpperCase().startsWith(inputVal)) {
+      nameMatchItems.push(chartList[i])
+    } else if (dealModal.some(v => chartName.toUpperCase() === v.toUpperCase())) {
+      aliasMatchItems.push(chartList[i])
+    }
+  }
+  return [...nameMatchItems, ...aliasMatchItems]
+}
 export default function autocomplete(inp: Element, arr: string[], chartsData: Character[], aliasData: Alias[]) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
@@ -10,11 +40,6 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     if (!inputVal) {
       return false;
     }
-    // 平假名转换成片假名去匹配结果
-    inputVal = inputVal.replace(/[\u3041-\u3096]/g, function (match) {
-      var chr = match.charCodeAt(0) + 0x60;
-      return String.fromCharCode(chr);
-    });
     currentFocus = -1;
     /*create a DIV element that will contain the items (values):*/
     a = document.createElement("DIV");
@@ -23,20 +48,14 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     /*append the DIV element as a child of the autocomplete container:*/
     this.parentNode.appendChild(a);
     /*for each item in the array...*/
-    let dealModal = []
-    aliasData.forEach(v => {
-      new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
-    })
-    const nameMatchItems = [];
-    const aliasMatchItems = [];
-    for (i = 0; i < arr.length; i++) {
+    const data = filterDataByInputVal(inputVal, chartsData, aliasData).map((v) => {
       let b;
       /*create a DIV element for each matching element:*/
       b = document.createElement("DIV");
       /*make the matching letters bold:*/
-      b.innerHTML = arr[i];
+      b.innerHTML = v?.[MAIN_KEY];
       /*insert a input field that will hold the current array item's value:*/
-      let value = arr[i].replace("'", "&#39;")
+      let value = v?.[MAIN_KEY].toString().replace("'", "&#39;")
       b.innerHTML += "<input type='hidden' value='" + value + "'>";
       /*execute a function when someone clicks on the item value (DIV element):*/
       b.addEventListener("click", function (e) {
@@ -46,18 +65,9 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
         (or any other open lists of autocompleted values:*/
         closeAllLists();
       });
-      // 英文首字母的判断 todo 是否必要？
-      if (arr[i].split(' ').map(v => !!v ? v[0] : '').join('').toUpperCase().startsWith(inputVal)) {
-        nameMatchItems.push(b)
-      } else if (arr[i].toUpperCase().indexOf(inputVal) !== -1) {
-        nameMatchItems.push(b)
-      } else if (chartsData[i].en.toUpperCase().startsWith(inputVal)) {
-        nameMatchItems.push(b)
-      } else if (dealModal.some(v => arr[i].toUpperCase() === v.toUpperCase())) {
-        aliasMatchItems.push(b)
-      }
-    }
-    a.append(...nameMatchItems, ...aliasMatchItems);
+      return b;
+    })
+    a.append(...data);
     // [...nameMatchItems,...aliasMatchItems].forEach(v=>a.appendChild(v));
   }
   const keydownCb = function (e) {

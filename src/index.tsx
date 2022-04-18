@@ -27,4 +27,6 @@ export function updated(attrName: string, value: any, container: Container, prop
 const AkGuess = {
   bootstrap, mount, updated
 }
+// 暂时不知道怎么处理 todo
+// 债务 这边应该把AkGuess导出 由外部引入模块后调用window.magic
 window.magic('ak-guess', AkGuess);

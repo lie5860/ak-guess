@@ -1,16 +1,30 @@
 import {React, ReactDom} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
-const Modal = ({modal, onClose}: { modal: any, onClose: () => any }) => {
+const Modal = () => {
   const {i18n} = React.useContext(AppCtx)
   const [inst, setInst] = React.useState(null);
+  const [modal, setModal] = React.useState(null)
+  const onClose = () => setModal(null);
   React.useEffect(() => {
-    const inst = new window.mdui.Dialog('#modal233')
-    setInst(inst)
-    inst.open()
-    document.querySelector('#modal233')?.addEventListener('closed.mdui.dialog', onClose)
-  }, [])
-  return ReactDom.createPortal(<div className="mdui-dialog" id="modal233">
+    window.mduiModal = {
+      open: (modal: any) => {
+        setModal(modal)
+      },
+      close: () => {
+        inst?.close()
+      }
+    }
+  }, [inst])
+  React.useEffect(() => {
+    if (modal) {
+      const inst = new window.mdui.Dialog('#modal233')
+      setInst(inst)
+      inst.open()
+      document.querySelector('#modal233')?.addEventListener('closed.mdui.dialog', onClose)
+    }
+  }, [!!modal])
+  return modal && ReactDom.createPortal(<div className="mdui-dialog" id="modal233">
     {modal.useCloseIcon &&
     <div className={'close-icon'} onClick={() => inst?.close()}><i className="mdui-icon material-icons">&#xe5cd;</i>
     </div>}

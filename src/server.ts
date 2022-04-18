@@ -1,6 +1,15 @@
-import {TYPES} from "./const";
+import {DAILY_MODE, PARADOX_MODE, RANDOM_MODE, reportKeyDict, TYPES} from "./const";
 import {moment} from "./global";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
+
+// 假的UUID
+function uuid() {
+  function S4() {
+    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+  }
+
+  return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+}
 
 const axios = window.axios;
 const guess = (inputItem: Character, answer: Character) => {
@@ -63,7 +72,7 @@ const getDailyData = (lang: string) => {
   if (oldData) {
     try {
       const data = JSON.parse(oldData);
-      if (data.date === today) {
+      if (data?.res?.server_date === today) {
         return Promise.resolve(data.res)
       }
     } catch (e) {
@@ -75,8 +84,7 @@ const getDailyData = (lang: string) => {
       const res = response.data;
       dailyGameInit(lang, {answer: response.data.daily})
       localStorageSet(lang, 'dailyData', JSON.stringify({
-        res,
-        date: today
+        res
       }));
       return response.data;
     })
@@ -85,39 +93,114 @@ const getDailyData = (lang: string) => {
     })
   return cacheLoad(`${today}|dailyData`, getDataFn)
 };
-const reportData = (category: string, action: string, opt_label?: string, opt_value?: number) => {
-  try {
-    window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
-  } catch (e) {
-  }
+
+export interface Answers {
+  index: number;
+  name?: string;
+}
+
+export interface Extend {
+  answers: Answers[];
+}
+
+export interface ReportData {
+  mode: string;
+  server: string;
+  answer: number;
+  op_time: string;
+  result: number;
+  try_times: number;
+  user: string;
+  extend: Extend;
+}
+
+const reportData = (data: ReportData) => {
+  axios.post('https://akapi.saki.cc/report.php',data).catch(() => {
+  })
+  // try {
+  //   window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
+  // } catch (e) {
+  // }
 }
 
 interface OptLabel {
   answer: number;
-  inputArray?: string[];
+  inputArray?: Answers[];
 }
 
-const dailyGameInit = (server: string, optLabel: OptLabel) => {
-  reportData(`daily|${server}`, 'init', JSON.stringify(optLabel))
+const INIT = 'init';
+const WIN = 'win';
+const LOSE = 'lose';
+const GIVE_UP = 'giveUp';
+const resultDict: { [key: string]: number } = {
+  [INIT]: 0,
+  [WIN]: 1,
+  [LOSE]: 2,
+  [GIVE_UP]: 3
 }
-const dailyGameWin = (server: string, optLabel: OptLabel, times: number) => {
-  reportData(`daily|${server}`, 'win', JSON.stringify(optLabel), times)
+const commonReport = (server: string, optLabel: OptLabel, mode: string, type: string) => {
+  const {answer} = optLabel
+  let user = '';
+  if (localStorage.getItem('UUID')) {
+    user = localStorage.getItem('UUID') || ''
+  } else {
+    user = uuid();
+    localStorage.setItem('UUID', user);
+  }
+  reportData({
+    server,
+    mode: reportKeyDict[mode],
+    answer,
+    op_time: moment().format('YYYY-MM-DD HH:mm:ss'),
+    result: resultDict[type],
+    try_times: optLabel?.inputArray?.length ?? 0,
+    user,
+    extend: {
+      answers: (optLabel?.inputArray || []).map(({index}) => {
+        return {
+          index
+        }
+      })
+    }
+  })
+}
+const dailyGameInit = (server: string, optLabel: OptLabel) => {
+  commonReport(server, optLabel, DAILY_MODE, INIT);
+  // reportData(`daily|${server}`, 'init', JSON.stringify(optLabel))
+}
+const dailyGameWin = (server: string, optLabel: OptLabel) => {
+  commonReport(server, optLabel, DAILY_MODE, WIN);
+  // reportData(`daily|${server}`, 'win', JSON.stringify(optLabel), times)
 }
 const dailyGameLose = (server: string, optLabel: OptLabel) => {
-  reportData(`daily|${server}`, 'lose', JSON.stringify(optLabel))
+  commonReport(server, optLabel, DAILY_MODE, LOSE);
+  // reportData(`daily|${server}`, 'lose', JSON.stringify(optLabel))
 }
 
 const randomGameInit = (server: string, optLabel: OptLabel) => {
-  reportData(`random|${server}`, 'init', JSON.stringify(optLabel))
+  commonReport(server, optLabel, RANDOM_MODE, INIT);
+  // reportData(`random|${server}`, 'init', JSON.stringify(optLabel))
 }
-const randomGameWin = (server: string, optLabel: OptLabel, times: number) => {
-  reportData(`random|${server}`, 'win', JSON.stringify(optLabel), times)
+const randomGameWin = (server: string, optLabel: OptLabel) => {
+  commonReport(server, optLabel, RANDOM_MODE, WIN);
+  // reportData(`random|${server}`, 'win', JSON.stringify(optLabel), times)
 }
 const randomGameLose = (server: string, optLabel: OptLabel) => {
-  reportData(`random|${server}`, 'lose', JSON.stringify(optLabel))
+  commonReport(server, optLabel, RANDOM_MODE, LOSE);
+  // reportData(`random|${server}`, 'lose', JSON.stringify(optLabel))
 }
 const randomGameGiveUp = (server: string, optLabel: OptLabel) => {
-  reportData(`random|${server}`, 'giveUp', JSON.stringify(optLabel))
+  commonReport(server, optLabel, RANDOM_MODE, GIVE_UP);
+  // reportData(`random|${server}`, 'giveUp', JSON.stringify(optLabel))
+}
+const paradoxGameWin = (server: string, optLabel: OptLabel) => {
+  commonReport(server, optLabel, PARADOX_MODE, WIN);
+}
+const paradoxGameGiveUp = (server: string, optLabel: OptLabel) => {
+  commonReport(server, optLabel, PARADOX_MODE, GIVE_UP);
+}
+const paradoxGameInit = (server: string, optLabel: OptLabel) => {
+  commonReport(server, optLabel, PARADOX_MODE, INIT);
 }
 export {
   getDailyData,
@@ -128,5 +211,8 @@ export {
   randomGameGiveUp,
   randomGameLose,
   dailyGameWin,
-  dailyGameLose
+  dailyGameLose,
+  paradoxGameWin,
+  paradoxGameGiveUp,
+  paradoxGameInit
 }

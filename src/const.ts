@@ -1,13 +1,27 @@
 export const DAILY_MODE = 'DAILY_MODE'
+export const PARADOX_MODE = 'PARADOX_MODE'
 export const RANDOM_MODE = 'RANDOM_MODE'
+export const modeI18nKeyDict: { [key: string]: string } = {
+  [DAILY_MODE]: 'dailyMode',
+  [PARADOX_MODE]: 'paradoxMode',
+  [RANDOM_MODE]: 'randomMode',
+}
+export const reportKeyDict: { [key: string]: string } = {
+  [DAILY_MODE]: 'daily',
+  [PARADOX_MODE]: 'paradox',
+  [RANDOM_MODE]: 'random',
+}
 export const MAIN_KEY = 'name'
-export const TYPES = [
+export const COLUMNS = [
   {label: '稀有度', i18nKey: 'rarity', key: 'rarity', type: 'number'},
   {label: '阵营', i18nKey: 'camp', key: 'team', type: 'array'},
   {label: '职业', i18nKey: 'className', key: 'className', type: 'array'},
   {label: '种族', i18nKey: 'race', key: 'race', type: 'array'},
-  {label: '画师', i18nKey: 'painter', key: 'painter', type: 'string'},
-  {label: '干员', i18nKey: 'chartsName', key: 'guess'},
+  {label: '画师', i18nKey: 'painter', key: 'painter', type: 'string'}
+]
+export const TYPES = [
+  ...COLUMNS,
+  {label: '干员', i18nKey: 'chartsName', key: 'guess', type: 'guess'}
 ]
 export const VAL_DICT: { [key: string]: string } = {
   'correct': '🟩',
@@ -15,6 +29,13 @@ export const VAL_DICT: { [key: string]: string } = {
   'wrongpos': '🟨',
   'up': '🔼',
   'down': '🔽',
+}
+export const NOT_NAME_VAL_DICT: { [key: string]: string } = {
+  'correct': '🟩',
+  'wrong': '🟥',
+  'wrongpos': '🟨',
+  'up': '🟦',
+  'down': '🟦',
 }
 export const DEFAULT_TRY_TIMES = 8;
 
