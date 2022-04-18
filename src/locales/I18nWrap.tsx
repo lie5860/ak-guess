@@ -29,7 +29,6 @@ export const I18nWrap = (props: any) => {
     setLanguage(lastLang)
     initI18nDict(sl)
     const dd = (await import(`../data/dealData/dealData_${lastLang}.json`)).default
-    console.log(dd);
     setDealData(dd)
     const dict: { [key: string]: number } = {};
     dd.forEach((v: Character, index: number) => {
