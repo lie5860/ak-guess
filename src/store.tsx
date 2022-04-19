@@ -92,7 +92,8 @@ const randomGame = ({store, randomStore}: any) => {
   return {
     init: () => {
       const randomData = localStorageGet(lang, 'r-randomData')
-      if (randomData) {
+      const oldKey = localStorageGet(lang, 'r-randomAnswerKey')
+      if (randomData && oldKey !=='undefined') {
         const giveUp = localStorageGet(lang, "giveUp")
         if (giveUp) {
           setGiveUp(giveUp === 'true');
