@@ -1,6 +1,7 @@
 import {React} from "../global";
+import {reportError} from "../server";
 
-export class ErrorBoundary extends React.Component{
+export class ErrorBoundary extends React.Component {
   state = {
     error: null,
   };
@@ -14,17 +15,32 @@ export class ErrorBoundary extends React.Component{
   }
 
   componentDidCatch(error, info) {
+    const len = localStorage.length;  // 获取长度
+    const arr = new Array(); // 定义数据集
+    for (let i = 0; i < len; i++) {
+      // 获取key 索引从0开始
+      const getKey = localStorage.key(i);
+      // 获取key对应的值
+      const getVal = localStorage.getItem(getKey);
+      // 放进数组
+      arr[i] = {
+        'key': getKey,
+        'val': getVal,
+      }
+    }
     // 错误上报
-    // logErrorToMyService(error, info);
+    reportError({
+      message: error?.message,
+      stack: error?.stack,
+      localstorage: JSON.stringify(arr)
+    })
   }
 
   render() {
     if (this.state.error) {
       // 渲染出错时的 UI
       return <div style={{textAlign: 'left'}}>
-        <p>小刻猜猜乐发生了某种错误，帮忙截图提交至
-          <a href="https://www.wjx.top/vj/QgfS7Yd.aspx">问卷</a>
-          中反馈，谢谢！</p>
+        <p>小刻猜猜乐发生了某种错误，错误已上报到服务器，待修复后访问，谢谢！</p>
         <p>message:</p>
         <p>{this.state.error?.message}</p>
         <p>stack:</p>

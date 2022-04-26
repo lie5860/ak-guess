@@ -122,7 +122,15 @@ const reportData = (data: ReportData) => {
   // } catch (e) {
   // }
 }
-
+interface ErrData{
+  message:string;
+  stack:string;
+  localstorage:string;
+}
+export const reportError = (errData: ErrData) => {
+  axios.post('https://akapi.saki.cc/error_report.php',errData).catch(() => {
+  })
+}
 interface OptLabel {
   answer: number;
   inputArray?: Answers[];
