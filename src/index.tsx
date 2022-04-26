@@ -2,10 +2,12 @@ import App from './App'
 import {ReactDom, React} from './global'
 import {I18nWrap} from "./locales/I18nWrap";
 import {Container} from "react-dom";
-
+import {ErrorBoundary} from "./component/ErrorBoundary";
 const Main = () => {
   return <I18nWrap>
-    <App/>
+    <ErrorBoundary>
+      <App/>
+    </ErrorBoundary>
   </I18nWrap>
 }
 
