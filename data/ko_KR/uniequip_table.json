@@ -1,1 +1,2369 @@
-{"equipDict":{"uniequip_001_mgllan":{"uniEquipId":"uniequip_001_mgllan","uniEquipName":"마젤란의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 마젤란은 자신이 개발한 드론 모듈을 조종해 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_248_mgllan","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_mgllan":{"uniEquipId":"uniequip_002_mgllan","uniEquipName":"프로 드론 조작 모듈","uniEquipIcon":"uniequip_002_mgllan","uniEquipDesc":"    끝없는 빙원 첫 탐험, 가장 가까운 과학 탐사 관측소까지는 25일이 걸린다.\n    난 방금 눈 속에서 나뭇가지 하나를 파냈다. 구체적인 데이터는 데이터 리스트에 첨부한다. 간단하게 묘사하자면, 대략 내 팔 만한 길이다.\n    나뭇가지의 규화 과정이 매우 오래 지속되었음을 확인할 수 있다. 지금 내 손에 있는 건 완전히 규화되기 전, 최소 90%가 분해되었다.\n    이렇게 생각하면, 원래는 얼마나 두꺼운 나뭇가지였을까! 대략…… 며칠 전에 본 나무의 중심 줄기 정도 되려나? 그렇다면 나무 전체는 라인 랩 본부 건물만큼 높지 않았을까?! 우와, 정말 놀라워. 무겁지 않은 편이니 온전히 가져가야겠어. 국경에서 검문하는 우르수스 경관님이 수월하게 넘어가 주면 좋겠다.\n\n    끝없는 빙원 두 번째 탐험, 가장 가까운 과학 탐사 관측소까지는 28일이 걸린다.\n    난 동굴에서 피난 중이다. 밖에 거센 눈보라가 불어, 오늘은 전진할 수 없을 것 같다. 우선 여기서 쉬며 정비해야겠다.\n    준비한 드론은 모두 사용 중이다. 계획대로 드론 한 대가 더 망가지면, 난 돌아가야 한다.\n    이론상 내 탐색 한계는 빙원 내에서 1달 반을 걷는 것이다. 하지만 실제 상황이 너무 혹독하여, 1달이 한계다……\n    눈보라가 지나가고 더는 발견되는 것이 없으면, 난 이렇게 말할 것이다.\n    안녕! 내가 뭘 발견했게?! 동굴 안에 꽃밭이 있어! 이 식물들은 얼음층에서 수분과 양분을 빨아들였다. 크게 자라지는 않았지만, 성장세는 아주 대단하다. 난 식물 하나를 통째로 뽑아 육성통에 넣었다. 관측소에서 기본적인 성분을 분석하고 라인으로 가져가야지.\n    눈보라가 멈추면 이틀만 더 전진하자, 딱 이틀만. 그다음에는 돌아가야 한다. 충동적으로 굴었다가는 목숨을 내놓아야 하니깐.\n\n    끝없는 빙원 두 번째 탐험, 가장 가까운 과학 탐사 관측소까지는 30일이 걸린다.\n    지금 내 앞에 오리지늄 얼음 결정 하나가 있는데 대략 내 키의 3배만 하다! 게다가 완벽한 프리즘이다. 여기에 눈보라가 치지 않았다면, 반사 광선의 신기한 광경을 목격할 수 있었을 거다! 휴, 돌과 눈보라 속에 그냥 방치되어 있다니, 너무 불쌍하다.\n    이곳의 구체적인 방향을 표시하고, 목표물 촬영을 끝냈다. 다음에 다시 왔을 때, 표시를 따라 찾을 수 있으면 좋겠다.\n    완전한 결정에 담긴 실제적인 의미를 고려했을 때, 난 바로 샘플을 얻을 수 없었다. 하지만 다행히 바닥에 수많은 조각이 떨어져 있었다. 이것들을 가져가면 1년 동안 분석할 수 있을 것이다.\n    이번 탐사의 목표를 달성한 셈이니, 집으로 돌아가야겠다! 지난번의 경관님을 다시 만날 수 있으려나?\n\n    끝없는 빙원 세 번째 탐험, 가장 가까운 과학 탐사 관측소까지는 15일이 걸린다. 본부의 제안에 따라 이번에는 탐험 방향을 수정했다. 그러나 15일쯤 걸었을 때, 누군가 날 막아섰다! 우르수스 정부의 전달자다. 전방은 군사 통제구역이니 계속 가지 말라고 말해줬다. 난 그 사람에게 우르수스 정부의 탐험 허가서, 탐험 노선 확인서 및 빙원 지도가 그려진 의뢰서를 보여주면서 이곳을 지나갈 권리가 있다고 했다. 그러나 그는 집요하게 돌아가라고 했다. 자신에게 이런 문서들을 일시적으로 무효로 만들 수 있는 더 높은 권한이 있다면서 말이다. 그가 뱉는 단어는 매우 매서웠지만, 말투는 부탁하는 것 같았다. 전방에 분명 탐색 가치가 있는 물건이 있을 거라는 예감이 들었다. 하지만 타국의 영토에서 탐험할 때, 공무원과 마찰을 일으키는 건 현명한 처사가 아니라는 걸 알아야 한다. 난 그 사람에게 알았다는 제스처를 취한 뒤, 린수 육포 한 봉지를 주었다. 그 사람도 태도를 바꾸고 돌아가는 길에 도움을 주겠다고 했다.\n    일기예보에 따르면, 앞으로 이틀간 이곳에 대규모 눈보라가 몰아칠 것이다. 이럴 때 도움을 받는 건 정말 좋은 일이다. 이번에 탐사 목표를 달성하지 못했지만, 남은 성과는 만족스러운 편이다. 가장 중요한 건, 여기서 또 새로운 친구를 사귀었다는 것이다. 하늘에서 검은색 눈이 내리고 있다. 재앙이 일어나려는 걸까?\n    그 사람이 잠시 한눈을 판 사이, 난 눈 한 송이를 수집했다. 앞으로 눈송이에서 재미있는 걸 발견하면 좋겠다.","typeIcon":"sum-x","typeName":"SUM-X","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_248_mgllan","tmplId":null,"showLevel":1,"unlockLevel":60,"unlockFavorPoint":10070,"missionList":["uniequip_002_mgllan_1","uniequip_002_mgllan_2"],"itemCost":[{"id":"mod_unlock_token","count":4,"type":"MATERIAL"},{"id":"30115","count":2,"type":"MATERIAL"},{"id":"4001","count":80000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_folivo":{"uniEquipId":"uniequip_001_folivo","uniEquipName":"씬의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 씬은 AI 로봇 '렌즈'를 서포터 삼아 여러 대의 이동 촬영 차량을 조종해 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_336_folivo","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_folivo":{"uniEquipId":"uniequip_002_folivo","uniEquipName":"프로급 개량 렌즈","uniEquipIcon":"uniequip_002_folivo","uniEquipDesc":"    씬은 그녀의 '의자'에 앉아 느릿느릿 종착지를 향해 가고 있다.\n    '의자'는 두 대의 이동 촬영 차량을 나란히 배열해 움직이며, 중간에 널판을 올려놓았다.\n    렌즈는 사실 이런 처리 방식에 불만이 좀 있다. 프로그램에 입력된 데이터에 따르면, 폭신폭신한 방석과 인체공학적인 등받이를 추가해야 의자라는 기준에 부합한다.\n    하지만 씬이 전혀 신경 쓰지 않으니, 렌즈도 뭐라고 할 말이 없다.\n    “얼마…… 더…… 가?”\n    씬이 평소와 같이 느릿느릿한 말투로 물었다.\n    “200m 남았습니다. 조금만 더 가면 도착합니다!”\n    아가씨가 무슨 말을 하려는지 진작 알고 있었지만, 예의와 존경을 표하기 위해, 렌즈는 씬의 말이 끝난 뒤에 대답한다.\n    “응……”\n    씬은 다시 침묵에 빠졌다.\n    오늘 아침, 씬은 로도스 아일랜드 꼭대기에서 바람을 쐬면서 언뜻 작은 언덕을 봤다. 사르곤의 높은 산과는 비교가 안 되지만, 오는 내내 평원을 지나온 탓에, 갑자기 나타난 언덕은 씬의 눈에 띄었다.\n    그녀는 이 언덕에서 벅찬 풍경 사진을 찍을 수 있다고 믿는다.\n    그런 충동 때문에, 씬은 렌즈를 재촉해 절차를 밟고, 차와 일손을 빌려 황급히(씬에게는 매우 황급한 속도로) 언덕으로 향했다.\n    아직 촬영 지점에는 도착하지 않았지만, 마음속으로는 이미 각도, 광선, 색, 대비도를 생각하기 시작했다.\n    씬은 생활 속 대부분의 시간에 이런 문제들을 생각한다.\n    이건 그녀의 직업이자 취미다.\n    “도착했습니다, 아가씨. 앞에 있는 돌만 넘으면 목적지에 도착합니다! 촬영 기기가 지나갈 수 없고, 저도 지나갈 수 없으니, 아가씨께서 조금 걸으셔야 합니다.”\n    “으응……”\n    씬은 천천히 '의자'에서 내려와, 카메라를 준비하고, 햇빛이 눈을 찌르며 그녀 앞에 대지가 펼쳐질 때까지 한 걸음씩 걸으며, 한 단계씩 올라갔다.\n    씬은 그때 뺨에 닿았던 햇빛의 온도와 팔을 스쳐 지나간 바람의 시원함을 기억한다.\n    파울비스트의 선율과 꽃의 향기, 바위의 투박함을 기억한다.\n    군데군데 초록색이 보이는 갈색이 남색 끝까지 뻗어있었다. 광선은 구름을 뚫고 지나가, 밝음과 어둠을 구분 짓고 있다. 사실, 씬은 언제나 구도를 고려하고 있다. 하지만 진정한 풍경 앞에서, 생각은 도리어 짐이 된다. 그녀가 해야 할 일은 충실히 풍경을 기록하는 것이다.\n    카메라를 들고 셔터를 누른다.\n    촬영은 이렇게 간단하고, 또 즐겁다.\n    *찰칵*","typeIcon":"sum-x","typeName":"SUM-X","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_336_folivo","tmplId":null,"showLevel":1,"unlockLevel":50,"unlockFavorPoint":10070,"missionList":["uniequip_002_folivo_1","uniequip_002_folivo_2"],"itemCost":[{"id":"mod_unlock_token","count":2,"type":"MATERIAL"},{"id":"30014","count":3,"type":"MATERIAL"},{"id":"4001","count":40000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_otter":{"uniEquipId":"uniequip_001_otter","uniEquipName":"메이어의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 메이어는 다중 스레드로 '미보'를 조종하여 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_242_otter","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_otter":{"uniEquipId":"uniequip_002_otter","uniEquipName":"미보 제어 단말 XP","uniEquipIcon":"uniequip_002_otter","uniEquipDesc":"    스레드 최적화…… 완료\n    미보 점검…… 완료\n    폭파 회수 회로…… 완료\n    소프트웨어 업그레이드…… 완료\n    *미공개* 프로젝트…… 초기 연구 개발 단계\n    ……\n    클로저의 AI 자동차는 정말 대단하다.\n    저걸 원해! 갖고 싶어! 모든 미보를 저렇게 변신시키고 싶어!!!\n    기능이 탑재된 미보 군대 말이다, 헷, 헤헷.\n    ……\n    그러나 클로저는 본인도 코드와 연산 로직을 완전히 파악하지 못했다고 했다. 일부 점검은 로도스 아일랜드에 의지해야 한다.\n    알지도 못하는 기술을 가져와서 쓴다고 해도 마음이 불편할 것이다. 착실히 스스로 연구하는 게 낫겠다.\n    요즘 미보의 복종 효율이 꽤 많이 상승했고, 폭파 회수율도 많이 안정되었다. 이 부분은 거의 연구가 끝난 것 같다.\n    이제 미보의 자율 로직에 관해 연구해야 한다……\n    학습 장치는 이미 미보 *번호 불명*호에 탑재한 지 오래고, 최근 들어 조금씩 성과를 내기 시작했다.\n    방문객에게 문을 열어주는 것도 성과라면 말이다, 하하……\n    전장의 복잡한 환경이 미보의 운행에 영향을 끼칠까 봐 걱정이다.\n    하지만 데려가지 않으면 데이터를 수집할 수가 없다……\n    ……\n    난 미보를 데려가기로 했다. 모든 데이터를 백업해 두었고, 하드웨어 규격도 기록했다.\n    만약, 그러니까 만약에 망가지면, 박사님을 찾아가 폐기 금속과 휴가에 대해 논의해야 한다.\n    그리고 반년에 걸쳐 새로 한 대를 조립해야겠지……\n    반드시 진전이 있어야 해. 아주 조금이라도 좋아!!\n    그 엔지니어링과 늙은이들을 위해서도 아니고, 날 위해서도 아니야.\n    널 위해서야, 미보!\n    언젠가 너도 수준 높은 AI가 되면, 네게 뭐라고 해야 할까?\n    안녕? 됐다, 우린 오랜 친구니까 무슨 말을 해야 할지 알겠지.\n    그렇지, 미보?\n——라인 랩 엔지니어링과 소속 루테라 작업실 멤버 메이어 스토니 <미보 점검 일지>에서 발췌","typeIcon":"sum-x","typeName":"SUM-X","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_242_otter","tmplId":null,"showLevel":1,"unlockLevel":50,"unlockFavorPoint":10070,"missionList":["uniequip_002_otter_1","uniequip_002_otter_2"],"itemCost":[{"id":"mod_unlock_token","count":2,"type":"MATERIAL"},{"id":"30024","count":3,"type":"MATERIAL"},{"id":"4001","count":40000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_deepcl":{"uniEquipId":"uniequip_001_deepcl","uniEquipName":"딥컬러의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 딥컬러는 '조수'를 부려 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_110_deepcl","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_deepcl":{"uniEquipId":"uniequip_002_deepcl","uniEquipName":"수상한 팔레트","uniEquipIcon":"uniequip_002_deepcl","uniEquipDesc":"    딥컬러의 염료는 어떻게 만들어질까?\n    광석을 갈아서?\n    아니면 근대 공업의 산물?\n    나도 모른다.\n    하지만 그 파란색들은 날 불안하게 한다.\n    매우 불안하게 한다.\n    난 그녀가 팔레트에 염료를 더하는 모습을 바라본다.\n    기대하는 색이 나오길 바라며 열심히 섞는다.\n    난 색이 뒤섞이며 약간의 소리를 내는 모습을 바라본다.\n    그림 그릴 준비를 하는 건가? 아니면 그녀가 가진 오리지늄 아츠인가?\n    난 좀 두려워졌다.\n    그녀는 내 기분을 알아차린 것 같다.\n    이건 그저 아츠의 한 부분이라고 말하며 날 위로한다.\n    말하는 사이, 팔레트에 작은 생명체가 나타났다.\n    그녀는 자신의 '조수'라고 말했다.\n    저 작은 생명체와 매치되지 않는 이상한 잡음이 귀에 들리는 것 같다.\n    아주 귀엽다는 건 인정한다.\n    캔버스에 뛰어 올라가기도 하고, 염료에 떨어지기도 한다.\n    생명체는 딥컬러와 함께 그림을 완성한다.\n    “이게 조수야?”\n    난 이렇게 감탄했다.\n    그녀는 고개를 끄덕였다.\n    그녀가 미소 짓고 있다.\n    ……\n    시간은 빠르게 흘렀고, 텅 비었던 캔버스가 꽉 채워졌다.\n    그녀는 캔버스를 내 손에 건네주었고, 난 약속한 보상을 지불했다.\n    “분명 이 초상화가 마음에 드실 거예요!”\n    그녀는 아주 기뻐 보인다.\n    그래서 나도 기분이 좋다. 화가에게 생동감 넘치는 자신의 초상화를 건네받았기 때문이다. 이건 기뻐할 만한 일이다.\n    밝은 색상과 진짜 같은 표정. 이 얼마나 정교한가!\n    그녀가 그림을 표구할 때, 여러 질문이 떠올랐다.\n    하지만 그림을 보고 나자, 질문은 다 사라졌다.\n    “그녀가 파란색 외에 다른 색을 쓴 적이 있나?”\n    “익숙하지 않은 잡음은 또 어디에서 들려온 걸까?”\n    모르겠다. 신경 쓰지 말자! 다른 사람의 비밀을 알아내는 건 좋지 않으니까!\n    조금 수상하긴 해도 그게 나와 무슨 상관이란 말인가?","typeIcon":"sum-y","typeName":"SUM-Y","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_110_deepcl","tmplId":null,"showLevel":1,"unlockLevel":40,"unlockFavorPoint":10070,"missionList":["uniequip_002_deepcl_1","uniequip_002_deepcl_2"],"itemCost":[{"id":"mod_unlock_token","count":1,"type":"MATERIAL"},{"id":"30013","count":4,"type":"MATERIAL"},{"id":"4001","count":20000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_pallas":{"uniEquipId":"uniequip_001_pallas","uniEquipName":"팔라스의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 팔라스는 미노스 출신의 오퍼레이터를 격려하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_485_pallas","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_pallas":{"uniEquipId":"uniequip_002_pallas","uniEquipName":"'고향의 바위'","uniEquipIcon":"uniequip_002_pallas","uniEquipDesc":"    몸에 난 검은 돌 때문에 난 결국 조상들이 대대로 지켜온 고향을 떠났다.\n하아… 그것이 내게 주는 고통에 난 미소로 보답할 것이다.\n    하지만 미노스라는 굴레에서 벗어나, 근본을 잃어버린 난 어떻게 생존해야 할까?\n    아테너스의 풀떡을 더 먹고 싶고, 라케다이몬의 맛있는 술을 마음껏 마시고 싶다. 코리니아 시장에서 기념품을 사 집에 가져가고 싶다. 여전히 철학자와 마음을 나누고, 무인과 실력을 겨루고, 장사꾼과 흥정을 하고 싶다. 언제쯤 다시 이런 생활을 누릴 수 있을까? 미노스의 산들아, 내 하소연을 좀 더 들어주렴.\n    존엄한 아소스여, 아직 미노스의 백성을 키우고 계십니까? 샘물을 홀짝이는 신도들이 아직 당신에게 찬미와 제물을 바치길 바랍니다.\n    힘노이, 내가 가장 존경하는 지도자여, 당신의 품에서 생명을 참뜻을 깨달으려는 자가 아직 있습니까?\n    당신이 표현에 서툰 거 알고 있습니다. 하지만 진심을 품은 이가 찾아온다면, 그들을 더 일깨워주소서.\n    오, 헬리아, 존경할 만한 헬리아, 우람한 헬리아, 지금도 당신의 정상에 올라 순간적인 영웅심을 과시하려는 아둔한 자가 있습니까? 벌을 내리어 그들이 하산하게 하소서. 그저 어리고 경솔한 자들이니, 순간의 분노로 그들의 미래를 빼앗지 마소서.\n    미노스의 대지여, 당신을 표현하는 언어는 생기가 없습니다. 그 어떤 수식어로도 당신의 진정한 웅장함과 아름다움을 나타낼 수 없습니다. 그래도 전 말하고 쓸 것입니다. 이건 고향을 떠난 포르테에게 마지막으로 남은 위안입니다. 말하지 않고 쓰지 않으면, 마음속 고통이 목숨을 위협할 것입니다. 그리고 이런 천박한 방식으로 마음을 진정시키려는 절 이해해 주세요.\n    전 계속해서 당신의 땅을 떠돌 것입니다. 어쩌면 수년간, 또 어쩌면 수십 년간 말입니다. 하지만 전 당신과 약속하고 싶습니다. 세월이 얼마나 흐르건, 전 당신의 품으로 돌아갈 것입니다. 한 미노스인의 가장 진지한 맹세일 뿐입니다. 당신이 들을 수 있을 거라고 믿습니다. 한쪽의 자애로 가져온 단단한 돌은 제 망치에 끼워져 저와 함께 어려움을 헤쳐나가고, 생사를 함께합니다.\n    제 믿음의 증인이 되고, 제 찬송을 들으며, 제 위대한 업적을 다뤄줍니다.\n    수많은 시련 끝에 승리의 멜로디가 울릴 것입니다.\n    신전 기둥에서 당신을 위해 제 이야기를 해줄 것입니다.\n    그때가 되면 제 진정한 염원이 이루어질 것입니다.\n——팔라스의 기록 중 두서없는 글에서 인용","typeIcon":"ins-x","typeName":"INS-X","equipShiningColor":"red","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_485_pallas","tmplId":null,"showLevel":1,"unlockLevel":60,"unlockFavorPoint":10070,"missionList":["uniequip_002_pallas_1","uniequip_002_pallas_2"],"itemCost":[{"id":"mod_unlock_token","count":4,"type":"MATERIAL"},{"id":"30125","count":2,"type":"MATERIAL"},{"id":"4001","count":80000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_sophia":{"uniEquipId":"uniequip_001_sophia","uniEquipName":"위슬래시의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 위슬래시는 많은 적을 저지하는 오퍼레이터를 '격려'하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_265_sophia","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_sophia":{"uniEquipId":"uniequip_002_sophia","uniEquipName":"더 길어진 채찍","uniEquipIcon":"uniequip_002_sophia","uniEquipDesc":"    조피아는 경기장에 오르기 전부터 자신과 균열의 기사와의 격차를 알고 있었다. 그러나 그녀가 진짜 상대 앞에 서서 실력을 겨룰 때, 이 치명적인 격차를 진정으로 느낄 수 있었다.\n    상대에게는 그녀의 경기를 반복 참관하는 전문가가 있다고 한다. 그녀와 체형이 비슷한 코치가 같은 무기를 사용해 현장에서 반복적으로 훈련하여, 경기 전에 자신에게 자주 쓸 동작을 완전히 파악하는 것이다.\n    균열의 기사의 갑옷은 심지어 그녀의 손에 든 무기를 겨냥해 만들었다고 한다. 잘 감기지 않고, 휘두를 때 절단돼도 치명적인 피해를 주지 않는다. 게다가 그의 쌍검은 가장자리를 단독으로 처리해, 로프 절단에 뛰어나다.\n    예전에는 이런 것들이 다 뜬소문인 줄 알았는데, 아쉽게도 모두 다 사실이다. 연거푸 몇 번을 맞붙었지만, 전부 그녀의 열세였다. 조피아는 결국 힘이 빠져버렸다.\n    균열의 기사의 뒤엔 회사가 몇 개나 붙어 있을까? 수많은 사람이 그를 위해 계획을 세우는 건 단지 채찍의 기사를 상대하기 위한 걸까?\n    이 상황을 끝낼 방법이 필요하다. 아니면 패배는 반드시 찾아올 것이다.\n    니어도 그녀처럼 고군분투했을까? 불리한 상황에서 그녀는 흔들렸을까? 의심이 들었을까?\n    그녀가 아는 답을 그녀도 알지만, 조피아는 니어가 아니다.\n    기술, 무기, 갑옷 모두 유리하지 않을 때, 그녀가 니어처럼 기대고 싶은 건 바로, 신념과 결심이었다.\n    그녀는 빈번하게 공격 방법을 바꾸기 시작했고, 심지어는 자신에게조차 익숙하지 않은 동작으로 공격했다.\n    더욱 칼날에 의지해 베어버리고자 했지만, 채찍으로 상대를 압박하려 하진 않았다. \n    이제 '위슬래시' 조피아에겐 명확한 목표가 생겼다. 그건 바로, 상대를 현혹하는 것이다. 그가 한눈파는 순간을 잡아, 이 채찍으로 균열의 기사의 무기를 감고, 채찍이 끊어져 버리기 전에 그의 날카로운 검을 빼앗기 위해서!","typeIcon":"ins-x","typeName":"INS-X","equipShiningColor":"red","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_265_sophia","tmplId":null,"showLevel":1,"unlockLevel":50,"unlockFavorPoint":10070,"missionList":["uniequip_002_sophia_1","uniequip_002_sophia_2"],"itemCost":[{"id":"mod_unlock_token","count":2,"type":"MATERIAL"},{"id":"30034","count":3,"type":"MATERIAL"},{"id":"4001","count":40000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_swire":{"uniEquipId":"uniequip_001_swire","uniEquipName":"스와이어의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 스와이어는 옆에 있는 근거리 오퍼레이터를 격려하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_308_swire","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_swire":{"uniEquipId":"uniequip_002_swire","uniEquipName":"호신용 립스틱","uniEquipIcon":"uniequip_002_swire","uniEquipDesc":"    오늘은 용문 고위 총경 스와이어의 휴무이다. 그래서 그녀는 평소와 같이 다이구 플라자에 쇼핑을 하러 갔다.\n    위아래를 오가며 6시간의 쇼핑을 한 그녀가 만족스럽게 8개의 큰 쇼핑백을 들고 떠나려던 그때, 코너를 돌았더니 스와이어 산하의 립스틱 판매대가 보였다.\n    “평소대로 브렛 No.38 다섯 개 줘, 고마워.”\n    스와이어는 익숙한 듯 판매대 점원에게 필요한 걸 말했다. 브렛은 No.38는 스와이어가 가장 좋아하는 색으로, 그녀는 장장 10년간 이 립스틱만 써왔다고 한다. 다만 가격이 좀……\n    “네, 스와이어 아가씨. 바로 준비해 드리겠습니다.”\n    점원도 익숙한 듯 다른 동료를 불러 카운터를 맡긴 뒤, 빠르게 창고로 가서 스와이어가 원하는 립스틱을 찾아왔다. 얼마 지나지 않아, 점원은 목제 상자 하나를 꺼내 스와이어에게 건넸다.\n    “확인해 보세요.”\n    스와이어는 알겠다고 대답하고는 바로 상자를 열어보지 않았다. 대신 고개를 숙여 가방에서 무언가를 찾기 시작했다. 한참을 찾은 끝에 그녀는 휴대용 가방 하나를 꺼냈다. 옆에 있는 사람이 보기에는 이것도 작은 핸드백이나 다름없었다.\n    버클을 풀어 가방을 열자, 안에는 블랙 실크가 덮인 5개의 구멍이 있었다.\n    모든 구멍에는 다 쓴 브렛 No.38가 끼워져 있었다.\n    스와이어는 그것들을 꺼내 카운터에 올려놓고, 새로 산 립스틱 중 4개를 다시 끼워 넣고는, 나머지 하나는 바로 주머니에 넣었다.\n    스와이어가 쇼핑백을 다시 팔에 거는 걸 보고, 점원은 계속 가슴이 두근거렸다.\n    “아가씨, 사람을 보내 짐 대신 들어드릴까요?”\n    “응? 됐어, 안 무거워.”\n    “정말 안 무거우세요, 아가씨…?”\n        “진짜 괜찮아”라는 말이 카운터 멀지 않은 곳에서 들려왔다.\n    스와이어에겐 정말 다른 사람의 도움이 필요 없었지만, 다른 사람들에겐 그녀가 필요했다.\n    막 상점 정문을 나섰을 때, 스와이어의 귓가에 한 여자가 도움을 청하는 소리가 들려왔다. 고개를 돌려보니, 어느 멍청한 강도가 여자의 가방을 들고는 전속력으로 도망치고 있었는데, 그 방향엔 마침 스와이어가 있었다.\n    스와이어는 갑자기 모든 것이 참 우연이라고 느껴졌다. 마침 오늘 그녀는 플레일을 갖고 있지 않고, 마침 오늘 그녀는 새 립스틱을 샀고, 마침 그중 하나를 주머니에 넣었으니 말이다.\n    강도에게 평생 잊을 수 없는 교훈을 주기로 한 그녀는, 쇼핑백을 내려놓고, 립스틱을 꺼내 뚜껑을 연 뒤, 밑에 붙어 있는 스티커를 떼고 강도가 다가오길 기다렸다.\n    몇 초 뒤, 현장에 있는 사람들은 둔탁한 소리를 들었고, 뒤이어 멍청한 강도가 소리를 지르며 넘어졌다. 그리고 순찰 근위국 오퍼레이터의 고함이 들렸다.\n\n    몇 분 후\n    “수고했어, 아가씨. 쉬는 날인데 강도까지 신경 쓰는 거야?”\n    강도 미수 건을 감독하러 온 호시구마는 정의로운 시민 스와이어를 향해 계속 미소 지었다.\n    평소라면 스와이어는 직접 범인을 데리고 사건을 복기하며 심문했겠지만, 오늘은 휴일이다. 사건은 그녀가 상관할 일이 아니다.\n    “하필 날 만난 게 재수 없는 거지.”\n    “강도가 휴무인 경관을 만나는 게 용문에서 흔한 일은 아니지.”\n    “훗, 됐어. 데리고 가, 난 집에 가봐야겠어. 이 사건은 내일 볼게.”\n    “편한 대로 해, 아가씨.”\n    “잠깐, 확인할 게 있어.”\n    “뭔데?”\n    스와이어는 고개를 돌려, 호시구마의 조사 보고서 내용을 봤다. 호시구마는 무언가를 적고 있었다.\n    “용의자가 쓰러진 건 어떻게 쓸까?”\n    스와이어는 호시구마가 그녀에게 의견을 묻고 있는 걸 바로 알아차렸다.\n    “그냥 립스틱이라고 써. 저런 놈은 봐줄 필요 없으니까.”\n    “푸하하, 알겠어.”\n    호시구마는 보고서에 “용의자는 립스틱에 공격받아 쓰러짐”이라고 크게 적었다.\n    “바로 집에 가기 귀찮네. 얼른 마무리하고 같이 밥 먹으러 가자.”\n    “밥 먹고 집에도 모셔다드리고 짐까지 들어드려야 하겠지, 아가씨? 하하.”\n    “그만 묻고 서둘러.”\n    “응, 잠깐만 기다려. 보고서만 넘기면 밥 먹으러 갈 수 있으니까.”\n    “이따가 이 ‘립스틱’이 얼마나 대단한 건지 말해달라고.”\n    “알았어.”\n\n    “짐 좀 들어줘, 팔이 좀 아프네.”\n    “그래, 그래, 금방 끝나.”","typeIcon":"ins-x","typeName":"INS-X","equipShiningColor":"red","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_308_swire","tmplId":null,"showLevel":1,"unlockLevel":50,"unlockFavorPoint":10070,"missionList":["uniequip_002_swire_1","uniequip_002_swire_2"],"itemCost":[{"id":"mod_unlock_token","count":2,"type":"MATERIAL"},{"id":"30044","count":3,"type":"MATERIAL"},{"id":"4001","count":40000,"type":"GOLD"}],"type":"ADVANCED"},"uniequip_001_doberm":{"uniEquipId":"uniequip_001_doberm","uniEquipName":"도베르만의 배지","uniEquipIcon":"original","uniEquipDesc":"    오퍼레이터 도베르만은 예비 인원을 격려하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.","typeIcon":"original","typeName":"ORIGINAL","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":0,"charId":"char_130_doberm","tmplId":null,"showLevel":1,"unlockLevel":0,"unlockFavorPoint":0,"missionList":[],"itemCost":null,"type":"INITIAL"},"uniequip_002_doberm":{"uniEquipId":"uniequip_002_doberm","uniEquipName":"군용 망원경","uniEquipIcon":"uniequip_002_doberm","uniEquipDesc":"    “대령님, 이곳의 상황은 어떻습니까?”\n    망원경 렌즈를 통해, 연합정부군에서 대령으로 활약하던 도베르만은 잔해가 된 지역과 멀지 않은 곳에 있는 순환 구역 차도 입구를 바라보았다.\n    싱가스와 연립 정부는 이 지역에 끊임없이 병력을 투입하고 있다. 그리고 그녀의 소대는 혼란한 도시 전장을 지나 다른 쪽에 지원 임무 갈 방법을 생각해야 한다.\n    순조로운 길이란 없는 갈림길에서, 이젠 선택을 해야 했다.\n    “넌 일부 인원을 데리고 차도로 가. 난 소대를 데리고 도시 중앙을 돌파하겠다.”\n    “네, 대령님.”\n    “연락이 끊겨도 임무가 우선이다. 너희도 마찬가지다, 알겠나?”\n    “네, 대령님!”\n    “출발한다!”\n    ......\n    “도베르만 대령님, 이제 어쩌면 좋겠습니까?”\n    저항 조직에 합류한 도베르만은 부대를 이끌고 철수하고 있다. 그리고 지금 앞에는 적이 있고, 뒤에는 추격병이 있다.\n    살아남은 부하를 데리고 여기에서 나갈 방법을 생각해야 한다.\n    “이곳으로 가죠…… 그런 다음에 수로를 건너 경계병을 돌아갈 수 있습니다.”\n    “하지만 뒤를 봐줄 사람이 필요해……”\n    “제가 하겠습니다, 할 수 있습니다!”\n    “하지만……”\n    “아니면 우리 쪽 사람이 여기서 죽을 겁니다. 아닙니까?”\n    “미안하다……”\n    “대령님 잘못이 아닙니다. 아주 훌륭하게 해내셨습니다.”\n    “형제들은 제가 설득하겠습니다.”\n    “다른 사람들의 목숨은, 대령님께 맡기겠습니다!”\n    ……\n    “교관님, 여긴 어떻게 하죠?”\n    로도스 아일랜드 오퍼레이터 도베르만은 임무를 진행 중이다. 망원경을 통해 그녀의 시야에 들어온 모습은 또 그녀의 선택을 재촉하고 있다.\n    “팀을 나눠서 포위 공격하는 게 더 좋을 것 같아요.”\n    “아니, 밤이 될 때까지 여기서 기다렸다가, 폐허를 통해 바로 공격하는 게 나아. 아니면 병력이 너무 분산되어, 사고가 생길지도 모르니.”\n    “알겠습니다.”\n    “내가 먼저 잠입할 테니까, 날이 어두워지면 넌 다른 사람들을 데리고 목표 거점 근처로 가서 내 명령을 기다려라.”\n    “그건 교관님께 너무 위험합니다.”\n    “이게 최고의 방법이자 내 선택이다!”\n    “날 믿어줘. 내가 너희를 믿는 것처럼. 알겠나?!”\n    “네, 교관님! 꼭 조심하셔야 합니다!”\n    “훗, 네 일이나 잘해.”\n    ……\n    그날 밤, 도베르만의 팀은 무사히 임무를 마쳤다.","typeIcon":"ins-y","typeName":"INS-Y","equipShiningColor":"grey","showEvolvePhase":2,"unlockEvolvePhase":2,"charId":"char_130_doberm","tmplId":null,"showLevel":1,"unlockLevel":40,"unlockFavorPoint":10070,"missionList":["uniequip_002_doberm_1","uniequip_002_doberm_2"],"itemCost":[{"id":"mod_unlock_token","count":1,"type":"MATERIAL"},{"id":"30023","count":4,"type":"MATERIAL"},{"id":"4001","count":20000,"type":"GOLD"}],"type":"ADVANCED"}},"missionList":{"uniequip_002_mgllan_1":{"template":"EquipmentDeployStage","desc":"전투 5회 완료, 매회 전투 시 비지원 마젤란의 소환물 최소 5회 소환","paramList":["5","5","token_10005_mgllan_drone1;token_10005_mgllan_drone2;token_10005_mgllan_drone3","char_248_mgllan"],"uniEquipMissionId":"uniequip_002_mgllan_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_mgllan"},"uniequip_002_mgllan_2":{"template":"EquipmentSquadPro","desc":"최대 2인(지원 유닛 포함) 편성으로 메인 스토리 2-5 스테이지를 3★ 평가로 클리어, 비지원 마젤란 편성 및 출전 필수, 나머지는 뱅가드 오퍼레이터만 편성 가능","paramList":["3","main_02-05","char_248_mgllan","1,PIONEER"],"uniEquipMissionId":"uniequip_002_mgllan_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_mgllan"},"uniequip_002_folivo_1":{"template":"EquipmentDeployStage","desc":"전투 5회 완료, 매회 전투 시 비지원 씬의 소환물 최소 5회 소환","paramList":["5","5","token_10010_folivo_car","char_336_folivo"],"uniEquipMissionId":"uniequip_002_folivo_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_folivo"},"uniequip_002_folivo_2":{"template":"EquipmentSquadPro","desc":"최대 2인(지원 유닛 포함) 편성으로 메인 스토리 3-1 스테이지를 3★ 평가로 클리어, 비지원 씬 편성 및 출전 필수, 나머지는 스나이퍼 오퍼레이터만 편성 가능","paramList":["3","main_03-01","char_336_folivo","1,SNIPER"],"uniEquipMissionId":"uniequip_002_folivo_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_folivo"},"uniequip_002_otter_1":{"template":"EquipmentDeployStage","desc":"전투 5회 완료, 매회 전투 시 비지원 메이어의 소환물 최소 5회 소환","paramList":["5","5","token_10004_otter_motter","char_242_otter"],"uniEquipMissionId":"uniequip_002_otter_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_otter"},"uniequip_002_otter_2":{"template":"EquipmentSquadPro","desc":"최대 3인(지원 유닛 포함) 편성으로 메인 스토리 2-9 스테이지를 3★ 평가로 클리어, 비지원 메이어 편성 및 출전 필수, 나머지는 스나이퍼 오퍼레이터만 편성 가능","paramList":["3","main_02-09","char_242_otter","2,SNIPER"],"uniEquipMissionId":"uniequip_002_otter_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_otter"},"uniequip_002_deepcl_1":{"template":"EquipmentDeployTotal","desc":"전투 중 비지원 딥컬러의 소환물 누적 20회 소환","paramList":["20","token_10001_deepcl_tentac","char_110_deepcl"],"uniEquipMissionId":"uniequip_002_deepcl_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_deepcl"},"uniequip_002_deepcl_2":{"template":"EquipmentSquadPro","desc":"1인 편성으로 메인 스토리 2-4 스테이지를 3★ 평가로 클리어, 비지원 딥컬러만 편성 가능","paramList":["3","main_02-04","char_110_deepcl","0,SNIPER"],"uniEquipMissionId":"uniequip_002_deepcl_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_deepcl"},"uniequip_002_pallas_1":{"template":"EquipmentCharKilled","desc":"비지원 팔라스로 적 누적 50명 섬멸","paramList":["char_485_pallas","50","char_485_pallas"],"uniEquipMissionId":"uniequip_002_pallas_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_pallas"},"uniequip_002_pallas_2":{"template":"EquipmentSquadPro","desc":"최대 2인(지원 유닛 포함) 편성으로 메인 스토리 3-6 스테이지를 3★ 평가로 클리어, 비지원 팔라스 편성 및 출전 필수, 나머지는 메딕 오퍼레이터만 편성 가능","paramList":["3","main_03-06","char_485_pallas","1,MEDIC"],"uniEquipMissionId":"uniequip_002_pallas_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_pallas"},"uniequip_002_sophia_1":{"template":"EquipmentCharKilled","desc":"비지원 위슬래시로 적 누적 섬멸 수 50 달성","paramList":["char_265_sophia","50","char_265_sophia"],"uniEquipMissionId":"uniequip_002_sophia_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_sophia"},"uniequip_002_sophia_2":{"template":"EquipmentSquadPro","desc":"메인 스토리 S3-6 스테이지를 3★ 평가로 클리어, 비지원 위슬래시 편성 및 출전 필수, 나머지는 디펜더 오퍼레이터만 편성 가능","paramList":["3","sub_03-3-1","char_265_sophia","13,TANK"],"uniEquipMissionId":"uniequip_002_sophia_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_sophia"},"uniequip_002_swire_1":{"template":"EquipmentSquadProStage","desc":"비지원 스와이어를 출전시켜 전투 5회 완료, 나머지는 가드 오퍼레이터만 편성 가능","paramList":["5","char_308_swire","13,WARRIOR"],"uniEquipMissionId":"uniequip_002_swire_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_swire"},"uniequip_002_swire_2":{"template":"EquipmentSquadPos","desc":"최대 2인(지원 유닛 포함) 편성으로 메인 스토리 S2-3 스테이지를 3★ 평가로 클리어, 비지원 스와이어 편성 및 출전 필수, 나머지는 가드 오퍼레이터만 편성 가능","paramList":["3","sub_02-03","char_308_swire","1,MELEE"],"uniEquipMissionId":"uniequip_002_swire_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_swire"},"uniequip_002_doberm_1":{"template":"EquipmentSquadStarStage","desc":"비지원 도베르만을 출전시켜 전투 5회 완료, 나머지는 3★ 오퍼레이터만 편성 가능","paramList":["5","char_130_doberm","13,3"],"uniEquipMissionId":"uniequip_002_doberm_1","uniEquipMissionSort":1,"uniEquipId":"uniequip_002_doberm"},"uniequip_002_doberm_2":{"template":"EquipmentSquadStar","desc":"메인 스토리 1-12 스테이지를 3★ 평가로 클리어, 비지원 도베르만 편성 및 출전 필수, 나머지는 3★ 오퍼레이터만 편성 가능","paramList":["3","main_01-12","char_130_doberm","13,3"],"uniEquipMissionId":"uniequip_002_doberm_2","uniEquipMissionSort":2,"uniEquipId":"uniequip_002_doberm"}},"subProfDict":{"notchar1":{"subProfessionId":"notchar1","subProfessionName":"오퍼레이터 추가 유닛","subProfessionCatagory":1},"notchar2":{"subProfessionId":"notchar2","subProfessionName":"무직업 함정","subProfessionCatagory":2},"none1":{"subProfessionId":"none1","subProfessionName":"예비용1","subProfessionCatagory":3},"none2":{"subProfessionId":"none2","subProfessionName":"예비용1","subProfessionCatagory":4},"pioneer":{"subProfessionId":"pioneer","subProfessionName":"척후병","subProfessionCatagory":5},"charger":{"subProfessionId":"charger","subProfessionName":"돌격수","subProfessionCatagory":6},"tactician":{"subProfessionId":"tactician","subProfessionName":"전술가","subProfessionCatagory":7},"bearer":{"subProfessionId":"bearer","subProfessionName":"기수","subProfessionCatagory":8},"centurion":{"subProfessionId":"centurion","subProfessionName":"공격수","subProfessionCatagory":9},"fighter":{"subProfessionId":"fighter","subProfessionName":"파이터","subProfessionCatagory":10},"artsfghter":{"subProfessionId":"artsfghter","subProfessionName":"아츠 파이터","subProfessionCatagory":11},"instructor":{"subProfessionId":"instructor","subProfessionName":"교관","subProfessionCatagory":12},"lord":{"subProfessionId":"lord","subProfessionName":"로드","subProfessionCatagory":13},"sword":{"subProfessionId":"sword","subProfessionName":"소드마스터","subProfessionCatagory":14},"musha":{"subProfessionId":"musha","subProfessionName":"무사","subProfessionCatagory":15},"fearless":{"subProfessionId":"fearless","subProfessionName":"드레드노트","subProfessionCatagory":16},"reaper":{"subProfessionId":"reaper","subProfessionName":"리퍼","subProfessionCatagory":17},"librator":{"subProfessionId":"librator","subProfessionName":"해방자","subProfessionCatagory":18},"protector":{"subProfessionId":"protector","subProfessionName":"프로텍터","subProfessionCatagory":19},"guardian":{"subProfessionId":"guardian","subProfessionName":"가디언","subProfessionCatagory":20},"unyield":{"subProfessionId":"unyield","subProfessionName":"저거너트","subProfessionCatagory":21},"artsprotector":{"subProfessionId":"artsprotector","subProfessionName":"아츠 프로텍터","subProfessionCatagory":22},"duelist":{"subProfessionId":"duelist","subProfessionName":"결전자","subProfessionCatagory":23},"fastshot":{"subProfessionId":"fastshot","subProfessionName":"명사수","subProfessionCatagory":24},"closerange":{"subProfessionId":"closerange","subProfessionName":"헤비슈터","subProfessionCatagory":25},"aoesniper":{"subProfessionId":"aoesniper","subProfessionName":"포격사수","subProfessionCatagory":26},"longrange":{"subProfessionId":"longrange","subProfessionName":"저격수","subProfessionCatagory":27},"reaperrange":{"subProfessionId":"reaperrange","subProfessionName":"산탄사수","subProfessionCatagory":28},"siegesniper":{"subProfessionId":"siegesniper","subProfessionName":"공성사수","subProfessionCatagory":29},"bombarder":{"subProfessionId":"bombarder","subProfessionName":"투척수","subProfessionCatagory":30},"corecaster":{"subProfessionId":"corecaster","subProfessionName":"코어 캐스터","subProfessionCatagory":31},"splashcaster":{"subProfessionId":"splashcaster","subProfessionName":"스플래시 캐스터","subProfessionCatagory":32},"funnel":{"subProfessionId":"funnel","subProfessionName":"메카 캐스터","subProfessionCatagory":33},"phalanx":{"subProfessionId":"phalanx","subProfessionName":"진법 캐스터","subProfessionCatagory":34},"mystic":{"subProfessionId":"mystic","subProfessionName":"미스틱 캐스터","subProfessionCatagory":35},"chain":{"subProfessionId":"chain","subProfessionName":"체인 캐스터","subProfessionCatagory":36},"blastcaster":{"subProfessionId":"blastcaster","subProfessionName":"블래스트 캐스터","subProfessionCatagory":37},"physician":{"subProfessionId":"physician","subProfessionName":"메딕","subProfessionCatagory":38},"ringhealer":{"subProfessionId":"ringhealer","subProfessionName":"멀티 타겟 메딕","subProfessionCatagory":39},"healer":{"subProfessionId":"healer","subProfessionName":"테라피스트","subProfessionCatagory":40},"slower":{"subProfessionId":"slower","subProfessionName":"감속자","subProfessionCatagory":41},"underminer":{"subProfessionId":"underminer","subProfessionName":"약화자","subProfessionCatagory":42},"bard":{"subProfessionId":"bard","subProfessionName":"음유시인","subProfessionCatagory":43},"blessing":{"subProfessionId":"blessing","subProfessionName":"비호자","subProfessionCatagory":44},"summoner":{"subProfessionId":"summoner","subProfessionName":"소환사","subProfessionCatagory":45},"executor":{"subProfessionId":"executor","subProfessionName":"처형자","subProfessionCatagory":47},"pusher":{"subProfessionId":"pusher","subProfessionName":"추격자","subProfessionCatagory":48},"stalker":{"subProfessionId":"stalker","subProfessionName":"매복자","subProfessionCatagory":49},"hookmaster":{"subProfessionId":"hookmaster","subProfessionName":"후크마스터","subProfessionCatagory":50},"geek":{"subProfessionId":"geek","subProfessionName":"기인","subProfessionCatagory":51},"merchant":{"subProfessionId":"merchant","subProfessionName":"상인","subProfessionCatagory":52},"traper":{"subProfessionId":"traper","subProfessionName":"함정술사","subProfessionCatagory":53},"dollkeeper":{"subProfessionId":"dollkeeper","subProfessionName":"인형사","subProfessionCatagory":54}},"charEquip":{"char_248_mgllan":["uniequip_001_mgllan","uniequip_002_mgllan"],"char_336_folivo":["uniequip_001_folivo","uniequip_002_folivo"],"char_242_otter":["uniequip_001_otter","uniequip_002_otter"],"char_110_deepcl":["uniequip_001_deepcl","uniequip_002_deepcl"],"char_485_pallas":["uniequip_001_pallas","uniequip_002_pallas"],"char_265_sophia":["uniequip_001_sophia","uniequip_002_sophia"],"char_308_swire":["uniequip_001_swire","uniequip_002_swire"],"char_130_doberm":["uniequip_001_doberm","uniequip_002_doberm"]}}
+{
+  "equipDict": {
+    "uniequip_001_mgllan": {
+      "uniEquipId": "uniequip_001_mgllan",
+      "uniEquipName": "마젤란의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 마젤란은 자신이 개발한 드론 모듈을 조종해 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_248_mgllan",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_mgllan": {
+      "uniEquipId": "uniequip_002_mgllan",
+      "uniEquipName": "프로 드론 조작 모듈",
+      "uniEquipIcon": "uniequip_002_mgllan",
+      "uniEquipDesc": "    끝없는 빙원 첫 탐험, 가장 가까운 과학 탐사 관측소까지는 25일이 걸린다.\n    난 방금 눈 속에서 나뭇가지 하나를 파냈다. 구체적인 데이터는 데이터 리스트에 첨부한다. 간단하게 묘사하자면, 대략 내 팔 만한 길이다.\n    나뭇가지의 규화 과정이 매우 오래 지속되었음을 확인할 수 있다. 지금 내 손에 있는 건 완전히 규화되기 전, 최소 90%가 분해되었다.\n    이렇게 생각하면, 원래는 얼마나 두꺼운 나뭇가지였을까! 대략…… 며칠 전에 본 나무의 중심 줄기 정도 되려나? 그렇다면 나무 전체는 라인 랩 본부 건물만큼 높지 않았을까?! 우와, 정말 놀라워. 무겁지 않은 편이니 온전히 가져가야겠어. 국경에서 검문하는 우르수스 경관님이 수월하게 넘어가 주면 좋겠다.\n\n    끝없는 빙원 두 번째 탐험, 가장 가까운 과학 탐사 관측소까지는 28일이 걸린다.\n    난 동굴에서 피난 중이다. 밖에 거센 눈보라가 불어, 오늘은 전진할 수 없을 것 같다. 우선 여기서 쉬며 정비해야겠다.\n    준비한 드론은 모두 사용 중이다. 계획대로 드론 한 대가 더 망가지면, 난 돌아가야 한다.\n    이론상 내 탐색 한계는 빙원 내에서 1달 반을 걷는 것이다. 하지만 실제 상황이 너무 혹독하여, 1달이 한계다……\n    눈보라가 지나가고 더는 발견되는 것이 없으면, 난 이렇게 말할 것이다.\n    안녕! 내가 뭘 발견했게?! 동굴 안에 꽃밭이 있어! 이 식물들은 얼음층에서 수분과 양분을 빨아들였다. 크게 자라지는 않았지만, 성장세는 아주 대단하다. 난 식물 하나를 통째로 뽑아 육성통에 넣었다. 관측소에서 기본적인 성분을 분석하고 라인으로 가져가야지.\n    눈보라가 멈추면 이틀만 더 전진하자, 딱 이틀만. 그다음에는 돌아가야 한다. 충동적으로 굴었다가는 목숨을 내놓아야 하니깐.\n\n    끝없는 빙원 두 번째 탐험, 가장 가까운 과학 탐사 관측소까지는 30일이 걸린다.\n    지금 내 앞에 오리지늄 얼음 결정 하나가 있는데 대략 내 키의 3배만 하다! 게다가 완벽한 프리즘이다. 여기에 눈보라가 치지 않았다면, 반사 광선의 신기한 광경을 목격할 수 있었을 거다! 휴, 돌과 눈보라 속에 그냥 방치되어 있다니, 너무 불쌍하다.\n    이곳의 구체적인 방향을 표시하고, 목표물 촬영을 끝냈다. 다음에 다시 왔을 때, 표시를 따라 찾을 수 있으면 좋겠다.\n    완전한 결정에 담긴 실제적인 의미를 고려했을 때, 난 바로 샘플을 얻을 수 없었다. 하지만 다행히 바닥에 수많은 조각이 떨어져 있었다. 이것들을 가져가면 1년 동안 분석할 수 있을 것이다.\n    이번 탐사의 목표를 달성한 셈이니, 집으로 돌아가야겠다! 지난번의 경관님을 다시 만날 수 있으려나?\n\n    끝없는 빙원 세 번째 탐험, 가장 가까운 과학 탐사 관측소까지는 15일이 걸린다. 본부의 제안에 따라 이번에는 탐험 방향을 수정했다. 그러나 15일쯤 걸었을 때, 누군가 날 막아섰다! 우르수스 정부의 전달자다. 전방은 군사 통제구역이니 계속 가지 말라고 말해줬다. 난 그 사람에게 우르수스 정부의 탐험 허가서, 탐험 노선 확인서 및 빙원 지도가 그려진 의뢰서를 보여주면서 이곳을 지나갈 권리가 있다고 했다. 그러나 그는 집요하게 돌아가라고 했다. 자신에게 이런 문서들을 일시적으로 무효로 만들 수 있는 더 높은 권한이 있다면서 말이다. 그가 뱉는 단어는 매우 매서웠지만, 말투는 부탁하는 것 같았다. 전방에 분명 탐색 가치가 있는 물건이 있을 거라는 예감이 들었다. 하지만 타국의 영토에서 탐험할 때, 공무원과 마찰을 일으키는 건 현명한 처사가 아니라는 걸 알아야 한다. 난 그 사람에게 알았다는 제스처를 취한 뒤, 린수 육포 한 봉지를 주었다. 그 사람도 태도를 바꾸고 돌아가는 길에 도움을 주겠다고 했다.\n    일기예보에 따르면, 앞으로 이틀간 이곳에 대규모 눈보라가 몰아칠 것이다. 이럴 때 도움을 받는 건 정말 좋은 일이다. 이번에 탐사 목표를 달성하지 못했지만, 남은 성과는 만족스러운 편이다. 가장 중요한 건, 여기서 또 새로운 친구를 사귀었다는 것이다. 하늘에서 검은색 눈이 내리고 있다. 재앙이 일어나려는 걸까?\n    그 사람이 잠시 한눈을 판 사이, 난 눈 한 송이를 수집했다. 앞으로 눈송이에서 재미있는 걸 발견하면 좋겠다.",
+      "typeIcon": "sum-x",
+      "typeName": "SUM-X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_248_mgllan",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_mgllan_1",
+        "uniequip_002_mgllan_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30115",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 80000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_folivo": {
+      "uniEquipId": "uniequip_001_folivo",
+      "uniEquipName": "씬의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 씬은 AI 로봇 '렌즈'를 서포터 삼아 여러 대의 이동 촬영 차량을 조종해 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_336_folivo",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_folivo": {
+      "uniEquipId": "uniequip_002_folivo",
+      "uniEquipName": "프로급 개량 렌즈",
+      "uniEquipIcon": "uniequip_002_folivo",
+      "uniEquipDesc": "    씬은 그녀의 '의자'에 앉아 느릿느릿 종착지를 향해 가고 있다.\n    '의자'는 두 대의 이동 촬영 차량을 나란히 배열해 움직이며, 중간에 널판을 올려놓았다.\n    렌즈는 사실 이런 처리 방식에 불만이 좀 있다. 프로그램에 입력된 데이터에 따르면, 폭신폭신한 방석과 인체공학적인 등받이를 추가해야 의자라는 기준에 부합한다.\n    하지만 씬이 전혀 신경 쓰지 않으니, 렌즈도 뭐라고 할 말이 없다.\n    “얼마…… 더…… 가?”\n    씬이 평소와 같이 느릿느릿한 말투로 물었다.\n    “200m 남았습니다. 조금만 더 가면 도착합니다!”\n    아가씨가 무슨 말을 하려는지 진작 알고 있었지만, 예의와 존경을 표하기 위해, 렌즈는 씬의 말이 끝난 뒤에 대답한다.\n    “응……”\n    씬은 다시 침묵에 빠졌다.\n    오늘 아침, 씬은 로도스 아일랜드 꼭대기에서 바람을 쐬면서 언뜻 작은 언덕을 봤다. 사르곤의 높은 산과는 비교가 안 되지만, 오는 내내 평원을 지나온 탓에, 갑자기 나타난 언덕은 씬의 눈에 띄었다.\n    그녀는 이 언덕에서 벅찬 풍경 사진을 찍을 수 있다고 믿는다.\n    그런 충동 때문에, 씬은 렌즈를 재촉해 절차를 밟고, 차와 일손을 빌려 황급히(씬에게는 매우 황급한 속도로) 언덕으로 향했다.\n    아직 촬영 지점에는 도착하지 않았지만, 마음속으로는 이미 각도, 광선, 색, 대비도를 생각하기 시작했다.\n    씬은 생활 속 대부분의 시간에 이런 문제들을 생각한다.\n    이건 그녀의 직업이자 취미다.\n    “도착했습니다, 아가씨. 앞에 있는 돌만 넘으면 목적지에 도착합니다! 촬영 기기가 지나갈 수 없고, 저도 지나갈 수 없으니, 아가씨께서 조금 걸으셔야 합니다.”\n    “으응……”\n    씬은 천천히 '의자'에서 내려와, 카메라를 준비하고, 햇빛이 눈을 찌르며 그녀 앞에 대지가 펼쳐질 때까지 한 걸음씩 걸으며, 한 단계씩 올라갔다.\n    씬은 그때 뺨에 닿았던 햇빛의 온도와 팔을 스쳐 지나간 바람의 시원함을 기억한다.\n    파울비스트의 선율과 꽃의 향기, 바위의 투박함을 기억한다.\n    군데군데 초록색이 보이는 갈색이 남색 끝까지 뻗어있었다. 광선은 구름을 뚫고 지나가, 밝음과 어둠을 구분 짓고 있다. 사실, 씬은 언제나 구도를 고려하고 있다. 하지만 진정한 풍경 앞에서, 생각은 도리어 짐이 된다. 그녀가 해야 할 일은 충실히 풍경을 기록하는 것이다.\n    카메라를 들고 셔터를 누른다.\n    촬영은 이렇게 간단하고, 또 즐겁다.\n    *찰칵*",
+      "typeIcon": "sum-x",
+      "typeName": "SUM-X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_336_folivo",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_folivo_1",
+        "uniequip_002_folivo_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30014",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_otter": {
+      "uniEquipId": "uniequip_001_otter",
+      "uniEquipName": "메이어의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 메이어는 다중 스레드로 '미보'를 조종하여 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_242_otter",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_otter": {
+      "uniEquipId": "uniequip_002_otter",
+      "uniEquipName": "미보 제어 단말 XP",
+      "uniEquipIcon": "uniequip_002_otter",
+      "uniEquipDesc": "    스레드 최적화…… 완료\n    미보 점검…… 완료\n    폭파 회수 회로…… 완료\n    소프트웨어 업그레이드…… 완료\n    *미공개* 프로젝트…… 초기 연구 개발 단계\n    ……\n    클로저의 AI 자동차는 정말 대단하다.\n    저걸 원해! 갖고 싶어! 모든 미보를 저렇게 변신시키고 싶어!!!\n    기능이 탑재된 미보 군대 말이다, 헷, 헤헷.\n    ……\n    그러나 클로저는 본인도 코드와 연산 로직을 완전히 파악하지 못했다고 했다. 일부 점검은 로도스 아일랜드에 의지해야 한다.\n    알지도 못하는 기술을 가져와서 쓴다고 해도 마음이 불편할 것이다. 착실히 스스로 연구하는 게 낫겠다.\n    요즘 미보의 복종 효율이 꽤 많이 상승했고, 폭파 회수율도 많이 안정되었다. 이 부분은 거의 연구가 끝난 것 같다.\n    이제 미보의 자율 로직에 관해 연구해야 한다……\n    학습 장치는 이미 미보 *번호 불명*호에 탑재한 지 오래고, 최근 들어 조금씩 성과를 내기 시작했다.\n    방문객에게 문을 열어주는 것도 성과라면 말이다, 하하……\n    전장의 복잡한 환경이 미보의 운행에 영향을 끼칠까 봐 걱정이다.\n    하지만 데려가지 않으면 데이터를 수집할 수가 없다……\n    ……\n    난 미보를 데려가기로 했다. 모든 데이터를 백업해 두었고, 하드웨어 규격도 기록했다.\n    만약, 그러니까 만약에 망가지면, 박사님을 찾아가 폐기 금속과 휴가에 대해 논의해야 한다.\n    그리고 반년에 걸쳐 새로 한 대를 조립해야겠지……\n    반드시 진전이 있어야 해. 아주 조금이라도 좋아!!\n    그 엔지니어링과 늙은이들을 위해서도 아니고, 날 위해서도 아니야.\n    널 위해서야, 미보!\n    언젠가 너도 수준 높은 AI가 되면, 네게 뭐라고 해야 할까?\n    안녕? 됐다, 우린 오랜 친구니까 무슨 말을 해야 할지 알겠지.\n    그렇지, 미보?\n——라인 랩 엔지니어링과 소속 루테라 작업실 멤버 메이어 스토니 <미보 점검 일지>에서 발췌",
+      "typeIcon": "sum-x",
+      "typeName": "SUM-X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_242_otter",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_otter_1",
+        "uniequip_002_otter_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30024",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_deepcl": {
+      "uniEquipId": "uniequip_001_deepcl",
+      "uniEquipName": "딥컬러의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 딥컬러는 '조수'를 부려 작전에 참여하는 것에 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 서포터 오퍼레이터로 구분되며, 소환사 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_110_deepcl",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_deepcl": {
+      "uniEquipId": "uniequip_002_deepcl",
+      "uniEquipName": "수상한 팔레트",
+      "uniEquipIcon": "uniequip_002_deepcl",
+      "uniEquipDesc": "    딥컬러의 염료는 어떻게 만들어질까?\n    광석을 갈아서?\n    아니면 근대 공업의 산물?\n    나도 모른다.\n    하지만 그 파란색들은 날 불안하게 한다.\n    매우 불안하게 한다.\n    난 그녀가 팔레트에 염료를 더하는 모습을 바라본다.\n    기대하는 색이 나오길 바라며 열심히 섞는다.\n    난 색이 뒤섞이며 약간의 소리를 내는 모습을 바라본다.\n    그림 그릴 준비를 하는 건가? 아니면 그녀가 가진 오리지늄 아츠인가?\n    난 좀 두려워졌다.\n    그녀는 내 기분을 알아차린 것 같다.\n    이건 그저 아츠의 한 부분이라고 말하며 날 위로한다.\n    말하는 사이, 팔레트에 작은 생명체가 나타났다.\n    그녀는 자신의 '조수'라고 말했다.\n    저 작은 생명체와 매치되지 않는 이상한 잡음이 귀에 들리는 것 같다.\n    아주 귀엽다는 건 인정한다.\n    캔버스에 뛰어 올라가기도 하고, 염료에 떨어지기도 한다.\n    생명체는 딥컬러와 함께 그림을 완성한다.\n    “이게 조수야?”\n    난 이렇게 감탄했다.\n    그녀는 고개를 끄덕였다.\n    그녀가 미소 짓고 있다.\n    ……\n    시간은 빠르게 흘렀고, 텅 비었던 캔버스가 꽉 채워졌다.\n    그녀는 캔버스를 내 손에 건네주었고, 난 약속한 보상을 지불했다.\n    “분명 이 초상화가 마음에 드실 거예요!”\n    그녀는 아주 기뻐 보인다.\n    그래서 나도 기분이 좋다. 화가에게 생동감 넘치는 자신의 초상화를 건네받았기 때문이다. 이건 기뻐할 만한 일이다.\n    밝은 색상과 진짜 같은 표정. 이 얼마나 정교한가!\n    그녀가 그림을 표구할 때, 여러 질문이 떠올랐다.\n    하지만 그림을 보고 나자, 질문은 다 사라졌다.\n    “그녀가 파란색 외에 다른 색을 쓴 적이 있나?”\n    “익숙하지 않은 잡음은 또 어디에서 들려온 걸까?”\n    모르겠다. 신경 쓰지 말자! 다른 사람의 비밀을 알아내는 건 좋지 않으니까!\n    조금 수상하긴 해도 그게 나와 무슨 상관이란 말인가?",
+      "typeIcon": "sum-y",
+      "typeName": "SUM-Y",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_110_deepcl",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 40,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_deepcl_1",
+        "uniequip_002_deepcl_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30013",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 20000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_pallas": {
+      "uniEquipId": "uniequip_001_pallas",
+      "uniEquipName": "팔라스의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 팔라스는 미노스 출신의 오퍼레이터를 격려하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_485_pallas",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_pallas": {
+      "uniEquipId": "uniequip_002_pallas",
+      "uniEquipName": "'고향의 바위'",
+      "uniEquipIcon": "uniequip_002_pallas",
+      "uniEquipDesc": "    몸에 난 검은 돌 때문에 난 결국 조상들이 대대로 지켜온 고향을 떠났다.\n하아… 그것이 내게 주는 고통에 난 미소로 보답할 것이다.\n    하지만 미노스라는 굴레에서 벗어나, 근본을 잃어버린 난 어떻게 생존해야 할까?\n    아테너스의 풀떡을 더 먹고 싶고, 라케다이몬의 맛있는 술을 마음껏 마시고 싶다. 코리니아 시장에서 기념품을 사 집에 가져가고 싶다. 여전히 철학자와 마음을 나누고, 무인과 실력을 겨루고, 장사꾼과 흥정을 하고 싶다. 언제쯤 다시 이런 생활을 누릴 수 있을까? 미노스의 산들아, 내 하소연을 좀 더 들어주렴.\n    존엄한 아소스여, 아직 미노스의 백성을 키우고 계십니까? 샘물을 홀짝이는 신도들이 아직 당신에게 찬미와 제물을 바치길 바랍니다.\n    힘노이, 내가 가장 존경하는 지도자여, 당신의 품에서 생명을 참뜻을 깨달으려는 자가 아직 있습니까?\n    당신이 표현에 서툰 거 알고 있습니다. 하지만 진심을 품은 이가 찾아온다면, 그들을 더 일깨워주소서.\n    오, 헬리아, 존경할 만한 헬리아, 우람한 헬리아, 지금도 당신의 정상에 올라 순간적인 영웅심을 과시하려는 아둔한 자가 있습니까? 벌을 내리어 그들이 하산하게 하소서. 그저 어리고 경솔한 자들이니, 순간의 분노로 그들의 미래를 빼앗지 마소서.\n    미노스의 대지여, 당신을 표현하는 언어는 생기가 없습니다. 그 어떤 수식어로도 당신의 진정한 웅장함과 아름다움을 나타낼 수 없습니다. 그래도 전 말하고 쓸 것입니다. 이건 고향을 떠난 포르테에게 마지막으로 남은 위안입니다. 말하지 않고 쓰지 않으면, 마음속 고통이 목숨을 위협할 것입니다. 그리고 이런 천박한 방식으로 마음을 진정시키려는 절 이해해 주세요.\n    전 계속해서 당신의 땅을 떠돌 것입니다. 어쩌면 수년간, 또 어쩌면 수십 년간 말입니다. 하지만 전 당신과 약속하고 싶습니다. 세월이 얼마나 흐르건, 전 당신의 품으로 돌아갈 것입니다. 한 미노스인의 가장 진지한 맹세일 뿐입니다. 당신이 들을 수 있을 거라고 믿습니다. 한쪽의 자애로 가져온 단단한 돌은 제 망치에 끼워져 저와 함께 어려움을 헤쳐나가고, 생사를 함께합니다.\n    제 믿음의 증인이 되고, 제 찬송을 들으며, 제 위대한 업적을 다뤄줍니다.\n    수많은 시련 끝에 승리의 멜로디가 울릴 것입니다.\n    신전 기둥에서 당신을 위해 제 이야기를 해줄 것입니다.\n    그때가 되면 제 진정한 염원이 이루어질 것입니다.\n——팔라스의 기록 중 두서없는 글에서 인용",
+      "typeIcon": "ins-x",
+      "typeName": "INS-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_485_pallas",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_pallas_1",
+        "uniequip_002_pallas_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30125",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 80000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_sophia": {
+      "uniEquipId": "uniequip_001_sophia",
+      "uniEquipName": "위슬래시의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 위슬래시는 많은 적을 저지하는 오퍼레이터를 '격려'하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_265_sophia",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_sophia": {
+      "uniEquipId": "uniequip_002_sophia",
+      "uniEquipName": "더 길어진 채찍",
+      "uniEquipIcon": "uniequip_002_sophia",
+      "uniEquipDesc": "    조피아는 경기장에 오르기 전부터 자신과 균열의 기사와의 격차를 알고 있었다. 그러나 그녀가 진짜 상대 앞에 서서 실력을 겨룰 때, 이 치명적인 격차를 진정으로 느낄 수 있었다.\n    상대에게는 그녀의 경기를 반복 참관하는 전문가가 있다고 한다. 그녀와 체형이 비슷한 코치가 같은 무기를 사용해 현장에서 반복적으로 훈련하여, 경기 전에 자신에게 자주 쓸 동작을 완전히 파악하는 것이다.\n    균열의 기사의 갑옷은 심지어 그녀의 손에 든 무기를 겨냥해 만들었다고 한다. 잘 감기지 않고, 휘두를 때 절단돼도 치명적인 피해를 주지 않는다. 게다가 그의 쌍검은 가장자리를 단독으로 처리해, 로프 절단에 뛰어나다.\n    예전에는 이런 것들이 다 뜬소문인 줄 알았는데, 아쉽게도 모두 다 사실이다. 연거푸 몇 번을 맞붙었지만, 전부 그녀의 열세였다. 조피아는 결국 힘이 빠져버렸다.\n    균열의 기사의 뒤엔 회사가 몇 개나 붙어 있을까? 수많은 사람이 그를 위해 계획을 세우는 건 단지 채찍의 기사를 상대하기 위한 걸까?\n    이 상황을 끝낼 방법이 필요하다. 아니면 패배는 반드시 찾아올 것이다.\n    니어도 그녀처럼 고군분투했을까? 불리한 상황에서 그녀는 흔들렸을까? 의심이 들었을까?\n    그녀가 아는 답을 그녀도 알지만, 조피아는 니어가 아니다.\n    기술, 무기, 갑옷 모두 유리하지 않을 때, 그녀가 니어처럼 기대고 싶은 건 바로, 신념과 결심이었다.\n    그녀는 빈번하게 공격 방법을 바꾸기 시작했고, 심지어는 자신에게조차 익숙하지 않은 동작으로 공격했다.\n    더욱 칼날에 의지해 베어버리고자 했지만, 채찍으로 상대를 압박하려 하진 않았다. \n    이제 '위슬래시' 조피아에겐 명확한 목표가 생겼다. 그건 바로, 상대를 현혹하는 것이다. 그가 한눈파는 순간을 잡아, 이 채찍으로 균열의 기사의 무기를 감고, 채찍이 끊어져 버리기 전에 그의 날카로운 검을 빼앗기 위해서!",
+      "typeIcon": "ins-x",
+      "typeName": "INS-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_265_sophia",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_sophia_1",
+        "uniequip_002_sophia_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30034",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_swire": {
+      "uniEquipId": "uniequip_001_swire",
+      "uniEquipName": "스와이어의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 스와이어는 옆에 있는 근거리 오퍼레이터를 격려하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_308_swire",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_swire": {
+      "uniEquipId": "uniequip_002_swire",
+      "uniEquipName": "호신용 립스틱",
+      "uniEquipIcon": "uniequip_002_swire",
+      "uniEquipDesc": "    오늘은 용문 고위 총경 스와이어의 휴무이다. 그래서 그녀는 평소와 같이 다이구 플라자에 쇼핑을 하러 갔다.\n    위아래를 오가며 6시간의 쇼핑을 한 그녀가 만족스럽게 8개의 큰 쇼핑백을 들고 떠나려던 그때, 코너를 돌았더니 스와이어 산하의 립스틱 판매대가 보였다.\n    “평소대로 브렛 No.38 다섯 개 줘, 고마워.”\n    스와이어는 익숙한 듯 판매대 점원에게 필요한 걸 말했다. 브렛은 No.38는 스와이어가 가장 좋아하는 색으로, 그녀는 장장 10년간 이 립스틱만 써왔다고 한다. 다만 가격이 좀……\n    “네, 스와이어 아가씨. 바로 준비해 드리겠습니다.”\n    점원도 익숙한 듯 다른 동료를 불러 카운터를 맡긴 뒤, 빠르게 창고로 가서 스와이어가 원하는 립스틱을 찾아왔다. 얼마 지나지 않아, 점원은 목제 상자 하나를 꺼내 스와이어에게 건넸다.\n    “확인해 보세요.”\n    스와이어는 알겠다고 대답하고는 바로 상자를 열어보지 않았다. 대신 고개를 숙여 가방에서 무언가를 찾기 시작했다. 한참을 찾은 끝에 그녀는 휴대용 가방 하나를 꺼냈다. 옆에 있는 사람이 보기에는 이것도 작은 핸드백이나 다름없었다.\n    버클을 풀어 가방을 열자, 안에는 블랙 실크가 덮인 5개의 구멍이 있었다.\n    모든 구멍에는 다 쓴 브렛 No.38가 끼워져 있었다.\n    스와이어는 그것들을 꺼내 카운터에 올려놓고, 새로 산 립스틱 중 4개를 다시 끼워 넣고는, 나머지 하나는 바로 주머니에 넣었다.\n    스와이어가 쇼핑백을 다시 팔에 거는 걸 보고, 점원은 계속 가슴이 두근거렸다.\n    “아가씨, 사람을 보내 짐 대신 들어드릴까요?”\n    “응? 됐어, 안 무거워.”\n    “정말 안 무거우세요, 아가씨…?”\n        “진짜 괜찮아”라는 말이 카운터 멀지 않은 곳에서 들려왔다.\n    스와이어에겐 정말 다른 사람의 도움이 필요 없었지만, 다른 사람들에겐 그녀가 필요했다.\n    막 상점 정문을 나섰을 때, 스와이어의 귓가에 한 여자가 도움을 청하는 소리가 들려왔다. 고개를 돌려보니, 어느 멍청한 강도가 여자의 가방을 들고는 전속력으로 도망치고 있었는데, 그 방향엔 마침 스와이어가 있었다.\n    스와이어는 갑자기 모든 것이 참 우연이라고 느껴졌다. 마침 오늘 그녀는 플레일을 갖고 있지 않고, 마침 오늘 그녀는 새 립스틱을 샀고, 마침 그중 하나를 주머니에 넣었으니 말이다.\n    강도에게 평생 잊을 수 없는 교훈을 주기로 한 그녀는, 쇼핑백을 내려놓고, 립스틱을 꺼내 뚜껑을 연 뒤, 밑에 붙어 있는 스티커를 떼고 강도가 다가오길 기다렸다.\n    몇 초 뒤, 현장에 있는 사람들은 둔탁한 소리를 들었고, 뒤이어 멍청한 강도가 소리를 지르며 넘어졌다. 그리고 순찰 근위국 오퍼레이터의 고함이 들렸다.\n\n    몇 분 후\n    “수고했어, 아가씨. 쉬는 날인데 강도까지 신경 쓰는 거야?”\n    강도 미수 건을 감독하러 온 호시구마는 정의로운 시민 스와이어를 향해 계속 미소 지었다.\n    평소라면 스와이어는 직접 범인을 데리고 사건을 복기하며 심문했겠지만, 오늘은 휴일이다. 사건은 그녀가 상관할 일이 아니다.\n    “하필 날 만난 게 재수 없는 거지.”\n    “강도가 휴무인 경관을 만나는 게 용문에서 흔한 일은 아니지.”\n    “훗, 됐어. 데리고 가, 난 집에 가봐야겠어. 이 사건은 내일 볼게.”\n    “편한 대로 해, 아가씨.”\n    “잠깐, 확인할 게 있어.”\n    “뭔데?”\n    스와이어는 고개를 돌려, 호시구마의 조사 보고서 내용을 봤다. 호시구마는 무언가를 적고 있었다.\n    “용의자가 쓰러진 건 어떻게 쓸까?”\n    스와이어는 호시구마가 그녀에게 의견을 묻고 있는 걸 바로 알아차렸다.\n    “그냥 립스틱이라고 써. 저런 놈은 봐줄 필요 없으니까.”\n    “푸하하, 알겠어.”\n    호시구마는 보고서에 “용의자는 립스틱에 공격받아 쓰러짐”이라고 크게 적었다.\n    “바로 집에 가기 귀찮네. 얼른 마무리하고 같이 밥 먹으러 가자.”\n    “밥 먹고 집에도 모셔다드리고 짐까지 들어드려야 하겠지, 아가씨? 하하.”\n    “그만 묻고 서둘러.”\n    “응, 잠깐만 기다려. 보고서만 넘기면 밥 먹으러 갈 수 있으니까.”\n    “이따가 이 ‘립스틱’이 얼마나 대단한 건지 말해달라고.”\n    “알았어.”\n\n    “짐 좀 들어줘, 팔이 좀 아프네.”\n    “그래, 그래, 금방 끝나.”",
+      "typeIcon": "ins-x",
+      "typeName": "INS-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_308_swire",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_swire_1",
+        "uniequip_002_swire_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30044",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_doberm": {
+      "uniEquipId": "uniequip_001_doberm",
+      "uniEquipName": "도베르만의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 도베르만은 예비 인원을 격려하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 가드 오퍼레이터로 구분되며, 교관 직책을 행사한다.\n    이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_130_doberm",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_doberm": {
+      "uniEquipId": "uniequip_002_doberm",
+      "uniEquipName": "군용 망원경",
+      "uniEquipIcon": "uniequip_002_doberm",
+      "uniEquipDesc": "    “대령님, 이곳의 상황은 어떻습니까?”\n    망원경 렌즈를 통해, 연합정부군에서 대령으로 활약하던 도베르만은 잔해가 된 지역과 멀지 않은 곳에 있는 순환 구역 차도 입구를 바라보았다.\n    싱가스와 연립 정부는 이 지역에 끊임없이 병력을 투입하고 있다. 그리고 그녀의 소대는 혼란한 도시 전장을 지나 다른 쪽에 지원 임무 갈 방법을 생각해야 한다.\n    순조로운 길이란 없는 갈림길에서, 이젠 선택을 해야 했다.\n    “넌 일부 인원을 데리고 차도로 가. 난 소대를 데리고 도시 중앙을 돌파하겠다.”\n    “네, 대령님.”\n    “연락이 끊겨도 임무가 우선이다. 너희도 마찬가지다, 알겠나?”\n    “네, 대령님!”\n    “출발한다!”\n    ......\n    “도베르만 대령님, 이제 어쩌면 좋겠습니까?”\n    저항 조직에 합류한 도베르만은 부대를 이끌고 철수하고 있다. 그리고 지금 앞에는 적이 있고, 뒤에는 추격병이 있다.\n    살아남은 부하를 데리고 여기에서 나갈 방법을 생각해야 한다.\n    “이곳으로 가죠…… 그런 다음에 수로를 건너 경계병을 돌아갈 수 있습니다.”\n    “하지만 뒤를 봐줄 사람이 필요해……”\n    “제가 하겠습니다, 할 수 있습니다!”\n    “하지만……”\n    “아니면 우리 쪽 사람이 여기서 죽을 겁니다. 아닙니까?”\n    “미안하다……”\n    “대령님 잘못이 아닙니다. 아주 훌륭하게 해내셨습니다.”\n    “형제들은 제가 설득하겠습니다.”\n    “다른 사람들의 목숨은, 대령님께 맡기겠습니다!”\n    ……\n    “교관님, 여긴 어떻게 하죠?”\n    로도스 아일랜드 오퍼레이터 도베르만은 임무를 진행 중이다. 망원경을 통해 그녀의 시야에 들어온 모습은 또 그녀의 선택을 재촉하고 있다.\n    “팀을 나눠서 포위 공격하는 게 더 좋을 것 같아요.”\n    “아니, 밤이 될 때까지 여기서 기다렸다가, 폐허를 통해 바로 공격하는 게 나아. 아니면 병력이 너무 분산되어, 사고가 생길지도 모르니.”\n    “알겠습니다.”\n    “내가 먼저 잠입할 테니까, 날이 어두워지면 넌 다른 사람들을 데리고 목표 거점 근처로 가서 내 명령을 기다려라.”\n    “그건 교관님께 너무 위험합니다.”\n    “이게 최고의 방법이자 내 선택이다!”\n    “날 믿어줘. 내가 너희를 믿는 것처럼. 알겠나?!”\n    “네, 교관님! 꼭 조심하셔야 합니다!”\n    “훗, 네 일이나 잘해.”\n    ……\n    그날 밤, 도베르만의 팀은 무사히 임무를 마쳤다.",
+      "typeIcon": "ins-y",
+      "typeName": "INS-Y",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_130_doberm",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 40,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_doberm_1",
+        "uniequip_002_doberm_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30023",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 20000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_fartth": {
+      "uniEquipId": "uniequip_001_fartth",
+      "uniEquipName": "파투스의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 파투스는 원거리에서 적을 격파하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스나이퍼 오퍼레이터로 구분되며, 저격수 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_430_fartth",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_fartth": {
+      "uniEquipId": "uniequip_002_fartth",
+      "uniEquipName": "첫 경기 지원 세트",
+      "uniEquipIcon": "uniequip_002_fartth",
+      "uniEquipDesc": "    ……바람 소리.\n    나는 바람 소리가 변한 걸 느꼈다.\n    조금 전까지도 조용했는데, 지금은 요란하다.\n    ……\n    많은 사람이 경기를 보러 왔다.\n    나의 첫 번째 기사 스포츠 경기를.\n    이전의 지하 경기장 때와는 다르다…… 이번에는 공식 경기다.\n    ……달라질까?\n    정식으로 감염자 기사가 되면, 정말로 이전과 달라질 수 있을까?\n    ……\n    ……거의 다 됐어.\n    시간이 얼마 남지 않았어. 경기가 곧 시작된다.\n    난……\n    나는 내가 이길 거란 걸 알고 있다.\n    내가 이길 거야……\n    ……\n    \n    “실례합니다, 저스티나 씨 계신가요? 당신을 위해 특별 제작한 새 장비가 도착했어요!”\n    “어, 저스티나 씨, 안 계신가요?”\n    “네?…… 점심부터 안 보였다고요? 아무도 어디 갔는지 모른다고요? 이제 곧 시작하는데, 어딜 가신 거죠?”\n    “이러면 곤란한데, 첫 경기부터 지각하여 관중들에게 나쁜 인상을 남기면, 저스티나 씨 향후의 발전에 전혀 도움이 안 됩니다!”\n    “게다가, 여기 주문 제작한 물건들은 모두 저스티나 씨가 직접 확인해야 하는데, 아직 나타나질 않으니……”\n    잠깐, 이게 무슨 소리지?\n    음…… 이건 혹시 피리 소리인가?\n\n    은은한 피리 소리가 부드러운 바람에 실려 먼 곳까지 날아간다.\n    높이, 그리고 더 멀리.\n    약속했던 그곳으로, 바람은 끊임없이 분다.\n    전해줘.\n    모두에게 전해줘.\n    저스티나가 드디어 기사가 되었다고.\n    하지만, 이건 전하지 마.\n    저스티나는 고향을 그리워한다고.\n\n    ……\n    “아앗, 벌써 시간이 이렇게 됐네!”\n    “내가 왜 멍때리고 있었지, 이러면 안 되는데! 도대체 누가 이렇게 한가로이, 여기서 이렇게 촌스러운 노랫가락을 불고 있는 거지?”\n    “하아, 진짜!”\n    “빨리, 시간이 없어. 서둘러 저스티나 씨를 찾아와야 해!”",
+      "typeIcon": "dea-x",
+      "typeName": "DEA-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_430_fartth",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_fartth_1",
+        "uniequip_002_fartth_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30135",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 80000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_milu": {
+      "uniEquipId": "uniequip_001_milu",
+      "uniEquipName": "파이어워치의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 파이어워치는 원거리에서 적을 격파하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스나이퍼 오퍼레이터로 구분되며, 저격수 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_158_milu",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_milu": {
+      "uniEquipId": "uniequip_002_milu",
+      "uniEquipName": "야전 저격 세트",
+      "uniEquipIcon": "uniequip_002_milu",
+      "uniEquipDesc": "    나뭇잎 책갈피가 한 소설책에 끼어 있었다.\n\n    《기사의 숲》 21페이지.\n    “기사 부대에 가입하게 해주세요!”\n    “좀 더 크면 그때 다시 와.”\n    “저번에도 그렇게 얘기하셨잖아요! 저는 1년이나 기다렸다고요. 그리고 저 지금은 석궁도 아주 잘 다뤄요. 200미터 떨어진 곳에 있는 나무도 다 명중할 수 있거든요!”\n    “알았다. 그렇다면 날이 저물기 전에 마을 밖에서 글룸핀서 한 마리 잡아 오면 가입시켜 줄게.”\n    대장은 도저히 소녀의 고집을 꺾을 수 없었다. 원래는 그 아이를 좀 난감하게 해서 포기하게 만들려고 했었다. 그런데 웬걸, 소녀는 잠깐 고민하는 듯하더니, 의연하게 고개를 끄덕이고는 석궁을 들고 바로 마을 밖으로 뛰어나갔다.\n    사실 대장도 그냥 해본 소리였다. 말은 그렇게 했지만, 소녀 혼자서 글룸핀서를 상대하게 할 수는 없었다. 그래서 조용히 소녀의 뒤를 따랐다. 한편으론 어떻게 할지도 궁금했기 때문이다. 소녀가 저격 포인트를 찾은 뒤, 환경 위장을 하고 연속 세 발의 화살로 글룸핀서의 급소를 모두 명중하는 걸 보고 대장은 이내 생각을 바꾸었다.\n    소녀가 자기 자신보다 더 큰 글룸핀서를 끌고 마을로 가고 있을 때, 대장이 그녀 앞에 나타났다.\n    “그래, 이제부터 내 곁에 머물러.”\n    소녀는 머리를 치켜들고는, 진흙이 가득 묻은 얼굴로 빙그레 웃었다.\n\n    《기사의 숲》 53페이지.\n    시간은 빨리도 흘러, 소녀는 많이 자랐고, 우르수스 군대와의 전투에도 여러 차례 참가해 많은 공을 세웠다. 기사 부대는 바람처럼 나타나 우르수스 군대를 사정없이 공격한 뒤 흔적도 없이 사라지곤 하여, 늘 우르수스 군대를 간담이 서늘하게 만들었다. 기사 부대가 이름을 날리자, 마을 사람들 눈에는 소녀가 더더욱 전쟁 영웅처럼 비쳤다.\n    “우리가 또 이겼어요. 그런데, 대장님은 왜 수심에 찬 얼굴을 하고 계신가요?” 소녀가 대장에게 물었다.\n    “이제 곧 겨울이 다가오고 물자도 부족한데, 우리가 얼마나 더 버틸 수 있을까?”\n\n    《기사의 숲》 137페이지.\n    이날이 드디어 오고 말았다.\n    적들이 대거 몰려왔고, 기사 부대가 여느 때처럼 우회 작전을 준비하고 있을 때, 우르수스의 포화가 정확하게 그들에게 떨어졌다. 현격한 군사력 차이로 기사 부대는 도저히 저항할 수가 없었다……\n    “어떻게 이럴 수가. 우르수스는 기사 부대의 위치를 정확히 파악할 수단이 없을 텐데. 절대로 이럴 수가 없어! 다만……”\n    소녀는 더 깊이 생각할 겨를이 없었다. 지금 가장 급선무는 적의 포위망을 뚫고 나가는 거였다.\n    “언젠가, 반드시 찾아낼 거야. 도대체 누구인지……”\n    빗발치는 총알 속에서 구사일생으로 탈출한 소녀의 뒤에서, 그녀의 고향이 불타올랐다.\n\n    《기사의 숲》 201페이지.\n    이 뒤의 페이지는 불에 탔고, 책에 끼워뒀던 나뭇잎의 한쪽이 그을려 있었다.\n\n    소녀는 나뭇잎을 코팅하여 전술 장비 상자에 넣어두고는, 매번 장비를 거두어들일 때마다 상자 안의 그 나뭇잎을 한 번 더 보곤 했다.\n    어쩌면 이게 바로 그녀가 볼 수 있는 고향의 마지막 나뭇잎일지도 모른다.\n    이건 오래된 전쟁에 관한 이야기이자, 또 다른 이야기다.\n    하지만, 파이어워치에게 있어 이 책은…… 비록 나뭇잎 책갈피만 남았지만…… 그것만의 특별한 의미가 있을 것이다.",
+      "typeIcon": "dea-y",
+      "typeName": "DEA-Y",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_158_milu",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_milu_3",
+        "uniequip_002_milu_4"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30054",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_cuttle": {
+      "uniEquipId": "uniequip_001_cuttle",
+      "uniEquipName": "안드레아나의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 안드레아나는 원거리에서 적을 격파하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스나이퍼 오퍼레이터로 구분되며, 저격수 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_218_cuttle",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_cuttle": {
+      "uniEquipId": "uniequip_002_cuttle",
+      "uniEquipName": "총기 정비 세트",
+      "uniEquipIcon": "uniequip_002_cuttle",
+      "uniEquipDesc": "    정기 검사가 끝나고 가비알 씨는 나를 끌고 술을 마시러 가려 했으나, 내가 또 거절해버렸다. 가비알 씨가 싫어서가 아니라, 그녀는 좋은 사람이지만 내가 성가신 걸 싫어해서 그렇다.\n    시끄러운 환경, 알코올, 팔씨름, 그리고 무조건 튀어나오는 토미미라는 이름의 소녀…… 뭐, 하나씩이면 모두 다 괜찮고 어떤 건 귀엽기까지 하지만, 한데 섞어놓으면 골치 아픈 일이 돼버린다. 술집에서 하룻밤 보내기보다는 갑판에 나가 주스를 한잔 마시고 바람을 쐬며 지내는 게 더 낫지 않을까 싶다. 마치 지금처럼 말이다.\n\n    주스를 금방 다 마셨다.\n    혼자 있는 것의 좋은 점이라면 기분이 상쾌한 것이고, 나쁜 점이라면 금방 무료해지는 것이다.\n    나는 정비 세트가 들어 있는 도구함을 열어 내 '총'을 정비하기 시작했다. 내게는 일종의 오락 활동인 셈이다.\n    20초 만에 해체하고,\n    81초 만에 각 부품의 더러운 곳을 다 닦아내고,\n    31초 만에 금속 부품에 윤활유를 갈아준 뒤,\n    15초 만에 다시 조립했다.\n    만약 내 손에 있는 게 '진정한 녀석'이라면 정비 세트의 도구들을 더 유용하게 쓰일 수 있을 텐데, 아쉽게도 이건 독특한 모양의 석궁이라, 특수 제작한 먹물탄만 쏠 수 있어 오리지늄 같은 센세이셔널한 물건들과는 관계가 없다.\n    어떤 것들은 적합한 대상에게만 쓰일 뿐, 사람에게 강제로 사용했다가는 큰일 날 수도 있다.\n\n    내가 막 두 번째 주스를 가지러 갈까 말까 고민하고 있던 차에, 몇몇 사람이 갑판으로 올라왔고, 발걸음 소리 외에는 아무 소리도 내지 않았다. 그 사람들은 눈치껏 나와 거리를 유지하며 갑판의 다른 한쪽에 멈춰 섰다.\n    얼마 지나지 않아 그쪽에서 나지막한 노랫소리가 들려왔고, 뒤를 힐끗 돌아보니 역시 어비설 헌터스였다.\n    그들 세 사람을 보자마자 나는 가슴이 뛰기 시작했다. 이에 박사님께 첫눈에 반했다고 했다. 물론 농담으로 한 말이다. 사실 이런 비정상적인 생리 반응은 아마 내가 어렸을 때 겪었던 그 일과 관련이 있을 것이라고 짐작한다. 하지만 나는 묻지도 않고, 깊이 생각하지도 않았다. 물어도 답을 얻을 수 없고, 생각해도 어떻게 해결해야 할지 방법이 떠오르지 않을 것이며, 그저 나 자신에게 고민만 더해줄 거였으니깐.\n    그 일은 100명의 가비알 씨가 나를 데리고 100개의 술집에 가서 100일을 보내기보다도 더 성가실 것 같은 예감이 들었다.\n    그래서, 그 일이 나의 일상생활과 거리를 두기만 하면 될 뿐, 골머리를 앓으며 복잡한 소용돌이 속으로 빠져들고 싶은 생각은 없었다.\n    그러나, 가끔…… 아주 가끔,\n    눈을 감으면 한 사람이 보인다. 전혀 인상이 없지만, 분명한 건 그 사람이 바로 이 복잡한 소용돌이의 중심이라는 것이다.\n    바다 냄새가 나는 사람, 두루마기를 입은 이베리아 사람……\n    나는 몸을 일으켜, 총을 메고, 갖은 수단을 다 써서 얻어낸 도구함을 들고는 두 번째 주스를 가지러 갔다.",
+      "typeIcon": "dea-x",
+      "typeName": "DEA-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_218_cuttle",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_cuttle_5",
+        "uniequip_002_cuttle_6"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30064",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_glaze": {
+      "uniEquipId": "uniequip_001_glaze",
+      "uniEquipName": "엠브리엘의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 엠브리엘은 원거리에서 적을 격파하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스나이퍼 오퍼레이터로 구분되며, 저격수 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_302_glaze",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_glaze": {
+      "uniEquipId": "uniequip_002_glaze",
+      "uniEquipName": "휴대용 레이더 보조 기기",
+      "uniEquipIcon": "uniequip_002_glaze",
+      "uniEquipDesc": "    오늘 엠브리엘은 임무 하나를 받았다.\n    임무라고는 하지만, 사실은 작은 의뢰였다.\n    물론, 의뢰인 빈스토크는 상대방의 관심을 끌기 위해 마음을 움직일만한 보상으로, 나무로 만든 정교한 꽃나무 오르골을 제안했다. 엠브리엘은 저 꽃잎들을 보는 순간 마음이 움직이지 않는 사람이 없을 거라는 생각이 들었다.\n    “도와줘! 운송 과정에 메탈 크랩 두 마리가 도망갔어. 내게 엄청 중요하거든. 부탁해!”\n    빈스토크가 말한 곳에 와서 장비 세팅을 마친 엠브리엘은 자신이 광야에서 메탈 크랩을 잡을 줄은 몰랐다.\n    “내 본업이 뭐였더라……”\n    ……\n    뭐, 됐다. 메탈 크랩을 잡는 것도 재미있을 것 같다. 전에 봤던 건 모두 감염된 야생 메탈 크랩이어서, 못생긴 데다 잡기도 복잡했지. 빈스토크의 메탈 크랩들은 본 적은 없으나 아주 귀여울지도 모르잖아?\n    엠브리엘은 속으로 이런저런 생각을 했다.\n    하지만, 귀여운 메탈 크랩은 오늘의 주제가 아니었다.\n    엠브리엘은 빨리 의뢰를 완료하고 그 예쁜 오르골을 얻기 위해 곁에 있는 장비를 가동했다.\n    전원을 켜고, 거치대를 설치한 뒤, 각도를 조정하고 데이터를 입력한 후에 목표의 정보를 확인했다……\n    엠브리엘은 갑자기 레이더가 고장 난 것 같은 문제를 발견했다.\n    질서 없는 데이터나, 심지어 이미 연기가 나기 시작한 배터리나, 모두 그녀에게 불행한 소식을 알렸다.\n    설마 돌아가서 레이더를 고친 후에 다시 와야 하는 건 아니겠지? 그러면, 오늘 안에는 분명 의뢰를 완료할 수 없을 텐데, 오르골도 가질 수 없고…… 안 돼……\n    ……\n    “아아아, 내게 보조기기가 있었지!!”\n    광야에서 갑자기 소리를 지르던 엠브리엘은 들뜬 마음으로 기자재 한 봉지를 열었다. 기분이 너무 좋아, 콧노래까지 흥얼거리며 설비 교체를 마쳤고, 빠르게 자신의 컨디션을 조절했다.\n    엠브리엘은 설비 조정을 마치고는 수신 센서를 설치한 뒤 자신의 오리지늄 아츠를 시전하기 시작했다……\n    “하아, 농땡이 친 학생들을 잡는 것 같은 이 기분은 뭐지? 으음, 메탈 크랩은 어디 갔을까?”\n    ……\n    시간이 어느 정도 흐른 뒤, 핑크 머리의 산크타가 양식 상자 안에 두 뭉치로 웅크리고 있는 메탈 크랩들을 가지고 빈스토크 앞에 나타났다.\n    그녀 뒤의 박스 안에는 3가지 색깔이 다른 새알이 담겨 있었다.\n    빈스토크는 그녀가 오매불망 원하던 메탈 크랩을, 엠브리엘은 너무 예뻐서 조심스럽게 다룰 수밖에 없는 정교한 오르골을 손에 넣었다.\n    “큰 도움이 됐어.” 엠브리엘은 흐뭇하게 오르골을 바라보며 “저 기자재가 전쟁터가 아닌 곳에서도 이렇게 유용하게 쓰일 줄이야~” 라고 생각했다.\n    “어, 언니, 저것들을 키우려고?” 빈스토크는 그 새알을 가리키며 말했다. “새알을 부화하려면 보온 상자가 필요해. 그리고 자주 뒤집어줘야 하고……”\n    “그렇게 번거로워?!”\n    “그, 그래도 저것들을 절대 버리지 마! 바닐라 언니한테 물어봐…… 가르쳐 줄 거야!”",
+      "typeIcon": "dea-x",
+      "typeName": "DEA-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_302_glaze",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 40,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_glaze_7",
+        "uniequip_002_glaze_8"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30033",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 20000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_cgbird": {
+      "uniEquipId": "uniequip_001_cgbird",
+      "uniEquipName": "나이팅게일의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 나이팅게일은 짧은 시간 안에 여러 명의 오퍼레이터를 치료하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 메딕 오퍼레이터로 구분되며, 멀티 타겟 메딕 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_179_cgbird",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_cgbird": {
+      "uniEquipId": "uniequip_002_cgbird",
+      "uniEquipName": "'갇혀버린 희망'",
+      "uniEquipIcon": "uniequip_002_cgbird",
+      "uniEquipDesc": "    생명체를 만지면 느낌이 묘하다.\n    사람이 나타내는 고난과 슬픔과는 달리, 생명은 늘 살아있다.\n    치유 오리지늄 아츠 시전을 통해, 새로운 소통 방식이 형성됐다.\n    나의 생명과 그들의 생명사이에.\n    고통을 나누고, 오리지늄을 자극하여 생명이 피어나도록 촉진하면 자연히 치료된다.\n    이 과정은 현대 의료 행위와는 전혀 다른 것 같다.\n    하지만 내게는 결과가 더 중요하다.\n    내가 조금이나마 고통을 감당하면, 다른 사람은 새로운 생명을 얻을 수 있기 때문이다.\n    이건 아주 바람직하다.\n    다만…… 만약 내가 일반 사람들처럼 신체상의 고통을 느낄 수 없다면, 마음속의 그 작은 희망은 더욱 빛날 것이다.\n    부끄럽게도 지금의 나는 다른 사람에게 의존해서 살 수밖에 없다.\n    마치 새장 안의 빛나는 결정처럼, 문이 열려 있어도 빛이 다른 사람의 몸에 비추어져도, 결정 자체는 새장 안에 굳어 있는 것과 같다.\n    왜냐하면, 움직일 수 없기 때문에 그곳에 고정된 것이다.\n    “리즈 씨, 리즈 씨……”\n    언젠가 나도 옆에 있는 새처럼, 날개를 펴고 날아갈 수 있겠지?\n    “리즈 씨, 일어나세요……”\n    그날이 오기 전까지는, 여전히 저들이 나를 보살펴줘야 한다.\n    ……\n    ……\n\n    “무슨 일이에요? 샤이닝 씨?”",
+      "typeIcon": "rin-x",
+      "typeName": "RIN-X",
+      "equipShiningColor": "blue",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_179_cgbird",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_cgbird_9",
+        "uniequip_002_cgbird_10"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30145",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 80000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_plosis": {
+      "uniEquipId": "uniequip_001_plosis",
+      "uniEquipName": "프틸롭시스의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 프틸롭시스는 짧은 시간 안에 여러 명의 오퍼레이터를 치료하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 메딕 오퍼레이터로 구분되며, 멀티 타겟 메딕 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_128_plosis",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_plosis": {
+      "uniEquipId": "uniequip_002_plosis",
+      "uniEquipName": "의료 환경 분석 장치",
+      "uniEquipIcon": "uniequip_002_plosis",
+      "uniEquipDesc": "    “만약 오리지늄에 정말로 정보를 저장하는 능력이 있고, 우리가 이것을 디코딩하고 번역할 수 있다면 전체 컬럼비아의 과학기술은 한 단계 도약할 걸!”\n    “지금의 전산 시스템으로는 오리지늄 내의 잡다한 정보량을 처리하기에 부족해 한계에 부딪힌 것 같아. 더 적합한 전산 시스템이 필요……”\n    “뭐? 사람이 계산하게 한다고?! 이건 확실히 과감한 제안인 건 맞아. 그…… 그 가능성을 고려해봐야 하겠지만.”\n    “사람을 전산 매체로 하는 디코딩 장치의 프로토타입은 이미 다 제작했다. 지금 사고가 뚜렷하고 반응이 민첩한 사람이 필요해. 전산 데이터에 대해 상당히 잘 아는 사람이면 가장 좋겠지만.”\n    “실험 대상은 이미 정해졌다. 대상자의 코드네임은 프틸롭시스.”\n    “전체 라인 랩에서 그녀보다 이 실험에 더 적합한 사람은 없다. 상부에서는 그녀에게 실험의 리스크를 숨기라고 했지만, 나는 그녀에게 실험 과정에 발생할 수 있는 여러 가지 가능성을 설명했다. 이건 내가 컬럼비아 시민으로서, 한 사람으로서 해야 하는 가장 기본적인 일이다.”\n    “그녀가 승낙했다. 그녀가 승낙했어! 난 그녀가 승낙할 줄 알았다! 내가 사람을 제대로 봤어!”\n    “사전의 주의점과 전반적인 프로세스는 이미 다 가르쳤다. 그녀의 습득 속도는 아주 빨랐다. 내일이면 실험이 시작된다. 나는 우리가 함께 컬럼비아의 미래를 맞이하게 될 거라고 믿는다!”\n    “실험은 아주 순조롭게 끝났고, 모든 데이터가 통제 범위 안에 들었다. 이대로라면, 조금씩, 조금 더…… 아, 아니, 안 돼! 이게 아닌데! 빠, 빨리, 저걸 꺼……”\n    “안전장치가 바로 가동됐지만, 그녀는 결국…… 머리를 다쳤다.”\n    “그리고 오리지늄에도 감염됐다……”\n    “(흐흑…… 흑……)\n    “상부에서는 이미 사람을 보내 구조 중이다. 하, 하지만, 이건……”\n    “모두 다 내 탓이야, 모두 다 내 탓……”\n    “전에 그녀가 받은 정보에 따라 인체에 이식할 수 있는 칩을 만들었는데, 이것으로 그녀 대뇌의 일부 기능을 대체할 수 있을 것 같다.”\n    “몇몇 담당자들은 이번 제안을 높이 평가했다. 흠, 나는 그들이 무슨 생각인지 알 것 같다.”\n    “이식 수술이 성공했지만, 그녀는 아무런 말이 없었다.”\n    “그녀가 깨어났다. 하지만 그녀의 언어 기능에…… 문제가 좀 생겼다.”\n    “그녀는 머릿속에 기존에 알고 있던 언어 범주에 속하지 않는 또 다른 소리가 떠올랐다며, 그게 그녀의 정신에 큰 부담감을 줄 거라고 말했다.”\n    “기계 언어 로직을 사용해야만 이런 고통을 줄일 수 있다.”\n    “그녀는 컬럼비아에서 처음으로 칩을 이식하고도 살아남은 사람이다. 이것은 획기적인 일이다.”\n    “하지만, 그녀 눈에 보이는 땅은 이전과 완전히 달라진 것 같다.”\n    “나도 머리에 칩을 이식했다. 지금도 상처가 가끔 아리긴 하지만, 오리지늄 속의 정보가 과연 그녀에게 어떤 변화를 가져올지 궁금했다.”\n    “그 소리는 과연 어떤 소리일까?”\n    “난 그 실험을 재현할 것이다.”\n——라인 랩, *비공개* 프로젝트 담당자의 생전 녹음",
+      "typeIcon": "rin-x",
+      "typeName": "RIN-X",
+      "equipShiningColor": "blue",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_128_plosis",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_plosis_11",
+        "uniequip_002_plosis_12"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30074",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_breeze": {
+      "uniEquipId": "uniequip_001_breeze",
+      "uniEquipName": "브리즈의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 브리즈는 짧은 시간 안에 여러 명의 오퍼레이터를 치료하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 메딕 오퍼레이터로 구분되며, 멀티 타겟 메딕 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_275_breeze",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_breeze": {
+      "uniEquipId": "uniequip_002_breeze",
+      "uniEquipName": "외과 의료 세트",
+      "uniEquipIcon": "uniequip_002_breeze",
+      "uniEquipDesc": "    사랑하는 나의 그레이스.\n    네가 집을 떠난 뒤로 지금까지 한 번도 우리한테 연락이 없더구나.\n    처음에 우린 그때 다툰 일 때문에 네가 화가 난 줄 알았는데, 나중에야 너에게 무슨 일이 발생했다는 걸 알게 됐다.\n    전에는 네 생일을 함께 할 수 없었지만, 지금 우리는 네가 일하는 곳의 주소를 알고 있단다.\n    생일 축하한다. 내 사랑하는 그레이스.\n    이 소포에는 너에게 생일 선물로 줄 공구 가방이 들어 있다.\n    젊었을 때 내가 먼 곳으로 모험을 떠나기 위해 런디니움에서 유명한 가죽 장인을 찾아가 주문한 공구 가방이다. 이 가방은 매우 튼튼할 뿐만 아니라, 많은 물건을 담을 수 있단다.\n    그 후 나는 부모님이 계획해 주신 삶으로 돌아갔기에 이걸 사용할 기회가 한 번도 없었다.\n    설령 이 땅에 수많은 요소들이 사람을 멈추게 할지라도, 나는 네가 나보다 더 멀리 갈 수 있을 거라고 믿는다.\n    너의 아버지는 아직도 자책하고 계셔. 로도스 아일랜드에 널 보러 가시려고는 하지만, 어떻게 너를 마주해야 할지, 그 뒤의 일은 또 어떻게 처리해야 할지 몰라 하셔. 아버지를 만나면 차분하게 잘 이야기 해봤으면 좋겠다.\n    사랑하는 내 딸아, 그 어떤 일이 있어도 나는 너의 선택을 존중하고, 너의 꿈을 응원할 것이다.\n    만약 아버지가 동의하지 않는다면, 내가 함께 아버지를 설득해 줄게.\n    추신. 네 아버지가 너를 위해, 다른 사람에게 부탁해 네가 어렸을 적에 즐겨 먹던 디저트를 많이 만드신 것 같아. 그때 너에게 못 먹게 했던 것들까지도 말이다…… 디저트를 받았으면 한꺼번에 많이 먹지 마.\n\n——베아트릭스 아리조나\n\n\n    그레이스, 로도스 아일랜드에 다녀왔는데, 네가 외근 나갔다고 네 동료가 그러더라. 그것도 아주 위험한 곳에. 로도스 아일랜드를 위해 무슨 전장 의료 구호 서비스를 하러 갔다고 들었다.\n    내가 알기로는 로도스 아일랜드가 이 땅에서 손꼽히는 것은 맞지만, 너는 지금처럼 여기저기 돌아다니지 말고 이곳에 남아 환자로서 치료를 받아야 했다.\n    우리가 치료 비용은 부담할 수 있지만, 너를 두 번 다시 잃을 수는 없단다.\n    내가 먹을 것과 생필품을 좀 가져왔다. 어떤 것은 유통 기한이 짧으니 잊지 말고 꼭 먹거라.\n    또 필요한 게 있으면 내게 말해.\n    네 어머니가 나보고 너랑 차분하게 잘 얘기해보라고 해서, 다음 달에 다시 찾아올 계획이다.\n    그리고, 네 어머니에게 자주 편지를 하려무나.\n    추신. 네 숙소의 서랍장이 고장 났더라. 내가 다 수리했어. 서랍 안에 물건을 너무 많이 넣지는 마라.\n\n——헨리 아리조나",
+      "typeIcon": "rin-x",
+      "typeName": "RIN-X",
+      "equipShiningColor": "blue",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_275_breeze",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_breeze_13",
+        "uniequip_002_breeze_14"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30084",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_flower": {
+      "uniEquipId": "uniequip_001_flower",
+      "uniEquipName": "퍼퓨머의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 퍼퓨머는 짧은 시간 안에 여러 명의 오퍼레이터를 치료하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 메딕 오퍼레이터로 구분되며, 멀티 타겟 메딕 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_181_flower",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_flower": {
+      "uniEquipId": "uniequip_002_flower",
+      "uniEquipName": "'에게의 키스'",
+      "uniEquipIcon": "uniequip_002_flower",
+      "uniEquipDesc": "    숨을 들이쉬세요……\n    향기를 코안에 잠깐 머물게 했다가……\n    다시 내뱉으세요……\n    어때요? 박사님, 이 향수 냄새 괜찮죠?\n    네? 비결이요? 무슨 비결?\n    그냥 원료를 좀 더 많이 사용했고, 공예가 좀 더 복잡할 뿐이에요.\n    좀 더 알고 싶으시다고요?\n    어머, 어머, 혹시 제 레시피를 가져다 쓰시려는 건 아니겠죠?\n    흠흠~ 뭐, 적어드려도 상관없어요. 아무튼, 이건 반드시 미노스 현지 재료를 써야 하니깐요.\n    다른 거로는 대체할 수 없어요.\n    마치 미노스에 대한 제 개인적인 짙은 추억이랄까요.\n    에게 평원의 밤, 하늘을 나는 파울비스트, 호수에 비친 달, 보로니아색의 봄날……\n    눈에 보이고,\n    손에 만져지며,\n    유일무이하죠.\n    아…… 유일무이하다는 표현은 적절하지 않은 것 같네요. 다들 이 냄새를 맡았으니깐요.\n    어, 그냥 여러분의 코를 빌려 저의 향수병을 달래줬다고 생각해주세요.\n    박사님, 지금 알려주세요.\n    박사님은 '에게의 키스'에서,\n    어떤 냄새를 맡으셨나요?",
+      "typeIcon": "rin-y",
+      "typeName": "RIN-Y",
+      "equipShiningColor": "blue",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_181_flower",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 40,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_001_flower_15",
+        "uniequip_002_flower_16"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30043",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 20000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_phatom": {
+      "uniEquipId": "uniequip_001_phatom",
+      "uniEquipName": "팬텀의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 팬텀은 반복해서 전장에 파고드는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스페셜리스트 오퍼레이터로 구분되며, 처형자 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_250_phatom",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_phatom": {
+      "uniEquipId": "uniequip_002_phatom",
+      "uniEquipName": "미스 크리스틴의 펠트",
+      "uniEquipIcon": "uniequip_002_phatom",
+      "uniEquipDesc": "    저녁 무렵이 되면 배우는 언제나 작은 마을에 있는 한 거리의 모퉁이로 가곤 했다.\n    그곳은 사람이 적고 조용했으며, 모퉁이에 자리 잡은 가게의 문 앞에는 파라솔 하나가 세워져 있었다. 저녁 석양은 파라솔 아래까지 비치지는 않았지만, 울퉁불퉁한 보도블록을 따스한 색으로 비추고 있었다.\n    최근 일이 끝나고 연습도 없을 때면 배우는 사람들의 시선을 피해 언제나 이 곳에 왔다.\n    무대 아래에서의 그는 조용하고 꽃과 과일 향이 나는 차를 즐기는 사람이었다. 찻잔을 들고 아무도 없는 황금빛 거리를 바라보던 배우가 눈을 가늘게 찌푸렸다. 넥타이 아래 목 부근에 자리 잡은, 요즘 조금씩 뚜렷해지는 오리지늄 결정 주위가 따끔거렸기 때문이다.\n    지시할 때를 제외하곤 거의 얼굴을 드러내지 않던 극단장이 얼마 전 그에게 이야기했던 일이 떠올랐다.\n    극단장은 배우를 칭찬하면서 그가 정말로 합류하는 날을 기대한다고 했다.\n    극단장은 주저 없이 그가 연극에 출연하길 바란다고 말했다.\n    ……그건 그만을 위한 무대가 될 것이라는 의미였다.\n    때때로 배우는 정체 모를 불안감을 느끼곤 했다. 하지만 빅토리아의 옅은 안개처럼 흐릿한 걱정 아래에서, 그는 자신이 억누를 수 없을 정도로 기뻐한다 것 역시 알 수 있었다.\n    이건 평범한 연극이 아니다. 예전 유랑 극단에서 했던 공연이나, 과거 그가 접했던 무대와는 전혀 다른 것이다.\n    이건 그의 연극이고, 그의 삶이며, 그의 운명이기 때문이다……\n\n    “야옹.”\n    한 마리 검은 고양이가 모퉁이에서 모습을 드러냈다. 이렇게 아름다운 생물을 본 사람도 드물 것이다. 마치 일종의 전설처럼 그들은 기분에 따라 가끔씩 사람들 앞에 모습을 드러낸다. 마치 지금 검은 고양이가 이 거리에 나타난 것처럼.\n    배우의 생각이 끊겼다. 기이한 열정이 눈 아래에서 흩어지고, 표정이 느슨해진다. 날렵하게 그에게 다가오는 검은 고양이를 주시하자 자신도 모르게 미소가 새어 나왔다.\n    저녁 무렵이 되면 그는 언제나 작은 마을에 있는 한 거리의 모퉁이로 가곤 했다. 그곳은 사람이 적고 조용했으며, 차의 맛이 뛰어난 것도 아니었다. 하지만 태연하게 황금빛 석양 속을 거닐며 산책하다 그를 반기는 검은 고양이 한 마리가 있었다.\n    “야옹.”\n    검은 고양이가 우아하게 꼬리를 흔들며 그의 곁으로 다가왔다.\n    배우는 검은 고양이에게 손을 내밀어 보았다. 고양이는 그의 눈을 바라보며 귀를 쫑긋댔지만 그건 거절의 표현이 아니었다. 그가 조심스레 검은 고양이의 부드럽고 윤기나는 털을 쓰다듬자, 고양이의 몸에 남아있던 석양이 그의 손가락을 물들였다.\n    눈 아래 다른 감정을 밀어내며 미소가 퍼져나간다. 배우는 이미 마음속에 이 특별하고 새로운 친구의 이름을 생각해 두었다. 그저 말을 하지 않았을 뿐.\n    그는 이후에도 고양이가 계속 다가온다면 물어봐야겠다고 생각했다. “나와 함께 가지 않을래?”",
+      "typeIcon": "exe-x",
+      "typeName": "EXE-X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_250_phatom",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_phatom_1",
+        "uniequip_002_phatom_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30115",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 80000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_kafka": {
+      "uniEquipId": "uniequip_001_kafka",
+      "uniEquipName": "카프카의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 카프카는 반복해서 전장에 파고드는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스페셜리스트 오퍼레이터로 구분되며, 처형자 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_214_kafka",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_kafka": {
+      "uniEquipId": "uniequip_002_kafka",
+      "uniEquipName": "큐브 펜던트",
+      "uniEquipIcon": "uniequip_002_kafka",
+      "uniEquipDesc": "카프카에게\n    이 편지가 네게 도착할 때면 아마 겨울에 들어섰겠지. 네가 있는 곳은 비교적 추운 곳이니 감기 걸리지 않도록 조심해.\n    지난번에 네가 수집해준 실험 표본은 우리가 원하는 조건에 딱 들어맞더라. 상태도 굉장히 좋아서 동료들도 모두 칭찬 일색이었어.\n    너에 대해 어찌나 궁금해 하는지, 심지어 네가 정식으로 우리 작업에 합류해 줬으면 하더라니까.\n    마음이 바뀌어 제대로 된 일자리를 찾고 싶으면 연락줘, 우리 실험실은 언제라도 널 환영하니까.\n    그리고 네게 말해주고 싶은 게 있어.\n    이제 나는 로도스 아일랜드라는 회사로 갈 생각이야.\n    이프리트 건은 저번에 말했듯이 내가 선택한 게 아니었어.\n    나는 내가 무얼 하고 싶어 하는 건지 고민해봐야겠어.\n    우습겠지만 나는 언제나 네게 하고자 하는 것이 있다면 허송세월하지 말라 했었잖아. 하지만 정작 나는 내가 무엇을 원하는지조차 제대로 알지 못한다는 것을 깨달았어.\n    그래서 이번에는 네게 이러쿵저러쿵 말할 자격도 없어.\n    참, 너는 정교한 장난감을 좋아했었지. 그래서 널 위해 큐브를 하나 만들었어. 분해할 수도 있고, 기계 장치도 포함되어있으니 마음에 들 거야.\n    너의 앞날에 행운이 함께하길 바랄게.\n사일런스",
+      "typeIcon": "exe-y",
+      "typeName": "EXE-Y",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_214_kafka",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_kafka_1",
+        "uniequip_002_kafka_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30094",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_red": {
+      "uniEquipId": "uniequip_001_red",
+      "uniEquipName": "레드의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 레드는 반복해서 전장에 파고드는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스페셜리스트 오퍼레이터로 구분되며, 처형자 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_144_red",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_red": {
+      "uniEquipId": "uniequip_002_red",
+      "uniEquipName": "미스테리 툴키트",
+      "uniEquipIcon": "uniequip_002_red",
+      "uniEquipDesc": "    고독한 붉은 늑대는 편한 자세로 낙엽 더미 속에 엎드려 있다.\n    땅거미가 내려앉고 낙엽이 흩날리자, 눈에 띄던 붉은 외투도 그녀 옆에 있던 검은 가방처럼 주변에 동화되었다.\n    그녀는 기다리고 있었다.\n    켈시는 사냥감이 오늘 밤 이곳을 지나갈 테니 편히 기다리기만 하면 된다고 했다.\n    그녀는 켈시의 말에 따라 여기서 기다리고 있었다.\n\n    발소리가 들렸다.\n    신발이 낙엽을 밟는 소리였다.\n    고독한 늑대는 인내심을 가지고 사냥감이 자신의 시야에 들어올 때까지 기다렸다. 그리고 그녀는 마치 유령처럼 사냥감의 등 뒤를 스치고 지나갔다. 차가운 빛이 번뜩였다.\n    다음 순간 고독한 늑대의 모습은 다시 어둠 속으로 사라졌다.\n\n    중개인이 조심스레 주변을 살펴보며 주머니에 손가락을 넣었다. 손가락 사이에 있어야 할 감촉이 느껴지자 안도의 한숨을 내쉬고는 계속 길을 나아갔다. 하지만 아무도 모르게 주머니 속에 있던 칩은 이미 바꿔 쳐져 있었다.\n    지금 그가 만진 가짜조차도 몇 분 후면 찢어진 틈 사이로 흘러내려 낙엽이 흩날리는 숲속으로 사라질 것이다.\n\n    다른 사람의 기척이 모두 사라진 후, 고독한 늑대는 검불더미에서 모습을 드러냈다.\n    진짜 사냥감인 그 칩은 이미 고독한 늑대의 가방 깊숙한 곳에 안전하게 보관되어있었다.\n    임무는 끝났다. 고독한 늑대는 귀로에 올랐지만 마음은 편치 않았다.\n    임무와는 상관없었다. 그녀는 아무도 없는 황량한 분위기 속에서 시라쿠사의 황야를 떠올렸다.\n\n    고독한 늑대는 홀로 걸으며 지난 일을 생각했다.\n    황야는 피로 물들어 있었다. 외할머니는 그녀에게 황야에서 빠져나오는 방법을 알려주고는 그녀를 황야 가운데에 던져두었다.\n    그녀는 기어코 빠져나왔다.\n    일평생의 가능성을 끌어모아 온 몸을 피로 물들이며 겨우 황야를 빠져나온 것이다.\n    외할머니는 매우 만족했다. 하지만 외할머니가 그녀에게 거는 기대는 딱 그 정도뿐이었다.\n\n    그녀는 황야를 빠져나왔고, 얼마 지나지 않아 황야보다 훨씬 큰, '삶'이라는 이름의 미궁과 마주했다.\n    그 미궁을 걷는 방법은 무수히 많았지만 외할머니는 그녀에게 어떤 방법도 알려주지 않았다.\n    그래서 그녀는 삶이라는 것이 무엇인지 몰랐으며, 알고 싶지도 않았다. 그녀에겐 배우면서 시행착오를 겪을 여력이 없었던 것이다. 그저 가장 간단한 방법으로 이 미궁을 벗어나고 싶었을 뿐……\n    만약 켈시가 없었다면 그녀는 아마도 이 미궁을 벗어났을 것이다.\n\n    켈시는 만약 어디로 가야 할지 모른다면, 그 자리에 멈춰서서 앞으로 가야할 길을 생각해 보는 것도 나쁜 일이 아니라고 말했다. 그리고 그동안 그녀는 보호받을 것이다.\n    그녀는 켈시의 말을 들었다.\n    그녀는 잠시 로도스 아일랜드라는 이름의 교차점에 머물며 음식과 머물 곳, 그리고 어디에 써야 할 지 모르는 급료를 받았다. 게다가 가방 안에 넣어둔 푹신한 털로 만들어진 작은 공도 받았다. 만질 루포족의 꼬리가 없을 때 공을 쥐면 손가락 사이로 부드러운 촉감을 느낄 수 있었다.\n    하지만 그녀는 이곳에 얼마나 머물러야 하는 걸까?\n    켈시는 대답해주지 않았다.\n    하지만 그녀는 결국 이 거대한 미궁에 적응하지 못했고, 황야도 더는 그녀를 필요로 하지 않는다.\n    그렇다면 떠나야 하는 걸까?\n    그녀는 알 수 없었다.\n\n    그녀가 길들인 나이프가 가방 깊숙한 곳에서 작게 울었다. 마치 흐느끼는 듯이.",
+      "typeIcon": "exe-y",
+      "typeName": "EXE-Y",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_144_red",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_red_1",
+        "uniequip_002_red_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30104",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_waaifu": {
+      "uniEquipId": "uniequip_001_waaifu",
+      "uniEquipName": "와이후의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 와이후는 반복해서 전장에 파고드는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스페셜리스트 오퍼레이터로 구분되며, 처형자 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_243_waaifu",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_waaifu": {
+      "uniEquipId": "uniequip_002_waaifu",
+      "uniEquipName": "홍미영춘권 비급",
+      "uniEquipIcon": "uniequip_002_waaifu",
+      "uniEquipDesc": "    다섯 살 때, 와이후는 아버지의 손에 이끌려 서재에 갔다. 몇 개의 거대한 책장이 서재를 빼곡히 채우고 있었고, 책장은 여러 고서로 가득 차 있었다. 모두 여러 문파의 무학 서적이었다.\n    “한 권을 골라 배워라. 그리고 삼 개월 후 내게 배운 걸 펼쳐 보여라.”\n    아직 글자를 몇 자밖에 익히지 못한 와이후는 오랫동안 돌아다닌 끝에 먼지로 뒤덮인 책장에서 표지에 '홍미영춘권 비급'이라고 쓰인 책 한 권을 골랐다. 와이후는 그게 무슨 권법인지, 그 권법에 어떤 특징이 있는지 전혀 알지 못했다. 그저 그 이름이 굉장히 듣기 좋다고 생각했을 뿐이었다.\n    아버지가 아무런 가르침도 주지 않았기에 와이후는 혼자 책을 보며 익혀야 했는데, 책에 쓰인 문장은 잘 이해가 가지 않았고 특히나 '사행수념, 정용정신'같은 문장은 무슨 뜻인지 전혀 알 수 없었다. 하지만 그림의 동작에 의존하며 하나하나 연습해나갔다. 아무런 게으름도 부리지 않고 착실하게.\n    삼 개월 후, 와이후는 아버지 앞에서 327개의 동작으로 이루어진 권법 전체를 한 동작도 빠뜨리지 않고 막힘없이 펼쳐 보였다. 그리고 아버지는 그 모습을 보고는 눈살을 찌푸린 채 크게 한숨을 쉬었다.\n    “아니, 안된다. 다시 연습해라.”\n    와이후는 이유를 알 수 없었지만 아버지가 시키는 대로 할 수밖에 없었다.\n    일 년이 지나자 아버지는 와이후와 간단한 대련을 하기 시작했다. 아버지는 힘을 얼마 쓰지 않고서도 번번이 와이후의 약점을 파고들었는데, 그때마다 아버지의 주먹이 무자비하게 와이후의 몸에 꽂혔다.\n    와이후는 이해가 가지 않았다. 분명 모든 동작을 훤히 꿰고 있는데, 어째서 뜻대로 운용할 수 없는 걸까? 와이후는 권보 안에서 답을 찾기로 하곤, 몇 번이고 책을 다시 훑어보았다. 그리고 마침내 눈에 잘 띄지 않는 구석에 쓰인 글귀를 발견할 수 있었다.\n    '수운정법, 변화인위.(권법은 정해져 있으나, 이를 바꾸는 것은 사람이다)'\n    다시 몇 년이 흘러 책의 내용을 물 흐르듯 외울 수 있게 된 와이후는 책을 방구석에 내버려 둔 채 이따금씩 펴볼 뿐이었다. 훈련 도중 아버지에게 듣는 꾸지람도 갈수록 줄어들게 되면서 와이후는 아버지가 예전처럼 엄하지 않다는 생각을 하였다. 그리고 아버지는 어느 날 한 쌍의 단도와 한마디 말을 남긴 채 갑자기 집을 떠났다.\n    “같은 것을 찾으러 간다.”\n    와이후는 대체 아버지가 무엇을 찾기 위해 자신과 집을 내팽개치고 떠났는지 알 수 없었다. 그리고 얼마 지나지 않아 와이후 역시 새로운 환경에서 살기 위해 집을 떠났다.\n    방을 정리하던 중 비급을 발견한 와이후는 그것을 다시 펼쳐보았다. 처음부터 끝까지 살펴보니 예전에 있었던 일이 눈 앞에 펼쳐지는 듯했다. 그리고 책의 마지막 부분에 분명히 쓰인 문구를 발견했다. '무욕정통, 유종고련. 무위무아, 무계무종. (무술에 정통하고자 한다면 오직 고된 수련만이 있을 뿐이다. 무학의 경계는 끝이 없고, 그 끝없는 무학의 바다에 의지할 수 있는 건 나 자신 뿐이다.)'\n    “아버지 말씀이 맞아요. 아버지를 따라잡아 아버지보다 더욱 강해지겠어요.”",
+      "typeIcon": "exe-x",
+      "typeName": "EXE-X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_243_waaifu",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_waaifu_1",
+        "uniequip_002_waaifu_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "31014",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_gravel": {
+      "uniEquipId": "uniequip_001_gravel",
+      "uniEquipName": "그라벨의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 그라벨은 반복해서 전장에 파고드는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 스페셜리스트 오퍼레이터로 구분되며, 처형자 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_237_gravel",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_gravel": {
+      "uniEquipId": "uniequip_002_gravel",
+      "uniEquipName": "비밀 작전용 공구 가방",
+      "uniEquipIcon": "uniequip_002_gravel",
+      "uniEquipDesc": "    “이리 오거라!”\n    “네.”\n    “누가 너더러 출정 기사단 훈련을 훔쳐보라고 했지? 그리고 겨우 온지 며칠 만에 그 경솔한 멍청이들과 싸웠다고? 차근차근 순서를 밟아야 한다고 내가 몇 번이고 말하지 않았느냐!”\n    “네.”\n    “벌로 여기에 서 있어라!”\n    “네.”\n    ……\n    “왜 아직도 게 서 있는 거냐?”\n    “방금 벌로 여기에 서 있으라고……”\n    “됐다, 그만큼 오래 서 있었으면 정신 차렸겠지?”\n    “하지만 이제 겨우 5분밖에……”\n    “시끄럽다, 이 못된 녀석. 계속 머뭇거리다가는 저녁 시간에 늦는다, 알겠냐?”\n    “……예, 영감님.”\n    “이만하면 얼추 되었다. 자, 이 비스켓을 받거라. 배고프지?”\n    나는 떨면서 비스켓을 받았지만 감히 먹지는 못했다. 영감님이 마을 사람들에게 그랬던 것처럼 갑자기 때릴까 봐 두려웠기 때문이다.\n\n    “나도 보고서는 봤다. 첫 임무인데도 훌륭히 마쳤더구나. 쉽지 않은 일인데 잘 해줬어.”\n    “칭찬 고맙습니다, 헤헤.”\n    “그만 웃거라, 아직 묻고 싶은 것이 있단다. 임무를 마친 뒤 라이타니엔 쪽에서 반나절을 보냈더구나. 어떻게 된 일이냐?”\n    “변경의 군대가 움직인다는 소식을 들었는데, 아직 시간이 남길래 상부에 신청한 후에 조사를 다녀왔어요.”\n    “라이타니엔 군대 녀석들이 얼마나 냄새를 잘 맡는 줄 아느냐?”\n    “하지만……”\n    “하지만은 무슨 하지만이냐! 설사 위에서 허락했다 하더라도 네 멋대로 움직이는 건 내가 허락 못 한다! 다음번에도 이러면 집에 가둬둘 줄 알거라!”\n    “네, 영감님”\n    “이걸로 되었다. 그리고 운이 좋아 군대와 마주치진 않았지만 그래도 자잘한 부상은 많이 입었지? 내 카드를 줄 테니 병원에 가서 검사 좀 받고 오너라! 지금 당장!”\n    영감님은 언제나 화를 잘 냈다. 지금처럼 무언가 자기 뜻과 맞지 않으면 바로 고함을 치곤 했다.\n\n    “영감님, 보세요. 전 이미 퇴원했잖아요.”\n    “퇴원한 걸로 끝인 줄 아느냐? 네 임무는 그 우르수스 스파이 녀석을 끌어내는 것 아니었더냐, 나도 녀석을 상대할 나름의 방법이 있는데 누가 너보고 나서라고 했더냐!?”\n    “상황이 급하다 보니……”\n    “아무리 급해도 그렇지! 다시는 이런 짓 못하게 이번엔 따끔하게 혼을 내야겠다.”\n    “어떻게 혼내시려고요?”\n    “그건……”\n    “다 생각하셨나요?”\n    “흥, 이 못된 녀석. 하여튼 말을 듣는 때가 없구나.”\n    “저는 지금까지 굉장히 말을 잘 들었다고 생각하는데요.”\n    “……그래, 이 낡은 옷 좀 보거라. 4급 기사나 되어서 어찌 이리 외모 관리를 허술히 하는 게냐! 여기 이번 달 내 수당이다. 이거 갖고 가서 옷이나 좀 사거라! 이 돈을 다 못 쓰면 못 돌아올 줄 알아!”\n    “영감님, 돈이 너무 많아요. 제가 옷에 파묻히길 바라시는 거예요?”\n    영감님은 머쓱하다는 듯 기침을 하시더니, 빠르게 내 앞으로 다가오셨다. 석양이 영감님 어깨에 걸렸다.\n\n    “돌아오고 싶으면 언제든 즉시 카시미어로 돌아오너라. 돌아오고 싶지 않다면…… 그래도 부담가질 필요는 없다, 가거라!”\n    ……헤어지는 순간 영감님은 이렇게 말씀하셨다.\n    박사, 내가 기억하지도 못하는 어린 시절에 납치당해 카시미어로 왔다는 사실은 당신도 알 거야. 나를 사간 마을에서 나는 온갖 노역과 구타, 욕설에 시달렸어. 심지어 그곳을 빠져나온 후에도 다른 사람이 찍은 바코드를 지울 수 없었지.\n    그래도 '시장'에서 영감님과 내 눈이 마주친 그때……\n    그건 처음으로 운명이 내게 인자한 미소를 지어준 순간이었어.",
+      "typeIcon": "exe-x",
+      "typeName": "EXE-X",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_237_gravel",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 40,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_gravel_1",
+        "uniequip_002_gravel_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30053",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 20000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_pasngr": {
+      "uniEquipId": "uniequip_001_pasngr",
+      "uniEquipName": "패신저의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 패신저는 기계를 이용한 연속 공격으로 다수의 적을 상대하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 캐스터 오퍼레이터로 구분되며, 체인 캐스터 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_472_pasngr",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_pasngr": {
+      "uniEquipId": "uniequip_002_pasngr",
+      "uniEquipName": "전자기 조절 장치",
+      "uniEquipIcon": "uniequip_002_pasngr",
+      "uniEquipDesc": "    “물……”\n    하루 종일 물 한 모금 마시지 못한 채 모래 폭풍 속을 걸었더니 이제 몸도 가누기 힘들 지경이다.\n    하지만 켈시는 물은커녕, 냉담하게 “조금만 더 버텨봐”라고 한 마디 툭 던지고는 지체없이 길을 서둘렀다.\n    우리가 모래 폭풍 속을 걸어온 지 얼마나 됐을까? 세 시간? 아니면 다섯 시간? 옷 속에서 황사가 끊임없이 쏟아지고, 미친 듯이 불어오는 바람이 눈도 뜨지 못할 정도로 얼굴에 모래를 뿌리고 있었다. 하지만 뒤에서 살카즈 용병이 바짝 추격해오고 있어서 우리는 멈출 수도 없었다. 이런 모래 폭풍만으로는 맡은 바 책임을 다하는 그들의 발걸음을 막을 수 없으니까.\n    물이라면…… 아마 진작에 다 마셨겠지.\n    사막에는 빈 물병에 모래를 부어 희망을 주는 전통이 있다고 하던데, 지금까지 모래를 실컷 먹었으니 물, 물을 마시고 싶다. 가진 돈을 몽땅 털어도 좋으니 물을 마시고 싶다.\n    이런 황야에서 반짝이는 금속 따위는 아무런 의미도 없다.\n    은색 가방을 부둥켜안은 채, 이를 악물고 계속 발걸음을 내딛고 있다.\n    귓가를 메우는 날카로운 바람 소리가 마치 망자의 울부짖음이나 유령이 부르는 소리 같다. 쏜 선생님도 어쩌면 저 속에서 내 이름을 부르고 있는 게 아닐까?\n    하지만 잘 들리지 않는다.\n    머릿속이 이런 소리로 가득 찬 지 얼마나 되었지? 삼 분? 세 시간? 아니면 삼 년?\n    모래 먼지가 하늘을 가려 낮과 밤이 더 이상 구분되지 않고, 시간마저 멈춘 듯하다. 살길을 찾는 사람들만이 이곳에서 형벌을 견디고 있을 뿐.\n    난 그저 연구를, 과학의 진보를 위해 내 역량을 바치고 싶었을 뿐이지 지금처럼 사막에 내던져진 채 바람에 말라 죽어가고 싶었던 게 아니다.\n    머리가 시리고 뻐근하면서 아프다. 몸은 진작부터 아무 감각이 없다. 나는 지금 걷고 있는 건가 아니면 엘리엇이라는 몸뚱이가 움직이는 것을 보고 있는 건가?\n    아니…… 생각하는 것도 사치다. 지금 머릿속을 떠도는 건 하나의 명령뿐이다. 움직여라.\n    움직여라…… 움직여라…… 움직여라……\n    ……하지만 사막은 끝이 없다.\n    “엘리엇, 입 벌려.”\n    입 벌리라고?\n    나는 무의식적으로 근육을 이완시켜 입술과 치아로 하여금 구강을 노출시키게 했다.\n    모래로 뒤덮인 과일 하나가 입에 들어왔다.\n    조금 시큼한데? 조금 달짝지근하기도 하고? 아, 물, 물이다.\n    물이야.\n    ……\n    언제부터인지 모르겠지만 귓가에 울리던 바람 소리도 사라졌고 대지는 고요함을 되찾았다. 있는 것은 그저 태양 빛과 사막, 그리고 모래 언덕 사이를 걸어가는 두 사람뿐.\n    ……\n    먼 곳을 바라보니 사막과 사막뿐이다.\n    끝이 보이지 않는다. 마치 땅바닥에 어지럽게 널브러진 채 물에 젖은 가죽 구두에 몇 번이나 짓밟힌 기술 서류 같다. 더는 모을 수도, 정리할 수도 없는.\n    나는 화를 내며 모래를 걷어찼지만 곧 그것이 모래 언덕 끝에서 떨어져 나가 아무 일도 없었다는 듯 다시 사막에 합쳐지는 모습을 지켜보았다.\n    모래, 모래……\n    살아생전 처음으로 모래가 증오스러워졌다.\n    “가자, 곧 있으면 보급을 받을 수 있을 거야.”\n    켈시가 내 생각을 방해했다.\n    큭, 곧? 얼마나 빠를 수 있는데?\n    보급? 대체 얼마나 줄 수 있는데?\n    후우, 켈시는 지금까지 희망적인 이야기를 한 적이 없다.\n    하지만 적어도……\n    아무래도 나는 선인장을 본 것 같다.",
+      "typeIcon": "cha-x",
+      "typeName": "CHA-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_472_pasngr",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 60,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_pasngr_1",
+        "uniequip_002_pasngr_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30125",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 80000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_leizi": {
+      "uniEquipId": "uniequip_001_leizi",
+      "uniEquipName": "레이즈의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 레이즈는 아츠를 이용한 연속 공격으로 다수의 적을 상대하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 캐스터 오퍼레이터로 구분되며, 체인 캐스터 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_306_leizi",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_leizi": {
+      "uniEquipId": "uniequip_002_leizi",
+      "uniEquipName": "'천지통명'",
+      "uniEquipIcon": "uniequip_002_leizi",
+      "uniEquipDesc": "    열 살이 채 되기도 전에 온갖 고생을 하며 뇌법을 익혔고, 경문을 마음속 깊이 새겼다.\n    하지만 천둥을 불렀으나 천둥이 응답하지 않았고, 번개를 불렀으나 번개가 오지 않았다.\n\n    열세 살에 밤낮으로 정진하니 학문 밖에 학문이 있고, 말속에 다른 말이 있음을 알게 되었다.\n    손을 휘두르니 불꽃이 튀었고, 그 소리가 귓가에 울렸다.\n\n    스물두 살 되던 해, 매일 생각하고 깨달으며 반성하니 구결과 율령을 뜻대로 다룰 수 있었다.\n    그리하여 천둥을 부르고 번개를 다룰 수 있게 되었다.\n    이립에 가까워지니 자연스레 가슴 속에 많은 것을 품고도 드러내지 않게 되었다.\n    사악한 것은 없애고 , 죄가 있으면 용서하지 않았다.\n    스승이 말하길, “그만하면 되었다.”\n    그리고는 잘 벼린 정석 한 쌍을 주었는데, 그 안에는 번개를 담고 그 밖에는 천둥으로 감싸, 부서지는 천둥소리가 들리는 것만 같았다.\n    스승이 말하길, “대리사경이 되었으니 그 증표를 주겠다. 이제 네게 정석을 내리니, 이름은 네가 짓도록 하거라.”\n    어린 시절 뜻을 세우고 근면히 율령을 익혔으니, 바라는 건 오뢰를 호령하여 악을 떨게 하는 것이다.\n    천지의 아득함과 기나긴 밤, 뇌성벽력이 느껴지니 세상의 어려움을 살펴야 할 것이라.\n    이에 답하길, \"천지통명이라 하겠습니다.\"",
+      "typeIcon": "cha-x",
+      "typeName": "CHA-X",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_306_leizi",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 50,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_leizi_1",
+        "uniequip_002_leizi_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "31024",
+          "count": 3,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 40000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    },
+    "uniequip_001_pudd": {
+      "uniEquipId": "uniequip_001_pudd",
+      "uniEquipName": "푸딩의 배지",
+      "uniEquipIcon": "original",
+      "uniEquipDesc": "    오퍼레이터 푸딩은 기계를 이용한 연속 공격으로 다수의 적을 상대하는 데 능하므로, 외근 부서의 결정에 따라, 외근 임무에서는 캐스터 오퍼레이터로 구분되며, 체인 캐스터 직책을 행사한다. 이에 따라 특별히 본 배지를 수여한다.",
+      "typeIcon": "original",
+      "typeName": "ORIGINAL",
+      "equipShiningColor": "grey",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 0,
+      "charId": "char_4004_pudd",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 0,
+      "unlockFavorPoint": 0,
+      "missionList": [],
+      "itemCost": null,
+      "type": "INITIAL"
+    },
+    "uniequip_002_pudd": {
+      "uniEquipId": "uniequip_002_pudd",
+      "uniEquipName": "휴대용 전기 측정 장비",
+      "uniEquipIcon": "uniequip_002_pudd",
+      "uniEquipDesc": "    푸딩에게 있어 사미에 있는 작은 집에서 느긋하게 휴식을 취하는 것보다 좋은 시간은 없다.\n    사미 남쪽 국경에서 컬럼비아인은 무역을 통해 사미인들에게서 땅과 자원을 얻어갔고, 이동 도시는 상단과 광업선을 따라 오래된 동토를 가로질러 갔다. 무역 영지의 설립은 사미가 백 년 만에 처음으로 국가의 문을 개방했다는 것을 보여주는 것으로, 컬럼비아 상단과 기업의 공사팀 또한 사미 국경 지역의 단골손님이 되었다. 어린 시절부터 푸딩은 종종 부모님과 함께 사미, 그 오래된 땅으로 가곤 했다.\n    눈과 얼음이 대지를 뒤덮고, 그 위로 떨어지는 햇살이 반사되면 마치 온 세상에 보석을 깔아놓은 듯했다. 그리고 이곳은 사미의 일각에 불과했다.\n    “문명과 동떨어진 사미 툰드라에서, 그리고 영원히 추운 겨울이 물러나지 않는 윈터투스 산맥 속에서 대다수의 사미인들은 자신들의 오랜 생활 방식을 천 년 동안 지키고 있지. 컬럼비아의 무역 영지와는 거리가 먼 그들은 윈터투스 산맥과 칼바람 속에서 냉담하게 모든 것을 관찰하고 있는 거야. 시간마저 그들과 함께 얼어붙은 것처럼.”이라고 카페의 살카즈 주인이 말했다. “보다 깊은 곳을 보고 싶지 않나? 그 툰드라와 산맥이 어떤 모습인지, 사미인들이 어떻게 황야에서 자연과 함께 살아가는지 말이야.”\n    “제가 갈 수 있을까요?”라고 푸딩이 주저하며 물었다. “사미인이 저 같은 도시 사람을 환영할지 모르겠네요……”\n    “사미는 자신의 운명에 저항할 수 없어. 우리는 우리가 무엇을 마주하는지 알고 있고, 어떻게 대응해야 하는지도 알고 있지.”\n    그리하여 푸딩은 현지의 건설 공사를 지원하는 일을 신청했고, 어느 날 새벽에 출발해 컬럼비아의 공사팀과 함께 원래는 멀리서 바라볼 수밖에 없었던 다크포레스트로 들어갔다.\n    원시림 속의 사미인은 고집스럽게도 현대 기술을 멀리했다. 컬럼비아 공사팀의 도움을 받아들인 건 자치구 근처 한 웨트랜더 마을뿐이었다.\n    기지국을 건설하고, 케이블을 연결한 뒤에 마을의 첫 번째 전구에 불을 밝혔다…… 푸딩은 그 미약한 빛과 함께 놀라움과 만족스러움이 동시에 묻어나는 사미인의 미소를 보면서 불현듯 사람들에게 과학 기술이 어떤 의미를 갖는지 깨닫게 되었다.\n    하지만 사미인의 진정한 비밀이라 할 수 있는 보다 깊은 지역은 컬럼비아인이 넘볼 수 없는 곳이었다.\n    푸딩의 휴가도 얼마 남지 않았다. 그녀는 마을 건설에 대한 경험을 보고서로 작성하고 컬럼비아로 가져갈 짐 속에 챙겨 넣었다.\n    그녀는 곧 다시 올 거라는 낙관적인 생각을 했다.\n    하지만 이런 평범한 소원은 뜻밖의 사고로 인해 아주 오랜 시간이 지나서야 이루어질 수 있었다.",
+      "typeIcon": "cha-y",
+      "typeName": "CHA-Y",
+      "equipShiningColor": "red",
+      "showEvolvePhase": 2,
+      "unlockEvolvePhase": 2,
+      "charId": "char_4004_pudd",
+      "tmplId": null,
+      "showLevel": 1,
+      "unlockLevel": 40,
+      "unlockFavorPoint": 10070,
+      "missionList": [
+        "uniequip_002_pudd_1",
+        "uniequip_002_pudd_2"
+      ],
+      "itemCost": [
+        {
+          "id": "mod_unlock_token",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30063",
+          "count": 4,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "4001",
+          "count": 20000,
+          "type": "GOLD"
+        }
+      ],
+      "type": "ADVANCED"
+    }
+  },
+  "missionList": {
+    "uniequip_002_mgllan_1": {
+      "template": "EquipmentDeployStage",
+      "desc": "전투 5회 완료, 매회 전투 시 비지원 마젤란의 소환물 최소 5회 소환",
+      "paramList": [
+        "5",
+        "5",
+        "token_10005_mgllan_drone1;token_10005_mgllan_drone2;token_10005_mgllan_drone3",
+        "char_248_mgllan"
+      ],
+      "uniEquipMissionId": "uniequip_002_mgllan_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_mgllan"
+    },
+    "uniequip_002_mgllan_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "최대 2인(지원 유닛 포함) 편성으로 메인 스토리 2-5 스테이지를 3★ 평가로 클리어, 비지원 마젤란 편성 및 출전 필수, 나머지는 뱅가드 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_02-05",
+        "char_248_mgllan",
+        "1,PIONEER"
+      ],
+      "uniEquipMissionId": "uniequip_002_mgllan_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_mgllan"
+    },
+    "uniequip_002_folivo_1": {
+      "template": "EquipmentDeployStage",
+      "desc": "전투 5회 완료, 매회 전투 시 비지원 씬의 소환물 최소 5회 소환",
+      "paramList": [
+        "5",
+        "5",
+        "token_10010_folivo_car",
+        "char_336_folivo"
+      ],
+      "uniEquipMissionId": "uniequip_002_folivo_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_folivo"
+    },
+    "uniequip_002_folivo_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "최대 2인(지원 유닛 포함) 편성으로 메인 스토리 3-1 스테이지를 3★ 평가로 클리어, 비지원 씬 편성 및 출전 필수, 나머지는 스나이퍼 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_03-01",
+        "char_336_folivo",
+        "1,SNIPER"
+      ],
+      "uniEquipMissionId": "uniequip_002_folivo_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_folivo"
+    },
+    "uniequip_002_otter_1": {
+      "template": "EquipmentDeployStage",
+      "desc": "전투 5회 완료, 매회 전투 시 비지원 메이어의 소환물 최소 5회 소환",
+      "paramList": [
+        "5",
+        "5",
+        "token_10004_otter_motter",
+        "char_242_otter"
+      ],
+      "uniEquipMissionId": "uniequip_002_otter_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_otter"
+    },
+    "uniequip_002_otter_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "최대 3인(지원 유닛 포함) 편성으로 메인 스토리 2-9 스테이지를 3★ 평가로 클리어, 비지원 메이어 편성 및 출전 필수, 나머지는 스나이퍼 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_02-09",
+        "char_242_otter",
+        "2,SNIPER"
+      ],
+      "uniEquipMissionId": "uniequip_002_otter_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_otter"
+    },
+    "uniequip_002_deepcl_1": {
+      "template": "EquipmentDeployTotal",
+      "desc": "전투 중 비지원 딥컬러의 소환물 누적 20회 소환",
+      "paramList": [
+        "20",
+        "token_10001_deepcl_tentac",
+        "char_110_deepcl"
+      ],
+      "uniEquipMissionId": "uniequip_002_deepcl_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_deepcl"
+    },
+    "uniequip_002_deepcl_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "1인 편성으로 메인 스토리 2-4 스테이지를 3★ 평가로 클리어, 비지원 딥컬러만 편성 가능",
+      "paramList": [
+        "3",
+        "main_02-04",
+        "char_110_deepcl",
+        "0,SNIPER"
+      ],
+      "uniEquipMissionId": "uniequip_002_deepcl_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_deepcl"
+    },
+    "uniequip_002_pallas_1": {
+      "template": "EquipmentCharKilled",
+      "desc": "비지원 팔라스로 적 누적 50명 섬멸",
+      "paramList": [
+        "char_485_pallas",
+        "50",
+        "char_485_pallas"
+      ],
+      "uniEquipMissionId": "uniequip_002_pallas_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_pallas"
+    },
+    "uniequip_002_pallas_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "최대 2인(지원 유닛 포함) 편성으로 메인 스토리 3-6 스테이지를 3★ 평가로 클리어, 비지원 팔라스 편성 및 출전 필수, 나머지는 메딕 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_03-06",
+        "char_485_pallas",
+        "1,MEDIC"
+      ],
+      "uniEquipMissionId": "uniequip_002_pallas_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_pallas"
+    },
+    "uniequip_002_sophia_1": {
+      "template": "EquipmentCharKilled",
+      "desc": "비지원 위슬래시로 적 누적 섬멸 수 50 달성",
+      "paramList": [
+        "char_265_sophia",
+        "50",
+        "char_265_sophia"
+      ],
+      "uniEquipMissionId": "uniequip_002_sophia_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_sophia"
+    },
+    "uniequip_002_sophia_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "메인 스토리 S3-6 스테이지를 3★ 평가로 클리어, 비지원 위슬래시 편성 및 출전 필수, 나머지는 디펜더 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "sub_03-3-1",
+        "char_265_sophia",
+        "13,TANK"
+      ],
+      "uniEquipMissionId": "uniequip_002_sophia_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_sophia"
+    },
+    "uniequip_002_swire_1": {
+      "template": "EquipmentSquadProStage",
+      "desc": "비지원 스와이어를 출전시켜 전투 5회 완료, 나머지는 가드 오퍼레이터만 편성 가능",
+      "paramList": [
+        "5",
+        "char_308_swire",
+        "13,WARRIOR"
+      ],
+      "uniEquipMissionId": "uniequip_002_swire_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_swire"
+    },
+    "uniequip_002_swire_2": {
+      "template": "EquipmentSquadPos",
+      "desc": "최대 2인(지원 유닛 포함) 편성으로 메인 스토리 S2-3 스테이지를 3★ 평가로 클리어, 비지원 스와이어 편성 및 출전 필수, 나머지는 가드 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "sub_02-03",
+        "char_308_swire",
+        "1,MELEE"
+      ],
+      "uniEquipMissionId": "uniequip_002_swire_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_swire"
+    },
+    "uniequip_002_doberm_1": {
+      "template": "EquipmentSquadStarStage",
+      "desc": "비지원 도베르만을 출전시켜 전투 5회 완료, 나머지는 3★ 오퍼레이터만 편성 가능",
+      "paramList": [
+        "5",
+        "char_130_doberm",
+        "13,3"
+      ],
+      "uniEquipMissionId": "uniequip_002_doberm_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_doberm"
+    },
+    "uniequip_002_doberm_2": {
+      "template": "EquipmentSquadStar",
+      "desc": "메인 스토리 1-12 스테이지를 3★ 평가로 클리어, 비지원 도베르만 편성 및 출전 필수, 나머지는 3★ 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_01-12",
+        "char_130_doberm",
+        "13,3"
+      ],
+      "uniEquipMissionId": "uniequip_002_doberm_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_doberm"
+    },
+    "uniequip_001_fartth_1": {
+      "template": "EquipmentCharKilled",
+      "desc": "비지원 파투스로 적 누적 섬멸 수 80 달성",
+      "paramList": [
+        "char_430_fartth",
+        "80",
+        "char_430_fartth"
+      ],
+      "uniEquipMissionId": "uniequip_001_fartth_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_fartth"
+    },
+    "uniequip_002_fartth_2": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 S2-2 스테이지를 3★ 평가로 클리어, 비지원 파투스 편성 및 출전 필수, 파투스가 '페더샤인 애로우'를 사용하여 최소 8명의 적을 섬멸",
+      "paramList": [
+        "3",
+        "sub_02-02",
+        "char_430_fartth",
+        "DEATHDETAIL,char_430_fartth,3",
+        "8"
+      ],
+      "uniEquipMissionId": "uniequip_002_fartth_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_fartth"
+    },
+    "uniequip_001_milu_3": {
+      "template": "EquipmentEventTotal",
+      "desc": "비지원 파이어워치로 원거리 무기를 사용하는 적 누적 섬멸 수 25 섬멸",
+      "paramList": [
+        "char_158_milu",
+        "DEATHDETAIL,char_158_milu,RANGED",
+        "25"
+      ],
+      "uniEquipMissionId": "uniequip_001_milu_3",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_milu"
+    },
+    "uniequip_002_milu_4": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 2-10 스테이지를 3★ 평가로 클리어, 비지원 파이어워치 편성 및 출전 필수, 파이어워치로 '스컬슈레더' 섬멸",
+      "paramList": [
+        "3",
+        "main_02-10",
+        "char_158_milu",
+        "DEATHDETAIL,char_158_milu,enemy_1500_skulsr",
+        "1"
+      ],
+      "uniEquipMissionId": "uniequip_002_milu_4",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_milu"
+    },
+    "uniequip_001_cuttle_5": {
+      "template": "EquipmentDamageTotal",
+      "desc": "비지원 안드레아나로 누적 대미지 150000 달성",
+      "paramList": [
+        "char_218_cuttle",
+        "150000"
+      ],
+      "uniEquipMissionId": "uniequip_001_cuttle_5",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_cuttle"
+    },
+    "uniequip_002_cuttle_6": {
+      "template": "EquipmentCharKilledStage",
+      "desc": "메인 스토리 3-2 스테이지를 3★ 평가로 클리어, 비지원 안드레아나 편성 및 출전 필수, 안드레아나로 최소 15명의 적을 섬멸",
+      "paramList": [
+        "3",
+        "main_03-02",
+        "char_218_cuttle",
+        "15",
+        "char_218_cuttle"
+      ],
+      "uniEquipMissionId": "uniequip_002_cuttle_6",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_cuttle"
+    },
+    "uniequip_001_glaze_7": {
+      "template": "EquipmentEventTotal",
+      "desc": "비지원 엠브리엘의 '레이더 위치 추적'으로 적 누적 섬멸수 30 달성",
+      "paramList": [
+        "char_302_glaze",
+        "DEATHDETAIL,char_302_glaze,2",
+        "30"
+      ],
+      "uniEquipMissionId": "uniequip_001_glaze_7",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_glaze"
+    },
+    "uniequip_002_glaze_8": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 4-7 스테이지를 3★ 평가로 클리어, 비지원 엠브리엘 편성 및 출전 필수, 엠브리엘로 최소 6마리의 고에너지 원석충을 섬멸",
+      "paramList": [
+        "3",
+        "main_04-07",
+        "char_302_glaze",
+        "DEATHDETAIL,char_302_glaze,enemy_1021_bslime",
+        "6"
+      ],
+      "uniEquipMissionId": "uniequip_002_glaze_8",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_glaze"
+    },
+    "uniequip_001_cgbird_9": {
+      "template": "EquipmentDeployTotal",
+      "desc": "전투 중 비지원 나이팅게일의 소환물 누적 10회 소환",
+      "paramList": [
+        "10",
+        "token_10003_cgbird_bird",
+        "char_179_cgbird"
+      ],
+      "uniEquipMissionId": "uniequip_001_cgbird_9",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_cgbird"
+    },
+    "uniequip_002_cgbird_10": {
+      "template": "EquipmentSkillCastStage",
+      "desc": "메인 스토리 3-6 스테이지를 3★ 평가로 클리어, 비지원 나이팅게일 편성 및 출전 필수, '아츠 실드' 누적 10회 사용",
+      "paramList": [
+        "3",
+        "main_03-06",
+        "skchr_cgbird_2",
+        "10",
+        "char_179_cgbird"
+      ],
+      "uniEquipMissionId": "uniequip_002_cgbird_10",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_cgbird"
+    },
+    "uniequip_001_plosis_11": {
+      "template": "EquipmentSkillCast",
+      "desc": "전투 중 비지원 프틸롭시스로 '엔도르핀' 누적 8회 사용",
+      "paramList": [
+        "char_128_plosis",
+        "skchr_plosis_2",
+        "8",
+        "char_128_plosis"
+      ],
+      "uniEquipMissionId": "uniequip_001_plosis_11",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_plosis"
+    },
+    "uniequip_002_plosis_12": {
+      "template": "EquipmentSquadProEx",
+      "desc": "메인 스토리 4-9 스테이지를 3★ 평가로 클리어, 비지원 프틸롭시스 편성 및 출전 필수, 기타 메딕과 디펜더 오퍼레이터 편성 불가",
+      "paramList": [
+        "3",
+        "main_04-09",
+        "char_128_plosis",
+        "MEDIC;TANK"
+      ],
+      "uniEquipMissionId": "uniequip_002_plosis_12",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_plosis"
+    },
+    "uniequip_001_breeze_13": {
+      "template": "EquipmentEventTotal",
+      "desc": "전투중 비지원 브리즈의 치료탄 누적 50회 발사",
+      "paramList": [
+        "char_275_breeze",
+        "PROJECTILEBORN,char_275_breeze,projectile_breeze_s2",
+        "50"
+      ],
+      "uniEquipMissionId": "uniequip_001_breeze_13",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_breeze"
+    },
+    "uniequip_002_breeze_14": {
+      "template": "EquipmentSquadNum",
+      "desc": "메인 스토리 4-1 스테이지를 3★ 평가로 클리어, 비지원 브리즈 편성 및 출전 필수, 나머지는 7명의 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_04-01",
+        "char_275_breeze",
+        "7"
+      ],
+      "uniEquipMissionId": "uniequip_002_breeze_14",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_breeze"
+    },
+    "uniequip_001_flower_15": {
+      "template": "EquipmentDeployStage",
+      "desc": "전투 5회 완료, 매회 전투 시 비지원 퍼퓨머를 최소 1회 배치",
+      "paramList": [
+        "5",
+        "1",
+        "char_181_flower",
+        "char_181_flower"
+      ],
+      "uniEquipMissionId": "uniequip_001_flower_15",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_flower"
+    },
+    "uniequip_002_flower_16": {
+      "template": "EquipmentSquadProEx",
+      "desc": "메인 스토리 3-4 스테이지를 3★ 평가로 클리어, 메딕 오퍼레이터는 비지원 퍼퓨머 1명만 편성 및 출전 가능",
+      "paramList": [
+        "3",
+        "main_03-04",
+        "char_181_flower",
+        "MEDIC"
+      ],
+      "uniEquipMissionId": "uniequip_002_flower_16",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_flower"
+    },
+    "uniequip_002_phatom_1": {
+      "template": "EquipmentCharKilled",
+      "desc": "비지원 팬텀으로 적 누적 섬멸 수 70 달성",
+      "paramList": [
+        "char_250_phatom;token_10007_phatom_twin",
+        "70",
+        "char_250_phatom"
+      ],
+      "uniEquipMissionId": "uniequip_002_phatom_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_phatom"
+    },
+    "uniequip_002_phatom_2": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 3-6 스테이지를 3★ 평가로 클리어, 비지원 팬텀 편성 및 출전 필수, 팬텀으로 은신 캐스터 최소 6명 섬멸",
+      "paramList": [
+        "3",
+        "main_03-06",
+        "char_250_phatom",
+        "DEATHDETAIL,char_250_phatom,enemy_1023_jmage;DEATHDETAIL,token_10007_phatom_twin,enemy_1023_jmage",
+        "6"
+      ],
+      "uniEquipMissionId": "uniequip_002_phatom_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_phatom"
+    },
+    "uniequip_002_kafka_1": {
+      "template": "EquipmentEventTotal",
+      "desc": "비지원 카프카의 스킬로 적 누적 섬멸 수 50 달성",
+      "paramList": [
+        "char_214_kafka",
+        "DEATHDETAIL,char_214_kafka,ability",
+        "50"
+      ],
+      "uniEquipMissionId": "uniequip_002_kafka_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_kafka"
+    },
+    "uniequip_002_kafka_2": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 2-7 스테이지를 3★ 평가로 클리어, 비지원 카프카 편성 및 출전 필수, 카프카의 스킬로 적 최소 10명 섬멸",
+      "paramList": [
+        "3",
+        "main_02-07",
+        "char_214_kafka",
+        "DEATHDETAIL,char_214_kafka,ability",
+        "10"
+      ],
+      "uniEquipMissionId": "uniequip_002_kafka_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_kafka"
+    },
+    "uniequip_002_red_1": {
+      "template": "EquipmentDeployStage",
+      "desc": "전투 5회 완료, 매회 전투 시 비지원 레드 최소 3회 배치",
+      "paramList": [
+        "5",
+        "3",
+        "char_144_red",
+        "char_144_red"
+      ],
+      "uniEquipMissionId": "uniequip_002_red_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_red"
+    },
+    "uniequip_002_red_2": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 S4-5 스테이지를 3★ 평가로 클리어, 비지원 레드 편성 및 출전 필수, 레드로 고에너지 원석충 최소 4마리 섬멸",
+      "paramList": [
+        "3",
+        "sub_04-2-2",
+        "char_144_red",
+        "DEATHDETAIL,char_144_red,enemy_1021_bslime",
+        "4"
+      ],
+      "uniEquipMissionId": "uniequip_002_red_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_red"
+    },
+    "uniequip_002_waaifu_1": {
+      "template": "EquipmentEventTotal",
+      "desc": "비지원 와이후의 '칠무약진각' 스킬로 감염 생물 누적 섬멸 수 50 달성",
+      "paramList": [
+        "char_243_waaifu",
+        "DEATHDETAIL,char_243_waaifu,skchr_waaifu_2,infection",
+        "50"
+      ],
+      "uniEquipMissionId": "uniequip_002_waaifu_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_waaifu"
+    },
+    "uniequip_002_waaifu_2": {
+      "template": "EquipmentSquadNum",
+      "desc": "메인 스토리 4-7 스테이지를 3★ 평가로 클리어, 비지원 와이후 편성 및 출전 필수, 나머지는 6명의 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_04-07",
+        "char_243_waaifu",
+        "6"
+      ],
+      "uniEquipMissionId": "uniequip_002_waaifu_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_waaifu"
+    },
+    "uniequip_002_gravel_1": {
+      "template": "EquipmentDeployStage",
+      "desc": "전투 5회 완료, 매회 전투 시 비지원 그라벨 최소 4회 배치",
+      "paramList": [
+        "5",
+        "4",
+        "char_237_gravel",
+        "char_237_gravel"
+      ],
+      "uniEquipMissionId": "uniequip_002_gravel_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_gravel"
+    },
+    "uniequip_002_gravel_2": {
+      "template": "EquipmentSquadNoAnyDead",
+      "desc": "메인 스토리 4-8 스테이지를 3★ 평가로 클리어, 비지원 그라벨 편성 및 출전 필수, 모든 오퍼레이터 생존 필수",
+      "paramList": [
+        "3",
+        "main_04-08",
+        "char_237_gravel"
+      ],
+      "uniEquipMissionId": "uniequip_002_gravel_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_gravel"
+    },
+    "uniequip_002_pasngr_1": {
+      "template": "EquipmentSkillCast",
+      "desc": "전투 중 비지원 패신저로 '찬란히 찢어진 조각' 스킬 누적 30회 사용",
+      "paramList": [
+        "char_472_pasngr",
+        "skchr_pasngr_3",
+        "30",
+        "char_472_pasngr"
+      ],
+      "uniEquipMissionId": "uniequip_002_pasngr_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_pasngr"
+    },
+    "uniequip_002_pasngr_2": {
+      "template": "EquipmentSquadPro",
+      "desc": "메인 스토리 2-2 스테이지를 3★ 평가로 클리어, 비지원 패신저 편성 및 출전 필수, 나머지는 뱅가드와 디펜더 오퍼레이터만 편성 가능",
+      "paramList": [
+        "3",
+        "main_02-02",
+        "char_472_pasngr",
+        "13,PIONEER;13,TANK"
+      ],
+      "uniEquipMissionId": "uniequip_002_pasngr_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_pasngr"
+    },
+    "uniequip_002_leizi_1": {
+      "template": "EquipmentEventTotal",
+      "desc": "비지원 레이즈의 '초뢰' 스킬로 적 누적 섬멸 수 50 달성",
+      "paramList": [
+        "char_306_leizi",
+        "DEATHDETAIL,char_306_leizi,1",
+        "50"
+      ],
+      "uniEquipMissionId": "uniequip_002_leizi_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_leizi"
+    },
+    "uniequip_002_leizi_2": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 S3-6 스테이지를 3★ 평가로 클리어, 비지원 레이즈 편성 및 출전 필수, 레이즈로 도축자 최소 1명 섬멸",
+      "paramList": [
+        "3",
+        "sub_03-3-1",
+        "char_306_leizi",
+        "DEATHDETAIL,char_306_leizi,enemy_1034_laxe",
+        "1"
+      ],
+      "uniEquipMissionId": "uniequip_002_leizi_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_leizi"
+    },
+    "uniequip_002_pudd_1": {
+      "template": "EquipmentDamageTotal",
+      "desc": "비지원 푸딩으로 누적 대미지 150000 달성",
+      "paramList": [
+        "char_4004_pudd",
+        "150000"
+      ],
+      "uniEquipMissionId": "uniequip_002_pudd_1",
+      "uniEquipMissionSort": 1,
+      "uniEquipId": "uniequip_002_pudd"
+    },
+    "uniequip_002_pudd_2": {
+      "template": "EquipmentEventStageMore",
+      "desc": "메인 스토리 2-10 스테이지를 3★ 평가로 클리어, 비지원 푸딩 편성 및 출전 필수, 푸딩의 '전류 확산' 스킬로 중기갑병 최소 2명 섬멸",
+      "paramList": [
+        "3",
+        "main_02-10",
+        "char_4004_pudd",
+        "DEATHDETAIL,char_4004_pudd,1,enemy_1006_shield",
+        "2"
+      ],
+      "uniEquipMissionId": "uniequip_002_pudd_2",
+      "uniEquipMissionSort": 2,
+      "uniEquipId": "uniequip_002_pudd"
+    }
+  },
+  "subProfDict": {
+    "notchar1": {
+      "subProfessionId": "notchar1",
+      "subProfessionName": "오퍼레이터 추가 유닛",
+      "subProfessionCatagory": 1
+    },
+    "notchar2": {
+      "subProfessionId": "notchar2",
+      "subProfessionName": "무직업 함정",
+      "subProfessionCatagory": 2
+    },
+    "none1": {
+      "subProfessionId": "none1",
+      "subProfessionName": "예비용1",
+      "subProfessionCatagory": 3
+    },
+    "none2": {
+      "subProfessionId": "none2",
+      "subProfessionName": "예비용1",
+      "subProfessionCatagory": 4
+    },
+    "pioneer": {
+      "subProfessionId": "pioneer",
+      "subProfessionName": "척후병",
+      "subProfessionCatagory": 5
+    },
+    "charger": {
+      "subProfessionId": "charger",
+      "subProfessionName": "돌격수",
+      "subProfessionCatagory": 6
+    },
+    "tactician": {
+      "subProfessionId": "tactician",
+      "subProfessionName": "전술가",
+      "subProfessionCatagory": 7
+    },
+    "bearer": {
+      "subProfessionId": "bearer",
+      "subProfessionName": "기수",
+      "subProfessionCatagory": 8
+    },
+    "centurion": {
+      "subProfessionId": "centurion",
+      "subProfessionName": "공격수",
+      "subProfessionCatagory": 9
+    },
+    "fighter": {
+      "subProfessionId": "fighter",
+      "subProfessionName": "파이터",
+      "subProfessionCatagory": 10
+    },
+    "artsfghter": {
+      "subProfessionId": "artsfghter",
+      "subProfessionName": "아츠 파이터",
+      "subProfessionCatagory": 11
+    },
+    "instructor": {
+      "subProfessionId": "instructor",
+      "subProfessionName": "교관",
+      "subProfessionCatagory": 12
+    },
+    "lord": {
+      "subProfessionId": "lord",
+      "subProfessionName": "로드",
+      "subProfessionCatagory": 13
+    },
+    "sword": {
+      "subProfessionId": "sword",
+      "subProfessionName": "소드마스터",
+      "subProfessionCatagory": 14
+    },
+    "musha": {
+      "subProfessionId": "musha",
+      "subProfessionName": "무사",
+      "subProfessionCatagory": 15
+    },
+    "fearless": {
+      "subProfessionId": "fearless",
+      "subProfessionName": "드레드노트",
+      "subProfessionCatagory": 16
+    },
+    "reaper": {
+      "subProfessionId": "reaper",
+      "subProfessionName": "리퍼",
+      "subProfessionCatagory": 17
+    },
+    "librator": {
+      "subProfessionId": "librator",
+      "subProfessionName": "해방자",
+      "subProfessionCatagory": 18
+    },
+    "protector": {
+      "subProfessionId": "protector",
+      "subProfessionName": "프로텍터",
+      "subProfessionCatagory": 19
+    },
+    "guardian": {
+      "subProfessionId": "guardian",
+      "subProfessionName": "가디언",
+      "subProfessionCatagory": 20
+    },
+    "unyield": {
+      "subProfessionId": "unyield",
+      "subProfessionName": "저거너트",
+      "subProfessionCatagory": 21
+    },
+    "artsprotector": {
+      "subProfessionId": "artsprotector",
+      "subProfessionName": "아츠 프로텍터",
+      "subProfessionCatagory": 22
+    },
+    "duelist": {
+      "subProfessionId": "duelist",
+      "subProfessionName": "결전자",
+      "subProfessionCatagory": 23
+    },
+    "fortress": {
+      "subProfessionId": "fortress",
+      "subProfessionName": "포트리스",
+      "subProfessionCatagory": 24
+    },
+    "fastshot": {
+      "subProfessionId": "fastshot",
+      "subProfessionName": "명사수",
+      "subProfessionCatagory": 25
+    },
+    "closerange": {
+      "subProfessionId": "closerange",
+      "subProfessionName": "헤비슈터",
+      "subProfessionCatagory": 26
+    },
+    "aoesniper": {
+      "subProfessionId": "aoesniper",
+      "subProfessionName": "포격사수",
+      "subProfessionCatagory": 27
+    },
+    "longrange": {
+      "subProfessionId": "longrange",
+      "subProfessionName": "저격수",
+      "subProfessionCatagory": 28
+    },
+    "reaperrange": {
+      "subProfessionId": "reaperrange",
+      "subProfessionName": "산탄사수",
+      "subProfessionCatagory": 29
+    },
+    "siegesniper": {
+      "subProfessionId": "siegesniper",
+      "subProfessionName": "공성사수",
+      "subProfessionCatagory": 30
+    },
+    "bombarder": {
+      "subProfessionId": "bombarder",
+      "subProfessionName": "투척수",
+      "subProfessionCatagory": 31
+    },
+    "corecaster": {
+      "subProfessionId": "corecaster",
+      "subProfessionName": "코어 캐스터",
+      "subProfessionCatagory": 32
+    },
+    "splashcaster": {
+      "subProfessionId": "splashcaster",
+      "subProfessionName": "스플래시 캐스터",
+      "subProfessionCatagory": 33
+    },
+    "funnel": {
+      "subProfessionId": "funnel",
+      "subProfessionName": "메카 캐스터",
+      "subProfessionCatagory": 34
+    },
+    "phalanx": {
+      "subProfessionId": "phalanx",
+      "subProfessionName": "진법 캐스터",
+      "subProfessionCatagory": 35
+    },
+    "mystic": {
+      "subProfessionId": "mystic",
+      "subProfessionName": "미스틱 캐스터",
+      "subProfessionCatagory": 36
+    },
+    "chain": {
+      "subProfessionId": "chain",
+      "subProfessionName": "체인 캐스터",
+      "subProfessionCatagory": 37
+    },
+    "blastcaster": {
+      "subProfessionId": "blastcaster",
+      "subProfessionName": "블래스트 캐스터",
+      "subProfessionCatagory": 38
+    },
+    "physician": {
+      "subProfessionId": "physician",
+      "subProfessionName": "메딕",
+      "subProfessionCatagory": 39
+    },
+    "ringhealer": {
+      "subProfessionId": "ringhealer",
+      "subProfessionName": "멀티 타겟 메딕",
+      "subProfessionCatagory": 40
+    },
+    "healer": {
+      "subProfessionId": "healer",
+      "subProfessionName": "테라피스트",
+      "subProfessionCatagory": 41
+    },
+    "wandermedic": {
+      "subProfessionId": "wandermedic",
+      "subProfessionName": "방랑 메딕",
+      "subProfessionCatagory": 42
+    },
+    "slower": {
+      "subProfessionId": "slower",
+      "subProfessionName": "감속자",
+      "subProfessionCatagory": 43
+    },
+    "underminer": {
+      "subProfessionId": "underminer",
+      "subProfessionName": "약화자",
+      "subProfessionCatagory": 44
+    },
+    "bard": {
+      "subProfessionId": "bard",
+      "subProfessionName": "음유시인",
+      "subProfessionCatagory": 45
+    },
+    "blessing": {
+      "subProfessionId": "blessing",
+      "subProfessionName": "비호자",
+      "subProfessionCatagory": 46
+    },
+    "summoner": {
+      "subProfessionId": "summoner",
+      "subProfessionName": "소환사",
+      "subProfessionCatagory": 47
+    },
+    "craftsman": {
+      "subProfessionId": "craftsman",
+      "subProfessionName": "기능공",
+      "subProfessionCatagory": 48
+    },
+    "executor": {
+      "subProfessionId": "executor",
+      "subProfessionName": "처형자",
+      "subProfessionCatagory": 49
+    },
+    "pusher": {
+      "subProfessionId": "pusher",
+      "subProfessionName": "추격자",
+      "subProfessionCatagory": 50
+    },
+    "stalker": {
+      "subProfessionId": "stalker",
+      "subProfessionName": "매복자",
+      "subProfessionCatagory": 51
+    },
+    "hookmaster": {
+      "subProfessionId": "hookmaster",
+      "subProfessionName": "후크마스터",
+      "subProfessionCatagory": 52
+    },
+    "geek": {
+      "subProfessionId": "geek",
+      "subProfessionName": "기인",
+      "subProfessionCatagory": 53
+    },
+    "merchant": {
+      "subProfessionId": "merchant",
+      "subProfessionName": "상인",
+      "subProfessionCatagory": 54
+    },
+    "traper": {
+      "subProfessionId": "traper",
+      "subProfessionName": "함정술사",
+      "subProfessionCatagory": 55
+    },
+    "dollkeeper": {
+      "subProfessionId": "dollkeeper",
+      "subProfessionName": "인형사",
+      "subProfessionCatagory": 56
+    }
+  },
+  "charEquip": {
+    "char_248_mgllan": [
+      "uniequip_001_mgllan",
+      "uniequip_002_mgllan"
+    ],
+    "char_336_folivo": [
+      "uniequip_001_folivo",
+      "uniequip_002_folivo"
+    ],
+    "char_242_otter": [
+      "uniequip_001_otter",
+      "uniequip_002_otter"
+    ],
+    "char_110_deepcl": [
+      "uniequip_001_deepcl",
+      "uniequip_002_deepcl"
+    ],
+    "char_485_pallas": [
+      "uniequip_001_pallas",
+      "uniequip_002_pallas"
+    ],
+    "char_265_sophia": [
+      "uniequip_001_sophia",
+      "uniequip_002_sophia"
+    ],
+    "char_308_swire": [
+      "uniequip_001_swire",
+      "uniequip_002_swire"
+    ],
+    "char_130_doberm": [
+      "uniequip_001_doberm",
+      "uniequip_002_doberm"
+    ],
+    "char_430_fartth": [
+      "uniequip_001_fartth",
+      "uniequip_002_fartth"
+    ],
+    "char_158_milu": [
+      "uniequip_001_milu",
+      "uniequip_002_milu"
+    ],
+    "char_218_cuttle": [
+      "uniequip_001_cuttle",
+      "uniequip_002_cuttle"
+    ],
+    "char_302_glaze": [
+      "uniequip_001_glaze",
+      "uniequip_002_glaze"
+    ],
+    "char_179_cgbird": [
+      "uniequip_001_cgbird",
+      "uniequip_002_cgbird"
+    ],
+    "char_128_plosis": [
+      "uniequip_001_plosis",
+      "uniequip_002_plosis"
+    ],
+    "char_275_breeze": [
+      "uniequip_001_breeze",
+      "uniequip_002_breeze"
+    ],
+    "char_181_flower": [
+      "uniequip_001_flower",
+      "uniequip_002_flower"
+    ],
+    "char_250_phatom": [
+      "uniequip_001_phatom",
+      "uniequip_002_phatom"
+    ],
+    "char_214_kafka": [
+      "uniequip_001_kafka",
+      "uniequip_002_kafka"
+    ],
+    "char_144_red": [
+      "uniequip_001_red",
+      "uniequip_002_red"
+    ],
+    "char_243_waaifu": [
+      "uniequip_001_waaifu",
+      "uniequip_002_waaifu"
+    ],
+    "char_237_gravel": [
+      "uniequip_001_gravel",
+      "uniequip_002_gravel"
+    ],
+    "char_472_pasngr": [
+      "uniequip_001_pasngr",
+      "uniequip_002_pasngr"
+    ],
+    "char_306_leizi": [
+      "uniequip_001_leizi",
+      "uniequip_002_leizi"
+    ],
+    "char_4004_pudd": [
+      "uniequip_001_pudd",
+      "uniequip_002_pudd"
+    ]
+  }
+}

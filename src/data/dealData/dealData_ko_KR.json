@@ -144,7 +144,7 @@
         "name": "바닐라",
         "en": "Vanilla",
         "race": [
-            "뷔브르"
+            "와이번"
         ],
         "rarity": 2,
         "key": "char_240_wyvern",
@@ -1074,7 +1074,7 @@
         "name": "리스캄",
         "en": "Liskarm",
         "race": [
-            "뷔브르"
+            "와이번"
         ],
         "rarity": 4,
         "key": "char_107_liskam",
@@ -1412,7 +1412,7 @@
         "name": "사리아",
         "en": "Saria",
         "race": [
-            "뷔브르"
+            "와이번"
         ],
         "rarity": 5,
         "key": "char_202_demkni",
@@ -2219,7 +2219,7 @@
         "name": "세사",
         "en": "Sesa",
         "race": [
-            "뷔브르"
+            "와이번"
         ],
         "rarity": 4,
         "key": "char_379_sesa",
@@ -2236,7 +2236,7 @@
         "name": "백파이프",
         "en": "Bagpipe",
         "race": [
-            "뷔브르"
+            "와이번"
         ],
         "rarity": 5,
         "key": "char_222_bpipe",
@@ -3262,7 +3262,7 @@
         "name": "토디폰스",
         "en": "Toddifons",
         "race": [
-            "뷔브르"
+            "와이번"
         ],
         "rarity": 4,
         "key": "char_363_toddi",
@@ -3509,5 +3509,212 @@
             "로도스 아일랜드"
         ],
         "painter": "唯@W"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "저스티스 나이트",
+        "en": "\"Justice Knight\"",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4000_jnight",
+        "team": [
+            "피누스 실베스트리스 기사단",
+            "카시미어"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "캐스터",
+            "체인 캐스터"
+        ],
+        "name": "푸딩",
+        "en": "Pudding",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 3,
+        "key": "char_4004_pudd",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "서포터",
+            "기능공"
+        ],
+        "name": "로베르타",
+        "en": "Roberta",
+        "race": [
+            "아나티"
+        ],
+        "rarity": 3,
+        "key": "char_484_robrta",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "와일드메인",
+        "en": "Wild Mane",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_496_wildmn",
+        "team": [
+            "피누스 실베스트리스 기사단",
+            "카시미어"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "캐스터",
+            "블래스트 캐스터"
+        ],
+        "name": "코로세럼",
+        "en": "Corroserum",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 4,
+        "key": "char_489_serum",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "메딕",
+            "방랑 메딕"
+        ],
+        "name": "멀베리",
+        "en": "Mulberry",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_473_mberry",
+        "team": [
+            "염"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "메딕",
+            "방랑 메딕"
+        ],
+        "name": "허니베리",
+        "en": "Honeyberry",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 4,
+        "key": "char_449_glider",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "Liyu黎"
+    },
+    {
+        "className": [
+            "디펜더",
+            "포트리스"
+        ],
+        "name": "애쉬락",
+        "en": "Ashlock",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 4,
+        "key": "char_431_ashlok",
+        "team": [
+            "피누스 실베스트리스 기사단",
+            "카시미어"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "저격수"
+        ],
+        "name": "파투스",
+        "en": "Fartooth",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_430_fartth",
+        "team": [
+            "피누스 실베스트리스 기사단",
+            "카시미어"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "기수"
+        ],
+        "name": "사일라흐",
+        "en": "Saileach",
+        "race": [
+            "와이번"
+        ],
+        "rarity": 5,
+        "key": "char_479_sleach",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "플레임테일",
+        "en": "Flametail",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 5,
+        "key": "char_420_flamtl",
+        "team": [
+            "피누스 실베스트리스 기사단",
+            "카시미어"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "니어 더 래디언트 나이트",
+        "en": "Nearl the Radiant Knight",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 5,
+        "key": "char_1014_nearl2",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "竜崎いち"
     }
 ]

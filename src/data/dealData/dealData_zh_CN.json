@@ -3960,5 +3960,73 @@
             "拉特兰"
         ],
         "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "医疗",
+            "行医"
+        ],
+        "name": "褐果",
+        "en": "Chestnut",
+        "race": [
+            "杜林"
+        ],
+        "rarity": 3,
+        "key": "char_4041_chnut",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "洛洛",
+        "en": "Rockrock",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4040_rockr",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "辅助",
+            "吟游者"
+        ],
+        "name": "海蒂",
+        "en": "Heidi",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4045_heidi",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "重装",
+            "要塞"
+        ],
+        "name": "号角",
+        "en": "Horn",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_4039_horn",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "m9nokuro"
     }
 ]

@@ -171,7 +171,7 @@ const main = async () => {
             const index2 = idIndexList.indexOf(key2);
             return index1 - index2;
         })
-        let file = path.resolve(__dirname, `./src/data/dealData_${server}.json`)
+        let file = path.resolve(__dirname, `./src/data/dealData/dealData_${server}.json`)
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
