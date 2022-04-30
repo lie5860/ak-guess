@@ -3564,5 +3564,161 @@
             "Victoria"
         ],
         "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "'Justice Knight'",
+        "en": "",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4000_jnight",
+        "team": [
+            "Pinus Sylvestris",
+            "Kazimierz"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Caster",
+            "Chain Caster"
+        ],
+        "name": "Pudding",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 3,
+        "key": "char_4004_pudd",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Charger"
+        ],
+        "name": "Wild Mane",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 4,
+        "key": "char_496_wildmn",
+        "team": [
+            "Pinus Sylvestris",
+            "Kazimierz"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Caster",
+            "Blast Caster"
+        ],
+        "name": "Corroserum",
+        "en": "",
+        "race": [
+            "Phidia"
+        ],
+        "rarity": 4,
+        "key": "char_489_serum",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "Medic",
+            "Wandering Medic"
+        ],
+        "name": "Honeyberry",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 4,
+        "key": "char_449_glider",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "Liyu黎"
+    },
+    {
+        "className": [
+            "Defender",
+            "Fortress"
+        ],
+        "name": "Ashlock",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 4,
+        "key": "char_431_ashlok",
+        "team": [
+            "Pinus Sylvestris",
+            "Kazimierz"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Deadeye"
+        ],
+        "name": "Fartooth",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_430_fartth",
+        "team": [
+            "Pinus Sylvestris",
+            "Kazimierz"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "Flametail",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 5,
+        "key": "char_420_flamtl",
+        "team": [
+            "Pinus Sylvestris",
+            "Kazimierz"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Guard",
+            "Dreadnought"
+        ],
+        "name": "Nearl the Radiant Knight",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 5,
+        "key": "char_1014_nearl2",
+        "team": [
+            "Kazimierz"
+        ],
+        "painter": "竜崎いち"
     }
 ]

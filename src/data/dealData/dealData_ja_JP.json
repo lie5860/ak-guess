@@ -3560,5 +3560,161 @@
             "ヴィクトリア"
         ],
         "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "ジャスティスナイト",
+        "en": "\"Justice Knight\"",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4000_jnight",
+        "team": [
+            "レッドパイン騎士団",
+            "カジミエーシュ"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "術師",
+            "連鎖術師"
+        ],
+        "name": "プリン",
+        "en": "Pudding",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 3,
+        "key": "char_4004_pudd",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "先鋒",
+            "突撃兵"
+        ],
+        "name": "ワイルドメイン",
+        "en": "Wild Mane",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 4,
+        "key": "char_496_wildmn",
+        "team": [
+            "レッドパイン騎士団",
+            "カジミエーシュ"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "術師",
+            "爆撃術師"
+        ],
+        "name": "コロセラム",
+        "en": "Corroserum",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 4,
+        "key": "char_489_serum",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "医療",
+            "放浪医"
+        ],
+        "name": "ハニーベリー",
+        "en": "Honeyberry",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 4,
+        "key": "char_449_glider",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "Liyu黎"
+    },
+    {
+        "className": [
+            "重装",
+            "堅城砲手"
+        ],
+        "name": "アッシュロック",
+        "en": "Ashlock",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 4,
+        "key": "char_431_ashlok",
+        "team": [
+            "レッドパイン騎士団",
+            "カジミエーシュ"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "狙撃",
+            "戦術射手"
+        ],
+        "name": "ファートゥース",
+        "en": "Fartooth",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_430_fartth",
+        "team": [
+            "レッドパイン騎士団",
+            "カジミエーシュ"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "フレイムテイル",
+        "en": "Flametail",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 5,
+        "key": "char_420_flamtl",
+        "team": [
+            "レッドパイン騎士団",
+            "カジミエーシュ"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "前衛",
+            "勇士"
+        ],
+        "name": "耀騎士ニアール",
+        "en": "Nearl the Radiant Knight",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 5,
+        "key": "char_1014_nearl2",
+        "team": [
+            "カジミエーシュ"
+        ],
+        "painter": "竜崎いち"
     }
 ]
