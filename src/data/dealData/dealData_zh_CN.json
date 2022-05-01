@@ -4028,5 +4028,74 @@
             "维多利亚"
         ],
         "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "掠风",
+        "en": "Windflit",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_433_windft",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "nineo"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "归溟幽灵鲨",
+        "en": "Specter the Unchained",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_1023_ghost2",
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "医疗",
+            "疗养师"
+        ],
+        "name": "流明",
+        "en": "Lumen",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_4042_lumen",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "近卫",
+            "剑豪"
+        ],
+        "name": "艾丽妮",
+        "en": "Irene",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "key": "char_4009_irene",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "aZLing4"
     }
 ]
