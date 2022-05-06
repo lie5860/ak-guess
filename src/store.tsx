@@ -85,7 +85,7 @@ const randomGame = ({store, randomStore}: any) => {
     localStorageSet(lang, 'r-randomData', JSON.stringify([]))
     setRandomData([])
     let answer = Math.floor(Math.random() * chartsData.length);
-    if (answer === NaN) {
+    if (isNaN(answer)) {
       reportError({
         message: '发现错误',
         stack: 'rerandom' + Math.floor(Math.random() * chartsData.length),
@@ -107,7 +107,7 @@ const randomGame = ({store, randomStore}: any) => {
           setGiveUp(giveUp === 'true');
         }
         let oldData = JSON.parse(randomData)
-        const answerKey = Number(localStorageGet(lang, 'r-randomAnswerKey'))
+        const answerKey = !isNaN(Number(oldKey)) ? Number(oldKey) : 0;
         const answer = chartsData[answerKey]
         try {
           oldData = oldData.map((inputItem: any) => {
