@@ -10,7 +10,7 @@ import {
   randomGameGiveUp,
   randomGameInit,
   randomGameLose,
-  randomGameWin
+  randomGameWin, reportError
 } from "./server";
 
 export interface HomeStore {
@@ -84,7 +84,15 @@ const randomGame = ({store, randomStore}: any) => {
     localStorageSet(lang, 'giveUp', `false`)
     localStorageSet(lang, 'r-randomData', JSON.stringify([]))
     setRandomData([])
-    const answer = Math.floor(Math.random() * chartsData.length);
+    let answer = Math.floor(Math.random() * chartsData.length);
+    if (answer === NaN) {
+      reportError({
+        message: '发现错误',
+        stack: 'rerandom' + Math.floor(Math.random() * chartsData.length),
+        localstorage: chartsData.length + ' chartsData.length;' + Math.floor + 'Math.floor;' + Math.random + 'Math.random()'
+      })
+      answer = Math.floor(Math.random() * 100) || 1
+    }
     localStorageSet(lang, 'r-randomAnswerKey', `${answer}`)
     setRandomAnswerKey(answer)
     randomGameInit(lang, {answer})
@@ -93,7 +101,7 @@ const randomGame = ({store, randomStore}: any) => {
     init: () => {
       const randomData = localStorageGet(lang, 'r-randomData')
       const oldKey = localStorageGet(lang, 'r-randomAnswerKey')
-      if (randomData && oldKey !=='undefined') {
+      if (randomData && oldKey !== 'undefined') {
         const giveUp = localStorageGet(lang, "giveUp")
         if (giveUp) {
           setGiveUp(giveUp === 'true');

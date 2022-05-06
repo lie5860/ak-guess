@@ -32,16 +32,16 @@ const shareTextCreator = ({
     }
   }
   game.data.forEach(v => {
-    text += '\n'
+    text += '\n';
     TYPES.map(({key}) => {
       if (key === 'guess') {
         showName && (text += v.guess?.[MAIN_KEY])
       } else {
         text += (showName ? VAL_DICT : NOT_NAME_VAL_DICT)[v[key]]
       }
-    })
+    });
   })
   text += '\n' + hostDict[i18n.language];
-  return text
+  return text;
 }
 export default shareTextCreator
