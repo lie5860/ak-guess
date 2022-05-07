@@ -55,7 +55,7 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
       /*make the matching letters bold:*/
       b.innerHTML = v?.[MAIN_KEY];
       /*insert a input field that will hold the current array item's value:*/
-      let value = v?.[MAIN_KEY].toString().replace("'", "&#39;")
+      let value = v?.[MAIN_KEY].toString().replace(/'/g, "&#39;")
       b.innerHTML += "<input type='hidden' value='" + value + "'>";
       /*execute a function when someone clicks on the item value (DIV element):*/
       b.addEventListener("click", function (e) {
