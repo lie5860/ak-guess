@@ -1,5 +1,5 @@
 import {DAILY_MODE, PARADOX_MODE, RANDOM_MODE, reportKeyDict, TYPES} from "./const";
-import {moment} from "./global";
+import {dayjs} from "./global";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
 // 假的UUID
@@ -68,7 +68,7 @@ const cacheLoad = async (cacheKey: string, getDataFn: () => any) => {
 }
 const getDailyData = (lang: string) => {
   const oldData = localStorageGet(lang, 'dailyData');
-  const today = moment().tz("Asia/Shanghai").format('YYYY-MM-DD');
+  const today = dayjs().tz("Asia/Shanghai").format('YYYY-MM-DD');
   if (oldData) {
     try {
       const data = JSON.parse(oldData);
@@ -115,22 +115,26 @@ export interface ReportData {
 }
 
 const reportData = (data: ReportData) => {
-  axios.post('https://akapi.saki.cc/report.php',data).catch(() => {
+  axios.post('https://akapi.saki.cc/report.php', data).catch(() => {
   })
   // try {
   //   window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
   // } catch (e) {
   // }
 }
-interface ErrData{
-  message:string;
-  stack:string;
-  localstorage:string;
+
+interface ErrData {
+  message: string;
+  stack: string;
+  localstorage: string;
 }
+
 export const reportError = (errData: ErrData) => {
-  axios.post('https://akapi.saki.cc/error_report.php',errData).catch(() => {
+  if (location.hostname === 'localhost') return;
+  axios.post('https://akapi.saki.cc/error_report.php', errData).catch(() => {
   })
 }
+
 interface OptLabel {
   answer: number;
   inputArray?: Answers[];
@@ -159,7 +163,7 @@ const commonReport = (server: string, optLabel: OptLabel, mode: string, type: st
     server,
     mode: reportKeyDict[mode],
     answer,
-    op_time: moment().tz("Asia/Shanghai").format('YYYY-MM-DD HH:mm:ss'),
+    op_time: dayjs().tz("Asia/Shanghai").format('YYYY-MM-DD HH:mm:ss'),
     result: resultDict[type],
     try_times: optLabel?.inputArray?.length ?? 0,
     user,

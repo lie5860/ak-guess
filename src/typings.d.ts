@@ -5,9 +5,10 @@ declare module '*.json' {
 
 interface Window {
   magic: any,
-  moment: any,
+  dayjs: any,
   React: any,
   ReactDOM: any,
+  ReactRouterDOM: any,
   mdui: any,
   _hmt: any,
   axios: any,

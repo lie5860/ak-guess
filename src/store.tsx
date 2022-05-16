@@ -1,4 +1,4 @@
-import {moment, React} from "./global";
+import {dayjs, React} from "./global";
 
 import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
@@ -34,7 +34,7 @@ const useRandomStore = ({chartsData}: { chartsData: Character[] }) => {
 const useDailyStore = () => {
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
   const [dayData, setDayData] = React.useState([])
-  const [today, setToday] = React.useState(moment().tz("Asia/Shanghai").format('YYYY-MM-DD'))
+  const [today, setToday] = React.useState(dayjs().tz("Asia/Shanghai").format('YYYY-MM-DD'))
   return {
     remoteAnswerKey, setRemoteAnswerKey,
     today, setToday,
@@ -245,7 +245,7 @@ const dailyGame = ({store, dailyStore}: any) => {
       return newData;
     },
     preSubmitCheck: () => {
-      if (today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
+      if (today !== dayjs().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
         alert(i18n.get('reloadTip'))
         window.location.reload()
         return true;

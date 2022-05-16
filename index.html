@@ -8,7 +8,7 @@
     <title>ak-guess</title>
     <script>
         var _hmt = _hmt || [];
-        (function() {
+        (function () {
             var hm = document.createElement("script");
             hm.src = "https://hm.baidu.com/hm.js?22b404b3f2e90c075c155f75ff26fb32";
             var s = document.getElementsByTagName("script")[0];
@@ -17,7 +17,7 @@
     </script>
 
     <script>
-        if ('serviceWorker' in navigator) {
+        if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('./sw.js')
                 let appPromptEvent = null;
@@ -61,8 +61,63 @@
     </script>
     <link rel="stylesheet" href="/css/mdui.min.css"/>
     <script src="/js/mdui.min.js"></script>
-<!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>-->
+    <style>
+        ak-guess > div:not(:last-child) {
+            display: none !important;
+        }
+
+        .skeleton {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            background-color: #303030 !important;
+            color: #303030 !important;
+            padding: 10px;
+        }
+
+        .skeleton-item {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            min-height: 20px;
+            min-width: 20px;
+            background-color: #303030 !important;
+            border-radius: 3px;
+            color: #303030 !important;
+            font-size: 5px;
+        }
+
+        .skeleton-item:after {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            width: 80%;
+            height: 100%;
+            background: linear-gradient(
+                    to left,
+                    rgb(48, 48, 48),
+                    #fff,
+                    rgb(48, 48, 48)
+            ) 0 0 no-repeat;
+            content: '';
+            animation: shineMove 2s infinite;
+            transform: skewX(-45deg);
+            opacity: 0.2;
+        }
+
+        @keyframes shineMove {
+            0% {
+                left: -200%;
+            }
+            100% {
+                left: 200%;
+            }
+        }
+    </style>
 </head>
 <body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-theme-layout-dark">
 <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -70,14 +125,25 @@
     是否安装干员猜猜乐到桌面？
     <span id="closepwaTips" class="close">x</span>
 </div>
-<ak-guess/>
+<ak-guess>
+    <div class="skeleton">
+        <div class="skeleton-item" style="height:32px;margin-bottom:14px;"></div>
+        <div class="skeleton-item" style="height:calc(100% - 46px);"></div>
+    </div>
+</ak-guess>
+<script crossorigin="anonymous" src="//unpkg.com/dayjs@1.11.2/dayjs.min.js"></script>
+<script crossorigin="anonymous" src="//unpkg.com/dayjs@1.11.2/plugin/timezone.js"></script>
+<script crossorigin="anonymous" src="//unpkg.com/dayjs@1.11.2/plugin/utc.js"></script>
+<script crossorigin="anonymous" src="//unpkg.com/axios/dist/axios.min.js"></script>
 <script crossorigin="anonymous" src="//unpkg.com/@magic-microservices/magic@1.1.3/dist/index.umd.js"></script>
 <script crossorigin src="//unpkg.com/react@17/umd/react.production.min.js"></script>
 <script crossorigin src="//unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-<script crossorigin="anonymous" src="//unpkg.com/moment@2.29.3/min/moment-with-locales.min.js"></script>
-<script crossorigin="anonymous"
-        src="//unpkg.com/moment-timezone@0.5.25/builds/moment-timezone-with-data.min.js"></script>
-<script crossorigin="anonymous" src="//unpkg.com/axios/dist/axios.min.js"></script>
+<script crossorigin="anonymous" src="//unpkg.com/react-router@5.3.1/umd/react-router.min.js"></script>
+<script crossorigin="anonymous" src="//unpkg.com/react-router-dom@5.3.1/umd/react-router-dom.min.js"></script>
+<script>
+    window.dayjs.extend(window.dayjs_plugin_timezone)
+    window.dayjs.extend(window.dayjs_plugin_utc)
+</script>
 <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
