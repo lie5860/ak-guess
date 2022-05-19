@@ -4097,5 +4097,22 @@
             "伊比利亚"
         ],
         "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "狙击",
+            "攻城手"
+        ],
+        "name": "埃拉托",
+        "en": "Erato",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4043_erato",
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "温泉瓜"
     }
 ]
