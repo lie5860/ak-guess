@@ -1,9 +1,8 @@
-import {React, ReactRouterDOM} from './global'
+import React from "React";
+import {HashRouter, Route} from "react-router-dom";
 import Home from "@/pages/home";
 import DoQuest from "@/pages/doQuest";
 import PostQuest from "@/pages/postQuest";
-
-const {HashRouter, Route} = ReactRouterDOM;
 
 export default function App() {
   return (

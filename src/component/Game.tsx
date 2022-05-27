@@ -1,4 +1,4 @@
-import {React} from "../global";
+import React from "React";
 import {CONTRIBUTORS, MAIN_KEY} from "../const";
 import ContributorList from "./ContributorList";
 import {reinitRecord, History} from "./History";

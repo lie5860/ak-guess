@@ -1,4 +1,5 @@
-import {React} from "../global";
+import React from "React";
+
 import ShareIcon from './ShareIcon'
 import copyCurrentDay from "../utils/copyCurrentDay";
 import {modeI18nKeyDict, DAILY_MODE, PARADOX_MODE, RANDOM_MODE} from "../const";

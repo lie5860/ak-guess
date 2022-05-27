@@ -8,16 +8,26 @@
     "preview": "vite build && vite preview"
   },
   "dependencies": {
+    "antd": "^4.20.6",
+    "axios": "^0.26.1",
+    "dayjs": "^1.11.2",
+    "echarts": "^5.3.2",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.34",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "axios": "^0.26.0",
+    "react-router": "5.3.1",
+    "react-router-dom": "5.3.1",
     "socket.io": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "vite-plugin-externals": "^0.5.0",
+    "vite-plugin-html-config": "^1.0.8",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
+    "@types/react-router-dom": "^5.3.3",
     "father-build": "^1.21.1",
     "less": "^4.1.2",
     "lodash": "^4.17.21",

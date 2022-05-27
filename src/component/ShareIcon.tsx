@@ -1,4 +1,4 @@
-import {React} from "../global";
+import React from "React";
 
 const ShareIcon = ({onClick}: { onClick?: () => void }) => {
   return <div className={'share-icon'} onClick={onClick}>

@@ -1,7 +1,8 @@
 import {defineConfig} from 'vite'
-import visualizer from "rollup-plugin-visualizer";
 import react from '@vitejs/plugin-react'
 import * as path from 'path'
+import {viteExternalsPlugin} from 'vite-plugin-externals'
+import htmlPlugin from 'vite-plugin-html-config'
 
 const plugins = [{
   handleHotUpdate: ({server}) => {
@@ -11,7 +12,36 @@ const plugins = [{
     })
     return []
   }
-}];
+},
+  viteExternalsPlugin({
+    'dayjs': 'dayjs',
+    'dayjs/plugin/utc': 'dayjs_plugin_utc',
+    'dayjs/plugin/timezone': 'dayjs_plugin_timezone',
+    'React': 'React',
+    'react-dom': 'ReactDOM',
+    'react-router': 'ReactRouter',
+    'react-router-dom': 'ReactRouterDOM',
+    'axios': 'axios',
+  }),
+  htmlPlugin({
+    links: [
+      // {
+      //   rel: 'stylesheet',
+      //   href: '//unpkg.com/antd/dist/antd.css'
+      // }
+    ],
+    scripts: [
+      {src: '//unpkg.com/react@17/umd/react.production.min.js'},
+      {src: '//unpkg.com/react-dom@17/umd/react-dom.production.min.js'},
+      {src: '//unpkg.com/dayjs@1.11.2/dayjs.min.js'},
+      {src: '//unpkg.com/dayjs@1.11.2/plugin/timezone.js'},
+      {src: '//unpkg.com/dayjs@1.11.2/plugin/utc.js'},
+      {src: '//unpkg.com/react-router@5.3.1/umd/react-router.min.js'},
+      {src: '//unpkg.com/react-router-dom@5.3.1/umd/react-router-dom.min.js'},
+      {src: '//unpkg.com/axios/dist/axios.min.js'},
+    ]
+  })
+];
 // 打包生产环境才引入的插件
 if (process.env.NODE_ENV === "production") {
   // 打包依赖展示
@@ -24,7 +54,7 @@ if (process.env.NODE_ENV === "production") {
   // );
 }
 // https://vitejs.dev/config/
-export default defineConfig(({command, mode}) => {
+export default defineConfig(({command}) => {
   return {
     plugins: [react(), ...plugins],
     resolve: {

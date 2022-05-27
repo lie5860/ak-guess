@@ -1,4 +1,4 @@
-import {React} from "@/global";
+import React from "React";
 
 
 function searchObj(href: string = location.href) {

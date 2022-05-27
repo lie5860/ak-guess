@@ -1,4 +1,6 @@
-import {React, ReactDom} from "../global";
+import React from "React";
+import ReactDom from "react-dom";
+
 import {AppCtx} from "../locales/AppCtx";
 
 const Modal = () => {

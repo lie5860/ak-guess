@@ -1,6 +1,7 @@
 import {DAILY_MODE, PARADOX_MODE, RANDOM_MODE, reportKeyDict, TYPES} from "./const";
-import {dayjs} from "./global";
+import dayjs from "dayjs";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
+import axios from 'axios'
 
 // 假的UUID
 function uuid() {
@@ -11,7 +12,6 @@ function uuid() {
   return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
 }
 
-const axios = window.axios;
 const guess = (inputItem: Character, answer: Character) => {
   const res: GuessItem = {} as GuessItem
   TYPES.forEach(({key, type}) => {
@@ -125,7 +125,7 @@ const reportData = (data: ReportData) => {
 
 interface ErrData {
   message: string;
-  stack: string;
+  stack?: string;
   localstorage: string;
 }
 

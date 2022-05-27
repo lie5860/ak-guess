@@ -1,8 +1,16 @@
+import React from "React";
+import ReactDom from 'react-dom';
 import App from './App'
-import {ReactDom, React} from './global'
 import {I18nWrap} from "./locales/I18nWrap";
 import {Container} from "react-dom";
 import {ErrorBoundary} from "./component/ErrorBoundary";
+
+import dayjs from "dayjs";
+import timezone from 'dayjs/plugin/timezone'
+import utc from 'dayjs/plugin/utc'
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 const Main = () => {
   return <I18nWrap>
     <ErrorBoundary>

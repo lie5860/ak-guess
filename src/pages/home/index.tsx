@@ -1,4 +1,5 @@
-import {dayjs, React} from '@/global'
+import React from "React";
+import dayjs from "dayjs";
 import {DAILY_MODE, modeI18nKeyDict, PARADOX_MODE, RANDOM_MODE} from "@/const";
 import {getDailyData} from "@/server";
 import {AppCtx} from '@/locales/AppCtx';

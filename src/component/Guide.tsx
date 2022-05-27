@@ -1,4 +1,4 @@
-import {React} from "../global";
+import React from "React";
 import {AppCtx} from '../locales/AppCtx';
 import {localStorageGet} from "../locales/I18nWrap";
 import {filterDataByInputVal} from "../utils/autocomplete";

@@ -1,5 +1,5 @@
+import React from "React";
 import {MAIN_KEY, TYPES} from "../const";
-import {React} from "../global";
 import {AppCtx} from "../locales/AppCtx";
 
 export const ChartInfoLink = ({chart}: { chart: Character }) => {

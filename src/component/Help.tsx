@@ -1,14 +1,15 @@
+import React from "React";
+
 import {DEFAULT_TRY_TIMES, PARADOX_MODE} from "../const";
 import {AppCtx} from '../locales/AppCtx';
-import {React} from "../global";
 
 const Help = ({updateDate = '', firstOpen = false, mode = ''}) => {
   const {i18n, chartsData} = React.useContext(AppCtx);
   return <>
     <p>
-  {mode === PARADOX_MODE && <>{i18n.get('paradoxHelpDesc', {times: DEFAULT_TRY_TIMES},true)}</>}
-  {mode !== PARADOX_MODE && <>{i18n.get('helpDesc', {times: DEFAULT_TRY_TIMES})}</>}
-          <hr/>
+      {mode === PARADOX_MODE && <>{i18n.get('paradoxHelpDesc', {times: DEFAULT_TRY_TIMES}, true)}</>}
+      {mode !== PARADOX_MODE && <>{i18n.get('helpDesc', {times: DEFAULT_TRY_TIMES})}</>}
+      <hr/>
       <ul className="tipList">
         <li>
           <div className="emoji correct"/>
@@ -32,7 +33,7 @@ const Help = ({updateDate = '', firstOpen = false, mode = ''}) => {
         </li>
       </ul>
       <span>{i18n.get('helpWrongDetail', null, true)}</span>
-       <hr/>
+      <hr/>
       {firstOpen && i18n.get('helpFirstOpen') !== 'helpFirstOpen' && <>{i18n.get('helpFirstOpen', null, true)}
           <hr/>
       </>}
