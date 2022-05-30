@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
     <title>ak-guess</title>
     <script>
+        // 百度统计 埋点
         var _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");
@@ -17,6 +18,7 @@
     </script>
 
     <script>
+        // sw
         if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('./sw.js')
@@ -60,7 +62,6 @@
         }
     </script>
     <link rel="stylesheet" href="/css/mdui.min.css"/>
-    <script src="/js/mdui.min.js"></script>
     <style>
         ak-guess > div:not(:last-child) {
             display: none !important;
@@ -132,6 +133,10 @@
     </div>
 </ak-guess>
 <script crossorigin="anonymous" src="//unpkg.com/@magic-microservices/magic@1.1.3/dist/index.umd.js"></script>
-<script type="module" src="/src/index.tsx"></script>
+<script type="module">
+    import AkGuess from "/src/index.tsx";
+
+    magic('ak-guess', AkGuess);
+</script>
 </body>
 </html>

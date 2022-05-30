@@ -27,18 +27,20 @@ const plugins = [{
     links: [
       // {
       //   rel: 'stylesheet',
-      //   href: '//unpkg.com/antd/dist/antd.css'
+      //   href: '//ak-guess.oss-cn-hangzhou.aliyuncs.com/ak2/css/mdui.min.css',
+      //   crossorigin: "anonymous"
       // }
     ],
     scripts: [
-      {src: '//unpkg.com/react@17/umd/react.production.min.js'},
-      {src: '//unpkg.com/react-dom@17/umd/react-dom.production.min.js'},
-      {src: '//unpkg.com/dayjs@1.11.2/dayjs.min.js'},
-      {src: '//unpkg.com/dayjs@1.11.2/plugin/timezone.js'},
-      {src: '//unpkg.com/dayjs@1.11.2/plugin/utc.js'},
-      {src: '//unpkg.com/react-router@5.3.1/umd/react-router.min.js'},
-      {src: '//unpkg.com/react-router-dom@5.3.1/umd/react-router-dom.min.js'},
-      {src: '//unpkg.com/axios/dist/axios.min.js'},
+      {src: '//unpkg.com/react@17.0.2/umd/react.production.min.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/dayjs@1.11.2/dayjs.min.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/dayjs@1.11.2/plugin/timezone.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/dayjs@1.11.2/plugin/utc.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/react-router@5.3.1/umd/react-router.min.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/react-router-dom@5.3.1/umd/react-router-dom.min.js', crossorigin: "anonymous"},
+      {src: '//unpkg.com/axios/dist/axios.min.js', crossorigin: "anonymous"},
+      {src: '//ak-guess.oss-cn-hangzhou.aliyuncs.com/ak2/js/mdui.min.js', crossorigin: "anonymous"},
     ]
   })
 ];
