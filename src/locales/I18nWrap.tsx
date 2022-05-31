@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import {AppCtx} from "./AppCtx";
 import languages from './index';
 import {MAIN_KEY} from "../const";

@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import {HashRouter, Route} from "react-router-dom";
 import Home from "@/pages/home";
 import DoQuest from "@/pages/doQuest";

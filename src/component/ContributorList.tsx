@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import useImage from "./react-image/useImage";
 
 interface User {

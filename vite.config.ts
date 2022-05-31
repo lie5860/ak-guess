@@ -17,7 +17,7 @@ const plugins = [{
     'dayjs': 'dayjs',
     'dayjs/plugin/utc': 'dayjs_plugin_utc',
     'dayjs/plugin/timezone': 'dayjs_plugin_timezone',
-    'React': 'React',
+    'react': 'React',
     'react-dom': 'ReactDOM',
     'react-router': 'ReactRouter',
     'react-router-dom': 'ReactRouterDOM',

@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import ReactDom from "react-dom";
 
 import {AppCtx} from "../locales/AppCtx";

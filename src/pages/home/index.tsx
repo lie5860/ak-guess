@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import dayjs from "dayjs";
 import {DAILY_MODE, modeI18nKeyDict, PARADOX_MODE, RANDOM_MODE} from "@/const";
 import {getDailyData} from "@/server";

@@ -1,4 +1,4 @@
-import React, {ErrorInfo} from "React";
+import React, {ErrorInfo} from "react";
 import {reportError} from "../server";
 
 interface State {

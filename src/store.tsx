@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import dayjs from "dayjs";
 
 import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";

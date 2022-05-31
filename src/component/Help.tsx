@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 
 import {DEFAULT_TRY_TIMES, PARADOX_MODE} from "../const";
 import {AppCtx} from '../locales/AppCtx';

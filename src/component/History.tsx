@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 
 import ShareIcon from './ShareIcon'
 import copyCurrentDay from "../utils/copyCurrentDay";
