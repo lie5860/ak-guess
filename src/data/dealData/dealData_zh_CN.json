@@ -4114,5 +4114,56 @@
             "米诺斯"
         ],
         "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "医疗",
+            "咒愈师"
+        ],
+        "name": "濯尘芙蓉",
+        "en": "Hibiscus the Purifier",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_1024_hbisc2",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "驭法铁卫"
+        ],
+        "name": "车尔尼",
+        "en": "Czerny",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 4,
+        "key": "char_4047_pianst",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "术师",
+            "秘术师"
+        ],
+        "name": "黑键",
+        "en": "Ebenholz",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 5,
+        "key": "char_4046_ebnhlz",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "竜崎いち"
     }
 ]
