@@ -3720,5 +3720,59 @@
             "Kazimierz"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mech-accord Caster"
+        ],
+        "name": "Kjera",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 4,
+        "key": "char_4013_kjera",
+        "team": [
+            "Karlan Commercial",
+            "Kjerag"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Defender",
+            "Duelist"
+        ],
+        "name": "Aurora",
+        "en": "",
+        "race": [
+            "Ursus"
+        ],
+        "rarity": 4,
+        "key": "char_422_aurora",
+        "team": [
+            "Karlan Commercial",
+            "Kjerag"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Hexer"
+        ],
+        "name": "Gnosis",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_206_gnosis",
+        "team": [
+            "Karlan Commercial",
+            "Kjerag"
+        ],
+        "painter": "竜崎いち"
     }
 ]

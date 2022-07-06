@@ -3716,5 +3716,59 @@
             "카시미어"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "캐스터",
+            "메카 캐스터"
+        ],
+        "name": "쉐라",
+        "en": "Kjera",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 4,
+        "key": "char_4013_kjera",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "디펜더",
+            "결전자"
+        ],
+        "name": "오로라",
+        "en": "Aurora",
+        "race": [
+            "우르수스"
+        ],
+        "rarity": 4,
+        "key": "char_422_aurora",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "서포터",
+            "약화자"
+        ],
+        "name": "노시스",
+        "en": "Gnosis",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_206_gnosis",
+        "team": [
+            "카란 무역회사",
+            "쉐라그"
+        ],
+        "painter": "竜崎いち"
     }
 ]

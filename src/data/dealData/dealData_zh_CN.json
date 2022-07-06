@@ -4165,5 +4165,58 @@
             "莱塔尼亚"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "术师",
+            "链术师"
+        ],
+        "name": "星源",
+        "en": "Astgenne",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_135_halo",
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "狙击",
+            "投掷手"
+        ],
+        "name": "承曦格雷伊",
+        "en": "Greyy the Lightningbearer",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_1027_greyy2",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "特种",
+            "陷阱师"
+        ],
+        "name": "多萝西",
+        "en": "Dorothy",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 5,
+        "key": "char_4048_doroth",
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "Jacknife"
     }
 ]

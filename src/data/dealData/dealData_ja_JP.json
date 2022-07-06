@@ -3716,5 +3716,59 @@
             "カジミエーシュ"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "術師",
+            "操機術師"
+        ],
+        "name": "イェラ",
+        "en": "Kjera",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 4,
+        "key": "char_4013_kjera",
+        "team": [
+            "カランド貿易",
+            "イェラグ"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "重装",
+            "決闘者"
+        ],
+        "name": "オーロラ",
+        "en": "Aurora",
+        "race": [
+            "ウルサス"
+        ],
+        "rarity": 4,
+        "key": "char_422_aurora",
+        "team": [
+            "カランド貿易",
+            "イェラグ"
+        ],
+        "painter": "LAL!ROLE"
+    },
+    {
+        "className": [
+            "補助",
+            "呪詛師"
+        ],
+        "name": "ノーシス",
+        "en": "Gnosis",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_206_gnosis",
+        "team": [
+            "カランド貿易",
+            "イェラグ"
+        ],
+        "painter": "竜崎いち"
     }
 ]
