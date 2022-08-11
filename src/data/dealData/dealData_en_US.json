@@ -3774,5 +3774,110 @@
             "Kjerag"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Tactician"
+        ],
+        "name": "Blacknight",
+        "en": "",
+        "race": [
+            "Savra"
+        ],
+        "rarity": 4,
+        "key": "char_476_blkngt",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "Kroos the Keen Glint",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 4,
+        "key": "char_1021_kroos2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Defender",
+            "Arts Protector"
+        ],
+        "name": "Shalem",
+        "en": "",
+        "race": [
+            "Phidia"
+        ],
+        "rarity": 4,
+        "key": "char_4025_aprot2",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Abjurer"
+        ],
+        "name": "Nine-Colored Deer",
+        "en": "",
+        "race": [
+            "Elafia"
+        ],
+        "rarity": 4,
+        "key": "char_4019_ncdeer",
+        "team": [
+            "Yan"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Summoner"
+        ],
+        "name": "Ling",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_2023_ling",
+        "team": [
+            "Yan",
+            "Sui"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Merchant"
+        ],
+        "name": "Lee",
+        "en": "",
+        "race": [
+            "Lung"
+        ],
+        "rarity": 5,
+        "key": "char_322_lmlee",
+        "team": [
+            "Lee's Detective Agency",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "KuroBlood"
     }
 ]

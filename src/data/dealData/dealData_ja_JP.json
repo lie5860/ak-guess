@@ -3770,5 +3770,110 @@
             "イェラグ"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "先鋒",
+            "戦術家"
+        ],
+        "name": "ブラックナイト",
+        "en": "Blacknight",
+        "race": [
+            "サヴラ"
+        ],
+        "rarity": 4,
+        "key": "char_476_blkngt",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "寒芒クルース",
+        "en": "Kroos the Keen Glint",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 4,
+        "key": "char_1021_kroos2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "術技衛士"
+        ],
+        "name": "シャレム",
+        "en": "Shalem",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 4,
+        "key": "char_4025_aprot2",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "補助",
+            "祈祷師"
+        ],
+        "name": "九色鹿",
+        "en": "Nine-Colored Deer",
+        "race": [
+            "エラフィア"
+        ],
+        "rarity": 4,
+        "key": "char_4019_ncdeer",
+        "team": [
+            "炎"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "補助",
+            "召喚師"
+        ],
+        "name": "リィン",
+        "en": "Ling",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_2023_ling",
+        "team": [
+            "炎",
+            "歳"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "特殊",
+            "行商人"
+        ],
+        "name": "リー",
+        "en": "Lee",
+        "race": [
+            "龍"
+        ],
+        "rarity": 5,
+        "key": "char_322_lmlee",
+        "team": [
+            "リー探偵事務所",
+            "炎",
+            "龍門"
+        ],
+        "painter": "KuroBlood"
     }
 ]

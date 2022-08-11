@@ -4218,5 +4218,73 @@
             "哥伦比亚"
         ],
         "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "晓歌",
+        "en": "Cantabile",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_497_ctable",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "至简",
+        "en": "Minimalist",
+        "race": [
+            "杜林"
+        ],
+        "rarity": 4,
+        "key": "char_4054_malist",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "狙击",
+            "重射手"
+        ],
+        "name": "鸿雪",
+        "en": "Позёмка",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_4055_bgsnow",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "百炼嘉维尔",
+        "en": "Gavial the Invincible",
+        "race": [
+            "阿达克利斯"
+        ],
+        "rarity": 5,
+        "key": "char_1026_gvial2",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "LLC"
     }
 ]
