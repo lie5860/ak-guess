@@ -1069,7 +1069,7 @@
     {
         "className": [
             "重装",
-            "铁卫"
+            "哨戒铁卫"
         ],
         "name": "雷蛇",
         "en": "Liskarm",
@@ -3189,7 +3189,7 @@
     {
         "className": [
             "重装",
-            "铁卫"
+            "哨戒铁卫"
         ],
         "name": "闪击",
         "en": "Blitz",
@@ -4286,5 +4286,39 @@
             "罗德岛"
         ],
         "painter": "LLC"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "但书",
+        "en": "Proviso",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "key": "char_4032_provs",
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "せんむ"
+    },
+    {
+        "className": [
+            "近卫",
+            "解放者"
+        ],
+        "name": "玛恩纳",
+        "en": "Młynar",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 5,
+        "key": "char_4064_mlynar",
+        "team": [
+            "卡西米尔"
+        ],
+        "painter": "竜崎いち"
     }
 ]
