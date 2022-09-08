@@ -3879,5 +3879,39 @@
             "Lungmen"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Abjurer"
+        ],
+        "name": "Quercus",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_492_quercu",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mech-accord Caster"
+        ],
+        "name": "Goldenglow",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_377_gdglow",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Namie"
     }
 ]

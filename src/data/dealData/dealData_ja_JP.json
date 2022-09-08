@@ -3875,5 +3875,39 @@
             "龍門"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "補助",
+            "祈祷師"
+        ],
+        "name": "クエルクス",
+        "en": "Quercus",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_492_quercu",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "術師",
+            "操機術師"
+        ],
+        "name": "ゴールデングロー",
+        "en": "Goldenglow",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_377_gdglow",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Namie"
     }
 ]

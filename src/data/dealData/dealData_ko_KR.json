@@ -3875,5 +3875,39 @@
             "용문"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "서포터",
+            "비호자"
+        ],
+        "name": "퀘르쿠스",
+        "en": "Quercus",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_492_quercu",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "캐스터",
+            "메카 캐스터"
+        ],
+        "name": "골든글로우",
+        "en": "Goldenglow",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_377_gdglow",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Namie"
     }
 ]
