@@ -4320,5 +4320,22 @@
             "卡西米尔"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "罗小黑",
+        "en": "Luo Xiaohei",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 3,
+        "key": "char_4067_lolxh",
+        "team": [
+            "炎"
+        ],
+        "painter": "九日九号"
     }
 ]
