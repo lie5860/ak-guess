@@ -3913,5 +3913,56 @@
             "Victoria"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Push Stroker"
+        ],
+        "name": "Enforcer",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 4,
+        "key": "char_4036_forcer",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Dollkeeper"
+        ],
+        "name": "Kazemaru",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4016_kazema",
+        "team": [
+            "Higashi"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Artilleryman"
+        ],
+        "name": "Fiammetta",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_300_phenxi",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "幻象黑兔"
     }
 ]

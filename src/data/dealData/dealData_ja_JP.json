@@ -3909,5 +3909,56 @@
             "ヴィクトリア"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "特殊",
+            "推撃手"
+        ],
+        "name": "エンフォーサー",
+        "en": "Enforcer",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 4,
+        "key": "char_4036_forcer",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "特殊",
+            "傀儡師"
+        ],
+        "name": "カゼマル",
+        "en": "Kazemaru",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4016_kazema",
+        "team": [
+            "極東"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙撃",
+            "榴弾射手"
+        ],
+        "name": "フィアメッタ",
+        "en": "Fiammetta",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_300_phenxi",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "幻象黑兔"
     }
 ]

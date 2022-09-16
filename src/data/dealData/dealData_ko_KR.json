@@ -3909,5 +3909,56 @@
             "빅토리아"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "추격자"
+        ],
+        "name": "인포서",
+        "en": "Enforcer",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 4,
+        "key": "char_4036_forcer",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "인형사"
+        ],
+        "name": "카제마루",
+        "en": "Kazemaru",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_4016_kazema",
+        "team": [
+            "극동"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "피아메타",
+        "en": "Fiammetta",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_300_phenxi",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "幻象黑兔"
     }
 ]
