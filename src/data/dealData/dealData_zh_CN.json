@@ -4337,5 +4337,22 @@
             "炎"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "近卫",
+            "收割者"
+        ],
+        "name": "海沫",
+        "en": "Highmore",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "key": "char_4066_highmo",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "Horin"
     }
 ]
