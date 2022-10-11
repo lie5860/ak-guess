@@ -4354,5 +4354,74 @@
             "伊比利亚"
         ],
         "painter": "Horin"
+    },
+    {
+        "className": [
+            "狙击",
+            "攻城手"
+        ],
+        "name": "铅踝",
+        "en": "Totter",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 3,
+        "key": "char_4062_totter",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "达格达",
+        "en": "Dagda",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_157_dagda",
+        "team": [
+            "格拉斯哥帮",
+            "维多利亚"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "医疗",
+            "链愈师"
+        ],
+        "name": "明椒",
+        "en": "Paprika",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4071_peper",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "白铁",
+        "en": "Stainless",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_4072_ironmn",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "一千"
     }
 ]
