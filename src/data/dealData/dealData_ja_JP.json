@@ -3960,5 +3960,73 @@
             "ラテラーノ"
         ],
         "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "医療",
+            "放浪医"
+        ],
+        "name": "チェストナット",
+        "en": "Chestnut",
+        "race": [
+            "ドゥリン"
+        ],
+        "rarity": 3,
+        "key": "char_4041_chnut",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "術師",
+            "操機術師"
+        ],
+        "name": "ロックロック",
+        "en": "Rockrock",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4040_rockr",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "補助",
+            "吟遊者"
+        ],
+        "name": "ハイディ",
+        "en": "Heidi",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4045_heidi",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "重装",
+            "堅城砲手"
+        ],
+        "name": "ホルン",
+        "en": "Horn",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 5,
+        "key": "char_4039_horn",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "m9nokuro"
     }
 ]

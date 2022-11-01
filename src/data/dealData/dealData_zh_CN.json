@@ -4423,5 +4423,109 @@
             "维多利亚"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "近卫",
+            "重剑手"
+        ],
+        "name": "石英",
+        "en": "Quartz",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 3,
+        "key": "char_4063_quartz",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "雪绒",
+        "en": "Qanipalaat",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "key": "char_466_qanik",
+        "team": [
+            "萨米"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "狙击",
+            "神射手"
+        ],
+        "name": "子月",
+        "en": "Lunacub",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "key": "char_4014_lunacu",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "伺夜",
+        "en": "Vigil",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_427_vigil",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "hou"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "缄默德克萨斯",
+        "en": "Texas the Omertosa",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_1028_texas2",
+        "team": [
+            "企鹅物流",
+            "炎",
+            "龙门"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "重装",
+            "不屈者"
+        ],
+        "name": "斥罪",
+        "en": "Penance",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_4065_judge",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "IRIS_呓"
     }
 ]

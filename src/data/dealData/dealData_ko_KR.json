@@ -3960,5 +3960,73 @@
             "라테라노"
         ],
         "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "메딕",
+            "방랑 메딕"
+        ],
+        "name": "체스트넛",
+        "en": "Chestnut",
+        "race": [
+            "두린"
+        ],
+        "rarity": 3,
+        "key": "char_4041_chnut",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "캐스터",
+            "메카 캐스터"
+        ],
+        "name": "락락",
+        "en": "Rockrock",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_4040_rockr",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "서포터",
+            "음유시인"
+        ],
+        "name": "하이디",
+        "en": "Heidi",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_4045_heidi",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "디펜더",
+            "포트리스"
+        ],
+        "name": "혼",
+        "en": "Horn",
+        "race": [
+            "루포"
+        ],
+        "rarity": 5,
+        "key": "char_4039_horn",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "m9nokuro"
     }
 ]

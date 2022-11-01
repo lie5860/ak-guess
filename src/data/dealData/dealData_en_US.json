@@ -3964,5 +3964,73 @@
             "Laterano"
         ],
         "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Medic",
+            "Wandering Medic"
+        ],
+        "name": "Chestnut",
+        "en": "",
+        "race": [
+            "Durin"
+        ],
+        "rarity": 3,
+        "key": "char_4041_chnut",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mech-accord Caster"
+        ],
+        "name": "Rockrock",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4040_rockr",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Bard"
+        ],
+        "name": "Heidi",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4045_heidi",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "熊太"
+    },
+    {
+        "className": [
+            "Defender",
+            "Fortress"
+        ],
+        "name": "Horn",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_4039_horn",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "m9nokuro"
     }
 ]
