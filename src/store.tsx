@@ -332,8 +332,13 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     setRestList(initData);
     saveData('restList', initData);
   }
-  const judgeWin = (data: GuessItem[]) => (data?.[data?.length - 1]?.guess?.restList?.length === 1)
-    && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
+  const allCorrectKey = COLUMNS.map(() => 'correct').join('|')
+  const judgeWin = (data: GuessItem[]) => {
+    const over = (data?.[data?.length - 1]?.guess?.restList?.length === 1)
+      && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
+    const key = COLUMNS.map(v => data?.[data?.length - 1]?.[v?.key]).join('|')
+    return over || key === allCorrectKey;
+  }
   const judgeOver = (data: GuessItem[]) => judgeWin(data) || isGiveUp as boolean;
   const isOver = judgeOver(data)
   const answer = chartsData[restList[0]];
@@ -373,7 +378,6 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       const timesArr = Object.keys(timesDict)
       timesArr.forEach(k => {
         const {time} = timesDict[k];
-        const allCorrectKey = COLUMNS.map(() => 'correct').join('|')
         const needSkip = timesArr.length > 1 && time === 1 && k === allCorrectKey
         // 相同的情况如何处理 todo????
         if (maxData.time < time && !needSkip) {
