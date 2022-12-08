@@ -4032,5 +4032,74 @@
             "Victoria"
         ],
         "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Artificer"
+        ],
+        "name": "Windflit",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_433_windft",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "nineo"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Dollkeeper"
+        ],
+        "name": "Specter the Unchained",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_1023_ghost2",
+        "team": [
+            "Abyssal Hunters",
+            "Ægir"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Medic",
+            "Therapist"
+        ],
+        "name": "Lumen",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_4042_lumen",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "Guard",
+            "Swordmaster"
+        ],
+        "name": "Irene",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_4009_irene",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "aZLing4"
     }
 ]

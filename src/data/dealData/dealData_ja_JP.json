@@ -4028,5 +4028,74 @@
             "ヴィクトリア"
         ],
         "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "補助",
+            "工匠"
+        ],
+        "name": "ウインドフリット",
+        "en": "Windflit",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_433_windft",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "nineo"
+    },
+    {
+        "className": [
+            "特殊",
+            "傀儡師"
+        ],
+        "name": "帰溟スペクター",
+        "en": "Specter the Unchained",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_1023_ghost2",
+        "team": [
+            "アビサル",
+            "エーギル"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "医療",
+            "療養師"
+        ],
+        "name": "ルーメン",
+        "en": "Lumen",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_4042_lumen",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "前衛",
+            "剣豪"
+        ],
+        "name": "アイリーニ",
+        "en": "Irene",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_4009_irene",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "aZLing4"
     }
 ]

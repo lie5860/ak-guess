@@ -4028,5 +4028,74 @@
             "빅토리아"
         ],
         "painter": "m9nokuro"
+    },
+    {
+        "className": [
+            "서포터",
+            "기능공"
+        ],
+        "name": "윈드플릿",
+        "en": "Windflit",
+        "race": [
+            "페로"
+        ],
+        "rarity": 4,
+        "key": "char_433_windft",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "nineo"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "인형사"
+        ],
+        "name": "스펙터 디 언체인드",
+        "en": "Specter the Unchained",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_1023_ghost2",
+        "team": [
+            "어비설 헌터스",
+            "에기르"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "메딕",
+            "테라피스트"
+        ],
+        "name": "루멘",
+        "en": "Lumen",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_4042_lumen",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "가드",
+            "소드마스터"
+        ],
+        "name": "아이린",
+        "en": "Irene",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_4009_irene",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "aZLing4"
     }
 ]
