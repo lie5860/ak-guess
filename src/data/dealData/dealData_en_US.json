@@ -2735,7 +2735,7 @@
         "name": "Eunectes",
         "en": "",
         "race": [
-            "Pythia"
+            "Phidia/Pythia"
         ],
         "rarity": 5,
         "key": "char_416_zumama",
@@ -3369,7 +3369,7 @@
         "name": "Indigo",
         "en": "",
         "race": [
-            "Phidia"
+            "Phidia/Pythia"
         ],
         "rarity": 3,
         "key": "char_469_indigo",
@@ -3624,7 +3624,7 @@
         "name": "Corroserum",
         "en": "",
         "race": [
-            "Phidia"
+            "Phidia/Pythia"
         ],
         "rarity": 4,
         "key": "char_489_serum",
@@ -3817,7 +3817,7 @@
         "name": "Shalem",
         "en": "",
         "race": [
-            "Phidia"
+            "Phidia/Pythia"
         ],
         "rarity": 4,
         "key": "char_4025_aprot2",

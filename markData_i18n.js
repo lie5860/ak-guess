@@ -11,6 +11,14 @@ const serversDict = {
     'ko_KR': {raceName: '[종족]'}
 };
 
+// 需要处理错别字的种族
+const fixRaceData = {
+    'zh_CN': [],
+    'en_US': [["Phidia","Pythia"]],
+    'ja_JP': [],
+    'ko_KR': []
+};
+
 function writeFileByUser(filePath, ...rest) {
     if (fs.existsSync(filePath)) {
     } else {
@@ -46,7 +54,7 @@ const writeJsonByLangAndName = async (language, jsonName) => {
 }
 const main = async () => {
     // 这是一个开关 todo
-    if (true) {
+    if (false) {
         const queryList = []
         Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
         for (let i = 0; i < queryList.length; i++) {
@@ -132,6 +140,18 @@ const main = async () => {
             race = race.substring(0, race.indexOf("\n")).trim();
             race = convertText(race);
             chapter.race = race.split("/");
+            if (fixRaceData[server].length > 0) {
+                // 特殊处理对应服务器的种族错别字
+                for (var i = 0; i < chapter.race.length; ++i) {
+                    for (const fixData of fixRaceData[server]) {
+                        for (var j = 0; j < fixData.length; ++j) {
+                            if (chapter.race[i] == fixData[j]) {
+                                chapter.race[i] = fixData.join("/");
+                            }
+                        }
+                    }
+                }
+            }
         }
         return chapter;
     }
@@ -175,7 +195,7 @@ const main = async () => {
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-        afterDealData({chartsData, server})
+        // afterDealData({chartsData, server})
         console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
     }
 
