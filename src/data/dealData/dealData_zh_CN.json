@@ -4527,5 +4527,58 @@
             "叙拉古"
         ],
         "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "谜图",
+        "en": "Puzzle",
+        "race": [
+            "瓦伊凡"
+        ],
+        "rarity": 4,
+        "key": "char_4017_puzzle",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "kan"
+    },
+    {
+        "className": [
+            "术师",
+            "秘术师"
+        ],
+        "name": "和弦",
+        "en": "Harmonie",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_297_hamoni",
+        "team": [
+            "深池",
+            "维多利亚"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "医疗",
+            "咒愈师"
+        ],
+        "name": "焰影苇草",
+        "en": "Reed The Flame Shadow",
+        "race": [
+            "德拉克"
+        ],
+        "rarity": 5,
+        "key": "char_1020_reed2",
+        "team": [
+            "深池",
+            "维多利亚"
+        ],
+        "painter": "STAR影法师"
     }
 ]
