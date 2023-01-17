@@ -30,7 +30,7 @@ const Guide = () => {
         setData(filterDataByInputVal(e.target.value, baseData, aliasData))
       }} placeholder={i18n.get('inputTip')}/>
     </div>
-    <div style={{height: 'calc(100% - 80px)', overflow: "auto"}}>
+    <div style={{height: 'calc(100% - 90px)', overflow: "auto"}}>
       <div className="mdui-panel" mdui-panel="{accordion: true}">
         {data.map((v: any) => {
           const index = v?.index;
