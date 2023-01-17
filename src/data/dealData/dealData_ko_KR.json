@@ -4097,5 +4097,141 @@
             "이베리아"
         ],
         "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "에이전트"
+        ],
+        "name": "칸타빌레",
+        "en": "Cantabile",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_497_ctable",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "캐스터",
+            "메카 캐스터"
+        ],
+        "name": "미니멀리스트",
+        "en": "Minimalist",
+        "race": [
+            "두린"
+        ],
+        "rarity": 4,
+        "key": "char_4054_malist",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "메딕",
+            "주술 메딕"
+        ],
+        "name": "히비스커스 더 퓨리파이어",
+        "en": "Hibiscus the Purifier",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_1024_hbisc2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "디펜더",
+            "아츠 프로텍터"
+        ],
+        "name": "체르니",
+        "en": "Czerny",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 4,
+        "key": "char_4047_pianst",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "공성사수"
+        ],
+        "name": "에라토",
+        "en": "Erato",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_4043_erato",
+        "team": [
+            "미노스"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "헤비슈터"
+        ],
+        "name": "파죰카",
+        "en": "Позёмка",
+        "race": [
+            "루포"
+        ],
+        "rarity": 5,
+        "key": "char_4055_bgsnow",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "캐스터",
+            "미스틱 캐스터"
+        ],
+        "name": "에벤홀츠",
+        "en": "Ebenholz",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 5,
+        "key": "char_4046_ebnhlz",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "가비알 디 인빈서블",
+        "en": "Gavial the Invincible",
+        "race": [
+            "아다크리스"
+        ],
+        "rarity": 5,
+        "key": "char_1026_gvial2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "LLC"
     }
 ]

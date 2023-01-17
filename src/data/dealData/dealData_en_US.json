@@ -4024,7 +4024,7 @@
         "name": "Horn",
         "en": "",
         "race": [
-            "Feline"
+            "Lupo"
         ],
         "rarity": 5,
         "key": "char_4039_horn",
@@ -4101,5 +4101,141 @@
             "Iberia"
         ],
         "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Agent"
+        ],
+        "name": "Cantabile",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_497_ctable",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mech-accord Caster"
+        ],
+        "name": "Minimalist",
+        "en": "",
+        "race": [
+            "Durin"
+        ],
+        "rarity": 4,
+        "key": "char_4054_malist",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "Medic",
+            "Incantation Medic"
+        ],
+        "name": "Hibiscus the Purifier",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_1024_hbisc2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Defender",
+            "Arts Protector"
+        ],
+        "name": "Czerny",
+        "en": "",
+        "race": [
+            "Elafia"
+        ],
+        "rarity": 4,
+        "key": "char_4047_pianst",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Besieger"
+        ],
+        "name": "Erato",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_4043_erato",
+        "team": [
+            "Minos"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Heavyshooter"
+        ],
+        "name": "Pozëmka",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 5,
+        "key": "char_4055_bgsnow",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mystic Caster"
+        ],
+        "name": "Ebenholz",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 5,
+        "key": "char_4046_ebnhlz",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Guard",
+            "Centurion"
+        ],
+        "name": "Gavial the Invincible",
+        "en": "",
+        "race": [
+            "Archosauria"
+        ],
+        "rarity": 5,
+        "key": "char_1026_gvial2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "LLC"
     }
 ]

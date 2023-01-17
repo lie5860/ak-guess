@@ -4097,5 +4097,141 @@
             "イベリア"
         ],
         "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "先鋒",
+            "偵察兵"
+        ],
+        "name": "カンタービレ",
+        "en": "Cantabile",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_497_ctable",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "術師",
+            "操機術師"
+        ],
+        "name": "ミニマリスト",
+        "en": "Minimalist",
+        "race": [
+            "ドゥリン"
+        ],
+        "rarity": 4,
+        "key": "char_4054_malist",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "医療",
+            "呪癒師"
+        ],
+        "name": "濯塵ハイビスカス",
+        "en": "Hibiscus the Purifier",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_1024_hbisc2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "術技衛士"
+        ],
+        "name": "ツェルニー",
+        "en": "Czerny",
+        "race": [
+            "エラフィア"
+        ],
+        "rarity": 4,
+        "key": "char_4047_pianst",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "狙撃",
+            "破城射手"
+        ],
+        "name": "エラト",
+        "en": "Erato",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_4043_erato",
+        "team": [
+            "ミノス"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙撃",
+            "精密射手"
+        ],
+        "name": "パゼオンカ",
+        "en": "Позёмка",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 5,
+        "key": "char_4055_bgsnow",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "術師",
+            "秘術師"
+        ],
+        "name": "エーベンホルツ",
+        "en": "Ebenholz",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 5,
+        "key": "char_4046_ebnhlz",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "前衛",
+            "強襲者"
+        ],
+        "name": "百錬ガヴィル",
+        "en": "Gavial the Invincible",
+        "race": [
+            "アダクリス"
+        ],
+        "rarity": 5,
+        "key": "char_1026_gvial2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "LLC"
     }
 ]
