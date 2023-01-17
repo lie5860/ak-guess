@@ -1,0 +1,25 @@
+name: MainWorkflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Build Game
+        run: |
+          npm install
+          npm build
+      - uses: manyuanrong/setup-ossutil@v1.0
+        with:
+          # endpoint 可以去oss控制台上查看
+          endpoint: "oss-cn-hangzhou.aliyuncs.com"
+          # 使用我们之前配置在secrets里面的accesskeys来配置ossutil
+          access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+          access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
+      - name: Deply To OSS
+        run: ossutil cp dist oss://ak-guess/index/ -rf
