@@ -13,7 +13,7 @@ jobs:
       - name: Build Game
         run: |
           npm install
-          npm build
+          npm run build
       - uses: manyuanrong/setup-ossutil@v2.0
         with:
           # endpoint 可以去oss控制台上查看
