@@ -84,8 +84,10 @@ const main = async () => {
         uniequip = require(`./data/${server}/uniequip_table.json`)
         // 阵营信息
         team = require(`./data/${server}/handbook_team_table.json`)
-        // 皮肤信息，主要拿默认皮的画师
+        // 档案信息，主要拿种族
         handbook = require(`./data/${server}/handbook_info_table.json`)
+        // 皮肤信息，主要拿默认皮的画师
+        skin = require(`./data/${server}/skin_table.json`)
 
         // 主职业信息没有文件描述，要自己编写，反正一次性工作
         profession = require(`./data/${server}/profession.json`)
@@ -126,10 +128,13 @@ const main = async () => {
         chapter.team = [...new Set(tempTeam.join('-').replace('−','-').split('-').filter(v => v))];
         if (isPatch) {
             chapter.name += "(" + profession[v.profession] + ")";
-            k = patchDefault[k];
-            chapter.painter = handbook.handbookDict[k].drawName;
+            let r = patchDefault[k];
+            let sk = skin.charSkins[skin.buildinPatchMap[r][k]];
+            k = r;
+            chapter.painter = sk?.displaySkin?.drawerName || sk?.displaySkin?.drawerList[0];
         } else {
-            chapter.painter = handbook.handbookDict[k].drawName;
+            let sk = skin.charSkins[skin.buildinEvolveMap[k][0]];
+            chapter.painter = sk?.displaySkin?.drawerName || sk?.displaySkin?.drawerList[0];
         }
         // 种族信息从档案中解析对应文本
         let storyText = handbook.handbookDict[k].storyTextAudio[0].stories[0].storyText;
@@ -195,7 +200,7 @@ const main = async () => {
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-        // afterDealData({chartsData, server})
+        afterDealData({chartsData, server})
         console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
     }
 
