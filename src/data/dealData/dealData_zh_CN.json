@@ -4650,5 +4650,39 @@
             "岁"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "近卫",
+            "重剑手"
+        ],
+        "name": "铎铃",
+        "en": "Wind Chimes",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "key": "char_4083_chimes",
+        "team": [
+            "炎"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "仇白",
+        "en": "Qiubai",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 5,
+        "key": "char_4082_qiubai",
+        "team": [
+            "炎"
+        ],
+        "painter": "温泉瓜"
     }
 ]

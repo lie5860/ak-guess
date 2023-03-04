@@ -27523,6 +27523,102 @@
         "onPeriod": 15
       }
     },
+    "char_211_adnach@sale#5": {
+      "skinId": "char_211_adnach@sale#5",
+      "charId": "char_211_adnach",
+      "tokenSkinMap": null,
+      "illustId": "illust_char_211_adnach_sale#5",
+      "dynIllustId": null,
+      "avatarId": "char_211_adnach_sale#5",
+      "portraitId": "char_211_adnach_sale#5",
+      "dynPortraitId": null,
+      "dynEntranceId": null,
+      "buildingId": "char_211_adnach_sale#5",
+      "battleSkin": {
+        "overwritePrefab": false,
+        "skinOrPrefabId": "char_211_adnach_sale#5"
+      },
+      "isBuySkin": true,
+      "tmplId": null,
+      "voiceId": null,
+      "voiceType": "NONE",
+      "displaySkin": {
+        "skinName": "足跡なき使者",
+        "colorList": [
+          "#819aab",
+          "#2192ae",
+          "#1c2024",
+          "#56768b",
+          "#335164",
+          "",
+          ""
+        ],
+        "titleList": [],
+        "modelName": "Adnachiel",
+        "drawerName": "一立里子",
+        "skinGroupId": "2022#sale#2",
+        "skinGroupName": "TestCollection/VI",
+        "skinGroupSortIndex": 7,
+        "content": "<color name=#ffffff>テストコレクション/足跡なき使者。ラテラーノ教皇庁がレガトゥスのために特注した衣装であり、これを受け取るサンクタには共通点があった。彼らの光輪はどれも普通とは少し違っていたのだ。</color>",
+        "dialog": "テストコレクション/足跡なき使者。ラテラーノ教皇庁がレガトゥスのために特注した衣装であり、これを受け取るサンクタには共通点があった。彼らの光輪はどれも普通とは少し違っていたのだ。",
+        "usage": "アドナキエルの私服。",
+        "description": "チームメイトたちと再会するその日まで、彼はレガトゥスとしてテラの諸国を渡り歩く。",
+        "obtainApproach": "イベント",
+        "sortId": 7,
+        "displayTagId": "イベント",
+        "getTime": 1676617200,
+        "onYear": 3,
+        "onPeriod": 2
+      }
+    },
+    "char_103_angel@sale#8": {
+      "skinId": "char_103_angel@sale#8",
+      "charId": "char_103_angel",
+      "tokenSkinMap": null,
+      "illustId": "illust_char_103_angel_sale#8",
+      "dynIllustId": null,
+      "avatarId": "char_103_angel_sale#8",
+      "portraitId": "char_103_angel_sale#8",
+      "dynPortraitId": null,
+      "dynEntranceId": null,
+      "buildingId": "char_103_angel_sale#8",
+      "battleSkin": {
+        "overwritePrefab": false,
+        "skinOrPrefabId": "char_103_angel_sale#8"
+      },
+      "isBuySkin": true,
+      "tmplId": null,
+      "voiceId": null,
+      "voiceType": "NONE",
+      "displaySkin": {
+        "skinName": "真夜中の配達人",
+        "colorList": [
+          "#3e4b86",
+          "#263459",
+          "#7d3b3a",
+          "#656a75",
+          "#1391aa",
+          "",
+          ""
+        ],
+        "titleList": [],
+        "modelName": "Exusiai",
+        "drawerName": "尾鱼",
+        "skinGroupId": "2023#sale",
+        "skinGroupName": "TestCollection/IX",
+        "skinGroupSortIndex": 8,
+        "content": "<color name=#ffffff>テストコレクション/真夜中の配達人。業務上必要になったため、エクシア用にロドスが作った制服。以来時折龍門で、彼女がこの服を着ている姿を見かけることがある。</color>",
+        "dialog": "テストコレクション/真夜中の配達人。業務上必要になったため、エクシア用にロドスが作った制服。以来時折龍門で、彼女がこの服を着ている姿を見かけることがある。",
+        "usage": "エクシアの私服。",
+        "description": "ドクターたちが龍門に到着する前夜、エクシアとテキサスはすでに必要な情報をすべて収集し終えていた。けれども帰って休憩する前に、テキサスは無理やり彼女にロドスから提供された制服を着せ、行動プランの演習をした。",
+        "obtainApproach": "特典",
+        "sortId": 8,
+        "displayTagId": "特典",
+        "getTime": 1677034800,
+        "onYear": 3,
+        "onPeriod": 2
+      }
+    },
     "char_208_melan@epoque#1": {
       "skinId": "char_208_melan@epoque#1",
       "charId": "char_208_melan",
@@ -31682,6 +31778,54 @@
         "getTime": 1636606800,
         "onYear": 1,
         "onPeriod": 11
+      }
+    },
+    "char_356_broca@marthe#4": {
+      "skinId": "char_356_broca@marthe#4",
+      "charId": "char_356_broca",
+      "tokenSkinMap": null,
+      "illustId": "illust_char_356_broca_marthe#4",
+      "dynIllustId": null,
+      "avatarId": "char_356_broca_marthe#4",
+      "portraitId": "char_356_broca_marthe#4",
+      "dynPortraitId": null,
+      "dynEntranceId": null,
+      "buildingId": "char_356_broca_marthe#4",
+      "battleSkin": {
+        "overwritePrefab": false,
+        "skinOrPrefabId": "char_356_broca_marthe#4"
+      },
+      "isBuySkin": true,
+      "tmplId": null,
+      "voiceId": null,
+      "voiceType": "NONE",
+      "displaySkin": {
+        "skinName": "インターバル",
+        "colorList": [
+          "#3c5164",
+          "#fffffa",
+          "#3c5164",
+          "#8aaac7",
+          "#2d3430",
+          "",
+          ""
+        ],
+        "titleList": [],
+        "modelName": "Broca",
+        "drawerName": "Infukun",
+        "skinGroupId": "2022#marthe",
+        "skinGroupName": "Marthe/IV",
+        "skinGroupSortIndex": 45,
+        "content": "<color name=#ffffff>MARTHEスポーツウェアニューモデル/インターバル。本格的な体作り向けのウェアで、伸縮性に富み肌触りの良い生地を使っている。通気性も高く、運動には最適。</color>",
+        "dialog": "MARTHEスポーツウェアニューモデル/インターバル。本格的な体作り向けのウェアで、伸縮性に富み肌触りの良い生地を使っている。通気性も高く、運動には最適。",
+        "usage": "ブローカのスポーツウェア。",
+        "description": "身体を動かしていても、休んでいても、いつも無口な彼の内面を理解できる人はほとんどいない。",
+        "obtainApproach": "イベント",
+        "sortId": 91,
+        "displayTagId": "危機契約",
+        "getTime": 1675407600,
+        "onYear": 3,
+        "onPeriod": 1
       }
     },
     "token_10003_cgbird_bird_witch#1": {
@@ -38082,6 +38226,8 @@
     "sale": {
       "brandId": "sale",
       "groupList": [
+        "2023#sale",
+        "2022#sale#2",
         "2022#sale",
         "2020#sale#3",
         "2020#sale#2",
@@ -38092,7 +38238,7 @@
       "brandName": "TestCollection",
       "brandCapitalName": "TEST COLLECTION",
       "description": "今までもこれからもオンリーワン\n//Test Collection\n――資格認証済\n――発注書非公開\n//完全受注生産品、製作期間：6～8週間\n//Rights Reserved",
-      "sortId": 6
+      "sortId": 8
     },
     "epoque": {
       "brandId": "epoque",
@@ -38175,7 +38321,6 @@
       ],
       "kvImgIdList": [
         "kv_summer7",
-        "kv_summer6",
         "kv_summer5",
         "kv_summer4",
         "kv_summer3",
@@ -38190,6 +38335,7 @@
     "marthe": {
       "brandId": "marthe",
       "groupList": [
+        "2022#marthe",
         "2021#marthe",
         "2020#marthe#2",
         "2020#marthe"
@@ -38198,7 +38344,7 @@
       "brandName": "Marthe",
       "brandCapitalName": "MARTHE",
       "description": "死力を尽くせ\n話題の有名スポーツブランド。カズデルの有名デザイナーが手掛け、各国のスポーツファッションブランド市場においても長きにわたり不動の人気を誇る。その中でも、ウルサスの人々から熱狂的な支持を受けている。傘下には他にも数多くのブランドが連なり、顧客の複雑な要求にも親身に寄り添う。",
-      "sortId": 44
+      "sortId": 45
     },
     "witch": {
       "brandId": "witch",
