@@ -4684,5 +4684,58 @@
             "炎"
         ],
         "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙击",
+            "投掷手"
+        ],
+        "name": "泰拉大陆调查团",
+        "en": "Terra Research Commission",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 0,
+        "key": "char_4077_palico",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "桃色Miruku"
+    },
+    {
+        "className": [
+            "近卫",
+            "武者"
+        ],
+        "name": "火龙S黑角",
+        "en": "Rathalos S Noir Corne",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 4,
+        "key": "char_1030_noirc2",
+        "team": [
+            "行动组A4",
+            "罗德岛"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "麒麟X夜刀",
+        "en": "Kirin X Yato",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 5,
+        "key": "char_1029_yato2",
+        "team": [
+            "行动组A4",
+            "罗德岛"
+        ],
+        "painter": "一千"
     }
 ]
