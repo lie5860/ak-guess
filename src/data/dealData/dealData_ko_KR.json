@@ -4233,5 +4233,58 @@
             "로도스 아일랜드"
         ],
         "painter": "LLC"
+    },
+    {
+        "className": [
+            "캐스터",
+            "체인 캐스터"
+        ],
+        "name": "아스트젠",
+        "en": "Astgenne",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_135_halo",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "투척수"
+        ],
+        "name": "그레이 더 라이트닝베어러",
+        "en": "Greyy the Lightningbearer",
+        "race": [
+            "페로"
+        ],
+        "rarity": 4,
+        "key": "char_1027_greyy2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "함정술사"
+        ],
+        "name": "도로시",
+        "en": "Dorothy",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 5,
+        "key": "char_4048_doroth",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "Jacknife"
     }
 ]
