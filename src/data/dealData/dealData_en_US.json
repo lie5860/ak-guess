@@ -4237,5 +4237,58 @@
             "Rhodes Island"
         ],
         "painter": "LLC"
+    },
+    {
+        "className": [
+            "Caster",
+            "Chain Caster"
+        ],
+        "name": "Astgenne",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_135_halo",
+        "team": [
+            "Rhine Lab",
+            "Columbia"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Flinger"
+        ],
+        "name": "Greyy the Lightningbearer",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_1027_greyy2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Trapmaster"
+        ],
+        "name": "Dorothy",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 5,
+        "key": "char_4048_doroth",
+        "team": [
+            "Rhine Lab",
+            "Columbia"
+        ],
+        "painter": "Jacknife"
     }
 ]

@@ -4233,5 +4233,58 @@
             "ロドス・アイランド"
         ],
         "painter": "LLC"
+    },
+    {
+        "className": [
+            "術師",
+            "連鎖術師"
+        ],
+        "name": "アステジーニ",
+        "en": "Astgenne",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_135_halo",
+        "team": [
+            "ライン生命",
+            "クルビア"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "狙撃",
+            "投擲手"
+        ],
+        "name": "承曦グレイ",
+        "en": "Greyy the Lightningbearer",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_1027_greyy2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "特殊",
+            "罠師"
+        ],
+        "name": "ドロシー",
+        "en": "Dorothy",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 5,
+        "key": "char_4048_doroth",
+        "team": [
+            "ライン生命",
+            "クルビア"
+        ],
+        "painter": "Jacknife"
     }
 ]
