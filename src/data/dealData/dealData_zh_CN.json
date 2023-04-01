@@ -4737,5 +4737,22 @@
             "罗德岛"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "辅助",
+            "吟游者"
+        ],
+        "name": "U-Official",
+        "en": "U-Official",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 0,
+        "key": "char_4091_ulika",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "折射镜"
     }
 ]

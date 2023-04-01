@@ -4286,5 +4286,56 @@
             "クルビア"
         ],
         "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "前衛",
+            "領主"
+        ],
+        "name": "羅小黒",
+        "en": "Luo Xiaohei",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 3,
+        "key": "char_4067_lolxh",
+        "team": [
+            "炎"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "補助",
+            "緩速師"
+        ],
+        "name": "プロヴァイゾ",
+        "en": "Proviso",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 4,
+        "key": "char_4032_provs",
+        "team": [
+            "カジミエーシュ"
+        ],
+        "painter": "せんむ"
+    },
+    {
+        "className": [
+            "前衛",
+            "解放者"
+        ],
+        "name": "ムリナール",
+        "en": "Młynar",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 5,
+        "key": "char_4064_mlynar",
+        "team": [
+            "カジミエーシュ"
+        ],
+        "painter": "竜崎いち"
     }
 ]

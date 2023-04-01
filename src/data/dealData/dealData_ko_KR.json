@@ -4286,5 +4286,56 @@
             "컬럼비아"
         ],
         "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "나소흑",
+        "en": "Luo Xiaohei",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 3,
+        "key": "char_4067_lolxh",
+        "team": [
+            "염"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "프로바이조",
+        "en": "Proviso",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_4032_provs",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "せんむ"
+    },
+    {
+        "className": [
+            "가드",
+            "해방자"
+        ],
+        "name": "무에나",
+        "en": "Młynar",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 5,
+        "key": "char_4064_mlynar",
+        "team": [
+            "카시미어"
+        ],
+        "painter": "竜崎いち"
     }
 ]

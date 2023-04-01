@@ -4290,5 +4290,56 @@
             "Columbia"
         ],
         "painter": "Jacknife"
+    },
+    {
+        "className": [
+            "Guard",
+            "Lord"
+        ],
+        "name": "Luo Xiaohei",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 3,
+        "key": "char_4067_lolxh",
+        "team": [
+            "Yan"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Decel Binder"
+        ],
+        "name": "Proviso",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 4,
+        "key": "char_4032_provs",
+        "team": [
+            "Kazimierz"
+        ],
+        "painter": "せんむ"
+    },
+    {
+        "className": [
+            "Guard",
+            "Liberator"
+        ],
+        "name": "Młynar",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 5,
+        "key": "char_4064_mlynar",
+        "team": [
+            "Kazimierz"
+        ],
+        "painter": "竜崎いち"
     }
 ]
