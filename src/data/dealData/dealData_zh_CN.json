@@ -4754,5 +4754,74 @@
             "罗德岛"
         ],
         "painter": "折射镜"
+    },
+    {
+        "className": [
+            "近卫",
+            "收割者"
+        ],
+        "name": "休谟斯",
+        "en": "Humus",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 3,
+        "key": "char_491_humus",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "摩根",
+        "en": "Morgan",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_154_morgan",
+        "team": [
+            "格拉斯哥帮",
+            "维多利亚"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "重装",
+            "决战者"
+        ],
+        "name": "洋灰",
+        "en": "Cement",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 4,
+        "key": "char_464_cement",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "科学"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "伊内丝",
+        "en": "Ines",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_4087_ines",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "板板"
     }
 ]
