@@ -1069,7 +1069,7 @@
     {
         "className": [
             "重装",
-            "重盾衛士"
+            "哨戒衛士"
         ],
         "name": "リスカム",
         "en": "Liskarm",
@@ -3189,7 +3189,7 @@
     {
         "className": [
             "重装",
-            "重盾衛士"
+            "哨戒衛士"
         ],
         "name": "Blitz",
         "en": "Blitz",
@@ -4337,5 +4337,74 @@
             "カジミエーシュ"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "狙撃",
+            "破城射手"
+        ],
+        "name": "トター",
+        "en": "Totter",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 3,
+        "key": "char_4062_totter",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "前衛",
+            "闘士"
+        ],
+        "name": "ダグザ",
+        "en": "Dagda",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_157_dagda",
+        "team": [
+            "グラスゴー",
+            "ヴィクトリア"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "医療",
+            "連鎖癒師"
+        ],
+        "name": "パプリカ",
+        "en": "Paprika",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_4071_peper",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "補助",
+            "工匠"
+        ],
+        "name": "ステインレス",
+        "en": "Stainless",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_4072_ironmn",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "一千"
     }
 ]

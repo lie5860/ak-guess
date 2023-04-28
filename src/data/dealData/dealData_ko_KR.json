@@ -1069,7 +1069,7 @@
     {
         "className": [
             "디펜더",
-            "프로텍터"
+            "센트리 프로텍터"
         ],
         "name": "리스캄",
         "en": "Liskarm",
@@ -3189,7 +3189,7 @@
     {
         "className": [
             "디펜더",
-            "프로텍터"
+            "센트리 프로텍터"
         ],
         "name": "Blitz",
         "en": "Blitz",
@@ -4337,5 +4337,74 @@
             "카시미어"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "공성사수"
+        ],
+        "name": "토터",
+        "en": "Totter",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 3,
+        "key": "char_4062_totter",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "다그다",
+        "en": "Dagda",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_157_dagda",
+        "team": [
+            "글래스고",
+            "빅토리아"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "메딕",
+            "체인 메딕"
+        ],
+        "name": "파프리카",
+        "en": "Paprika",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_4071_peper",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "서포터",
+            "기능공"
+        ],
+        "name": "스테인리스",
+        "en": "Stainless",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_4072_ironmn",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "一千"
     }
 ]

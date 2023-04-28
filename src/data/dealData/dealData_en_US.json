@@ -1071,7 +1071,7 @@
     {
         "className": [
             "Defender",
-            "Protector"
+            "Sentinel Protector"
         ],
         "name": "Liskarm",
         "en": "",
@@ -3193,7 +3193,7 @@
     {
         "className": [
             "Defender",
-            "Protector"
+            "Sentinel Protector"
         ],
         "name": "Blitz",
         "en": "",
@@ -4341,5 +4341,74 @@
             "Kazimierz"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Besieger"
+        ],
+        "name": "Totter",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 3,
+        "key": "char_4062_totter",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "Guard",
+            "Fighter"
+        ],
+        "name": "Dagda",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_157_dagda",
+        "team": [
+            "Glasgow",
+            "Victoria"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "Medic",
+            "Chain Medic"
+        ],
+        "name": "Paprika",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_4071_peper",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Artificer"
+        ],
+        "name": "Stainless",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_4072_ironmn",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "一千"
     }
 ]
