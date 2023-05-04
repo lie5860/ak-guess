@@ -107,22 +107,30 @@ const main = async () => {
             // 非正常干员，跳过
             return null;
         }
+        let rarity = null;
+        if (v.rarity != null) {
+            if (isNaN(v.rarity)) {
+                rarity = v.rarity.substring("TIER_".length);
+            } else {
+                rarity = v.rarity;
+            }
+        }
         let chapter = {
             className: [profession[v.profession], uniequip.subProfDict[v.subProfessionId].subProfessionName],
             name: v.name.trim(),
             en: v.appellation.trim(),
             race: "",
-            rarity: Number(v.rarity),
+            rarity: Number(rarity),
             key: k
         };
         let tempTeam = [];
-        if (v.teamId !== null) {
+        if (v.teamId !== undefined && v.teamId !== null) {
             tempTeam.push(team[v.teamId].powerName);
         }
-        if (v.groupId !== null) {
+        if (v.groupId !== undefined && v.groupId !== null) {
             tempTeam.push(team[v.groupId].powerName);
         }
-        if (v.nationId !== null) {
+        if (v.nationId !== undefined && v.nationId !== null) {
             tempTeam.push(team[v.nationId].powerName);
         }
         chapter.team = [...new Set(tempTeam.join('-').replace('−','-').split('-').filter(v => v))];
@@ -137,7 +145,12 @@ const main = async () => {
             chapter.painter = sk?.displaySkin?.drawerName || sk?.displaySkin?.drawerList[0];
         }
         // 种族信息从档案中解析对应文本
-        let storyText = handbook.handbookDict[k].storyTextAudio[0].stories[0].storyText;
+        let profile = handbook.handbookDict[k];
+        if (profile == null) {
+            console.log("角色"+chapter.name+"档案"+k+"缺失，暂不处理");
+            return null;
+        }
+        let storyText = profile.storyTextAudio[0].stories[0].storyText;
         const raceStr = serversDict[server]?.raceName;
         let raceIdx = storyText.indexOf(raceStr);
         if (raceIdx >= 0) {
@@ -200,8 +213,8 @@ const main = async () => {
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-        afterDealData({chartsData, server})
-        console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
+        //afterDealData({chartsData, server})
+        //console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
     }
 
 }
