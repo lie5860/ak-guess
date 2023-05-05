@@ -4823,5 +4823,75 @@
             "罗德岛"
         ],
         "painter": "板板"
+    },
+    {
+        "className": [
+            "狙击",
+            "重射手"
+        ],
+        "name": "玫拉",
+        "en": "Melanite",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 5,
+        "key": "char_4006_melnte",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "redjuice"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "缪尔赛思",
+        "en": "Muelsyse",
+        "race": [
+            "精灵"
+        ],
+        "rarity": 6,
+        "key": "char_249_mlyss",
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "霍尔海雅",
+        "en": "Ho'olheyak",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 6,
+        "key": "char_4027_heyak",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "淬羽赫默",
+        "en": "Silence the Paradigmatic",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 6,
+        "key": "char_1031_slent2",
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "九日九号"
     }
 ]
