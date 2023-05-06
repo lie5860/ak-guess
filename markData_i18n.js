@@ -232,8 +232,8 @@ const main = async () => {
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-        //afterDealData({chartsData, server})
-        //console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
+        afterDealData({chartsData, server})
+        console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
     }
 
 }
