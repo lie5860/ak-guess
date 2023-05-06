@@ -129,7 +129,7 @@ const main = async () => {
         let rarity = null;
         if (v.rarity != null) {
             if (isNaN(v.rarity)) {
-                rarity = v.rarity.substring("TIER_".length);
+                rarity = parseInt(v.rarity.substring("TIER_".length)) - 1;
             } else {
                 rarity = v.rarity;
             }
