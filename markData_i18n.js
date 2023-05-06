@@ -78,6 +78,15 @@ const main = async () => {
          */
         // 角色基本信息，里面包了召唤物和临时干员之类的，会自动跳过
         chapterData = require(`./data/${server}/character_table.json`)
+        if (chapterData.characters != null) {
+            // 兼容[key-value]的数据
+            let characters = {}
+            for (const data of chapterData.characters) {
+                characters[data.key] = data.value;
+            }
+            chapterData = characters;
+        }
+
         // 升变数据
         chapterExtend = require(`./data/${server}/char_patch_table.json`)
         // 模组数据，主要用来拿子职业
@@ -86,6 +95,16 @@ const main = async () => {
         team = require(`./data/${server}/handbook_team_table.json`)
         // 档案信息，主要拿种族
         handbook = require(`./data/${server}/handbook_info_table.json`)
+        if (Array.isArray(handbook.handbookDict)) {
+            // 兼容档案为[key-value]的数据
+            let handbookDict = {}
+            for (const data of handbook.handbookDict) {
+                handbookDict[data.key] = data.value;
+            }
+            handbook = handbookDict;
+        } else {
+           handbook = handbook.handbookDict;
+        }
         // 皮肤信息，主要拿默认皮的画师
         skin = require(`./data/${server}/skin_table.json`)
 
@@ -107,22 +126,30 @@ const main = async () => {
             // 非正常干员，跳过
             return null;
         }
+        let rarity = null;
+        if (v.rarity != null) {
+            if (isNaN(v.rarity)) {
+                rarity = parseInt(v.rarity.substring("TIER_".length)) - 1;
+            } else {
+                rarity = v.rarity;
+            }
+        }
         let chapter = {
             className: [profession[v.profession], uniequip.subProfDict[v.subProfessionId].subProfessionName],
             name: v.name.trim(),
             en: v.appellation.trim(),
             race: "",
-            rarity: Number(v.rarity),
+            rarity: Number(rarity),
             key: k
         };
         let tempTeam = [];
-        if (v.teamId !== null) {
+        if (v.teamId !== undefined && v.teamId !== null) {
             tempTeam.push(team[v.teamId].powerName);
         }
-        if (v.groupId !== null) {
+        if (v.groupId !== undefined && v.groupId !== null) {
             tempTeam.push(team[v.groupId].powerName);
         }
-        if (v.nationId !== null) {
+        if (v.nationId !== undefined && v.nationId !== null) {
             tempTeam.push(team[v.nationId].powerName);
         }
         chapter.team = [...new Set(tempTeam.join('-').replace('−','-').split('-').filter(v => v))];
@@ -137,7 +164,12 @@ const main = async () => {
             chapter.painter = sk?.displaySkin?.drawerName || sk?.displaySkin?.drawerList[0];
         }
         // 种族信息从档案中解析对应文本
-        let storyText = handbook.handbookDict[k].storyTextAudio[0].stories[0].storyText;
+        let profile = handbook[k];
+        if (profile == null) {
+            console.log("角色"+chapter.name+"档案"+k+"缺失，暂不处理");
+            return null;
+        }
+        let storyText = profile.storyTextAudio[0].stories[0].storyText;
         const raceStr = serversDict[server]?.raceName;
         let raceIdx = storyText.indexOf(raceStr);
         if (raceIdx >= 0) {
@@ -200,8 +232,8 @@ const main = async () => {
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-        afterDealData({chartsData, server})
-        console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
+        //afterDealData({chartsData, server})
+        //console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
     }
 
 }
