@@ -7,7 +7,7 @@
         "name": "Lancet-2",
         "en": "Lancet-2",
         "race": "",
-        "rarity": null,
+        "rarity": 0,
         "key": "char_285_medic2",
         "team": [
             "罗德岛"
@@ -22,7 +22,7 @@
         "name": "Castle-3",
         "en": "Castle-3",
         "race": "",
-        "rarity": null,
+        "rarity": 0,
         "key": "char_286_cast3",
         "team": [
             "罗德岛"
@@ -39,7 +39,7 @@
         "race": [
             "鬼"
         ],
-        "rarity": null,
+        "rarity": 1,
         "key": "char_502_nblade",
         "team": [
             "行动组A4",
@@ -57,7 +57,7 @@
         "race": [
             "鬼"
         ],
-        "rarity": null,
+        "rarity": 1,
         "key": "char_500_noirc",
         "team": [
             "行动组A4",
@@ -75,7 +75,7 @@
         "race": [
             "萨弗拉"
         ],
-        "rarity": null,
+        "rarity": 1,
         "key": "char_503_rang",
         "team": [
             "行动组A4",
@@ -93,7 +93,7 @@
         "race": [
             "杜林"
         ],
-        "rarity": null,
+        "rarity": 1,
         "key": "char_501_durin",
         "team": [
             "行动组A4",
@@ -111,7 +111,7 @@
         "race": [
             "萨弗拉"
         ],
-        "rarity": null,
+        "rarity": 1,
         "key": "char_009_12fce",
         "team": [
             "罗德岛"
@@ -128,7 +128,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_123_fang",
         "team": [
             "行动预备组A1",
@@ -146,7 +146,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_240_wyvern",
         "team": [
             "黑钢国际",
@@ -164,7 +164,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_192_falco",
         "team": [
             "拉特兰"
@@ -181,7 +181,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_208_melan",
         "team": [
             "行动预备组A4",
@@ -199,7 +199,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_209_ardign",
         "team": [
             "行动预备组A4",
@@ -217,7 +217,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_122_beagle",
         "team": [
             "行动预备组A1",
@@ -235,7 +235,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_124_kroos",
         "team": [
             "行动预备组A1",
@@ -253,7 +253,7 @@
         "race": [
             "萨科塔"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_211_adnach",
         "team": [
             "行动预备组A4",
@@ -271,7 +271,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_121_lava",
         "team": [
             "行动预备组A1",
@@ -289,7 +289,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_120_hibisc",
         "team": [
             "行动预备组A1",
@@ -307,7 +307,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_212_ansel",
         "team": [
             "行动预备组A4",
@@ -325,7 +325,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_210_stward",
         "team": [
             "行动预备组A4",
@@ -343,7 +343,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_278_orchid",
         "team": [
             "行动预备组A6",
@@ -361,7 +361,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_141_nights",
         "team": [
             "维多利亚"
@@ -378,7 +378,7 @@
         "race": [
             "埃拉菲亚"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_109_fmout",
         "team": [
             "萨米"
@@ -395,7 +395,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_235_jesica",
         "team": [
             "黑钢国际",
@@ -413,7 +413,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_126_shotst",
         "team": [
             "卡西米尔"
@@ -430,7 +430,7 @@
         "race": [
             "阿纳缇"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_118_yuki",
         "team": [
             "东"
@@ -447,7 +447,7 @@
         "race": [
             "依特拉"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_198_blackd",
         "team": [
             "喀兰贸易",
@@ -465,7 +465,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_149_scave",
         "team": [
             "S.W.E.E.P",
@@ -483,7 +483,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_290_vigna",
         "team": [
             "哥伦比亚"
@@ -500,7 +500,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_130_doberm",
         "team": [
             "罗德岛"
@@ -517,7 +517,7 @@
         "race": [
             "鬼"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_289_gyuki",
         "team": [
             "东"
@@ -534,7 +534,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_193_frostl",
         "team": [
             "罗德岛"
@@ -551,7 +551,7 @@
         "race": [
             "阿达克利斯"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_127_estell",
         "team": [
             "萨尔贡"
@@ -568,7 +568,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_185_frncat",
         "team": [
             "维多利亚"
@@ -585,7 +585,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_237_gravel",
         "team": [
             "卡西米尔"
@@ -602,7 +602,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_236_rope",
         "team": [
             "炎",
@@ -620,7 +620,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_117_myrrh",
         "team": [
             "罗德岛"
@@ -637,7 +637,7 @@
         "race": [
             "阿达克利斯"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_187_ccheal",
         "team": [
             "罗德岛"
@@ -654,7 +654,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_181_flower",
         "team": [
             "罗德岛"
@@ -671,7 +671,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_199_yak",
         "team": [
             "喀兰贸易",
@@ -689,7 +689,7 @@
         "race": [
             "匹特拉姆"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_150_snakek",
         "team": [
             "哥伦比亚"
@@ -706,7 +706,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_196_sunbr",
         "team": [
             "乌萨斯学生自治团",
@@ -724,7 +724,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_110_deepcl",
         "team": [
             "阿戈尔"
@@ -741,7 +741,7 @@
         "race": [
             "卡普里尼"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_183_skgoat",
         "team": [
             "莱塔尼亚"
@@ -758,7 +758,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_277_sqrrel",
         "team": [
             "炎",
@@ -776,7 +776,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_128_plosis",
         "team": [
             "莱茵生命",
@@ -794,7 +794,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_115_headbr",
         "team": [
             "乌萨斯学生自治团",
@@ -812,7 +812,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_102_texas",
         "team": [
             "企鹅物流",
@@ -831,7 +831,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_106_franka",
         "team": [
             "黑钢国际",
@@ -849,7 +849,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_155_tiger",
         "team": [
             "格拉斯哥帮",
@@ -867,7 +867,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_140_whitew",
         "team": [
             "叙拉古"
@@ -884,7 +884,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_143_ghost",
         "team": [
             "深海猎人",
@@ -902,7 +902,7 @@
         "race": [
             "安努拉"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_129_bluep",
         "team": [
             "伊比利亚"
@@ -919,7 +919,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_204_platnm",
         "team": [
             "卡西米尔"
@@ -936,7 +936,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_219_meteo",
         "team": [
             "罗德岛"
@@ -954,7 +954,7 @@
             "卡特斯",
             "奇美拉"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_002_amiya",
         "team": [
             "罗德岛"
@@ -971,7 +971,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_166_skfire",
         "team": [
             "维多利亚"
@@ -988,7 +988,7 @@
         "race": [
             "阿纳缇"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_242_otter",
         "team": [
             "莱茵生命",
@@ -1006,7 +1006,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_108_silent",
         "team": [
             "莱茵生命",
@@ -1024,7 +1024,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_171_bldsk",
         "team": [
             "罗德岛"
@@ -1041,7 +1041,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_148_nearl",
         "team": [
             "使徒"
@@ -1058,7 +1058,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_144_red",
         "team": [
             "S.W.E.E.P",
@@ -1076,7 +1076,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_107_liskam",
         "team": [
             "黑钢国际",
@@ -1094,7 +1094,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_201_moeshd",
         "team": [
             "企鹅物流",
@@ -1113,7 +1113,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_163_hpsts",
         "team": [
             "米诺斯"
@@ -1130,7 +1130,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_145_prove",
         "team": [
             "叙拉古"
@@ -1147,7 +1147,7 @@
         "race": [
             "埃拉菲亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_158_milu",
         "team": [
             "罗德岛"
@@ -1164,7 +1164,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_173_slchan",
         "team": [
             "喀兰贸易",
@@ -1182,7 +1182,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_174_slbell",
         "team": [
             "喀兰贸易",
@@ -1200,7 +1200,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_195_glassb",
         "team": [
             "乌萨斯学生自治团",
@@ -1218,7 +1218,7 @@
         "race": [
             "因经纪公司要求不公开"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_101_sora",
         "team": [
             "企鹅物流",
@@ -1237,7 +1237,7 @@
         "race": [
             "曼提柯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_215_mantic",
         "team": [
             "萨尔贡"
@@ -1254,7 +1254,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_241_panda",
         "team": [
             "炎",
@@ -1272,7 +1272,7 @@
         "race": [
             "萨科塔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_103_angel",
         "team": [
             "企鹅物流",
@@ -1291,7 +1291,7 @@
         "race": [
             "阿斯兰"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_112_siege",
         "team": [
             "格拉斯哥帮",
@@ -1309,7 +1309,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_134_ifrit",
         "team": [
             "莱茵生命",
@@ -1327,7 +1327,7 @@
         "race": [
             "卡普里尼"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_180_amgoat",
         "team": [
             "莱塔尼亚"
@@ -1344,7 +1344,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_291_aglina",
         "team": [
             "叙拉古"
@@ -1361,7 +1361,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_147_shining",
         "team": [
             "使徒"
@@ -1378,7 +1378,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_179_cgbird",
         "team": [
             "使徒"
@@ -1395,7 +1395,7 @@
         "race": [
             "鬼"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_136_hsguma",
         "team": [
             "龙门近卫局",
@@ -1414,7 +1414,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_202_demkni",
         "team": [
             "莱茵生命",
@@ -1432,7 +1432,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_172_svrash",
         "team": [
             "喀兰贸易",
@@ -1450,7 +1450,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_230_savage",
         "team": [
             "雷姆必拓"
@@ -1467,7 +1467,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_282_catap",
         "team": [
             "行动预备组A6",
@@ -1485,7 +1485,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_283_midn",
         "team": [
             "行动预备组A6",
@@ -1503,7 +1503,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_137_brownb",
         "team": [
             "乌萨斯"
@@ -1520,7 +1520,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_164_nightm",
         "team": [
             "维多利亚"
@@ -1537,7 +1537,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_220_grani",
         "team": [
             "维多利亚"
@@ -1554,7 +1554,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_263_skadi",
         "team": [
             "深海猎人",
@@ -1572,7 +1572,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_281_popka",
         "team": [
             "行动预备组A6",
@@ -1590,7 +1590,7 @@
         "race": [
             "瑞柏巴"
         ],
-        "rarity": null,
+        "rarity": 2,
         "key": "char_284_spot",
         "team": [
             "行动预备组A6",
@@ -1608,7 +1608,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_253_greyy",
         "team": [
             "玻利瓦尔"
@@ -1625,7 +1625,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_308_swire",
         "team": [
             "龙门近卫局",
@@ -1644,7 +1644,7 @@
         "race": [
             "龙"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_010_chen",
         "team": [
             "龙门近卫局",
@@ -1663,7 +1663,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_298_susuro",
         "team": [
             "罗德岛"
@@ -1680,7 +1680,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_348_ceylon",
         "team": [
             "汐斯塔",
@@ -1698,7 +1698,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_326_glacus",
         "team": [
             "伊比利亚"
@@ -1715,7 +1715,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_340_shwaz",
         "team": [
             "汐斯塔",
@@ -1733,7 +1733,7 @@
         "race": [
             "杜林"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_151_myrtle",
         "team": [
             "罗德岛"
@@ -1750,7 +1750,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_274_astesi",
         "team": [
             "哥伦比亚"
@@ -1767,7 +1767,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_188_helage",
         "team": [
             "乌萨斯"
@@ -1784,7 +1784,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_260_durnar",
         "team": [
             "罗德岛"
@@ -1801,7 +1801,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_190_clour",
         "team": [
             "叙拉古"
@@ -1818,7 +1818,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_131_flameb",
         "team": [
             "罗德岛"
@@ -1835,7 +1835,7 @@
         "race": [
             "萨科塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_279_excu",
         "team": [
             "拉特兰"
@@ -1852,7 +1852,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_248_mgllan",
         "team": [
             "莱茵生命",
@@ -1870,7 +1870,7 @@
         "race": [
             "萨弗拉"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_355_ethan",
         "team": [
             "罗德岛"
@@ -1887,7 +1887,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_275_breeze",
         "team": [
             "维多利亚"
@@ -1904,7 +1904,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_133_mm",
         "team": [
             "维多利亚"
@@ -1921,7 +1921,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_325_bison",
         "team": [
             "炎",
@@ -1939,7 +1939,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_243_waaifu",
         "team": [
             "鲤氏侦探事务所",
@@ -1958,7 +1958,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_213_mostma",
         "team": [
             "拉特兰"
@@ -1975,7 +1975,7 @@
         "race": [
             "德拉克"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_261_sddrag",
         "team": [
             "维多利亚"
@@ -1992,7 +1992,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_356_broca",
         "team": [
             "贾维团伙",
@@ -2010,7 +2010,7 @@
         "race": [
             "萨科塔"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_302_glaze",
         "team": [
             "拉特兰"
@@ -2027,7 +2027,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_367_swllow",
         "team": [
             "罗德岛"
@@ -2044,7 +2044,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_017_huang",
         "team": [
             "罗德岛",
@@ -2062,7 +2062,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_383_snsant",
         "team": [
             "炎",
@@ -2080,7 +2080,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_226_hmau",
         "team": [
             "鲤氏侦探事务所",
@@ -2099,7 +2099,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_225_haak",
         "team": [
             "鲤氏侦探事务所",
@@ -2118,7 +2118,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_2014_nian",
         "team": [
             "炎",
@@ -2136,7 +2136,7 @@
         "race": [
             "麒麟"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_306_leizi",
         "team": [
             "炎"
@@ -2153,7 +2153,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_2013_cerber",
         "team": [
             "罗德岛"
@@ -2170,7 +2170,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_385_finlpp",
         "team": [
             "炎"
@@ -2187,7 +2187,7 @@
         "race": [
             "不明"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_337_utage",
         "team": [
             "东"
@@ -2204,7 +2204,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_252_bibeak",
         "team": [
             "萨米"
@@ -2221,7 +2221,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_379_sesa",
         "team": [
             "萨尔贡"
@@ -2238,7 +2238,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_222_bpipe",
         "team": [
             "维多利亚"
@@ -2255,7 +2255,7 @@
         "race": [
             "未知（疑似黎博利）"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_159_peacok",
         "team": [
             "米诺斯"
@@ -2272,7 +2272,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_301_cutter",
         "team": [
             "哥伦比亚"
@@ -2289,7 +2289,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_333_sidero",
         "team": [
             "米诺斯"
@@ -2306,7 +2306,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_254_vodfox",
         "team": [
             "叙拉古"
@@ -2323,7 +2323,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_250_phatom",
         "team": [
             "维多利亚"
@@ -2338,7 +2338,7 @@
         "name": "THRM-EX",
         "en": "Thermal-EX",
         "race": "",
-        "rarity": null,
+        "rarity": 0,
         "key": "char_376_therex",
         "team": [
             "罗德岛"
@@ -2355,7 +2355,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_401_elysm",
         "team": [
             "罗德岛"
@@ -2372,7 +2372,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_400_weedy",
         "team": [
             "罗德岛"
@@ -2389,7 +2389,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_113_cqbw",
         "team": [
             "巴别塔"
@@ -2406,7 +2406,7 @@
         "race": [
             "萨弗拉"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_378_asbest",
         "team": [
             "雷姆必拓"
@@ -2423,7 +2423,7 @@
         "race": [
             "埃拉菲亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_343_tknogi",
         "team": [
             "东"
@@ -2440,7 +2440,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_258_podego",
         "team": [
             "罗德岛"
@@ -2457,7 +2457,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_405_absin",
         "team": [
             "乌萨斯"
@@ -2474,7 +2474,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_373_lionhd",
         "team": [
             "雷姆必拓"
@@ -2491,7 +2491,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_197_poca",
         "team": [
             "乌萨斯学生自治团",
@@ -2509,7 +2509,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_328_cammou",
         "team": [
             "罗德岛"
@@ -2526,7 +2526,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_345_folnic",
         "team": [
             "罗德岛"
@@ -2543,7 +2543,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_294_ayer",
         "team": [
             "雷姆必拓"
@@ -2560,7 +2560,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_358_lisa",
         "team": [
             "叙拉古"
@@ -2577,7 +2577,7 @@
         "race": [
             "皮洛萨"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_336_folivo",
         "team": [
             "萨尔贡"
@@ -2594,7 +2594,7 @@
         "race": [
             "卡普里尼"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_344_beewax",
         "team": [
             "萨尔贡"
@@ -2611,7 +2611,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_349_chiave",
         "team": [
             "贾维团伙",
@@ -2629,7 +2629,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_272_strong",
         "team": [
             "炎",
@@ -2647,7 +2647,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_218_cuttle",
         "team": [
             "深海猎人",
@@ -2665,7 +2665,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_293_thorns",
         "team": [
             "伊比利亚"
@@ -2682,7 +2682,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_366_acdrop",
         "team": [
             "哥伦比亚"
@@ -2699,7 +2699,7 @@
         "race": [
             "阿达克利斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_411_tomimi",
         "team": [
             "萨尔贡"
@@ -2716,7 +2716,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_415_flint",
         "team": [
             "萨尔贡"
@@ -2733,7 +2733,7 @@
         "race": [
             "斐迪亚"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_416_zumama",
         "team": [
             "萨尔贡"
@@ -2750,7 +2750,7 @@
         "race": [
             "萨科塔"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_271_spikes",
         "team": [
             "拉特兰"
@@ -2767,7 +2767,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_388_mint",
         "team": [
             "维多利亚"
@@ -2784,7 +2784,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_365_aprl",
         "team": [
             "雷姆必拓"
@@ -2801,7 +2801,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_350_surtr",
         "team": [
             "罗德岛"
@@ -2818,7 +2818,7 @@
         "race": [
             "塞拉托"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_381_bubble",
         "team": [
             "萨尔贡"
@@ -2835,7 +2835,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_265_sophia",
         "team": [
             "卡西米尔"
@@ -2852,7 +2852,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_346_aosta",
         "team": [
             "贾维团伙",
@@ -2870,7 +2870,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_423_blemsh",
         "team": [
             "卡西米尔"
@@ -2887,7 +2887,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_347_jaksel",
         "team": [
             "哥伦比亚"
@@ -2904,7 +2904,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_436_whispr",
         "team": [
             "伊比利亚"
@@ -2921,7 +2921,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_311_mudrok",
         "team": [
             "罗德岛"
@@ -2938,7 +2938,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_391_rosmon",
         "team": [
             "罗德岛",
@@ -2974,7 +2974,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_440_pinecn",
         "team": [
             "哥伦比亚"
@@ -2991,7 +2991,7 @@
         "race": [
             "阿纳缇"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_451_robin",
         "team": [
             "哥伦比亚"
@@ -3008,7 +3008,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_214_kafka",
         "team": [
             "哥伦比亚"
@@ -3025,7 +3025,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_264_f12yin",
         "team": [
             "哥伦比亚"
@@ -3042,7 +3042,7 @@
         "race": [
             "瑞柏巴"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_452_bstalk",
         "team": [
             "哥伦比亚"
@@ -3059,7 +3059,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_338_iris",
         "team": [
             "维多利亚"
@@ -3076,7 +3076,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_332_archet",
         "team": [
             "拉特兰"
@@ -3093,7 +3093,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_402_tuye",
         "team": [
             "萨尔贡"
@@ -3110,7 +3110,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_1011_lava2",
         "team": [
             "罗德岛"
@@ -3127,7 +3127,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_455_nothin",
         "team": [
             "炎"
@@ -3144,7 +3144,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_362_saga",
         "team": [
             "东"
@@ -3161,7 +3161,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_2015_dusk",
         "team": [
             "炎",
@@ -3179,7 +3179,7 @@
         "race": [
             "未知"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_459_tachak",
         "team": [
             "彩虹小队"
@@ -3196,7 +3196,7 @@
         "race": [
             "未知"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_457_blitz",
         "team": [
             "彩虹小队"
@@ -3213,7 +3213,7 @@
         "race": [
             "未知"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_458_rfrost",
         "team": [
             "彩虹小队"
@@ -3230,7 +3230,7 @@
         "race": [
             "未知"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_456_ash",
         "team": [
             "彩虹小队"
@@ -3247,7 +3247,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_304_zebra",
         "team": [
             "罗德岛"
@@ -3264,7 +3264,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_363_toddi",
         "team": [
             "维多利亚"
@@ -3281,7 +3281,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_472_pasngr",
         "team": [
             "萨尔贡"
@@ -3298,7 +3298,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_475_akafyu",
         "team": [
             "东"
@@ -3315,7 +3315,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_474_glady",
         "team": [
             "深海猎人",
@@ -3333,7 +3333,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_003_kalts",
         "team": [
             "罗德岛"
@@ -3350,7 +3350,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1012_skadi2",
         "team": [
             "阿戈尔"
@@ -3367,7 +3367,7 @@
         "race": [
             "斐迪亚"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_469_indigo",
         "team": [
             "伊比利亚"
@@ -3384,7 +3384,7 @@
         "race": [
             "卡普里尼"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_369_bena",
         "team": [
             "维多利亚"
@@ -3401,7 +3401,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_478_kirara",
         "team": [
             "东"
@@ -3418,7 +3418,7 @@
         "race": [
             "卡普里尼"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_426_billro",
         "team": [
             "莱塔尼亚"
@@ -3435,7 +3435,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_485_pallas",
         "team": [
             "米诺斯"
@@ -3452,7 +3452,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_486_takila",
         "team": [
             "玻利瓦尔"
@@ -3469,7 +3469,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_421_crow",
         "team": [
             "玻利瓦尔"
@@ -3486,7 +3486,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_437_mizuki",
         "team": [
             "东"
@@ -3503,7 +3503,7 @@
         "race": [
             "龙"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1013_chen2",
         "team": [
             "罗德岛"
@@ -3520,7 +3520,7 @@
         "race": [
             "阿纳缇"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_484_robrta",
         "team": [
             "哥伦比亚"
@@ -3537,7 +3537,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_473_mberry",
         "team": [
             "炎"
@@ -3554,7 +3554,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_479_sleach",
         "team": [
             "维多利亚"
@@ -3571,7 +3571,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_431_ashlok",
         "team": [
             "红松骑士团",
@@ -3589,7 +3589,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_430_fartth",
         "team": [
             "红松骑士团",
@@ -3605,7 +3605,7 @@
         "name": "正义骑士号",
         "en": "\"Justice Knight\"",
         "race": "",
-        "rarity": null,
+        "rarity": 0,
         "key": "char_4000_jnight",
         "team": [
             "红松骑士团",
@@ -3623,7 +3623,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_4004_pudd",
         "team": [
             "哥伦比亚"
@@ -3640,7 +3640,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_449_glider",
         "team": [
             "雷姆必拓"
@@ -3657,7 +3657,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_496_wildmn",
         "team": [
             "红松骑士团",
@@ -3675,7 +3675,7 @@
         "race": [
             "斐迪亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_489_serum",
         "team": [
             "哥伦比亚"
@@ -3692,7 +3692,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_420_flamtl",
         "team": [
             "红松骑士团",
@@ -3710,7 +3710,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1014_nearl2",
         "team": [
             "卡西米尔"
@@ -3727,7 +3727,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4013_kjera",
         "team": [
             "喀兰贸易",
@@ -3745,7 +3745,7 @@
         "race": [
             "乌萨斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_422_aurora",
         "team": [
             "喀兰贸易",
@@ -3763,7 +3763,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_206_gnosis",
         "team": [
             "喀兰贸易",
@@ -3781,7 +3781,7 @@
         "race": [
             "斐迪亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4025_aprot2",
         "team": [
             "维多利亚"
@@ -3798,7 +3798,7 @@
         "race": [
             "埃拉菲亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4019_ncdeer",
         "team": [
             "炎"
@@ -3815,7 +3815,7 @@
         "race": [
             "卡特斯"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_1021_kroos2",
         "team": [
             "罗德岛"
@@ -3832,7 +3832,7 @@
         "race": [
             "萨弗拉"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_476_blkngt",
         "team": [
             "雷姆必拓"
@@ -3849,7 +3849,7 @@
         "race": [
             "龙"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_322_lmlee",
         "team": [
             "鲤氏侦探事务所",
@@ -3868,7 +3868,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_2023_ling",
         "team": [
             "炎",
@@ -3886,7 +3886,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_492_quercu",
         "team": [
             "罗德岛"
@@ -3903,7 +3903,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_377_gdglow",
         "team": [
             "维多利亚"
@@ -3920,7 +3920,7 @@
         "race": [
             "萨科塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4036_forcer",
         "team": [
             "拉特兰"
@@ -3937,7 +3937,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4016_kazema",
         "team": [
             "东"
@@ -3954,7 +3954,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_300_phenxi",
         "team": [
             "拉特兰"
@@ -3971,7 +3971,7 @@
         "race": [
             "杜林"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_4041_chnut",
         "team": [
             "罗德岛"
@@ -3988,7 +3988,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4040_rockr",
         "team": [
             "维多利亚"
@@ -4005,7 +4005,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4045_heidi",
         "team": [
             "维多利亚"
@@ -4022,7 +4022,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4039_horn",
         "team": [
             "维多利亚"
@@ -4039,7 +4039,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_433_windft",
         "team": [
             "哥伦比亚"
@@ -4056,7 +4056,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1023_ghost2",
         "team": [
             "深海猎人",
@@ -4074,7 +4074,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4042_lumen",
         "team": [
             "伊比利亚"
@@ -4091,7 +4091,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4009_irene",
         "team": [
             "伊比利亚"
@@ -4108,7 +4108,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4043_erato",
         "team": [
             "米诺斯"
@@ -4125,7 +4125,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_1024_hbisc2",
         "team": [
             "罗德岛"
@@ -4142,7 +4142,7 @@
         "race": [
             "埃拉菲亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4047_pianst",
         "team": [
             "莱塔尼亚"
@@ -4159,7 +4159,7 @@
         "race": [
             "卡普里尼"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4046_ebnhlz",
         "team": [
             "莱塔尼亚"
@@ -4176,7 +4176,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_135_halo",
         "team": [
             "莱茵生命",
@@ -4194,7 +4194,7 @@
         "race": [
             "佩洛"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_1027_greyy2",
         "team": [
             "罗德岛"
@@ -4211,7 +4211,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4048_doroth",
         "team": [
             "莱茵生命",
@@ -4229,7 +4229,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_497_ctable",
         "team": [
             "罗德岛"
@@ -4246,7 +4246,7 @@
         "race": [
             "杜林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4054_malist",
         "team": [
             "萨尔贡"
@@ -4263,7 +4263,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4055_bgsnow",
         "team": [
             "罗德岛"
@@ -4280,7 +4280,7 @@
         "race": [
             "阿达克利斯"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1026_gvial2",
         "team": [
             "罗德岛"
@@ -4297,7 +4297,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4032_provs",
         "team": [
             "卡西米尔"
@@ -4314,7 +4314,7 @@
         "race": [
             "库兰塔"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4064_mlynar",
         "team": [
             "卡西米尔"
@@ -4331,7 +4331,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_4067_lolxh",
         "team": [
             "炎"
@@ -4348,7 +4348,7 @@
         "race": [
             "阿戈尔"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4066_highmo",
         "team": [
             "伊比利亚"
@@ -4365,7 +4365,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_4062_totter",
         "team": [
             "萨尔贡"
@@ -4382,7 +4382,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_157_dagda",
         "team": [
             "格拉斯哥帮",
@@ -4400,7 +4400,7 @@
         "race": [
             "萨卡兹"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4071_peper",
         "team": [
             "罗德岛"
@@ -4417,7 +4417,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4072_ironmn",
         "team": [
             "维多利亚"
@@ -4434,7 +4434,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_4063_quartz",
         "team": [
             "哥伦比亚"
@@ -4451,7 +4451,7 @@
         "race": [
             "沃尔珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_466_qanik",
         "team": [
             "萨米"
@@ -4468,7 +4468,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4014_lunacu",
         "team": [
             "叙拉古"
@@ -4485,7 +4485,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_427_vigil",
         "team": [
             "叙拉古"
@@ -4502,7 +4502,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1028_texas2",
         "team": [
             "企鹅物流",
@@ -4521,7 +4521,7 @@
         "race": [
             "鲁珀"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4065_judge",
         "team": [
             "叙拉古"
@@ -4538,7 +4538,7 @@
         "race": [
             "瓦伊凡"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4017_puzzle",
         "team": [
             "维多利亚"
@@ -4555,7 +4555,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_297_hamoni",
         "team": [
             "深池",
@@ -4573,7 +4573,7 @@
         "race": [
             "德拉克"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1020_reed2",
         "team": [
             "深池",
@@ -4591,7 +4591,7 @@
         "race": [
             "阿纳萨"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4078_bdhkgt",
         "team": [
             "炎"
@@ -4608,7 +4608,7 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_493_firwhl",
         "team": [
             "雷姆必拓"
@@ -4625,7 +4625,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4080_lin",
         "team": [
             "炎",
@@ -4643,7 +4643,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_2024_chyue",
         "team": [
             "炎",
@@ -4661,7 +4661,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4083_chimes",
         "team": [
             "炎"
@@ -4678,7 +4678,7 @@
         "race": [
             "埃拉菲亚"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4082_qiubai",
         "team": [
             "炎"
@@ -4695,7 +4695,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 0,
         "key": "char_4077_palico",
         "team": [
             "罗德岛"
@@ -4712,7 +4712,7 @@
         "race": [
             "鬼"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_1030_noirc2",
         "team": [
             "行动组A4",
@@ -4730,7 +4730,7 @@
         "race": [
             "鬼"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1029_yato2",
         "team": [
             "行动组A4",
@@ -4748,7 +4748,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 0,
         "key": "char_4091_ulika",
         "team": [
             "罗德岛"
@@ -4765,7 +4765,7 @@
         "race": [
             "丰蹄"
         ],
-        "rarity": null,
+        "rarity": 3,
         "key": "char_491_humus",
         "team": [
             "罗德岛"
@@ -4782,7 +4782,7 @@
         "race": [
             "菲林"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_154_morgan",
         "team": [
             "格拉斯哥帮",
@@ -4800,7 +4800,7 @@
         "race": [
             "札拉克"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_464_cement",
         "team": [
             "雷姆必拓"
@@ -4817,27 +4817,12 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4087_ines",
         "team": [
             "罗德岛"
         ],
         "painter": "板板"
-    },
-    {
-        "className": [
-            "重装",
-            "铁卫"
-        ],
-        "name": "Friston-3",
-        "en": "Friston-3",
-        "race": "",
-        "rarity": null,
-        "key": "char_4093_frston",
-        "team": [
-            "罗德岛"
-        ],
-        "painter": "过失帝国"
     },
     {
         "className": [
@@ -4849,7 +4834,7 @@
         "race": [
             "斐迪亚"
         ],
-        "rarity": null,
+        "rarity": 4,
         "key": "char_4006_melnte",
         "team": [
             "哥伦比亚"
@@ -4866,7 +4851,7 @@
         "race": [
             "精灵"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_249_mlyss",
         "team": [
             "莱茵生命",
@@ -4884,7 +4869,7 @@
         "race": [
             "未公开"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_4027_heyak",
         "team": [
             "哥伦比亚"
@@ -4901,12 +4886,27 @@
         "race": [
             "黎博利"
         ],
-        "rarity": null,
+        "rarity": 5,
         "key": "char_1031_slent2",
         "team": [
             "莱茵生命",
             "哥伦比亚"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "重装",
+            "铁卫"
+        ],
+        "name": "Friston-3",
+        "en": "Friston-3",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4093_frston",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "过失帝国"
     }
 ]
