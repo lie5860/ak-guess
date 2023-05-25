@@ -4406,5 +4406,126 @@
             "빅토리아"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "가드",
+            "대검사"
+        ],
+        "name": "쿼츠",
+        "en": "Quartz",
+        "race": [
+            "루포"
+        ],
+        "rarity": 3,
+        "key": "char_4063_quartz",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "가드",
+            "리퍼"
+        ],
+        "name": "하이모어",
+        "en": "Highmore",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_4066_highmo",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "카니팔라트",
+        "en": "Qanipalaat",
+        "race": [
+            "불포"
+        ],
+        "rarity": 4,
+        "key": "char_466_qanik",
+        "team": [
+            "사미"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "저격수"
+        ],
+        "name": "루나컵",
+        "en": "Lunacub",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_4014_lunacu",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "전술가"
+        ],
+        "name": "비질",
+        "en": "Vigil",
+        "race": [
+            "루포"
+        ],
+        "rarity": 5,
+        "key": "char_427_vigil",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "hou"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "텍사스 디 오메르토사",
+        "en": "Texas the Omertosa",
+        "race": [
+            "루포"
+        ],
+        "rarity": 5,
+        "key": "char_1028_texas2",
+        "team": [
+            "펭귄 로지스틱스",
+            "염",
+            "용문"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "디펜더",
+            "저거너트"
+        ],
+        "name": "페넌스",
+        "en": "Penance",
+        "race": [
+            "루포"
+        ],
+        "rarity": 5,
+        "key": "char_4065_judge",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "IRIS_呓"
     }
 ]

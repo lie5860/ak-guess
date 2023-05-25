@@ -4410,5 +4410,126 @@
             "Victoria"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "Guard",
+            "Crusher"
+        ],
+        "name": "Quartz",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 3,
+        "key": "char_4063_quartz",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "Guard",
+            "Reaper"
+        ],
+        "name": "Highmore",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_4066_highmo",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "Caster",
+            "Core Caster"
+        ],
+        "name": "Qanipalaat",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 4,
+        "key": "char_466_qanik",
+        "team": [
+            "Sami"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Deadeye"
+        ],
+        "name": "Lunacub",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 4,
+        "key": "char_4014_lunacu",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Tactician"
+        ],
+        "name": "Vigil",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 5,
+        "key": "char_427_vigil",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "hou"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "Texas the Omertosa",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 5,
+        "key": "char_1028_texas2",
+        "team": [
+            "Penguin Logistics",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Defender",
+            "Juggernaut"
+        ],
+        "name": "Penance",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 5,
+        "key": "char_4065_judge",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "IRIS_呓"
     }
 ]

@@ -4406,5 +4406,126 @@
             "ヴィクトリア"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "前衛",
+            "重剣士"
+        ],
+        "name": "クォーツ",
+        "en": "Quartz",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 3,
+        "key": "char_4063_quartz",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "前衛",
+            "鎌撃士"
+        ],
+        "name": "ハイモア",
+        "en": "Highmore",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_4066_highmo",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "術師",
+            "中堅術師"
+        ],
+        "name": "カニパラート",
+        "en": "Qanipalaat",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 4,
+        "key": "char_466_qanik",
+        "team": [
+            "サーミ"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "狙撃",
+            "戦術射手"
+        ],
+        "name": "ルナカブ",
+        "en": "Lunacub",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 4,
+        "key": "char_4014_lunacu",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "先鋒",
+            "戦術家"
+        ],
+        "name": "ヴィジェル",
+        "en": "Vigil",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 5,
+        "key": "char_427_vigil",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "hou"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "血掟テキサス",
+        "en": "Texas the Omertosa",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 5,
+        "key": "char_1028_texas2",
+        "team": [
+            "ペンギン急便",
+            "炎",
+            "龍門"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "重装",
+            "破壊者"
+        ],
+        "name": "ペナンス",
+        "en": "Penance",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 5,
+        "key": "char_4065_judge",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "IRIS_呓"
     }
 ]
