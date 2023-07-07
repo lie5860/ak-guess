@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const {afterDealData, getGameDataByLangAndName} = require("./config.ts");
 const jsonList = ['character_table', 'char_patch_table', 'uniequip_table', 'handbook_team_table',
-    'handbook_info_table']
+    'handbook_info_table', 'skin_table']
 
 const serversDict = {
     'zh_CN': {raceName: '【种族】'},
