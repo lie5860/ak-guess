@@ -4959,5 +4959,39 @@
             "拉特兰"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "寒檀",
+        "en": "Santalla",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_341_sntlla",
+        "team": [
+            "萨米"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "狙击",
+            "攻城手"
+        ],
+        "name": "提丰",
+        "en": "Typhon",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_2012_typhon",
+        "team": [
+            "萨米"
+        ],
+        "painter": "LM7"
     }
 ]
