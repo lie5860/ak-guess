@@ -4527,5 +4527,58 @@
             "シラクーザ"
         ],
         "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "先鋒",
+            "偵察兵"
+        ],
+        "name": "パズル",
+        "en": "Puzzle",
+        "race": [
+            "ヴイーヴル"
+        ],
+        "rarity": 4,
+        "key": "char_4017_puzzle",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "kan"
+    },
+    {
+        "className": [
+            "術師",
+            "秘術師"
+        ],
+        "name": "ハーモニー",
+        "en": "Harmonie",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_297_hamoni",
+        "team": [
+            "ダブリン",
+            "ヴィクトリア"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "医療",
+            "呪癒師"
+        ],
+        "name": "焔影リード",
+        "en": "Reed The Flame Shadow",
+        "race": [
+            "ドラコ"
+        ],
+        "rarity": 5,
+        "key": "char_1020_reed2",
+        "team": [
+            "ダブリン",
+            "ヴィクトリア"
+        ],
+        "painter": "STAR影法师"
     }
 ]

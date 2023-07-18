@@ -450,7 +450,7 @@
         "rarity": 3,
         "key": "char_198_blackd",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -674,7 +674,7 @@
         "rarity": 3,
         "key": "char_199_yak",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -1169,7 +1169,7 @@
         "rarity": 4,
         "key": "char_173_slchan",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -1187,7 +1187,7 @@
         "rarity": 4,
         "key": "char_174_slbell",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -1438,7 +1438,7 @@
         "rarity": 5,
         "key": "char_172_svrash",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -3734,7 +3734,7 @@
         "rarity": 4,
         "key": "char_4013_kjera",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -3752,7 +3752,7 @@
         "rarity": 4,
         "key": "char_422_aurora",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "LAL!ROLE"
@@ -3770,7 +3770,7 @@
         "rarity": 5,
         "key": "char_206_gnosis",
         "team": [
-            "Karlan Commercial",
+            "Karlan Trade CO., LTD",
             "Kjerag"
         ],
         "painter": "竜崎いち"
@@ -4531,5 +4531,58 @@
             "Siracusa"
         ],
         "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Agent"
+        ],
+        "name": "Puzzle",
+        "en": "",
+        "race": [
+            "Vouivre"
+        ],
+        "rarity": 4,
+        "key": "char_4017_puzzle",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "kan"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mystic Caster"
+        ],
+        "name": "Harmonie",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_297_hamoni",
+        "team": [
+            "Dublinn",
+            "Victoria"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "Medic",
+            "Incantation Medic"
+        ],
+        "name": "Reed the Flame Shadow",
+        "en": "",
+        "race": [
+            "Draco"
+        ],
+        "rarity": 5,
+        "key": "char_1020_reed2",
+        "team": [
+            "Dublinn",
+            "Victoria"
+        ],
+        "painter": "STAR影法师"
     }
 ]

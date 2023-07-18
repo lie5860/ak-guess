@@ -4993,5 +4993,22 @@
             "萨米"
         ],
         "painter": "LM7"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "凛视",
+        "en": "Valarqvin",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4102_threye",
+        "team": [
+            "萨米"
+        ],
+        "painter": "伍秋秋秋秋"
     }
 ]

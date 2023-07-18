@@ -4527,5 +4527,58 @@
             "시라쿠사"
         ],
         "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "에이전트"
+        ],
+        "name": "퍼즐",
+        "en": "Puzzle",
+        "race": [
+            "와이번"
+        ],
+        "rarity": 4,
+        "key": "char_4017_puzzle",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "kan"
+    },
+    {
+        "className": [
+            "캐스터",
+            "미스틱 캐스터"
+        ],
+        "name": "아르모니",
+        "en": "Harmonie",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_297_hamoni",
+        "team": [
+            "더블린",
+            "빅토리아"
+        ],
+        "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "메딕",
+            "주술 메딕"
+        ],
+        "name": "리드 더 플레임 섀도우",
+        "en": "Reed The Flame Shadow",
+        "race": [
+            "드라코"
+        ],
+        "rarity": 5,
+        "key": "char_1020_reed2",
+        "team": [
+            "더블린",
+            "빅토리아"
+        ],
+        "painter": "STAR影法师"
     }
 ]
