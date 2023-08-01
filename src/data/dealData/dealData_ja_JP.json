@@ -4580,5 +4580,75 @@
             "ヴィクトリア"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "狙撃",
+            "榴弾射手"
+        ],
+        "name": "ジエユン",
+        "en": "Jieyun",
+        "race": [
+            "アナサ"
+        ],
+        "rarity": 4,
+        "key": "char_4078_bdhkgt",
+        "team": [
+            "炎"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "重装",
+            "堅城砲手"
+        ],
+        "name": "ファイヤーホイッスル",
+        "en": "Firewhistle",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_493_firwhl",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "術師",
+            "法陣術師"
+        ],
+        "name": "リン",
+        "en": "Lin",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 5,
+        "key": "char_4080_lin",
+        "team": [
+            "炎",
+            "龍門"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "前衛",
+            "闘士"
+        ],
+        "name": "チョンユエ",
+        "en": "Chongyue",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_2024_chyue",
+        "team": [
+            "炎",
+            "歳"
+        ],
+        "painter": "KuroBlood"
     }
 ]

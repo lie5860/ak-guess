@@ -4580,5 +4580,75 @@
             "빅토리아"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "포격사수"
+        ],
+        "name": "지에윈",
+        "en": "Jieyun",
+        "race": [
+            "아나사"
+        ],
+        "rarity": 4,
+        "key": "char_4078_bdhkgt",
+        "team": [
+            "염"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "디펜더",
+            "포트리스"
+        ],
+        "name": "파이어휘슬",
+        "en": "Firewhistle",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_493_firwhl",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "캐스터",
+            "진법 캐스터"
+        ],
+        "name": "린",
+        "en": "Lin",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 5,
+        "key": "char_4080_lin",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "가드",
+            "파이터"
+        ],
+        "name": "총웨",
+        "en": "Chongyue",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_2024_chyue",
+        "team": [
+            "염",
+            "쉐이"
+        ],
+        "painter": "KuroBlood"
     }
 ]

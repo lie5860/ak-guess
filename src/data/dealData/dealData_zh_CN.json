@@ -5010,5 +5010,76 @@
             "萨米"
         ],
         "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "青枳",
+        "en": "Poncirus",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_488_buildr",
+        "team": [
+            "汐斯塔",
+            "哥伦比亚"
+        ],
+        "painter": "NOCO"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "苍苔",
+        "en": "Bryophyta",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4106_bryota",
+        "team": [
+            "汐斯塔",
+            "哥伦比亚"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "特种",
+            "行商"
+        ],
+        "name": "琳琅诗怀雅",
+        "en": "Swire the Elegant Wit",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_1033_swire2",
+        "team": [
+            "炎",
+            "龙门"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "医疗",
+            "行医"
+        ],
+        "name": "纯烬艾雅法拉",
+        "en": "Eyjafjalla the Hvít Aska",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 5,
+        "key": "char_1016_agoat2",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "Anmi"
     }
 ]

@@ -4584,5 +4584,75 @@
             "Victoria"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Artilleryman"
+        ],
+        "name": "Jieyun",
+        "en": "",
+        "race": [
+            "Anasa"
+        ],
+        "rarity": 4,
+        "key": "char_4078_bdhkgt",
+        "team": [
+            "Yan"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "Defender",
+            "Fortress"
+        ],
+        "name": "Firewhistle",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_493_firwhl",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Caster",
+            "Phalanx Caster"
+        ],
+        "name": "Lin",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 5,
+        "key": "char_4080_lin",
+        "team": [
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "Guard",
+            "Fighter"
+        ],
+        "name": "Chongyue",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_2024_chyue",
+        "team": [
+            "Yan",
+            "Sui"
+        ],
+        "painter": "KuroBlood"
     }
 ]
