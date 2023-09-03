@@ -4650,5 +4650,39 @@
             "歳"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "前衛",
+            "重剣士"
+        ],
+        "name": "ウィンドチャイム",
+        "en": "Wind Chimes",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 4,
+        "key": "char_4083_chimes",
+        "team": [
+            "炎"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "前衛",
+            "領主"
+        ],
+        "name": "チューバイ",
+        "en": "Qiubai",
+        "race": [
+            "エラフィア"
+        ],
+        "rarity": 5,
+        "key": "char_4082_qiubai",
+        "team": [
+            "炎"
+        ],
+        "painter": "温泉瓜"
     }
 ]

@@ -10,7 +10,7 @@ const getDailyData = (server) => axios
     alert('服务已崩溃 请联系管理员')
   });
 const saveNum = (num, server) => axios
-  .get(`${host}save.php?num=${num}&server=${server}`, {responseType: "json"})
+  .get(`${host}save.php?num=${num}&server=${server}&pass=yevVjDHNm52Zfo8p`, {responseType: "json"})
   .then(function (response) {
     console.log(response.data, 'response')
     return response.data;

@@ -4650,5 +4650,39 @@
             "쉐이"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "가드",
+            "대검사"
+        ],
+        "name": "윈드차임스",
+        "en": "Wind Chimes",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_4083_chimes",
+        "team": [
+            "염"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "가드",
+            "로드"
+        ],
+        "name": "치우바이",
+        "en": "Qiubai",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 5,
+        "key": "char_4082_qiubai",
+        "team": [
+            "염"
+        ],
+        "painter": "温泉瓜"
     }
 ]

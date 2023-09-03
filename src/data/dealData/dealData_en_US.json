@@ -4654,5 +4654,39 @@
             "Sui"
         ],
         "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "Guard",
+            "Crusher"
+        ],
+        "name": "Wind Chimes",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 4,
+        "key": "char_4083_chimes",
+        "team": [
+            "Yan"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "Guard",
+            "Lord"
+        ],
+        "name": "Qiubai",
+        "en": "",
+        "race": [
+            "Elafia"
+        ],
+        "rarity": 5,
+        "key": "char_4082_qiubai",
+        "team": [
+            "Yan"
+        ],
+        "painter": "温泉瓜"
     }
 ]
