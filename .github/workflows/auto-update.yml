@@ -23,7 +23,6 @@ jobs:
           git config --global user.name lie
           git add .
           git commit -m "自动更新"
-          git pull --rebase
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
