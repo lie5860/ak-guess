@@ -16,7 +16,7 @@ jobs:
       - name: Build Game
         run: |
           npm install
-          node .\markData_i18n.js ${{ secrets.PASS_KEY }} true
+          node markData_i18n.js ${{ secrets.PASS_KEY }} true
       - name: Commit
         run: |
           git config --global user.email lie58600@gmail.com
