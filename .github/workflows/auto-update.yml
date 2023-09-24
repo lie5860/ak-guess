@@ -1,8 +1,9 @@
 name: AutoUpdate
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '0 20 * * 2,4'
 
 jobs:
   build:
