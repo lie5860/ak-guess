@@ -9,8 +9,8 @@ const getDailyData = (server) => axios
   .catch(function (error) {
     alert('服务已崩溃 请联系管理员')
   });
-const saveNum = (num, server) => axios
-  .get(`${host}save.php?num=${num}&server=${server}`, {responseType: "json"})
+const saveNum = (num, server, pass) => axios
+  .get(`${host}save.php?num=${num}&server=${server}&pass=${pass}`, {responseType: "json"})
   .then(function (response) {
     console.log(response.data, 'response')
     return response.data;
@@ -25,10 +25,10 @@ const getGameDataByLangAndName = (language, jsonName) => {
     return getGameDataByLangAndName(language, jsonName)
   })
 }
-const afterDealData = ({chartsData, server}) => {
+const afterDealData = ({chartsData, server, pass}) => {
   getDailyData(server).then(({num}) => {
     if (num !== chartsData.length) {
-      saveNum(chartsData.length, server).then(() => {
+      saveNum(chartsData.length, server, pass).then(() => {
       })
     }
   })

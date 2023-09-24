@@ -11,10 +11,11 @@ const serversDict = {
     'ko_KR': {raceName: '[종족]'}
 };
 
+const [_runer, _path, pass, needUpdate] = process.argv;
 // 需要处理错别字的种族
 const fixRaceData = {
     'zh_CN': [],
-    'en_US': [["Phidia","Pythia"]],
+    'en_US': [["Phidia", "Pythia"]],
     'ja_JP': [],
     'ko_KR': []
 };
@@ -43,7 +44,7 @@ function mkdir(filePath) {
 
 function convertText(str) {
     // 统一把平假名转换成片假名
-    return str.replace(/べ/g,'ベ').replace(/へ/g,'ヘ').replace(/ぺ/g,'ペ');
+    return str.replace(/べ/g, 'ベ').replace(/へ/g, 'ヘ').replace(/ぺ/g, 'ペ');
 }
 
 const writeJsonByLangAndName = async (language, jsonName) => {
@@ -54,7 +55,7 @@ const writeJsonByLangAndName = async (language, jsonName) => {
 }
 const main = async () => {
     // 这是一个开关 todo
-    if (false) {
+    if (needUpdate === 'true') {
         const queryList = []
         Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
         for (let i = 0; i < queryList.length; i++) {
@@ -103,7 +104,7 @@ const main = async () => {
             }
             handbook = handbookDict;
         } else {
-           handbook = handbook.handbookDict;
+            handbook = handbook.handbookDict;
         }
         // 皮肤信息，主要拿默认皮的画师
         skin = require(`./data/${server}/skin_table.json`)
@@ -152,7 +153,7 @@ const main = async () => {
         if (v.nationId !== undefined && v.nationId !== null) {
             tempTeam.push(team[v.nationId].powerName);
         }
-        chapter.team = [...new Set(tempTeam.join('-').replace('−','-').split('-').filter(v => v))];
+        chapter.team = [...new Set(tempTeam.join('-').replace('−', '-').split('-').filter(v => v))];
         if (isPatch) {
             chapter.name += "(" + profession[v.profession] + ")";
             let r = patchDefault[k];
@@ -166,7 +167,7 @@ const main = async () => {
         // 种族信息从档案中解析对应文本
         let profile = handbook[k];
         if (profile == null) {
-            console.log("角色"+chapter.name+"档案"+k+"缺失，暂不处理");
+            console.log("角色" + chapter.name + "档案" + k + "缺失，暂不处理");
             return null;
         }
         let storyText = profile.storyTextAudio[0].stories[0].storyText;
@@ -232,7 +233,7 @@ const main = async () => {
         // 异步写入数据到文件
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
-        afterDealData({chartsData, server})
+        afterDealData({chartsData, server, pass})
         console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
     }
 
