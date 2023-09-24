@@ -882,7 +882,7 @@
         "name": "スペクター",
         "en": "Specter",
         "race": [
-            "未公開"
+            "非公開"
         ],
         "rarity": 4,
         "key": "char_143_ghost",
@@ -3313,7 +3313,7 @@
         "name": "グレイディーア",
         "en": "Gladiia",
         "race": [
-            "未公開"
+            "非公開"
         ],
         "rarity": 5,
         "key": "char_474_glady",
@@ -3348,7 +3348,7 @@
         "name": "濁心スカジ",
         "en": "Skadi the Corrupting Heart",
         "race": [
-            "未公開"
+            "非公開"
         ],
         "rarity": 5,
         "key": "char_1012_skadi2",
@@ -4684,5 +4684,58 @@
             "炎"
         ],
         "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙撃",
+            "投擲手"
+        ],
+        "name": "テラ大陸調査団",
+        "en": "Terra Research Commission",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 0,
+        "key": "char_4077_palico",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "桃色Miruku"
+    },
+    {
+        "className": [
+            "前衛",
+            "武者"
+        ],
+        "name": "レウスSノイルホーン",
+        "en": "Rathalos S Noir Corne",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 4,
+        "key": "char_1030_noirc2",
+        "team": [
+            "行動隊A4",
+            "ロドス・アイランド"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "キリンRヤトウ",
+        "en": "Kirin R Yato",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 5,
+        "key": "char_1029_yato2",
+        "team": [
+            "行動隊A4",
+            "ロドス・アイランド"
+        ],
+        "painter": "一千"
     }
 ]

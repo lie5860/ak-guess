@@ -4684,5 +4684,58 @@
             "염"
         ],
         "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "투척수"
+        ],
+        "name": "테라 대륙 조사단",
+        "en": "Terra Research Commission",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 0,
+        "key": "char_4077_palico",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "桃色Miruku"
+    },
+    {
+        "className": [
+            "가드",
+            "무사"
+        ],
+        "name": "레우스S 느와르 코르네",
+        "en": "Rathalos S Noir Corne",
+        "race": [
+            "오니"
+        ],
+        "rarity": 4,
+        "key": "char_1030_noirc2",
+        "team": [
+            "작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "키린R 야토",
+        "en": "Kirin R Yato",
+        "race": [
+            "오니"
+        ],
+        "rarity": 5,
+        "key": "char_1029_yato2",
+        "team": [
+            "작전팀 A4",
+            "로도스 아일랜드"
+        ],
+        "painter": "一千"
     }
 ]

@@ -5081,5 +5081,58 @@
             "莱塔尼亚"
         ],
         "painter": "Anmi"
+    },
+    {
+        "className": [
+            "狙击",
+            "猎手"
+        ],
+        "name": "冰酿",
+        "en": "Coldshot",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 4,
+        "key": "char_4104_coldst",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "特种",
+            "钩索师"
+        ],
+        "name": "杏仁",
+        "en": "Almond",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_4105_almond",
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "直立行走"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒铁卫"
+        ],
+        "name": "涤火杰西卡",
+        "en": "Jessica the Liberated",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_1034_jesca2",
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "Cenm0"
     }
 ]

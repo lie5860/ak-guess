@@ -4688,5 +4688,58 @@
             "Yan"
         ],
         "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Flinger"
+        ],
+        "name": "Terra Research Commission",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 0,
+        "key": "char_4077_palico",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Peachy Miruku"
+    },
+    {
+        "className": [
+            "Guard",
+            "Musha"
+        ],
+        "name": "Rathalos S Noir Corne",
+        "en": "",
+        "race": [
+            "Oni"
+        ],
+        "rarity": 4,
+        "key": "char_1030_noirc2",
+        "team": [
+            "Op Team A4",
+            "Rhodes Island"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "Kirin R Yato",
+        "en": "",
+        "race": [
+            "Oni"
+        ],
+        "rarity": 5,
+        "key": "char_1029_yato2",
+        "team": [
+            "Op Team A4",
+            "Rhodes Island"
+        ],
+        "painter": "一千"
     }
 ]
