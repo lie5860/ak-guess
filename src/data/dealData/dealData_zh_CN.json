@@ -5134,5 +5134,73 @@
             "哥伦比亚"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "维荻",
+        "en": "Verdant",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 3,
+        "key": "char_4107_vrdant",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "术师",
+            "秘术师"
+        ],
+        "name": "戴菲恩",
+        "en": "Delphine",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4110_delphn",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "医疗",
+            "咒愈师"
+        ],
+        "name": "刺玫",
+        "en": "Vendela",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_494_vendla",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "近卫",
+            "重剑手"
+        ],
+        "name": "赫德雷",
+        "en": "Hoederer",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4088_hodrer",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "树豚"
     }
 ]
