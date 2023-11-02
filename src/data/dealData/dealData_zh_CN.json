@@ -5202,5 +5202,107 @@
             "罗德岛"
         ],
         "painter": "树豚"
+    },
+    {
+        "className": [
+            "狙击",
+            "回环射手"
+        ],
+        "name": "跃跃",
+        "en": "Caper",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 3,
+        "key": "char_4100_caper",
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "折光",
+        "en": "Diamante",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 4,
+        "key": "char_499_kaitou",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "およ"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "深律",
+        "en": "Bassline",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "key": "char_4109_baslin",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "塑心",
+        "en": "Virtuosa",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 5,
+        "key": "char_245_cello",
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "薇薇安娜",
+        "en": "Viviana",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 5,
+        "key": "char_4098_vvana",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "止颂",
+        "en": "Lessing",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 5,
+        "key": "char_4011_lessng",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "カワグチ"
     }
 ]
