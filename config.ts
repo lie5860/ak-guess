@@ -19,7 +19,8 @@ const saveNum = (num, server, pass) => axios
     alert('服务已崩溃 请联系管理员')
   });
 const getGameDataByLangAndName = (language, jsonName) => {
-  return axios.get(`https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/${language}/gamedata/excel/${jsonName}.json`).catch((err) => {
+  const targetProject = language !== 'zh_CN' ? 'ArknightsGameData_YoStar' : 'ArknightsGameData';
+  return axios.get(`https://raw.githubusercontent.com/Kengxxiao/${targetProject}/master/${language}/gamedata/excel/${jsonName}.json`).catch((err) => {
     console.log(`${language}语言 ${jsonName}文件 获取失败 重试`)
     // console.log(JSON.stringify(err))
     return getGameDataByLangAndName(language, jsonName)
