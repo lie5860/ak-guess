@@ -4741,5 +4741,159 @@
             "Rhodes Island"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "Defender",
+            "Protector"
+        ],
+        "name": "Friston-3",
+        "en": "",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4093_frston",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "过失帝国"
+    },
+    {
+        "className": [
+            "Guard",
+            "Reaper"
+        ],
+        "name": "Humus",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 3,
+        "key": "char_491_humus",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "Guard",
+            "Dreadnought"
+        ],
+        "name": "Morgan",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_154_morgan",
+        "team": [
+            "Glasgow",
+            "Victoria"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "Defender",
+            "Duelist"
+        ],
+        "name": "Cement",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 4,
+        "key": "char_464_cement",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "科学"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Heavyshooter"
+        ],
+        "name": "Melanite",
+        "en": "",
+        "race": [
+            "Phidia/Pythia"
+        ],
+        "rarity": 4,
+        "key": "char_4006_melnte",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "redjuice"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Tactician"
+        ],
+        "name": "Muelsyse",
+        "en": "",
+        "race": [
+            "Elf"
+        ],
+        "rarity": 5,
+        "key": "char_249_mlyss",
+        "team": [
+            "Rhine Lab",
+            "Columbia"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Agent"
+        ],
+        "name": "Ines",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_4087_ines",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "Caster",
+            "Core Caster"
+        ],
+        "name": "Ho'olheyak",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_4027_heyak",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Abjurer"
+        ],
+        "name": "Silence the Paradigmatic",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 5,
+        "key": "char_1031_slent2",
+        "team": [
+            "Rhine Lab",
+            "Columbia"
+        ],
+        "painter": "九日九号"
     }
 ]

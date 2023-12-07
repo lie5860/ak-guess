@@ -4737,5 +4737,159 @@
             "ロドス・アイランド"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "重装",
+            "重盾衛士"
+        ],
+        "name": "Friston-3",
+        "en": "Friston-3",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4093_frston",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "过失帝国"
+    },
+    {
+        "className": [
+            "前衛",
+            "鎌撃士"
+        ],
+        "name": "ヒューマス",
+        "en": "Humus",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 3,
+        "key": "char_491_humus",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "前衛",
+            "勇士"
+        ],
+        "name": "モーガン",
+        "en": "Morgan",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_154_morgan",
+        "team": [
+            "グラスゴー",
+            "ヴィクトリア"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "重装",
+            "決闘者"
+        ],
+        "name": "セメント",
+        "en": "Cement",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 4,
+        "key": "char_464_cement",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "サイエンス"
+    },
+    {
+        "className": [
+            "狙撃",
+            "精密射手"
+        ],
+        "name": "メラナイト",
+        "en": "Melanite",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 4,
+        "key": "char_4006_melnte",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "redjuice"
+    },
+    {
+        "className": [
+            "先鋒",
+            "戦術家"
+        ],
+        "name": "ミュルジス",
+        "en": "Muelsyse",
+        "race": [
+            "エルフ"
+        ],
+        "rarity": 5,
+        "key": "char_249_mlyss",
+        "team": [
+            "ライン生命",
+            "クルビア"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "先鋒",
+            "偵察兵"
+        ],
+        "name": "イネス",
+        "en": "Ines",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_4087_ines",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "術師",
+            "中堅術師"
+        ],
+        "name": "ホルハイヤ",
+        "en": "Ho'olheyak",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_4027_heyak",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "補助",
+            "祈祷師"
+        ],
+        "name": "淬羽サイレンス",
+        "en": "Silence the Paradigmatic",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 5,
+        "key": "char_1031_slent2",
+        "team": [
+            "ライン生命",
+            "クルビア"
+        ],
+        "painter": "九日九号"
     }
 ]

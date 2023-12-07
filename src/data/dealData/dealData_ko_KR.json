@@ -4737,5 +4737,159 @@
             "로도스 아일랜드"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프로텍터"
+        ],
+        "name": "Friston-3",
+        "en": "Friston-3",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4093_frston",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "过失帝国"
+    },
+    {
+        "className": [
+            "가드",
+            "리퍼"
+        ],
+        "name": "휴머스",
+        "en": "Humus",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 3,
+        "key": "char_491_humus",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "모건",
+        "en": "Morgan",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_154_morgan",
+        "team": [
+            "글래스고",
+            "빅토리아"
+        ],
+        "painter": "Infukun"
+    },
+    {
+        "className": [
+            "디펜더",
+            "결전자"
+        ],
+        "name": "시멘트",
+        "en": "Cement",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 4,
+        "key": "char_464_cement",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "科学"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "헤비슈터"
+        ],
+        "name": "멜라나이트",
+        "en": "Melanite",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 4,
+        "key": "char_4006_melnte",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "redjuice"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "전술가"
+        ],
+        "name": "뮤엘시스",
+        "en": "Muelsyse",
+        "race": [
+            "엘프"
+        ],
+        "rarity": 5,
+        "key": "char_249_mlyss",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "NoriZC"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "에이전트"
+        ],
+        "name": "이네스",
+        "en": "Ines",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_4087_ines",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "오올헤약",
+        "en": "Ho'olheyak",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_4027_heyak",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "LM7"
+    },
+    {
+        "className": [
+            "서포터",
+            "비호자"
+        ],
+        "name": "사일런스 더 패러디그매틱",
+        "en": "Silence the Paradigmatic",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 5,
+        "key": "char_1031_slent2",
+        "team": [
+            "라인 랩",
+            "컬럼비아"
+        ],
+        "painter": "九日九号"
     }
 ]
