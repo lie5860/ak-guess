@@ -4891,5 +4891,56 @@
             "クルビア"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "狙撃",
+            "速射手"
+        ],
+        "name": "インサイダー",
+        "en": "Insider",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 4,
+        "key": "char_498_inside",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "特殊",
+            "鬼才"
+        ],
+        "name": "スプリア",
+        "en": "Spuria",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 4,
+        "key": "char_4015_spuria",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "おぐち"
+    },
+    {
+        "className": [
+            "前衛",
+            "鎌撃士"
+        ],
+        "name": "聖約イグゼキュター",
+        "en": "Executor the Ex Foedere",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 5,
+        "key": "char_1032_excu2",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "Skade"
     }
 ]

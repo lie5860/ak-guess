@@ -4891,5 +4891,56 @@
             "컬럼비아"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "명사수"
+        ],
+        "name": "인사이더",
+        "en": "Insider",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 4,
+        "key": "char_498_inside",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "기인"
+        ],
+        "name": "스푸리아",
+        "en": "Spuria",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 4,
+        "key": "char_4015_spuria",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "おぐち"
+    },
+    {
+        "className": [
+            "가드",
+            "리퍼"
+        ],
+        "name": "이그제큐터 디 엑스 포에데레",
+        "en": "Executor the Ex Foedere",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 5,
+        "key": "char_1032_excu2",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "Skade"
     }
 ]

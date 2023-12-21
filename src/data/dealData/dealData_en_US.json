@@ -4895,5 +4895,56 @@
             "Columbia"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Marksman"
+        ],
+        "name": "Insider",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 4,
+        "key": "char_498_inside",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "umo_yszx"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Geek"
+        ],
+        "name": "Spuria",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 4,
+        "key": "char_4015_spuria",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "おぐち"
+    },
+    {
+        "className": [
+            "Guard",
+            "Reaper"
+        ],
+        "name": "Executor the Ex Foedere",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 5,
+        "key": "char_1032_excu2",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "Skade"
     }
 ]
