@@ -5357,5 +5357,39 @@
             "谢拉格"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "温米",
+        "en": "Warmy",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "key": "char_4081_warmy",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "二色こぺ"
+    },
+    {
+        "className": [
+            "狙击",
+            "猎手"
+        ],
+        "name": "莱伊",
+        "en": "Ray",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 5,
+        "key": "char_4117_ray",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "Cenm0"
     }
 ]
