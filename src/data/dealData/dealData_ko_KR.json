@@ -4942,5 +4942,76 @@
             "라테라노"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "폰사이러스",
+        "en": "Poncirus",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_488_buildr",
+        "team": [
+            "시에스타",
+            "컬럼비아"
+        ],
+        "painter": "NOCO"
+    },
+    {
+        "className": [
+            "가드",
+            "교관"
+        ],
+        "name": "브라이오피타",
+        "en": "Bryophyta",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_4106_bryota",
+        "team": [
+            "시에스타",
+            "컬럼비아"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "상인"
+        ],
+        "name": "스와이어 디 엘리건트 위트",
+        "en": "Swire the Elegant Wit",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_1033_swire2",
+        "team": [
+            "염",
+            "용문"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "메딕",
+            "방랑 메딕"
+        ],
+        "name": "에이야퍄들라 더 크비트 아스카",
+        "en": "Eyjafjalla the Hvít Aska",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 5,
+        "key": "char_1016_agoat2",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "Anmi"
     }
 ]

@@ -4946,5 +4946,76 @@
             "Laterano"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "Poncirus",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_488_buildr",
+        "team": [
+            "Siesta",
+            "Columbia"
+        ],
+        "painter": "NOCO"
+    },
+    {
+        "className": [
+            "Guard",
+            "Instructor"
+        ],
+        "name": "Bryophyta",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_4106_bryota",
+        "team": [
+            "Siesta",
+            "Columbia"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Merchant"
+        ],
+        "name": "Swire the Elegant Wit",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_1033_swire2",
+        "team": [
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Medic",
+            "Wandering Medic"
+        ],
+        "name": "Eyjafjalla the Hvít Aska",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 5,
+        "key": "char_1016_agoat2",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "Anmi"
     }
 ]

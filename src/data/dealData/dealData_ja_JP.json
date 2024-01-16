@@ -4942,5 +4942,76 @@
             "ラテラーノ"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "ポンシラス",
+        "en": "Poncirus",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_488_buildr",
+        "team": [
+            "シエスタ",
+            "クルビア"
+        ],
+        "painter": "NOCO"
+    },
+    {
+        "className": [
+            "前衛",
+            "教官"
+        ],
+        "name": "ブライオファイタ",
+        "en": "Bryophyta",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_4106_bryota",
+        "team": [
+            "シエスタ",
+            "クルビア"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "特殊",
+            "行商人"
+        ],
+        "name": "琳琅スワイヤー",
+        "en": "Swire the Elegant Wit",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_1033_swire2",
+        "team": [
+            "炎",
+            "龍門"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "医療",
+            "放浪医"
+        ],
+        "name": "純燼エイヤフィヤトラ",
+        "en": "Eyjafjalla the Hvít Aska",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 5,
+        "key": "char_1016_agoat2",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "Anmi"
     }
 ]
