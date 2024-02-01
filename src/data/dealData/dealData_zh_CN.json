@@ -5391,5 +5391,91 @@
             "雷姆必拓"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "红隼",
+        "en": "Kestrel",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4023_rfalcn",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "先锋",
+            "执旗手"
+        ],
+        "name": "万顷",
+        "en": "Wanqing",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "key": "char_4119_wanqin",
+        "team": [
+            "炎"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "小满",
+        "en": "Grain Buds",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4122_grabds",
+        "team": [
+            "炎"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "黍",
+        "en": "Shu",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_2025_shu",
+        "team": [
+            "炎",
+            "岁"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "近卫",
+            "武者"
+        ],
+        "name": "左乐",
+        "en": "Zuo Le",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 5,
+        "key": "char_4121_zuole",
+        "team": [
+            "炎"
+        ],
+        "painter": "九日九号"
     }
 ]
