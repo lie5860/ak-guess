@@ -5013,5 +5013,56 @@
             "リターニア"
         ],
         "painter": "Anmi"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "サンタラ",
+        "en": "Santalla",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_341_sntlla",
+        "team": [
+            "サーミ"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "補助",
+            "祭儀師"
+        ],
+        "name": "ヴァラルクビン",
+        "en": "Valarqvin",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_4102_threye",
+        "team": [
+            "サーミ"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "狙撃",
+            "破城射手"
+        ],
+        "name": "ティフォン",
+        "en": "Typhon",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_2012_typhon",
+        "team": [
+            "サーミ"
+        ],
+        "painter": "LM7"
     }
 ]

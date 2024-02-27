@@ -5017,5 +5017,56 @@
             "Leithanien"
         ],
         "painter": "Anmi"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Santalla",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_341_sntlla",
+        "team": [
+            "Sami"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Ritualist"
+        ],
+        "name": "Valarqvin",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_4102_threye",
+        "team": [
+            "Sami"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Besieger"
+        ],
+        "name": "Typhon",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_2012_typhon",
+        "team": [
+            "Sami"
+        ],
+        "painter": "LM7"
     }
 ]

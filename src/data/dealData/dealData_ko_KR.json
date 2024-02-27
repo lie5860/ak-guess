@@ -5013,5 +5013,56 @@
             "라이타니엔"
         ],
         "painter": "Anmi"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "산탈라",
+        "en": "Santalla",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_341_sntlla",
+        "team": [
+            "사미"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "서포터",
+            "의식술사"
+        ],
+        "name": "발라크빈",
+        "en": "Valarqvin",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_4102_threye",
+        "team": [
+            "사미"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "공성사수"
+        ],
+        "name": "티폰",
+        "en": "Typhon",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_2012_typhon",
+        "team": [
+            "사미"
+        ],
+        "painter": "LM7"
     }
 ]
