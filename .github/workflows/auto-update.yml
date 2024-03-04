@@ -22,7 +22,7 @@ jobs:
           git config --global user.email lie58600@gmail.com
           git config --global user.name lie
           git add .
-          git commit -m "自动更新"
+          git commit -m "自动更新" || true
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
