@@ -5477,5 +5477,73 @@
             "炎"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "医生",
+        "en": "Doc",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4125_rdoc",
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "导火索",
+        "en": "Fuze",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4126_fuze",
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "双月",
+        "en": "Iana",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4124_iana",
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "特种",
+            "陷阱师"
+        ],
+        "name": "艾拉",
+        "en": "Ela",
+        "race": [
+            "未知"
+        ],
+        "rarity": 5,
+        "key": "char_4123_ela",
+        "team": [
+            "彩虹小队"
+        ],
+        "painter": "Ubisoft"
     }
 ]
