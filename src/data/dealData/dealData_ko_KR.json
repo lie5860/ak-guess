@@ -5064,5 +5064,75 @@
             "사미"
         ],
         "painter": "LM7"
+    },
+    {
+        "className": [
+            "서포터",
+            "음유시인"
+        ],
+        "name": "U-Official",
+        "en": "U-Official",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 0,
+        "key": "char_4091_ulika",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "사냥꾼"
+        ],
+        "name": "콜드샷",
+        "en": "Coldshot",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 4,
+        "key": "char_4104_coldst",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "후크마스터"
+        ],
+        "name": "아몬드",
+        "en": "Almond",
+        "race": [
+            "페로"
+        ],
+        "rarity": 4,
+        "key": "char_4105_almond",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "직립보행"
+    },
+    {
+        "className": [
+            "디펜더",
+            "센트리 프로텍터"
+        ],
+        "name": "제시카 더 리버레이티드",
+        "en": "Jessica the Liberated",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_1034_jesca2",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "Cenm0"
     }
 ]

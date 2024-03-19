@@ -5064,5 +5064,75 @@
             "サーミ"
         ],
         "painter": "LM7"
+    },
+    {
+        "className": [
+            "補助",
+            "吟遊者"
+        ],
+        "name": "U-Official",
+        "en": "U-Official",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 0,
+        "key": "char_4091_ulika",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "狙撃",
+            "狩人"
+        ],
+        "name": "コールドショット",
+        "en": "Coldshot",
+        "race": [
+            "エラフィア"
+        ],
+        "rarity": 4,
+        "key": "char_4104_coldst",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "特殊",
+            "鉤縄師"
+        ],
+        "name": "アーモンド",
+        "en": "Almond",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_4105_almond",
+        "team": [
+            "BSW",
+            "クルビア"
+        ],
+        "painter": "直立行走"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒衛士"
+        ],
+        "name": "滌火ジェシカ",
+        "en": "Jessica the Liberated",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_1034_jesca2",
+        "team": [
+            "BSW",
+            "クルビア"
+        ],
+        "painter": "Cenm0"
     }
 ]

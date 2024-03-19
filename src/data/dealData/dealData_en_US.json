@@ -5068,5 +5068,75 @@
             "Sami"
         ],
         "painter": "LM7"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Bard"
+        ],
+        "name": "U-Official",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 0,
+        "key": "char_4091_ulika",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Hunter"
+        ],
+        "name": "Coldshot",
+        "en": "",
+        "race": [
+            "Elafia"
+        ],
+        "rarity": 4,
+        "key": "char_4104_coldst",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Hookmaster"
+        ],
+        "name": "Almond",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_4105_almond",
+        "team": [
+            "Blacksteel Worldwide",
+            "Columbia"
+        ],
+        "painter": "直立行走"
+    },
+    {
+        "className": [
+            "Defender",
+            "Sentinel Protector"
+        ],
+        "name": "Jessica the Liberated",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_1034_jesca2",
+        "team": [
+            "Blacksteel Worldwide",
+            "Columbia"
+        ],
+        "painter": "Cenm0"
     }
 ]
