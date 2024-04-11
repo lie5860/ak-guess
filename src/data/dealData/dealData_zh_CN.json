@@ -468,7 +468,7 @@
         "rarity": 3,
         "key": "char_149_scave",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "罗德岛"
         ],
         "painter": "戏言咸咸"
@@ -1061,7 +1061,7 @@
         "rarity": 4,
         "key": "char_144_red",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "罗德岛"
         ],
         "painter": "Infukun"
@@ -5545,5 +5545,74 @@
             "彩虹小队"
         ],
         "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "重装",
+            "不屈者"
+        ],
+        "name": "露托",
+        "en": "Lutonada",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 3,
+        "key": "char_4130_luton",
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "近卫",
+            "撼地者"
+        ],
+        "name": "奥达",
+        "en": "Odda",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4131_odda",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "术师",
+            "轰击术师"
+        ],
+        "name": "阿罗玛",
+        "en": "Aroma",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "key": "char_446_aroma",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "阿斯卡纶",
+        "en": "Ascalon",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4132_ascln",
+        "team": [
+            "S.W.E.E.P.",
+            "罗德岛"
+        ],
+        "painter": "Cenm0"
     }
 ]
