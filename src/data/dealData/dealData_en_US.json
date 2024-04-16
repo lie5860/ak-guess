@@ -5138,5 +5138,73 @@
             "Columbia"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Dollkeeper"
+        ],
+        "name": "Verdant",
+        "en": "",
+        "race": [
+            "Phidia/Pythia"
+        ],
+        "rarity": 3,
+        "key": "char_4107_vrdant",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mystic Caster"
+        ],
+        "name": "Delphine",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4110_delphn",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Medic",
+            "Incantation Medic"
+        ],
+        "name": "Vendela",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_494_vendla",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Guard",
+            "Crusher"
+        ],
+        "name": "Hoederer",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_4088_hodrer",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "树豚"
     }
 ]

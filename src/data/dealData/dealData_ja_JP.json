@@ -5134,5 +5134,73 @@
             "クルビア"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "特殊",
+            "傀儡師"
+        ],
+        "name": "ヴァーダント",
+        "en": "Verdant",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 3,
+        "key": "char_4107_vrdant",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "術師",
+            "秘術師"
+        ],
+        "name": "デルフィーン",
+        "en": "Delphine",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4110_delphn",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "医療",
+            "呪癒師"
+        ],
+        "name": "ヴァンデラ",
+        "en": "Vendela",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_494_vendla",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "前衛",
+            "重剣士"
+        ],
+        "name": "へドリー",
+        "en": "Hoederer",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_4088_hodrer",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "树豚"
     }
 ]
