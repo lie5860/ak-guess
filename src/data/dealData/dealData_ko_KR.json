@@ -5134,5 +5134,73 @@
             "컬럼비아"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "인형사"
+        ],
+        "name": "버던트",
+        "en": "Verdant",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 3,
+        "key": "char_4107_vrdant",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "캐스터",
+            "미스틱 캐스터"
+        ],
+        "name": "델핀",
+        "en": "Delphine",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_4110_delphn",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "메딕",
+            "주술 메딕"
+        ],
+        "name": "벤델라",
+        "en": "Vendela",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_494_vendla",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "가드",
+            "대검사"
+        ],
+        "name": "외드레르",
+        "en": "Hoederer",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_4088_hodrer",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "树豚"
     }
 ]
