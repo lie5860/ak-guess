@@ -5202,5 +5202,107 @@
             "ロドス・アイランド"
         ],
         "painter": "树豚"
+    },
+    {
+        "className": [
+            "狙撃",
+            "旋輪射手"
+        ],
+        "name": "ケイパー",
+        "en": "Caper",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 3,
+        "key": "char_4100_caper",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "術師",
+            "本源術師"
+        ],
+        "name": "ディアマンテ",
+        "en": "Diamante",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 4,
+        "key": "char_499_kaitou",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "およ"
+    },
+    {
+        "className": [
+            "重装",
+            "庇護衛士"
+        ],
+        "name": "ベースライン",
+        "en": "Bassline",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 4,
+        "key": "char_4109_baslin",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "補助",
+            "祭儀師"
+        ],
+        "name": "ヴィルトゥオーサ",
+        "en": "Virtuosa",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 5,
+        "key": "char_245_cello",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "前衛",
+            "術戦士"
+        ],
+        "name": "ヴィヴィアナ",
+        "en": "Viviana",
+        "race": [
+            "エラフィア"
+        ],
+        "rarity": 5,
+        "key": "char_4098_vvana",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "前衛",
+            "勇士"
+        ],
+        "name": "レッシング",
+        "en": "Lessing",
+        "race": [
+            "キャプリニー"
+        ],
+        "rarity": 5,
+        "key": "char_4011_lessng",
+        "team": [
+            "リターニア"
+        ],
+        "painter": "カワグチ"
     }
 ]

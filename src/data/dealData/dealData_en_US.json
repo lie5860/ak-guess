@@ -5206,5 +5206,107 @@
             "Rhodes Island"
         ],
         "painter": "树豚"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Loopshooter"
+        ],
+        "name": "Caper",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 3,
+        "key": "char_4100_caper",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "Caster",
+            "Primal Caster"
+        ],
+        "name": "Diamante",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 4,
+        "key": "char_499_kaitou",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "およ"
+    },
+    {
+        "className": [
+            "Defender",
+            "Guardian"
+        ],
+        "name": "Bassline",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 4,
+        "key": "char_4109_baslin",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Ritualist"
+        ],
+        "name": "Virtuosa",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 5,
+        "key": "char_245_cello",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Guard",
+            "Arts Fighter"
+        ],
+        "name": "Viviana",
+        "en": "",
+        "race": [
+            "Elafia"
+        ],
+        "rarity": 5,
+        "key": "char_4098_vvana",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Guard",
+            "Dreadnought"
+        ],
+        "name": "Lessing",
+        "en": "",
+        "race": [
+            "Caprinae"
+        ],
+        "rarity": 5,
+        "key": "char_4011_lessng",
+        "team": [
+            "Leithanien"
+        ],
+        "painter": "カワグチ"
     }
 ]

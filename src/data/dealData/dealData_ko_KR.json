@@ -5202,5 +5202,107 @@
             "로도스 아일랜드"
         ],
         "painter": "树豚"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "루프슈터"
+        ],
+        "name": "케이퍼",
+        "en": "Caper",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 3,
+        "key": "char_4100_caper",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "캐스터",
+            "프라이멀 캐스터"
+        ],
+        "name": "디아만테",
+        "en": "Diamante",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 4,
+        "key": "char_499_kaitou",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "およ"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "베이스라인",
+        "en": "Bassline",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_4109_baslin",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "서포터",
+            "의식술사"
+        ],
+        "name": "비르투오사",
+        "en": "Virtuosa",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 5,
+        "key": "char_245_cello",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "가드",
+            "아츠 파이터"
+        ],
+        "name": "비비아나",
+        "en": "Viviana",
+        "race": [
+            "엘라피아"
+        ],
+        "rarity": 5,
+        "key": "char_4098_vvana",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "레싱",
+        "en": "Lessing",
+        "race": [
+            "카프리니"
+        ],
+        "rarity": 5,
+        "key": "char_4011_lessng",
+        "team": [
+            "라이타니엔"
+        ],
+        "painter": "カワグチ"
     }
 ]
