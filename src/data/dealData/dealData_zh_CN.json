@@ -4820,7 +4820,7 @@
         "rarity": 5,
         "key": "char_4087_ines",
         "team": [
-            "罗德岛"
+            "巴别塔"
         ],
         "painter": "板板"
     },
@@ -5199,7 +5199,7 @@
         "rarity": 5,
         "key": "char_4088_hodrer",
         "team": [
-            "罗德岛"
+            "巴别塔"
         ],
         "painter": "树豚"
     },
@@ -5614,5 +5614,107 @@
             "罗德岛"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "PhonoR-0",
+        "en": "PhonoR-0",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4136_phonor",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "M1917史密斯维森"
+    },
+    {
+        "className": [
+            "先锋",
+            "冲锋手"
+        ],
+        "name": "历阵锐枪芬",
+        "en": "Fang the Fire-sharpened",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "key": "char_1036_fang2",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙击",
+            "投掷手"
+        ],
+        "name": "维什戴尔",
+        "en": "Wiš'adel",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_1035_wisdel",
+        "team": [
+            "巴别塔"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "术师",
+            "中坚术师"
+        ],
+        "name": "逻各斯",
+        "en": "Logos",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4133_logos",
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "辅助",
+            "吟游者"
+        ],
+        "name": "魔王",
+        "en": "Civilight Eterna",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_4134_cetsyr",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "医疗",
+            "咒愈师"
+        ],
+        "name": "阿米娅(医疗)",
+        "en": "Amiya",
+        "race": [
+            "卡特斯",
+            "奇美拉"
+        ],
+        "rarity": 4,
+        "key": "char_1037_amiya3",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Mag42"
     }
 ]
