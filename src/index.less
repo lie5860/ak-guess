@@ -62,13 +62,26 @@ body {
   width: 100vw;
   height: 100vh;
   transition: transform 0.6s;
-  background-color: rgba(0, 0, 0);
+  background-color: transparent;
   background-size: cover;
   background-position: center bottom;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
+.lang-tlml.main-container::before {
+  content: "";
+  background-image: url("images/tlml/bg.png");
+  background-position: center bottom;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .titlePanel {
   .tooltip {
     margin: 5px;

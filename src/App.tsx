@@ -47,7 +47,7 @@ export default function Home() {
   }
   return (
     <div className={'container'}>
-      <div className={'main-container clean-float'}>
+      <div className={`main-container clean-float lang-${i18n.language}`}>
         {hostDict[i18n.language] && <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
                 className="appbar-btn mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
           <i className="mdui-icon material-icons">dns</i>
