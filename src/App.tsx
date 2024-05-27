@@ -48,15 +48,15 @@ export default function Home() {
   return (
     <div className={'container'}>
       <div className={'main-container clean-float'}>
-        <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
+        {hostDict[i18n.language] && <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
                 className="appbar-btn mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
           <i className="mdui-icon material-icons">dns</i>
           <span className="mini-chip mdui-color-blue-a400 mdui-text-uppercase pointer font-mono"
                 id="server-chip">
             <span className="mini-chip-content">{labelDict[i18n.language]}</span>
           </span>
-        </button>
-        <ul id="server-menu" className="mdui-menu">
+        </button>}
+         <ul id="server-menu" className="mdui-menu">
           <li className="mdui-menu-item mdui-ripple">
             {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
               return <a key={key} className="mdui-ripple pointer" onClick={() => {
