@@ -69,7 +69,7 @@ export default function Home() {
             })}
           </li>
         </ul>
-        <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
+        <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab={`${true}`}>
           {menu.map((menuMode) => {
             return <div key={menuMode} className={`ak-tab-item ${mode === menuMode ? 'active' : ''}`}
                         onClick={() => setMode(menuMode)}>

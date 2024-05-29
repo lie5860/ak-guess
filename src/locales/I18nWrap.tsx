@@ -40,7 +40,9 @@ export const I18nWrap = (props: any) => {
     setInited(true)
 
   }
-  React.useEffect(init, [])
+  React.useEffect(() => {
+    init();
+  }, [])
   if (!inited) return null
   return <AppCtx.Provider value={{
     i18n: {

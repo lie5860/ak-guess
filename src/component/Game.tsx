@@ -55,7 +55,9 @@ const Game = (props: IProps) => {
     setInit(true)
   }
   // 外部使用mode作为key 其实mode的变化感知不到了
-  React.useEffect(gameInit, [mode])
+  React.useEffect(() => {
+    gameInit();
+  }, [mode])
   // 绑定联想输入
   React.useEffect(() => {
     if (initialized) {

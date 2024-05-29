@@ -8,8 +8,8 @@
     "preview": "vite build && vite preview"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "19.0.0-rc-6f23540c7d-20240528",
+    "react-dom": "19.0.0-rc-6f23540c7d-20240528",
     "axios": "^0.26.0",
     "socket.io": "^4.4.1"
   },
@@ -27,7 +27,7 @@
     "vite": "^2.8.0"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "19.0.0-rc-6f23540c7d-20240528",
+    "react-dom": "19.0.0-rc-6f23540c7d-20240528"
   }
 }

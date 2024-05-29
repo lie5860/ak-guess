@@ -164,7 +164,7 @@ const History = ({mode}: {mode: string}) => {
               'cancelText': i18n.get('no')
             });
           }, 100)
-    }}><i class="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
+    }}><i className="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
   </>;
 }
 export {
