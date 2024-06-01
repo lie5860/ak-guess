@@ -49,7 +49,7 @@ const loadRecordData = (lang: string) => {
 }
 
 const resetRecordData = (lang: string, mode: string, successTip: string) => {
-  var record = loadRecordData(lang);
+  const record = loadRecordData(lang);
   record[mode] = DEFAULT_RECODE[mode];
   saveRecordData(lang, record);
   if (successTip) {
@@ -62,7 +62,7 @@ const saveRecordData = (lang: string, record: any) => {
 }
 
 const reinitRecord = (lang: string) => {
-  var record = loadRecordData(lang);
+  let record = loadRecordData(lang);
   if (record?.version != 1) {
     // 迁移数据
     if (record) {

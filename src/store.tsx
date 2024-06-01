@@ -135,7 +135,7 @@ const randomGame = ({store, randomStore}: any) => {
       return newData;
     },
     gameOver: (newData: any[]) => {
-      let record: any = loadRecordData(lang);
+      const record: any = loadRecordData(lang);
       const isWin = judgeWin(newData)
       if (isWin) {
         randomGameWin(lang, {
@@ -192,7 +192,7 @@ const randomGame = ({store, randomStore}: any) => {
           };
         })
       });
-      let record = loadRecordData(lang);
+      const record = loadRecordData(lang);
       record[mode].straightWins = 0;
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += randomData.length;
@@ -252,7 +252,7 @@ const dailyGame = ({store, dailyStore}: any) => {
       }
     },
     gameOver: (newData: any[]) => {
-      let record: any = loadRecordData(lang);
+      const record: any = loadRecordData(lang);
       const isWin = judgeWin(newData)
       if (isWin) {
         dailyGameWin(lang, {
@@ -407,7 +407,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       });
       setGiveUp(true);
       saveData('giveUp', 'true')
-      let record = loadRecordData(lang);
+      const record = loadRecordData(lang);
       record[mode].playTimes += 1;
       record[mode].straightWins = 0;
       saveRecordData(lang, record);
@@ -426,7 +426,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
           }
         })
       })
-      let record = loadRecordData(lang);
+      const record = loadRecordData(lang);
       record[mode].playTimes += 1;
       record[mode].winTimes += 1;
       record[mode].winTryTimes += newData.length;

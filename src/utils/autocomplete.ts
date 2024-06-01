@@ -4,10 +4,10 @@ export const filterDataByInputVal = (val: string, chartList: Character[], aliasD
   let inputVal = val.toUpperCase().trim()
   // 平假名转换成片假名去匹配结果
   inputVal = inputVal.replace(/[\u3041-\u3096]/g, function (match) {
-    var chr = match.charCodeAt(0) + 0x60;
+    const chr = match.charCodeAt(0) + 0x60;
     return String.fromCharCode(chr);
   });
-  let dealModal = [] as string[]
+  const dealModal = [] as string[]
   aliasData.forEach(v => {
     new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
   })
@@ -33,10 +33,10 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
   the text field element and an array of possible autocompleted values:*/
   let currentFocus: number;
   const inputCb = function () {
-    var a, i, val = this.value;
+    let a, i, val = this.value;
     /*close any already open lists of autocompleted values*/
     closeAllLists();
-    var inputVal = val.toUpperCase().trim()
+    const inputVal = val.toUpperCase().trim()
     if (!inputVal) {
       return false;
     }
@@ -55,7 +55,7 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
       /*make the matching letters bold:*/
       b.innerHTML = v?.[MAIN_KEY];
       /*insert a input field that will hold the current array item's value:*/
-      let value = v?.[MAIN_KEY].toString().replace(/'/g, "&#39;")
+      const value = v?.[MAIN_KEY].toString().replace(/'/g, "&#39;")
       b.innerHTML += "<input type='hidden' value='" + value + "'>";
       /*execute a function when someone clicks on the item value (DIV element):*/
       b.addEventListener("click", function (e) {
@@ -71,7 +71,7 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     // [...nameMatchItems,...aliasMatchItems].forEach(v=>a.appendChild(v));
   }
   const keydownCb = function (e) {
-    var x = document.getElementById(this.id + "autocomplete-list");
+    let x = document.getElementById(this.id + "autocomplete-list");
     if (x) x = x.getElementsByTagName("div");
     if (e.keyCode == 40) {
       /*If the arrow DOWN key is pressed,
@@ -112,7 +112,7 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
 
   function removeActive(x) {
     /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
+    for (let i = 0; i < x.length; i++) {
       x[i].classList.remove("autocomplete-active");
     }
   }
@@ -120,8 +120,8 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
   function closeAllLists(elmnt) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
+    const x = document.getElementsByClassName("autocomplete-items");
+    for (let i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
         x[i].parentNode.removeChild(x[i]);
       }

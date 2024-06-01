@@ -18,11 +18,11 @@ export default function Home() {
   const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
   const store = {mode, chartsData, today, i18n, chartNameToIndexDict}
   const openHelp = (firstOpen = false) => {
-    window?.mduiModal?.open({
-      "message": <Help updateDate={updateDate} firstOpen={firstOpen} mode={mode}/>,
-      "title": i18n.get('helpTitle'),
-      useCloseIcon: true
-    })
+      window?.mduiModal?.open({
+          "message": <Help updateDate={updateDate} firstOpen={firstOpen} mode={mode}/>,
+          "title": i18n.get('helpTitle'),
+          useCloseIcon: true
+      })
   }
   window.document.title = i18n.get('title');
   React.useEffect(() => {

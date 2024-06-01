@@ -13,8 +13,8 @@ const Guide = () => {
   const record = JSON.parse(localStorageGet(i18n.language, 'record') || '{}')
   const paradoxModeRecord = record[PARADOX_MODE].roles;
   const randomModeRecord = record[RANDOM_MODE].roles;
-  var randomRoleCount = Object.keys(randomModeRecord).length;
-  var paradoxRoleCount = Object.keys(paradoxModeRecord).length;
+  const randomRoleCount = Object.keys(randomModeRecord).length;
+  const paradoxRoleCount = Object.keys(paradoxModeRecord).length;
   React.useEffect(() => {
     window.mdui.mutation()
   }, [])
