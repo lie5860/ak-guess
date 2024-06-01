@@ -16,7 +16,7 @@ export class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, info) {
     const len = localStorage.length;  // 获取长度
-    const arr = new Array(); // 定义数据集
+    const arr = []; // 定义数据集
     for (let i = 0; i < len; i++) {
       // 获取key 索引从0开始
       const getKey = localStorage.key(i);
