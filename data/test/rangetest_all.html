@@ -1,0 +1,549 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数据范围测试2</title>
+</head>
+<body>
+    <h1>说明</h1>
+    <p>基于<a href="https://github.com/suulnnka/ak-guess-cheater" target="_blank">suulnnka/ak-guess-cheater</a>的算法对当前的所有干员进行模拟（每次选取信息熵最大的干员，不论是否已被排除）</p>
+    <h3>单干员模拟</h3>干员：<input type="text" id="operator"/><input type="button" id="mock" value="后台模拟"/>
+    <hr/>
+    <h3>全干员次数分布统计</h3><input type="button" id="mockAll" value="后台模拟"/>
+    <ul id="timesCount">
+        <li>1：<span id="times_1">0</span></li>
+        <li>2：<span id="times_2">0</span></li>
+        <li>3：<span id="times_3">0</span></li>
+        <li>4：<span id="times_4">0</span></li>
+        <li>5：<span id="times_5">0</span></li>
+        <li>6：<span id="times_6">0</span></li>
+        <li>7：<span id="times_7">0</span></li>
+        <li>8：<span id="times_8">0</span></li>
+        <li>9：<span id="times_9">0</span></li>
+        <li>10：<span id="times_10">0</span></li>
+        <li>11：<span id="times_11">0</span></li>
+        <li>12：<span id="times_12">0</span></li>
+    </ul>
+    <h4>最多次数</h4>
+    <span id="times_max">-</span>[<span id="max_ops"></span>]
+</body>
+<script type="text/javascript">
+    var 干员列表 = [];
+    var 猜测次数= {};
+    var timeCount = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7:0, 8:0, 9: 0, 10:0, 11:0, 12:0 };
+    var max = 1, maxOps = [], count = 0, sum = 0; 
+
+    fetch('https://raw.githubusercontent.com/lie5860/ak-guess/main/src/data/dealData/dealData_zh_CN.json')
+    .then(response => response.json())
+    .then(data => {
+        for (var i = 0; i < data.length; ++i) {
+            if (!Array.isArray(data[i].race)) {data[i].race = [data[i].race];}
+        }
+      干员列表 = data;
+      document.getElementById("mockAll").onclick = mockAll;
+      document.getElementById("mock").onclick = function() {
+        var oper = document.getElementById("operator").value;
+        var op;
+        for (let 干员 of 干员列表) {
+            if (干员.name == oper) {
+                op = 干员;
+                break;
+            }
+        }
+        if (op == null) {
+            console.error("找不到干员" + oper);
+            return;
+        }
+        mockGuess(op, "-", true);
+        };
+    })
+    .catch(error => {
+      console.error('Error reading JSON file: ', error);
+    });
+
+var mockAll = function() {
+      var idx = 0;
+      for (let 猜测干员 of 干员列表) {
+        idx++;
+        var times = mockGuess(猜测干员, idx, false);
+        猜测次数[猜测干员.name] = times;
+        timeCount[times] ++;
+          count ++; sum += times; 
+          if (times > max) {
+            max = times; maxOps = [];
+          }
+          if (times == max) {
+             maxOps.push(猜测干员.name);
+          }
+      }
+      console.log(猜测次数);
+      console.log("共" + count + "个干员，累积次数" + sum + "次");
+      console.log("最多消耗次数" + max + "，共有这些干员：" , maxOps);
+      console.log("次数分布情况：", timeCount); 
+      document.getElementById("times_max").innerText = max;
+      document.getElementById("max_ops").innerText = maxOps;
+      for (var i = 1; timeCount.length; ++i) {
+        document.getElementById("times_" + i).innerText = timeCount[i];
+      }
+}
+
+    var log = function(msg) {
+        console.log(msg);
+    };
+
+    // 轮询干员列表，模拟每轮使用信息熵最大的干员，需要几次才能猜中
+    var mockGuess = function(目标干员, idx, logAll) {
+        清空猜测列表 ()
+        var count = 0;
+        log(idx + "【猜测开始】目标干员:" + 目标干员.name);
+        var continueGuess = true
+        while (true) {
+            [嫌疑人清单,搜索列表] = 开始猜测();
+            if (嫌疑人清单.length == 1) {
+                log(idx + "【猜测结束】猜测目标干员"+ 目标干员.name+"成功，共消耗次数："+ (count+1));
+                return count+1;
+            } 
+            if (嫌疑人清单.length == 0) {
+                log(idx + "【猜测结束】猜测目标干员"+ 目标干员.name+"失败，程序异常，未找到嫌疑人清单");
+                console.error("猜测结果："+ JSON.stringify(猜测列表));
+                break;
+                return -1;
+            } 
+            if (!continueGuess) {
+                if (嫌疑人清单.length > 1) {
+                    console.warn("完全一致，但有", 嫌疑人清单.length, "个嫌疑人，就按结束人来算", JSON.stringify(嫌疑人清单));
+                }
+                log(idx + "【猜测结束】猜测目标干员" + 目标干员.name+"成功，共消耗次数："+ (count+1));
+                return count+1;
+            }
+            continueGuess = false
+            var 猜测干员 = 搜索列表[0];
+            if (logAll) {
+                log(idx + "【猜测中】本轮猜测：" + 猜测干员.name);
+            }
+            猜测列表[count] = {
+                name: 猜测干员.name
+            };
+            if (猜测干员.rarity == 目标干员.rarity) {
+                猜测列表[count].rarity = "一致";
+            } else if (猜测干员.rarity < 目标干员.rarity) {
+                猜测列表[count].rarity = "向上";
+                continueGuess = true
+            } else {
+                猜测列表[count].rarity = "向下";
+                continueGuess = true
+            } 
+            猜测列表[count].team = compareArrays(猜测干员.team, 目标干员.team);
+            if (猜测列表[count].team != "一致") {
+                continueGuess = true;
+            }
+
+            猜测列表[count].className = compareArrays(猜测干员.className, 目标干员.className);
+            if (猜测列表[count].className != "一致") {
+                continueGuess = true;
+            }
+
+            猜测列表[count].race = compareArrays(猜测干员.race, 目标干员.race);
+            if (猜测列表[count].race != "一致") {
+                continueGuess = true;
+            }
+
+            if (猜测干员.painter == 目标干员.painter) {
+                猜测列表[count].painter = "一致";
+            } else {
+                猜测列表[count].painter = "不同";
+                continueGuess = true;
+            }
+            
+            if (logAll) {
+                console.log(idx + "本轮猜测结果：{}", 猜测列表[count]);
+            }
+            count++;
+        }
+    }
+    function compareArrays(arr1, arr2) {
+        const isEqual = (JSON.stringify(arr1) === JSON.stringify(arr2));
+    const isPartialMatch = arr1.some(elem => arr2.includes(elem));
+
+    if (isEqual) {
+        return "一致";
+    } else if (isPartialMatch) {
+        return "部分一致";
+    } else {
+        return "不同";
+    }
+}
+
+
+    // 猜测算法
+let 猜测列表 = [
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+    {name:'',rarity:'',team:'',className:'',race:'',painter:''},
+]
+
+function 排除嫌疑人(嫌疑人清单,猜测条件){
+    let 数据完整标志 = true
+    for(let 项名 in 猜测条件){
+        if(猜测条件[项名] == ''){
+            数据完整标志 = false
+        }
+    }
+    if(数据完整标志 == false){
+        return
+    }
+
+    let 干员
+    for(let 临时干员 of 干员列表){
+        if(临时干员.name == 猜测条件.name){
+            干员 = 临时干员
+        }
+    }
+    if (typeof 干员 === undefined) {
+        console.error("匹配不到干员", 猜测条件.name);
+        debugger
+        return
+    }
+
+    if(猜测条件.rarity == "向上"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.rarity <= 干员.rarity){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+    if(猜测条件.rarity == "一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.rarity != 干员.rarity){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+    if(猜测条件.rarity == "向下"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.rarity >= 干员.rarity){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.team == "不同"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+
+            let team相同数 = 0
+            for(let 干员team of 干员.team)
+            for(let 临时干员team of 临时干员.team){
+                if(干员team == 临时干员team){
+                    team相同数 = team相同数 + 1
+                }
+            }
+
+            if(team相同数 > 0){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.team == "部分一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+
+            let team相同数 = 0
+            for(let 干员team of 干员.team)
+            for(let 临时干员team of 临时干员.team){
+                if(干员team == 临时干员team){
+                    team相同数 = team相同数 + 1
+                }
+            }
+
+            if(team相同数 == 0){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(干员.team.length == 临时干员.team.length && 干员.team.length == team相同数){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+
+    if(猜测条件.team == "一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+
+            let team相同数 = 0
+            for(let 干员team of 干员.team)
+            for(let 临时干员team of 临时干员.team){
+                if(干员team == 临时干员team){
+                    team相同数 = team相同数 + 1
+                }
+            }
+
+            if(team相同数 == 0){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(干员.team.length != 临时干员.team.length){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(干员.team.length != team相同数){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.className == "不同"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.className[0]  == 干员.className[0] ){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.className == "部分一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.className[0] != 干员.className[0] ){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(临时干员.className[1]  == 干员.className[1]){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.className == "一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.className[0] != 干员.className[0] ){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(临时干员.className[1]  != 干员.className[1]){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+
+    if(猜测条件.race == "不同"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+
+            let race相同数 = 0
+            for(let 干员race of 干员.race)
+            for(let 临时干员race of 临时干员.race){
+                if(干员race == 临时干员race){
+                    race相同数 = race相同数 + 1
+                }
+            }
+
+            if(race相同数 > 0){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.race == "部分一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+
+            let race相同数 = 0
+            for(let 干员race of 干员.race)
+            for(let 临时干员race of 临时干员.race){
+                if(干员race == 临时干员race){
+                    race相同数 = race相同数 + 1
+                }
+            }
+
+            if(race相同数 == 0){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(干员.race.length == 临时干员.race.length && 干员.race.length == race相同数){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+
+    if(猜测条件.race == "一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+
+            let race相同数 = 0
+            for(let 干员race of 干员.race)
+            for(let 临时干员race of 临时干员.race){
+                if(干员race == 临时干员race){
+                    race相同数 = race相同数 + 1
+                }
+            }
+
+            if(race相同数 == 0){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(干员.race.length != 临时干员.race.length){
+                嫌疑人清单.splice(编号,1)
+                continue
+            }
+            if(干员.race.length != race相同数){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+
+
+    if(猜测条件.painter == "不同"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.painter == 干员.painter){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+
+    if(猜测条件.painter == "一致"){
+        for(let 编号 = 嫌疑人清单.length-1 ; 编号 >= 0 ; 编号 --){
+            let 临时干员 = 嫌疑人清单[编号]
+            if(临时干员.painter != 干员.painter){
+                嫌疑人清单.splice(编号,1)
+            }
+        }
+    }
+    
+}
+
+function 清空猜测列表 (){
+    for(let 猜测条件 of 猜测列表){
+        for(let 字段名 in 猜测条件){
+            猜测条件[字段名] = ''
+        }
+    }
+}
+
+function 有嫌疑吗(嫌疑人,干员,rarity,team,className,race,painter){
+    if(rarity=="向上" && 嫌疑人.rarity<=干员.rarity) return false
+    if(rarity=="一致" && 嫌疑人.rarity!=干员.rarity) return false
+    if(rarity=="向下" && 嫌疑人.rarity>=干员.rarity) return false
+
+    let team相同数 = 0
+    for(let 干员team of 干员.team)
+    for(let 嫌疑人team of 嫌疑人.team){
+        if(干员team == 嫌疑人team){
+            team相同数 = team相同数 + 1
+        }
+    }
+
+    if(team=="不同" && team相同数 > 0)  return false
+    if(team=="部分一致"){
+        if(team相同数==0) return false
+        if(干员.team.length == 嫌疑人.team.length && 干员.team.length == team相同数) return false
+    }
+    if(team=="一致"){
+        if(干员.team.length != 嫌疑人.team.length) return false
+        if(干员.team.length != team相同数) return false
+    }
+
+    let race相同数 = 0
+    for(let 干员race of 干员.race)
+    for(let 嫌疑人race of 嫌疑人.race){
+        if(干员race == 嫌疑人race){
+            race相同数 = race相同数 + 1
+        }
+    }
+    
+    if(race=="不同" && race相同数 > 0)  return false
+    if(race=="部分一致"){
+        if(race相同数==0) return false
+        if(干员.race.length == 嫌疑人.race.length && 干员.race.length == race相同数) return false
+    }
+    if(race=="一致"){
+        if(干员.race.length != 嫌疑人.race.length) return false
+        if(干员.race.length != race相同数) return false
+    }
+
+    if(className=="不同" && 干员.className == 嫌疑人.className) return false
+    if(className=="部分一致"){
+        if(干员.className != 嫌疑人.className) return false
+        if(干员.子className == 嫌疑人.子className) return false
+    } 
+    if(className=="一致" && 干员.子className != 嫌疑人.子className) return false
+
+    if(painter=="不同" && 干员.painter == 嫌疑人.painter) return false
+    if(painter=="一致" && 干员.painter != 嫌疑人.painter) return false
+
+    return true
+}
+
+function 查找嫌疑人数量(嫌疑人清单,干员,rarity,team,className,race,painter){
+    let 嫌疑人数量 = 0
+    for(let 嫌疑人 of 嫌疑人清单){
+        if(嫌疑人.name == 干员.name) continue
+        if(有嫌疑吗(嫌疑人,干员,rarity,team,className,race,painter)){
+            嫌疑人数量 = 嫌疑人数量 + 1
+        }
+    }
+    return 嫌疑人数量
+}
+
+function 开始猜测(){
+            let 嫌疑人清单 = []
+            for(let 干员 of 干员列表){
+                嫌疑人清单.push(干员)
+            }
+
+            for(let 猜测条件 of 猜测列表){
+                if(排除嫌疑人(嫌疑人清单,猜测条件) === false){
+                    return
+                }
+            }
+
+            let 搜索列表 = 干员列表
+            for(let 干员 of 搜索列表){
+                let 信息熵 = 0
+                for(let rarity of ["向上","一致","向下"])
+                for(let team of ["不同","部分一致","一致"])
+                for(let className of ["不同","部分一致","一致"])
+                for(let race of ["不同","部分一致","一致"])
+                for(let painter of ["不同","一致"]){
+                    let 嫌疑人数量 = 查找嫌疑人数量(嫌疑人清单,干员,rarity,team,className,race,painter)
+                    if(嫌疑人数量 != 0){
+                        let 概率 = 嫌疑人数量 / 嫌疑人清单.length
+                        信息熵 = 信息熵 - 概率 * Math.log2(概率)
+                    }
+                }
+                干员.信息熵 = 信息熵
+                干员.怀疑度 = 0
+            }
+
+            for(let 干员 of 嫌疑人清单){
+                干员.怀疑度 = 1
+            }
+
+            搜索列表.sort(function(干员A,干员B){
+                if(干员B.信息熵 == 干员A.信息熵){
+                    return 干员B.怀疑度 - 干员A.怀疑度
+                }
+                return 干员B.信息熵 - 干员A.信息熵
+            })
+            嫌疑人清单.sort(function(干员A,干员B){
+                return 干员B.信息熵 - 干员A.信息熵
+            })
+
+      return [嫌疑人清单, 搜索列表];
+}
+</script>
+</html>
