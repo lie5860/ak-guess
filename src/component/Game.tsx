@@ -35,6 +35,7 @@ const Game = (props: IProps) => {
   reinitRecord(i18n.language);
   const confirmGiveUp = () => {
     window.mdui.dialog({
+      history: false,
       content: i18n.get("giveUpConfirm"),
       buttons: [
         {
