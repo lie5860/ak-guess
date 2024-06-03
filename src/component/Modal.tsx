@@ -18,7 +18,7 @@ const Modal = () => {
   }, [inst])
   React.useEffect(() => {
     if (modal) {
-      const inst = new window.mdui.Dialog('#modal233')
+      const inst = new window.mdui.Dialog('#modal233',{history: false})
       setInst(inst)
       inst.open()
       document.querySelector('#modal233')?.addEventListener('closed.mdui.dialog', onClose)
