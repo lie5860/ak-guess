@@ -5716,5 +5716,57 @@
             "罗德岛"
         ],
         "painter": "Mag42"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒铁卫"
+        ],
+        "name": "深巡",
+        "en": "Underflow",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "key": "char_4137_udflow",
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "辅助",
+            "削弱者"
+        ],
+        "name": "海霓",
+        "en": "Lucilla",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "key": "char_4079_haini",
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "色塩"
+    },
+    {
+        "className": [
+            "近卫",
+            "重剑手"
+        ],
+        "name": "乌尔比安",
+        "en": "Ulpianus",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_4145_ulpia",
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "Skade"
     }
 ]
