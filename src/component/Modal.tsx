@@ -18,13 +18,13 @@ const Modal = () => {
   }, [inst])
   React.useEffect(() => {
     if (modal) {
-      const inst = new window.mdui.Dialog('#modal233',{history: false})
+      const inst = new window.mdui.Dialog('#modal233',{history: false, cssClass: `lang-${i18n.language}`})
       setInst(inst)
       inst.open()
       document.querySelector('#modal233')?.addEventListener('closed.mdui.dialog', onClose)
     }
   }, [!!modal])
-  return modal && ReactDom.createPortal(<div className="mdui-dialog" id="modal233">
+  return modal && ReactDom.createPortal(<div className={`mdui-dialog lang-${i18n.language}`} id="modal233">
     {modal.useCloseIcon &&
     <div className={'close-icon'} onClick={() => inst?.close()}><i className="mdui-icon material-icons">&#xe5cd;</i>
     </div>}
