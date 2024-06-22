@@ -7,7 +7,7 @@ import {AppCtx} from './locales/AppCtx';
 import './normalize.css'
 import './index.less'
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
-import {hostDict, labelDict} from "./locales";
+import {hostDict, labelDict, NO_TAG_SERVER} from "./locales";
 import Game from './component/Game';
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
             <span className="mini-chip-content">{labelDict[i18n.language]}</span>
           </span>
         </button>}
-         <ul id="server-menu" className="mdui-menu">
+        <ul id="server-menu" className="mdui-menu">
           <li className="mdui-menu-item mdui-ripple">
             {Object.keys(labelDict).filter(v => hostDict[v]).map((key) => {
               return <a key={key} className="mdui-ripple pointer" onClick={() => {
@@ -69,14 +69,14 @@ export default function Home() {
             })}
           </li>
         </ul>
-        <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
+        {NO_TAG_SERVER.includes(i18n.language) ? <div style={{height: 48}}></div> : <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
           {menu.map((menuMode) => {
             return <div key={menuMode} className={`ak-tab-item ${mode === menuMode ? 'active' : ''}`}
                         onClick={() => setMode(menuMode)}>
               {i18n.get(modeI18nKeyDict[menuMode])}
             </div>
           })}
-        </div>
+        </div>}
         {<Game key={mode} store={store} openHelp={openHelp}/>}
         <Modal/>
       </div>

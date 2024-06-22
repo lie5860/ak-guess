@@ -1,6 +1,6 @@
 import {React} from "../global";
 import {AppCtx} from "./AppCtx";
-import languages from './index';
+import languages, {hostDict} from './index';
 import {MAIN_KEY} from "../const";
 
 export const localStorageSet = (lang: string, key: string, value: string) => {
@@ -28,14 +28,15 @@ export const I18nWrap = (props: any) => {
     const sl = (await languages?.[lastLang]()).default
     setLanguage(lastLang)
     initI18nDict(sl)
-    const dd = (await import(`../data/dealData/dealData_${lastLang}.json`)).default
+    const fixLang = Object.keys(hostDict).includes(lastLang) ? lastLang :  'zh_CN';
+    const dd = (await import(`../data/dealData/dealData_${fixLang}.json`)).default
     setDealData(dd)
     const dict: { [key: string]: number } = {};
     dd.forEach((v: Character, index: number) => {
       dict[v?.[MAIN_KEY]] = index;
     })
     setChartNameToIndexDict(dict);
-    const alias = (await import(`../data/alias/alias_${lastLang}.json`)).default
+    const alias = (await import(`../data/alias/alias_${fixLang}.json`)).default
     setAliasData(alias)
     setInited(true)
 
