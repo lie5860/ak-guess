@@ -87,10 +87,10 @@ const Game = (props: IProps) => {
     }
   }
   if (!initialized) return null;
-  const confg = getConfig(i18n.language);
+  const config = getConfig(i18n.language);
   return <>
     <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
-    <div>{i18n.get('titleDesc')}
+    {config.showTitleDesc && <div>{i18n.get('titleDesc')}
       <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({
           title: i18n.get('contributors'),
@@ -99,19 +99,19 @@ const Game = (props: IProps) => {
         })
       }}>小刻猜猜团
       </div>
-    </div>
+    </div>}
     <div className="titlePanel">
       {game.gameTip()}
-      {confg.showHelp && <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}</div>}
-      {confg.showReport && <div className="tooltip" onClick={() => {
+      {config.showHelp && <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}</div>}
+      {config.showReport && <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({"message": <History mode={mode}/>, useCloseIcon: true, title: i18n.get('report')})
       }}>🔎{i18n.get('report')}
       </div>}
-      {confg.showFeedback && <div className="tooltip" onClick={() => {
+      {config.showFeedback && <div className="tooltip" onClick={() => {
         window.open(i18n.get('questionnaireUrl'))
       }}>💬{i18n.get('feedback')}
       </div>}
-      {confg.showOperators && <div className="tooltip" onClick={() => {
+      {config.showOperators && <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({"message": <Guide/>, useCloseIcon: true, title: i18n.get('operators')});
       }}>📔{i18n.get('operators')}
       </div>}

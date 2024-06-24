@@ -32,6 +32,8 @@ export const DEFAULT_CONFIG = {
     showFeedback: true,
     // 显示干员列表
     showOperators: true,
+    // 显示副标题
+    showTitleDesc: true,
     // 再不支持切换服务器的语言上使用不带语言的 url 进行访问时自动切会的语言，且游戏资源不存在该语言的情况下默认使用这个配置的语言
     defaultLang: 'zh_CN'
 }
@@ -43,6 +45,7 @@ const config: { [key in string]: typeof DEFAULT_CONFIG } = {
         showHelp: false,
         showFeedback: false,
         showOperators: false,
+        showTitleDesc: false,
         showReport: false
     }
 }
