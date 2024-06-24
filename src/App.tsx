@@ -70,7 +70,7 @@ export default function Home() {
             })}
           </li>
         </ul>
-        {!config.showModeTab ? <div style={{height: 48}}></div> : <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
+        {!config.showModeTab ? <div style={{height: 16}}></div> : <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
           {menu.map((menuMode) => {
             return <div key={menuMode} className={`ak-tab-item ${mode === menuMode ? 'active' : ''}`}
                         onClick={() => setMode(menuMode)}>
