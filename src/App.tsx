@@ -7,7 +7,7 @@ import {AppCtx} from './locales/AppCtx';
 import './normalize.css'
 import './index.less'
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
-import {hostDict, labelDict, NO_TAG_SERVER} from "./locales";
+import {getConfig, hostDict, labelDict} from "./locales";
 import Game from './component/Game';
 
 export default function Home() {
@@ -45,10 +45,11 @@ export default function Home() {
       openHelp(true)
     }, 500)
   }
+  const config = getConfig(i18n.language)
   return (
     <div className={'container'}>
       <div className={`main-container clean-float lang-${i18n.language}`}>
-        {hostDict[i18n.language] && <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
+        {config.showServer && <button id="server-menu-btn" mdui-menu="{ target: '#server-menu', covered: false }"
                 className="appbar-btn mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
           <i className="mdui-icon material-icons">dns</i>
           <span className="mini-chip mdui-color-blue-a400 mdui-text-uppercase pointer font-mono"
@@ -69,7 +70,7 @@ export default function Home() {
             })}
           </li>
         </ul>
-        {NO_TAG_SERVER.includes(i18n.language) ? <div style={{height: 48}}></div> : <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
+        {!config.showModeTab ? <div style={{height: 48}}></div> : <div className="mdui-tab mdui-tab-scrollable ak-tab" mdui-tab>
           {menu.map((menuMode) => {
             return <div key={menuMode} className={`ak-tab-item ${mode === menuMode ? 'active' : ''}`}
                         onClick={() => setMode(menuMode)}>
