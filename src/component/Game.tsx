@@ -88,8 +88,9 @@ const Game = (props: IProps) => {
   }
   if (!initialized) return null;
   const config = getConfig(i18n.language);
+  console.log(config, 'config');
   return <>
-    <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
+    <div style={{paddingTop: 10, ...config.mainTitleStyle}}><span className={`title`}>{i18n.get('title')}</span></div>
     {config.showTitleDesc && <div>{i18n.get('titleDesc')}
       <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({
@@ -101,7 +102,8 @@ const Game = (props: IProps) => {
       </div>
     </div>}
     <div className="titlePanel">
-      {game.gameTip()}
+      {game.gameTip(config)}
+      {config.customTip && <pre style={{marginTop: 8}}>{config.customTip}</pre>}
       {config.showHelp && <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}</div>}
       {config.showReport && <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({"message": <History mode={mode}/>, useCloseIcon: true, title: i18n.get('report')})

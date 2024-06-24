@@ -35,12 +35,22 @@ export const DEFAULT_CONFIG = {
     // 显示副标题
     showTitleDesc: true,
     // 再不支持切换服务器的语言上使用不带语言的 url 进行访问时自动切会的语言，且游戏资源不存在该语言的情况下默认使用这个配置的语言
-    defaultLang: 'zh_CN'
+    defaultLang: 'zh_CN',
+    // 自定义提示
+    customTip: '',
+    // 主标题样式
+    mainTitleStyle: {},
+    // 游戏提示样式
+    gameTipStyle: {},
 }
 const config: { [key in string]: typeof DEFAULT_CONFIG } = {
     tlml: {
         ...DEFAULT_CONFIG,
+        gameTipStyle: { color: '#fa0000' },
+        mainTitleStyle: {fontSize: 36},
         showModeTab: false,
+        customTip: '坎诺特会根据你的回答作出一些反馈!\n' +
+            '注意看!那是成功的关键!',
         showServer: false,
         showHelp: false,
         showFeedback: false,

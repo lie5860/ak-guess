@@ -1,3 +1,5 @@
+import {DEFAULT_CONFIG} from "./locales";
+
 declare module '*.json' {
   const value: any;
   export default value;
@@ -68,5 +70,5 @@ interface Game {
   // 游戏结束
   gameOver: (newData: GuessItem[]) => void;
   // 游戏提示语
-  gameTip: () => JSX.Element;
+  gameTip: (config: typeof DEFAULT_CONFIG) => JSX.Element;
 }

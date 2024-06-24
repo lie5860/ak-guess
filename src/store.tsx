@@ -202,7 +202,7 @@ const randomGame = ({store, randomStore}: any) => {
     },
     newGame,
     canNewGame: isOver,
-    gameTip: () => <div>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
+    gameTip: (config) => <div style={{marginTop: 8, ...config.gameTipStyle}}>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
   }
 }
 const dailyGame = ({store, dailyStore}: any) => {
