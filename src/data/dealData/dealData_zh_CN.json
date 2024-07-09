@@ -5768,5 +5768,39 @@
             "阿戈尔"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "渡桥",
+        "en": "Mitm",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4147_mitm",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "妮芙",
+        "en": "Nymph",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4146_nymph",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "YUJI"
     }
 ]

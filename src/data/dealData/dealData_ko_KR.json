@@ -5357,5 +5357,39 @@
             "쉐라그"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "캐스터",
+            "프라이멀 캐스터"
+        ],
+        "name": "워미",
+        "en": "Warmy",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 4,
+        "key": "char_4081_warmy",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "二色こぺ"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "사냥꾼"
+        ],
+        "name": "레이",
+        "en": "Ray",
+        "race": [
+            "카우투스"
+        ],
+        "rarity": 5,
+        "key": "char_4117_ray",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "Cenm0"
     }
 ]

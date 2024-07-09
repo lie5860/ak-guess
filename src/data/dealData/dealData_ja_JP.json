@@ -5357,5 +5357,39 @@
             "イェラグ"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "術師",
+            "本源術師"
+        ],
+        "name": "ウォーミー",
+        "en": "Warmy",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 4,
+        "key": "char_4081_warmy",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "二色こぺ"
+    },
+    {
+        "className": [
+            "狙撃",
+            "狩人"
+        ],
+        "name": "レイ",
+        "en": "Ray",
+        "race": [
+            "コータス"
+        ],
+        "rarity": 5,
+        "key": "char_4117_ray",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "Cenm0"
     }
 ]

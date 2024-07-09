@@ -5362,5 +5362,39 @@
             "Kjerag"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "Caster",
+            "Primal Caster"
+        ],
+        "name": "Warmy",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 4,
+        "key": "char_4081_warmy",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "二色こぺ"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Hunter"
+        ],
+        "name": "Ray",
+        "en": "",
+        "race": [
+            "Cautus"
+        ],
+        "rarity": 5,
+        "key": "char_4117_ray",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "Cenm0"
     }
 ]
