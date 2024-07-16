@@ -5802,5 +5802,22 @@
             "罗德岛"
         ],
         "painter": "YUJI"
+    },
+    {
+        "className": [
+            "特种",
+            "炼金师"
+        ],
+        "name": "锡人",
+        "en": "Tin Man",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "key": "char_4151_tinman",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "树豚"
     }
 ]
