@@ -1760,7 +1760,7 @@
     {
         "className": [
             "가드",
-            "무사"
+            "솔로블레이드"
         ],
         "name": "헬라그",
         "en": "Hellagur",
@@ -2180,7 +2180,7 @@
     {
         "className": [
             "가드",
-            "무사"
+            "솔로블레이드"
         ],
         "name": "우타게",
         "en": "Utage",
@@ -3177,7 +3177,7 @@
         "name": "Tachanka",
         "en": "Tachanka",
         "race": [
-            "알 수 없음"
+            "미확인"
         ],
         "rarity": 4,
         "key": "char_459_tachak",
@@ -3194,7 +3194,7 @@
         "name": "Blitz",
         "en": "Blitz",
         "race": [
-            "알 수 없음"
+            "미확인"
         ],
         "rarity": 4,
         "key": "char_457_blitz",
@@ -3211,7 +3211,7 @@
         "name": "Frost",
         "en": "Frost",
         "race": [
-            "알 수 없음"
+            "미확인"
         ],
         "rarity": 4,
         "key": "char_458_rfrost",
@@ -3228,7 +3228,7 @@
         "name": "Ash",
         "en": "Ash",
         "race": [
-            "알 수 없음"
+            "미확인"
         ],
         "rarity": 5,
         "key": "char_456_ash",
@@ -3291,7 +3291,7 @@
     {
         "className": [
             "가드",
-            "무사"
+            "솔로블레이드"
         ],
         "name": "아카후유",
         "en": "Akafuyu",
@@ -4693,7 +4693,7 @@
         "name": "테라 대륙 조사단",
         "en": "Terra Research Commission",
         "race": [
-            "미공개"
+            "미확인"
         ],
         "rarity": 0,
         "key": "char_4077_palico",
@@ -4705,7 +4705,7 @@
     {
         "className": [
             "가드",
-            "무사"
+            "솔로블레이드"
         ],
         "name": "레우스S 느와르 코르네",
         "en": "Rathalos S Noir Corne",
@@ -5391,5 +5391,91 @@
             "림 빌리턴"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "케스트럴",
+        "en": "Kestrel",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_4023_rfalcn",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "기수"
+        ],
+        "name": "완칭",
+        "en": "Wanqing",
+        "race": [
+            "포르테"
+        ],
+        "rarity": 4,
+        "key": "char_4119_wanqin",
+        "team": [
+            "염"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "서포터",
+            "감속자"
+        ],
+        "name": "그레인버즈",
+        "en": "Grain Buds",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_4122_grabds",
+        "team": [
+            "염"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "슈",
+        "en": "Shu",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_2025_shu",
+        "team": [
+            "염",
+            "쉐이"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "가드",
+            "솔로블레이드"
+        ],
+        "name": "좌락",
+        "en": "Zuo Le",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 5,
+        "key": "char_4121_zuole",
+        "team": [
+            "염"
+        ],
+        "painter": "九日九号"
     }
 ]

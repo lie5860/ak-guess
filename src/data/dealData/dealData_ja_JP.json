@@ -5191,7 +5191,7 @@
             "前衛",
             "重剣士"
         ],
-        "name": "へドリー",
+        "name": "ヘドリー",
         "en": "Hoederer",
         "race": [
             "サルカズ"
@@ -5391,5 +5391,91 @@
             "レム・ビリトン"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "ケストレル",
+        "en": "Kestrel",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_4023_rfalcn",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "先鋒",
+            "旗手"
+        ],
+        "name": "ワンチィン",
+        "en": "Wanqing",
+        "race": [
+            "フォルテ"
+        ],
+        "rarity": 4,
+        "key": "char_4119_wanqin",
+        "team": [
+            "炎"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "補助",
+            "緩速師"
+        ],
+        "name": "グレインバッズ",
+        "en": "Grain Buds",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_4122_grabds",
+        "team": [
+            "炎"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "重装",
+            "庇護衛士"
+        ],
+        "name": "シュウ",
+        "en": "Shu",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_2025_shu",
+        "team": [
+            "炎",
+            "歳"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "前衛",
+            "武者"
+        ],
+        "name": "ズオ・ラウ",
+        "en": "Zuo Le",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 5,
+        "key": "char_4121_zuole",
+        "team": [
+            "炎"
+        ],
+        "painter": "九日九号"
     }
 ]

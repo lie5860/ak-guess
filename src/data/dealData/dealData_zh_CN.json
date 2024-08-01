@@ -5819,5 +5819,73 @@
             "哥伦比亚"
         ],
         "painter": "树豚"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "衡沙",
+        "en": "Sand Reckoner",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4140_lasher",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "医疗",
+            "链愈师"
+        ],
+        "name": "莎草",
+        "en": "Papyrus",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4139_papyrs",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙击",
+            "回环射手"
+        ],
+        "name": "娜仁图亚",
+        "en": "Narantuya",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 5,
+        "key": "char_4138_narant",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "近卫",
+            "撼地者"
+        ],
+        "name": "佩佩",
+        "en": "Pepe",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_4058_pepe",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Namie"
     }
 ]

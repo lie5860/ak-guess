@@ -1071,7 +1071,7 @@
     {
         "className": [
             "Defender",
-            "Sentinel Protector"
+            "Sentry Protector"
         ],
         "name": "Liskarm",
         "en": "",
@@ -1763,7 +1763,7 @@
     {
         "className": [
             "Guard",
-            "Musha"
+            "Soloblade"
         ],
         "name": "Hellagur",
         "en": "",
@@ -2183,7 +2183,7 @@
     {
         "className": [
             "Guard",
-            "Musha"
+            "Soloblade"
         ],
         "name": "Utage",
         "en": "",
@@ -3193,7 +3193,7 @@
     {
         "className": [
             "Defender",
-            "Sentinel Protector"
+            "Sentry Protector"
         ],
         "name": "Blitz",
         "en": "",
@@ -3295,7 +3295,7 @@
     {
         "className": [
             "Guard",
-            "Musha"
+            "Soloblade"
         ],
         "name": "Akafuyu",
         "en": "",
@@ -4709,7 +4709,7 @@
     {
         "className": [
             "Guard",
-            "Musha"
+            "Soloblade"
         ],
         "name": "Rathalos S Noir Corne",
         "en": "",
@@ -5124,7 +5124,7 @@
     {
         "className": [
             "Defender",
-            "Sentinel Protector"
+            "Sentry Protector"
         ],
         "name": "Jessica the Liberated",
         "en": "",
@@ -5396,5 +5396,91 @@
             "Rim Billiton"
         ],
         "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "Kestrel",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_4023_rfalcn",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "釜飯轟々丸"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Standard Bearer"
+        ],
+        "name": "Wanqing",
+        "en": "",
+        "race": [
+            "Forte"
+        ],
+        "rarity": 4,
+        "key": "char_4119_wanqin",
+        "team": [
+            "Yan"
+        ],
+        "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Decel Binder"
+        ],
+        "name": "Grain Buds",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_4122_grabds",
+        "team": [
+            "Yan"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "Defender",
+            "Guardian"
+        ],
+        "name": "Shu",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_2025_shu",
+        "team": [
+            "Yan",
+            "Sui"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Guard",
+            "Soloblade"
+        ],
+        "name": "Zuo Le",
+        "en": "",
+        "race": [
+            "Phidia/Pythia"
+        ],
+        "rarity": 5,
+        "key": "char_4121_zuole",
+        "team": [
+            "Yan"
+        ],
+        "painter": "九日九号"
     }
 ]
