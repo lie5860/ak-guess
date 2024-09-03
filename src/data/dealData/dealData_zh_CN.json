@@ -5887,5 +5887,73 @@
             "萨尔贡"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "齐尔查克",
+        "en": "Chilchuck",
+        "race": [
+            "半身人（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4144_chilc",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "莱欧斯",
+        "en": "Laios",
+        "race": [
+            "长身人（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4142_laios",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "森西",
+        "en": "Senshi",
+        "race": [
+            "矮人（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4143_sensi",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "玛露西尔",
+        "en": "Marcille",
+        "race": [
+            "精灵"
+        ],
+        "rarity": 5,
+        "key": "char_4141_marcil",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
     }
 ]
