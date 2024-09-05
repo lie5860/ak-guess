@@ -5477,5 +5477,73 @@
             "炎"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "前衛",
+            "教官"
+        ],
+        "name": "Doc",
+        "en": "Doc",
+        "race": [
+            "不明"
+        ],
+        "rarity": 4,
+        "key": "char_4125_rdoc",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "前衛",
+            "強襲者"
+        ],
+        "name": "Fuze",
+        "en": "Fuze",
+        "race": [
+            "不明"
+        ],
+        "rarity": 4,
+        "key": "char_4126_fuze",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "特殊",
+            "傀儡師"
+        ],
+        "name": "Iana",
+        "en": "Iana",
+        "race": [
+            "不明"
+        ],
+        "rarity": 4,
+        "key": "char_4124_iana",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "特殊",
+            "罠師"
+        ],
+        "name": "Ela",
+        "en": "Ela",
+        "race": [
+            "不明"
+        ],
+        "rarity": 5,
+        "key": "char_4123_ela",
+        "team": [
+            "レインボー小隊"
+        ],
+        "painter": "Ubisoft"
     }
 ]

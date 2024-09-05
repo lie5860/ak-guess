@@ -5477,5 +5477,73 @@
             "염"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "가드",
+            "교관"
+        ],
+        "name": "Doc",
+        "en": "Doc",
+        "race": [
+            "미확인"
+        ],
+        "rarity": 4,
+        "key": "char_4125_rdoc",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "가드",
+            "공격수"
+        ],
+        "name": "Fuze",
+        "en": "Fuze",
+        "race": [
+            "미확인"
+        ],
+        "rarity": 4,
+        "key": "char_4126_fuze",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "인형사"
+        ],
+        "name": "Iana",
+        "en": "Iana",
+        "race": [
+            "미확인"
+        ],
+        "rarity": 4,
+        "key": "char_4124_iana",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "함정술사"
+        ],
+        "name": "Ela",
+        "en": "Ela",
+        "race": [
+            "미확인"
+        ],
+        "rarity": 5,
+        "key": "char_4123_ela",
+        "team": [
+            "레인보우 팀"
+        ],
+        "painter": "Ubisoft"
     }
 ]

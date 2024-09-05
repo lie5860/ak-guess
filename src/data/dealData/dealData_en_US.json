@@ -5482,5 +5482,73 @@
             "Yan"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Guard",
+            "Instructor"
+        ],
+        "name": "Doc",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 4,
+        "key": "char_4125_rdoc",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Guard",
+            "Centurion"
+        ],
+        "name": "Fuze",
+        "en": "",
+        "race": [
+            "Unknown"
+        ],
+        "rarity": 4,
+        "key": "char_4126_fuze",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Dollkeeper"
+        ],
+        "name": "Iana",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 4,
+        "key": "char_4124_iana",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Trapmaster"
+        ],
+        "name": "Ela",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_4123_ela",
+        "team": [
+            "Team Rainbow"
+        ],
+        "painter": "Ubisoft"
     }
 ]
