@@ -468,7 +468,7 @@
         "rarity": 3,
         "key": "char_149_scave",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "Rhodes Island"
         ],
         "painter": "戏言咸咸"
@@ -1063,7 +1063,7 @@
         "rarity": 4,
         "key": "char_144_red",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "Rhodes Island"
         ],
         "painter": "Infukun"
@@ -1591,7 +1591,7 @@
         "name": "Spot",
         "en": "",
         "race": [
-            "Rebbah"
+            "Reproba"
         ],
         "rarity": 2,
         "key": "char_284_spot",
@@ -4857,7 +4857,7 @@
         "rarity": 5,
         "key": "char_4087_ines",
         "team": [
-            "Rhodes Island"
+            "Babel"
         ],
         "painter": "板板"
     },
@@ -5203,7 +5203,7 @@
         "rarity": 5,
         "key": "char_4088_hodrer",
         "team": [
-            "Rhodes Island"
+            "Babel"
         ],
         "painter": "树豚"
     },
@@ -5550,5 +5550,92 @@
             "Team Rainbow"
         ],
         "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "Defender",
+            "Juggernaut"
+        ],
+        "name": "Lutonada",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 3,
+        "key": "char_4130_luton",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "Guard",
+            "Earthshaker"
+        ],
+        "name": "Odda",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_4131_odda",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "Caster",
+            "Blast Caster"
+        ],
+        "name": "Aroma",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 4,
+        "key": "char_446_aroma",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Ambusher"
+        ],
+        "name": "Ascalon",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_4132_ascln",
+        "team": [
+            "S.W.E.E.P.",
+            "Rhodes Island"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "Medic",
+            "Incantation Medic"
+        ],
+        "name": "Amiya(Medic)",
+        "en": "",
+        "race": [
+            "Cautus",
+            "Chimera"
+        ],
+        "rarity": 4,
+        "key": "char_1037_amiya3",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Mag42"
     }
 ]

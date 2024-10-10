@@ -5955,5 +5955,56 @@
             "莱欧斯小队"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "凯瑟琳",
+        "en": "Catherine",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4162_cathy",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "波卜",
+        "en": "Bobbing",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_487_bobb",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "维娜·维多利亚",
+        "en": "Vina Victoria",
+        "race": [
+            "阿斯兰"
+        ],
+        "rarity": 5,
+        "key": "char_1019_siege2",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Studio Montagne"
     }
 ]

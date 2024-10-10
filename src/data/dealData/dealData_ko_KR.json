@@ -468,7 +468,7 @@
         "rarity": 3,
         "key": "char_149_scave",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "로도스 아일랜드"
         ],
         "painter": "戏言咸咸"
@@ -1061,7 +1061,7 @@
         "rarity": 4,
         "key": "char_144_red",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "로도스 아일랜드"
         ],
         "painter": "Infukun"
@@ -4853,7 +4853,7 @@
         "rarity": 5,
         "key": "char_4087_ines",
         "team": [
-            "로도스 아일랜드"
+            "바벨"
         ],
         "painter": "板板"
     },
@@ -5199,7 +5199,7 @@
         "rarity": 5,
         "key": "char_4088_hodrer",
         "team": [
-            "로도스 아일랜드"
+            "바벨"
         ],
         "painter": "树豚"
     },
@@ -5545,5 +5545,92 @@
             "레인보우 팀"
         ],
         "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "디펜더",
+            "저거너트"
+        ],
+        "name": "루토나다",
+        "en": "Lutonada",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 3,
+        "key": "char_4130_luton",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "가드",
+            "어스셰이커"
+        ],
+        "name": "오다",
+        "en": "Odda",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_4131_odda",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "캐스터",
+            "블래스트 캐스터"
+        ],
+        "name": "아로마",
+        "en": "Aroma",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_446_aroma",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "매복자"
+        ],
+        "name": "아스카론",
+        "en": "Ascalon",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_4132_ascln",
+        "team": [
+            "S.W.E.E.P.",
+            "로도스 아일랜드"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "메딕",
+            "주술 메딕"
+        ],
+        "name": "아미야(메딕)",
+        "en": "Amiya",
+        "race": [
+            "카우투스",
+            "키메라"
+        ],
+        "rarity": 4,
+        "key": "char_1037_amiya3",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "Mag42"
     }
 ]

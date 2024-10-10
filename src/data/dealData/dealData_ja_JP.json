@@ -468,7 +468,7 @@
         "rarity": 3,
         "key": "char_149_scave",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "ロドス・アイランド"
         ],
         "painter": "戏言咸咸"
@@ -1061,7 +1061,7 @@
         "rarity": 4,
         "key": "char_144_red",
         "team": [
-            "S.W.E.E.P",
+            "S.W.E.E.P.",
             "ロドス・アイランド"
         ],
         "painter": "Infukun"
@@ -4853,7 +4853,7 @@
         "rarity": 5,
         "key": "char_4087_ines",
         "team": [
-            "ロドス・アイランド"
+            "バベル"
         ],
         "painter": "板板"
     },
@@ -5199,7 +5199,7 @@
         "rarity": 5,
         "key": "char_4088_hodrer",
         "team": [
-            "ロドス・アイランド"
+            "バベル"
         ],
         "painter": "树豚"
     },
@@ -5545,5 +5545,92 @@
             "レインボー小隊"
         ],
         "painter": "Ubisoft"
+    },
+    {
+        "className": [
+            "重装",
+            "破壊者"
+        ],
+        "name": "ルトナダ",
+        "en": "Lutonada",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 3,
+        "key": "char_4130_luton",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "前衛",
+            "槌撃士"
+        ],
+        "name": "オッダ",
+        "en": "Odda",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_4131_odda",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "我妻洛酱"
+    },
+    {
+        "className": [
+            "術師",
+            "爆撃術師"
+        ],
+        "name": "アロマ",
+        "en": "Aroma",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 4,
+        "key": "char_446_aroma",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "ヌードル"
+    },
+    {
+        "className": [
+            "特殊",
+            "潜伏者"
+        ],
+        "name": "アスカロン",
+        "en": "Ascalon",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_4132_ascln",
+        "team": [
+            "S.W.E.E.P.",
+            "ロドス・アイランド"
+        ],
+        "painter": "Cenm0"
+    },
+    {
+        "className": [
+            "医療",
+            "呪癒師"
+        ],
+        "name": "アーミヤ(医療)",
+        "en": "Amiya",
+        "race": [
+            "コータス",
+            "キメラ"
+        ],
+        "rarity": 4,
+        "key": "char_1037_amiya3",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "Mag42"
     }
 ]
