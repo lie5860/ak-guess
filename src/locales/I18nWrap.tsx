@@ -1,6 +1,6 @@
 import {React} from "../global";
 import {AppCtx} from "./AppCtx";
-import languages from './index';
+import languages, {DEFAULT_CONFIG, getConfig, hostDict} from './index';
 import {MAIN_KEY} from "../const";
 
 export const localStorageSet = (lang: string, key: string, value: string) => {
@@ -10,7 +10,7 @@ export const localStorageGet = (lang: string, key: string) => {
   return localStorage.getItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`))
 }
 export const I18nWrap = (props: any) => {
-  const [language, setLanguage] = React.useState('zh_CN')
+  const [language, setLanguage] = React.useState(DEFAULT_CONFIG.defaultLang)
   const [inited, setInited] = React.useState(false)
   const [chartsData, setDealData] = React.useState([])
   const [chartNameToIndexDict, setChartNameToIndexDict] = React.useState({})
@@ -19,6 +19,13 @@ export const I18nWrap = (props: any) => {
   const init = async () => {
     const lang = localStorage.getItem('__lang')
     const urlLang = location?.search?.slice?.(1)?.split("&")?.map(s => s?.split("="))?.filter(v => v?.[0] === 'lang')?.[0]?.[1];
+    const preConfig = getConfig(lang || '');
+    if(!urlLang && lang && !preConfig.showServer){
+      //   如果 url 没有值，则默认使用上次语言，如果上次语言不支持切换服务（语言），则认为是限定语言。应该切回默认语言
+      localStorage.setItem('__lang', preConfig.defaultLang)
+      location.reload()
+      return;
+    }
     if (urlLang !== lang && languages?.[urlLang]) {
       localStorage.setItem('__lang', urlLang)
       location.reload()
@@ -28,14 +35,16 @@ export const I18nWrap = (props: any) => {
     const sl = (await languages?.[lastLang]()).default
     setLanguage(lastLang)
     initI18nDict(sl)
-    const dd = (await import(`../data/dealData/dealData_${lastLang}.json`)).default
+    // 如果是限定语言 不存在对应的游戏数据，则使用该语言配置的默认语言作为游戏数据的语言
+    const fixLang = Object.keys(hostDict).includes(lastLang) ? lastLang :  preConfig.defaultLang;
+    const dd = (await import(`../data/dealData/dealData_${fixLang}.json`)).default
     setDealData(dd)
     const dict: { [key: string]: number } = {};
     dd.forEach((v: Character, index: number) => {
       dict[v?.[MAIN_KEY]] = index;
     })
     setChartNameToIndexDict(dict);
-    const alias = (await import(`../data/alias/alias_${lastLang}.json`)).default
+    const alias = (await import(`../data/alias/alias_${fixLang}.json`)).default
     setAliasData(alias)
     setInited(true)
 

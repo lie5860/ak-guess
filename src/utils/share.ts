@@ -41,7 +41,7 @@ const shareTextCreator = ({
       }
     });
   })
-  text += '\n' + hostDict[i18n.language];
+  text += '\n' + (hostDict[i18n.language] || 'http://akg.saki.cc');
   return text;
 }
 export default shareTextCreator

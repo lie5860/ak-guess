@@ -10,6 +10,7 @@ import {HomeStore, useGame} from "../store";
 import {AppCtx} from "../locales/AppCtx";
 import autocomplete from "../utils/autocomplete";
 import Guide from "./Guide";
+import {getConfig} from "../locales";
 
 const showModal = (message: string) => {
   window.mdui.snackbar({
@@ -35,6 +36,7 @@ const Game = (props: IProps) => {
   reinitRecord(i18n.language);
   const confirmGiveUp = () => {
     window.mdui.dialog({
+      history: false,
       content: i18n.get("giveUpConfirm"),
       buttons: [
         {
@@ -86,10 +88,12 @@ const Game = (props: IProps) => {
       }
     }
   }
-  if (!initialized) return null
+  if (!initialized) return null;
+  const config = getConfig(i18n.language);
+  console.log(config, 'config');
   return <>
-    <div style={{paddingTop: 10}}><span className={`title`}>{i18n.get('title')}</span></div>
-    <div>{i18n.get('titleDesc')}
+    <div style={{paddingTop: 10, ...config.mainTitleStyle}}><span className={`title`}>{i18n.get('title')}</span></div>
+    {config.showTitleDesc && <div>{i18n.get('titleDesc')}
       <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({
           title: i18n.get('contributors'),
@@ -98,23 +102,23 @@ const Game = (props: IProps) => {
         })
       }}>小刻猜猜团
       </div>
-    </div>
+    </div>}
     <div className="titlePanel">
-      {game.gameTip()}
-      <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}
-      </div>
-      <div className="tooltip" onClick={() => {
+      {game.gameTip(config)}
+      {config.customTip && <pre style={{marginTop: 8}}>{config.customTip}</pre>}
+      {config.showHelp && <div className="tooltip" onClick={() => openHelp()}>🍪{i18n.get('help')}</div>}
+      {config.showReport && <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({"message": <History mode={mode}/>, useCloseIcon: true, title: i18n.get('report')})
       }}>🔎{i18n.get('report')}
-      </div>
-      <div className="tooltip" onClick={() => {
+      </div>}
+      {config.showFeedback && <div className="tooltip" onClick={() => {
         window.open(i18n.get('questionnaireUrl'))
       }}>💬{i18n.get('feedback')}
-      </div>
-      <div className="tooltip" onClick={() => {
+      </div>}
+      {config.showOperators && <div className="tooltip" onClick={() => {
         window?.mduiModal?.open({"message": <Guide/>, useCloseIcon: true, title: i18n.get('operators')});
       }}>📔{i18n.get('operators')}
-      </div>
+      </div>}
     </div>
     {!!game.data?.length && <GuessItem data={game.data}/>}
     <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}

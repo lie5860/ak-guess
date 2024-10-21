@@ -5716,5 +5716,295 @@
             "罗德岛"
         ],
         "painter": "Mag42"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒铁卫"
+        ],
+        "name": "深巡",
+        "en": "Underflow",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "key": "char_4137_udflow",
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "辅助",
+            "削弱者"
+        ],
+        "name": "海霓",
+        "en": "Lucilla",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "key": "char_4079_haini",
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "色塩"
+    },
+    {
+        "className": [
+            "近卫",
+            "重剑手"
+        ],
+        "name": "乌尔比安",
+        "en": "Ulpianus",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_4145_ulpia",
+        "team": [
+            "深海猎人",
+            "阿戈尔"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "渡桥",
+        "en": "Mitm",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4147_mitm",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "妮芙",
+        "en": "Nymph",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4146_nymph",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "特种",
+            "炼金师"
+        ],
+        "name": "锡人",
+        "en": "Tin Man",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "key": "char_4151_tinman",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "衡沙",
+        "en": "Sand Reckoner",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4140_lasher",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "医疗",
+            "链愈师"
+        ],
+        "name": "莎草",
+        "en": "Papyrus",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4139_papyrs",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙击",
+            "回环射手"
+        ],
+        "name": "娜仁图亚",
+        "en": "Narantuya",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 5,
+        "key": "char_4138_narant",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "近卫",
+            "撼地者"
+        ],
+        "name": "佩佩",
+        "en": "Pepe",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_4058_pepe",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Namie"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "齐尔查克",
+        "en": "Chilchuck",
+        "race": [
+            "半身人（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4144_chilc",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "近卫",
+            "无畏者"
+        ],
+        "name": "莱欧斯",
+        "en": "Laios",
+        "race": [
+            "长身人（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4142_laios",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "重装",
+            "守护者"
+        ],
+        "name": "森西",
+        "en": "Senshi",
+        "race": [
+            "矮人（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4143_sensi",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "玛露西尔",
+        "en": "Marcille",
+        "race": [
+            "精灵"
+        ],
+        "rarity": 5,
+        "key": "char_4141_marcil",
+        "team": [
+            "莱欧斯小队"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "凯瑟琳",
+        "en": "Catherine",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4162_cathy",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "波卜",
+        "en": "Bobbing",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_487_bobb",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "维娜·维多利亚",
+        "en": "Vina Victoria",
+        "race": [
+            "阿斯兰"
+        ],
+        "rarity": 5,
+        "key": "char_1019_siege2",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Studio Montagne"
     }
 ]
