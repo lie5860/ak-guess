@@ -21,7 +21,7 @@ export default defineConfig(({command, mode}) => {
       ...plugins],
     base: command === 'serve' ? '/' : './',
     build: {
-      assetsInlineLimit: 0,
+      assetsInlineLimit: 5000,
     }
   }
 })
