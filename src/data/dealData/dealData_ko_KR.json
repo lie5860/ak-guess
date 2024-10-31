@@ -5632,5 +5632,89 @@
             "로도스 아일랜드"
         ],
         "painter": "Mag42"
+    },
+    {
+        "className": [
+            "서포터",
+            "의식술사"
+        ],
+        "name": "PhonoR-0",
+        "en": "PhonoR-0",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4136_phonor",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "M1917史密斯维森"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "돌격수"
+        ],
+        "name": "팽 더 파이어 샤픈드",
+        "en": "Fang the Fire-sharpened",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 4,
+        "key": "char_1036_fang2",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "투척수"
+        ],
+        "name": "위셔델",
+        "en": "Wiš'adel",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_1035_wisdel",
+        "team": [
+            "바벨"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "캐스터",
+            "코어 캐스터"
+        ],
+        "name": "로고스",
+        "en": "Logos",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_4133_logos",
+        "team": [
+            "로도스 아일랜드",
+            "정예 오퍼레이터"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "서포터",
+            "음유시인"
+        ],
+        "name": "시빌라이트 에테르나",
+        "en": "Civilight Eterna",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_4134_cetsyr",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "Chuzenji"
     }
 ]

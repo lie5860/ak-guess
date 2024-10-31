@@ -5632,5 +5632,89 @@
             "ロドス・アイランド"
         ],
         "painter": "Mag42"
+    },
+    {
+        "className": [
+            "補助",
+            "祭儀師"
+        ],
+        "name": "PhonoR-0",
+        "en": "PhonoR-0",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4136_phonor",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "M1917史密斯维森"
+    },
+    {
+        "className": [
+            "先鋒",
+            "突撃兵"
+        ],
+        "name": "歴陣鋭槍フェン",
+        "en": "Fang the Fire-sharpened",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 4,
+        "key": "char_1036_fang2",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "狙撃",
+            "投擲手"
+        ],
+        "name": "ウィシャデル",
+        "en": "Wiš'adel",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_1035_wisdel",
+        "team": [
+            "バベル"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "術師",
+            "中堅術師"
+        ],
+        "name": "ロゴス",
+        "en": "Logos",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_4133_logos",
+        "team": [
+            "エリートオペレーター",
+            "ロドス・アイランド"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "補助",
+            "吟遊者"
+        ],
+        "name": "シヴィライト・エテルナ",
+        "en": "Civilight Eterna",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_4134_cetsyr",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "Chuzenji"
     }
 ]

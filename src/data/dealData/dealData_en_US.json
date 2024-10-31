@@ -5637,5 +5637,89 @@
             "Rhodes Island"
         ],
         "painter": "Mag42"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Ritualist"
+        ],
+        "name": "PhonoR-0",
+        "en": "",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4136_phonor",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "M1917史密斯维森"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Charger"
+        ],
+        "name": "Fang the Fire-Sharpened",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 4,
+        "key": "char_1036_fang2",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Flinger"
+        ],
+        "name": "Wiš'adel",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_1035_wisdel",
+        "team": [
+            "Babel"
+        ],
+        "painter": "Liduke"
+    },
+    {
+        "className": [
+            "Caster",
+            "Core Caster"
+        ],
+        "name": "Logos",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_4133_logos",
+        "team": [
+            "Rhodes Island",
+            "Elite Operator"
+        ],
+        "painter": "Skade"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Bard"
+        ],
+        "name": "Civilight Eterna",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_4134_cetsyr",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Chuzenji"
     }
 ]
