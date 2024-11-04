@@ -6006,5 +6006,107 @@
             "维多利亚"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "特种",
+            "巡空者"
+        ],
+        "name": "云迹",
+        "en": "Contrail",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 3,
+        "key": "char_4165_ctrail",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "虬墨一型"
+    },
+    {
+        "className": [
+            "特种",
+            "行商"
+        ],
+        "name": "裁度",
+        "en": "Figurino",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "key": "char_4155_talr",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "重装",
+            "本源铁卫"
+        ],
+        "name": "菲莱",
+        "en": "Philae",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4148_philae",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "忍冬",
+        "en": "Vulpisfoglia",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 5,
+        "key": "char_4026_vulpis",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "轟将"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "荒芜拉普兰德",
+        "en": "Lappland the Decadenza",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_1038_whitw2",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "特种",
+            "处决者"
+        ],
+        "name": "弑君者",
+        "en": "Crownslayer",
+        "race": [
+            "瑞柏巴"
+        ],
+        "rarity": 5,
+        "key": "char_1502_crosly",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "直立行走"
     }
 ]
