@@ -5716,5 +5716,57 @@
             "로도스 아일랜드"
         ],
         "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "디펜더",
+            "센트리 프로텍터"
+        ],
+        "name": "언더플로우",
+        "en": "Underflow",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_4137_udflow",
+        "team": [
+            "에기르"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "서포터",
+            "약화자"
+        ],
+        "name": "루실라",
+        "en": "Lucilla",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 4,
+        "key": "char_4079_haini",
+        "team": [
+            "에기르"
+        ],
+        "painter": "色塩"
+    },
+    {
+        "className": [
+            "가드",
+            "대검사"
+        ],
+        "name": "울피아누스",
+        "en": "Ulpianus",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_4145_ulpia",
+        "team": [
+            "어비설 헌터스",
+            "에기르"
+        ],
+        "painter": "Skade"
     }
 ]

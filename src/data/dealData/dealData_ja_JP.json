@@ -5716,5 +5716,57 @@
             "ロドス・アイランド"
         ],
         "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒衛士"
+        ],
+        "name": "アンダーフロー",
+        "en": "Underflow",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_4137_udflow",
+        "team": [
+            "エーギル"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "補助",
+            "呪詛師"
+        ],
+        "name": "ルシーラ",
+        "en": "Lucilla",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 4,
+        "key": "char_4079_haini",
+        "team": [
+            "エーギル"
+        ],
+        "painter": "色塩"
+    },
+    {
+        "className": [
+            "前衛",
+            "重剣士"
+        ],
+        "name": "ウルピアヌス",
+        "en": "Ulpianus",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_4145_ulpia",
+        "team": [
+            "アビサル",
+            "エーギル"
+        ],
+        "painter": "Skade"
     }
 ]

@@ -6108,5 +6108,56 @@
             "罗德岛"
         ],
         "painter": "直立行走"
+    },
+    {
+        "className": [
+            "医疗",
+            "群愈师"
+        ],
+        "name": "瑰盐",
+        "en": "Rose Salt",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 4,
+        "key": "char_4163_rosesa",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "术师",
+            "塑灵术师"
+        ],
+        "name": "特克诺",
+        "en": "Tecno",
+        "race": [
+            "杜林"
+        ],
+        "rarity": 4,
+        "key": "char_4164_tecno",
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "特种",
+            "炼金师"
+        ],
+        "name": "引星棘刺",
+        "en": "Thorns the Lodestar",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_1039_thorn2",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "嘎嘎人"
     }
 ]

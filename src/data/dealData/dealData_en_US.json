@@ -5721,5 +5721,57 @@
             "Rhodes Island"
         ],
         "painter": "Chuzenji"
+    },
+    {
+        "className": [
+            "Defender",
+            "Sentry Protector"
+        ],
+        "name": "Underflow",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_4137_udflow",
+        "team": [
+            "Ægir"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Hexer"
+        ],
+        "name": "Lucilla",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 4,
+        "key": "char_4079_haini",
+        "team": [
+            "Ægir"
+        ],
+        "painter": "色塩"
+    },
+    {
+        "className": [
+            "Guard",
+            "Crusher"
+        ],
+        "name": "Ulpianus",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_4145_ulpia",
+        "team": [
+            "Abyssal Hunters",
+            "Ægir"
+        ],
+        "painter": "Skade"
     }
 ]
