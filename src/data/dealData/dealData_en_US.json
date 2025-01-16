@@ -5773,5 +5773,73 @@
             "Ægir"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Summoner"
+        ],
+        "name": "Sand Reckoner",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_4140_lasher",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "Medic",
+            "Chain Medic"
+        ],
+        "name": "Papyrus",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4139_papyrs",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Loopshooter"
+        ],
+        "name": "Narantuya",
+        "en": "",
+        "race": [
+            "Kuranta"
+        ],
+        "rarity": 5,
+        "key": "char_4138_narant",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "Guard",
+            "Earthshaker"
+        ],
+        "name": "Pepe",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_4058_pepe",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "Namie"
     }
 ]

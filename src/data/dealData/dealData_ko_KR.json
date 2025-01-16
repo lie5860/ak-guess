@@ -5768,5 +5768,73 @@
             "에기르"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "서포터",
+            "소환사"
+        ],
+        "name": "샌드레코너",
+        "en": "Sand Reckoner",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_4140_lasher",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "메딕",
+            "체인 메딕"
+        ],
+        "name": "파피루스",
+        "en": "Papyrus",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_4139_papyrs",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "루프슈터"
+        ],
+        "name": "나란투야",
+        "en": "Narantuya",
+        "race": [
+            "쿠란타"
+        ],
+        "rarity": 5,
+        "key": "char_4138_narant",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "가드",
+            "어스셰이커"
+        ],
+        "name": "페페",
+        "en": "Pepe",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_4058_pepe",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "Namie"
     }
 ]

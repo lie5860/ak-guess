@@ -5768,5 +5768,73 @@
             "エーギル"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "補助",
+            "召喚師"
+        ],
+        "name": "サンドレコナー",
+        "en": "Sand Reckoner",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_4140_lasher",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "一千"
+    },
+    {
+        "className": [
+            "医療",
+            "連鎖癒師"
+        ],
+        "name": "パピルス",
+        "en": "Papyrus",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4139_papyrs",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "狙撃",
+            "旋輪射手"
+        ],
+        "name": "ナラントゥヤ",
+        "en": "Narantuya",
+        "race": [
+            "クランタ"
+        ],
+        "rarity": 5,
+        "key": "char_4138_narant",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "前衛",
+            "槌撃士"
+        ],
+        "name": "ペペ",
+        "en": "Pepe",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_4058_pepe",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "Namie"
     }
 ]
