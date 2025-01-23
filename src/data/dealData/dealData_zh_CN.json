@@ -6159,5 +6159,76 @@
             "伊比利亚"
         ],
         "painter": "嘎嘎人"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "寻澜",
+        "en": "Surfer",
+        "race": [
+            "札拉克"
+        ],
+        "rarity": 4,
+        "key": "char_4052_surfer",
+        "team": [
+            "黑钢国际",
+            "哥伦比亚"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "行箸",
+        "en": "Xingzhu",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4172_xingzh",
+        "team": [
+            "炎"
+        ],
+        "painter": "3MO"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "烛煌",
+        "en": "Blaze the Igniting Spark",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_1040_blaze2",
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "重装",
+            "本源铁卫"
+        ],
+        "name": "余",
+        "en": "Yu",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_2026_yu",
+        "team": [
+            "炎",
+            "岁"
+        ],
+        "painter": "一千"
     }
 ]
