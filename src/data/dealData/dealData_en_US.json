@@ -5841,5 +5841,56 @@
             "Sargon"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Tactician"
+        ],
+        "name": "Mitm",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_4147_mitm",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Alchemist"
+        ],
+        "name": "Tin Man",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 4,
+        "key": "char_4151_tinman",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "Caster",
+            "Primal Caster"
+        ],
+        "name": "Nymph",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_4146_nymph",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "YUJI"
     }
 ]

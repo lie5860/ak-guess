@@ -5836,5 +5836,56 @@
             "사르곤"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "전술가"
+        ],
+        "name": "미틈",
+        "en": "Mitm",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_4147_mitm",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "연금술사"
+        ],
+        "name": "틴맨",
+        "en": "Tin Man",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 4,
+        "key": "char_4151_tinman",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "캐스터",
+            "프라이멀 캐스터"
+        ],
+        "name": "님프",
+        "en": "Nymph",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 5,
+        "key": "char_4146_nymph",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "YUJI"
     }
 ]

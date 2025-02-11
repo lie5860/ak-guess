@@ -5836,5 +5836,56 @@
             "サルゴン"
         ],
         "painter": "Namie"
+    },
+    {
+        "className": [
+            "先鋒",
+            "戦術家"
+        ],
+        "name": "ミトム",
+        "en": "Mitm",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_4147_mitm",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "〇亻"
+    },
+    {
+        "className": [
+            "特殊",
+            "錬金士"
+        ],
+        "name": "ブリキ",
+        "en": "Tin Man",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 4,
+        "key": "char_4151_tinman",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "树豚"
+    },
+    {
+        "className": [
+            "術師",
+            "本源術師"
+        ],
+        "name": "ニンフ",
+        "en": "Nymph",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_4146_nymph",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "YUJI"
     }
 ]
