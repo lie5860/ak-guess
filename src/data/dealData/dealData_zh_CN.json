@@ -6230,5 +6230,39 @@
             "岁"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "医疗",
+            "疗养师"
+        ],
+        "name": "诺威尔",
+        "en": "Nowell",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "key": "char_4173_nowell",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "近卫",
+            "收割者"
+        ],
+        "name": "隐德来希",
+        "en": "Entelechia",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4010_etlchi",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Ask"
     }
 ]
