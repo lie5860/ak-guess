@@ -5892,5 +5892,73 @@
             "Rhodes Island"
         ],
         "painter": "YUJI"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Agent"
+        ],
+        "name": "Chilchuck",
+        "en": "",
+        "race": [
+            "Half-foot (Self-declared)"
+        ],
+        "rarity": 4,
+        "key": "char_4144_chilc",
+        "team": [
+            "Laios's Party"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Guard",
+            "Dreadnought"
+        ],
+        "name": "Laios",
+        "en": "",
+        "race": [
+            "Tall-man (Self-declared)"
+        ],
+        "rarity": 4,
+        "key": "char_4142_laios",
+        "team": [
+            "Laios's Party"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Defender",
+            "Guardian"
+        ],
+        "name": "Senshi",
+        "en": "",
+        "race": [
+            "Dwarf (Self-declared)"
+        ],
+        "rarity": 4,
+        "key": "char_4143_sensi",
+        "team": [
+            "Laios's Party"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Caster",
+            "Splash Caster"
+        ],
+        "name": "Marcille",
+        "en": "",
+        "race": [
+            "Elf"
+        ],
+        "rarity": 5,
+        "key": "char_4141_marcil",
+        "team": [
+            "Laios's Party"
+        ],
+        "painter": "Studio Montagne"
     }
 ]

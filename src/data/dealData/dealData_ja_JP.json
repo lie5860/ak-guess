@@ -5887,5 +5887,73 @@
             "ロドス・アイランド"
         ],
         "painter": "YUJI"
+    },
+    {
+        "className": [
+            "先鋒",
+            "偵察兵"
+        ],
+        "name": "チルチャック",
+        "en": "Chilchuck",
+        "race": [
+            "ハーフフット（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4144_chilc",
+        "team": [
+            "ライオスパーティー"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "前衛",
+            "勇士"
+        ],
+        "name": "ライオス",
+        "en": "Laios",
+        "race": [
+            "トールマン（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4142_laios",
+        "team": [
+            "ライオスパーティー"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "重装",
+            "庇護衛士"
+        ],
+        "name": "センシ",
+        "en": "Senshi",
+        "race": [
+            "ドワーフ（自称）"
+        ],
+        "rarity": 4,
+        "key": "char_4143_sensi",
+        "team": [
+            "ライオスパーティー"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "術師",
+            "拡散術師"
+        ],
+        "name": "マルシル",
+        "en": "Marcille",
+        "race": [
+            "エルフ"
+        ],
+        "rarity": 5,
+        "key": "char_4141_marcil",
+        "team": [
+            "ライオスパーティー"
+        ],
+        "painter": "Studio Montagne"
     }
 ]

@@ -5887,5 +5887,73 @@
             "로도스 아일랜드"
         ],
         "painter": "YUJI"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "에이전트"
+        ],
+        "name": "칠책",
+        "en": "Chilchuck",
+        "race": [
+            "하프풋(자칭)"
+        ],
+        "rarity": 4,
+        "key": "char_4144_chilc",
+        "team": [
+            "라이오스 파티"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "가드",
+            "드레드노트"
+        ],
+        "name": "라이오스",
+        "en": "Laios",
+        "race": [
+            "톨맨 (자칭)"
+        ],
+        "rarity": 4,
+        "key": "char_4142_laios",
+        "team": [
+            "라이오스 파티"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "디펜더",
+            "가디언"
+        ],
+        "name": "센시",
+        "en": "Senshi",
+        "race": [
+            "드워프 (자칭)"
+        ],
+        "rarity": 4,
+        "key": "char_4143_sensi",
+        "team": [
+            "라이오스 파티"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "캐스터",
+            "스플래시 캐스터"
+        ],
+        "name": "마르실",
+        "en": "Marcille",
+        "race": [
+            "엘프"
+        ],
+        "rarity": 5,
+        "key": "char_4141_marcil",
+        "team": [
+            "라이오스 파티"
+        ],
+        "painter": "Studio Montagne"
     }
 ]

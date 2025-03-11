@@ -4558,7 +4558,7 @@
         "rarity": 4,
         "key": "char_297_hamoni",
         "team": [
-            "深池",
+            "塔拉",
             "维多利亚"
         ],
         "painter": "STAR影法师"
@@ -4576,7 +4576,7 @@
         "rarity": 5,
         "key": "char_1020_reed2",
         "team": [
-            "深池",
+            "塔拉",
             "维多利亚"
         ],
         "painter": "STAR影法师"
@@ -6264,5 +6264,58 @@
             "罗德岛"
         ],
         "painter": "Ask"
+    },
+    {
+        "className": [
+            "狙击",
+            "回环射手"
+        ],
+        "name": "水灯心",
+        "en": "Brigid",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_4177_brigid",
+        "team": [
+            "塔拉",
+            "维多利亚"
+        ],
+        "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "特种",
+            "陷阱师"
+        ],
+        "name": "钼铅",
+        "en": "Wulfenite",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 4,
+        "key": "char_4171_wulfen",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "术师",
+            "塑灵术师"
+        ],
+        "name": "死芒",
+        "en": "Necrass",
+        "race": [
+            "德拉克"
+        ],
+        "rarity": 5,
+        "key": "char_450_necras",
+        "team": [
+            "塔拉",
+            "维多利亚"
+        ],
+        "painter": "STAR影法师"
     }
 ]
