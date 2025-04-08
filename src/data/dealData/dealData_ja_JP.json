@@ -887,7 +887,7 @@
         "rarity": 4,
         "key": "char_143_ghost",
         "team": [
-            "アビサル",
+            "アビサルハンター",
             "エーギル"
         ],
         "painter": "Skade"
@@ -1557,7 +1557,7 @@
         "rarity": 5,
         "key": "char_263_skadi",
         "team": [
-            "アビサル",
+            "アビサルハンター",
             "エーギル"
         ],
         "painter": "alchemaniac"
@@ -2650,7 +2650,7 @@
         "rarity": 4,
         "key": "char_218_cuttle",
         "team": [
-            "アビサル",
+            "アビサルハンター",
             "エーギル"
         ],
         "painter": "LLC"
@@ -3318,7 +3318,7 @@
         "rarity": 5,
         "key": "char_474_glady",
         "team": [
-            "アビサル",
+            "アビサルハンター",
             "エーギル"
         ],
         "painter": "Chuzenji"
@@ -4059,7 +4059,7 @@
         "rarity": 5,
         "key": "char_1023_ghost2",
         "team": [
-            "アビサル",
+            "アビサルハンター",
             "エーギル"
         ],
         "painter": "Skade"
@@ -5764,7 +5764,7 @@
         "rarity": 5,
         "key": "char_4145_ulpia",
         "team": [
-            "アビサル",
+            "アビサルハンター",
             "エーギル"
         ],
         "painter": "Skade"
@@ -5953,6 +5953,57 @@
         "key": "char_4141_marcil",
         "team": [
             "ライオスパーティー"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "補助",
+            "工匠"
+        ],
+        "name": "キャサリン",
+        "en": "Catherine",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4162_cathy",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "補助",
+            "祭儀師"
+        ],
+        "name": "ボビング",
+        "en": "Bobbing",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_487_bobb",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "前衛",
+            "術戦士"
+        ],
+        "name": "ヴィーナ・ヴィクトリア",
+        "en": "Vina Victoria",
+        "race": [
+            "アスラン"
+        ],
+        "rarity": 5,
+        "key": "char_1019_siege2",
+        "team": [
+            "ヴィクトリア"
         ],
         "painter": "Studio Montagne"
     }

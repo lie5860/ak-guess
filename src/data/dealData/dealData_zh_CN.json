@@ -6317,5 +6317,56 @@
             "维多利亚"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "近卫",
+            "解放者"
+        ],
+        "name": "骋风",
+        "en": "Windscoot",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 3,
+        "key": "char_445_wscoot",
+        "team": [
+            "炎"
+        ],
+        "painter": "azuタロウ"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "阿兰娜",
+        "en": "Alanna",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 4,
+        "key": "char_4178_alanna",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "医疗",
+            "链愈师"
+        ],
+        "name": "Mon3tr",
+        "en": "Mon3tr",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_4179_monstr",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "伍秋秋秋秋"
     }
 ]

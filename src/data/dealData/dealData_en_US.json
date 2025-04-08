@@ -5960,5 +5960,56 @@
             "Laios's Party"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Artificer"
+        ],
+        "name": "Catherine",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4162_cathy",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Ritualist"
+        ],
+        "name": "Bobbing",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_487_bobb",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "HUG"
+    },
+    {
+        "className": [
+            "Guard",
+            "Arts Fighter"
+        ],
+        "name": "Vina Victoria",
+        "en": "",
+        "race": [
+            "Aslan"
+        ],
+        "rarity": 5,
+        "key": "char_1019_siege2",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Studio Montagne"
     }
 ]
