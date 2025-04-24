@@ -6011,5 +6011,107 @@
             "Victoria"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Skyranger"
+        ],
+        "name": "Contrail",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 3,
+        "key": "char_4165_ctrail",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "虬墨一型"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Merchant"
+        ],
+        "name": "Figurino",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 4,
+        "key": "char_4155_talr",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "Defender",
+            "Primal Protector"
+        ],
+        "name": "Philae",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 4,
+        "key": "char_4148_philae",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "Vulpisfoglia",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 5,
+        "key": "char_4026_vulpis",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "轟将"
+    },
+    {
+        "className": [
+            "Caster",
+            "Mech-accord Caster"
+        ],
+        "name": "Lappland the Decadenza",
+        "en": "",
+        "race": [
+            "Lupo"
+        ],
+        "rarity": 5,
+        "key": "char_1038_whitw2",
+        "team": [
+            "Siracusa"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Executor"
+        ],
+        "name": "CrownSlayer",
+        "en": "",
+        "race": [
+            "Reproba"
+        ],
+        "rarity": 5,
+        "key": "char_1502_crosly",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "直立行走"
     }
 ]

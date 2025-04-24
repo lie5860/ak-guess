@@ -6006,5 +6006,107 @@
             "ヴィクトリア"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "特殊",
+            "巡空者"
+        ],
+        "name": "コントレイル",
+        "en": "Contrail",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 3,
+        "key": "char_4165_ctrail",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "虬墨一型"
+    },
+    {
+        "className": [
+            "特殊",
+            "行商人"
+        ],
+        "name": "フィグリーノ",
+        "en": "Figurino",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 4,
+        "key": "char_4155_talr",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "重装",
+            "本源衛士"
+        ],
+        "name": "フィラエ",
+        "en": "Philae",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 4,
+        "key": "char_4148_philae",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "ウルピスフォリア",
+        "en": "Vulpisfoglia",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 5,
+        "key": "char_4026_vulpis",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "轟将"
+    },
+    {
+        "className": [
+            "術師",
+            "操機術師"
+        ],
+        "name": "荒蕪ラップランド",
+        "en": "Lappland the Decadenza",
+        "race": [
+            "ループス"
+        ],
+        "rarity": 5,
+        "key": "char_1038_whitw2",
+        "team": [
+            "シラクーザ"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "特殊",
+            "執行者"
+        ],
+        "name": "クラウンスレイヤー",
+        "en": "Crownslayer",
+        "race": [
+            "レプロバ"
+        ],
+        "rarity": 5,
+        "key": "char_1502_crosly",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "直立行走"
     }
 ]

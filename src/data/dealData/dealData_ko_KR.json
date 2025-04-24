@@ -6006,5 +6006,107 @@
             "빅토리아"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "스카이레인저"
+        ],
+        "name": "콘트레일",
+        "en": "Contrail",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 3,
+        "key": "char_4165_ctrail",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "虬墨一型"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "상인"
+        ],
+        "name": "피구리노",
+        "en": "Figurino",
+        "race": [
+            "루포"
+        ],
+        "rarity": 4,
+        "key": "char_4155_talr",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프라이멀 프로텍터"
+        ],
+        "name": "필라에",
+        "en": "Philae",
+        "race": [
+            "살카즈"
+        ],
+        "rarity": 4,
+        "key": "char_4148_philae",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "불피스폴리아",
+        "en": "Vulpisfoglia",
+        "race": [
+            "불포"
+        ],
+        "rarity": 5,
+        "key": "char_4026_vulpis",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "轟将"
+    },
+    {
+        "className": [
+            "캐스터",
+            "메카 캐스터"
+        ],
+        "name": "라플란드 더 데카덴차",
+        "en": "Lappland the Decadenza",
+        "race": [
+            "루포"
+        ],
+        "rarity": 5,
+        "key": "char_1038_whitw2",
+        "team": [
+            "시라쿠사"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "처형자"
+        ],
+        "name": "크라운슬레이어",
+        "en": "Crownslayer",
+        "race": [
+            "리프로바"
+        ],
+        "rarity": 5,
+        "key": "char_1502_crosly",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "直立行走"
     }
 ]
