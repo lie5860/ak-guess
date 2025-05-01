@@ -6368,5 +6368,90 @@
             "罗德岛"
         ],
         "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "先锋",
+            "尖兵"
+        ],
+        "name": "CONFESS-47",
+        "en": "CONFESS-47",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4188_confes",
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "抽象Rotate"
+    },
+    {
+        "className": [
+            "近卫",
+            "本源近卫"
+        ],
+        "name": "聆音",
+        "en": "Gracebearer",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "key": "char_4187_graceb",
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "狙击",
+            "神射手"
+        ],
+        "name": "蕾缪安",
+        "en": "Lemuen",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 5,
+        "key": "char_4193_lemuen",
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "特种",
+            "怪杰"
+        ],
+        "name": "新约能天使",
+        "en": "Exusiai the New Covenant",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 5,
+        "key": "char_1041_angel2",
+        "team": [
+            "企鹅物流",
+            "炎",
+            "龙门"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒铁卫"
+        ],
+        "name": "信仰搅拌机",
+        "en": "Sankta Miksaparato",
+        "race": [
+            "萨科塔"
+        ],
+        "rarity": 5,
+        "key": "char_4194_rmixer",
+        "team": [
+            "拉特兰"
+        ],
+        "painter": "九日九号"
     }
 ]
