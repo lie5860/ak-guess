@@ -6453,5 +6453,56 @@
             "拉特兰"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "Miss.Christine",
+        "en": "Miss.Christine",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "key": "char_4198_christ",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "特种",
+            "巡空者"
+        ],
+        "name": "蒂比",
+        "en": "Tippi",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4191_tippi",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "酒神",
+        "en": "Tragodia",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_1042_phatm2",
+        "team": [
+            "维多利亚"
+        ],
+        "painter": "Skade"
     }
 ]
