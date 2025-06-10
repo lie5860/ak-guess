@@ -6108,5 +6108,56 @@
             "로도스 아일랜드"
         ],
         "painter": "直立行走"
+    },
+    {
+        "className": [
+            "메딕",
+            "멀티 타겟 메딕"
+        ],
+        "name": "로즈솔트",
+        "en": "Rose Salt",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 4,
+        "key": "char_4163_rosesa",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "캐스터",
+            "셰이퍼 캐스터"
+        ],
+        "name": "테크노",
+        "en": "Tecno",
+        "race": [
+            "두린"
+        ],
+        "rarity": 4,
+        "key": "char_4164_tecno",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "연금술사"
+        ],
+        "name": "쏜즈 더 로드스타",
+        "en": "Thorns the Lodestar",
+        "race": [
+            "에기르"
+        ],
+        "rarity": 5,
+        "key": "char_1039_thorn2",
+        "team": [
+            "이베리아"
+        ],
+        "painter": "嘎嘎人"
     }
 ]

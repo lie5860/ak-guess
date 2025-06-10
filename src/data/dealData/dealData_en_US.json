@@ -6113,5 +6113,56 @@
             "Rhodes Island"
         ],
         "painter": "直立行走"
+    },
+    {
+        "className": [
+            "Medic",
+            "Multi-target Medic"
+        ],
+        "name": "Rose Salt",
+        "en": "",
+        "race": [
+            "Phidia/Pythia"
+        ],
+        "rarity": 4,
+        "key": "char_4163_rosesa",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "Caster",
+            "Shaper Caster"
+        ],
+        "name": "Tecno",
+        "en": "",
+        "race": [
+            "Durin"
+        ],
+        "rarity": 4,
+        "key": "char_4164_tecno",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Alchemist"
+        ],
+        "name": "Thorns the Lodestar",
+        "en": "",
+        "race": [
+            "Ægir"
+        ],
+        "rarity": 5,
+        "key": "char_1039_thorn2",
+        "team": [
+            "Iberia"
+        ],
+        "painter": "嘎嘎人"
     }
 ]

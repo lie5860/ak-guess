@@ -6108,5 +6108,56 @@
             "ロドス・アイランド"
         ],
         "painter": "直立行走"
+    },
+    {
+        "className": [
+            "医療",
+            "群癒師"
+        ],
+        "name": "ローズソルト",
+        "en": "Rose Salt",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 4,
+        "key": "char_4163_rosesa",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "術師",
+            "創霊術師"
+        ],
+        "name": "テクノ",
+        "en": "Tecno",
+        "race": [
+            "ドゥリン"
+        ],
+        "rarity": 4,
+        "key": "char_4164_tecno",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "特殊",
+            "錬金士"
+        ],
+        "name": "引星ソーンズ",
+        "en": "Thorns the Lodestar",
+        "race": [
+            "エーギル"
+        ],
+        "rarity": 5,
+        "key": "char_1039_thorn2",
+        "team": [
+            "イベリア"
+        ],
+        "painter": "嘎嘎人"
     }
 ]
