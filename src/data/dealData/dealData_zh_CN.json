@@ -6504,5 +6504,39 @@
             "维多利亚"
         ],
         "painter": "Skade"
+    },
+    {
+        "className": [
+            "医疗",
+            "医师"
+        ],
+        "name": "录武官",
+        "en": "Record Keeper",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_4196_reckpr",
+        "team": [
+            "炎"
+        ],
+        "painter": "九日九号"
+    },
+    {
+        "className": [
+            "近卫",
+            "解放者"
+        ],
+        "name": "司霆惊蛰",
+        "en": "Leizi the Thunderbringer",
+        "race": [
+            "麒麟"
+        ],
+        "rarity": 5,
+        "key": "char_1043_leizi2",
+        "team": [
+            "炎"
+        ],
+        "painter": "竜崎いち"
     }
 ]
