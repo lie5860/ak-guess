@@ -6538,5 +6538,23 @@
             "炎"
         ],
         "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "辅助",
+            "召唤师"
+        ],
+        "name": "电弧",
+        "en": "Raidian",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "key": "char_4195_radian",
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
+        "painter": "aZLing4"
     }
 ]
