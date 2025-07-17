@@ -6164,5 +6164,76 @@
             "Iberia"
         ],
         "painter": "嘎嘎人"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Agent"
+        ],
+        "name": "Surfer",
+        "en": "",
+        "race": [
+            "Zalak"
+        ],
+        "rarity": 4,
+        "key": "char_4052_surfer",
+        "team": [
+            "Blacksteel Worldwide",
+            "Columbia"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Abjurer"
+        ],
+        "name": "Xingzhu",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 4,
+        "key": "char_4172_xingzh",
+        "team": [
+            "Yan"
+        ],
+        "painter": "3MO"
+    },
+    {
+        "className": [
+            "Caster",
+            "Primal Caster"
+        ],
+        "name": "Blaze the Igniting Spark",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_1040_blaze2",
+        "team": [
+            "Rhodes Island",
+            "Elite Operator"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "Defender",
+            "Primal Protector"
+        ],
+        "name": "Yu",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_2026_yu",
+        "team": [
+            "Yan",
+            "Sui"
+        ],
+        "painter": "一千"
     }
 ]

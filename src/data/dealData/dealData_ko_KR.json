@@ -6159,5 +6159,76 @@
             "이베리아"
         ],
         "painter": "嘎嘎人"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "에이전트"
+        ],
+        "name": "서퍼",
+        "en": "Surfer",
+        "race": [
+            "자라크"
+        ],
+        "rarity": 4,
+        "key": "char_4052_surfer",
+        "team": [
+            "블랙스틸 월드와이드",
+            "컬럼비아"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "서포터",
+            "비호자"
+        ],
+        "name": "싱주",
+        "en": "Xingzhu",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 4,
+        "key": "char_4172_xingzh",
+        "team": [
+            "염"
+        ],
+        "painter": "3MO"
+    },
+    {
+        "className": [
+            "캐스터",
+            "프라이멀 캐스터"
+        ],
+        "name": "블레이즈 디 이그나이팅 스파크",
+        "en": "Blaze the Igniting Spark",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_1040_blaze2",
+        "team": [
+            "로도스 아일랜드",
+            "정예 오퍼레이터"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "디펜더",
+            "프라이멀 프로텍터"
+        ],
+        "name": "위",
+        "en": "Yu",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_2026_yu",
+        "team": [
+            "염",
+            "쉐이"
+        ],
+        "painter": "一千"
     }
 ]

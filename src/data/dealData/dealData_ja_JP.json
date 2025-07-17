@@ -6159,5 +6159,76 @@
             "イベリア"
         ],
         "painter": "嘎嘎人"
+    },
+    {
+        "className": [
+            "先鋒",
+            "偵察兵"
+        ],
+        "name": "サーファー",
+        "en": "Surfer",
+        "race": [
+            "ザラック"
+        ],
+        "rarity": 4,
+        "key": "char_4052_surfer",
+        "team": [
+            "BSW",
+            "クルビア"
+        ],
+        "painter": "れおえん"
+    },
+    {
+        "className": [
+            "補助",
+            "祈祷師"
+        ],
+        "name": "シィンズゥ",
+        "en": "Xingzhu",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 4,
+        "key": "char_4172_xingzh",
+        "team": [
+            "炎"
+        ],
+        "painter": "3MO"
+    },
+    {
+        "className": [
+            "術師",
+            "本源術師"
+        ],
+        "name": "熾炎ブレイズ",
+        "en": "Blaze the Igniting Spark",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_1040_blaze2",
+        "team": [
+            "エリートオペレーター",
+            "ロドス・アイランド"
+        ],
+        "painter": "Mag42"
+    },
+    {
+        "className": [
+            "重装",
+            "本源衛士"
+        ],
+        "name": "ユー",
+        "en": "Yu",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_2026_yu",
+        "team": [
+            "炎",
+            "歳"
+        ],
+        "painter": "一千"
     }
 ]
