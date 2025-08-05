@@ -6556,5 +6556,75 @@
             "精英干员"
         ],
         "painter": "aZLing4"
+    },
+    {
+        "className": [
+            "先锋",
+            "策士"
+        ],
+        "name": "松桐",
+        "en": "Matsukiri",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 4,
+        "key": "char_4199_makiri",
+        "team": [
+            "东"
+        ],
+        "painter": "AerialB"
+    },
+    {
+        "className": [
+            "狙击",
+            "散射手"
+        ],
+        "name": "吉星",
+        "en": "Kichisei",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_4203_kichi",
+        "team": [
+            "东"
+        ],
+        "painter": "Horin"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "遥",
+        "en": "Haruka",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_4202_haruka",
+        "team": [
+            "东"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "重装",
+            "驭法铁卫"
+        ],
+        "name": "斩业星熊",
+        "en": "Hoshiguma the Breacher",
+        "race": [
+            "鬼"
+        ],
+        "rarity": 5,
+        "key": "char_1044_hsgma2",
+        "team": [
+            "龙门近卫局",
+            "炎",
+            "龙门"
+        ],
+        "painter": "树豚"
     }
 ]
