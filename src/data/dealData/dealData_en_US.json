@@ -6235,5 +6235,39 @@
             "Sui"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "Medic",
+            "Therapist"
+        ],
+        "name": "Nowell",
+        "en": "",
+        "race": [
+            "Vulpo"
+        ],
+        "rarity": 4,
+        "key": "char_4173_nowell",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "Guard",
+            "Reaper"
+        ],
+        "name": "Entelechia",
+        "en": "",
+        "race": [
+            "Sarkaz"
+        ],
+        "rarity": 5,
+        "key": "char_4010_etlchi",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "Ask"
     }
 ]

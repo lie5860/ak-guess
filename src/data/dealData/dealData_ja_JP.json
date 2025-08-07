@@ -6230,5 +6230,39 @@
             "歳"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "医療",
+            "療養師"
+        ],
+        "name": "ノウエル",
+        "en": "Nowell",
+        "race": [
+            "ヴァルポ"
+        ],
+        "rarity": 4,
+        "key": "char_4173_nowell",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "板板"
+    },
+    {
+        "className": [
+            "前衛",
+            "鎌撃士"
+        ],
+        "name": "エンテレケイア",
+        "en": "Entelechia",
+        "race": [
+            "サルカズ"
+        ],
+        "rarity": 5,
+        "key": "char_4010_etlchi",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "Ask"
     }
 ]
