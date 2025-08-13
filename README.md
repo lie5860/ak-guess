@@ -37,7 +37,6 @@
   - `gameMachineConfig.ts`：动作与配置
   - `gameServices.ts`：异步服务
   - `useGameMachine.tsx`：React 集成
-- 内置的自制可视化入口已移除。如需可视化/调试，推荐将状态机代码复制到 Stately Studio。
 
 ### 在 Stately Studio 可视化
 
