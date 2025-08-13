@@ -1,79 +1,94 @@
-# ak-guess
-一个明日方舟的猜谜小游戏
+# AK-Guess
 
-数据使用阿里云FC node写入。
+> 一个基于明日方舟的角色猜谜小游戏
 
-该站点当前所有部分使用React开发，使用magic转Web Component使用。
+## 🎮 在线体验
 
-线上访问地址：[akg.saki.cc](http://akg.saki.cc)
+访问地址：[akg.saki.cc](http://akg.saki.cc)
 
-二开攻略：[文章链接](https://www.bilibili.com/read/cv15611509)
+## ✨ 功能特性
 
-概览图
+- 📱 支持移动端和桌面端
+- 🔍 支持别名搜索
+- 🎨 画师维度猜谜
+- 📅 每日挑战模式
+- 📊 个人战绩统计
+- 🌍 多语言支持
+- 📤 支持emoji分享到社群
+
+## 🖼️ 预览
 
 ![概览图](https://github.com/lie5860/ak-guess/blob/main/image/overview.png?raw=true)
 
-支持emoji分享到社群
-
 ![分享消息图](https://github.com/lie5860/ak-guess/blob/main/image/message.png?raw=true)
 
-本地调试方式 npm i => vite dev => 打开localhost:3000访问
+## 🛠️ 技术栈
 
-欢迎小伙伴提Issue给这个小工具提一些建议和想法。
+- **前端框架**: React
+- **构建工具**: Vite
+- **UI库**: MDUI
+- **部署**: 阿里云FC (Function Compute)
+- **Web Components**: Magic转换
 
-## 本地调试
-// 首先安装node环境 然后再项目根目录执行以下两个命令进入开发模式
+## 🚀 本地开发
+
+### 环境要求
+- Node.js 16+
+- npm 或 yarn
+
+### 开发步骤
+
+```bash
+# 安装依赖
 npm install
-npm run dev
-## 打包发布
-// 项目目前使用ci自动化发布，本地可以通过以下命令打包，然后上传到服务器/文件服务。
-npm run build
 
-## 版本履历
+# 启动开发服务器
+npm run dev
+
+# 访问 http://localhost:3000
+```
+
+### 构建部署
+
+```bash
+# 构建生产版本
+npm run build
+```
+
+项目使用 CI/CD 自动化部署，构建后的文件可上传至服务器或文件服务。
+
+## 📋 版本历史
 
 ### v0.2
-引入mdui作为ui库
-实现多语言
-多服务器数据脚本自动同步
+- 引入 MDUI 作为 UI 库
+- 实现多语言支持
+- 多服务器数据脚本自动同步
 
 ### v0.1
-- 支持移动端 
+- 支持移动端适配
 - 支持别名搜索
-- 增加了画师维度（for铃兰&安洁莉娜）
-- 支持每日挑战
-- 支持战绩
-## 贡献者
+- 增加画师维度猜谜
+- 支持每日挑战模式
+- 支持个人战绩统计
+
+## 👥 贡献者
 
 ![贡献者](https://github.com/lie5860/ak-guess/blob/main/image/contributors.png?raw=true)
 
-## 内容来源及鸣谢
-- [PRTS Wiki](http://prts.wiki/)（游戏数据）
-- [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData)（游戏数据）
-- [Fireblend/squirdle](https://github.com/Fireblend/squirdle)（来源）
+## 🙏 致谢
 
-## B站充电计划
-[传送门](https://space.bilibili.com/14650774/)
+- [PRTS Wiki](http://prts.wiki/) - 游戏数据来源
+- [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) - 游戏数据来源
+- [Fireblend/squirdle](https://github.com/Fireblend/squirdle) - 项目灵感来源
 
-您可以点击上方B站传送门，点击右上侧充电按钮为网站账号进行充电，充电所得将全额用于akg网站的开销。
+## 📝 开发指南
 
-※自2019年9月10日起，B站年度大会员专享每月5B币券变更为手动领取，每月1日起可领，领取后当月有效。（部分赠送时长不可领）领取位置：我的大会员-卡券包
+如需二次开发，请参考：[开发攻略](https://www.bilibili.com/read/cv15611509)
 
+## 🤝 贡献
 
-手机端App可按照以下路径领取：侧边栏->我的大会员->卡券包
+欢迎提交 Issue 和 Pull Request 来改进这个项目！
 
-每月有赠送的5B币可以进行免费进行充电，您可以把手头上的免费资源以充电的形式支持本站。
+## 📄 许可证
 
-但是并不推荐使用付费形式来进行充电，因为充电结算的金额按B站的规则将会被收取30%手续费用。
-
-B站年费大会员每月10号可获得5B币券，1B币券=10电池，单次充电最低为20电池。
-
-## 直接的经济资助
-您可以通过打赏的形式对akg进行实质的经济资助。
-
-微信扫描：
-
-<img src="https://github.com/lie5860/ak-guess/blob/main/image/pay.jpg?raw=true" width="300px" />
-
-### 注明
-所有资助所得，将只用于akg网站日常维护开销，所有收支都会进行公示。
-B站充电的资助所得，会在每月结算后，公示所得金额。
+本项目仅供学习和交流使用。
