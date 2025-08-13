@@ -3,7 +3,7 @@ const host = 'http://akapi.saki.cc/'
 const getDailyData = (server) => axios
   .get(`${host}?server=${server}`, {responseType: "json"})
   .then(function (response) {
-    console.log(response.data, 'response')
+    
     return response.data;
   })
   .catch(function (error) {
@@ -12,7 +12,7 @@ const getDailyData = (server) => axios
 const saveNum = (num, server, pass) => axios
   .get(`${host}save.php?num=${num}&server=${server}&pass=${pass}`, {responseType: "json"})
   .then(function (response) {
-    console.log(response.data, 'response')
+    
     return response.data;
   })
   .catch(function (error) {
@@ -21,7 +21,7 @@ const saveNum = (num, server, pass) => axios
 const getGameDataByLangAndName = (language, jsonName) => {
   const targetProject = language !== 'zh_CN' ? 'ArknightsGameData_YoStar' : 'ArknightsGameData';
   return axios.get(`https://raw.githubusercontent.com/Kengxxiao/${targetProject}/master/${language}/gamedata/excel/${jsonName}.json`).catch((err) => {
-    console.log(`${language}语言 ${jsonName}文件 获取失败 重试`)
+    
     // console.log(JSON.stringify(err))
     return getGameDataByLangAndName(language, jsonName)
   })

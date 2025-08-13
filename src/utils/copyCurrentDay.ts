@@ -3,10 +3,11 @@ export default function copyCurrentDay(text: string, copySuccessTip: string) {
     message
   });
 
-  if (window.clipboardData && window.clipboardData.setData) {
+  const legacyClipboard: any = (window as any).clipboardData;
+  if (legacyClipboard && legacyClipboard.setData) {
     // IE specific code path to prevent textarea being shown while dialog is visible.
     alert(copySuccessTip);
-    return window.clipboardData.setData("Text", text);
+    return legacyClipboard.setData("Text", text);
 
   } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
     var textarea = document.createElement("textarea");

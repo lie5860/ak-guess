@@ -60,7 +60,7 @@ const main = async () => {
         Object.keys(serversDict).map(lang => jsonList.map(jsonName => queryList.push([lang, jsonName])))
         for (let i = 0; i < queryList.length; i++) {
             const [lang, jsonName] = queryList[i];
-            console.log(`正在更新 语言${lang}的json${jsonName}`)
+            
             await writeJsonByLangAndName(lang, jsonName);
         }
     }
@@ -167,7 +167,7 @@ const main = async () => {
         // 种族信息从档案中解析对应文本
         let profile = handbook[k];
         if (profile == null) {
-            console.log("角色" + chapter.name + "档案" + k + "缺失，暂不处理");
+            
             return null;
         }
         let storyText = profile.storyTextAudio[0].stories[0].storyText;
@@ -234,7 +234,7 @@ const main = async () => {
         fs.writeFileSync(file, JSON.stringify(chartsData, null, 4), {encoding: 'utf8'})
 
         afterDealData({chartsData, server, pass})
-        console.log(`生成${server}数据完成 耗时 ${new Date().valueOf() - time1}ms`)
+        
     }
 
 }

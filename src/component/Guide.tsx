@@ -26,7 +26,7 @@ const Guide = () => {
     <div className="mdui-textfield" style={{textAlign: 'left', paddingTop: 0}}>
       <i className="mdui-icon material-icons">search</i>
       <input className="mdui-textfield-input" onChange={e => {
-        console.log(e.target.value)
+        
         setData(filterDataByInputVal(e.target.value, baseData, aliasData))
       }} placeholder={i18n.get('inputTip')}/>
     </div>

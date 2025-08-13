@@ -1,5 +1,5 @@
 import {moment, React} from './global'
-import {DAILY_MODE, modeI18nKeyDict, PARADOX_MODE, RANDOM_MODE} from "./const";
+import {DAILY_MODE, modeI18nKeyDict, PARADOX_MODE, RANDOM_MODE, TZ_ASIA_SHANGHAI, DATE_FMT, STORAGE} from "./const";
 import Modal from "./component/Modal";
 import Help from './component/Help';
 import {getDailyData} from "./server";
@@ -15,7 +15,7 @@ export default function Home() {
   const [mode, setMode] = React.useState(RANDOM_MODE)
   const [showDailyMode, setShowDailyMode] = React.useState(false)
   const [updateDate, setUpdateDate] = React.useState('')
-  const today = React.useMemo(() => moment().tz("Asia/Shanghai").format('YYYY-MM-DD'), [])
+  const today = React.useMemo(() => moment().tz(TZ_ASIA_SHANGHAI).format(DATE_FMT), [])
   const store = {mode, chartsData, today, i18n, chartNameToIndexDict}
   const openHelp = (firstOpen = false) => {
     window?.mduiModal?.open({
@@ -30,8 +30,8 @@ export default function Home() {
       setUpdateDate(last_date)
       setShowDailyMode(daily >= 0)
     })
-    if (!localStorageGet(i18n.language, 'firstOpen')) {
-      localStorageSet(i18n.language, 'firstOpen', 'yes');
+    if (!localStorageGet(i18n.language, STORAGE.FIRST_OPEN)) {
+      localStorageSet(i18n.language, STORAGE.FIRST_OPEN, 'yes');
       setTimeout(() => {
         openHelp(true)
       }, 500)
@@ -39,8 +39,8 @@ export default function Home() {
   }, [])
   const menu = showDailyMode ? [RANDOM_MODE, DAILY_MODE, PARADOX_MODE] : [RANDOM_MODE, PARADOX_MODE];
   // 第一次进悖论模式，弹出帮助框
-  if (mode == PARADOX_MODE && !localStorageGet(i18n.language, 'firstOpenParadox')) {
-    localStorageSet(i18n.language, 'firstOpenParadox', 'yes');
+  if (mode == PARADOX_MODE && !localStorageGet(i18n.language, STORAGE.FIRST_OPEN_PARADOX)) {
+    localStorageSet(i18n.language, STORAGE.FIRST_OPEN_PARADOX, 'yes');
     setTimeout(() => {
       openHelp(true)
     }, 500)

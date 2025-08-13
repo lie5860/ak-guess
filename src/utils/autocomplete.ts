@@ -28,12 +28,12 @@ export const filterDataByInputVal = (val: string, chartList: Character[], aliasD
   }
   return [...nameMatchItems, ...aliasMatchItems]
 }
-export default function autocomplete(inp: Element, arr: string[], chartsData: Character[], aliasData: Alias[]) {
+export default function autocomplete(inp: HTMLInputElement, arr: string[], chartsData: Character[], aliasData: Alias[]) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
   let currentFocus: number;
-  const inputCb = function () {
-    var a, i, val = this.value;
+  const inputCb = function (this: HTMLInputElement) {
+    let a: HTMLDivElement, val = this.value
     /*close any already open lists of autocompleted values*/
     closeAllLists();
     var inputVal = val.toUpperCase().trim()
@@ -42,11 +42,11 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     }
     currentFocus = -1;
     /*create a DIV element that will contain the items (values):*/
-    a = document.createElement("DIV");
+    a = document.createElement("DIV") as HTMLDivElement
     a.setAttribute("id", this.id + "autocomplete-list");
     a.setAttribute("class", "autocomplete-items");
     /*append the DIV element as a child of the autocomplete container:*/
-    this.parentNode.appendChild(a);
+    this.parentNode?.appendChild(a)
     /*for each item in the array...*/
     const data = filterDataByInputVal(inputVal, chartsData, aliasData).map((v) => {
       let b;
@@ -58,9 +58,15 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
       let value = v?.[MAIN_KEY].toString().replace(/'/g, "&#39;")
       b.innerHTML += "<input type='hidden' value='" + value + "'>";
       /*execute a function when someone clicks on the item value (DIV element):*/
-      b.addEventListener("click", function (e) {
+      b.addEventListener("click", (e: MouseEvent) => {
         /*insert the value for the autocomplete text field:*/
-        inp.value = this.getElementsByTagName("input")[0].value;
+        const target = e.currentTarget as HTMLDivElement | null
+        if (target) {
+          const hiddenInput = target.getElementsByTagName("input")[0] as HTMLInputElement | undefined
+          if (hiddenInput) {
+            inp.value = hiddenInput.value
+          }
+        }
         /*close the list of autocompleted values,
         (or any other open lists of autocompleted values:*/
         closeAllLists();
@@ -70,9 +76,10 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     a.append(...data);
     // [...nameMatchItems,...aliasMatchItems].forEach(v=>a.appendChild(v));
   }
-  const keydownCb = function (e) {
-    var x = document.getElementById(this.id + "autocomplete-list");
-    if (x) x = x.getElementsByTagName("div");
+  const keydownCb = function (this: HTMLInputElement, e: KeyboardEvent) {
+    let listContainer = document.getElementById(this.id + "autocomplete-list")
+    let x: HTMLCollectionOf<HTMLDivElement> | null = null
+    if (listContainer) x = listContainer.getElementsByTagName("div") as HTMLCollectionOf<HTMLDivElement>
     if (e.keyCode == 40) {
       /*If the arrow DOWN key is pressed,
       increase the currentFocus variable:*/
@@ -99,9 +106,9 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
   /*execute a function presses a key on the keyboard:*/
   inp.addEventListener("keydown", keydownCb);
 
-  function addActive(x) {
+  function addActive(x: HTMLCollectionOf<HTMLDivElement> | null) {
     /*a function to classify an item as "active":*/
-    if (!x) return false;
+    if (!x) return
     /*start by removing the "active" class on all items:*/
     removeActive(x);
     if (currentFocus >= x.length) currentFocus = 0;
@@ -110,25 +117,29 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     x[currentFocus].classList.add("autocomplete-active");
   }
 
-  function removeActive(x) {
+  function removeActive(x: HTMLCollectionOf<HTMLDivElement> | null) {
     /*a function to remove the "active" class from all autocomplete items:*/
+    if (!x) return
     for (var i = 0; i < x.length; i++) {
       x[i].classList.remove("autocomplete-active");
     }
   }
 
-  function closeAllLists(elmnt) {
+  function closeAllLists(elmnt?: Element | EventTarget | null) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
+    var x = document.getElementsByClassName("autocomplete-items") as HTMLCollectionOf<HTMLElement>
     for (var i = 0; i < x.length; i++) {
       if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
+        const parent = x[i].parentNode
+        if (parent) {
+          parent.removeChild(x[i])
+        }
       }
     }
   }
 
-  const clickCb = function (e) {
+  const clickCb = function (e: MouseEvent) {
     closeAllLists(e.target);
   }
   /*execute a function when someone clicks in the document:*/

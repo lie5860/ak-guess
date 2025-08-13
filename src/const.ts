@@ -99,3 +99,62 @@ export const CONTRIBUTORS = [
     ]
   }
 ]
+
+// Storage keys (language-aware wrappers may prepend/append language codes)
+export const STORAGE = {
+  LANG: '__lang',
+  FIRST_OPEN: 'firstOpen',
+  FIRST_OPEN_PARADOX: 'firstOpenParadox',
+  RANDOM_DATA: 'r-randomData',
+  RANDOM_ANSWER_KEY: 'r-randomAnswerKey',
+  GIVE_UP: 'giveUp',
+  PARADOX_DATA: 'paradoxData',
+  DAILY_DATA: 'dailyData',
+  DAY_DATA_SUFFIX: 'dayData',
+  CLOSE_PWA: 'close-pwa',
+  UUID: 'UUID'
+} as const;
+
+// Moment timezone and date formats
+export const TZ_ASIA_SHANGHAI = 'Asia/Shanghai';
+export const DATE_FMT = 'YYYY-MM-DD';
+export const DATE_TIME_FMT = 'YYYY-MM-DD HH:mm:ss';
+
+// Result value strings
+export const RESULT = {
+  CORRECT: 'correct',
+  WRONG: 'wrong',
+  WRONG_POS: 'wrongpos',
+  UP: 'up',
+  DOWN: 'down'
+} as const;
+
+// XState/Event names
+export const EVENTS = {
+  INIT: 'INIT',
+  SUBMIT_GUESS: 'SUBMIT_GUESS',
+  NEW_GAME: 'NEW_GAME',
+  GIVE_UP: 'GIVE_UP',
+  GAME_OVER: 'GAME_OVER',
+  RETRY: 'RETRY'
+} as const;
+
+// API endpoints
+export const API_BASE = '//akapi.saki.cc';
+export const API_REPORT_URL = 'https://akapi.saki.cc/report.php';
+export const API_ERROR_REPORT_URL = 'https://akapi.saki.cc/error_report.php';
+
+// Report result types
+export const REPORT_RESULT = {
+  INIT: 'init',
+  WIN: 'win',
+  LOSE: 'lose',
+  GIVE_UP: 'giveUp'
+} as const;
+
+// Paradox stored field names
+export const PARADOX_FIELDS = {
+  GIVE_UP: 'giveUp',
+  DATA: 'data',
+  REST_LIST: 'restList'
+} as const;

@@ -1,4 +1,4 @@
-import {DAILY_MODE, PARADOX_MODE, RANDOM_MODE, reportKeyDict, TYPES} from "./const";
+import {DAILY_MODE, PARADOX_MODE, RANDOM_MODE, reportKeyDict, TYPES, RESULT, STORAGE, TZ_ASIA_SHANGHAI, DATE_FMT, DATE_TIME_FMT, API_BASE, API_REPORT_URL, API_ERROR_REPORT_URL, REPORT_RESULT} from "./const";
 import {moment} from "./global";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 
@@ -21,11 +21,11 @@ const guess = (inputItem: Character, answer: Character) => {
     let emoji;
     switch (type) {
       case 'string':
-        emoji = inputItem?.[key] === answer?.[key] ? 'correct' : 'wrong';
+        emoji = inputItem?.[key] === answer?.[key] ? RESULT.CORRECT : RESULT.WRONG;
         break;
       case 'number':
         const diff = Number(inputItem?.[key]) - Number(answer?.[key]);
-        emoji = diff === 0 ? 'correct' : (diff > 0 ? 'down' : 'up')
+        emoji = diff === 0 ? RESULT.CORRECT : (diff > 0 ? RESULT.DOWN : RESULT.UP)
         break;
       case 'array':
         const x = inputItem?.[key] || [];
@@ -34,9 +34,9 @@ const guess = (inputItem: Character, answer: Character) => {
           const x = [...new Set(xx)];
           const y = [...new Set(yy)];
           const l = new Set([...x, ...y]).size;
-          if (x.length === y.length && x.length === l) return 'correct';
-          if (x.length + y.length === l) return 'wrong';
-          return 'wrongpos';
+          if (x.length === y.length && x.length === l) return RESULT.CORRECT;
+          if (x.length + y.length === l) return RESULT.WRONG;
+          return RESULT.WRONG_POS;
         };
         emoji = eqState(x, y)
         break;
@@ -45,7 +45,7 @@ const guess = (inputItem: Character, answer: Character) => {
   })
   return res
 }
-const host = '//akapi.saki.cc/'
+const host = `${API_BASE}/`
 const cacheDict: any = {}
 // 队列改造 防止并发时多次触发
 const cacheLoad = async (cacheKey: string, getDataFn: () => any) => {
@@ -67,8 +67,8 @@ const cacheLoad = async (cacheKey: string, getDataFn: () => any) => {
   return data;
 }
 const getDailyData = (lang: string) => {
-  const oldData = localStorageGet(lang, 'dailyData');
-  const today = moment().tz("Asia/Shanghai").format('YYYY-MM-DD');
+  const oldData = localStorageGet(lang, STORAGE.DAILY_DATA);
+  const today = moment().tz(TZ_ASIA_SHANGHAI).format(DATE_FMT);
   if (oldData) {
     try {
       const data = JSON.parse(oldData);
@@ -83,7 +83,7 @@ const getDailyData = (lang: string) => {
     .then(function (response: any) {
       const res = response.data;
       dailyGameInit(lang, {answer: response.data.daily})
-      localStorageSet(lang, 'dailyData', JSON.stringify({
+      localStorageSet(lang, STORAGE.DAILY_DATA, JSON.stringify({
         res
       }));
       return response.data;
@@ -91,7 +91,7 @@ const getDailyData = (lang: string) => {
     .catch(function () {
       alert('服务已崩溃 请联系管理员')
     })
-  return cacheLoad(`${today}|dailyData`, getDataFn)
+  return cacheLoad(`${today}|${STORAGE.DAILY_DATA}`, getDataFn)
 };
 
 export interface Answers {
@@ -115,7 +115,7 @@ export interface ReportData {
 }
 
 const reportData = (data: ReportData) => {
-  axios.post('https://akapi.saki.cc/report.php',data).catch(() => {
+  axios.post(API_REPORT_URL,data).catch(() => {
   })
   // try {
   //   window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
@@ -128,7 +128,7 @@ interface ErrData{
   localstorage:string;
 }
 export const reportError = (errData: ErrData) => {
-  axios.post('https://akapi.saki.cc/error_report.php',errData).catch(() => {
+  axios.post(API_ERROR_REPORT_URL,errData).catch(() => {
   })
 }
 interface OptLabel {
@@ -136,10 +136,10 @@ interface OptLabel {
   inputArray?: Answers[];
 }
 
-const INIT = 'init';
-const WIN = 'win';
-const LOSE = 'lose';
-const GIVE_UP = 'giveUp';
+const INIT = REPORT_RESULT.INIT;
+const WIN = REPORT_RESULT.WIN;
+const LOSE = REPORT_RESULT.LOSE;
+const GIVE_UP = REPORT_RESULT.GIVE_UP;
 const resultDict: { [key: string]: number } = {
   [INIT]: 0,
   [WIN]: 1,
@@ -149,17 +149,17 @@ const resultDict: { [key: string]: number } = {
 const commonReport = (server: string, optLabel: OptLabel, mode: string, type: string) => {
   const {answer} = optLabel
   let user = '';
-  if (localStorage.getItem('UUID')) {
-    user = localStorage.getItem('UUID') || ''
+  if (localStorage.getItem(STORAGE.UUID)) {
+    user = localStorage.getItem(STORAGE.UUID) || ''
   } else {
     user = uuid();
-    localStorage.setItem('UUID', user);
+    localStorage.setItem(STORAGE.UUID, user);
   }
   reportData({
     server,
     mode: reportKeyDict[mode],
     answer,
-    op_time: moment().tz("Asia/Shanghai").format('YYYY-MM-DD HH:mm:ss'),
+    op_time: moment().tz(TZ_ASIA_SHANGHAI).format(DATE_TIME_FMT),
     result: resultDict[type],
     try_times: optLabel?.inputArray?.length ?? 0,
     user,

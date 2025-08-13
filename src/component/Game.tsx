@@ -2,7 +2,7 @@ import {React} from "../global";
 import {CONTRIBUTORS, MAIN_KEY} from "../const";
 import ContributorList from "./ContributorList";
 import {reinitRecord, History} from "./History";
-import GuessItem, {ChartInfoLink} from "./GuessItem";
+import GuessList, {ChartInfoLink} from "./GuessItem";
 import copyCurrentDay from "../utils/copyCurrentDay";
 import shareTextCreator from "../utils/share";
 import ShareIcon from "./ShareIcon";
@@ -11,6 +11,7 @@ import {AppCtx} from "../locales/AppCtx";
 import autocomplete from "../utils/autocomplete";
 import Guide from "./Guide";
 import {getConfig} from "../locales";
+ 
 
 const showModal = (message: string) => {
   window.mdui.snackbar({
@@ -29,10 +30,11 @@ const Game = (props: IProps) => {
   const {openHelp, store} = props
   const {today, mode, chartsData} = store
   const game = useGame(store);
-  const inputRef = React.useRef();
-  const unbindRef = React.useRef();
+  const inputRef = React.useRef(null);
+  const unbindRef = React.useRef(undefined);
   const chartNames = React.useMemo(() => chartsData.map((v: Character) => v?.[MAIN_KEY]), [])
   const [initialized, setInit] = React.useState(false)
+  
   reinitRecord(i18n.language);
   const confirmGiveUp = () => {
     window.mdui.dialog({
@@ -57,30 +59,35 @@ const Game = (props: IProps) => {
     setInit(true)
   }
   // 外部使用mode作为key 其实mode的变化感知不到了
-  React.useEffect(gameInit, [mode])
+  React.useEffect(() => { void gameInit(); }, [mode])
+  // 加载完成后再绑定联想输入
   // 绑定联想输入
   React.useEffect(() => {
-    if (initialized) {
+    if (initialized && inputRef.current) {
       unbindRef.current = autocomplete(inputRef.current, chartNames, chartsData, aliasData);
     } else {
       unbindRef.current?.();
     }
   }, [initialized])
   const onSubmit = (e: any) => {
+    e.preventDefault();
     e.stopPropagation();
+    if (!initialized) {
+      return;
+    }
     if (game.preSubmitCheck?.()) {
       return;
     }
-    const inputName = inputRef.current.value?.toUpperCase();
+    const inputName = inputRef.current?.value?.toUpperCase();
     // 转大写感觉会存在一定的风险。 例如 Ceoceo和CeoCeo会认为是一个干员，但按照标准两个大写的词不会连着用才对
     if (chartNames.map((v: string) => v?.toUpperCase()).indexOf(inputName) === -1) {
       showModal(i18n.get('errNameTip'))
     } else if (game.data.map((v: GuessItem) => v.guess?.[MAIN_KEY]?.toUpperCase()).indexOf(inputName) !== -1) {
       showModal(i18n.get('duplicationTip'));
     } else {
-      const inputItem = chartsData.filter((v: Character) => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
+      const inputItem = chartsData.filter((v: any) => v?.[MAIN_KEY]?.toUpperCase() === inputName)[0];
       const newData = game.insertItem(inputItem);
-      inputRef.current.value = '';
+      if (inputRef.current) inputRef.current.value = '';
       if (game.judgeOver(newData)) {
         game.gameOver(newData)
       }
@@ -88,7 +95,6 @@ const Game = (props: IProps) => {
   }
   if (!initialized) return null;
   const config = getConfig(i18n.language);
-  console.log(config, 'config');
   return <>
     <div style={{paddingTop: 10, ...config.mainTitleStyle}}><span className={`title`}>{i18n.get('title')}</span></div>
     {config.showTitleDesc && <div>{i18n.get('titleDesc')}
@@ -118,11 +124,11 @@ const Game = (props: IProps) => {
       }}>📔{i18n.get('operators')}
       </div>}
     </div>
-    {!!game.data?.length && <GuessItem data={game.data}/>}
+    {!!game.data?.length && <GuessList data={game.data}/>}
     <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
           style={{display: game.isOver ? 'none' : ''}}>
       <div className="autocomplete">
-        <input ref={inputRef} id="guess" placeholder={i18n.get('inputTip')} onKeyDown={(e) => {
+        <input ref={(el) => { (inputRef as any).current = el }} id="guess" placeholder={i18n.get('inputTip')} onKeyDown={(e) => {
           if (e.keyCode == 13) {
             onSubmit(e)
           }
@@ -168,6 +174,7 @@ const Game = (props: IProps) => {
         </a>
     </div>
     }
+    
   </>
 }
 export default Game;

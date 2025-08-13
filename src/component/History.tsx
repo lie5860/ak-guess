@@ -50,7 +50,7 @@ const loadRecordData = (lang: string) => {
 
 const resetRecordData = (lang: string, mode: string, successTip: string) => {
   var record = loadRecordData(lang);
-  record[mode] = DEFAULT_RECODE[mode];
+  record[mode] = DEFAULT_RECODE[mode as keyof typeof DEFAULT_RECODE];
   saveRecordData(lang, record);
   if (successTip) {
     window.mdui.snackbar(successTip);
@@ -164,7 +164,7 @@ const History = ({mode}: {mode: string}) => {
               'cancelText': i18n.get('no')
             });
           }, 100)
-    }}><i class="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
+    }}><i className="mdui-icon material-icons">&#xe92b;</i> {i18n.get('resetTip')}</a>
   </>;
 }
 export {

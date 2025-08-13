@@ -1,6 +1,6 @@
 import {moment, React} from "./global";
 
-import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";
+import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES, STORAGE, PARADOX_FIELDS, TZ_ASIA_SHANGHAI, DATE_FMT} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
 import {
@@ -12,6 +12,7 @@ import {
   randomGameLose,
   randomGameWin, reportError
 } from "./server";
+import { useGameMachine } from "./machines/useGameMachine";
 
 export interface HomeStore {
   mode: string;
@@ -34,7 +35,7 @@ const useRandomStore = ({chartsData}: { chartsData: Character[] }) => {
 const useDailyStore = () => {
   const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
   const [dayData, setDayData] = React.useState([])
-  const [today, setToday] = React.useState(moment().tz("Asia/Shanghai").format('YYYY-MM-DD'))
+  const [today, setToday] = React.useState(moment().tz(TZ_ASIA_SHANGHAI).format(DATE_FMT))
   return {
     remoteAnswerKey, setRemoteAnswerKey,
     today, setToday,
@@ -51,7 +52,8 @@ const useParadoxStore = () => {
     data, setData
   }
 }
-export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
+// Legacy game hook - kept for backward compatibility
+export const useGameLegacy: (store: HomeStore) => Game = (store: HomeStore) => {
   const {chartsData, mode} = store
   const randomStore = useRandomStore({chartsData})
   const dailyStore = useDailyStore()
@@ -62,6 +64,11 @@ export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
     [PARADOX_MODE]: paradoxGame
   }
   return gameDict[mode]({store, randomStore, dailyStore, paradoxStore})
+}
+
+// New XState-based game hook
+export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
+  return useGameMachine(store);
 }
 // game 需要暴露存储数据的key
 const randomGame = ({store, randomStore}: any) => {
@@ -81,8 +88,8 @@ const randomGame = ({store, randomStore}: any) => {
   const isOver = judgeOver(data);
   const newGame = () => {
     setGiveUp(false);
-    localStorageSet(lang, 'giveUp', `false`)
-    localStorageSet(lang, 'r-randomData', JSON.stringify([]))
+    localStorageSet(lang, STORAGE.GIVE_UP, `false`)
+    localStorageSet(lang, STORAGE.RANDOM_DATA, JSON.stringify([]))
     setRandomData([])
     let answer = Math.floor(Math.random() * chartsData.length);
     if (isNaN(answer)) {
@@ -93,16 +100,16 @@ const randomGame = ({store, randomStore}: any) => {
       })
       answer = Math.floor(Math.random() * 100) || 1
     }
-    localStorageSet(lang, 'r-randomAnswerKey', `${answer}`)
+    localStorageSet(lang, STORAGE.RANDOM_ANSWER_KEY, `${answer}`)
     setRandomAnswerKey(answer)
     randomGameInit(lang, {answer})
   }
   return {
     init: () => {
-      const randomData = localStorageGet(lang, 'r-randomData')
-      const oldKey = localStorageGet(lang, 'r-randomAnswerKey')
+      const randomData = localStorageGet(lang, STORAGE.RANDOM_DATA)
+      const oldKey = localStorageGet(lang, STORAGE.RANDOM_ANSWER_KEY)
       if (randomData && oldKey !== 'undefined') {
-        const giveUp = localStorageGet(lang, "giveUp")
+        const giveUp = localStorageGet(lang, STORAGE.GIVE_UP)
         if (giveUp) {
           setGiveUp(giveUp === 'true');
         }
@@ -130,7 +137,7 @@ const randomGame = ({store, randomStore}: any) => {
     insertItem: (newItem: Character) => {
       const res = guessFn(newItem, answer);
       const newData = [...randomData, res];
-      localStorageSet(lang, 'r-randomData', JSON.stringify(newData));
+      localStorageSet(lang, STORAGE.RANDOM_DATA, JSON.stringify(newData));
       setRandomData(newData);
       return newData;
     },
@@ -198,11 +205,11 @@ const randomGame = ({store, randomStore}: any) => {
       record[mode].totalTryTimes += randomData.length;
       saveRecordData(lang, record);
       setGiveUp(true);
-      localStorageSet(lang, 'giveUp', 'true')
+      localStorageSet(lang, STORAGE.GIVE_UP, 'true')
     },
     newGame,
     canNewGame: isOver,
-    gameTip: (config) => <div style={{marginTop: 8, ...config.gameTipStyle}}>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
+    gameTip: (config: DefaultConfig) => <div style={{marginTop: 8, ...config.gameTipStyle}}>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
   }
 }
 const dailyGame = ({store, dailyStore}: any) => {
@@ -226,7 +233,7 @@ const dailyGame = ({store, dailyStore}: any) => {
       const {daily, server_date}: { daily: number, server_date: string } = await getDailyData(lang);
       setToday(server_date)
       setRemoteAnswerKey(daily)
-      const dayData = localStorageGet(lang, server_date + 'dayData')
+      const dayData = localStorageGet(lang, server_date + STORAGE.DAY_DATA_SUFFIX)
       if (dayData) {
         setDayData(JSON.parse(dayData))
       }
@@ -240,12 +247,12 @@ const dailyGame = ({store, dailyStore}: any) => {
     insertItem: (newItem: Character) => {
       const res = guessFn(newItem, answer);
       const newData = [...dayData, res];
-      localStorageSet(lang, today + 'dayData', JSON.stringify(newData));
+      localStorageSet(lang, today + STORAGE.DAY_DATA_SUFFIX, JSON.stringify(newData));
       setDayData(newData);
       return newData;
     },
     preSubmitCheck: () => {
-      if (today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
+      if (today !== moment().tz(TZ_ASIA_SHANGHAI).format(DATE_FMT)) {
         alert(i18n.get('reloadTip'))
         window.location.reload()
         return true;
@@ -314,23 +321,23 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   } = paradoxStore
   const lang = i18n.language;
   const saveData = (key: string, value: any) => {
-    const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}')
+    const paradoxData = JSON.parse(localStorageGet(lang, STORAGE.PARADOX_DATA) || '{}')
     paradoxData[key] = value
-    localStorageSet(lang, 'paradoxData', JSON.stringify(paradoxData))
+    localStorageSet(lang, STORAGE.PARADOX_DATA, JSON.stringify(paradoxData))
   }
   const getDataByKey = (key: string) => {
-    const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}')
+    const paradoxData = JSON.parse(localStorageGet(lang, STORAGE.PARADOX_DATA) || '{}')
     return paradoxData[key]
   }
   const newGame = () => {
     paradoxGameInit(lang, {answer: 0})
     setGiveUp(false);
-    saveData('giveUp', 'false')
+    saveData(PARADOX_FIELDS.GIVE_UP, 'false')
     setData([]);
-    saveData('data', []);
+    saveData(PARADOX_FIELDS.DATA, []);
     const initData = chartsData.map((v: any, i: number) => i);
     setRestList(initData);
-    saveData('restList', initData);
+    saveData(PARADOX_FIELDS.REST_LIST, initData);
   }
   const allCorrectKey = COLUMNS.map(() => 'correct').join('|')
   const judgeWin = (data: GuessItem[]) => {
@@ -344,14 +351,14 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
   const answer = chartsData[restList[0]];
   return {
     init: () => {
-      const giveUp = getDataByKey("giveUp")
+      const giveUp = getDataByKey(PARADOX_FIELDS.GIVE_UP)
       if (giveUp) {
         setGiveUp(giveUp === 'true');
       }
-      const paradoxData = getDataByKey('data')
+       const paradoxData = getDataByKey(PARADOX_FIELDS.DATA)
       if (paradoxData) {
         setData(paradoxData)
-        const paradoxRestList = getDataByKey('restList')
+         const paradoxRestList = getDataByKey(PARADOX_FIELDS.REST_LIST)
         setRestList(paradoxRestList)
       } else {
         newGame()
@@ -406,7 +413,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
         })
       });
       setGiveUp(true);
-      saveData('giveUp', 'true')
+       saveData(PARADOX_FIELDS.GIVE_UP, 'true')
       let record = loadRecordData(lang);
       record[mode].playTimes += 1;
       record[mode].straightWins = 0;

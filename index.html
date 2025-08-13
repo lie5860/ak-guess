@@ -30,7 +30,7 @@
                 let appPromptEvent = null;
                 const installBtn = document.getElementById('pwaTips');
                 window.addEventListener('appinstalled', function () {
-                    console.log('应用已安装');
+                    
                     installBtn.hidden = true;
                 });
                 const closepwaTips = document.getElementById('closepwaTips');
@@ -42,7 +42,7 @@
                 })
                 if (!localStorage.getItem('close-pwa')) {
                     window.addEventListener('beforeinstallprompt', function (event) {
-                        console.log('触发事件：beforeinstallprompt');
+                        
                         event.preventDefault();
                         appPromptEvent = event;
                         installBtn.hidden = false;
@@ -53,9 +53,9 @@
                             appPromptEvent.prompt();
                             appPromptEvent.userChoice.then(function (result) {
                                 if (result.outcome === 'accepted') {
-                                    console.log('同意安装应用');
+                                    
                                 } else {
-                                    console.log('不同意安装应用');
+                                    
                                 }
                                 appPromptEvent = null;
                             });

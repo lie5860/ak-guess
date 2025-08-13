@@ -9,8 +9,7 @@ export class ErrorBoundary extends React.Component {
   static getDerivedStateFromError(error) {
     // 更新 state，下次渲染可以展示错误相关的 UI
     console.dir(error)
-    console.log(JSON.stringify(error.message), 'message');
-    console.log(JSON.stringify(error.stack), 'stack');
+    
     return {error: error};
   }
 

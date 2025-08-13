@@ -1,7 +1,8 @@
 import {React} from "../global";
+import '../typings.d.ts'
 import {AppCtx} from "./AppCtx";
 import languages, {DEFAULT_CONFIG, getConfig, hostDict} from './index';
-import {MAIN_KEY} from "../const";
+import {MAIN_KEY, STORAGE} from "../const";
 
 export const localStorageSet = (lang: string, key: string, value: string) => {
   return localStorage.setItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`), value)
@@ -9,25 +10,28 @@ export const localStorageSet = (lang: string, key: string, value: string) => {
 export const localStorageGet = (lang: string, key: string) => {
   return localStorage.getItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`))
 }
+export const localStorageRemove = (lang: string, key: string) => {
+  return localStorage.removeItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`))
+}
 export const I18nWrap = (props: any) => {
   const [language, setLanguage] = React.useState(DEFAULT_CONFIG.defaultLang)
   const [inited, setInited] = React.useState(false)
   const [chartsData, setDealData] = React.useState([])
   const [chartNameToIndexDict, setChartNameToIndexDict] = React.useState({})
   const [aliasData, setAliasData] = React.useState([])
-  const [languageDict, initI18nDict] = React.useState({});
+  const [languageDict, initI18nDict] = React.useState<Record<string, string>>({});
   const init = async () => {
-    const lang = localStorage.getItem('__lang')
+    const lang = localStorage.getItem(STORAGE.LANG)
     const urlLang = location?.search?.slice?.(1)?.split("&")?.map(s => s?.split("="))?.filter(v => v?.[0] === 'lang')?.[0]?.[1];
     const preConfig = getConfig(lang || '');
     if(!urlLang && lang && !preConfig.showServer){
       //   如果 url 没有值，则默认使用上次语言，如果上次语言不支持切换服务（语言），则认为是限定语言。应该切回默认语言
-      localStorage.setItem('__lang', preConfig.defaultLang)
+      localStorage.setItem(STORAGE.LANG, preConfig.defaultLang)
       location.reload()
       return;
     }
     if (urlLang !== lang && languages?.[urlLang]) {
-      localStorage.setItem('__lang', urlLang)
+      localStorage.setItem(STORAGE.LANG, urlLang)
       location.reload()
       return;
     }
@@ -40,7 +44,7 @@ export const I18nWrap = (props: any) => {
     const dd = (await import(`../data/dealData/dealData_${fixLang}.json`)).default
     setDealData(dd)
     const dict: { [key: string]: number } = {};
-    dd.forEach((v: Character, index: number) => {
+    dd.forEach((v: any, index: number) => {
       dict[v?.[MAIN_KEY]] = index;
     })
     setChartNameToIndexDict(dict);
@@ -49,7 +53,7 @@ export const I18nWrap = (props: any) => {
     setInited(true)
 
   }
-  React.useEffect(init, [])
+  React.useEffect(() => { void init(); }, [])
   if (!inited) return null
   return <AppCtx.Provider value={{
     i18n: {

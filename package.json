@@ -8,10 +8,11 @@
     "preview": "vite build && vite preview"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "axios": "^0.26.0",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.4.1",
+    "xstate": "^4.38.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
