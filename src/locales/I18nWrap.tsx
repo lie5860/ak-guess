@@ -19,7 +19,7 @@ export const I18nWrap = (props: any) => {
   const [chartsData, setDealData] = React.useState([])
   const [chartNameToIndexDict, setChartNameToIndexDict] = React.useState({})
   const [aliasData, setAliasData] = React.useState([])
-  const [languageDict, initI18nDict] = React.useState<Record<string, string>>({});
+  const [languageDict, initI18nDict] = React.useState({} as Record<string, string>);
   const init = async () => {
     const lang = localStorage.getItem(STORAGE.LANG)
     const urlLang = location?.search?.slice?.(1)?.split("&")?.map(s => s?.split("="))?.filter(v => v?.[0] === 'lang')?.[0]?.[1];

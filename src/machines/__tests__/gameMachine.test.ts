@@ -27,7 +27,7 @@ const mockI18n = {
 };
 
 describe('Game State Machine', () => {
-  const machineWithConfig = gameMachine.withConfig(gameMachineConfig);
+  const machineWithConfig = gameMachine.withConfig(gameMachineConfig as any);
 
   test('should start in idle state', () => {
     const service = interpret(machineWithConfig);

@@ -9,15 +9,23 @@ export type useImageProps = {
   useSuspense?: boolean
 }
 
-const removeBlankArrayElements = (a) => a.filter((x) => x)
-const stringToArray = (x) => (Array.isArray(x) ? x : [x])
-const cache = {}
+const removeBlankArrayElements = (a: any[]) => a.filter((x: any) => x)
+const stringToArray = (x: string | string[]) => (Array.isArray(x) ? x : [x])
+
+interface CacheItem {
+  promise: Promise<string>;
+  cache: 'pending' | 'resolved' | 'rejected';
+  error: any;
+  src?: string;
+}
+
+const cache: Record<string, CacheItem> = {}
 
 // sequential map.find for promises
-const promiseFind = (arr, promiseFactory) => {
+const promiseFind = (arr: string[], promiseFactory: (src: string) => Promise<any>) => {
   let done = false
-  return new Promise((resolve, reject) => {
-    const queueNext = (src) => {
+  return new Promise<string>((resolve, reject) => {
+    const queueNext = (src: string) => {
       return promiseFactory(src).then(() => {
         done = true
         resolve(src)
@@ -30,7 +38,7 @@ const promiseFind = (arr, promiseFactory) => {
         return p.catch(() => {
           if (!done) return queueNext(src)
         })
-      }, queueNext(arr.shift()))
+      }, queueNext(arr.shift()!))
       .catch(reject)
   })
 }
@@ -57,14 +65,14 @@ export default function useImage({
   cache[sourceKey].promise
     // if a source was found, update cache
     // when not using suspense, update state to force a rerender
-    .then((src) => {
+    .then((src: string) => {
       cache[sourceKey] = {...cache[sourceKey], cache: 'resolved', src}
       if (!useSuspense) setIsLoading(false)
     })
 
     // if no source was found, or if another error occured, update cache
     // when not using suspense, update state to force a rerender
-    .catch((error) => {
+    .catch((error: any) => {
       cache[sourceKey] = {...cache[sourceKey], cache: 'rejected', error}
       if (!useSuspense) setIsLoading(false)
     })

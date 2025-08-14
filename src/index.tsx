@@ -5,9 +5,7 @@ import {Container} from "react-dom";
 import {ErrorBoundary} from "./component/ErrorBoundary";
 const Main = () => {
   return <I18nWrap>
-    <ErrorBoundary>
-      <App/>
-    </ErrorBoundary>
+    {React.createElement(ErrorBoundary as any, null, React.createElement(App))}
   </I18nWrap>
 }
 

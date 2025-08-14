@@ -9,7 +9,7 @@ import { DEFAULT_TRY_TIMES, MAIN_KEY, DAILY_MODE, PARADOX_MODE, EVENTS, TZ_ASIA_
 export const useGameMachine = (store: HomeStore) => {
   const { mode, chartsData, chartNameToIndexDict, i18n, today } = store;
   
-  const machineWithConfig = gameMachine.withConfig(gameMachineConfig);
+  const machineWithConfig = gameMachine.withConfig(gameMachineConfig as any);
   
   // 使用 React.useRef 和 React.useState 替代 @xstate/react
   const serviceRef = React.useRef(null as any);

@@ -79,4 +79,23 @@ declare global {
   }
 }
 
+// Test globals
+declare global {
+  function describe(description: string, specDefinitions: () => void): void;
+  function test(description: string, testFunction: () => void): void;
+  function it(description: string, testFunction: () => void): void;
+  
+  namespace jest {
+    interface Matchers<R> {
+      toBe(expected: any): R;
+      toEqual(expected: any): R;
+      toBeTruthy(): R;
+      toBeFalsy(): R;
+      toHaveLength(expected: number): R;
+    }
+  }
+  
+  function expect<T = any>(actual: T): jest.Matchers<void>;
+}
+
 export {};

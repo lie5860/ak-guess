@@ -31,8 +31,8 @@ const guess = (inputItem: Character, answer: Character) => {
         const x = inputItem?.[key] || [];
         const y = answer?.[key] || [];
         const eqState = (xx: string[], yy: string[]) => {
-          const x = [...new Set(xx)];
-          const y = [...new Set(yy)];
+          const x = Array.from(new Set(xx));
+          const y = Array.from(new Set(yy));
           const l = new Set([...x, ...y]).size;
           if (x.length === y.length && x.length === l) return RESULT.CORRECT;
           if (x.length + y.length === l) return RESULT.WRONG;

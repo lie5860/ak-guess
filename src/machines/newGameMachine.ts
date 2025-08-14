@@ -40,7 +40,7 @@ export type GameEvent =
   | { type: 'RESET' };
 
 // 主状态机 - 管理整个应用状态
-export const mainGameMachine = createMachine<GameContext, GameEvent>({
+export const mainGameMachine = createMachine({
   id: 'mainGame',
   initial: 'initializing',
   context: {
@@ -56,6 +56,7 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
     lang: 'zh_CN',
     isWin: false,
     isGiveUp: false,
+    error: undefined,
     randomAnswerKey: -1,
     remoteAnswerKey: -1,
     restList: [],
@@ -67,10 +68,10 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
         INIT: {
           target: 'modeSelection',
           actions: assign({
-            chartsData: (_, event) => event.chartsData,
-            chartNameToIndexDict: (_, event) => event.chartNameToIndexDict,
-            i18n: (_, event) => event.i18n,
-            lang: (_, event) => event.lang,
+            chartsData: (_, event: any) => event.chartsData,
+            chartNameToIndexDict: (_, event: any) => event.chartNameToIndexDict,
+            i18n: (_, event: any) => event.i18n,
+            lang: (_, event: any) => event.lang,
           }),
         },
       },
@@ -82,7 +83,7 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
         SELECT_MODE: {
           target: 'gameMode',
           actions: assign({
-            currentMode: (_, event) => event.mode,
+            currentMode: (_, event: any) => event.mode,
           }),
         },
       },
@@ -101,7 +102,7 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
                 SELECT_MODE: {
                   target: 'switching',
                   actions: assign({
-                    currentMode: (_, event) => event.mode,
+                    currentMode: (_, event: any) => event.mode,
                   }),
                 },
               },
@@ -163,7 +164,7 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
                 GIVE_UP: {
                   target: 'gameOver',
                   actions: assign({
-                    isGiveUp: true,
+                    isGiveUp: () => true,
                   }),
                 },
               },
@@ -208,10 +209,10 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
                     target: 'loading',
                     cond: (context) => context.currentMode !== DAILY_MODE,
                     actions: ['clearGameData', assign({
-                      data: [],
-                      isWin: false,
-                      isGiveUp: false,
-                      error: undefined,
+                      data: () => [],
+                      isWin: () => false,
+                      isGiveUp: () => false,
+                      error: () => undefined,
                     })],
                   },
                   // 每日模式不支持新游戏
@@ -228,13 +229,13 @@ export const mainGameMachine = createMachine<GameContext, GameEvent>({
                 RETRY: {
                   target: 'loading',
                   actions: assign({
-                    error: undefined,
+                    error: () => undefined,
                   }),
                 },
                 RESET: {
                   target: 'notStarted',
                   actions: assign({
-                    error: undefined,
+                    error: () => undefined,
                   }),
                 },
               },
