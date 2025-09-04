@@ -6626,5 +6626,90 @@
             "龙门"
         ],
         "painter": "树豚"
+    },
+    {
+        "className": [
+            "近卫",
+            "撼地者"
+        ],
+        "name": "祐天寺若麦",
+        "en": "Yūtenji Nyamu",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4185_amoris",
+        "team": [
+            "Ave Mujica"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "辅助",
+            "吟游者"
+        ],
+        "name": "三角初华",
+        "en": "Misumi Uika",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4184_dolris",
+        "team": [
+            "Ave Mujica"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "八幡海铃",
+        "en": "Yahata Umiri",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4186_tmoris",
+        "team": [
+            "Ave Mujica"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "若叶睦",
+        "en": "Wakaba Mutsumi",
+        "race": [
+            "未知"
+        ],
+        "rarity": 4,
+        "key": "char_4183_mortis",
+        "team": [
+            "Ave Mujica"
+        ],
+        "painter": "温泉瓜"
+    },
+    {
+        "className": [
+            "近卫",
+            "领主"
+        ],
+        "name": "丰川祥子",
+        "en": "Togawa Sakiko",
+        "race": [
+            "未知"
+        ],
+        "rarity": 5,
+        "key": "char_4182_oblvns",
+        "team": [
+            "Ave Mujica"
+        ],
+        "painter": "〇亻"
     }
 ]
