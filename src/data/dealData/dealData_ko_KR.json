@@ -4558,7 +4558,7 @@
         "rarity": 4,
         "key": "char_297_hamoni",
         "team": [
-            "더블린",
+            "타라",
             "빅토리아"
         ],
         "painter": "STAR影法师"
@@ -4576,7 +4576,7 @@
         "rarity": 5,
         "key": "char_1020_reed2",
         "team": [
-            "더블린",
+            "타라",
             "빅토리아"
         ],
         "painter": "STAR影法师"
@@ -6264,5 +6264,58 @@
             "로도스 아일랜드"
         ],
         "painter": "Ask"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "루프슈터"
+        ],
+        "name": "브리지드",
+        "en": "Brigid",
+        "race": [
+            "페로"
+        ],
+        "rarity": 4,
+        "key": "char_4177_brigid",
+        "team": [
+            "타라",
+            "빅토리아"
+        ],
+        "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "함정술사"
+        ],
+        "name": "울페나이트",
+        "en": "Wulfenite",
+        "race": [
+            "피디아"
+        ],
+        "rarity": 4,
+        "key": "char_4171_wulfen",
+        "team": [
+            "사르곤"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "캐스터",
+            "셰이퍼 캐스터"
+        ],
+        "name": "네크라스",
+        "en": "Necrass",
+        "race": [
+            "드라코"
+        ],
+        "rarity": 5,
+        "key": "char_450_necras",
+        "team": [
+            "타라",
+            "빅토리아"
+        ],
+        "painter": "STAR影法师"
     }
 ]

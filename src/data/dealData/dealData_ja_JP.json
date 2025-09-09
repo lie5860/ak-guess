@@ -4558,7 +4558,7 @@
         "rarity": 4,
         "key": "char_297_hamoni",
         "team": [
-            "ダブリン",
+            "ターラー",
             "ヴィクトリア"
         ],
         "painter": "STAR影法师"
@@ -4576,7 +4576,7 @@
         "rarity": 5,
         "key": "char_1020_reed2",
         "team": [
-            "ダブリン",
+            "ターラー",
             "ヴィクトリア"
         ],
         "painter": "STAR影法师"
@@ -6264,5 +6264,58 @@
             "ロドス・アイランド"
         ],
         "painter": "Ask"
+    },
+    {
+        "className": [
+            "狙撃",
+            "旋輪射手"
+        ],
+        "name": "ブリギッド",
+        "en": "Brigid",
+        "race": [
+            "ペッロー"
+        ],
+        "rarity": 4,
+        "key": "char_4177_brigid",
+        "team": [
+            "ターラー",
+            "ヴィクトリア"
+        ],
+        "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "特殊",
+            "罠師"
+        ],
+        "name": "ウルフェナイト",
+        "en": "Wulfenite",
+        "race": [
+            "フィディア"
+        ],
+        "rarity": 4,
+        "key": "char_4171_wulfen",
+        "team": [
+            "サルゴン"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "術師",
+            "創霊術師"
+        ],
+        "name": "ネクラス",
+        "en": "Necrass",
+        "race": [
+            "ドラコ"
+        ],
+        "rarity": 5,
+        "key": "char_450_necras",
+        "team": [
+            "ターラー",
+            "ヴィクトリア"
+        ],
+        "painter": "STAR影法师"
     }
 ]

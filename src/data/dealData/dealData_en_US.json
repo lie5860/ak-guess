@@ -4562,7 +4562,7 @@
         "rarity": 4,
         "key": "char_297_hamoni",
         "team": [
-            "Dublinn",
+            "Tara",
             "Victoria"
         ],
         "painter": "STAR影法师"
@@ -4580,7 +4580,7 @@
         "rarity": 5,
         "key": "char_1020_reed2",
         "team": [
-            "Dublinn",
+            "Tara",
             "Victoria"
         ],
         "painter": "STAR影法师"
@@ -6102,7 +6102,7 @@
             "Specialist",
             "Executor"
         ],
-        "name": "CrownSlayer",
+        "name": "Crownslayer",
         "en": "",
         "race": [
             "Reproba"
@@ -6269,5 +6269,58 @@
             "Rhodes Island"
         ],
         "painter": "Ask"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Loopshooter"
+        ],
+        "name": "Brigid",
+        "en": "",
+        "race": [
+            "Perro"
+        ],
+        "rarity": 4,
+        "key": "char_4177_brigid",
+        "team": [
+            "Tara",
+            "Victoria"
+        ],
+        "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Trapmaster"
+        ],
+        "name": "Wulfenite",
+        "en": "",
+        "race": [
+            "Phidia/Pythia"
+        ],
+        "rarity": 4,
+        "key": "char_4171_wulfen",
+        "team": [
+            "Sargon"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "Caster",
+            "Shaper Caster"
+        ],
+        "name": "Necrass",
+        "en": "",
+        "race": [
+            "Draco"
+        ],
+        "rarity": 5,
+        "key": "char_450_necras",
+        "team": [
+            "Tara",
+            "Victoria"
+        ],
+        "painter": "STAR影法师"
     }
 ]
