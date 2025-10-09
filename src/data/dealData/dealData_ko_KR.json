@@ -6317,5 +6317,56 @@
             "빅토리아"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "가드",
+            "해방자"
+        ],
+        "name": "윈드스쿠트",
+        "en": "Windscoot",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 3,
+        "key": "char_445_wscoot",
+        "team": [
+            "염"
+        ],
+        "painter": "azuタロウ"
+    },
+    {
+        "className": [
+            "서포터",
+            "기능공"
+        ],
+        "name": "알라나",
+        "en": "Alanna",
+        "race": [
+            "사브라"
+        ],
+        "rarity": 4,
+        "key": "char_4178_alanna",
+        "team": [
+            "림 빌리턴"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "메딕",
+            "체인 메딕"
+        ],
+        "name": "Mon3tr",
+        "en": "Mon3tr",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 5,
+        "key": "char_4179_monstr",
+        "team": [
+            "로도스 아일랜드"
+        ],
+        "painter": "伍秋秋秋秋"
     }
 ]

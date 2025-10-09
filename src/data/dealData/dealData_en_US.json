@@ -6322,5 +6322,56 @@
             "Victoria"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "Guard",
+            "Liberator"
+        ],
+        "name": "Windscoot",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 3,
+        "key": "char_445_wscoot",
+        "team": [
+            "Yan"
+        ],
+        "painter": "azuタロウ"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Artificer"
+        ],
+        "name": "Alanna",
+        "en": "",
+        "race": [
+            "Savra"
+        ],
+        "rarity": 4,
+        "key": "char_4178_alanna",
+        "team": [
+            "Rim Billiton"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "Medic",
+            "Chain Medic"
+        ],
+        "name": "Mon3tr",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 5,
+        "key": "char_4179_monstr",
+        "team": [
+            "Rhodes Island"
+        ],
+        "painter": "伍秋秋秋秋"
     }
 ]

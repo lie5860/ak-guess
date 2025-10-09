@@ -6317,5 +6317,56 @@
             "ヴィクトリア"
         ],
         "painter": "STAR影法师"
+    },
+    {
+        "className": [
+            "前衛",
+            "解放者"
+        ],
+        "name": "ウィンドスクート",
+        "en": "Windscoot",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 3,
+        "key": "char_445_wscoot",
+        "team": [
+            "炎"
+        ],
+        "painter": "azuタロウ"
+    },
+    {
+        "className": [
+            "補助",
+            "工匠"
+        ],
+        "name": "アランナ",
+        "en": "Alanna",
+        "race": [
+            "サヴラ"
+        ],
+        "rarity": 4,
+        "key": "char_4178_alanna",
+        "team": [
+            "レム・ビリトン"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "医療",
+            "連鎖癒師"
+        ],
+        "name": "Mon3tr",
+        "en": "Mon3tr",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 5,
+        "key": "char_4179_monstr",
+        "team": [
+            "ロドス・アイランド"
+        ],
+        "painter": "伍秋秋秋秋"
     }
 ]

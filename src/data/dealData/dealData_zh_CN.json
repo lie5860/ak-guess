@@ -6711,5 +6711,57 @@
             "Ave Mujica"
         ],
         "painter": "〇亻"
+    },
+    {
+        "className": [
+            "先锋",
+            "情报官"
+        ],
+        "name": "冬时",
+        "en": "Снегyрочка",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 3,
+        "key": "char_4208_wintim",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "3MO"
+    },
+    {
+        "className": [
+            "重装",
+            "不屈者"
+        ],
+        "name": "折桠",
+        "en": "Веточки",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "key": "char_4207_branch",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "斑雀"
+    },
+    {
+        "className": [
+            "术师",
+            "本源术师"
+        ],
+        "name": "真言",
+        "en": "Mantra",
+        "race": [
+            "斐迪亚"
+        ],
+        "rarity": 5,
+        "key": "char_4204_mantra",
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
+        "painter": "板板"
     }
 ]
