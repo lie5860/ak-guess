@@ -6368,5 +6368,107 @@
             "ロドス・アイランド"
         ],
         "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "先鋒",
+            "先駆兵"
+        ],
+        "name": "CONFESS-47",
+        "en": "CONFESS-47",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4188_confes",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "抽象Rotate"
+    },
+    {
+        "className": [
+            "前衛",
+            "本源戦士"
+        ],
+        "name": "グレースベアラー",
+        "en": "Gracebearer",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 4,
+        "key": "char_4187_graceb",
+        "team": [
+            "ボリバル"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "術師",
+            "本源術師"
+        ],
+        "name": "ミス・クリスティーン",
+        "en": "Miss.Christine",
+        "race": [
+            "非公開"
+        ],
+        "rarity": 4,
+        "key": "char_4198_christ",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "狙撃",
+            "戦術射手"
+        ],
+        "name": "レミュアン",
+        "en": "Lemuen",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 5,
+        "key": "char_4193_lemuen",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "特殊",
+            "鬼才"
+        ],
+        "name": "新約エクシア",
+        "en": "Exusiai the New Covenant",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 5,
+        "key": "char_1041_angel2",
+        "team": [
+            "ペンギン急便",
+            "炎",
+            "龍門"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒衛士"
+        ],
+        "name": "サンクタ・ミキサー",
+        "en": "Sankta Miksaparato",
+        "race": [
+            "サンクタ"
+        ],
+        "rarity": 5,
+        "key": "char_4194_rmixer",
+        "team": [
+            "ラテラーノ"
+        ],
+        "painter": "九日九号"
     }
 ]

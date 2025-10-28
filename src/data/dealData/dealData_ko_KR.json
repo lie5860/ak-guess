@@ -6368,5 +6368,107 @@
             "로도스 아일랜드"
         ],
         "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "뱅가드",
+            "척후병"
+        ],
+        "name": "CONFESS-47",
+        "en": "CONFESS-47",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4188_confes",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "抽象Rotate"
+    },
+    {
+        "className": [
+            "가드",
+            "프라이멀 가드"
+        ],
+        "name": "그레이스베어러",
+        "en": "Gracebearer",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 4,
+        "key": "char_4187_graceb",
+        "team": [
+            "볼리바르"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "캐스터",
+            "프라이멀 캐스터"
+        ],
+        "name": "미스 크리스틴",
+        "en": "Miss.Christine",
+        "race": [
+            "미공개"
+        ],
+        "rarity": 4,
+        "key": "char_4198_christ",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "스나이퍼",
+            "저격수"
+        ],
+        "name": "르무엔",
+        "en": "Lemuen",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 5,
+        "key": "char_4193_lemuen",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "기인"
+        ],
+        "name": "엑시아 더 뉴 커버넌트",
+        "en": "Exusiai the New Covenant",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 5,
+        "key": "char_1041_angel2",
+        "team": [
+            "펭귄 로지스틱스",
+            "염",
+            "용문"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "디펜더",
+            "센트리 프로텍터"
+        ],
+        "name": "산크타 믹사파라토",
+        "en": "Sankta Miksaparato",
+        "race": [
+            "산크타"
+        ],
+        "rarity": 5,
+        "key": "char_4194_rmixer",
+        "team": [
+            "라테라노"
+        ],
+        "painter": "九日九号"
     }
 ]

@@ -6373,5 +6373,107 @@
             "Rhodes Island"
         ],
         "painter": "伍秋秋秋秋"
+    },
+    {
+        "className": [
+            "Vanguard",
+            "Pioneer"
+        ],
+        "name": "CONFESS-47",
+        "en": "",
+        "race": "",
+        "rarity": 0,
+        "key": "char_4188_confes",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "抽象Rotate"
+    },
+    {
+        "className": [
+            "Guard",
+            "Primal Guard"
+        ],
+        "name": "Gracebearer",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 4,
+        "key": "char_4187_graceb",
+        "team": [
+            "Bolívar"
+        ],
+        "painter": "水滴鱼"
+    },
+    {
+        "className": [
+            "Caster",
+            "Primal Caster"
+        ],
+        "name": "Miss.Christine",
+        "en": "",
+        "race": [
+            "Undisclosed"
+        ],
+        "rarity": 4,
+        "key": "char_4198_christ",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "YUJI"
+    },
+    {
+        "className": [
+            "Sniper",
+            "Deadeye"
+        ],
+        "name": "Lemuen",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 5,
+        "key": "char_4193_lemuen",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "IRIS_呓"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Geek"
+        ],
+        "name": "Exusiai the New Covenant",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 5,
+        "key": "char_1041_angel2",
+        "team": [
+            "Penguin Logistics",
+            "Yan",
+            "Lungmen"
+        ],
+        "painter": "幻象黑兔"
+    },
+    {
+        "className": [
+            "Defender",
+            "Sentry Protector"
+        ],
+        "name": "Sankta Miksaparato",
+        "en": "",
+        "race": [
+            "Sankta"
+        ],
+        "rarity": 5,
+        "key": "char_4194_rmixer",
+        "team": [
+            "Laterano"
+        ],
+        "painter": "九日九号"
     }
 ]
