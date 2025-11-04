@@ -1167,7 +1167,6 @@
         "rarity": 4,
         "key": "char_173_slchan",
         "team": [
-            "喀兰贸易",
             "谢拉格"
         ],
         "painter": "竜崎いち"
@@ -1185,7 +1184,6 @@
         "rarity": 4,
         "key": "char_174_slbell",
         "team": [
-            "喀兰贸易",
             "谢拉格"
         ],
         "painter": "竜崎いち"
@@ -3730,7 +3728,6 @@
         "rarity": 4,
         "key": "char_4013_kjera",
         "team": [
-            "喀兰贸易",
             "谢拉格"
         ],
         "painter": "竜崎いち"
@@ -3748,7 +3745,6 @@
         "rarity": 4,
         "key": "char_422_aurora",
         "team": [
-            "喀兰贸易",
             "谢拉格"
         ],
         "painter": "LAL!ROLE"
@@ -6763,5 +6759,108 @@
             "精英干员"
         ],
         "painter": "板板"
+    },
+    {
+        "className": [
+            "术师",
+            "轰击术师"
+        ],
+        "name": "协律",
+        "en": "Akkord",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 3,
+        "key": "char_4051_akkord",
+        "team": [
+            "莱塔尼亚"
+        ],
+        "painter": "Chi4"
+    },
+    {
+        "className": [
+            "近卫",
+            "佣兵"
+        ],
+        "name": "哈蒂娅",
+        "en": "Hadiya",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 4,
+        "key": "char_394_hadiya",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "松尾 省吾"
+    },
+    {
+        "className": [
+            "狙击",
+            "猎手"
+        ],
+        "name": "雪猎",
+        "en": "Snow Hunter",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "key": "char_4211_snhunt",
+        "team": [
+            "谢拉格"
+        ],
+        "painter": "百慕大飞鱼"
+    },
+    {
+        "className": [
+            "先锋",
+            "策士"
+        ],
+        "name": "凛御银灰",
+        "en": "SilverAsh the Reignfrost",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_1045_svash2",
+        "team": [
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "术师",
+            "阵法术师"
+        ],
+        "name": "圣聆初雪",
+        "en": "Pramanix the Prerita",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_1046_sbell2",
+        "team": [
+            "谢拉格"
+        ],
+        "painter": "竜崎いち"
+    },
+    {
+        "className": [
+            "辅助",
+            "凝滞师"
+        ],
+        "name": "溯光星源",
+        "en": "Astgenne the Lightchaser",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "key": "char_1047_halo2",
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "YUJI"
     }
 ]
