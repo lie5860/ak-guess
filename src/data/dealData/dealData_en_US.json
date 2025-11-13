@@ -6475,5 +6475,39 @@
             "Laterano"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "Specialist",
+            "Skyranger"
+        ],
+        "name": "Tippi",
+        "en": "",
+        "race": [
+            "Liberi"
+        ],
+        "rarity": 4,
+        "key": "char_4191_tippi",
+        "team": [
+            "Columbia"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "Supporter",
+            "Ritualist"
+        ],
+        "name": "Tragodia",
+        "en": "",
+        "race": [
+            "Feline"
+        ],
+        "rarity": 5,
+        "key": "char_1042_phatm2",
+        "team": [
+            "Victoria"
+        ],
+        "painter": "Skade"
     }
 ]

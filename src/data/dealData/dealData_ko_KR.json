@@ -6470,5 +6470,39 @@
             "라테라노"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "스페셜리스트",
+            "스카이레인저"
+        ],
+        "name": "티피",
+        "en": "Tippi",
+        "race": [
+            "리베리"
+        ],
+        "rarity": 4,
+        "key": "char_4191_tippi",
+        "team": [
+            "컬럼비아"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "서포터",
+            "의식술사"
+        ],
+        "name": "트라고디아",
+        "en": "Tragodia",
+        "race": [
+            "필라인"
+        ],
+        "rarity": 5,
+        "key": "char_1042_phatm2",
+        "team": [
+            "빅토리아"
+        ],
+        "painter": "Skade"
     }
 ]

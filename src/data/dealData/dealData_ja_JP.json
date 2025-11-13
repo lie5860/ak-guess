@@ -6470,5 +6470,39 @@
             "ラテラーノ"
         ],
         "painter": "九日九号"
+    },
+    {
+        "className": [
+            "特殊",
+            "巡空者"
+        ],
+        "name": "ティッピ",
+        "en": "Tippi",
+        "race": [
+            "リーベリ"
+        ],
+        "rarity": 4,
+        "key": "char_4191_tippi",
+        "team": [
+            "クルビア"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "補助",
+            "祭儀師"
+        ],
+        "name": "トラゴーディア",
+        "en": "Tragodia",
+        "race": [
+            "フェリーン"
+        ],
+        "rarity": 5,
+        "key": "char_1042_phatm2",
+        "team": [
+            "ヴィクトリア"
+        ],
+        "painter": "Skade"
     }
 ]
