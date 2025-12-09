@@ -6862,5 +6862,57 @@
             "哥伦比亚"
         ],
         "painter": "YUJI"
+    },
+    {
+        "className": [
+            "狙击",
+            "裂空炮手"
+        ],
+        "name": "天空盒",
+        "en": "Skybox",
+        "race": [
+            "萨弗拉"
+        ],
+        "rarity": 4,
+        "key": "char_4213_skybx",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "臼"
+    },
+    {
+        "className": [
+            "辅助",
+            "工匠"
+        ],
+        "name": "娜斯提",
+        "en": "Nasti",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 5,
+        "key": "char_4212_nasti",
+        "team": [
+            "莱茵生命",
+            "哥伦比亚"
+        ],
+        "painter": "AerialB"
+    },
+    {
+        "className": [
+            "重装",
+            "本源铁卫"
+        ],
+        "name": "响石",
+        "en": "Cairn",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 4,
+        "key": "char_4214_cairn",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "kirine"
     }
 ]
