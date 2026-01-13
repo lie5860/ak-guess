@@ -6914,5 +6914,56 @@
             "哥伦比亚"
         ],
         "painter": "kirine"
+    },
+    {
+        "className": [
+            "近卫",
+            "强攻手"
+        ],
+        "name": "摆渡人",
+        "en": "Varkáris",
+        "race": [
+            "丰蹄"
+        ],
+        "rarity": 4,
+        "key": "char_4166_varkis",
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "赤岸K"
+    },
+    {
+        "className": [
+            "辅助",
+            "护佑者"
+        ],
+        "name": "撷英调香师",
+        "en": "Perfumer the Distilled",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 4,
+        "key": "char_1022_flwr2",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "医疗",
+            "咒愈师"
+        ],
+        "name": "缇缇",
+        "en": "Titi",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_4056_titi",
+        "team": [
+            "萨尔贡"
+        ],
+        "painter": "黒星紅白"
     }
 ]
