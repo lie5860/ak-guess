@@ -6965,5 +6965,74 @@
             "萨尔贡"
         ],
         "painter": "黒星紅白"
+    },
+    {
+        "className": [
+            "医疗",
+            "守望者"
+        ],
+        "name": "风絮",
+        "en": "Taraxacum",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "key": "char_4222_taraxa",
+        "team": [
+            "炎"
+        ],
+        "painter": "二开"
+    },
+    {
+        "className": [
+            "狙击",
+            "攻城手"
+        ],
+        "name": "矩",
+        "en": "Ju",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 4,
+        "key": "char_4221_ju",
+        "team": [
+            "炎"
+        ],
+        "painter": "虬墨一型"
+    },
+    {
+        "className": [
+            "特种",
+            "陷阱师"
+        ],
+        "name": "望",
+        "en": "Wang",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_2027_wang",
+        "team": [
+            "炎",
+            "岁"
+        ],
+        "painter": "KuroBlood"
+    },
+    {
+        "className": [
+            "近卫",
+            "术战者"
+        ],
+        "name": "赤刃明霄陈",
+        "en": "Ch'en the Dawnstreak",
+        "race": [
+            "龙"
+        ],
+        "rarity": 5,
+        "key": "char_1050_chen3",
+        "team": [
+            "炎"
+        ],
+        "painter": "三目YYB"
     }
 ]
