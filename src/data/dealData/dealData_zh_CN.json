@@ -7034,5 +7034,39 @@
             "炎"
         ],
         "painter": "三目YYB"
+    },
+    {
+        "className": [
+            "术师",
+            "扩散术师"
+        ],
+        "name": "复奏",
+        "en": "Ripresa",
+        "race": [
+            "卡普里尼"
+        ],
+        "rarity": 4,
+        "key": "char_4031_liesel",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "Lanzi"
+    },
+    {
+        "className": [
+            "近卫",
+            "斗士"
+        ],
+        "name": "贝洛内",
+        "en": "Bellone",
+        "race": [
+            "鲁珀"
+        ],
+        "rarity": 5,
+        "key": "char_4037_demetr",
+        "team": [
+            "叙拉古"
+        ],
+        "painter": "Lowro"
     }
 ]
