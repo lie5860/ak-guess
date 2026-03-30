@@ -49,7 +49,7 @@ const loadRecordData = (lang: string) => {
 }
 
 const resetRecordData = (lang: string, mode: string, successTip: string) => {
-  var record = loadRecordData(lang);
+  const record = loadRecordData(lang);
   record[mode] = DEFAULT_RECODE[mode];
   saveRecordData(lang, record);
   if (successTip) {
@@ -62,8 +62,8 @@ const saveRecordData = (lang: string, record: any) => {
 }
 
 const reinitRecord = (lang: string) => {
-  var record = loadRecordData(lang);
-  if (record?.version != 1) {
+  let record = loadRecordData(lang);
+  if (record?.version !== 1) {
     // 迁移数据
     if (record) {
       const newRecord = {
@@ -112,7 +112,6 @@ const getDataFn = (record: any, mode: string) => {
         minWinTimes: record[mode]?.minWinTimes?record[mode]?.minWinTimes:"N/A",
         operatorWinCount: Object.keys(record[mode]?.roles).length
       }
-  return {}
 }
 const History = ({mode}: {mode: string}) => {
   const {i18n} = React.useContext(AppCtx);

@@ -33,7 +33,10 @@ const Game = (props: IProps) => {
   const unbindRef = React.useRef();
   const chartNames = React.useMemo(() => chartsData.map((v: Character) => v?.[MAIN_KEY]), [])
   const [initialized, setInit] = React.useState(false)
-  reinitRecord(i18n.language);
+  React.useEffect(() => {
+    reinitRecord(i18n.language);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i18n.language])
   const confirmGiveUp = () => {
     window.mdui.dialog({
       history: false,
@@ -88,7 +91,6 @@ const Game = (props: IProps) => {
   }
   if (!initialized) return null;
   const config = getConfig(i18n.language);
-  console.log(config, 'config');
   return <>
     <div style={{paddingTop: 10, ...config.mainTitleStyle}}><span className={`title`}>{i18n.get('title')}</span></div>
     {config.showTitleDesc && <div>{i18n.get('titleDesc')}
@@ -122,14 +124,11 @@ const Game = (props: IProps) => {
     <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
           style={{display: game.isOver ? 'none' : ''}}>
       <div className="autocomplete">
-        <input ref={inputRef} id="guess" placeholder={i18n.get('inputTip')} onKeyDown={(e) => {
-          if (e.keyCode == 13) {
-            onSubmit(e)
-          }
-        }}/>
+        <input ref={inputRef} id="guess" placeholder={i18n.get('inputTip')}/>
       </div>
       <button className="mdui-btn mdui-btn-raised mdui-ripple guess_input">{i18n.get('submit')}</button>
     </form>
+
     {game.isOver &&
     <div className={'answer'}>
       {`${i18n.get(game.isWin ? 'successTip' : 'failTip')}${i18n.get('answerTip1')}`}<ChartInfoLink

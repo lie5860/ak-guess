@@ -17,7 +17,6 @@ export function bootstrap() {
 
 // 挂载
 export function mount(container: Container, props: any) {
-  console.log(props, 'props')
   ReactDom.render(React.createElement(Main, props, null), container);
 }
 

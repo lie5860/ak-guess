@@ -114,6 +114,7 @@ const randomGame = ({store, randomStore}: any) => {
             return guessFn(inputItem.guess, answer)
           })
         } catch (e) {
+          console.error('[store] 恢复随机模式历史数据失败:', e)
         }
         setRandomData(oldData)
         setRandomAnswerKey(answerKey)
