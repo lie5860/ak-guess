@@ -9,6 +9,16 @@ export const localStorageSet = (lang: string, key: string, value: string) => {
 export const localStorageGet = (lang: string, key: string) => {
   return localStorage.getItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`))
 }
+
+// HTML 实体转义，防止 XSS 注入
+const escapeHtml = (str: string): string => {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
 export const I18nWrap = (props: any) => {
   const [language, setLanguage] = React.useState(DEFAULT_CONFIG.defaultLang)
   const [inited, setInited] = React.useState(false)
@@ -57,7 +67,9 @@ export const I18nWrap = (props: any) => {
         let res = languageDict?.[key] || key
         if (props) {
           Object.keys(props).forEach(key => {
-            res = res.replace(new RegExp(`{${key}}`, 'g'), props[key])
+            // 当使用 dangerouslySetInnerHTML 时，对插入的变量值进行 HTML 转义
+            const safeValue = hasLegacyDom ? escapeHtml(props[key]) : props[key]
+            res = res.replace(new RegExp(`{${key}}`, 'g'), safeValue)
           })
         }
         return hasLegacyDom ? <span dangerouslySetInnerHTML={{__html: res}}/> : res

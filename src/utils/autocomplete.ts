@@ -9,7 +9,12 @@ export const filterDataByInputVal = (val: string, chartList: Character[], aliasD
   });
   let dealModal = [] as string[]
   aliasData.forEach(v => {
-    new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
+    try {
+      new RegExp(`^(${v.regexp})$`).exec(inputVal) && (dealModal.push(...v.values))
+    } catch (e) {
+      // 正则语法错误时跳过该别名规则，避免崩溃
+      console.error('[autocomplete] 别名正则无效:', v.regexp, e)
+    }
   })
   const nameMatchItems = [];
   const aliasMatchItems = [];
