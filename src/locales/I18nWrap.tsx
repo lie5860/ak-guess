@@ -11,7 +11,8 @@ export const localStorageGet = (lang: string, key: string) => {
 }
 
 // HTML 实体转义，防止 XSS 注入
-const escapeHtml = (str: string): string => {
+const escapeHtml = (value: unknown): string => {
+  const str = String(value ?? '')
   return str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
