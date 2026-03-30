@@ -1,4 +1,4 @@
-import {React} from "../global";
+import React from 'react';
 import {AppCtx} from "./AppCtx";
 import languages, {DEFAULT_CONFIG, getConfig, hostDict} from './index';
 import {MAIN_KEY} from "../const";

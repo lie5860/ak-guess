@@ -1,6 +1,6 @@
 import {DEFAULT_TRY_TIMES, PARADOX_MODE} from "../const";
 import {AppCtx} from '../locales/AppCtx';
-import {React} from "../global";
+import React from 'react';
 
 const Help = ({updateDate = '', firstOpen = false, mode = ''}) => {
   const {i18n, chartsData} = React.useContext(AppCtx);

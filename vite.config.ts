@@ -22,6 +22,16 @@ export default defineConfig(({command, mode}) => {
     base: command === 'serve' ? '/' : './',
     build: {
       assetsInlineLimit: 0,
+      rollupOptions: {
+        // React/ReactDOM 通过 CDN <script> 加载到 window，不打进 bundle
+        external: ['react', 'react-dom'],
+        output: {
+          globals: {
+            'react': 'React',
+            'react-dom': 'ReactDOM'
+          }
+        }
+      }
     }
   }
 })

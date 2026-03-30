@@ -1,4 +1,4 @@
-import {React} from "../global";
+import React from 'react';
 import {reportError} from "../server";
 
 // 仅收集与本应用相关的 localStorage 键，避免泄露其他站点数据

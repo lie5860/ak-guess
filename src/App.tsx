@@ -1,4 +1,5 @@
-import {moment, React} from './global'
+import React from 'react';
+import {moment} from './global'
 import {DAILY_MODE, modeI18nKeyDict, PARADOX_MODE, RANDOM_MODE} from "./const";
 import Modal from "./component/Modal";
 import Help from './component/Help';

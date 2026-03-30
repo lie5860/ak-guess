@@ -1,4 +1,4 @@
-import {React} from "../global";
+import React from 'react';
 import useImage from "./react-image/useImage";
 
 interface User {

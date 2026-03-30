@@ -1,4 +1,5 @@
-import {moment, React} from "./global";
+import React from 'react';
+import {moment} from "./global";
 
 import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
