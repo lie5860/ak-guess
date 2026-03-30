@@ -23,11 +23,12 @@ const guess = (inputItem: Character, answer: Character) => {
       case 'string':
         emoji = inputItem?.[key] === answer?.[key] ? 'correct' : 'wrong';
         break;
-      case 'number':
+      case 'number': {
         const diff = Number(inputItem?.[key]) - Number(answer?.[key]);
         emoji = diff === 0 ? 'correct' : (diff > 0 ? 'down' : 'up')
         break;
-      case 'array':
+      }
+      case 'array': {
         const x = inputItem?.[key] || [];
         const y = answer?.[key] || [];
         const eqState = (xx: string[], yy: string[]) => {
@@ -40,6 +41,7 @@ const guess = (inputItem: Character, answer: Character) => {
         };
         emoji = eqState(x, y)
         break;
+      }
     }
     res[key] = emoji
   })

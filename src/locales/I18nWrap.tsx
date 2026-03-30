@@ -43,7 +43,8 @@ export const I18nWrap = (props: any) => {
       return;
     }
     const lastLang = (lang && languages?.[lang]) ? lang : language
-    const sl = (await languages?.[lastLang]()).default
+    const langLoader = languages?.[lastLang]
+    const sl = langLoader ? (await langLoader()).default : {}
     setLanguage(lastLang)
     initI18nDict(sl)
     // 如果是限定语言 不存在对应的游戏数据，则使用该语言配置的默认语言作为游戏数据的语言

@@ -21,7 +21,7 @@ export const filterDataByInputVal = (val: string, chartList: Character[], aliasD
   for (let i = 0; i < chartList.length; i++) {
     // 英文首字母的判断 todo 是否必要？
     const chartName = chartList[i]?.[MAIN_KEY];
-    if (chartName.split(' ').map(v => !!v ? v[0] : '').join('').toUpperCase().startsWith(inputVal)) {
+    if (chartName.split(' ').map(v => v ? v[0] : '').join('').toUpperCase().startsWith(inputVal)) {
       nameMatchItems.push(chartList[i])
     } else if (chartName.toUpperCase().indexOf(inputVal) !== -1) {
       nameMatchItems.push(chartList[i])
@@ -41,7 +41,7 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     let a, val = this.value;
     /*close any already open lists of autocompleted values*/
     closeAllLists();
-    var inputVal = val.toUpperCase().trim()
+    const inputVal = val.toUpperCase().trim()
     if (!inputVal) {
       return false;
     }
@@ -126,7 +126,7 @@ export default function autocomplete(inp: Element, arr: string[], chartsData: Ch
     except the one passed as an argument:*/
     const x = document.getElementsByClassName("autocomplete-items");
     for (let i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
+      if (elmnt !== x[i] && elmnt !== inp) {
         x[i].parentNode.removeChild(x[i]);
       }
     }

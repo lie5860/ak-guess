@@ -9,7 +9,7 @@ export default function copyCurrentDay(text: string, copySuccessTip: string) {
     return window.clipboardData.setData("Text", text);
 
   } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
-    var textarea = document.createElement("textarea");
+    const textarea = document.createElement("textarea");
     textarea.textContent = text;
     textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
     document.body.appendChild(textarea);
