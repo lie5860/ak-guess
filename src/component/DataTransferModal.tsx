@@ -139,15 +139,15 @@ const DataTransferModal = () => {
       <div className="mdui-tab mdui-tab-full-width" style={{ marginBottom: 20 }}>
         <a href="#tab-generate" className={`mdui-ripple ${activeTab === 'generate' ? 'mdui-tab-active' : ''}`}
            onClick={(e) => { e.preventDefault(); setActiveTab('generate'); setCloudPayload(null); setImportCode(''); }}>
-          {i18n.get('generateCode')}
+          {i18n.get('tabBackup') || '备份进度至云端'}
         </a>
         <a href="#tab-import" className={`mdui-ripple ${activeTab === 'import' ? 'mdui-tab-active' : ''}`}
            onClick={(e) => { e.preventDefault(); setActiveTab('import'); setGeneratedCode(''); }}>
-          {i18n.get('importCode')}
+          {i18n.get('tabRestore') || '从云端还原进度'}
         </a>
       </div>
 
-      <div style={{ minHeight: '180px' }}>
+      <div style={{ minHeight: '230px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         {activeTab === 'generate' && (
           <div style={{ textAlign: 'center' }}>
             <p style={{ color: '#666', marginBottom: 20 }}>{i18n.get('transferCodeValidWarning')}</p>
@@ -168,9 +168,11 @@ const DataTransferModal = () => {
               </div>
             )}
 
-            <button className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme" onClick={handleGenerate} disabled={loadingCode}>
-              {i18n.get('generateCode')}
-            </button>
+            {!generatedCode && (
+              <button className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme" onClick={handleGenerate} disabled={loadingCode}>
+                {i18n.get('generateCode')}
+              </button>
+            )}
           </div>
         )}
 

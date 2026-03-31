@@ -18,7 +18,7 @@ const DataTransfer = () => {
 
   return (
     <div className="tooltip" onClick={handleOpen}>
-      📦{i18n.get('dataTransfer')}
+      {i18n.get('dataTransfer')}
     </div>
   );
 };
