@@ -16,6 +16,7 @@ const showSnackbar = (message: string) => {
 const DataTransferModal = () => {
   const { i18n } = useContext(AppCtx) as any;
   const [activeTab, setActiveTab] = useState<'generate' | 'import'>('generate');
+  const [isConfirming, setIsConfirming] = useState(false);
   
   // Generate State
   const [loadingCode, setLoadingCode] = useState(false);
@@ -63,36 +64,7 @@ const DataTransferModal = () => {
     }
   };
 
-  const handleOverwrite = () => {
-    if (!cloudPayload) return;
-    // 先关闭当前 mduiModal，再弹 mdui.confirm 做二次确认
-    const mduiModal = (window as any).mduiModal;
-    if (mduiModal) mduiModal.close();
-    setTimeout(() => {
-      const mdui = (window as any).mdui;
-      if (mdui && mdui.confirm) {
-        mdui.confirm(
-          i18n.get('overwriteWarning'),
-          () => {
-            applyTransferPayload(cloudPayload);
-            showSnackbar(i18n.get('overwriteSuccess'));
-            setTimeout(() => { window.location.reload(); }, 800);
-          },
-          () => {},
-          {
-            confirmText: i18n.get('yes'),
-            cancelText: i18n.get('no')
-          }
-        );
-      } else {
-        if (window.confirm(i18n.get('overwriteWarning'))) {
-          applyTransferPayload(cloudPayload);
-          showSnackbar(i18n.get('overwriteSuccess'));
-          setTimeout(() => { window.location.reload(); }, 800);
-        }
-      }
-    }, 150);
-  };
+
 
   /** 从 recordData 里按实际 key 取出三种模式的统计数字 */
   const getModeStats = (data: any) => {
@@ -159,7 +131,7 @@ const DataTransferModal = () => {
             borderRadius: 0,
             fontWeight: activeTab === 'generate' ? 'bold' : 'normal',
           }}
-          onClick={() => { setActiveTab('generate'); setCloudPayload(null); setImportCode(''); }}
+          onClick={() => { setActiveTab('generate'); setCloudPayload(null); setImportCode(''); setIsConfirming(false); }}
         >
           {i18n.get('tabBackup') || '备份进度'}
         </button>
@@ -171,7 +143,7 @@ const DataTransferModal = () => {
             borderRadius: 0,
             fontWeight: activeTab === 'import' ? 'bold' : 'normal',
           }}
-          onClick={() => { setActiveTab('import'); setGeneratedCode(''); }}
+          onClick={() => { setActiveTab('import'); setGeneratedCode(''); setIsConfirming(false); }}
         >
           {i18n.get('tabRestore') || '还原进度'}
         </button>
@@ -252,16 +224,45 @@ const DataTransferModal = () => {
         )}
 
         {/* === 还原 Tab — 数据对比 === */}
-        {activeTab === 'import' && cloudPayload && (
+        {activeTab === 'import' && cloudPayload && !isConfirming && (
           <div style={{ textAlign: 'center' }}>
             {renderCompareTable()}
             <button
               className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-red"
-              onClick={handleOverwrite}
+              onClick={() => setIsConfirming(true)}
             >
               {i18n.get('confirmOverwrite') || '确认覆盖本地数据'}
             </button>
           </div>
+        )}
+
+        {/* === 还原 Tab — 二次确认 === */}
+        {activeTab === 'import' && cloudPayload && isConfirming && (
+           <div style={{ textAlign: 'center', padding: '10px 0' }}>
+             <p style={{ color: '#f44336', fontWeight: 'bold', marginBottom: 20 }}>
+               {i18n.get('overwriteWarning') || '注意：本地数据将被彻底覆盖，确实要恢复吗？此操作不可撤销！'}
+             </p>
+             <div style={{ display: 'flex', justifyContent: 'center', gap: 16 }}>
+               <button
+                 className="mdui-btn mdui-ripple"
+                 onClick={() => setIsConfirming(false)}
+                 style={{ minWidth: 80 }}
+               >
+                 {i18n.get('no') || '取消'}
+               </button>
+               <button
+                 className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-red"
+                 onClick={() => {
+                   applyTransferPayload(cloudPayload);
+                   showSnackbar(i18n.get('overwriteSuccess'));
+                   setTimeout(() => { window.location.reload(); }, 800);
+                 }}
+                 style={{ minWidth: 80 }}
+               >
+                 {i18n.get('yes') || '确定恢复'}
+               </button>
+             </div>
+           </div>
         )}
       </div>
     </div>
