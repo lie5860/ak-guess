@@ -1,6 +1,6 @@
-import React, {useState, useRef, useEffect, useCallback} from 'react';
-import {MAIN_KEY} from "../const";
-import {filterDataByInputVal} from "../utils/autocomplete";
+import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { MAIN_KEY } from '../const';
+import { filterDataByInputVal } from '../utils/autocomplete';
 
 interface AutocompleteProps {
   chartsData: Character[];
@@ -25,20 +25,23 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
   const listRef = useRef<HTMLDivElement>(null);
 
   // 输入变化时计算匹配结果
-  const onInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
-    setInputValue(val);
-    const trimmed = val.trim();
-    if (!trimmed) {
-      setSuggestions([]);
-      setShowSuggestions(false);
-      return;
-    }
-    const filtered = filterDataByInputVal(trimmed, chartsData, aliasData);
-    setSuggestions(filtered);
-    setShowSuggestions(filtered.length > 0);
-    setActiveSuggestionIndex(-1);
-  }, [chartsData, aliasData]);
+  const onInputChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const val = e.target.value;
+      setInputValue(val);
+      const trimmed = val.trim();
+      if (!trimmed) {
+        setSuggestions([]);
+        setShowSuggestions(false);
+        return;
+      }
+      const filtered = filterDataByInputVal(trimmed, chartsData, aliasData);
+      setSuggestions(filtered);
+      setShowSuggestions(filtered.length > 0);
+      setActiveSuggestionIndex(-1);
+    },
+    [chartsData, aliasData],
+  );
 
   // 选中某个建议项
   const onSuggestionClick = useCallback((name: string) => {
@@ -48,36 +51,35 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
   }, []);
 
   // 键盘导航
-  const onKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!showSuggestions || suggestions.length === 0) return;
+  const onKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (!showSuggestions || suggestions.length === 0) return;
 
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      setActiveSuggestionIndex(prev =>
-        prev >= suggestions.length - 1 ? 0 : prev + 1
-      );
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      setActiveSuggestionIndex(prev =>
-        prev <= 0 ? suggestions.length - 1 : prev - 1
-      );
-    } else if (e.key === 'Enter') {
-      if (activeSuggestionIndex > -1 && activeSuggestionIndex < suggestions.length) {
+      if (e.key === 'ArrowDown') {
         e.preventDefault();
-        const selectedName = suggestions[activeSuggestionIndex]?.[MAIN_KEY];
-        setInputValue(selectedName);
-        setSuggestions([]);
-        setShowSuggestions(false);
+        setActiveSuggestionIndex((prev) => (prev >= suggestions.length - 1 ? 0 : prev + 1));
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setActiveSuggestionIndex((prev) => (prev <= 0 ? suggestions.length - 1 : prev - 1));
+      } else if (e.key === 'Enter') {
+        if (activeSuggestionIndex > -1 && activeSuggestionIndex < suggestions.length) {
+          e.preventDefault();
+          const selectedName = suggestions[activeSuggestionIndex]?.[MAIN_KEY];
+          setInputValue(selectedName);
+          setSuggestions([]);
+          setShowSuggestions(false);
+        }
       }
-    }
-  }, [showSuggestions, suggestions, activeSuggestionIndex]);
+    },
+    [showSuggestions, suggestions, activeSuggestionIndex],
+  );
 
   // 滚动活跃项到视口
   useEffect(() => {
     if (activeSuggestionIndex >= 0 && listRef.current) {
       const activeItem = listRef.current.children[activeSuggestionIndex] as HTMLElement;
       if (activeItem) {
-        activeItem.scrollIntoView({block: 'nearest'});
+        activeItem.scrollIntoView({ block: 'nearest' });
       }
     }
   }, [activeSuggestionIndex]);
@@ -86,8 +88,10 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (
-        inputRef.current && !inputRef.current.contains(e.target as Node) &&
-        listRef.current && !listRef.current.contains(e.target as Node)
+        inputRef.current &&
+        !inputRef.current.contains(e.target as Node) &&
+        listRef.current &&
+        !listRef.current.contains(e.target as Node)
       ) {
         setShowSuggestions(false);
       }
@@ -105,11 +109,14 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
   }, []);
 
   // 表单提交处理
-  const handleSubmit = useCallback((e: React.FormEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    onSubmit(inputValue);
-  }, [inputValue, onSubmit]);
+  const handleSubmit = useCallback(
+    (e: React.FormEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      onSubmit(inputValue);
+    },
+    [inputValue, onSubmit],
+  );
 
   return {
     inputValue,
@@ -128,11 +135,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
           autoComplete="off"
         />
         {showSuggestions && suggestions.length > 0 && (
-          <div
-            ref={listRef}
-            id={`${id}autocomplete-list`}
-            className="autocomplete-items"
-          >
+          <div ref={listRef} id={`${id}autocomplete-list`} className="autocomplete-items">
             {suggestions.map((item, index) => (
               <div
                 key={item?.[MAIN_KEY] || index}
@@ -157,22 +160,25 @@ export const useAutocomplete = (props: AutocompleteProps) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
-  const {chartsData, aliasData, placeholder, id = 'guess'} = props;
+  const { chartsData, aliasData, placeholder, id = 'guess' } = props;
 
-  const onInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
-    setInputValue(val);
-    const trimmed = val.trim();
-    if (!trimmed) {
-      setSuggestions([]);
-      setShowSuggestions(false);
-      return;
-    }
-    const filtered = filterDataByInputVal(trimmed, chartsData, aliasData);
-    setSuggestions(filtered);
-    setShowSuggestions(filtered.length > 0);
-    setActiveSuggestionIndex(-1);
-  }, [chartsData, aliasData]);
+  const onInputChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const val = e.target.value;
+      setInputValue(val);
+      const trimmed = val.trim();
+      if (!trimmed) {
+        setSuggestions([]);
+        setShowSuggestions(false);
+        return;
+      }
+      const filtered = filterDataByInputVal(trimmed, chartsData, aliasData);
+      setSuggestions(filtered);
+      setShowSuggestions(filtered.length > 0);
+      setActiveSuggestionIndex(-1);
+    },
+    [chartsData, aliasData],
+  );
 
   const onSuggestionClick = useCallback((name: string) => {
     setInputValue(name);
@@ -180,36 +186,35 @@ export const useAutocomplete = (props: AutocompleteProps) => {
     setShowSuggestions(false);
   }, []);
 
-  const onKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!showSuggestions || suggestions.length === 0) return;
+  const onKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (!showSuggestions || suggestions.length === 0) return;
 
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      setActiveSuggestionIndex(prev =>
-        prev >= suggestions.length - 1 ? 0 : prev + 1
-      );
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      setActiveSuggestionIndex(prev =>
-        prev <= 0 ? suggestions.length - 1 : prev - 1
-      );
-    } else if (e.key === 'Enter') {
-      if (activeSuggestionIndex > -1 && activeSuggestionIndex < suggestions.length) {
+      if (e.key === 'ArrowDown') {
         e.preventDefault();
-        const selectedName = suggestions[activeSuggestionIndex]?.[MAIN_KEY];
-        setInputValue(selectedName);
-        setSuggestions([]);
-        setShowSuggestions(false);
+        setActiveSuggestionIndex((prev) => (prev >= suggestions.length - 1 ? 0 : prev + 1));
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setActiveSuggestionIndex((prev) => (prev <= 0 ? suggestions.length - 1 : prev - 1));
+      } else if (e.key === 'Enter') {
+        if (activeSuggestionIndex > -1 && activeSuggestionIndex < suggestions.length) {
+          e.preventDefault();
+          const selectedName = suggestions[activeSuggestionIndex]?.[MAIN_KEY];
+          setInputValue(selectedName);
+          setSuggestions([]);
+          setShowSuggestions(false);
+        }
       }
-    }
-  }, [showSuggestions, suggestions, activeSuggestionIndex]);
+    },
+    [showSuggestions, suggestions, activeSuggestionIndex],
+  );
 
   // 滚动活跃项到视口
   useEffect(() => {
     if (activeSuggestionIndex >= 0 && listRef.current) {
       const activeItem = listRef.current.children[activeSuggestionIndex] as HTMLElement;
       if (activeItem) {
-        activeItem.scrollIntoView({block: 'nearest'});
+        activeItem.scrollIntoView({ block: 'nearest' });
       }
     }
   }, [activeSuggestionIndex]);
@@ -218,8 +223,10 @@ export const useAutocomplete = (props: AutocompleteProps) => {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (
-        inputRef.current && !inputRef.current.contains(e.target as Node) &&
-        listRef.current && !listRef.current.contains(e.target as Node)
+        inputRef.current &&
+        !inputRef.current.contains(e.target as Node) &&
+        listRef.current &&
+        !listRef.current.contains(e.target as Node)
       ) {
         setShowSuggestions(false);
       }
@@ -247,11 +254,7 @@ export const useAutocomplete = (props: AutocompleteProps) => {
           autoComplete="off"
         />
         {showSuggestions && suggestions.length > 0 && (
-          <div
-            ref={listRef}
-            id={`${id}autocomplete-list`}
-            className="autocomplete-items"
-          >
+          <div ref={listRef} id={`${id}autocomplete-list`} className="autocomplete-items">
             {suggestions.map((item, index) => (
               <div
                 key={item?.[MAIN_KEY] || index}

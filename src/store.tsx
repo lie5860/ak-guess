@@ -1,19 +1,31 @@
 import React from 'react';
-import {moment} from "./global";
+import { moment } from './global';
 
-import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";
-import {loadRecordData, saveRecordData} from "./component/History";
-import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
-import {DEFAULT_CONFIG} from "./locales";
+import {
+  COLUMNS,
+  DAILY_MODE,
+  DEFAULT_TRY_TIMES,
+  MAIN_KEY,
+  PARADOX_MODE,
+  RANDOM_MODE,
+} from './const';
+import { loadRecordData, RecordData, saveRecordData } from './component/History';
+import { localStorageGet, localStorageSet } from './locales/I18nWrap';
+import { DEFAULT_CONFIG } from './locales';
 import {
   dailyGameLose,
-  dailyGameWin, getDailyData,
-  guess as guessFn, paradoxGameGiveUp, paradoxGameInit, paradoxGameWin,
+  dailyGameWin,
+  getDailyData,
+  guess as guessFn,
+  paradoxGameGiveUp,
+  paradoxGameInit,
+  paradoxGameWin,
   randomGameGiveUp,
   randomGameInit,
   randomGameLose,
-  randomGameWin, reportError
-} from "./server";
+  randomGameWin,
+  reportError,
+} from './server';
 
 // 公共类型定义
 interface GameStoreParams {
@@ -25,11 +37,11 @@ interface GameStoreParams {
 
 // 公共 record 更新逻辑：胜利时更新记录
 const updateRecordOnWin = (
-  record: any,
+  record: RecordData,
   mode: string,
   newData: GuessItem[],
   answerName: string,
-  rolesUpdateFn?: (record: any) => void
+  rolesUpdateFn?: (record: RecordData) => void,
 ) => {
   record[mode].winTimes += 1;
   record[mode].winTryTimes += newData.length;
@@ -45,137 +57,153 @@ const updateRecordOnWin = (
   } else {
     // 默认图鉴更新逻辑（随机和每日模式使用）
     if (!record[mode].roles[answerName]) {
-      record[mode].roles[answerName] = {cost: newData.length, winTime: 1}
+      record[mode].roles[answerName] = { cost: newData.length, winTime: 1 };
     } else {
-      const oldCost = record[mode].roles[answerName]?.cost || 0
+      const oldCost = record[mode].roles[answerName]?.cost || 0;
       record[mode].roles[answerName] = {
         cost: oldCost > newData.length ? newData.length : oldCost,
-        winTime: (record[mode].roles[answerName]?.winTime || 0) + 1
-      }
+        winTime: (record[mode].roles[answerName]?.winTime || 0) + 1,
+      };
     }
   }
-}
+};
 
 // 公共 record 更新逻辑：失败/放弃时更新记录
-const updateRecordOnLose = (record: any, mode: string) => {
+const updateRecordOnLose = (record: RecordData, mode: string) => {
   record[mode].straightWins = 0;
-}
+};
 
 // 生成埋点用的 inputArray
 const buildInputArray = (data: GuessItem[], chartNameToIndexDict: { [key: string]: number }) => {
-  return data.map(({guess}: GuessItem) => ({
+  return data.map(({ guess }: GuessItem) => ({
     index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-    name: guess?.[MAIN_KEY]
-  }))
-}
+    name: guess?.[MAIN_KEY],
+  }));
+};
 
 export interface HomeStore {
   mode: string;
   chartsData: Character[];
   chartNameToIndexDict: { [key: string]: number };
-  i18n: any;
+  i18n: { language: string; get: (key: string, params?: Record<string, string>) => string };
   today: string;
 }
 
-const useRandomStore = ({chartsData}: { chartsData: Character[] }) => {
-  const [randomAnswerKey, setRandomAnswerKey] = React.useState(Math.floor(Math.random() * chartsData.length))
+const useRandomStore = ({ chartsData }: { chartsData: Character[] }) => {
+  const [randomAnswerKey, setRandomAnswerKey] = React.useState(
+    Math.floor(Math.random() * chartsData.length),
+  );
   const [isGiveUp, setGiveUp] = React.useState(false);
-  const [randomData, setRandomData] = React.useState([])
+  const [randomData, setRandomData] = React.useState<GuessItem[]>([]);
   return {
-    randomAnswerKey, setRandomAnswerKey,
-    isGiveUp, setGiveUp,
-    randomData, setRandomData
-  }
-}
+    randomAnswerKey,
+    setRandomAnswerKey,
+    isGiveUp,
+    setGiveUp,
+    randomData,
+    setRandomData,
+  };
+};
 const useDailyStore = () => {
-  const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1)
-  const [dayData, setDayData] = React.useState([])
-  const [today, setToday] = React.useState(moment().tz("Asia/Shanghai").format('YYYY-MM-DD'))
+  const [remoteAnswerKey, setRemoteAnswerKey] = React.useState(-1);
+  const [dayData, setDayData] = React.useState<GuessItem[]>([]);
+  const [today, setToday] = React.useState(moment().tz('Asia/Shanghai').format('YYYY-MM-DD'));
   return {
-    remoteAnswerKey, setRemoteAnswerKey,
-    today, setToday,
-    dayData, setDayData
-  }
-}
+    remoteAnswerKey,
+    setRemoteAnswerKey,
+    today,
+    setToday,
+    dayData,
+    setDayData,
+  };
+};
 const useParadoxStore = () => {
-  const [restList, setRestList] = React.useState([])
+  const [restList, setRestList] = React.useState<number[]>([]);
   const [isGiveUp, setGiveUp] = React.useState(false);
-  const [data, setData] = React.useState([])
+  const [data, setData] = React.useState<GuessItem[]>([]);
   return {
-    restList, setRestList,
-    isGiveUp, setGiveUp,
-    data, setData
-  }
-}
+    restList,
+    setRestList,
+    isGiveUp,
+    setGiveUp,
+    data,
+    setData,
+  };
+};
 export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
-  const {chartsData, mode} = store
-  const randomStore = useRandomStore({chartsData})
-  const dailyStore = useDailyStore()
-  const paradoxStore = useParadoxStore()
+  const { chartsData, mode } = store;
+  const randomStore = useRandomStore({ chartsData });
+  const dailyStore = useDailyStore();
+  const paradoxStore = useParadoxStore();
   const gameDict: { [key: string]: (params: GameStoreParams) => Game } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame,
-    [PARADOX_MODE]: paradoxGame
-  }
-  return gameDict[mode]({store, randomStore, dailyStore, paradoxStore})
-}
+    [PARADOX_MODE]: paradoxGame,
+  };
+  return gameDict[mode]({ store, randomStore, dailyStore, paradoxStore });
+};
 // game 需要暴露存储数据的key
-const randomGame = ({store, randomStore}: GameStoreParams) => {
+const randomGame = ({ store, randomStore }: GameStoreParams) => {
   const mode = RANDOM_MODE;
-  const {
-    randomAnswerKey, setRandomAnswerKey,
-    isGiveUp, setGiveUp,
-    randomData, setRandomData
-  } = randomStore
-  const {chartsData, i18n, chartNameToIndexDict} = store;
+  const { randomAnswerKey, setRandomAnswerKey, isGiveUp, setGiveUp, randomData, setRandomData } =
+    randomStore;
+  const { chartsData, i18n, chartNameToIndexDict } = store;
   const lang = i18n.language;
   const answer = chartsData[randomAnswerKey ?? Math.floor(Math.random() * chartsData.length)];
   const data: GuessItem[] = randomData;
-  const judgeWin = (data: GuessItem[]) => data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
-  const judgeOver = (data: GuessItem[]) => data.length >= DEFAULT_TRY_TIMES || judgeWin(data) || isGiveUp as boolean;
+  const judgeWin = (data: GuessItem[]) =>
+    data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
+  const judgeOver = (data: GuessItem[]) =>
+    data.length >= DEFAULT_TRY_TIMES || judgeWin(data) || (isGiveUp as boolean);
   const isWin = judgeWin(data);
   const isOver = judgeOver(data);
   const newGame = () => {
     setGiveUp(false);
-    localStorageSet(lang, 'giveUp', `false`)
-    localStorageSet(lang, 'r-randomData', JSON.stringify([]))
-    setRandomData([])
+    localStorageSet(lang, 'giveUp', `false`);
+    localStorageSet(lang, 'r-randomData', JSON.stringify([]));
+    setRandomData([]);
     let answer = Math.floor(Math.random() * chartsData.length);
     if (isNaN(answer)) {
       reportError({
         message: '发现错误',
         stack: 'rerandom' + Math.floor(Math.random() * chartsData.length),
-        localstorage: chartsData.length + ' chartsData.length;' + Math.floor + 'Math.floor;' + Math.random + 'Math.random()'
-      })
-      answer = Math.floor(Math.random() * 100) || 1
+        localstorage:
+          chartsData.length +
+          ' chartsData.length;' +
+          Math.floor +
+          'Math.floor;' +
+          Math.random +
+          'Math.random()',
+      });
+      answer = Math.floor(Math.random() * 100) || 1;
     }
-    localStorageSet(lang, 'r-randomAnswerKey', `${answer}`)
-    setRandomAnswerKey(answer)
-    randomGameInit(lang, {answer})
-  }
+    localStorageSet(lang, 'r-randomAnswerKey', `${answer}`);
+    setRandomAnswerKey(answer);
+    randomGameInit(lang, { answer });
+  };
   return {
     init: () => {
-      const randomData = localStorageGet(lang, 'r-randomData')
-      const oldKey = localStorageGet(lang, 'r-randomAnswerKey')
+      const randomData = localStorageGet(lang, 'r-randomData');
+      const oldKey = localStorageGet(lang, 'r-randomAnswerKey');
       if (randomData && oldKey !== 'undefined') {
-        const giveUp = localStorageGet(lang, "giveUp")
+        const giveUp = localStorageGet(lang, 'giveUp');
         if (giveUp) {
           setGiveUp(giveUp === 'true');
         }
-        let oldData = JSON.parse(randomData)
+        let oldData = JSON.parse(randomData);
         const answerKey = !isNaN(Number(oldKey)) ? Number(oldKey) : 0;
-        const answer = chartsData[answerKey]
+        const answer = chartsData[answerKey];
         try {
-          oldData = oldData.map((inputItem: any) => {
-            return guessFn(inputItem.guess, answer)
-          })
+          oldData = oldData.map((inputItem: GuessItem) => {
+            return guessFn(inputItem.guess, answer);
+          });
         } catch (e) {
-          console.error('[store] 恢复随机模式历史数据失败:', e)
+          console.error('[store] 恢复随机模式历史数据失败:', e);
         }
-        setRandomData(oldData)
-        setRandomAnswerKey(answerKey)
+        setRandomData(oldData);
+        setRandomAnswerKey(answerKey);
       } else {
-        newGame()
+        newGame();
       }
     },
     answer,
@@ -192,18 +220,20 @@ const randomGame = ({store, randomStore}: GameStoreParams) => {
       return newData;
     },
     gameOver: (newData: GuessItem[]) => {
-      let record: any = loadRecordData(lang);
-      const isWin = judgeWin(newData)
+      const record: RecordData = loadRecordData(lang);
+      const isWin = judgeWin(newData);
       if (isWin) {
         randomGameWin(lang, {
-          answer: randomAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
-        })
-        updateRecordOnWin(record, mode, newData, answer.name)
+          answer: randomAnswerKey,
+          inputArray: buildInputArray(newData, chartNameToIndexDict),
+        });
+        updateRecordOnWin(record, mode, newData, answer.name);
       } else {
         randomGameLose(lang, {
-          answer: randomAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
-        })
-        updateRecordOnLose(record, mode)
+          answer: randomAnswerKey,
+          inputArray: buildInputArray(newData, chartNameToIndexDict),
+        });
+        updateRecordOnLose(record, mode);
       }
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += newData.length;
@@ -212,45 +242,48 @@ const randomGame = ({store, randomStore}: GameStoreParams) => {
     canGiveUp: !isOver && data?.length > 0,
     giveUp: () => {
       randomGameGiveUp(lang, {
-        answer: randomAnswerKey, inputArray: buildInputArray(data, chartNameToIndexDict)
+        answer: randomAnswerKey,
+        inputArray: buildInputArray(data, chartNameToIndexDict),
       });
-      let record = loadRecordData(lang);
+      const record = loadRecordData(lang);
       updateRecordOnLose(record, mode);
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += randomData.length;
       saveRecordData(lang, record);
       setGiveUp(true);
-      localStorageSet(lang, 'giveUp', 'true')
+      localStorageSet(lang, 'giveUp', 'true');
     },
     newGame,
     canNewGame: isOver,
-    gameTip: (config: typeof DEFAULT_CONFIG) => <div style={{marginTop: 8, ...config.gameTipStyle}}>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
-  }
-}
-const dailyGame = ({store, dailyStore}: GameStoreParams) => {
+    gameTip: (config: typeof DEFAULT_CONFIG) => (
+      <div style={{ marginTop: 8, ...config.gameTipStyle }}>
+        {i18n.get('timesTip', { times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}` })}
+      </div>
+    ),
+  };
+};
+const dailyGame = ({ store, dailyStore }: GameStoreParams) => {
   const mode = DAILY_MODE;
-  const {
-    remoteAnswerKey, setRemoteAnswerKey,
-    today, setToday,
-    dayData, setDayData
-  } = dailyStore
-  const {chartsData, i18n, chartNameToIndexDict} = store;
+  const { remoteAnswerKey, setRemoteAnswerKey, today, setToday, dayData, setDayData } = dailyStore;
+  const { chartsData, i18n, chartNameToIndexDict } = store;
 
   const lang = i18n.language;
   const answer = chartsData[remoteAnswerKey];
   const data = dayData;
-  const judgeWin = (data: GuessItem[]) => data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
+  const judgeWin = (data: GuessItem[]) =>
+    data?.[data?.length - 1]?.guess?.[MAIN_KEY] === answer?.[MAIN_KEY];
   const judgeOver = (data: GuessItem[]) => data.length >= DEFAULT_TRY_TIMES || judgeWin(data);
   const isWin = judgeWin(data);
   const isOver = judgeOver(data);
   return {
     init: async () => {
-      const {daily, server_date}: { daily: number, server_date: string } = await getDailyData(lang);
-      setToday(server_date)
-      setRemoteAnswerKey(daily)
-      const dayData = localStorageGet(lang, server_date + 'dayData')
+      const { daily, server_date }: { daily: number; server_date: string } =
+        await getDailyData(lang);
+      setToday(server_date);
+      setRemoteAnswerKey(daily);
+      const dayData = localStorageGet(lang, server_date + 'dayData');
       if (dayData) {
-        setDayData(JSON.parse(dayData))
+        setDayData(JSON.parse(dayData));
       }
     },
     answer,
@@ -267,87 +300,96 @@ const dailyGame = ({store, dailyStore}: GameStoreParams) => {
       return newData;
     },
     preSubmitCheck: () => {
-      if (today !== moment().tz("Asia/Shanghai").format('YYYY-MM-DD')) {
-        alert(i18n.get('reloadTip'))
-        window.location.reload()
+      if (today !== moment().tz('Asia/Shanghai').format('YYYY-MM-DD')) {
+        alert(i18n.get('reloadTip'));
+        window.location.reload();
         return true;
       }
     },
     gameOver: (newData: GuessItem[]) => {
-      let record: any = loadRecordData(lang);
-      const isWin = judgeWin(newData)
+      const record: RecordData = loadRecordData(lang);
+      const isWin = judgeWin(newData);
       if (isWin) {
         dailyGameWin(lang, {
-          answer: remoteAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
-        })
-        updateRecordOnWin(record, mode, newData, answer.name)
+          answer: remoteAnswerKey,
+          inputArray: buildInputArray(newData, chartNameToIndexDict),
+        });
+        updateRecordOnWin(record, mode, newData, answer.name);
       } else {
         dailyGameLose(lang, {
-          answer: remoteAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
-        })
-        updateRecordOnLose(record, mode)
+          answer: remoteAnswerKey,
+          inputArray: buildInputArray(newData, chartNameToIndexDict),
+        });
+        updateRecordOnLose(record, mode);
       }
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += newData.length;
       saveRecordData(lang, record);
     },
-    gameTip: () => <>
-      <div>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
-      <div>{i18n.get('dailyTimeTip')}</div>
-    </>
-  }
-}
-const paradoxGame: (params: GameStoreParams) => Game = ({store, paradoxStore}: GameStoreParams) => {
+    gameTip: () => (
+      <>
+        <div>
+          {i18n.get('timesTip', {
+            times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`,
+          })}
+        </div>
+        <div>{i18n.get('dailyTimeTip')}</div>
+      </>
+    ),
+  };
+};
+const paradoxGame: (params: GameStoreParams) => Game = ({
+  store,
+  paradoxStore,
+}: GameStoreParams) => {
   const mode = PARADOX_MODE;
-  const {chartsData, i18n, chartNameToIndexDict} = store as HomeStore;
-  const {
-    restList, setRestList,
-    isGiveUp, setGiveUp,
-    data, setData,
-  } = paradoxStore
+  const { chartsData, i18n, chartNameToIndexDict } = store as HomeStore;
+  const { restList, setRestList, isGiveUp, setGiveUp, data, setData } = paradoxStore;
   const lang = i18n.language;
-  const saveData = (key: string, value: any) => {
-    const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}')
-    paradoxData[key] = value
-    localStorageSet(lang, 'paradoxData', JSON.stringify(paradoxData))
-  }
+  const saveData = (key: string, value: unknown) => {
+    const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}');
+    paradoxData[key] = value;
+    localStorageSet(lang, 'paradoxData', JSON.stringify(paradoxData));
+  };
   const getDataByKey = (key: string) => {
-    const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}')
-    return paradoxData[key]
-  }
+    const paradoxData = JSON.parse(localStorageGet(lang, 'paradoxData') || '{}');
+    return paradoxData[key];
+  };
   const newGame = () => {
-    paradoxGameInit(lang, {answer: 0})
+    paradoxGameInit(lang, { answer: 0 });
     setGiveUp(false);
-    saveData('giveUp', 'false')
+    saveData('giveUp', 'false');
     setData([]);
     saveData('data', []);
-    const initData = chartsData.map((v: any, i: number) => i);
+    const initData = chartsData.map((_v: unknown, i: number) => i);
     setRestList(initData);
     saveData('restList', initData);
-  }
-  const allCorrectKey = COLUMNS.map(() => 'correct').join('|')
+  };
+  const allCorrectKey = COLUMNS.map(() => 'correct').join('|');
   const judgeWin = (data: GuessItem[]) => {
-    const over = (data?.[data?.length - 1]?.guess?.restList?.length === 1)
-      && data?.[data?.length - 1]?.guess?.[MAIN_KEY] === chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
-    const key = COLUMNS.map(v => data?.[data?.length - 1]?.[v?.key]).join('|')
+    const over =
+      data?.[data?.length - 1]?.guess?.restList?.length === 1 &&
+      data?.[data?.length - 1]?.guess?.[MAIN_KEY] ===
+        chartsData?.[data?.[data?.length - 1]?.guess?.restList[0]]?.[MAIN_KEY];
+    const key = COLUMNS.map((v) => data?.[data?.length - 1]?.[v?.key]).join('|');
     return over || key === allCorrectKey;
-  }
-  const judgeOver = (data: GuessItem[]) => judgeWin(data) || isGiveUp as boolean;
-  const isOver = judgeOver(data)
+  };
+  const judgeOver = (data: GuessItem[]) => judgeWin(data) || (isGiveUp as boolean);
+  const isOver = judgeOver(data);
   const answer = chartsData[restList[0]];
   return {
     init: () => {
-      const giveUp = getDataByKey("giveUp")
+      const giveUp = getDataByKey('giveUp');
       if (giveUp) {
         setGiveUp(giveUp === 'true');
       }
-      const paradoxData = getDataByKey('data')
+      const paradoxData = getDataByKey('data');
       if (paradoxData) {
-        setData(paradoxData)
-        const paradoxRestList = getDataByKey('restList')
-        setRestList(paradoxRestList)
+        setData(paradoxData);
+        const paradoxRestList = getDataByKey('restList');
+        setRestList(paradoxRestList);
       } else {
-        newGame()
+        newGame();
       }
     },
     answer,
@@ -355,35 +397,35 @@ const paradoxGame: (params: GameStoreParams) => Game = ({store, paradoxStore}: G
     insertItem: (newItem: Character) => {
       const length = restList.length;
       const oldRestList = restList;
-      const timesDict = {} as any;
-      let maxData = {time: 0, res: {} as GuessItem, restList: [] as number[]}
+      const timesDict: Record<string, { time: number; res: GuessItem; restList: number[] }> = {};
+      let maxData = { time: 0, res: {} as GuessItem, restList: [] as number[] };
       for (let i = 0; i < length; i++) {
-        const res = guessFn(newItem, chartsData[restList[i]])
+        const res = guessFn(newItem, chartsData[restList[i]]);
         // Object.values兼容性OK？
-        const key = COLUMNS.map(v => res[v?.key]).join('|')
+        const key = COLUMNS.map((v) => res[v?.key]).join('|');
         if (timesDict[key]) {
-          const {time, restList} = timesDict[key];
-          timesDict[key] = {time: time + 1, res, restList: [...restList, oldRestList[i]]}
+          const { time, restList } = timesDict[key];
+          timesDict[key] = { time: time + 1, res, restList: [...restList, oldRestList[i]] };
         } else {
-          timesDict[key] = {time: 1, res, restList: [oldRestList[i]]}
+          timesDict[key] = { time: 1, res, restList: [oldRestList[i]] };
         }
       }
-      const timesArr = Object.keys(timesDict)
-      timesArr.forEach(k => {
-        const {time} = timesDict[k];
-        const needSkip = timesArr.length > 1 && time === 1 && k === allCorrectKey
+      const timesArr = Object.keys(timesDict);
+      timesArr.forEach((k) => {
+        const { time } = timesDict[k];
+        const needSkip = timesArr.length > 1 && time === 1 && k === allCorrectKey;
         // 相同的情况如何处理 todo????
         if (maxData.time < time && !needSkip) {
-          maxData = timesDict[k]
+          maxData = timesDict[k];
         }
-      })
-      maxData.res.guess.restList = maxData.restList
-      const newData = [...data, maxData.res]
-      setData(newData)
+      });
+      maxData.res.guess.restList = maxData.restList;
+      const newData = [...data, maxData.res];
+      setData(newData);
       saveData('data', newData);
-      setRestList(maxData.restList)
-      saveData('restList', maxData.restList)
-      return newData
+      setRestList(maxData.restList);
+      saveData('restList', maxData.restList);
+      return newData;
     },
     judgeWin,
     isWin: judgeWin(data),
@@ -391,11 +433,12 @@ const paradoxGame: (params: GameStoreParams) => Game = ({store, paradoxStore}: G
     giveUp: () => {
       const name = answer?.[MAIN_KEY];
       paradoxGameGiveUp(lang, {
-        answer: chartNameToIndexDict[name], inputArray: buildInputArray(data, chartNameToIndexDict)
+        answer: chartNameToIndexDict[name],
+        inputArray: buildInputArray(data, chartNameToIndexDict),
       });
       setGiveUp(true);
-      saveData('giveUp', 'true')
-      let record = loadRecordData(lang);
+      saveData('giveUp', 'true');
+      const record = loadRecordData(lang);
       record[mode].playTimes += 1;
       record[mode].straightWins = 0;
       saveRecordData(lang, record);
@@ -407,22 +450,25 @@ const paradoxGame: (params: GameStoreParams) => Game = ({store, paradoxStore}: G
       const name = answer?.[MAIN_KEY];
       // 埋点
       paradoxGameWin(lang, {
-        answer: chartNameToIndexDict[name], inputArray: buildInputArray(newData, chartNameToIndexDict)
-      })
-      let record = loadRecordData(lang);
+        answer: chartNameToIndexDict[name],
+        inputArray: buildInputArray(newData, chartNameToIndexDict),
+      });
+      const record = loadRecordData(lang);
       record[mode].playTimes += 1;
       updateRecordOnWin(record, mode, newData, name, (rec) => {
         // 悖论模式的图鉴逻辑不同：只存 cost（无 winTime）
         if (!rec[mode].roles[name] || rec[mode].roles[name] > times) {
-          rec[mode].roles[name] = times
+          rec[mode].roles[name] = times;
         }
-      })
+      });
       saveRecordData(lang, record);
     },
     newGame,
     canNewGame: isOver,
-    gameTip: () => <>
-      <div>{i18n.get('paradoxModeTip')}</div>
-    </>
-  }
-}
+    gameTip: () => (
+      <>
+        <div>{i18n.get('paradoxModeTip')}</div>
+      </>
+    ),
+  };
+};

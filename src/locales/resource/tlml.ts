@@ -7,7 +7,8 @@ const dict: { [key: string]: string } = {
   paradoxModeTip: '你的猜测会影响这只神秘干员的真面目，试试看！',
   paradoxShareTimesTip: '经过{times}局终于解出了谜题！',
   paradoxGamingShareTip: '激战中！',
-  paradoxHelpDesc: '悖论模拟系统将自动选取与你猜的干员<strong style="color:rgb(255, 204, 76)">不同</strong>的结果，请尝试各种猜测策略直到它投降！',
+  paradoxHelpDesc:
+    '悖论模拟系统将自动选取与你猜的干员<strong style="color:rgb(255, 204, 76)">不同</strong>的结果，请尝试各种猜测策略直到它投降！',
   roleWinTimes: '累计猜对次数：',
   minWinTimes: '最少猜测次数：',
   operatorWinCount: '解锁干员个数：',
@@ -16,12 +17,12 @@ const dict: { [key: string]: string } = {
   answerTip1: '坎诺特想要的干员是',
   answerTip2: '！',
   lang_code: 'CN',
-  cancel:'关闭',
-  contributors:'贡献者',
-  info:'干员信息',
-  yes:'是',
-  no:'否',
-  title: "坎诺特的心思你难猜！",
+  cancel: '关闭',
+  contributors: '贡献者',
+  info: '干员信息',
+  yes: '是',
+  no: '否',
+  title: '坎诺特的心思你难猜！',
   copySuccess: '复制成功！',
   chartsName: '名称',
   rarity: '稀有度',
@@ -53,10 +54,10 @@ const dict: { [key: string]: string } = {
   titleDesc: '明日方舟 wordle-like by ',
   giveUpTip: '放弃抵抗！',
   giveUpConfirm: '确定要放弃吗？会坍缩哦！',
-  playTimes:'游戏次数：',
-  winTimes:'成功次数：',
-  winRate:'成功率：',
-  straightWins:'当前稳定次数：',
+  playTimes: '游戏次数：',
+  winTimes: '成功次数：',
+  winRate: '成功率：',
+  straightWins: '当前稳定次数：',
   maxStraightWins: '最大稳定次数：',
   avgWinTimes: '平均猜测次数：',
   avgWinTimesDesc: '（猜对时）',
@@ -67,11 +68,13 @@ const dict: { [key: string]: string } = {
   helpDown: '猜测的干员稀有度高于坎诺特的需求！再往低猜猜！',
   helpUp: '猜测的干员稀有度低于坎诺特的需求！再往高猜猜！',
   helpWrongPos: '猜测的干员该属性和坎诺特的需求很接近！再猜猜！',
-  helpWrongDetail: '干员所属的阵营包含多级维度，和出身地无关！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！',
+  helpWrongDetail:
+    '干员所属的阵营包含多级维度，和出身地无关！<br/>职业也区分了主职业和分支职业！<br/>点击干员姓名可以看到详情！',
   helpDataSource: '游戏数据来自PRTS！',
   helpUpdateTime: '最近更新时间是{updateDate}！',
   helpNum: '目前有{num}名干员（包含异格和升变）',
-  helpFirstOpen: '这么多记不住怎么办？<br/><strong style="color:rgb(255, 204, 76)">小刻学堂</strong>随时开启！',
-  questionnaireUrl: 'https://www.wjx.top/vj/QgfS7Yd.aspx'
-}
-export default dict
+  helpFirstOpen:
+    '这么多记不住怎么办？<br/><strong style="color:rgb(255, 204, 76)">小刻学堂</strong>随时开启！',
+  questionnaireUrl: 'https://www.wjx.top/vj/QgfS7Yd.aspx',
+};
+export default dict;

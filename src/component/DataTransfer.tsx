@@ -3,15 +3,21 @@ import { AppCtx } from '../locales/AppCtx';
 import DataTransferModal from './DataTransferModal';
 
 const DataTransfer = () => {
-  const { i18n } = useContext(AppCtx) as any;
+  const { i18n } = useContext(AppCtx) as { i18n: { get: (key: string) => string } };
 
   const handleOpen = () => {
-    const mduiModal = (window as any).mduiModal;
+    const mduiModal = (
+      window as unknown as {
+        mduiModal?: {
+          open: (params: { message: JSX.Element; useCloseIcon: boolean; title: string }) => void;
+        };
+      }
+    ).mduiModal;
     if (mduiModal) {
       mduiModal.open({
         message: <DataTransferModal />,
         useCloseIcon: true,
-        title: i18n.get('dataTransfer')
+        title: i18n.get('dataTransfer'),
       });
     }
   };

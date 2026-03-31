@@ -10,7 +10,8 @@
     "test:xr:landscape": "playwright test --project=xr-landscape",
     "test:desktop": "playwright test --project=desktop",
     "test:ui": "playwright test --ui",
-    "lint": "eslint src/ --ext .ts,.tsx"
+    "lint": "eslint src/ --ext .ts,.tsx",
+    "lint:fix": "eslint src/ --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "axios": "0.26.0",
@@ -27,12 +28,15 @@
     "@typescript-eslint/parser": "5.62.0",
     "@vitejs/plugin-react": "1.0.7",
     "eslint": "8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "4.6.2",
     "father-build": "1.21.1",
     "less": "4.1.2",
     "lodash": "4.17.21",
     "mime": "3.0.0",
+    "prettier": "^3.8.1",
     "rollup-plugin-visualizer": "5.6.0",
     "typescript": "4.5.4",
     "vite": "2.8.0",

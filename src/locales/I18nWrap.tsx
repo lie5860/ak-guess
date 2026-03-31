@@ -1,88 +1,100 @@
 import React from 'react';
-import {AppCtx} from "./AppCtx";
-import languages, {DEFAULT_CONFIG, getConfig, hostDict} from './index';
-import {MAIN_KEY} from "../const";
+import { AppCtx } from './AppCtx';
+import languages, { DEFAULT_CONFIG, getConfig, hostDict } from './index';
+import { MAIN_KEY } from '../const';
 
 export const localStorageSet = (lang: string, key: string, value: string) => {
-  return localStorage.setItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`), value)
-}
+  return localStorage.setItem(key + (lang === 'zh_CN' || !lang ? '' : `|${lang}`), value);
+};
 export const localStorageGet = (lang: string, key: string) => {
-  return localStorage.getItem(key + ((lang === 'zh_CN' || !lang) ? '' : `|${lang}`))
-}
+  return localStorage.getItem(key + (lang === 'zh_CN' || !lang ? '' : `|${lang}`));
+};
 
 // HTML 实体转义，防止 XSS 注入
 const escapeHtml = (value: unknown): string => {
-  const str = String(value ?? '')
+  const str = String(value ?? '');
   return str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
-}
-export const I18nWrap = (props: any) => {
-  const [language, setLanguage] = React.useState(DEFAULT_CONFIG.defaultLang)
-  const [inited, setInited] = React.useState(false)
-  const [chartsData, setDealData] = React.useState([])
-  const [chartNameToIndexDict, setChartNameToIndexDict] = React.useState({})
-  const [aliasData, setAliasData] = React.useState([])
+    .replace(/'/g, '&#39;');
+};
+export const I18nWrap = (props: { children: React.ReactNode }) => {
+  const [language, setLanguage] = React.useState(DEFAULT_CONFIG.defaultLang);
+  const [inited, setInited] = React.useState(false);
+  const [chartsData, setDealData] = React.useState([]);
+  const [chartNameToIndexDict, setChartNameToIndexDict] = React.useState({});
+  const [aliasData, setAliasData] = React.useState([]);
   const [languageDict, initI18nDict] = React.useState({});
   const init = async () => {
-    const lang = localStorage.getItem('__lang')
-    const urlLang = location?.search?.slice?.(1)?.split("&")?.map(s => s?.split("="))?.filter(v => v?.[0] === 'lang')?.[0]?.[1];
+    const lang = localStorage.getItem('__lang');
+    const urlLang = location?.search
+      ?.slice?.(1)
+      ?.split('&')
+      ?.map((s) => s?.split('='))
+      ?.filter((v) => v?.[0] === 'lang')?.[0]?.[1];
     const preConfig = getConfig(lang || '');
-    if(!urlLang && lang && !preConfig.showServer){
+    if (!urlLang && lang && !preConfig.showServer) {
       //   如果 url 没有值，则默认使用上次语言，如果上次语言不支持切换服务（语言），则认为是限定语言。应该切回默认语言
-      localStorage.setItem('__lang', preConfig.defaultLang)
-      location.reload()
+      localStorage.setItem('__lang', preConfig.defaultLang);
+      location.reload();
       return;
     }
     if (urlLang !== lang && languages?.[urlLang]) {
-      localStorage.setItem('__lang', urlLang)
-      location.reload()
+      localStorage.setItem('__lang', urlLang);
+      location.reload();
       return;
     }
-    const lastLang = (lang && languages?.[lang]) ? lang : language
-    const langLoader = languages?.[lastLang]
-    const sl = langLoader ? (await langLoader()).default : {}
-    setLanguage(lastLang)
-    initI18nDict(sl)
+    const lastLang = lang && languages?.[lang] ? lang : language;
+    const langLoader = languages?.[lastLang];
+    const sl = langLoader
+      ? ((await langLoader()) as { default: Record<string, string> }).default
+      : {};
+    setLanguage(lastLang);
+    initI18nDict(sl);
     // 如果是限定语言 不存在对应的游戏数据，则使用该语言配置的默认语言作为游戏数据的语言
-    const fixLang = Object.keys(hostDict).includes(lastLang) ? lastLang :  preConfig.defaultLang;
-    const dd = (await import(`../data/dealData/dealData_${fixLang}.json`)).default
-    setDealData(dd)
+    const fixLang = Object.keys(hostDict).includes(lastLang) ? lastLang : preConfig.defaultLang;
+    const dd = (await import(`../data/dealData/dealData_${fixLang}.json`)).default;
+    setDealData(dd);
     const dict: { [key: string]: number } = {};
     dd.forEach((v: Character, index: number) => {
       dict[v?.[MAIN_KEY]] = index;
-    })
+    });
     setChartNameToIndexDict(dict);
-    const alias = (await import(`../data/alias/alias_${fixLang}.json`)).default
-    setAliasData(alias)
-    setInited(true)
-
-  }
-  React.useEffect(init, [])
-  if (!inited) return null
-  return <AppCtx.Provider value={{
-    i18n: {
-      get: (key: string, props: { [key: string]: string }, hasLegacyDom = false) => {
-        let res = languageDict?.[key] || key
-        if (props) {
-          Object.keys(props).forEach(key => {
-            // 当使用 dangerouslySetInnerHTML 时，对插入的变量值进行 HTML 转义
-            const safeValue = hasLegacyDom ? escapeHtml(props[key]) : props[key]
-            res = res.replace(new RegExp(`{${key}}`, 'g'), safeValue)
-          })
-        }
-        return hasLegacyDom ? <span dangerouslySetInnerHTML={{__html: res}}/> : res
-      },
-      setLanguage,
-      language
-    },
-    chartsData,
-    aliasData,
-    chartNameToIndexDict
-  }}>
-    {props.children}
-  </AppCtx.Provider>
-}
+    const alias = (await import(`../data/alias/alias_${fixLang}.json`)).default;
+    setAliasData(alias);
+    setInited(true);
+  };
+  React.useEffect(() => {
+    init().catch(() => void 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  if (!inited) return null;
+  return (
+    <AppCtx.Provider
+      value={{
+        i18n: {
+          get: (key: string, props?: Record<string, string | number>, hasLegacyDom = false) => {
+            let res = languageDict?.[key] || key;
+            if (props) {
+              Object.keys(props).forEach((key) => {
+                // 当使用 dangerouslySetInnerHTML 时，对插入的变量值进行 HTML 转义
+                const safeValue = hasLegacyDom ? escapeHtml(props[key]) : props[key];
+                res = res.replace(new RegExp(`\\{${key}\\}`, 'g'), String(safeValue));
+              });
+            }
+            return hasLegacyDom ? <span dangerouslySetInnerHTML={{ __html: res }} /> : res;
+          },
+          setLanguage,
+          language,
+        },
+        chartsData,
+        aliasData,
+        chartNameToIndexDict,
+      }}
+    >
+      {props.children}
+    </AppCtx.Provider>
+  );
+};
