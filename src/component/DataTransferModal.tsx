@@ -116,19 +116,23 @@ const DataTransferModal = () => {
     const { play, win, opCount } = getSummary(data);
     
     return (
-      <div style={{ flex: 1, padding: '15px', background: 'rgba(0,0,0,0.03)', borderRadius: '4px', border: '1px solid rgba(0,0,0,0.08)' }}>
-        <h4 style={{ margin: '0 0 15px 0', textAlign: 'center', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '8px' }}>{title}</h4>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-          <span style={{ color: '#666' }}>{i18n.get('playTimes')}</span>
-          <strong>{play}</strong>
+      <div className="mdui-card" style={{ flex: 1, padding: '16px' }}>
+        <div className="mdui-card-primary" style={{ padding: '0 0 12px 0' }}>
+          <div className="mdui-card-primary-title" style={{ fontSize: '18px', textAlign: 'center' }}>{title}</div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-          <span style={{ color: '#666' }}>{i18n.get('winTimes')}</span>
-          <strong>{win}</strong>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <span style={{ color: '#666' }}>{i18n.get('operatorWinCount')}</span>
-          <strong>{opCount}</strong>
+        <div className="mdui-card-content" style={{ padding: 0 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span style={{ opacity: 0.8 }}>{i18n.get('playTimes')}</span>
+            <strong>{play}</strong>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span style={{ opacity: 0.8 }}>{i18n.get('winTimes')}</span>
+            <strong>{win}</strong>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <span style={{ opacity: 0.8 }}>{i18n.get('operatorWinCount')}</span>
+            <strong>{opCount}</strong>
+          </div>
         </div>
       </div>
     );
@@ -150,13 +154,13 @@ const DataTransferModal = () => {
       <div style={{ minHeight: '230px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         {activeTab === 'generate' && (
           <div style={{ textAlign: 'center' }}>
-            <p style={{ color: '#666', marginBottom: 20 }}>{i18n.get('transferCodeValidWarning')}</p>
+            <p style={{ opacity: 0.7, marginBottom: 20 }}>{i18n.get('transferCodeValidWarning')}</p>
             
             {generatedCode && (
               <div style={{ marginBottom: 20 }}>
                  <div style={{ 
                    fontSize: 22, fontFamily: 'monospace', fontWeight: 'bold', 
-                   letterSpacing: 2, padding: '10px 20px', background: 'rgba(0,0,0,0.05)', 
+                   letterSpacing: 2, padding: '10px 20px', background: 'rgba(127,127,127,0.15)', 
                    borderRadius: 4, display: 'inline-block', marginBottom: 15
                  }}>
                    {generatedCode}
