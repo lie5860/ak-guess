@@ -50,3 +50,6 @@ playwright/.cache/
 # Worktrees
 .worktrees/
 worktrees/
+
+# Lint reports
+lint.json
