@@ -1,12 +1,7 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { AppCtx } from '../locales/AppCtx';
-import './DataTransfer.less';
 import { generateTransferCode, queryTransferCode, applyTransferPayload, TransferPayload } from '../utils/TransferService';
 import { loadRecordData } from './History';
-
-interface IProps {
-  onClose: () => void;
-}
 
 const showModal = (message: string) => {
   const mdui = (window as any).mdui;
@@ -17,7 +12,7 @@ const showModal = (message: string) => {
   }
 };
 
-const DataTransferModal = ({ onClose }: IProps) => {
+const DataTransferModal = () => {
   const { i18n } = useContext(AppCtx) as any;
   const [activeTab, setActiveTab] = useState<'generate' | 'import'>('generate');
   
@@ -81,6 +76,8 @@ const DataTransferModal = ({ onClose }: IProps) => {
             text: i18n.get('yes'),
             onClick: function () {
               applyTransferPayload(cloudPayload);
+              const mduiModal = (window as any).mduiModal;
+              if (mduiModal) mduiModal.close();
               showModal(i18n.get('overwriteSuccess'));
               setTimeout(() => {
                 window.location.reload();
@@ -119,99 +116,92 @@ const DataTransferModal = ({ onClose }: IProps) => {
     const { play, win, opCount } = getSummary(data);
     
     return (
-      <div className="cy-split-col">
-        <h4>{title}</h4>
-        <div className="cy-data-row">
-          <span className="cy-data-label">{i18n.get('playTimes')}</span>
-          <span className="cy-data-val">{play}</span>
+      <div style={{ flex: 1, padding: '15px', background: 'rgba(0,0,0,0.03)', borderRadius: '4px', border: '1px solid rgba(0,0,0,0.08)' }}>
+        <h4 style={{ margin: '0 0 15px 0', textAlign: 'center', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '8px' }}>{title}</h4>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+          <span style={{ color: '#666' }}>{i18n.get('playTimes')}</span>
+          <strong>{play}</strong>
         </div>
-        <div className="cy-data-row">
-          <span className="cy-data-label">{i18n.get('winTimes')}</span>
-          <span className="cy-data-val">{win}</span>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+          <span style={{ color: '#666' }}>{i18n.get('winTimes')}</span>
+          <strong>{win}</strong>
         </div>
-        <div className="cy-data-row">
-          <span className="cy-data-label">{i18n.get('operatorWinCount')}</span>
-          <span className="cy-data-val">{opCount}</span>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ color: '#666' }}>{i18n.get('operatorWinCount')}</span>
+          <strong>{opCount}</strong>
         </div>
       </div>
     );
   };
 
   return (
-    <div style={{
-      position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, 
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      zIndex: 100, backgroundColor: 'rgba(0,0,0,0.6)'
-    }}>
-      <div className="cy-modal" style={{ width: 500, maxWidth: '95%' }}>
-        <div className="cy-tabs">
-          <div 
-            className={`cy-tab ${activeTab === 'generate' ? 'active' : ''}`}
-            onClick={() => { setActiveTab('generate'); setCloudPayload(null); setImportCode(''); }}
-          >
-            {i18n.get('generateCode')}
+    <div style={{ padding: '0 8px 12px 8px' }}>
+      <div className="mdui-tab mdui-tab-full-width" style={{ marginBottom: 20 }}>
+        <a href="#tab-generate" className={`mdui-ripple ${activeTab === 'generate' ? 'mdui-tab-active' : ''}`}
+           onClick={(e) => { e.preventDefault(); setActiveTab('generate'); setCloudPayload(null); setImportCode(''); }}>
+          {i18n.get('generateCode')}
+        </a>
+        <a href="#tab-import" className={`mdui-ripple ${activeTab === 'import' ? 'mdui-tab-active' : ''}`}
+           onClick={(e) => { e.preventDefault(); setActiveTab('import'); setGeneratedCode(''); }}>
+          {i18n.get('importCode')}
+        </a>
+      </div>
+
+      <div style={{ minHeight: '180px' }}>
+        {activeTab === 'generate' && (
+          <div style={{ textAlign: 'center' }}>
+            <p style={{ color: '#666', marginBottom: 20 }}>{i18n.get('transferCodeValidWarning')}</p>
+            
+            {generatedCode && (
+              <div style={{ marginBottom: 20 }}>
+                 <div style={{ 
+                   fontSize: 22, fontFamily: 'monospace', fontWeight: 'bold', 
+                   letterSpacing: 2, padding: '10px 20px', background: 'rgba(0,0,0,0.05)', 
+                   borderRadius: 4, display: 'inline-block', marginBottom: 15
+                 }}>
+                   {generatedCode}
+                 </div>
+                 <br />
+                 <button className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onClick={handleCopy}>
+                   {i18n.get('copyTransferCode') || '一键复制'}
+                 </button>
+              </div>
+            )}
+
+            <button className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme" onClick={handleGenerate} disabled={loadingCode}>
+              {i18n.get('generateCode')}
+            </button>
           </div>
-          <div 
-            className={`cy-tab ${activeTab === 'import' ? 'active' : ''}`}
-            onClick={() => { setActiveTab('import'); setGeneratedCode(''); }}
-          >
-            {i18n.get('importCode')}
-          </div>
-        </div>
+        )}
 
-        <div className="cy-panel">
-          {activeTab === 'generate' && (
-            <div className="text-center" style={{ width: '100%' }}>
-              <p>{i18n.get('transferCodeValidWarning')}</p>
-              
-              {generatedCode && (
-                <div style={{  display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                   <div className="cy-code-display">{generatedCode}</div>
-                   <button className="cy-button" onClick={handleCopy} style={{ marginBottom: 20 }}>
-                     {i18n.get('copyTransferCode') || '一键复制'}
-                   </button>
-                </div>
-              )}
-
-              <button className="cy-button" onClick={handleGenerate} disabled={loadingCode}>
-                {i18n.get('generateCode')}
-              </button>
-            </div>
-          )}
-
-          {activeTab === 'import' && !cloudPayload && (
-            <div className="text-center" style={{ width: '100%' }}>
+        {activeTab === 'import' && !cloudPayload && (
+          <div style={{ textAlign: 'center' }}>
+            <div className="mdui-textfield mdui-textfield-floating-label" style={{ maxWidth: 300, margin: '0 auto 20px auto' }}>
+              <label className="mdui-textfield-label">{i18n.get('transferCodePlaceholder')}</label>
               <input 
-                className="cy-input" 
-                placeholder={i18n.get('transferCodePlaceholder')} 
+                className="mdui-textfield-input" 
+                style={{ textAlign: 'center', fontSize: 18, letterSpacing: 1 }}
                 value={importCode}
                 onChange={e => setImportCode(e.target.value)}
               />
-              <br/>
-              <button className="cy-button" onClick={handleQuery} disabled={!importCode || loadingQuery}>
-                {loadingQuery ? (i18n.get('queryingTransferCode') || '查询中...') : i18n.get('fetchCloudDataTip')}
-              </button>
             </div>
-          )}
+            <button className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme" onClick={handleQuery} disabled={!importCode || loadingQuery}>
+              {loadingQuery ? (i18n.get('queryingTransferCode') || '查询中...') : i18n.get('fetchCloudDataTip')}
+            </button>
+          </div>
+        )}
 
-          {activeTab === 'import' && cloudPayload && (
-            <div className="text-center" style={{ width: '100%' }}>
-              <div className="cy-split-view">
-                 {renderDataPreview(i18n.get('currentLocalData') || '当前数据', localRecordData)}
-                 {renderDataPreview(i18n.get('cloudBackupData') || '云端数据', cloudPayload.recordData)}
-              </div>
-              <button className="cy-button cy-danger-button" onClick={handleOverwrite}>
-                {i18n.get('confirmOverwrite') || '确认覆盖'}
-              </button>
+        {activeTab === 'import' && cloudPayload && (
+          <div style={{ textAlign: 'center' }}>
+            <div style={{ display: 'flex', gap: '20px', marginBottom: '20px', textAlign: 'left' }}>
+               {renderDataPreview(i18n.get('currentLocalData') || '当前数据', localRecordData)}
+               {renderDataPreview(i18n.get('cloudBackupData') || '云端数据', cloudPayload.recordData)}
             </div>
-          )}
-        </div>
-
-        <div style={{ marginTop: 20, textAlign: 'right' }}>
-          <button className="mdui-btn mdui-ripple mdui-text-color-white" onClick={onClose} style={{ opacity: 0.8 }}>
-            {i18n.get('cancel')}
-          </button>
-        </div>
+            <button className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-red" onClick={handleOverwrite}>
+              {i18n.get('confirmOverwrite') || '确认覆盖'}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
