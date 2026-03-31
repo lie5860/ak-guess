@@ -40,3 +40,9 @@ output_resource/
 .changeset/pre.json
 
 .pnpm-store/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

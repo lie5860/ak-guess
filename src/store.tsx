@@ -1,8 +1,10 @@
-import {moment, React} from "./global";
+import React from 'react';
+import {moment} from "./global";
 
 import {COLUMNS, DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, PARADOX_MODE, RANDOM_MODE, TYPES} from "./const";
 import {loadRecordData, saveRecordData} from "./component/History";
 import {localStorageGet, localStorageSet} from "./locales/I18nWrap";
+import {DEFAULT_CONFIG} from "./locales";
 import {
   dailyGameLose,
   dailyGameWin, getDailyData,
@@ -12,6 +14,60 @@ import {
   randomGameLose,
   randomGameWin, reportError
 } from "./server";
+
+// 公共类型定义
+interface GameStoreParams {
+  store: HomeStore;
+  randomStore: ReturnType<typeof useRandomStore>;
+  dailyStore: ReturnType<typeof useDailyStore>;
+  paradoxStore: ReturnType<typeof useParadoxStore>;
+}
+
+// 公共 record 更新逻辑：胜利时更新记录
+const updateRecordOnWin = (
+  record: any,
+  mode: string,
+  newData: GuessItem[],
+  answerName: string,
+  rolesUpdateFn?: (record: any) => void
+) => {
+  record[mode].winTimes += 1;
+  record[mode].winTryTimes += newData.length;
+  record[mode].straightWins += 1;
+  if (record[mode].straightWins > record[mode].maxStraightWins) {
+    record[mode].maxStraightWins = record[mode].straightWins;
+  }
+  if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
+    record[mode].minWinTimes = newData.length;
+  }
+  if (rolesUpdateFn) {
+    rolesUpdateFn(record);
+  } else {
+    // 默认图鉴更新逻辑（随机和每日模式使用）
+    if (!record[mode].roles[answerName]) {
+      record[mode].roles[answerName] = {cost: newData.length, winTime: 1}
+    } else {
+      const oldCost = record[mode].roles[answerName]?.cost || 0
+      record[mode].roles[answerName] = {
+        cost: oldCost > newData.length ? newData.length : oldCost,
+        winTime: (record[mode].roles[answerName]?.winTime || 0) + 1
+      }
+    }
+  }
+}
+
+// 公共 record 更新逻辑：失败/放弃时更新记录
+const updateRecordOnLose = (record: any, mode: string) => {
+  record[mode].straightWins = 0;
+}
+
+// 生成埋点用的 inputArray
+const buildInputArray = (data: GuessItem[], chartNameToIndexDict: { [key: string]: number }) => {
+  return data.map(({guess}: GuessItem) => ({
+    index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
+    name: guess?.[MAIN_KEY]
+  }))
+}
 
 export interface HomeStore {
   mode: string;
@@ -56,7 +112,7 @@ export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
   const randomStore = useRandomStore({chartsData})
   const dailyStore = useDailyStore()
   const paradoxStore = useParadoxStore()
-  const gameDict: { [key: string]: (store: any) => Game } = {
+  const gameDict: { [key: string]: (params: GameStoreParams) => Game } = {
     [RANDOM_MODE]: randomGame,
     [DAILY_MODE]: dailyGame,
     [PARADOX_MODE]: paradoxGame
@@ -64,7 +120,7 @@ export const useGame: (store: HomeStore) => Game = (store: HomeStore) => {
   return gameDict[mode]({store, randomStore, dailyStore, paradoxStore})
 }
 // game 需要暴露存储数据的key
-const randomGame = ({store, randomStore}: any) => {
+const randomGame = ({store, randomStore}: GameStoreParams) => {
   const mode = RANDOM_MODE;
   const {
     randomAnswerKey, setRandomAnswerKey,
@@ -114,6 +170,7 @@ const randomGame = ({store, randomStore}: any) => {
             return guessFn(inputItem.guess, answer)
           })
         } catch (e) {
+          console.error('[store] 恢复随机模式历史数据失败:', e)
         }
         setRandomData(oldData)
         setRandomAnswerKey(answerKey)
@@ -134,49 +191,19 @@ const randomGame = ({store, randomStore}: any) => {
       setRandomData(newData);
       return newData;
     },
-    gameOver: (newData: any[]) => {
+    gameOver: (newData: GuessItem[]) => {
       let record: any = loadRecordData(lang);
       const isWin = judgeWin(newData)
       if (isWin) {
         randomGameWin(lang, {
-          answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
-            return {
-              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-              name: guess?.[MAIN_KEY]
-            }
-          })
+          answer: randomAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
         })
-        record[mode].winTryTimes += newData.length;
-        record[mode].winTimes += 1;
-        record[mode].straightWins += 1;
-        if (record[mode].straightWins > record[mode].maxStraightWins) {
-          record[mode].maxStraightWins = record[mode].straightWins;
-        }
-        if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
-          record[mode].minWinTimes = newData.length;
-        }
-
-        // 保存进图鉴的数据
-        const name = answer.name
-        if (!record[mode].roles[name]) {
-          record[mode].roles[name] = {cost: newData.length, winTime: 1}
-        } else {
-          const oldCost = record[mode].roles[name]?.cost || 0
-          record[mode].roles[name] = {
-            cost: oldCost > newData.length ? newData.length : oldCost,
-            winTime: (record[mode].roles[name]?.winTime || 0) + 1
-          }
-        }
+        updateRecordOnWin(record, mode, newData, answer.name)
       } else {
         randomGameLose(lang, {
-          answer: randomAnswerKey, inputArray: newData.map(({guess}) => {
-            return {
-              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-              name: guess?.[MAIN_KEY]
-            }
-          })
+          answer: randomAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
         })
-        record[mode].straightWins = 0;
+        updateRecordOnLose(record, mode)
       }
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += newData.length;
@@ -185,15 +212,10 @@ const randomGame = ({store, randomStore}: any) => {
     canGiveUp: !isOver && data?.length > 0,
     giveUp: () => {
       randomGameGiveUp(lang, {
-        answer: randomAnswerKey, inputArray: data.map(({guess}) => {
-          return {
-            index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-            name: guess?.[MAIN_KEY]
-          };
-        })
+        answer: randomAnswerKey, inputArray: buildInputArray(data, chartNameToIndexDict)
       });
       let record = loadRecordData(lang);
-      record[mode].straightWins = 0;
+      updateRecordOnLose(record, mode);
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += randomData.length;
       saveRecordData(lang, record);
@@ -202,10 +224,10 @@ const randomGame = ({store, randomStore}: any) => {
     },
     newGame,
     canNewGame: isOver,
-    gameTip: (config) => <div style={{marginTop: 8, ...config.gameTipStyle}}>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
+    gameTip: (config: typeof DEFAULT_CONFIG) => <div style={{marginTop: 8, ...config.gameTipStyle}}>{i18n.get('timesTip', {times: `${DEFAULT_TRY_TIMES - data.length}/${DEFAULT_TRY_TIMES}`})}</div>
   }
 }
-const dailyGame = ({store, dailyStore}: any) => {
+const dailyGame = ({store, dailyStore}: GameStoreParams) => {
   const mode = DAILY_MODE;
   const {
     remoteAnswerKey, setRemoteAnswerKey,
@@ -251,48 +273,19 @@ const dailyGame = ({store, dailyStore}: any) => {
         return true;
       }
     },
-    gameOver: (newData: any[]) => {
+    gameOver: (newData: GuessItem[]) => {
       let record: any = loadRecordData(lang);
       const isWin = judgeWin(newData)
       if (isWin) {
         dailyGameWin(lang, {
-          answer: remoteAnswerKey, inputArray: newData.map(({guess}) => {
-            return {
-              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-              name: guess?.[MAIN_KEY]
-            }
-          })
+          answer: remoteAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
         })
-        record[mode].winTimes += 1;
-        record[mode].winTryTimes += newData.length;
-        record[mode].straightWins += 1;
-        if (record[mode].straightWins > record[mode].maxStraightWins) {
-          record[mode].maxStraightWins = record[mode].straightWins;
-        }
-        if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
-          record[mode].minWinTimes = newData.length;
-        }
-        // 保存进图鉴的数据
-        const name = answer.name
-        if (!record[mode].roles[name]) {
-          record[mode].roles[name] = {cost: newData.length, winTime: 1}
-        } else {
-          const oldCost = record[mode].roles[name]?.cost || 0
-          record[mode].roles[name] = {
-            cost: oldCost > newData.length ? newData.length : oldCost,
-            winTime: (record[mode].roles[name]?.winTime || 0) + 1
-          }
-        }
+        updateRecordOnWin(record, mode, newData, answer.name)
       } else {
         dailyGameLose(lang, {
-          answer: remoteAnswerKey, inputArray: newData.map(({guess}) => {
-            return {
-              index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-              name: guess?.[MAIN_KEY]
-            }
-          })
+          answer: remoteAnswerKey, inputArray: buildInputArray(newData, chartNameToIndexDict)
         })
-        record[mode].straightWins = 0;
+        updateRecordOnLose(record, mode)
       }
       record[mode].playTimes += 1;
       record[mode].totalTryTimes += newData.length;
@@ -304,7 +297,7 @@ const dailyGame = ({store, dailyStore}: any) => {
     </>
   }
 }
-const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
+const paradoxGame: (params: GameStoreParams) => Game = ({store, paradoxStore}: GameStoreParams) => {
   const mode = PARADOX_MODE;
   const {chartsData, i18n, chartNameToIndexDict} = store as HomeStore;
   const {
@@ -398,12 +391,7 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
     giveUp: () => {
       const name = answer?.[MAIN_KEY];
       paradoxGameGiveUp(lang, {
-        answer: chartNameToIndexDict[name], inputArray: data.map(({guess}: GuessItem) => {
-          return {
-            index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-            name: guess?.[MAIN_KEY]
-          };
-        })
+        answer: chartNameToIndexDict[name], inputArray: buildInputArray(data, chartNameToIndexDict)
       });
       setGiveUp(true);
       saveData('giveUp', 'true')
@@ -412,34 +400,23 @@ const paradoxGame: (store: any) => Game = ({store, paradoxStore}: any) => {
       record[mode].straightWins = 0;
       saveRecordData(lang, record);
     },
-    judgeOver: data => judgeWin(data),
+    judgeOver: (data: GuessItem[]) => judgeWin(data),
     isOver,
-    gameOver: (newData) => {
+    gameOver: (newData: GuessItem[]) => {
       const times = newData.length;
       const name = answer?.[MAIN_KEY];
       // 埋点
       paradoxGameWin(lang, {
-        answer: chartNameToIndexDict[name], inputArray: newData.map(({guess}) => {
-          return {
-            index: chartNameToIndexDict?.[guess?.[MAIN_KEY]],
-            name: guess?.[MAIN_KEY]
-          }
-        })
+        answer: chartNameToIndexDict[name], inputArray: buildInputArray(newData, chartNameToIndexDict)
       })
       let record = loadRecordData(lang);
       record[mode].playTimes += 1;
-      record[mode].winTimes += 1;
-      record[mode].winTryTimes += newData.length;
-      record[mode].straightWins += 1;
-      if (record[mode].straightWins > record[mode].maxStraightWins) {
-        record[mode].maxStraightWins = record[mode].straightWins;
-      }
-      if (!record[mode].minWinTimes || record[mode].minWinTimes > newData.length) {
-        record[mode].minWinTimes = newData.length;
-      }
-      if (!record[mode].roles[name] || record[mode].roles[name] > times) {
-        record[mode].roles[name] = times
-      }
+      updateRecordOnWin(record, mode, newData, name, (rec) => {
+        // 悖论模式的图鉴逻辑不同：只存 cost（无 winTime）
+        if (!rec[mode].roles[name] || rec[mode].roles[name] > times) {
+          rec[mode].roles[name] = times
+        }
+      })
       saveRecordData(lang, record);
     },
     newGame,

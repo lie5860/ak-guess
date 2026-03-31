@@ -1,38 +1,41 @@
-import {React} from "../global";
+import React from 'react';
 import {reportError} from "../server";
 
-export class ErrorBoundary extends React.Component {
-  state = {
+// 仅收集与本应用相关的 localStorage 键，避免泄露其他站点数据
+const APP_STORAGE_PREFIXES = ['r-', 'giveUp', 'dayData', 'paradoxData', 'record', 'firstOpen', '__lang', 'dailyData', 'UUID'];
+
+const collectAppLocalStorage = (): string => {
+  const arr: Array<{ key: string; val: string | null }> = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && APP_STORAGE_PREFIXES.some(prefix => key.startsWith(prefix))) {
+      arr.push({ key, val: localStorage.getItem(key) });
+    }
+  }
+  return JSON.stringify(arr);
+}
+
+interface ErrorBoundaryState {
+  error: Error | null;
+}
+
+export class ErrorBoundary extends React.Component<{children?: any}, ErrorBoundaryState> {
+  state: ErrorBoundaryState = {
     error: null,
   };
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: Error) {
     // 更新 state，下次渲染可以展示错误相关的 UI
-    console.dir(error)
-    console.log(JSON.stringify(error.message), 'message');
-    console.log(JSON.stringify(error.stack), 'stack');
+    console.error('[ErrorBoundary] 捕获到渲染错误:', error);
     return {error: error};
   }
 
-  componentDidCatch(error, info) {
-    const len = localStorage.length;  // 获取长度
-    const arr = new Array(); // 定义数据集
-    for (let i = 0; i < len; i++) {
-      // 获取key 索引从0开始
-      const getKey = localStorage.key(i);
-      // 获取key对应的值
-      const getVal = localStorage.getItem(getKey);
-      // 放进数组
-      arr[i] = {
-        'key': getKey,
-        'val': getVal,
-      }
-    }
-    // 错误上报
+  componentDidCatch(error: Error, info: any) {
+    // 错误上报——仅收集本应用相关的 localStorage 数据
     reportError({
       message: error?.message,
-      stack: error?.stack,
-      localstorage: JSON.stringify(arr)
+      stack: error?.stack || '',
+      localstorage: collectAppLocalStorage()
     })
   }
 

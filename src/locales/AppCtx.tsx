@@ -1,3 +1,3 @@
-import {React} from '../global'
+import React from 'react';
 
 export const AppCtx = React.createContext()

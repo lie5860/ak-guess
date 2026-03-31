@@ -1,5 +1,6 @@
+import React from 'react';
+import ReactDom from 'react-dom';
 import App from './App'
-import {ReactDom, React} from './global'
 import {I18nWrap} from "./locales/I18nWrap";
 import {Container} from "react-dom";
 import {ErrorBoundary} from "./component/ErrorBoundary";
@@ -17,7 +18,6 @@ export function bootstrap() {
 
 // 挂载
 export function mount(container: Container, props: any) {
-  console.log(props, 'props')
   ReactDom.render(React.createElement(Main, props, null), container);
 }
 

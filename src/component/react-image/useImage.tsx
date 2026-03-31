@@ -1,6 +1,4 @@
-import {React} from '../../global'
-
-const {useState} = React
+import React, {useState} from 'react';
 import imagePromiseFactory from './imagePromiseFactory'
 
 export type useImageProps = {

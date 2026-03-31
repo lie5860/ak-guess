@@ -1,4 +1,5 @@
-import {moment, React} from './global'
+import React from 'react';
+import {moment} from './global'
 import {DAILY_MODE, modeI18nKeyDict, PARADOX_MODE, RANDOM_MODE} from "./const";
 import Modal from "./component/Modal";
 import Help from './component/Help';
@@ -24,7 +25,9 @@ export default function Home() {
       useCloseIcon: true
     })
   }
-  window.document.title = i18n.get('title');
+  React.useEffect(() => {
+    window.document.title = i18n.get('title');
+  }, [i18n])
   React.useEffect(() => {
     getDailyData(i18n.language).then(({last_date, daily}: { last_date: string, daily: number }) => {
       setUpdateDate(last_date)
@@ -36,15 +39,19 @@ export default function Home() {
         openHelp(true)
       }, 500)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   const menu = showDailyMode ? [RANDOM_MODE, DAILY_MODE, PARADOX_MODE] : [RANDOM_MODE, PARADOX_MODE];
   // 第一次进悖论模式，弹出帮助框
-  if (mode == PARADOX_MODE && !localStorageGet(i18n.language, 'firstOpenParadox')) {
-    localStorageSet(i18n.language, 'firstOpenParadox', 'yes');
-    setTimeout(() => {
-      openHelp(true)
-    }, 500)
-  }
+  React.useEffect(() => {
+    if (mode === PARADOX_MODE && !localStorageGet(i18n.language, 'firstOpenParadox')) {
+      localStorageSet(i18n.language, 'firstOpenParadox', 'yes');
+      setTimeout(() => {
+        openHelp(true)
+      }, 500)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode])
   const config = getConfig(i18n.language)
   return (
     <div className={'container'}>

@@ -1,10 +1,7 @@
+// moment 和 axios 仍通过 CDN 加载到 window，保持全局代理导出
+// React/ReactDOM 已迁移为标准模块化导入，不再从 window 取值
 const moment = window.moment
-const React = window.React
-const ReactDom = window.ReactDOM
-// 债务 todo
-// 应该这东西在开发过程中是无感知的。在build的时候替换为window下的属性。 待开发
+
 export {
-  ReactDom,
-  React,
   moment
 }

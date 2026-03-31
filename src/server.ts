@@ -23,11 +23,12 @@ const guess = (inputItem: Character, answer: Character) => {
       case 'string':
         emoji = inputItem?.[key] === answer?.[key] ? 'correct' : 'wrong';
         break;
-      case 'number':
+      case 'number': {
         const diff = Number(inputItem?.[key]) - Number(answer?.[key]);
         emoji = diff === 0 ? 'correct' : (diff > 0 ? 'down' : 'up')
         break;
-      case 'array':
+      }
+      case 'array': {
         const x = inputItem?.[key] || [];
         const y = answer?.[key] || [];
         const eqState = (xx: string[], yy: string[]) => {
@@ -40,12 +41,15 @@ const guess = (inputItem: Character, answer: Character) => {
         };
         emoji = eqState(x, y)
         break;
+      }
     }
     res[key] = emoji
   })
   return res
 }
-const host = '//akapi.saki.cc/'
+const API_HOST = '//akapi.saki.cc/'
+const API_REPORT_URL = 'https://akapi.saki.cc/report.php'
+const API_ERROR_REPORT_URL = 'https://akapi.saki.cc/error_report.php'
 const cacheDict: any = {}
 // 队列改造 防止并发时多次触发
 const cacheLoad = async (cacheKey: string, getDataFn: () => any) => {
@@ -76,10 +80,11 @@ const getDailyData = (lang: string) => {
         return Promise.resolve(data.res)
       }
     } catch (e) {
+      console.error('[server] 解析每日数据缓存失败:', e)
     }
   }
   const getDataFn = () => axios
-    .get(`${host}?server=${lang}`, {responseType: "json"})
+    .get(`${API_HOST}?server=${lang}`, {responseType: "json"})
     .then(function (response: any) {
       const res = response.data;
       dailyGameInit(lang, {answer: response.data.daily})
@@ -115,7 +120,7 @@ export interface ReportData {
 }
 
 const reportData = (data: ReportData) => {
-  axios.post('https://akapi.saki.cc/report.php',data).catch(() => {
+  axios.post(API_REPORT_URL, data).catch(() => {
   })
   // try {
   //   window._hmt.push(['_trackEvent', category, action, opt_label, opt_value]);
@@ -128,7 +133,7 @@ interface ErrData{
   localstorage:string;
 }
 export const reportError = (errData: ErrData) => {
-  axios.post('https://akapi.saki.cc/error_report.php',errData).catch(() => {
+  axios.post(API_ERROR_REPORT_URL, errData).catch(() => {
   })
 }
 interface OptLabel {
