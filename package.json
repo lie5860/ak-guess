@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite build && vite preview",
-    "test": "playwright test",
+    "test": "playwright test --project=xr-portrait",
+    "test:xr:landscape": "playwright test --project=xr-landscape",
+    "test:desktop": "playwright test --project=desktop",
     "test:ui": "playwright test --ui",
     "lint": "eslint src/ --ext .ts,.tsx"
   },
