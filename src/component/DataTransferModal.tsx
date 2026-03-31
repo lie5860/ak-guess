@@ -110,36 +110,38 @@ const DataTransferModal = () => {
     const local = getModeStats(localRecordData);
     const cloud = getModeStats(cloudPayload?.recordData);
 
+    const rows = [
+      { label: i18n.get('playTimes'), l: fmt(local.play), r: fmt(cloud.play) },
+      { label: i18n.get('winTimes'), l: fmt(local.win), r: fmt(cloud.win) },
+      { label: i18n.get('operatorWinCount'), l: fmt(local.ops), r: fmt(cloud.ops) },
+    ];
+
+    const cellStyle: React.CSSProperties = {
+      fontFamily: 'monospace', fontWeight: 'bold', textAlign: 'center',
+    };
+
     return (
-      <div style={{ overflowX: 'auto', marginBottom: 16 }}>
-        <table className="mdui-table" style={{ width: '100%', minWidth: 320 }}>
+      <div style={{ marginBottom: 8 }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
           <thead>
-            <tr>
-              <th></th>
-              <th style={{ textAlign: 'center' }}>{i18n.get('currentLocalData') || '当前数据'}</th>
-              <th style={{ textAlign: 'center' }}>{i18n.get('cloudBackupData') || '引继码数据'}</th>
+            <tr style={{ opacity: 0.6, fontSize: 12 }}>
+              <th style={{ textAlign: 'left', padding: '4px 0', fontWeight: 'normal' }}></th>
+              <th style={{ padding: '4px 0', fontWeight: 'normal' }}>📱 {i18n.get('currentLocalData') || '本地'}</th>
+              <th style={{ padding: '4px 0', fontWeight: 'normal' }}>☁️ {i18n.get('cloudBackupData') || '云端'}</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td style={{ opacity: 0.8 }}>{i18n.get('playTimes')}</td>
-              <td style={{ textAlign: 'center', fontFamily: 'monospace' }}>{fmt(local.play)}</td>
-              <td style={{ textAlign: 'center', fontFamily: 'monospace' }}>{fmt(cloud.play)}</td>
-            </tr>
-            <tr>
-              <td style={{ opacity: 0.8 }}>{i18n.get('winTimes')}</td>
-              <td style={{ textAlign: 'center', fontFamily: 'monospace' }}>{fmt(local.win)}</td>
-              <td style={{ textAlign: 'center', fontFamily: 'monospace' }}>{fmt(cloud.win)}</td>
-            </tr>
-            <tr>
-              <td style={{ opacity: 0.8 }}>{i18n.get('operatorWinCount')}</td>
-              <td style={{ textAlign: 'center', fontFamily: 'monospace' }}>{fmt(local.ops)}</td>
-              <td style={{ textAlign: 'center', fontFamily: 'monospace' }}>{fmt(cloud.ops)}</td>
-            </tr>
+            {rows.map((r, i) => (
+              <tr key={i} style={{ borderTop: '1px solid rgba(127,127,127,0.15)' }}>
+                <td style={{ padding: '5px 0', opacity: 0.8 }}>{r.label}</td>
+                <td style={{ ...cellStyle, padding: '5px 0' }}>{r.l}</td>
+                <td style={{ ...cellStyle, padding: '5px 0' }}>{r.r}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
-        <p style={{ opacity: 0.5, fontSize: 12, textAlign: 'center', margin: '8px 0 0 0' }}>
-          {i18n.get('modeOrder') || '顺序：随机 / 每日 / 悖论'}
+        <p style={{ opacity: 0.5, fontSize: 11, textAlign: 'center', margin: '4px 0 0 0' }}>
+          {i18n.get('modeOrder') || '数据顺序：随机 / 每日 / 悖论'}
         </p>
       </div>
     );

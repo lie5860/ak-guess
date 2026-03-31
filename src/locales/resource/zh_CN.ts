@@ -89,6 +89,7 @@ const dict: { [key: string]: string } = {
   copyTransferCode: '一键复制',
   queryingTransferCode: '正在查询...',
   transferCodeGenerated: '生成中...',
-  transferCodeError: '引继码无效或已过期！'
+  transferCodeError: '引继码无效或已过期！',
+  modeOrder: '数据顺序：随机 / 每日 / 悖论'
 }
 export default dict
