@@ -1,8 +1,15 @@
 import {defineConfig} from 'vite'
 import visualizer from "rollup-plugin-visualizer";
 import react from '@vitejs/plugin-react'
+import {viteExternalsPlugin} from 'vite-plugin-externals'
 
-const plugins = [];
+const plugins = [
+  viteExternalsPlugin({
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  })
+];
+
 // 打包生产环境才引入的插件
 if (process.env.NODE_ENV === "production") {
   // 打包依赖展示
@@ -23,14 +30,6 @@ export default defineConfig(({command, mode}) => {
     build: {
       assetsInlineLimit: 0,
       rollupOptions: {
-        // React/ReactDOM 通过 CDN <script> 加载到 window，不打进 bundle
-        external: ['react', 'react-dom'],
-        output: {
-          globals: {
-            'react': 'React',
-            'react-dom': 'ReactDOM'
-          }
-        }
       }
     }
   }
