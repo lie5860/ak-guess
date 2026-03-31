@@ -72,6 +72,21 @@ const dict: { [key: string]: string } = {
   helpUpdateTime: '最近更新时间是{updateDate}！',
   helpNum: '目前有{num}名干员（包含异格和升变）',
   helpFirstOpen: '这么多记不住怎么办？<br/><strong style="color:rgb(255, 204, 76)">小刻学堂</strong>随时开启！',
-  questionnaireUrl: 'https://www.wjx.top/vj/QgfS7Yd.aspx'
+  questionnaireUrl: 'https://www.wjx.top/vj/QgfS7Yd.aspx',
+  dataTransfer: '📦数据备份',
+  generateCode: '生成引继码',
+  importCode: '使用引继码导入',
+  transferCodeValidWarning: '此引继码用于备份和还原你的数据记录。',
+  currentLocalData: '当前本地数据',
+  cloudBackupData: '将要覆盖的云端数据',
+  confirmOverwrite: '确认覆盖',
+  overwriteWarning: '确定要覆盖本地数据吗？该操作不可逆！',
+  overwriteSuccess: '备份数据导入成功！即将刷新页面。',
+  transferCodePlaceholder: '请输入引继码',
+  fetchCloudDataTip: '查询',
+  copyTransferCode: '一键复制',
+  queryingTransferCode: '正在查询...',
+  transferCodeGenerated: '生成中...',
+  transferCodeError: '引继码无效或已过期！'
 }
 export default dict
