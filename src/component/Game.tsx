@@ -11,6 +11,7 @@ import {AppCtx} from "../locales/AppCtx";
 import {useAutocomplete} from "./Autocomplete";
 import Guide from "./Guide";
 import {getConfig} from "../locales";
+import DataTransfer from "./DataTransfer";
 
 const showModal = (message: string) => {
   window.mdui.snackbar({
@@ -120,6 +121,7 @@ const Game = (props: IProps) => {
         window?.mduiModal?.open({"message": <Guide/>, useCloseIcon: true, title: i18n.get('operators')});
       }}>📔{i18n.get('operators')}
       </div>}
+      {config.showDataTransfer !== false && <DataTransfer />}
     </div>
     {!!game.data?.length && <GuessItem data={game.data}/>}
     <form className={'input-form'} autoComplete="off" action='javascript:void(0)' onSubmit={onSubmit}
