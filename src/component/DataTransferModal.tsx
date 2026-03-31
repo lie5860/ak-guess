@@ -32,6 +32,7 @@ const DataTransferModal = () => {
   const handleGenerate = async () => {
     setLoadingCode(true);
     try {
+      // TODO: 待后端介入：调用生成引继码接口，将 payload 数据上报给服务端获取 code
       const res = await generateTransferCode(i18n.language);
       if (res.code === 0) {
         setGeneratedCode(res.data.transferCode);
@@ -45,6 +46,7 @@ const DataTransferModal = () => {
     if (!importCode) return;
     setLoadingQuery(true);
     try {
+      // TODO: 待后端介入：调用查询引继码接口，通过 code 从服务端获取 payload 数据
       const res = await queryTransferCode(importCode);
       if (res.code === 0) {
         setCloudPayload(res.data.payload);
