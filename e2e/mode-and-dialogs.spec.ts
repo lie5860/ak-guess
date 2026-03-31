@@ -63,9 +63,8 @@ test.describe('弹窗交互', () => {
     await initPage(page);
 
     const link = page.locator('text=小刻猜猜团');
-    if (await link.isVisible()) {
-      await link.click();
-      await expect(page.locator('.mdui-dialog')).toBeVisible({timeout: 3000});
-    }
+    await expect(link).toBeVisible({timeout: 5000});
+    await link.click();
+    await expect(page.locator('.mdui-dialog')).toBeVisible({timeout: 3000});
   });
 });

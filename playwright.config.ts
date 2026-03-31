@@ -1,9 +1,9 @@
-import {defineConfig} from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './e2e',
   timeout: 30000,
-  retries: 1,
+  retries: 0,
   use: {
     baseURL: 'http://localhost:3000',
     headless: true,
@@ -25,7 +25,7 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: {browserName: 'chromium'},
+      use: { browserName: 'chromium' },
     },
   ],
 });

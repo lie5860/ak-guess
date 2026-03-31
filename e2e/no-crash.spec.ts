@@ -33,8 +33,8 @@ test.describe('控制台错误监控', () => {
 
     await initPage(page);
 
-    const guideBtn = page.locator('text=干员').first();
-    if (await guideBtn.isVisible()) {
+    const guideBtn = page.locator('.titlePanel >> text=干员').first();
+    if (await guideBtn.isVisible({timeout: 3000}).catch(() => false)) {
       await guideBtn.click();
       await page.waitForTimeout(1000);
     }
