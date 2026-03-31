@@ -66,8 +66,9 @@
 
         }
     </script>
-    <link rel="stylesheet" href="/css/mdui.min.css"/>
-    <script src="/js/mdui.min.js"></script>
+    <link rel="preload" href="/css/mdui.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="/css/mdui.min.css"/></noscript>
+    <script defer src="/js/mdui.min.js"></script>
 <!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>-->
 <!--    <script src="//cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>-->
 </head>
