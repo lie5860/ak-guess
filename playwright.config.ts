@@ -7,8 +7,9 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:3000',
     headless: true,
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    screenshot: 'on',
+    video: 'on',
+    trace: 'on',
     // 绕过 CORS 限制（//unpkg.com CDN 在 http://localhost 下被 CORS 拦截）
     launchOptions: {
       args: ['--disable-web-security', '--disable-features=IsolateOrigins,site-per-process'],

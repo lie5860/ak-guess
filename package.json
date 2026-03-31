@@ -6,9 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite build && vite preview",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:e2e": "playwright test",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
     "lint": "eslint src/ --ext .ts,.tsx"
   },
   "dependencies": {
@@ -29,14 +28,12 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
     "father-build": "^1.21.1",
-    "jsdom": "^29.0.1",
     "less": "^4.1.2",
     "lodash": "^4.17.21",
     "mime": "^3.0.0",
     "rollup-plugin-visualizer": "^5.6.0",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0",
-    "vitest": "^0.34.6"
+    "vite": "^2.8.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
