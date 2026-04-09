@@ -2458,6 +2458,7 @@
         "rarity": 4,
         "key": "char_405_absin",
         "team": [
+            "乌萨斯学生自治团",
             "乌萨斯"
         ],
         "painter": "aZLing4"
@@ -7068,5 +7069,57 @@
             "叙拉古"
         ],
         "painter": "Lowro"
+    },
+    {
+        "className": [
+            "医疗",
+            "链愈师"
+        ],
+        "name": "乌啾",
+        "en": "Укусик",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_4224_turdus",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "折射镜"
+    },
+    {
+        "className": [
+            "辅助",
+            "巫役"
+        ],
+        "name": "伯塔尼",
+        "en": "Ботани",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 4,
+        "key": "char_4223_botany",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "近卫",
+            "撼地者"
+        ],
+        "name": "怒潮凛冬",
+        "en": "Zima the Raging Tide",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 5,
+        "key": "char_1051_headb2",
+        "team": [
+            "乌萨斯学生自治团",
+            "乌萨斯"
+        ],
+        "painter": "伍秋秋秋秋"
     }
 ]
