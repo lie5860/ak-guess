@@ -3,7 +3,7 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './e2e',
   timeout: 30000,
-  retries: 0,
+  retries: process.env.CI ? 2 : 1,
   use: {
     baseURL: 'http://localhost:3000',
     headless: true,
@@ -24,8 +24,16 @@ export default defineConfig({
   },
   projects: [
     {
-      name: 'chromium',
-      use: { browserName: 'chromium' },
+      name: 'xr-portrait',
+      use: { browserName: 'chromium', viewport: { width: 414, height: 896 } },
+    },
+    {
+      name: 'xr-landscape',
+      use: { browserName: 'chromium', viewport: { width: 896, height: 414 } },
+    },
+    {
+      name: 'desktop',
+      use: { browserName: 'chromium', viewport: { width: 1280, height: 720 } },
     },
   ],
 });

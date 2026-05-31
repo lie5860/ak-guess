@@ -1,22 +1,26 @@
-import {DAILY_MODE, DEFAULT_TRY_TIMES, MAIN_KEY, NOT_NAME_VAL_DICT, PARADOX_MODE, TYPES, VAL_DICT} from "../const";
-import {hostDict} from "../locales";
+import {
+  DAILY_MODE,
+  DEFAULT_TRY_TIMES,
+  MAIN_KEY,
+  NOT_NAME_VAL_DICT,
+  PARADOX_MODE,
+  TYPES,
+  VAL_DICT,
+} from '../const';
+import { hostDict } from '../locales';
 
 interface ShareParams {
   mode: string;
   today: string;
   showName: boolean;
-  i18n: any;
+  i18n: {
+    language: string;
+    get: (key: string, params?: Record<string, string | number>) => string;
+  };
   game: Game;
 }
 
-const shareTextCreator = ({
-                            game,
-                            mode,
-                            today,
-                            showName,
-                            i18n
-                          }: ShareParams
-) => {
+const shareTextCreator = ({ game, mode, today, showName, i18n }: ShareParams) => {
   let text = `${i18n.get('title')} `;
   if (mode === DAILY_MODE) {
     text += today + ' ';
@@ -24,24 +28,24 @@ const shareTextCreator = ({
   if (mode !== PARADOX_MODE) {
     text += game.data.length + `/` + DEFAULT_TRY_TIMES;
   } else {
-    text += `${i18n.get('paradoxModeShareText')} `
+    text += `${i18n.get('paradoxModeShareText')} `;
     if (game.isWin) {
-      text += `${i18n.get('paradoxShareTimesTip', {times: game.data.length})}`
+      text += `${i18n.get('paradoxShareTimesTip', { times: game.data.length })}`;
     } else {
-      text += `${i18n.get('paradoxGamingShareTip')} `
+      text += `${i18n.get('paradoxGamingShareTip')} `;
     }
   }
-  game.data.forEach(v => {
+  game.data.forEach((v) => {
     text += '\n';
-    TYPES.map(({key}) => {
+    TYPES.map(({ key }) => {
       if (key === 'guess') {
-        showName && (text += v.guess?.[MAIN_KEY])
+        showName && (text += v.guess?.[MAIN_KEY]);
       } else {
-        text += (showName ? VAL_DICT : NOT_NAME_VAL_DICT)[v[key]]
+        text += (showName ? VAL_DICT : NOT_NAME_VAL_DICT)[v[key]];
       }
     });
-  })
+  });
   text += '\n' + (hostDict[i18n.language] || 'http://akg.saki.cc');
   return text;
-}
-export default shareTextCreator
+};
+export default shareTextCreator;
