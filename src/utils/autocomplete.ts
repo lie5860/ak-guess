@@ -1,6 +1,10 @@
 import { MAIN_KEY } from '../const';
 
-export const filterDataByInputVal = (val: string, chartList: Character[], aliasData: Alias[]) => {
+export const filterDataByInputVal = <T extends Character>(
+  val: string,
+  chartList: T[],
+  aliasData: Alias[],
+): T[] => {
   let inputVal = val.toUpperCase().trim();
   // 平假名转换成片假名去匹配结果
   inputVal = inputVal.replace(/[\u3041-\u3096]/g, function (match) {
@@ -16,11 +20,13 @@ export const filterDataByInputVal = (val: string, chartList: Character[], aliasD
       console.error('[autocomplete] 别名正则无效:', v.regexp, e);
     }
   });
-  const nameMatchItems = [];
-  const aliasMatchItems = [];
+  const nameMatchItems: T[] = [];
+  const aliasMatchItems: T[] = [];
   for (let i = 0; i < chartList.length; i++) {
+    const chart = chartList[i];
+    if (!chart) continue;
     // 英文首字母的判断 todo 是否必要？
-    const chartName = chartList[i]?.[MAIN_KEY];
+    const chartName = chart[MAIN_KEY];
     if (
       chartName
         .split(' ')
@@ -29,20 +35,20 @@ export const filterDataByInputVal = (val: string, chartList: Character[], aliasD
         .toUpperCase()
         .startsWith(inputVal)
     ) {
-      nameMatchItems.push(chartList[i]);
+      nameMatchItems.push(chart);
     } else if (chartName.toUpperCase().indexOf(inputVal) !== -1) {
-      nameMatchItems.push(chartList[i]);
-    } else if (chartList[i].en.toUpperCase().startsWith(inputVal)) {
-      nameMatchItems.push(chartList[i]);
+      nameMatchItems.push(chart);
+    } else if (chart.en.toUpperCase().startsWith(inputVal)) {
+      nameMatchItems.push(chart);
     } else if (dealModal.some((v) => chartName.toUpperCase() === v.toUpperCase())) {
-      aliasMatchItems.push(chartList[i]);
+      aliasMatchItems.push(chart);
     }
   }
   return [...nameMatchItems, ...aliasMatchItems];
 };
 export default function autocomplete(
-  inp: Element,
-  arr: string[],
+  inp: HTMLInputElement,
+  _arr: string[],
   chartsData: Character[],
   aliasData: Alias[],
 ) {
@@ -63,7 +69,7 @@ export default function autocomplete(
     a.setAttribute('id', this.id + 'autocomplete-list');
     a.setAttribute('class', 'autocomplete-items');
     /*append the DIV element as a child of the autocomplete container:*/
-    this.parentNode.appendChild(a);
+    this.parentNode?.appendChild(a);
     /*for each item in the array...*/
     const data = filterDataByInputVal(inputVal, chartsData, aliasData).map((v) => {
       /*create a DIV element for each matching element:*/
@@ -86,9 +92,10 @@ export default function autocomplete(
     a.append(...data);
     // [...nameMatchItems,...aliasMatchItems].forEach(v=>a.appendChild(v));
   };
-  const keydownCb = function (e) {
-    let x = document.getElementById(this.id + 'autocomplete-list');
-    if (x) x = x.getElementsByTagName('div');
+  const keydownCb = function (this: HTMLInputElement, e: KeyboardEvent) {
+    let x: HTMLCollectionOf<HTMLDivElement> | null = null;
+    const list = document.getElementById(this.id + 'autocomplete-list');
+    if (list) x = list.getElementsByTagName('div');
     if (e.key === 'ArrowDown') {
       /*If the arrow DOWN key is pressed,
       increase the currentFocus variable:*/
@@ -115,7 +122,7 @@ export default function autocomplete(
   /*execute a function presses a key on the keyboard:*/
   inp.addEventListener('keydown', keydownCb);
 
-  function addActive(x) {
+  function addActive(x: HTMLCollectionOf<HTMLDivElement> | null) {
     /*a function to classify an item as "active":*/
     if (!x) return false;
     /*start by removing the "active" class on all items:*/
@@ -126,25 +133,25 @@ export default function autocomplete(
     x[currentFocus].classList.add('autocomplete-active');
   }
 
-  function removeActive(x) {
+  function removeActive(x: HTMLCollectionOf<HTMLDivElement>) {
     /*a function to remove the "active" class from all autocomplete items:*/
     for (let i = 0; i < x.length; i++) {
       x[i].classList.remove('autocomplete-active');
     }
   }
 
-  function closeAllLists(elmnt) {
+  function closeAllLists(elmnt?: Element | EventTarget | null) {
     /*close all autocomplete lists in the document,
     except the one passed as an argument:*/
     const x = document.getElementsByClassName('autocomplete-items');
     for (let i = 0; i < x.length; i++) {
       if (elmnt !== x[i] && elmnt !== inp) {
-        x[i].parentNode.removeChild(x[i]);
+        x[i].parentNode?.removeChild(x[i]);
       }
     }
   }
 
-  const clickCb = function (e) {
+  const clickCb = function (e: MouseEvent) {
     closeAllLists(e.target);
   };
   /*execute a function when someone clicks in the document:*/

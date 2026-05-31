@@ -5,9 +5,13 @@ import {
   queryTransferCode,
   applyTransferPayload,
   TransferPayload,
+  isTransferPayloadLanguageMismatch,
+  storePendingTransferPayload,
 } from '../utils/TransferService';
 import { loadRecordData } from './History';
 import { RANDOM_MODE, DAILY_MODE, PARADOX_MODE } from '../const';
+import { labelDict } from '../locales';
+import { localStorageSet } from '../locales/I18nWrap';
 
 const showSnackbar = (message: string) => {
   const mdui = (window as unknown as { mdui: { snackbar: (opts: { message: string }) => void } })
@@ -19,11 +23,16 @@ const showSnackbar = (message: string) => {
   }
 };
 
-const DataTransferModal = () => {
+const DataTransferModal = ({ initialPayload }: { initialPayload?: TransferPayload }) => {
   const { i18n } = useContext(AppCtx) as {
-    i18n: { get: (k: string) => string; language: string };
+    i18n: {
+      get: (k: string, params?: Record<string, string | number>) => string;
+      language: string;
+    };
   };
-  const [activeTab, setActiveTab] = useState<'generate' | 'import'>('generate');
+  const [activeTab, setActiveTab] = useState<'generate' | 'import'>(
+    initialPayload ? 'import' : 'generate',
+  );
   const [isConfirming, setIsConfirming] = useState(false);
 
   // Generate State
@@ -33,7 +42,10 @@ const DataTransferModal = () => {
   // Import State
   const [importCode, setImportCode] = useState('');
   const [loadingQuery, setLoadingQuery] = useState(false);
-  const [cloudPayload, setCloudPayload] = useState<TransferPayload | null>(null);
+  const [cloudPayload, setCloudPayload] = useState<TransferPayload | null>(initialPayload ?? null);
+  const [languageMismatchPayload, setLanguageMismatchPayload] = useState<TransferPayload | null>(
+    null,
+  );
 
   const localRecordData = loadRecordData(i18n.language);
 
@@ -57,7 +69,15 @@ const DataTransferModal = () => {
       // TODO: 待后端介入：调用查询引继码接口，通过 code 从服务端获取 payload 数据
       const res = await queryTransferCode(importCode);
       if (res.code === 0) {
-        setCloudPayload(res.data.payload);
+        const payload = res.data.payload;
+        if (isTransferPayloadLanguageMismatch(payload, i18n.language)) {
+          setLanguageMismatchPayload(payload);
+          setCloudPayload(null);
+          setIsConfirming(false);
+        } else {
+          setLanguageMismatchPayload(null);
+          setCloudPayload(payload);
+        }
       }
     } catch (e) {
       showSnackbar(i18n.get('transferCodeError') || '引继码无效或已过期！');
@@ -90,6 +110,14 @@ const DataTransferModal = () => {
   };
 
   const fmt = (arr: number[]) => arr.join(' / ');
+  const getLangLabel = (lang: string) => labelDict[lang] || lang;
+
+  const switchToPayloadLanguage = (payload: TransferPayload) => {
+    storePendingTransferPayload(payload);
+    localStorage.setItem('__lang', payload.lang);
+    localStorageSet(payload.lang, 'firstOpen', 'yes');
+    location.href = `${location.protocol}//${location.host}${location.pathname}?lang=${payload.lang}`;
+  };
 
   const renderCompareTable = () => {
     const local = getModeStats(localRecordData);
@@ -108,7 +136,7 @@ const DataTransferModal = () => {
     };
 
     return (
-      <div style={{ marginBottom: 8 }}>
+      <div style={{ marginBottom: 8 }} data-testid="transfer-compare-table">
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
           <thead>
             <tr style={{ opacity: 0.6, fontSize: 12 }}>
@@ -116,8 +144,12 @@ const DataTransferModal = () => {
               <th style={{ padding: '4px 0', fontWeight: 'normal' }}>
                 📱 {i18n.get('currentLocalData') || '本地'}
               </th>
-              <th style={{ padding: '4px 0', fontWeight: 'normal' }}>
+              <th
+                style={{ padding: '4px 0', fontWeight: 'normal' }}
+                data-testid="transfer-cloud-lang"
+              >
                 ☁️ {i18n.get('cloudBackupData') || '云端'}
+                {cloudPayload?.lang ? ` (${getLangLabel(cloudPayload.lang)})` : ''}
               </th>
             </tr>
           </thead>
@@ -160,6 +192,7 @@ const DataTransferModal = () => {
           onClick={() => {
             setActiveTab('generate');
             setCloudPayload(null);
+            setLanguageMismatchPayload(null);
             setImportCode('');
             setIsConfirming(false);
           }}
@@ -178,6 +211,7 @@ const DataTransferModal = () => {
           onClick={() => {
             setActiveTab('import');
             setGeneratedCode('');
+            setLanguageMismatchPayload(null);
             setIsConfirming(false);
           }}
         >
@@ -241,27 +275,64 @@ const DataTransferModal = () => {
         {/* === 还原 Tab — 输入码 === */}
         {activeTab === 'import' && !cloudPayload && (
           <div style={{ textAlign: 'center', padding: '20px 0' }}>
-            <div
-              className="mdui-textfield mdui-textfield-floating-label"
-              style={{ maxWidth: 300, margin: '0 auto 20px auto' }}
-            >
-              <label className="mdui-textfield-label">{i18n.get('transferCodePlaceholder')}</label>
-              <input
-                className="mdui-textfield-input"
-                style={{ textAlign: 'center', fontSize: 16, letterSpacing: 1 }}
-                value={importCode}
-                onChange={(e) => setImportCode(e.target.value)}
-              />
-            </div>
-            <button
-              className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme"
-              onClick={handleQuery}
-              disabled={!importCode || loadingQuery}
-            >
-              {loadingQuery
-                ? i18n.get('queryingTransferCode') || '查询中...'
-                : i18n.get('fetchCloudDataTip')}
-            </button>
+            {languageMismatchPayload ? (
+              <div data-testid="transfer-language-mismatch">
+                <p style={{ opacity: 0.8, margin: '0 0 8px 0' }}>
+                  {i18n.get('transferLanguageMismatchTip', {
+                    currentLang: getLangLabel(i18n.language),
+                    targetLang: getLangLabel(languageMismatchPayload.lang),
+                  }) ||
+                    `你导入的数据与当前语言不一致。是否切换到 ${getLangLabel(
+                      languageMismatchPayload.lang,
+                    )} 后继续？`}
+                </p>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: 16 }}>
+                  <button
+                    className="mdui-btn mdui-ripple"
+                    onClick={() => setLanguageMismatchPayload(null)}
+                    style={{ minWidth: 80 }}
+                  >
+                    {i18n.get('no') || '取消'}
+                  </button>
+                  <button
+                    className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme"
+                    data-testid="transfer-switch-language"
+                    onClick={() => switchToPayloadLanguage(languageMismatchPayload)}
+                    style={{ minWidth: 120 }}
+                  >
+                    {i18n.get('switchTransferLanguage', {
+                      targetLang: getLangLabel(languageMismatchPayload.lang),
+                    }) || `切换到 ${getLangLabel(languageMismatchPayload.lang)}`}
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div
+                  className="mdui-textfield mdui-textfield-floating-label"
+                  style={{ maxWidth: 300, margin: '0 auto 20px auto' }}
+                >
+                  <label className="mdui-textfield-label">
+                    {i18n.get('transferCodePlaceholder')}
+                  </label>
+                  <input
+                    className="mdui-textfield-input"
+                    style={{ textAlign: 'center', fontSize: 16, letterSpacing: 1 }}
+                    value={importCode}
+                    onChange={(e) => setImportCode(e.target.value)}
+                  />
+                </div>
+                <button
+                  className="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme"
+                  onClick={handleQuery}
+                  disabled={!importCode || loadingQuery}
+                >
+                  {loadingQuery
+                    ? i18n.get('queryingTransferCode') || '查询中...'
+                    : i18n.get('fetchCloudDataTip')}
+                </button>
+              </>
+            )}
           </div>
         )}
 

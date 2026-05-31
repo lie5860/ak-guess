@@ -14,7 +14,7 @@ export interface ModeRecord {
   straightWins: number;
   maxStraightWins: number;
   minWinTimes: number;
-  roles: Record<string, unknown>;
+  roles: Record<string, { cost?: number; winTime?: number } | number>;
   [key: string]: unknown;
 }
 

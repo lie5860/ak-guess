@@ -49,6 +49,8 @@ const Guide = () => {
               const index = v?.index;
               const pModeWin = !!paradoxModeRecord[v.name];
               const rModeWin = !!randomModeRecord[v.name];
+              const randomRole =
+                typeof randomModeRecord[v.name] === 'object' ? randomModeRecord[v.name] : null;
               return (
                 <div className="mdui-panel-item" key={index}>
                   <div className="mdui-panel-item-header">
@@ -80,11 +82,11 @@ const Guide = () => {
                           <li className="mdui-subheader">🥇{i18n.get('randomMode')}</li>
                           <li className="mdui-list-item mdui-ripple">
                             {i18n.get('roleWinTimes')}
-                            {randomModeRecord[v.name].winTime}
+                            {randomRole?.winTime}
                           </li>
                           <li className="mdui-list-item mdui-ripple">
                             {i18n.get('minWinTimes')}
-                            {randomModeRecord[v.name].cost}
+                            {randomRole?.cost}
                           </li>
                         </>
                       )}

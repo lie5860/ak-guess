@@ -10,13 +10,13 @@ interface AutocompleteProps {
   onSubmit: (value: string) => void;
 }
 
-const Autocomplete: React.FC<AutocompleteProps> = ({
+const Autocomplete = ({
   chartsData,
   aliasData,
   placeholder,
   id = 'guess',
   onSubmit,
-}) => {
+}: AutocompleteProps) => {
   const [inputValue, setInputValue] = useState('');
   const [suggestions, setSuggestions] = useState<Character[]>([]);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);

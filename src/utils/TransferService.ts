@@ -12,8 +12,9 @@ export interface TransferResponse<T> {
   message?: string;
 }
 
-const axios = (window as unknown as { axios: any }).axios;
+const axios = window.axios;
 const TRANSFER_API_HOST = 'https://akapi.saki.cc/api/transfer';
+const PENDING_TRANSFER_PAYLOAD_KEY = '__pendingTransferPayload';
 
 const buildPayload = (lang: string): TransferPayload => ({
   lang,
@@ -54,5 +55,29 @@ export const queryTransferCode = async (
 export const applyTransferPayload = (payload: TransferPayload) => {
   if (payload.recordData) {
     saveRecordData(payload.lang, payload.recordData);
+  }
+};
+
+export const isTransferPayloadLanguageMismatch = (payload: TransferPayload, lang: string) => {
+  return Boolean(payload.lang && payload.lang !== lang);
+};
+
+export const storePendingTransferPayload = (payload: TransferPayload) => {
+  sessionStorage.setItem(PENDING_TRANSFER_PAYLOAD_KEY, JSON.stringify(payload));
+};
+
+export const consumePendingTransferPayload = (lang: string): TransferPayload | null => {
+  const rawPayload = sessionStorage.getItem(PENDING_TRANSFER_PAYLOAD_KEY);
+  if (!rawPayload) return null;
+
+  try {
+    const payload = JSON.parse(rawPayload) as TransferPayload;
+    if (payload.lang !== lang) return null;
+
+    sessionStorage.removeItem(PENDING_TRANSFER_PAYLOAD_KEY);
+    return payload;
+  } catch (e) {
+    sessionStorage.removeItem(PENDING_TRANSFER_PAYLOAD_KEY);
+    return null;
   }
 };

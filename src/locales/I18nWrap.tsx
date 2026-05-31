@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppCtx } from './AppCtx';
+import { AppCtx, I18nApi } from './AppCtx';
 import languages, { DEFAULT_CONFIG, getConfig, hostDict } from './index';
 import { MAIN_KEY } from '../const';
 
@@ -26,7 +26,7 @@ export const I18nWrap = (props: { children: React.ReactNode }) => {
   const [chartsData, setDealData] = React.useState([]);
   const [chartNameToIndexDict, setChartNameToIndexDict] = React.useState({});
   const [aliasData, setAliasData] = React.useState([]);
-  const [languageDict, initI18nDict] = React.useState({});
+  const [languageDict, initI18nDict] = React.useState<Record<string, string>>({});
   const init = async () => {
     const lang = localStorage.getItem('__lang');
     const urlLang = location?.search
@@ -75,7 +75,11 @@ export const I18nWrap = (props: { children: React.ReactNode }) => {
     <AppCtx.Provider
       value={{
         i18n: {
-          get: (key: string, props?: Record<string, string | number>, hasLegacyDom = false) => {
+          get: ((
+            key: string,
+            props?: Record<string, string | number> | null,
+            hasLegacyDom = false,
+          ) => {
             let res = languageDict?.[key] || key;
             if (props) {
               Object.keys(props).forEach((key) => {
@@ -85,7 +89,7 @@ export const I18nWrap = (props: { children: React.ReactNode }) => {
               });
             }
             return hasLegacyDom ? <span dangerouslySetInnerHTML={{ __html: res }} /> : res;
-          },
+          }) as I18nApi['get'],
           setLanguage,
           language,
         },

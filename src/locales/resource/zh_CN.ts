@@ -94,5 +94,8 @@ const dict: { [key: string]: string } = {
   transferCodeGenerated: '生成中...',
   transferCodeError: '引继码无效或已过期！',
   modeOrder: '数据顺序：随机 / 每日 / 悖论',
+  transferLanguageMismatchTip:
+    '你导入的数据与当前语言不一致。当前语言：{currentLang}，数据语言：{targetLang}。是否切换到对应语言后继续？',
+  switchTransferLanguage: '切换到 {targetLang}',
 };
 export default dict;

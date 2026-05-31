@@ -47,7 +47,7 @@ export const ChartInfoLink = ({ chart }: { chart: Character }) => {
     </div>
   );
 };
-const GuessItem = ({ data }: { data: Record<string, unknown>[] }) => {
+const GuessItem = ({ data }: { data: GuessItem[] }) => {
   const { i18n } = React.useContext(AppCtx);
   return (
     <div className={'guesses'}>
@@ -58,7 +58,7 @@ const GuessItem = ({ data }: { data: Record<string, unknown>[] }) => {
           </div>
         ))}
       </div>
-      {data.map((v: Record<string, unknown>, index: number) => {
+      {data.map((v: GuessItem, index: number) => {
         return (
           <div className="row" key={index}>
             {TYPES.map(({ key }) => {

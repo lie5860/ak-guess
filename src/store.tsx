@@ -12,6 +12,7 @@ import {
 import { loadRecordData, RecordData, saveRecordData } from './component/History';
 import { localStorageGet, localStorageSet } from './locales/I18nWrap';
 import { DEFAULT_CONFIG } from './locales';
+import { I18nApi } from './locales/AppCtx';
 import {
   dailyGameLose,
   dailyGameWin,
@@ -59,10 +60,12 @@ const updateRecordOnWin = (
     if (!record[mode].roles[answerName]) {
       record[mode].roles[answerName] = { cost: newData.length, winTime: 1 };
     } else {
-      const oldCost = record[mode].roles[answerName]?.cost || 0;
+      const oldRole = record[mode].roles[answerName];
+      const oldCost = typeof oldRole === 'object' ? oldRole?.cost || 0 : 0;
+      const oldWinTime = typeof oldRole === 'object' ? oldRole?.winTime || 0 : 0;
       record[mode].roles[answerName] = {
         cost: oldCost > newData.length ? newData.length : oldCost,
-        winTime: (record[mode].roles[answerName]?.winTime || 0) + 1,
+        winTime: oldWinTime + 1,
       };
     }
   }
@@ -85,7 +88,7 @@ export interface HomeStore {
   mode: string;
   chartsData: Character[];
   chartNameToIndexDict: { [key: string]: number };
-  i18n: { language: string; get: (key: string, params?: Record<string, string>) => string };
+  i18n: I18nApi;
   today: string;
 }
 
@@ -457,7 +460,8 @@ const paradoxGame: (params: GameStoreParams) => Game = ({
       record[mode].playTimes += 1;
       updateRecordOnWin(record, mode, newData, name, (rec) => {
         // 悖论模式的图鉴逻辑不同：只存 cost（无 winTime）
-        if (!rec[mode].roles[name] || rec[mode].roles[name] > times) {
+        const oldRole = rec[mode].roles[name];
+        if (!oldRole || (typeof oldRole === 'number' && oldRole > times)) {
           rec[mode].roles[name] = times;
         }
       });
