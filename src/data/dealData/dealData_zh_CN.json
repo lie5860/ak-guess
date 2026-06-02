@@ -7204,5 +7204,58 @@
             "罗德岛"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "先锋",
+            "战术家"
+        ],
+        "name": "罗德岛隐秘队",
+        "en": "Rhodes Island Recon",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 0,
+        "key": "char_4215_buddy",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "近卫",
+            "佣兵"
+        ],
+        "name": "雷狼龙S空爆",
+        "en": "Zinogre S Catapult",
+        "race": [
+            "库兰塔"
+        ],
+        "rarity": 4,
+        "key": "char_1049_catap2",
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "狙击",
+            "重射手"
+        ],
+        "name": "焰狐龙梓兰",
+        "en": "Violet Mizutsune Orchid",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 5,
+        "key": "char_1048_orchd2",
+        "team": [
+            "行动预备组A6",
+            "罗德岛"
+        ],
+        "painter": "Studio Montagne"
     }
 ]
