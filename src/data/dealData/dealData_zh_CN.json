@@ -7257,5 +7257,39 @@
             "罗德岛"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "辅助",
+            "游击手"
+        ],
+        "name": "佩德洛",
+        "en": "Pedro",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 4,
+        "key": "char_4234_pedro",
+        "team": [
+            "玻利瓦尔"
+        ],
+        "painter": "致恶剂"
+    },
+    {
+        "className": [
+            "术师",
+            "轰击术师"
+        ],
+        "name": "谬因",
+        "en": "Aphrissa",
+        "race": [
+            "菲林"
+        ],
+        "rarity": 5,
+        "key": "char_4229_aphris",
+        "team": [
+            "哥伦比亚"
+        ],
+        "painter": "下野宏铭"
     }
 ]
