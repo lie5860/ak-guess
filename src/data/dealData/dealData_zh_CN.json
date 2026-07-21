@@ -7291,5 +7291,23 @@
             "哥伦比亚"
         ],
         "painter": "下野宏铭"
+    },
+    {
+        "className": [
+            "重装",
+            "哨戒铁卫"
+        ],
+        "name": "机械师",
+        "en": "Mechanist",
+        "race": [
+            "埃拉菲亚"
+        ],
+        "rarity": 5,
+        "key": "char_4230_mcnist",
+        "team": [
+            "罗德岛",
+            "精英干员"
+        ],
+        "painter": "Studio Montagne"
     }
 ]
