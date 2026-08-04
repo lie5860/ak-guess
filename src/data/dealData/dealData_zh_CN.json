@@ -7309,5 +7309,73 @@
             "精英干员"
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "先锋",
+            "执旗手"
+        ],
+        "name": "嘉辛塔",
+        "en": "Jacinta",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 4,
+        "key": "char_4237_jcinta",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "斑雀"
+    },
+    {
+        "className": [
+            "术师",
+            "驭械术师"
+        ],
+        "name": "时隙",
+        "en": "Timeslot",
+        "race": [
+            "阿纳缇"
+        ],
+        "rarity": 4,
+        "key": "char_4236_tmslot",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "八号地球"
+    },
+    {
+        "className": [
+            "特种",
+            "巡空者"
+        ],
+        "name": "予愿安洁莉娜",
+        "en": "Angelina the Mellow Wish",
+        "race": [
+            "沃尔珀"
+        ],
+        "rarity": 5,
+        "key": "char_1015_aglna2",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "重装",
+            "本源铁卫"
+        ],
+        "name": "珊比",
+        "en": "Thumpy",
+        "race": [
+            "卡特斯"
+        ],
+        "rarity": 5,
+        "key": "char_4235_thumpy",
+        "team": [
+            "雷姆必拓"
+        ],
+        "painter": "Yukuso"
     }
 ]
