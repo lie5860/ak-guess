@@ -7377,5 +7377,73 @@
             "雷姆必拓"
         ],
         "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "近卫",
+            "剑豪"
+        ],
+        "name": "虎狼丸",
+        "en": "Koromaru",
+        "race": [
+            "佩洛兽亲（据称）"
+        ],
+        "rarity": 0,
+        "key": "char_4220_kormr",
+        "team": [
+            "S.E.E.S."
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "狙击",
+            "裂空炮手"
+        ],
+        "name": "埃癸斯",
+        "en": "Aegis",
+        "race": [
+            "未录入"
+        ],
+        "rarity": 4,
+        "key": "char_4218_aigis",
+        "team": [
+            "S.E.E.S."
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "辅助",
+            "游击手"
+        ],
+        "name": "岳羽由加莉",
+        "en": "Yukari Takeba",
+        "race": [
+            "未录入"
+        ],
+        "rarity": 4,
+        "key": "char_4219_yukari",
+        "team": [
+            "S.E.E.S."
+        ],
+        "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "特种",
+            "傀儡师"
+        ],
+        "name": "结城理",
+        "en": "Makoto Yuki",
+        "race": [
+            "未录入"
+        ],
+        "rarity": 5,
+        "key": "char_4217_makoto",
+        "team": [
+            "S.E.E.S."
+        ],
+        "painter": "Studio Montagne"
     }
 ]
