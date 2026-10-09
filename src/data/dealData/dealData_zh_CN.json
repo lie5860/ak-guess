@@ -7445,5 +7445,56 @@
             "S.E.E.S."
         ],
         "painter": "Studio Montagne"
+    },
+    {
+        "className": [
+            "辅助",
+            "削弱者"
+        ],
+        "name": "德·托莱多",
+        "en": "de Toledo",
+        "race": [
+            "黎博利"
+        ],
+        "rarity": 4,
+        "key": "char_393_toledo",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "NOCO"
+    },
+    {
+        "className": [
+            "特种",
+            "炼金师"
+        ],
+        "name": "旅骨",
+        "en": "Homebound",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 4,
+        "key": "char_4232_hbound",
+        "team": [
+            "伊比利亚"
+        ],
+        "painter": "3MO"
+    },
+    {
+        "className": [
+            "近卫",
+            "本源近卫"
+        ],
+        "name": "克莱门莎",
+        "en": "Clementia",
+        "race": [
+            "阿戈尔"
+        ],
+        "rarity": 5,
+        "key": "char_4231_clemnt",
+        "team": [
+            "阿戈尔"
+        ],
+        "painter": "一千"
     }
 ]
