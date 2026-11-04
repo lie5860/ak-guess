@@ -7496,5 +7496,107 @@
             "阿戈尔"
         ],
         "painter": "一千"
+    },
+    {
+        "className": [
+            "特种",
+            "调度者"
+        ],
+        "name": "行铃",
+        "en": "Herdbells",
+        "race": [
+            "佩洛"
+        ],
+        "rarity": 3,
+        "key": "char_4170_hdbell",
+        "team": [
+            "米诺斯"
+        ],
+        "painter": "一碗鱼饭丶"
+    },
+    {
+        "className": [
+            "近卫",
+            "教官"
+        ],
+        "name": "奥尔佳",
+        "en": "Ольга",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 4,
+        "key": "char_4245_alga",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "Liyu黎"
+    },
+    {
+        "className": [
+            "重装",
+            "本源铁卫"
+        ],
+        "name": "镜匠",
+        "en": "Caleido",
+        "race": [
+            "萨卡兹"
+        ],
+        "rarity": 4,
+        "key": "char_4169_caledo",
+        "team": [
+            "罗德岛"
+        ],
+        "painter": "Yukuso"
+    },
+    {
+        "className": [
+            "辅助",
+            "游击手"
+        ],
+        "name": "冻河",
+        "en": "Тоска",
+        "race": [
+            "乌萨斯"
+        ],
+        "rarity": 5,
+        "key": "char_4244_tocka",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "AerialB"
+    },
+    {
+        "className": [
+            "特种",
+            "伏击客"
+        ],
+        "name": "国度",
+        "en": "Территория",
+        "race": [
+            "未公开"
+        ],
+        "rarity": 5,
+        "key": "char_4246_dminon",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "虬墨一型"
+    },
+    {
+        "className": [
+            "近卫",
+            "本源近卫"
+        ],
+        "name": "塔露拉",
+        "en": "Talulah",
+        "race": [
+            "德拉克"
+        ],
+        "rarity": 5,
+        "key": "char_4247_oxi",
+        "team": [
+            "乌萨斯"
+        ],
+        "painter": "熊太"
     }
 ]
